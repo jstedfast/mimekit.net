@@ -1,0 +1,284 @@
+﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>ImapClient.Idle Method </title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="Idle method" /><meta name="System.Keywords" content="ImapClient.Idle method" /><meta name="Microsoft.Help.F1" content="MailKit.Net.Imap.ImapClient.Idle" /><meta name="Microsoft.Help.Id" content="M:MailKit.Net.Imap.ImapClient.Idle(System.Threading.CancellationToken,System.Threading.CancellationToken)" /><meta name="Description" content="Toggle the into the IDLE state." /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="true" /><meta name="container" content="MailKit.Net.Imap" /><meta name="file" content="M_MailKit_Net_Imap_ImapClient_Idle" /><meta name="guid" content="M_MailKit_Net_Imap_ImapClient_Idle" /><link type="text/css" rel="stylesheet" href="../styles/highlight.css" /><script type="text/javascript" src="../scripts/highlight.js"> </script><link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" /><script type="text/javascript" src="../scripts/jquery-1.11.0.min.js"></script><script type="text/javascript" src="../scripts/branding-Website.js"></script><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">MailKit Documentation<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Introduction.htm" title="MailKit Documentation" tocid="roottoc">MailKit Documentation</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="R_Project_Documentation.htm" title="API Reference" tocid="R_Project_Documentation">API Reference</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="N_MailKit_Net_Imap.htm" title="MailKit.Net.Imap" tocid="N_MailKit_Net_Imap">MailKit.Net.Imap</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="T_MailKit_Net_Imap_ImapClient.htm" title="ImapClient Class" tocid="T_MailKit_Net_Imap_ImapClient">ImapClient Class</a></div><div class="toclevel1" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Methods_T_MailKit_Net_Imap_ImapClient.htm" title="ImapClient Methods" tocid="Methods_T_MailKit_Net_Imap_ImapClient">ImapClient Methods</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Overload_MailKit_Net_Imap_ImapClient_Authenticate.htm" title="Authenticate Method " tocid="Overload_MailKit_Net_Imap_ImapClient_Authenticate">Authenticate Method </a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="M_MailKit_Net_Imap_ImapClient_Compress.htm" title="Compress Method " tocid="M_MailKit_Net_Imap_ImapClient_Compress">Compress Method </a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="M_MailKit_Net_Imap_ImapClient_CompressAsync.htm" title="CompressAsync Method " tocid="M_MailKit_Net_Imap_ImapClient_CompressAsync">CompressAsync Method </a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Overload_MailKit_Net_Imap_ImapClient_Connect.htm" title="Connect Method " tocid="Overload_MailKit_Net_Imap_ImapClient_Connect">Connect Method </a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="M_MailKit_Net_Imap_ImapClient_CreateImapFolder.htm" title="CreateImapFolder Method " tocid="M_MailKit_Net_Imap_ImapClient_CreateImapFolder">CreateImapFolder Method </a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="M_MailKit_Net_Imap_ImapClient_Disconnect.htm" title="Disconnect Method " tocid="M_MailKit_Net_Imap_ImapClient_Disconnect">Disconnect Method </a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Overload_MailKit_Net_Imap_ImapClient_Dispose.htm" title="Dispose Method " tocid="Overload_MailKit_Net_Imap_ImapClient_Dispose">Dispose Method </a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="M_MailKit_Net_Imap_ImapClient_EnableQuickResync.htm" title="EnableQuickResync Method " tocid="M_MailKit_Net_Imap_ImapClient_EnableQuickResync">EnableQuickResync Method </a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="M_MailKit_Net_Imap_ImapClient_EnableUTF8.htm" title="EnableUTF8 Method " tocid="M_MailKit_Net_Imap_ImapClient_EnableUTF8">EnableUTF8 Method </a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="M_MailKit_Net_Imap_ImapClient_EnableUTF8Async.htm" title="EnableUTF8Async Method " tocid="M_MailKit_Net_Imap_ImapClient_EnableUTF8Async">EnableUTF8Async Method </a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Overload_MailKit_Net_Imap_ImapClient_GetFolder.htm" title="GetFolder Method " tocid="Overload_MailKit_Net_Imap_ImapClient_GetFolder">GetFolder Method </a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Overload_MailKit_Net_Imap_ImapClient_GetFolders.htm" title="GetFolders Method " tocid="Overload_MailKit_Net_Imap_ImapClient_GetFolders">GetFolders Method </a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Overload_MailKit_Net_Imap_ImapClient_GetMetadata.htm" title="GetMetadata Method " tocid="Overload_MailKit_Net_Imap_ImapClient_GetMetadata">GetMetadata Method </a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="M_MailKit_Net_Imap_ImapClient_Identify.htm" title="Identify Method " tocid="M_MailKit_Net_Imap_ImapClient_Identify">Identify Method </a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="M_MailKit_Net_Imap_ImapClient_IdentifyAsync.htm" title="IdentifyAsync Method " tocid="M_MailKit_Net_Imap_ImapClient_IdentifyAsync">IdentifyAsync Method </a></div><div class="toclevel2 current" data-toclevel="2"><a data-tochassubtree="false" href="M_MailKit_Net_Imap_ImapClient_Idle.htm" title="Idle Method " tocid="M_MailKit_Net_Imap_ImapClient_Idle">Idle Method </a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="M_MailKit_Net_Imap_ImapClient_IdleAsync.htm" title="IdleAsync Method " tocid="M_MailKit_Net_Imap_ImapClient_IdleAsync">IdleAsync Method </a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="M_MailKit_Net_Imap_ImapClient_NoOp.htm" title="NoOp Method " tocid="M_MailKit_Net_Imap_ImapClient_NoOp">NoOp Method </a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="M_MailKit_Net_Imap_ImapClient_SetMetadata.htm" title="SetMetadata Method " tocid="M_MailKit_Net_Imap_ImapClient_SetMetadata">SetMetadata Method </a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="logoColumn"><img alt="MimeKit" src="../icons/Help.png" /></td><td class="titleColumn"><h1>ImapClient<span id="LSTAA6CF141_0"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAA6CF141_0?cpp=::|nu=.");</script>Idle Method </h1></td></tr></table><span class="introStyle"></span> <div class="summary">
+            Toggle the <a href="T_MailKit_Net_Imap_ImapClient.htm">ImapClient</a> into the IDLE state.
+            </div><p> </p>
+    <strong>Namespace:</strong> 
+   <a href="N_MailKit_Net_Imap.htm">MailKit.Net.Imap</a><br />
+    <strong>Assembly:</strong>
+   MailKit (in MailKit.dll) Version: 1.18.1.0<div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Syntax</span></div><div id="ID1RBSection" class="collapsibleSection"><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EACA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EACA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EACA');return false;" title="Copy">Copy</a></div></div><div id="ID0EACA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="keyword">public</span> <span class="keyword">void</span> <span class="identifier">Idle</span>(
+	<span class="identifier">CancellationToken</span> <span class="parameter">doneToken</span>,
+	<span class="identifier">CancellationToken</span> <span class="parameter">cancellationToken</span> = <span class="keyword">null</span>
+)</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EACA");</script><h4 class="subHeading">Parameters</h4><dl><dt><span class="parameter">doneToken</span></dt><dd>Type: <a href="http://msdn2.microsoft.com/en-us/library/dd384802" target="_blank">System.Threading<span id="LSTAA6CF141_1"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAA6CF141_1?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>CancellationToken</a><br />The cancellation token used to return to the non-idle state.</dd><dt><span class="parameter">cancellationToken</span> (Optional)</dt><dd>Type: <a href="http://msdn2.microsoft.com/en-us/library/dd384802" target="_blank">System.Threading<span id="LSTAA6CF141_2"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTAA6CF141_2?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>CancellationToken</a><br />The cancellation token.</dd></dl></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Exceptions</span></div><div id="ID2RBSection" class="collapsibleSection"><div class="tableSection"><table><tr><th>Exception</th><th>Condition</th></tr><tr><td><a href="http://msdn2.microsoft.com/en-us/library/3w1b3114" target="_blank">ArgumentException</a></td><td><span class="parameter">doneToken</span> must be cancellable (i.e. <a href="http://msdn2.microsoft.com/en-us/library/dd780763" target="_blank">None</a> cannot be used).
+            </td></tr><tr><td><a href="http://msdn2.microsoft.com/en-us/library/y31w16ca" target="_blank">ObjectDisposedException</a></td><td>
+            The <a href="T_MailKit_Net_Imap_ImapClient.htm">ImapClient</a> has been disposed.
+            </td></tr><tr><td><a href="T_MailKit_ServiceNotConnectedException.htm">ServiceNotConnectedException</a></td><td>
+            The <a href="T_MailKit_Net_Imap_ImapClient.htm">ImapClient</a> is not connected.
+            </td></tr><tr><td><a href="T_MailKit_ServiceNotAuthenticatedException.htm">ServiceNotAuthenticatedException</a></td><td>
+            The <a href="T_MailKit_Net_Imap_ImapClient.htm">ImapClient</a> is not authenticated.
+            </td></tr><tr><td><a href="http://msdn2.microsoft.com/en-us/library/2asft85a" target="_blank">InvalidOperationException</a></td><td>
+            A <a href="T_MailKit_Net_Imap_ImapFolder.htm">ImapFolder</a> has not been opened.
+            </td></tr><tr><td><a href="http://msdn2.microsoft.com/en-us/library/8a7a4e64" target="_blank">NotSupportedException</a></td><td>
+            The IMAP server does not support the IDLE extension.
+            </td></tr><tr><td><a href="http://msdn2.microsoft.com/en-us/library/hb4a25ka" target="_blank">OperationCanceledException</a></td><td>
+            The operation was canceled via the cancellation token.
+            </td></tr><tr><td><a href="http://msdn2.microsoft.com/en-us/library/hccy4eyd" target="_blank">IOException</a></td><td>
+            An I/O error occurred.
+            </td></tr><tr><td><a href="T_MailKit_Net_Imap_ImapCommandException.htm">ImapCommandException</a></td><td>
+            The server replied to the IDLE command with a NO or BAD response.
+            </td></tr><tr><td><a href="T_MailKit_Net_Imap_ImapProtocolException.htm">ImapProtocolException</a></td><td>
+            The server responded with an unexpected token.
+            </td></tr></table></div></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID3RB')" onkeypress="SectionExpandCollapse_CheckKey('ID3RB', event)" tabindex="0"><img id="ID3RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Remarks</span></div><div id="ID3RBSection" class="collapsibleSection"><p>When a client enters the IDLE state, the IMAP server will send
+            events to the client as they occur on the selected folder. These events
+            may include notifications of new messages arriving, expunge notifications,
+            flag changes, etc.</p><p>Due to the nature of the IDLE command, a folder must be selected
+            before a client can enter into the IDLE state. This can be done by
+            opening a folder using
+            <a href="M_MailKit_MailFolder_Open.htm">Open(FolderAccess, CancellationToken)</a>
+            or any of the other variants.</p><p>While the IDLE command is running, no other commands may be issued until the
+            <span class="parameter">doneToken</span> is cancelled.</p><div class="alert"><table><tr><th><img src="../icons/AlertNote.png" alt="Note" /> Note</th></tr><tr><td>It is especially important to cancel the <span class="parameter">doneToken</span>
+            before cancelling the <span class="parameter">cancellationToken</span> when using SSL or TLS due to
+            the fact that <a href="http://msdn2.microsoft.com/en-us/library/d50tfa1c" target="_blank">SslStream</a> cannot be polled.</td></tr></table></div></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID4RB')" onkeypress="SectionExpandCollapse_CheckKey('ID4RB', event)" tabindex="0"><img id="ID4RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Examples</span></div><div id="ID4RBSection" class="collapsibleSection"><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EAAMBA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAAMBA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAAMBA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAAMBA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">using</span> System;
+<span class="highlight-keyword">using</span> System.Net;
+<span class="highlight-keyword">using</span> System.Linq;
+<span class="highlight-keyword">using</span> System.Threading;
+<span class="highlight-keyword">using</span> System.Collections.Generic;
+
+<span class="highlight-keyword">using</span> MailKit.Net.Imap;
+<span class="highlight-keyword">using</span> MailKit;
+
+<span class="highlight-keyword">namespace</span> ImapIdleExample {
+    <span class="highlight-keyword">class</span> Program
+    {
+        <span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">void</span> Main (<span class="highlight-keyword">string</span>[] args)
+        {
+            <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> client = <span class="highlight-keyword">new</span> ImapClient (<span class="highlight-keyword">new</span> ProtocolLogger (Console.OpenStandardError ()))) {
+                client.Connect (<span class="highlight-literal">"imap.gmail.com"</span>, <span class="highlight-number">993</span>, <span class="highlight-keyword">true</span>);
+
+                <span class="highlight-comment">// Remove the XOAUTH2 authentication mechanism since we don't have an OAuth2 token.</span>
+                client.AuthenticationMechanisms.Remove (<span class="highlight-literal">"XOAUTH2"</span>);
+
+                client.Authenticate (<span class="highlight-literal">"username@gmail.com"</span>, <span class="highlight-literal">"password"</span>);
+
+                client.Inbox.Open (FolderAccess.ReadOnly);
+
+                <span class="highlight-comment">// Get the summary information of all of the messages (suitable for displaying in a message list).</span>
+                <span class="highlight-keyword">var</span> messages = client.Inbox.Fetch (<span class="highlight-number">0</span>, <span class="highlight-number">-1</span>, MessageSummaryItems.Full | MessageSummaryItems.UniqueId).ToList ();
+
+                <span class="highlight-comment">// Keep track of messages being expunged so that when the CountChanged event fires, we can tell if it's</span>
+                <span class="highlight-comment">// because new messages have arrived vs messages being removed (or some combination of the two).</span>
+                client.Inbox.MessageExpunged += (sender, e) =&gt; {
+                    <span class="highlight-keyword">var</span> folder = (ImapFolder) sender;
+
+                    <span class="highlight-keyword">if</span> (e.Index &lt; messages.Count) {
+                        <span class="highlight-keyword">var</span> message = messages[e.Index];
+
+                        Console.WriteLine (<span class="highlight-literal">"{0}: expunged message {1}: Subject: {2}"</span>, folder, e.Index, message.Envelope.Subject);
+
+                        <span class="highlight-comment">// Note: If you are keeping a local cache of message information</span>
+                        <span class="highlight-comment">// (e.g. MessageSummary data) for the folder, then you'll need</span>
+                        <span class="highlight-comment">// to remove the message at e.Index.</span>
+                        messages.RemoveAt (e.Index);
+                    } <span class="highlight-keyword">else</span> {
+                        Console.WriteLine (<span class="highlight-literal">"{0}: expunged message {1}: Unknown message."</span>, folder, e.Index);
+                    }
+                };
+
+                <span class="highlight-comment">// Keep track of changes to the number of messages in the folder (this is how we'll tell if new messages have arrived).</span>
+                client.Inbox.CountChanged += (sender, e) =&gt; {
+                    <span class="highlight-comment">// Note: the CountChanged event will fire when new messages arrive in the folder and/or when messages are expunged.</span>
+                    <span class="highlight-keyword">var</span> folder = (ImapFolder) sender;
+
+                    Console.WriteLine (<span class="highlight-literal">"The number of messages in {0} has changed."</span>, folder);
+
+                    <span class="highlight-comment">// Note: because we are keeping track of the MessageExpunged event and updating our</span>
+                    <span class="highlight-comment">// 'messages' list, we know that if we get a CountChanged event and folder.Count is</span>
+                    <span class="highlight-comment">// larger than messages.Count, then it means that new messages have arrived.</span>
+                    <span class="highlight-keyword">if</span> (folder.Count &gt; messages.Count) {
+                        Console.WriteLine (<span class="highlight-literal">"{0} new messages have arrived."</span>, folder.Count - messages.Count);
+
+                        <span class="highlight-comment">// Note: your first instict may be to fetch these new messages now, but you cannot do</span>
+                        <span class="highlight-comment">// that in an event handler (the ImapFolder is not re-entrant).</span>
+                        <span class="highlight-comment">// </span>
+                        <span class="highlight-comment">// If this code had access to the 'done' CancellationTokenSource (see below), it could</span>
+                        <span class="highlight-comment">// cancel that to cause the IDLE loop to end.</span>
+                    }
+                };
+
+                <span class="highlight-comment">// Keep track of flag changes.</span>
+                client.Inbox.MessageFlagsChanged += (sender, e) =&gt; {
+                    <span class="highlight-keyword">var</span> folder = (ImapFolder) sender;
+
+                    Console.WriteLine (<span class="highlight-literal">"{0}: flags for message {1} have changed to: {2}."</span>, folder, e.Index, e.Flags);
+                };
+
+                Console.WriteLine (<span class="highlight-literal">"Hit any key to end the IDLE loop."</span>);
+                <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> done = <span class="highlight-keyword">new</span> CancellationTokenSource ()) {
+                    <span class="highlight-comment">// Note: when the 'done' CancellationTokenSource is cancelled, it ends to IDLE loop.</span>
+                    <span class="highlight-keyword">var</span> thread = <span class="highlight-keyword">new</span> Thread (IdleLoop);
+
+                    thread.Start (<span class="highlight-keyword">new</span> IdleState (client, done.Token));
+
+                    Console.ReadKey ();
+                    done.Cancel ();
+                    thread.Join ();
+                }
+
+                <span class="highlight-keyword">if</span> (client.Inbox.Count &gt; messages.Count) {
+                    Console.WriteLine (<span class="highlight-literal">"The new messages that arrived during IDLE are:"</span>);
+                    <span class="highlight-keyword">foreach</span> (<span class="highlight-keyword">var</span> message <span class="highlight-keyword">in</span> client.Inbox.Fetch (messages.Count, <span class="highlight-number">-1</span>, MessageSummaryItems.Full | MessageSummaryItems.UniqueId))
+                        Console.WriteLine (<span class="highlight-literal">"Subject: {0}"</span>, message.Envelope.Subject);
+                }
+
+                client.Disconnect (<span class="highlight-keyword">true</span>);
+            }
+        }
+
+        <span class="highlight-keyword">class</span> IdleState
+        {
+            <span class="highlight-keyword">readonly</span> <span class="highlight-keyword">object</span> mutex = <span class="highlight-keyword">new</span> <span class="highlight-keyword">object</span> ();
+            CancellationTokenSource timeout;
+
+            <span class="highlight-comment">/// &lt;summary&gt;</span>
+            <span class="highlight-comment">/// Get the cancellation token.</span>
+            <span class="highlight-comment">/// &lt;/summary&gt;</span>
+            <span class="highlight-comment">/// &lt;remarks&gt;</span>
+            <span class="highlight-comment">/// &lt;para&gt;The cancellation token is the brute-force approach to cancelling the IDLE and/or NOOP command.&lt;/para&gt;</span>
+            <span class="highlight-comment">/// &lt;para&gt;Using the cancellation token will typically drop the connection to the server and so should</span>
+            <span class="highlight-comment">/// not be used unless the client is in the process of shutting down or otherwise needs to</span>
+            <span class="highlight-comment">/// immediately abort communication with the server.&lt;/para&gt;</span>
+            <span class="highlight-comment">/// &lt;/remarks&gt;</span>
+            <span class="highlight-comment">/// &lt;value&gt;The cancellation token.&lt;/value&gt;</span>
+            <span class="highlight-keyword">public</span> CancellationToken CancellationToken { <span class="highlight-keyword">get</span>; <span class="highlight-keyword">private</span> <span class="highlight-keyword">set</span>; }
+
+            <span class="highlight-comment">/// &lt;summary&gt;</span>
+            <span class="highlight-comment">/// Get the done token.</span>
+            <span class="highlight-comment">/// &lt;/summary&gt;</span>
+            <span class="highlight-comment">/// &lt;remarks&gt;</span>
+            <span class="highlight-comment">/// &lt;para&gt;The done token tells the &lt;see cref="Program.IdleLoop"/&gt; that the user has requested to end the loop.&lt;/para&gt;</span>
+            <span class="highlight-comment">/// &lt;para&gt;When the done token is cancelled, the &lt;see cref="Program.IdleLoop"/&gt; will gracefully come to an end by</span>
+            <span class="highlight-comment">/// cancelling the timeout and then breaking out of the loop.&lt;/para&gt;</span>
+            <span class="highlight-comment">/// &lt;/remarks&gt;</span>
+            <span class="highlight-comment">/// &lt;value&gt;The done token.&lt;/value&gt;</span>
+            <span class="highlight-keyword">public</span> CancellationToken DoneToken { <span class="highlight-keyword">get</span>; <span class="highlight-keyword">private</span> <span class="highlight-keyword">set</span>; }
+
+            <span class="highlight-comment">/// &lt;summary&gt;</span>
+            <span class="highlight-comment">/// Get the IMAP client.</span>
+            <span class="highlight-comment">/// &lt;/summary&gt;</span>
+            <span class="highlight-comment">/// &lt;value&gt;The IMAP client.&lt;/value&gt;</span>
+            <span class="highlight-keyword">public</span> ImapClient Client { <span class="highlight-keyword">get</span>; <span class="highlight-keyword">private</span> <span class="highlight-keyword">set</span>; }
+
+            <span class="highlight-comment">/// &lt;summary&gt;</span>
+            <span class="highlight-comment">/// Check whether or not either of the CancellationToken's have been cancelled.</span>
+            <span class="highlight-comment">/// &lt;/summary&gt;</span>
+            <span class="highlight-comment">/// &lt;value&gt;&lt;c&gt;true&lt;/c&gt; if cancellation was requested; otherwise, &lt;c&gt;false&lt;/c&gt;.&lt;/value&gt;</span>
+            <span class="highlight-keyword">public</span> <span class="highlight-keyword">bool</span> IsCancellationRequested {
+                <span class="highlight-keyword">get</span> {
+                    <span class="highlight-keyword">return</span> CancellationToken.IsCancellationRequested || DoneToken.IsCancellationRequested;
+                }
+            }
+
+            <span class="highlight-comment">/// &lt;summary&gt;</span>
+            <span class="highlight-comment">/// Initializes a new instance of the &lt;see cref="IdleState"/&gt; class.</span>
+            <span class="highlight-comment">/// &lt;/summary&gt;</span>
+            <span class="highlight-comment">/// &lt;param name="client"&gt;The IMAP client.&lt;/param&gt;</span>
+            <span class="highlight-comment">/// &lt;param name="doneToken"&gt;The user-controlled 'done' token.&lt;/param&gt;</span>
+            <span class="highlight-comment">/// &lt;param name="cancellationToken"&gt;The brute-force cancellation token.&lt;/param&gt;</span>
+            <span class="highlight-keyword">public</span> IdleState (ImapClient client, CancellationToken doneToken, CancellationToken cancellationToken = <span class="highlight-keyword">default</span> (CancellationToken))
+            {
+                CancellationToken = cancellationToken;
+                DoneToken = doneToken;
+                Client = client;
+
+                <span class="highlight-comment">// When the user hits a key, end the current timeout as well</span>
+                doneToken.Register (CancelTimeout);
+            }
+
+            <span class="highlight-comment">/// &lt;summary&gt;</span>
+            <span class="highlight-comment">/// Cancel the timeout token source, forcing ImapClient.Idle() to gracefully exit.</span>
+            <span class="highlight-comment">/// &lt;/summary&gt;</span>
+            <span class="highlight-keyword">void</span> CancelTimeout ()
+            {
+                <span class="highlight-keyword">lock</span> (mutex) {
+                    <span class="highlight-keyword">if</span> (timeout != <span class="highlight-keyword">null</span>)
+                        timeout.Cancel ();
+                }
+            }
+
+            <span class="highlight-comment">/// &lt;summary&gt;</span>
+            <span class="highlight-comment">/// Set the timeout source.</span>
+            <span class="highlight-comment">/// &lt;/summary&gt;</span>
+            <span class="highlight-comment">/// &lt;param name="source"&gt;The timeout source.&lt;/param&gt;</span>
+            <span class="highlight-keyword">public</span> <span class="highlight-keyword">void</span> SetTimeoutSource (CancellationTokenSource source)
+            {
+                <span class="highlight-keyword">lock</span> (mutex) {
+                    timeout = source;
+
+                    <span class="highlight-keyword">if</span> (timeout != <span class="highlight-keyword">null</span> &amp;&amp; IsCancellationRequested)
+                        timeout.Cancel ();
+                }
+            }
+        }
+
+        <span class="highlight-keyword">static</span> <span class="highlight-keyword">void</span> IdleLoop (<span class="highlight-keyword">object</span> state)
+        {
+            <span class="highlight-keyword">var</span> idle = (IdleState) state;
+
+            <span class="highlight-keyword">lock</span> (idle.Client.SyncRoot) {
+                <span class="highlight-comment">// Note: since the IMAP server will drop the connection after 30 minutes, we must loop sending IDLE commands that</span>
+                <span class="highlight-comment">// last ~29 minutes or until the user has requested that they do not want to IDLE anymore.</span>
+                <span class="highlight-comment">// </span>
+                <span class="highlight-comment">// For GMail, we use a 9 minute interval because they do not seem to keep the connection alive for more than ~10 minutes.</span>
+                <span class="highlight-keyword">while</span> (!idle.IsCancellationRequested) {
+                    <span class="highlight-comment">// Note: Starting with .NET 4.5, you can make this simpler by using the CancellationTokenSource .ctor that</span>
+                    <span class="highlight-comment">// takes a TimeSpan argument, thus eliminating the need to create a timer.</span>
+                    <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> timeout = <span class="highlight-keyword">new</span> CancellationTokenSource ()) {
+                        <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> timer = <span class="highlight-keyword">new</span> System.Timers.Timer (<span class="highlight-number">9</span> * <span class="highlight-number">60</span> * <span class="highlight-number">1000</span>)) {
+                            <span class="highlight-comment">// End the IDLE command when the timer expires.</span>
+                            timer.Elapsed += (sender, e) =&gt; timeout.Cancel ();
+                            timer.AutoReset = <span class="highlight-keyword">false</span>;
+                            timer.Enabled = <span class="highlight-keyword">true</span>;
+
+                            <span class="highlight-keyword">try</span> {
+                                <span class="highlight-comment">// We set the timeout source so that if the idle.DoneToken is cancelled, it can cancel the timeout</span>
+                                idle.SetTimeoutSource (timeout);
+
+                                <span class="highlight-keyword">if</span> (idle.Client.Capabilities.HasFlag (ImapCapabilities.Idle)) {
+                                    <span class="highlight-comment">// The Idle() method will not return until the timeout has elapsed or idle.CancellationToken is cancelled</span>
+                                    idle.Client.Idle (timeout.Token, idle.CancellationToken);
+                                } <span class="highlight-keyword">else</span> {
+                                    <span class="highlight-comment">// The IMAP server does not support IDLE, so send a NOOP command instead</span>
+                                    idle.Client.NoOp (idle.CancellationToken);
+
+                                    <span class="highlight-comment">// Wait for the timeout to elapse or the cancellation token to be cancelled</span>
+                                    WaitHandle.WaitAny (<span class="highlight-keyword">new</span> [] { timeout.Token.WaitHandle, idle.CancellationToken.WaitHandle });
+                                }
+                            } <span class="highlight-keyword">catch</span> (OperationCanceledException) {
+                                <span class="highlight-comment">// This means that idle.CancellationToken was cancelled, not the DoneToken nor the timeout.</span>
+                                <span class="highlight-keyword">break</span>;
+                            } <span class="highlight-keyword">catch</span> (ImapProtocolException) {
+                                <span class="highlight-comment">// The IMAP server sent garbage in a response and the ImapClient was unable to deal with it.</span>
+                                <span class="highlight-comment">// This should never happen in practice, but it's probably still a good idea to handle it.</span>
+                                <span class="highlight-comment">// </span>
+                                <span class="highlight-comment">// Note: an ImapProtocolException almost always results in the ImapClient getting disconnected.</span>
+                                <span class="highlight-keyword">break</span>;
+                            } <span class="highlight-keyword">catch</span> (ImapCommandException) {
+                                <span class="highlight-comment">// The IMAP server responded with "NO" or "BAD" to either the IDLE command or the NOOP command.</span>
+                                <span class="highlight-comment">// This should never happen... but again, we're catching it for the sake of completeness.</span>
+                                <span class="highlight-keyword">break</span>;
+                            } <span class="highlight-keyword">finally</span> {
+                                <span class="highlight-comment">// We're about to Dispose() the timeout source, so set it to null.</span>
+                                idle.SetTimeoutSource (<span class="highlight-keyword">null</span>);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAAMBA");</script></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID5RB')" onkeypress="SectionExpandCollapse_CheckKey('ID5RB', event)" tabindex="0"><img id="ID5RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID5RBSection" class="collapsibleSection"><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="T_MailKit_Net_Imap_ImapClient.htm">ImapClient Class</a></div><div class="seeAlsoStyle"><a href="N_MailKit_Net_Imap.htm">MailKit.Net.Imap Namespace</a></div></div></div></div><div id="pageFooter" class="pageFooter"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-63841238-1', 'auto'); ga('send', 'pageview');</script><p><a href="https://github.com/jstedfast" target="_blank">Copyright © 2013-2017 Jeffrey Stedfast</a></p><div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:jestedfa%40microsoft.com?Subject=MailKit Documentation">Jeffrey Stedfast</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        var HT_mailLinkText = HT_mailLink.innerHTML;
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        HT_mailLink.innerHTML = HT_mailLinkText;
+        </script> </div></body></html>

@@ -1,2 +1,2 @@
 # mimekit.net
-The MimeKit and MailKit website
+The MimeKit website
