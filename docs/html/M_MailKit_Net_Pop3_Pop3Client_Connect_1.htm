@@ -34,104 +34,23 @@
             <a href="T_MailKit_Security_SecureSocketOptions.htm">SslOnConnect</a>. All other values will use
             <a href="T_MailKit_Security_SecureSocketOptions.htm">StartTlsWhenAvailable</a>.</p><p>Once a connection is established, properties such as
             <a href="P_MailKit_Net_Pop3_Pop3Client_AuthenticationMechanisms.htm">AuthenticationMechanisms</a> and <a href="P_MailKit_Net_Pop3_Pop3Client_Capabilities.htm">Capabilities</a> will be
-            populated.</p></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID4RB')" onkeypress="SectionExpandCollapse_CheckKey('ID4RB', event)" tabindex="0"><img id="ID4RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Examples</span></div><div id="ID4RBSection" class="collapsibleSection"><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EAAOBA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAAOBA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID0EAAOBA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAAOBA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">void</span> DownloadMessages (HashSet&lt;<span class="highlight-keyword">string</span>&gt; downloadedUids)
+            populated.</p></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID4RB')" onkeypress="SectionExpandCollapse_CheckKey('ID4RB', event)" tabindex="0"><img id="ID4RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Examples</span></div><div id="ID4RBSection" class="collapsibleSection"><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EAAOBA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAAOBA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID0EAAOBA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAAOBA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">void</span> DownloadMessages ()
 {
-    <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> client = <span class="highlight-keyword">new</span> Pop3Client (<span class="highlight-keyword">new</span> ProtocolLogger (<span class="highlight-literal">"pop3.log"</span>))) {
-        IList&lt;<span class="highlight-keyword">string</span>&gt; uids = <span class="highlight-keyword">null</span>;
+    <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> client = <span class="highlight-keyword">new</span> Pop3Client ()) {
+        client.Connect (<span class="highlight-literal">"pop.gmail.com"</span>, <span class="highlight-number">995</span>, SecureSocketOptions.SslOnConnect);
 
-        <span class="highlight-keyword">try</span> {
-            client.Connect (<span class="highlight-literal">"pop.gmail.com"</span>, <span class="highlight-number">995</span>, SecureSocketOptions.SslOnConnect);
-        } <span class="highlight-keyword">catch</span> (Pop3CommandException ex) {
-            Console.WriteLine (<span class="highlight-literal">"Error trying to connect: {0}"</span>, ex.Message);
-            Console.WriteLine (<span class="highlight-literal">"\tStatusText: {0}"</span>, ex.StatusText);
-            <span class="highlight-keyword">return</span>;
-        } <span class="highlight-keyword">catch</span> (Pop3ProtocolException ex) {
-            Console.WriteLine (<span class="highlight-literal">"Protocol error while trying to connect: {0}"</span>, ex.Message);
-            <span class="highlight-keyword">return</span>;
-        }
-
-        <span class="highlight-keyword">try</span> {
-            client.Authenticate (<span class="highlight-literal">"username"</span>, <span class="highlight-literal">"password"</span>);
-        } <span class="highlight-keyword">catch</span> (AuthenticationException ex) {
-            Console.WriteLine (<span class="highlight-literal">"Invalid user name or password."</span>);
-            <span class="highlight-keyword">return</span>;
-        } <span class="highlight-keyword">catch</span> (Pop3CommandException ex) {
-            Console.WriteLine (<span class="highlight-literal">"Error trying to authenticate: {0}"</span>, ex.Message);
-            Console.WriteLine (<span class="highlight-literal">"\tStatusText: {0}"</span>, ex.StatusText);
-            <span class="highlight-keyword">return</span>;
-        } <span class="highlight-keyword">catch</span> (Pop3ProtocolException ex) {
-            Console.WriteLine (<span class="highlight-literal">"Protocol error while trying to authenticate: {0}"</span>, ex.Message);
-            <span class="highlight-keyword">return</span>;
-        }
-
-        <span class="highlight-comment">// for the sake of this example, let's assume GMail supports the UIDL extension</span>
-        <span class="highlight-keyword">if</span> (client.Capabilities.HasFlag (Pop3Capabilities.UIDL)) {
-            <span class="highlight-keyword">try</span> {
-                uids = client.GetMessageUids ();
-            } <span class="highlight-keyword">catch</span> (Pop3CommandException ex) {
-                Console.WriteLine (<span class="highlight-literal">"Error trying to get the list of uids: {0}"</span>, ex.Message);
-                Console.WriteLine (<span class="highlight-literal">"\tStatusText: {0}"</span>, ex.StatusText);
-
-                <span class="highlight-comment">// we'll continue on leaving uids set to null...</span>
-            } <span class="highlight-keyword">catch</span> (Pop3ProtocolException ex) {
-                Console.WriteLine (<span class="highlight-literal">"Protocol error while trying to authenticate: {0}"</span>, ex.Message);
-
-                <span class="highlight-comment">// Pop3ProtocolExceptions often cause the connection to drop</span>
-                <span class="highlight-keyword">if</span> (!client.IsConnected)
-                    <span class="highlight-keyword">return</span>;
-            }
-        }
+        client.Authenticate (<span class="highlight-literal">"username"</span>, <span class="highlight-literal">"password"</span>);
 
         <span class="highlight-keyword">for</span> (<span class="highlight-keyword">int</span> i = <span class="highlight-number">0</span>; i &lt; client.Count; i++) {
-            <span class="highlight-keyword">if</span> (uids != <span class="highlight-keyword">null</span> &amp;&amp; downloadedUids.Contains (uids[i])) {
-                <span class="highlight-comment">// we must have downloaded this message in a previous session</span>
-                <span class="highlight-keyword">continue</span>;
-            }
+            <span class="highlight-keyword">var</span> message = client.GetMessage (i);
 
-            <span class="highlight-keyword">try</span> {
-                <span class="highlight-comment">// download the message at the specified index</span>
-                <span class="highlight-keyword">var</span> message = client.GetMessage (i);
+            <span class="highlight-comment">// write the message to a file</span>
+            message.WriteTo (<span class="highlight-keyword">string</span>.Format (<span class="highlight-literal">"{0}.msg"</span>, i));
 
-                <span class="highlight-comment">// write the message to a file</span>
-                <span class="highlight-keyword">if</span> (uids != <span class="highlight-keyword">null</span>) {
-                    message.WriteTo (<span class="highlight-keyword">string</span>.Format (<span class="highlight-literal">"{0}.msg"</span>, uids[i]));
-
-                    <span class="highlight-comment">// keep track of our downloaded message uids so we can skip downloading them next time</span>
-                    downloadedUids.Add (uids[i]);
-                } <span class="highlight-keyword">else</span> {
-                    message.WriteTo (<span class="highlight-keyword">string</span>.Format (<span class="highlight-literal">"{0}.msg"</span>, i));
-                }
-            } <span class="highlight-keyword">catch</span> (Pop3CommandException ex) {
-                Console.WriteLine (<span class="highlight-literal">"Error downloading message {0}: {1}"</span>, i, ex.Message);
-                Console.WriteLine (<span class="highlight-literal">"\tStatusText: {0}"</span>, ex.StatusText);
-                <span class="highlight-keyword">continue</span>;
-            } <span class="highlight-keyword">catch</span> (Pop3ProtocolException ex) {
-                Console.WriteLine (<span class="highlight-literal">"Protocol error while sending message {0}: {1}"</span>, i, ex.Message);
-                <span class="highlight-comment">// most likely the connection has been dropped</span>
-                <span class="highlight-keyword">if</span> (client.IsConnected)
-                    <span class="highlight-keyword">continue</span>;
-
-                <span class="highlight-keyword">break</span>;
-            }
-
-            <span class="highlight-keyword">try</span> {
-                <span class="highlight-comment">// mark the message for deletion</span>
-                client.DeleteMessage (i);
-            } <span class="highlight-keyword">catch</span> (Pop3CommandException ex) {
-                Console.WriteLine (<span class="highlight-literal">"Error marking message {0} for deletion: {0}"</span>, i, ex.Message);
-                Console.WriteLine (<span class="highlight-literal">"\tStatusText: {0}"</span>, ex.StatusText);
-                <span class="highlight-keyword">continue</span>;
-            } <span class="highlight-keyword">catch</span> (Pop3ProtocolException ex) {
-                Console.WriteLine (<span class="highlight-literal">"Protocol error marking message {0} for deletion: {1}"</span>, i, ex.Message);
-                <span class="highlight-comment">// most likely the connection has been dropped</span>
-                <span class="highlight-keyword">if</span> (!client.IsConnected)
-                    <span class="highlight-keyword">break</span>;
-            }
+            <span class="highlight-comment">// mark the message for deletion</span>
+            client.DeleteMessage (i);
         }
 
-        <span class="highlight-keyword">if</span> (client.IsConnected) {
-            <span class="highlight-comment">// if we do not disconnect cleanly, then the messages won't actually get deleted</span>
-            client.Disconnect (<span class="highlight-keyword">true</span>);
-        }
+        client.Disconnect (<span class="highlight-keyword">true</span>);
     }
 }</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAAOBA");</script></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID5RB')" onkeypress="SectionExpandCollapse_CheckKey('ID5RB', event)" tabindex="0"><img id="ID5RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID5RBSection" class="collapsibleSection"><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="T_MailKit_Net_Pop3_Pop3Client.htm">Pop3Client Class</a></div><div class="seeAlsoStyle"><a href="Overload_MailKit_Net_Pop3_Pop3Client_Connect.htm">Connect Overload</a></div><div class="seeAlsoStyle"><a href="N_MailKit_Net_Pop3.htm">MailKit.Net.Pop3 Namespace</a></div></div></div></div><div id="pageFooter" class="pageFooter"> </div></body></html>

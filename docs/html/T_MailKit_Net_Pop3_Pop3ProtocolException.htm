@@ -21,9 +21,9 @@
             The exception that is thrown when there is an error communicating with a POP3 server. A
             <span class="selflink">Pop3ProtocolException</span> is typically fatal and requires the <a href="T_MailKit_Net_Pop3_Pop3Client.htm">Pop3Client</a>
             to be reconnected.
-            </div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID8RB')" onkeypress="SectionExpandCollapse_CheckKey('ID8RB', event)" tabindex="0"><img id="ID8RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Examples</span></div><div id="ID8RBSection" class="collapsibleSection"><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAABA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAABA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAAABA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAABA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">void</span> DownloadMessages (HashSet&lt;<span class="highlight-keyword">string</span>&gt; downloadedUids)
+            </div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID8RB')" onkeypress="SectionExpandCollapse_CheckKey('ID8RB', event)" tabindex="0"><img id="ID8RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Examples</span></div><div id="ID8RBSection" class="collapsibleSection"><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAABA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAABA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAAABA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAABA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">void</span> DownloadNewMessages (HashSet&lt;<span class="highlight-keyword">string</span>&gt; previouslyDownloadedUids)
 {
-    <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> client = <span class="highlight-keyword">new</span> Pop3Client (<span class="highlight-keyword">new</span> ProtocolLogger (<span class="highlight-literal">"pop3.log"</span>))) {
+    <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> client = <span class="highlight-keyword">new</span> Pop3Client ()) {
         IList&lt;<span class="highlight-keyword">string</span>&gt; uids = <span class="highlight-keyword">null</span>;
 
         <span class="highlight-keyword">try</span> {
@@ -70,7 +70,7 @@
         }
 
         <span class="highlight-keyword">for</span> (<span class="highlight-keyword">int</span> i = <span class="highlight-number">0</span>; i &lt; client.Count; i++) {
-            <span class="highlight-keyword">if</span> (uids != <span class="highlight-keyword">null</span> &amp;&amp; downloadedUids.Contains (uids[i])) {
+            <span class="highlight-keyword">if</span> (uids != <span class="highlight-keyword">null</span> &amp;&amp; previouslyDownloadedUids.Contains (uids[i])) {
                 <span class="highlight-comment">// we must have downloaded this message in a previous session</span>
                 <span class="highlight-keyword">continue</span>;
             }
@@ -84,7 +84,7 @@
                     message.WriteTo (<span class="highlight-keyword">string</span>.Format (<span class="highlight-literal">"{0}.msg"</span>, uids[i]));
 
                     <span class="highlight-comment">// keep track of our downloaded message uids so we can skip downloading them next time</span>
-                    downloadedUids.Add (uids[i]);
+                    previouslyDownloadedUids.Add (uids[i]);
                 } <span class="highlight-keyword">else</span> {
                     message.WriteTo (<span class="highlight-keyword">string</span>.Format (<span class="highlight-literal">"{0}.msg"</span>, i));
                 }
@@ -94,22 +94,6 @@
                 <span class="highlight-keyword">continue</span>;
             } <span class="highlight-keyword">catch</span> (Pop3ProtocolException ex) {
                 Console.WriteLine (<span class="highlight-literal">"Protocol error while sending message {0}: {1}"</span>, i, ex.Message);
-                <span class="highlight-comment">// most likely the connection has been dropped</span>
-                <span class="highlight-keyword">if</span> (client.IsConnected)
-                    <span class="highlight-keyword">continue</span>;
-
-                <span class="highlight-keyword">break</span>;
-            }
-
-            <span class="highlight-keyword">try</span> {
-                <span class="highlight-comment">// mark the message for deletion</span>
-                client.DeleteMessage (i);
-            } <span class="highlight-keyword">catch</span> (Pop3CommandException ex) {
-                Console.WriteLine (<span class="highlight-literal">"Error marking message {0} for deletion: {0}"</span>, i, ex.Message);
-                Console.WriteLine (<span class="highlight-literal">"\tStatusText: {0}"</span>, ex.StatusText);
-                <span class="highlight-keyword">continue</span>;
-            } <span class="highlight-keyword">catch</span> (Pop3ProtocolException ex) {
-                Console.WriteLine (<span class="highlight-literal">"Protocol error marking message {0} for deletion: {1}"</span>, i, ex.Message);
                 <span class="highlight-comment">// most likely the connection has been dropped</span>
                 <span class="highlight-keyword">if</span> (!client.IsConnected)
                     <span class="highlight-keyword">break</span>;

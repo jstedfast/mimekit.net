@@ -9,55 +9,12 @@
             </div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID3RB')" onkeypress="SectionExpandCollapse_CheckKey('ID3RB', event)" tabindex="0"><img id="ID3RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Examples</span></div><div id="ID3RBSection" class="collapsibleSection"><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EAAABA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAAABA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID0EAAABA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAAABA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">void</span> SendMessages (IList&lt;MimeMessage&gt; messages)
 {
     <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> client = <span class="highlight-keyword">new</span> SmtpClient ()) {
-        <span class="highlight-keyword">try</span> {
-            client.Connect (<span class="highlight-literal">"smtp.gmail.com"</span>, <span class="highlight-number">993</span>, SecureSocketOptions.SslOnConnect);
-        } <span class="highlight-keyword">catch</span> (SmtpCommandException ex) {
-            Console.WriteLine (<span class="highlight-literal">"Error trying to connect: {0}"</span>, ex.Message);
-            Console.WriteLine (<span class="highlight-literal">"\tStatusCode: {0}"</span>, ex.StatusCode);
-            <span class="highlight-keyword">return</span>;
-        } <span class="highlight-keyword">catch</span> (SmtpProtocolException ex) {
-            Console.WriteLine (<span class="highlight-literal">"Protocol error while trying to connect: {0}"</span>, ex.Message);
-            <span class="highlight-keyword">return</span>;
-        }
+        client.Connect (<span class="highlight-literal">"smtp.gmail.com"</span>, <span class="highlight-number">465</span>, SecureSocketOptions.SslOnConnect);
 
-        <span class="highlight-comment">// Note: Not all SMTP servers support authentication, but GMail does.</span>
-        <span class="highlight-keyword">if</span> (client.Capabilities.HasFlag (SmtpCapabilities.Authentication)) {
-            <span class="highlight-keyword">try</span> {
-                client.Authenticate (<span class="highlight-literal">"username"</span>, <span class="highlight-literal">"password"</span>);
-            } <span class="highlight-keyword">catch</span> (AuthenticationException ex) {
-                Console.WriteLine (<span class="highlight-literal">"Invalid user name or password."</span>);
-                <span class="highlight-keyword">return</span>;
-            } <span class="highlight-keyword">catch</span> (SmtpCommandException ex) {
-                Console.WriteLine (<span class="highlight-literal">"Error trying to authenticate: {0}"</span>, ex.Message);
-                Console.WriteLine (<span class="highlight-literal">"\tStatusCode: {0}"</span>, ex.StatusCode);
-                <span class="highlight-keyword">return</span>;
-            } <span class="highlight-keyword">catch</span> (SmtpProtocolException ex) {
-                Console.WriteLine (<span class="highlight-literal">"Protocol error while trying to authenticate: {0}"</span>, ex.Message);
-                <span class="highlight-keyword">return</span>;
-            }
-        }
+        client.Authenticate (<span class="highlight-literal">"username"</span>, <span class="highlight-literal">"password"</span>);
 
         <span class="highlight-keyword">foreach</span> (<span class="highlight-keyword">var</span> message <span class="highlight-keyword">in</span> messages) {
-            <span class="highlight-keyword">try</span> {
-                client.Send (message);
-            } <span class="highlight-keyword">catch</span> (SmtpCommandException ex) {
-                Console.WriteLine (<span class="highlight-literal">"Error sending message: {0}"</span>, ex.Message);
-                Console.WriteLine (<span class="highlight-literal">"\tStatusCode: {0}"</span>, ex.StatusCode);
-
-                <span class="highlight-keyword">switch</span> (ex.ErrorCode) {
-                <span class="highlight-keyword">case</span> SmtpErrorCode.RecipientNotAccepted:
-                    Console.WriteLine (<span class="highlight-literal">"\tRecipient not accepted: {0}"</span>, ex.Mailbox);
-                    <span class="highlight-keyword">break</span>;
-                <span class="highlight-keyword">case</span> SmtpErrorCode.SenderNotAccepted:
-                    Console.WriteLine (<span class="highlight-literal">"\tSender not accepted: {0}"</span>, ex.Mailbox);
-                    <span class="highlight-keyword">break</span>;
-                <span class="highlight-keyword">case</span> SmtpErrorCode.MessageNotAccepted:
-                    Console.WriteLine (<span class="highlight-literal">"\tMessage not accepted."</span>);
-                    <span class="highlight-keyword">break</span>;
-                }
-            } <span class="highlight-keyword">catch</span> (SmtpProtocolException ex) {
-                Console.WriteLine (<span class="highlight-literal">"Protocol error while sending message: {0}"</span>, ex.Message);
-            }
+            client.Send (message);
         }
 
         client.Disconnect (<span class="highlight-keyword">true</span>);

@@ -9,7 +9,7 @@
 {
     <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> client = <span class="highlight-keyword">new</span> SmtpClient ()) {
         <span class="highlight-keyword">try</span> {
-            client.Connect (<span class="highlight-literal">"smtp.gmail.com"</span>, <span class="highlight-number">993</span>, SecureSocketOptions.SslOnConnect);
+            client.Connect (<span class="highlight-literal">"smtp.gmail.com"</span>, <span class="highlight-number">465</span>, SecureSocketOptions.SslOnConnect);
         } <span class="highlight-keyword">catch</span> (SmtpCommandException ex) {
             Console.WriteLine (<span class="highlight-literal">"Error trying to connect: {0}"</span>, ex.Message);
             Console.WriteLine (<span class="highlight-literal">"\tStatusCode: {0}"</span>, ex.StatusCode);
