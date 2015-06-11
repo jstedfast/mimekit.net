@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -107,7 +107,7 @@
                 <div class="modal-body slim-dialog">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="page-header">Install with NuGet (recommended)</h4>
-                    <a href="https://www.nuget.org/packages/MimeKit/" target="_blank">
+                    <a href="https://www.nuget.org/packages/MailKit/" target="_blank">
                         <img src="img/nuget-logo.png" alt="NuGet" class="center-block" />
                     </a>
                     <br />
@@ -117,6 +117,7 @@
                                 <td width="46%" align="right">
                                     <div class="nuget-badge">
                                         PM&gt; Install-Package MimeKit
+                                        PM&gt; Install-Package MailKit
                                     </div>
                                 </td>
                                 <td width="8%" align="center">
@@ -137,6 +138,10 @@
                         ZIP file containing MimeKit source code:
                         <a class="btn btn-default btn-sm" href="https://github.com/jstedfast/MimeKit/releases" target="_blank">
                             <i class="fa fa-file-zip-o"></i> MimeKit
+                        </a>
+                        ZIP file containing MailKit source code:
+                        <a class="btn btn-default btn-sm" href="https://github.com/jstedfast/MailKit/releases" target="_blank">
+                            <i class="fa fa-file-zip-o"></i> MailKit
                         </a>
                     </p>
                     <br />
@@ -230,7 +235,7 @@
       <div class="row">
         <div class="col-lg-4">
           <h4><i class="fa fa-globe fa-lg"></i> World-Class</h4>
-          <p>Parse any message with MimeKit's powerful MIME parser.</p>
+          <p>Parse any message with MimeKit's powerful MIME parser. Properly handles any character encoding.</p>
           <p><a class="btn btn-default" href="docs/html/ParsingMessages.html" target="_blank" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
@@ -240,7 +245,7 @@
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <h4><i class="fa fa-user-secret fa-lg"></i> Security</h4>
-          <p>MimeKit has full support for S/MIME v3.2 and OpenPGP.</p>
+          <p>MimeKit has full support for S/MIME v3.2, OpenPGP, and DKIM-Signatures.</p>
           <p><a class="btn btn-default" href="docs/html/WorkingWithSMime.htm" target="_blank" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
@@ -369,5 +374,17 @@
     <script src="js/vendor/holder.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <!-- Google Analytics -->
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+      ga('create', 'UA-63841238-1', 'auto');
+      ga('send', 'pageview');
+    </script>
   </body>
 </html>
