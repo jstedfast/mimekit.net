@@ -3092,6 +3092,7 @@
   </HelpKINode>
   <HelpKINode Title="HtmlCommentToken.Comment property" Url="html/P_MimeKit_Text_HtmlCommentToken_Comment.htm" />
   <HelpKINode Title="HtmlCommentToken.HtmlCommentToken constructor" Url="html/M_MimeKit_Text_HtmlCommentToken__ctor.htm" />
+  <HelpKINode Title="HtmlCommentToken.IsBogusComment property" Url="html/P_MimeKit_Text_HtmlCommentToken_IsBogusComment.htm" />
   <HelpKINode Title="HtmlCommentToken.WriteTo method" Url="html/M_MimeKit_Text_HtmlCommentToken_WriteTo.htm" />
   <HelpKINode Title="HtmlDataToken class">
     <HelpKINode Title="HtmlDataToken Class" Url="html/T_MimeKit_Text_HtmlDataToken.htm" />
@@ -3991,6 +3992,7 @@
     <HelpKINode Title="SaslMechanism.IsAuthenticated Property " Url="html/P_MailKit_Security_SaslMechanism_IsAuthenticated.htm" />
     <HelpKINode Title="SmtpClient.IsAuthenticated Property " Url="html/P_MailKit_Net_Smtp_SmtpClient_IsAuthenticated.htm" />
   </HelpKINode>
+  <HelpKINode Title="IsBogusComment property" Url="html/P_MimeKit_Text_HtmlCommentToken_IsBogusComment.htm" />
   <HelpKINode Title="IsComputedProperty property" Url="html/P_MimeKit_Tnef_TnefPropertyReader_IsComputedProperty.htm" />
   <HelpKINode Title="IsConnected property">
     <HelpKINode Title="IMailService.IsConnected Property " Url="html/P_MailKit_IMailService_IsConnected.htm" />
