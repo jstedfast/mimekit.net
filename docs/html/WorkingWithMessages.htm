@@ -226,13 +226,6 @@ multipart/alternative
     {
         <span class="highlight-keyword">string</span> fileName = url.Replace (<span class="highlight-literal">':'</span>, <span class="highlight-literal">'_'</span>).Replace (<span class="highlight-literal">'\\'</span>, <span class="highlight-literal">'_'</span>).Replace (<span class="highlight-literal">'/'</span>, <span class="highlight-literal">'_'</span>);
 
-        <span class="highlight-comment">// try to add a file extension for niceness</span>
-        <span class="highlight-keyword">switch</span> (image.ContentType.MimeType.ToLowerInvariant ()) {
-        <span class="highlight-keyword">case</span> <span class="highlight-literal">"image/jpeg"</span>: fileName += <span class="highlight-literal">".jpg"</span>; <span class="highlight-keyword">break</span>;
-        <span class="highlight-keyword">case</span> <span class="highlight-literal">"image/png"</span>: fileName += <span class="highlight-literal">".png"</span>; <span class="highlight-keyword">break</span>;
-        <span class="highlight-keyword">case</span> <span class="highlight-literal">"image/gif"</span>: fileName += <span class="highlight-literal">".gif"</span>; <span class="highlight-keyword">break</span>;
-        }
-
         <span class="highlight-keyword">string</span> path = Path.Combine (tempDir, fileName);
 
         <span class="highlight-keyword">if</span> (!File.Exists (path)) {

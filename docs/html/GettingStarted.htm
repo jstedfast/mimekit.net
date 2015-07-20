@@ -2,17 +2,13 @@
           In <strong>Visual Studio</strong>'s
           <a href="http://docs.nuget.org/docs/start-here/using-the-package-manager-console" target="_blank">Package Manager Console</a>, simply enter the following command:
         </p><p><span class="command">Install-Package MailKit</span></p></div><div class="collapsibleAreaRegion" id="BuildingFromSource"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Building MailKit from Source</span></div><div id="ID1RBSection" class="collapsibleSection"><p>
-          First, you'll need to clone <strong>MailKit</strong>,
-          <strong>MimeKit</strong>,
-          <strong>Bouncy Castle</strong> and
-          <strong>Portable.Text.Encoding</strong> from the
+          First, you'll need to clone <strong>MailKit</strong> from the
           <a href="https://github.com/jstedfast" target="_blank">GitHub</a> repository:
-        </p><p><span class="command">git clone https://github.com/jstedfast/MailKit.git</span></p><p><span class="command">git clone https://github.com/jstedfast/MimeKit.git</span></p><p><span class="command">git clone https://github.com/jstedfast/bc-csharp.git</span></p><p><span class="command">git clone https://github.com/jstedfast/Portable.Text.Encoding.git</span></p><p>
-          Currently, <strong>MimeKit</strong> depends on the vs2010 branch of
-          bc-csharp for the <strong>Visual Studio 2010</strong> project files
-          that I've added (to replace the <strong>Visual Studio 2003</strong>
-          project files). To switch to that branch,
-        </p><p><span class="command">cd bc-csharp</span></p><p><span class="command">git checkout -b vs2010 origin/vs2010</span></p><p>
+        </p><p><span class="command">git clone https://github.com/jstedfast/MailKit.git</span></p><p>
+          Then, since <strong>MailKit</strong> makes use of git submodules, you
+          will need to initialize and update the submodules using the following command
+          from within the <strong>MailKit</strong> directory:
+        </p><p><span class="command">git submodule update --init --recursive</span></p><p>
           In the top-level <strong>MailKit</strong> source directory, there
           are several solution files:
         </p><ul><li><p><strong>MailKit.sln</strong> includes projects for .NET 4.0,
@@ -25,7 +21,7 @@
               .NET 4.0 project.
             </p></li></ul><p>
           If you don't have the Xamarin products, you'll probably want to open the
-          <strong>MailKit.Net40.sln</strong> instead of
+          <strong>MailKit.Net45.sln</strong> instead of
           <strong>MailKit.sln</strong>.
         </p><p>
           Once you've opened the appropriate <strong>MailKit</strong> solution
