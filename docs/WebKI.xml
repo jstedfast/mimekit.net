@@ -394,6 +394,7 @@
   <HelpKINode Title="AttachmentKey property" Url="html/P_MimeKit_Tnef_TnefReader_AttachmentKey.htm" />
   <HelpKINode Title="Attachments property">
     <HelpKINode Title="BodyBuilder.Attachments Property " Url="html/P_MimeKit_BodyBuilder_Attachments.htm" />
+    <HelpKINode Title="IMessageSummary.Attachments Property " Url="html/P_MailKit_IMessageSummary_Attachments.htm" />
     <HelpKINode Title="MessageSummary.Attachments Property " Url="html/P_MailKit_MessageSummary_Attachments.htm" />
     <HelpKINode Title="MimeMessage.Attachments Property " Url="html/P_MimeKit_MimeMessage_Attachments.htm" />
   </HelpKINode>
@@ -698,6 +699,7 @@
   <HelpKINode Title="BodyPartMultipart.Encode method" Url="html/M_MailKit_BodyPartMultipart_Encode.htm" />
   <HelpKINode Title="BodyParts property">
     <HelpKINode Title="BodyPartMultipart.BodyParts Property " Url="html/P_MailKit_BodyPartMultipart_BodyParts.htm" />
+    <HelpKINode Title="IMessageSummary.BodyParts Property " Url="html/P_MailKit_IMessageSummary_BodyParts.htm" />
     <HelpKINode Title="MessageSummary.BodyParts Property " Url="html/P_MailKit_MessageSummary_BodyParts.htm" />
     <HelpKINode Title="MimeMessage.BodyParts Property " Url="html/P_MimeKit_MimeMessage_BodyParts.htm" />
   </HelpKINode>
@@ -798,8 +800,6 @@
     <HelpKINode Title="MeasuringStream.CanSeek Property " Url="html/P_MimeKit_IO_MeasuringStream_CanSeek.htm" />
     <HelpKINode Title="MemoryBlockStream.CanSeek Property " Url="html/P_MimeKit_IO_MemoryBlockStream_CanSeek.htm" />
   </HelpKINode>
-  <HelpKINode Title="CanSort property" Url="html/P_MailKit_ISortable_CanSort.htm" />
-  <HelpKINode Title="CanThread property" Url="html/P_MailKit_IThreadable_CanThread.htm" />
   <HelpKINode Title="CanTimeout property">
     <HelpKINode Title="BoundStream.CanTimeout Property " Url="html/P_MimeKit_IO_BoundStream_CanTimeout.htm" />
     <HelpKINode Title="ChainedStream.CanTimeout Property " Url="html/P_MimeKit_IO_ChainedStream_CanTimeout.htm" />
@@ -1000,6 +1000,10 @@
     <HelpKINode Title="IMailFolder.CloseAsync Method " Url="html/M_MailKit_IMailFolder_CloseAsync.htm" />
     <HelpKINode Title="MailFolder.CloseAsync Method " Url="html/M_MailKit_MailFolder_CloseAsync.htm" />
   </HelpKINode>
+  <HelpKINode Title="Closed event">
+    <HelpKINode Title="IMailFolder.Closed Event" Url="html/E_MailKit_IMailFolder_Closed.htm" />
+    <HelpKINode Title="MailFolder.Closed Event" Url="html/E_MailKit_MailFolder_Closed.htm" />
+  </HelpKINode>
   <HelpKINode Title="CmsRecipient class">
     <HelpKINode Title="CmsRecipient Class" Url="html/T_MimeKit_Cryptography_CmsRecipient.htm" />
     <HelpKINode Title="about CmsRecipient class" Url="html/T_MimeKit_Cryptography_CmsRecipient.htm" />
@@ -1090,6 +1094,7 @@
   <HelpKINode Title="CompanyNameW field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_CompanyNameW.htm" />
   <HelpKINode Title="CompareTo method">
     <HelpKINode Title="InternetAddress.CompareTo Method " Url="html/M_MimeKit_InternetAddress_CompareTo.htm" />
+    <HelpKINode Title="InternetAddressList.CompareTo Method " Url="html/M_MimeKit_InternetAddressList_CompareTo.htm" />
     <HelpKINode Title="UniqueId.CompareTo Method " Url="html/M_MailKit_UniqueId_CompareTo.htm" />
   </HelpKINode>
   <HelpKINode Title="ComplianceMode property" Url="html/P_MimeKit_Tnef_TnefReader_ComplianceMode.htm" />
@@ -1488,6 +1493,8 @@
   <HelpKINode Title="Date property">
     <HelpKINode Title="DateSearchQuery.Date Property " Url="html/P_MailKit_Search_DateSearchQuery_Date.htm" />
     <HelpKINode Title="Envelope.Date Property " Url="html/P_MailKit_Envelope_Date.htm" />
+    <HelpKINode Title="IMessageSummary.Date Property " Url="html/P_MailKit_IMessageSummary_Date.htm" />
+    <HelpKINode Title="MessageSummary.Date Property " Url="html/P_MailKit_MessageSummary_Date.htm" />
     <HelpKINode Title="MimeMessage.Date Property " Url="html/P_MimeKit_MimeMessage_Date.htm" />
   </HelpKINode>
   <HelpKINode Title="DateEnd enumeration member" Url="html/T_MimeKit_Tnef_TnefAttributeTag.htm" />
@@ -3096,6 +3103,7 @@
   <HelpKINode Title="HtmlAttributeIdExtensions.ToAttributeName method" Url="html/M_MimeKit_Text_HtmlAttributeIdExtensions_ToAttributeName.htm" />
   <HelpKINode Title="HtmlBody property">
     <HelpKINode Title="BodyBuilder.HtmlBody Property " Url="html/P_MimeKit_BodyBuilder_HtmlBody.htm" />
+    <HelpKINode Title="IMessageSummary.HtmlBody Property " Url="html/P_MailKit_IMessageSummary_HtmlBody.htm" />
     <HelpKINode Title="MessageSummary.HtmlBody Property " Url="html/P_MailKit_MessageSummary_HtmlBody.htm" />
     <HelpKINode Title="MimeMessage.HtmlBody Property " Url="html/P_MimeKit_MimeMessage_HtmlBody.htm" />
     <HelpKINode Title="MultipartAlternative.HtmlBody Property " Url="html/P_MimeKit_MultipartAlternative_HtmlBody.htm" />
@@ -3404,6 +3412,7 @@
   <HelpKINode Title="IMailFolder.CheckAsync method" Url="html/M_MailKit_IMailFolder_CheckAsync.htm" />
   <HelpKINode Title="IMailFolder.Close method" Url="html/M_MailKit_IMailFolder_Close.htm" />
   <HelpKINode Title="IMailFolder.CloseAsync method" Url="html/M_MailKit_IMailFolder_CloseAsync.htm" />
+  <HelpKINode Title="IMailFolder.Closed event" Url="html/E_MailKit_IMailFolder_Closed.htm" />
   <HelpKINode Title="IMailFolder.CopyTo method" Url="html/Overload_MailKit_IMailFolder_CopyTo.htm" />
   <HelpKINode Title="IMailFolder.CopyToAsync method" Url="html/Overload_MailKit_IMailFolder_CopyToAsync.htm" />
   <HelpKINode Title="IMailFolder.Count property" Url="html/P_MailKit_IMailFolder_Count.htm" />
@@ -3454,6 +3463,7 @@
   <HelpKINode Title="IMailFolder.Name property" Url="html/P_MailKit_IMailFolder_Name.htm" />
   <HelpKINode Title="IMailFolder.Open method" Url="html/Overload_MailKit_IMailFolder_Open.htm" />
   <HelpKINode Title="IMailFolder.OpenAsync method" Url="html/Overload_MailKit_IMailFolder_OpenAsync.htm" />
+  <HelpKINode Title="IMailFolder.Opened event" Url="html/E_MailKit_IMailFolder_Opened.htm" />
   <HelpKINode Title="IMailFolder.ParentFolder property" Url="html/P_MailKit_IMailFolder_ParentFolder.htm" />
   <HelpKINode Title="IMailFolder.PermanentFlags property" Url="html/P_MailKit_IMailFolder_PermanentFlags.htm" />
   <HelpKINode Title="IMailFolder.Recent property" Url="html/P_MailKit_IMailFolder_Recent.htm" />
@@ -3737,7 +3747,10 @@
     <HelpKINode Title="about IMessageSummary interface" Url="html/T_MailKit_IMessageSummary.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MailKit_IMessageSummary.htm" />
   </HelpKINode>
+  <HelpKINode Title="IMessageSummary.Attachments property" Url="html/P_MailKit_IMessageSummary_Attachments.htm" />
   <HelpKINode Title="IMessageSummary.Body property" Url="html/P_MailKit_IMessageSummary_Body.htm" />
+  <HelpKINode Title="IMessageSummary.BodyParts property" Url="html/P_MailKit_IMessageSummary_BodyParts.htm" />
+  <HelpKINode Title="IMessageSummary.Date property" Url="html/P_MailKit_IMessageSummary_Date.htm" />
   <HelpKINode Title="IMessageSummary.Envelope property" Url="html/P_MailKit_IMessageSummary_Envelope.htm" />
   <HelpKINode Title="IMessageSummary.Fields property" Url="html/P_MailKit_IMessageSummary_Fields.htm" />
   <HelpKINode Title="IMessageSummary.Flags property" Url="html/P_MailKit_IMessageSummary_Flags.htm" />
@@ -3745,11 +3758,15 @@
   <HelpKINode Title="IMessageSummary.GMailMessageId property" Url="html/P_MailKit_IMessageSummary_GMailMessageId.htm" />
   <HelpKINode Title="IMessageSummary.GMailThreadId property" Url="html/P_MailKit_IMessageSummary_GMailThreadId.htm" />
   <HelpKINode Title="IMessageSummary.Headers property" Url="html/P_MailKit_IMessageSummary_Headers.htm" />
+  <HelpKINode Title="IMessageSummary.HtmlBody property" Url="html/P_MailKit_IMessageSummary_HtmlBody.htm" />
   <HelpKINode Title="IMessageSummary.Index property" Url="html/P_MailKit_IMessageSummary_Index.htm" />
   <HelpKINode Title="IMessageSummary.InternalDate property" Url="html/P_MailKit_IMessageSummary_InternalDate.htm" />
-  <HelpKINode Title="IMessageSummary.MessageSize property" Url="html/P_MailKit_IMessageSummary_MessageSize.htm" />
+  <HelpKINode Title="IMessageSummary.IsReply property" Url="html/P_MailKit_IMessageSummary_IsReply.htm" />
   <HelpKINode Title="IMessageSummary.ModSeq property" Url="html/P_MailKit_IMessageSummary_ModSeq.htm" />
+  <HelpKINode Title="IMessageSummary.NormalizedSubject property" Url="html/P_MailKit_IMessageSummary_NormalizedSubject.htm" />
   <HelpKINode Title="IMessageSummary.References property" Url="html/P_MailKit_IMessageSummary_References.htm" />
+  <HelpKINode Title="IMessageSummary.Size property" Url="html/P_MailKit_IMessageSummary_Size.htm" />
+  <HelpKINode Title="IMessageSummary.TextBody property" Url="html/P_MailKit_IMessageSummary_TextBody.htm" />
   <HelpKINode Title="IMessageSummary.UniqueId property" Url="html/P_MailKit_IMessageSummary_UniqueId.htm" />
   <HelpKINode Title="IMessageSummary.UserFlags property" Url="html/P_MailKit_IMessageSummary_UserFlags.htm" />
   <HelpKINode Title="IMimeDecoder interface">
@@ -3917,6 +3934,7 @@
   <HelpKINode Title="InternetAddressList.Add method" Url="html/M_MimeKit_InternetAddressList_Add.htm" />
   <HelpKINode Title="InternetAddressList.AddRange method" Url="html/M_MimeKit_InternetAddressList_AddRange.htm" />
   <HelpKINode Title="InternetAddressList.Clear method" Url="html/M_MimeKit_InternetAddressList_Clear.htm" />
+  <HelpKINode Title="InternetAddressList.CompareTo method" Url="html/M_MimeKit_InternetAddressList_CompareTo.htm" />
   <HelpKINode Title="InternetAddressList.Contains method" Url="html/M_MimeKit_InternetAddressList_Contains.htm" />
   <HelpKINode Title="InternetAddressList.CopyTo method" Url="html/M_MimeKit_InternetAddressList_CopyTo.htm" />
   <HelpKINode Title="InternetAddressList.Count property" Url="html/P_MimeKit_InternetAddressList_Count.htm" />
@@ -3969,6 +3987,7 @@
   <HelpKINode Title="InternetReferences enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="InternetReferencesA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_InternetReferencesA.htm" />
   <HelpKINode Title="InternetReferencesW field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_InternetReferencesW.htm" />
+  <HelpKINode Title="Invalid field" Url="html/F_MailKit_UniqueId_Invalid.htm" />
   <HelpKINode Title="InvalidAttribute enumeration member" Url="html/T_MimeKit_Tnef_TnefComplianceStatus.htm" />
   <HelpKINode Title="InvalidAttributeChecksum enumeration member" Url="html/T_MimeKit_Tnef_TnefComplianceStatus.htm" />
   <HelpKINode Title="InvalidAttributeLength enumeration member" Url="html/T_MimeKit_Tnef_TnefComplianceStatus.htm" />
@@ -4074,19 +4093,6 @@
     <HelpKINode Title="ImapFolder.IsOpen Property " Url="html/P_MailKit_Net_Imap_ImapFolder_IsOpen.htm" />
     <HelpKINode Title="MailFolder.IsOpen Property " Url="html/P_MailKit_MailFolder_IsOpen.htm" />
   </HelpKINode>
-  <HelpKINode Title="ISortable interface">
-    <HelpKINode Title="ISortable Interface" Url="html/T_MailKit_ISortable.htm" />
-    <HelpKINode Title="about ISortable interface" Url="html/T_MailKit_ISortable.htm" />
-    <HelpKINode Title="properties" Url="html/Properties_T_MailKit_ISortable.htm" />
-  </HelpKINode>
-  <HelpKINode Title="ISortable.CanSort property" Url="html/P_MailKit_ISortable_CanSort.htm" />
-  <HelpKINode Title="ISortable.SortableCc property" Url="html/P_MailKit_ISortable_SortableCc.htm" />
-  <HelpKINode Title="ISortable.SortableDate property" Url="html/P_MailKit_ISortable_SortableDate.htm" />
-  <HelpKINode Title="ISortable.SortableFrom property" Url="html/P_MailKit_ISortable_SortableFrom.htm" />
-  <HelpKINode Title="ISortable.SortableIndex property" Url="html/P_MailKit_ISortable_SortableIndex.htm" />
-  <HelpKINode Title="ISortable.SortableSize property" Url="html/P_MailKit_ISortable_SortableSize.htm" />
-  <HelpKINode Title="ISortable.SortableSubject property" Url="html/P_MailKit_ISortable_SortableSubject.htm" />
-  <HelpKINode Title="ISortable.SortableTo property" Url="html/P_MailKit_ISortable_SortableTo.htm" />
   <HelpKINode Title="IsPlain property">
     <HelpKINode Title="BodyPartText.IsPlain Property " Url="html/P_MailKit_BodyPartText_IsPlain.htm" />
     <HelpKINode Title="TextPart.IsPlain Property " Url="html/P_MimeKit_TextPart_IsPlain.htm" />
@@ -4107,6 +4113,10 @@
     <HelpKINode Title="UniqueIdSet.IsReadOnly Property " Url="html/P_MailKit_UniqueIdSet_IsReadOnly.htm" />
     <HelpKINode Title="X509CertificateChain.IsReadOnly Property " Url="html/P_MimeKit_Cryptography_X509CertificateChain_IsReadOnly.htm" />
   </HelpKINode>
+  <HelpKINode Title="IsReply property">
+    <HelpKINode Title="IMessageSummary.IsReply Property " Url="html/P_MailKit_IMessageSummary_IsReply.htm" />
+    <HelpKINode Title="MessageSummary.IsReply Property " Url="html/P_MailKit_MessageSummary_IsReply.htm" />
+  </HelpKINode>
   <HelpKINode Title="IsRichText property" Url="html/P_MimeKit_TextPart_IsRichText.htm" />
   <HelpKINode Title="IsSubscribed property">
     <HelpKINode Title="IMailFolder.IsSubscribed Property " Url="html/P_MailKit_IMailFolder_IsSubscribed.htm" />
@@ -4119,9 +4129,9 @@
     <HelpKINode Title="X509CrlRecord.IssuerName Property " Url="html/P_MimeKit_Cryptography_X509CrlRecord_IssuerName.htm" />
   </HelpKINode>
   <HelpKINode Title="IsSupported method" Url="html/M_MailKit_Security_SaslMechanism_IsSupported.htm" />
-  <HelpKINode Title="IsThreadableReply property" Url="html/P_MailKit_IThreadable_IsThreadableReply.htm" />
   <HelpKINode Title="IsTnefTypeValid property" Url="html/P_MimeKit_Tnef_TnefPropertyTag_IsTnefTypeValid.htm" />
   <HelpKINode Title="IsTrusted property" Url="html/P_MimeKit_Cryptography_X509CertificateRecord_IsTrusted.htm" />
+  <HelpKINode Title="IsValid property" Url="html/P_MailKit_UniqueId_IsValid.htm" />
   <HelpKINode Title="IsValidCrc32 property" Url="html/P_MimeKit_Tnef_RtfCompressedToRtf_IsValidCrc32.htm" />
   <HelpKINode Title="Item property">
     <HelpKINode Title="AccessRights.Item Property " Url="html/P_MailKit_AccessRights_Item.htm" />
@@ -4140,17 +4150,6 @@
     <HelpKINode Title="UniqueIdSet.Item Property " Url="html/P_MailKit_UniqueIdSet_Item.htm" />
     <HelpKINode Title="X509CertificateChain.Item Property " Url="html/P_MimeKit_Cryptography_X509CertificateChain_Item.htm" />
   </HelpKINode>
-  <HelpKINode Title="IThreadable interface">
-    <HelpKINode Title="IThreadable Interface" Url="html/T_MailKit_IThreadable.htm" />
-    <HelpKINode Title="about IThreadable interface" Url="html/T_MailKit_IThreadable.htm" />
-    <HelpKINode Title="properties" Url="html/Properties_T_MailKit_IThreadable.htm" />
-  </HelpKINode>
-  <HelpKINode Title="IThreadable.CanThread property" Url="html/P_MailKit_IThreadable_CanThread.htm" />
-  <HelpKINode Title="IThreadable.IsThreadableReply property" Url="html/P_MailKit_IThreadable_IsThreadableReply.htm" />
-  <HelpKINode Title="IThreadable.ThreadableMessageId property" Url="html/P_MailKit_IThreadable_ThreadableMessageId.htm" />
-  <HelpKINode Title="IThreadable.ThreadableReferences property" Url="html/P_MailKit_IThreadable_ThreadableReferences.htm" />
-  <HelpKINode Title="IThreadable.ThreadableSubject property" Url="html/P_MailKit_IThreadable_ThreadableSubject.htm" />
-  <HelpKINode Title="IThreadable.ThreadableUniqueId property" Url="html/P_MailKit_IThreadable_ThreadableUniqueId.htm" />
   <HelpKINode Title="ITransferProgress interface">
     <HelpKINode Title="ITransferProgress Interface" Url="html/T_MailKit_ITransferProgress.htm" />
     <HelpKINode Title="about ITransferProgress interface" Url="html/T_MailKit_ITransferProgress.htm" />
@@ -4381,6 +4380,7 @@
   <HelpKINode Title="MailFolder.CheckAsync method" Url="html/M_MailKit_MailFolder_CheckAsync.htm" />
   <HelpKINode Title="MailFolder.Close method" Url="html/M_MailKit_MailFolder_Close.htm" />
   <HelpKINode Title="MailFolder.CloseAsync method" Url="html/M_MailKit_MailFolder_CloseAsync.htm" />
+  <HelpKINode Title="MailFolder.Closed event" Url="html/E_MailKit_MailFolder_Closed.htm" />
   <HelpKINode Title="MailFolder.CopyTo method" Url="html/Overload_MailKit_MailFolder_CopyTo.htm" />
   <HelpKINode Title="MailFolder.CopyToAsync method" Url="html/Overload_MailKit_MailFolder_CopyToAsync.htm" />
   <HelpKINode Title="MailFolder.Count property" Url="html/P_MailKit_MailFolder_Count.htm" />
@@ -4432,6 +4432,7 @@
   <HelpKINode Title="MailFolder.MoveTo method" Url="html/Overload_MailKit_MailFolder_MoveTo.htm" />
   <HelpKINode Title="MailFolder.MoveToAsync method" Url="html/Overload_MailKit_MailFolder_MoveToAsync.htm" />
   <HelpKINode Title="MailFolder.Name property" Url="html/P_MailKit_MailFolder_Name.htm" />
+  <HelpKINode Title="MailFolder.OnClosed method" Url="html/M_MailKit_MailFolder_OnClosed.htm" />
   <HelpKINode Title="MailFolder.OnCountChanged method" Url="html/M_MailKit_MailFolder_OnCountChanged.htm" />
   <HelpKINode Title="MailFolder.OnDeleted method" Url="html/M_MailKit_MailFolder_OnDeleted.htm" />
   <HelpKINode Title="MailFolder.OnHighestModSeqChanged method" Url="html/M_MailKit_MailFolder_OnHighestModSeqChanged.htm" />
@@ -4441,6 +4442,7 @@
   <HelpKINode Title="MailFolder.OnMessagesArrived method" Url="html/M_MailKit_MailFolder_OnMessagesArrived.htm" />
   <HelpKINode Title="MailFolder.OnMessageSummaryFetched method" Url="html/M_MailKit_MailFolder_OnMessageSummaryFetched.htm" />
   <HelpKINode Title="MailFolder.OnMessagesVanished method" Url="html/M_MailKit_MailFolder_OnMessagesVanished.htm" />
+  <HelpKINode Title="MailFolder.OnOpened method" Url="html/M_MailKit_MailFolder_OnOpened.htm" />
   <HelpKINode Title="MailFolder.OnParentFolderRenamed method" Url="html/M_MailKit_MailFolder_OnParentFolderRenamed.htm" />
   <HelpKINode Title="MailFolder.OnRecentChanged method" Url="html/M_MailKit_MailFolder_OnRecentChanged.htm" />
   <HelpKINode Title="MailFolder.OnRenamed method" Url="html/M_MailKit_MailFolder_OnRenamed.htm" />
@@ -4449,6 +4451,7 @@
   <HelpKINode Title="MailFolder.OnUnsubscribed method" Url="html/M_MailKit_MailFolder_OnUnsubscribed.htm" />
   <HelpKINode Title="MailFolder.Open method" Url="html/Overload_MailKit_MailFolder_Open.htm" />
   <HelpKINode Title="MailFolder.OpenAsync method" Url="html/Overload_MailKit_MailFolder_OpenAsync.htm" />
+  <HelpKINode Title="MailFolder.Opened event" Url="html/E_MailKit_MailFolder_Opened.htm" />
   <HelpKINode Title="MailFolder.ParentFolder property" Url="html/P_MailKit_MailFolder_ParentFolder.htm" />
   <HelpKINode Title="MailFolder.PermanentFlags property" Url="html/P_MailKit_MailFolder_PermanentFlags.htm" />
   <HelpKINode Title="MailFolder.Recent property" Url="html/P_MailKit_MailFolder_Recent.htm" />
@@ -4523,8 +4526,6 @@
   <HelpKINode Title="MailKit.IMailTransport interface" Url="html/T_MailKit_IMailTransport.htm" />
   <HelpKINode Title="MailKit.IMessageSummary interface" Url="html/T_MailKit_IMessageSummary.htm" />
   <HelpKINode Title="MailKit.IProtocolLogger interface" Url="html/T_MailKit_IProtocolLogger.htm" />
-  <HelpKINode Title="MailKit.ISortable interface" Url="html/T_MailKit_ISortable.htm" />
-  <HelpKINode Title="MailKit.IThreadable interface" Url="html/T_MailKit_IThreadable.htm" />
   <HelpKINode Title="MailKit.ITransferProgress interface" Url="html/T_MailKit_ITransferProgress.htm" />
   <HelpKINode Title="MailKit.MailFolder class" Url="html/T_MailKit_MailFolder.htm" />
   <HelpKINode Title="MailKit.MailService class" Url="html/T_MailKit_MailService.htm" />
@@ -5006,17 +5007,12 @@
     <HelpKINode Title="TnefPropertyId Enumeration" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   </HelpKINode>
   <HelpKINode Title="MessageSize field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_MessageSize.htm" />
-  <HelpKINode Title="MessageSize property">
-    <HelpKINode Title="IMessageSummary.MessageSize Property " Url="html/P_MailKit_IMessageSummary_MessageSize.htm" />
-    <HelpKINode Title="MessageSummary.MessageSize Property " Url="html/P_MailKit_MessageSummary_MessageSize.htm" />
-  </HelpKINode>
   <HelpKINode Title="MessageSorter class">
     <HelpKINode Title="MessageSorter Class" Url="html/T_MailKit_MessageSorter.htm" />
     <HelpKINode Title="about MessageSorter class" Url="html/T_MailKit_MessageSorter.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MailKit_MessageSorter.htm" />
   </HelpKINode>
-  <HelpKINode Title="MessageSorter.Sort(Of T) method" Url="html/M_MailKit_MessageSorter_Sort__1.htm" />
-  <HelpKINode Title="MessageSorter.Sort&lt;T&gt; method" Url="html/M_MailKit_MessageSorter_Sort__1.htm" />
+  <HelpKINode Title="MessageSorter.Sort method" Url="html/Overload_MailKit_MessageSorter_Sort.htm" />
   <HelpKINode Title="MessageStatus enumeration member" Url="html/T_MimeKit_Tnef_TnefAttributeTag.htm" />
   <HelpKINode Title="MessageSubmissionId enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="MessageSubmissionId field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_MessageSubmissionId.htm" />
@@ -5030,6 +5026,7 @@
   <HelpKINode Title="MessageSummary.Attachments property" Url="html/P_MailKit_MessageSummary_Attachments.htm" />
   <HelpKINode Title="MessageSummary.Body property" Url="html/P_MailKit_MessageSummary_Body.htm" />
   <HelpKINode Title="MessageSummary.BodyParts property" Url="html/P_MailKit_MessageSummary_BodyParts.htm" />
+  <HelpKINode Title="MessageSummary.Date property" Url="html/P_MailKit_MessageSummary_Date.htm" />
   <HelpKINode Title="MessageSummary.Envelope property" Url="html/P_MailKit_MessageSummary_Envelope.htm" />
   <HelpKINode Title="MessageSummary.Fields property" Url="html/P_MailKit_MessageSummary_Fields.htm" />
   <HelpKINode Title="MessageSummary.Flags property" Url="html/P_MailKit_MessageSummary_Flags.htm" />
@@ -5040,10 +5037,12 @@
   <HelpKINode Title="MessageSummary.HtmlBody property" Url="html/P_MailKit_MessageSummary_HtmlBody.htm" />
   <HelpKINode Title="MessageSummary.Index property" Url="html/P_MailKit_MessageSummary_Index.htm" />
   <HelpKINode Title="MessageSummary.InternalDate property" Url="html/P_MailKit_MessageSummary_InternalDate.htm" />
-  <HelpKINode Title="MessageSummary.MessageSize property" Url="html/P_MailKit_MessageSummary_MessageSize.htm" />
+  <HelpKINode Title="MessageSummary.IsReply property" Url="html/P_MailKit_MessageSummary_IsReply.htm" />
   <HelpKINode Title="MessageSummary.MessageSummary constructor" Url="html/M_MailKit_MessageSummary__ctor.htm" />
   <HelpKINode Title="MessageSummary.ModSeq property" Url="html/P_MailKit_MessageSummary_ModSeq.htm" />
+  <HelpKINode Title="MessageSummary.NormalizedSubject property" Url="html/P_MailKit_MessageSummary_NormalizedSubject.htm" />
   <HelpKINode Title="MessageSummary.References property" Url="html/P_MailKit_MessageSummary_References.htm" />
+  <HelpKINode Title="MessageSummary.Size property" Url="html/P_MailKit_MessageSummary_Size.htm" />
   <HelpKINode Title="MessageSummary.TextBody property" Url="html/P_MailKit_MessageSummary_TextBody.htm" />
   <HelpKINode Title="MessageSummary.UniqueId property" Url="html/P_MailKit_MessageSummary_UniqueId.htm" />
   <HelpKINode Title="MessageSummary.UserFlags property" Url="html/P_MailKit_MessageSummary_UserFlags.htm" />
@@ -5078,10 +5077,12 @@
   <HelpKINode Title="MessageThread class">
     <HelpKINode Title="MessageThread Class" Url="html/T_MailKit_MessageThread.htm" />
     <HelpKINode Title="about MessageThread class" Url="html/T_MailKit_MessageThread.htm" />
+    <HelpKINode Title="constructor" Url="html/M_MailKit_MessageThread__ctor.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MailKit_MessageThread.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MailKit_MessageThread.htm" />
   </HelpKINode>
   <HelpKINode Title="MessageThread.Children property" Url="html/P_MailKit_MessageThread_Children.htm" />
+  <HelpKINode Title="MessageThread.MessageThread constructor" Url="html/M_MailKit_MessageThread__ctor.htm" />
   <HelpKINode Title="MessageThread.UniqueId property" Url="html/P_MailKit_MessageThread_UniqueId.htm" />
   <HelpKINode Title="MessageThreader class">
     <HelpKINode Title="MessageThreader Class" Url="html/T_MailKit_MessageThreader.htm" />
@@ -5454,6 +5455,7 @@
   </HelpKINode>
   <HelpKINode Title="MimeUtils.EnumerateReferences method" Url="html/Overload_MimeKit_Utils_MimeUtils_EnumerateReferences.htm" />
   <HelpKINode Title="MimeUtils.GenerateMessageId method" Url="html/Overload_MimeKit_Utils_MimeUtils_GenerateMessageId.htm" />
+  <HelpKINode Title="MimeUtils.ParseMessageId method" Url="html/Overload_MimeKit_Utils_MimeUtils_ParseMessageId.htm" />
   <HelpKINode Title="MimeUtils.Quote method" Url="html/M_MimeKit_Utils_MimeUtils_Quote.htm" />
   <HelpKINode Title="MimeUtils.TryParse method" Url="html/Overload_MimeKit_Utils_MimeUtils_TryParse.htm" />
   <HelpKINode Title="MimeUtils.TryParseVersion method" Url="html/Overload_MimeKit_Utils_MimeUtils_TryParseVersion.htm" />
@@ -5703,6 +5705,10 @@
     <HelpKINode Title="MessagePriority Enumeration" Url="html/T_MimeKit_MessagePriority.htm" />
   </HelpKINode>
   <HelpKINode Title="NormalizedSubject enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
+  <HelpKINode Title="NormalizedSubject property">
+    <HelpKINode Title="IMessageSummary.NormalizedSubject Property " Url="html/P_MailKit_IMessageSummary_NormalizedSubject.htm" />
+    <HelpKINode Title="MessageSummary.NormalizedSubject Property " Url="html/P_MailKit_MessageSummary_NormalizedSubject.htm" />
+  </HelpKINode>
   <HelpKINode Title="NormalizedSubjectA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_NormalizedSubjectA.htm" />
   <HelpKINode Title="NormalizedSubjectW field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_NormalizedSubjectW.htm" />
   <HelpKINode Title="NoScript enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
@@ -5786,6 +5792,7 @@
   <HelpKINode Title="OnAlert method" Url="html/M_MailKit_MailStore_OnAlert.htm" />
   <HelpKINode Title="OnAuthenticated method" Url="html/M_MailKit_MailService_OnAuthenticated.htm" />
   <HelpKINode Title="OnChanged method" Url="html/M_MimeKit_InternetAddress_OnChanged.htm" />
+  <HelpKINode Title="OnClosed method" Url="html/M_MailKit_MailFolder_OnClosed.htm" />
   <HelpKINode Title="OnConnected method" Url="html/M_MailKit_MailService_OnConnected.htm" />
   <HelpKINode Title="OnCountChanged method" Url="html/M_MailKit_MailFolder_OnCountChanged.htm" />
   <HelpKINode Title="OnDeleted method" Url="html/M_MailKit_MailFolder_OnDeleted.htm" />
@@ -5802,6 +5809,7 @@
   <HelpKINode Title="OnMessageSent method" Url="html/M_MailKit_MailTransport_OnMessageSent.htm" />
   <HelpKINode Title="OnMessageSummaryFetched method" Url="html/M_MailKit_MailFolder_OnMessageSummaryFetched.htm" />
   <HelpKINode Title="OnMessagesVanished method" Url="html/M_MailKit_MailFolder_OnMessagesVanished.htm" />
+  <HelpKINode Title="OnOpened method" Url="html/M_MailKit_MailFolder_OnOpened.htm" />
   <HelpKINode Title="OnParentFolderRenamed method">
     <HelpKINode Title="ImapFolder.OnParentFolderRenamed Method " Url="html/M_MailKit_Net_Imap_ImapFolder_OnParentFolderRenamed.htm" />
     <HelpKINode Title="MailFolder.OnParentFolderRenamed Method " Url="html/M_MailKit_MailFolder_OnParentFolderRenamed.htm" />
@@ -5824,6 +5832,10 @@
   <HelpKINode Title="OpenAsync method">
     <HelpKINode Title="IMailFolder.OpenAsync Method " Url="html/Overload_MailKit_IMailFolder_OpenAsync.htm" />
     <HelpKINode Title="MailFolder.OpenAsync Method " Url="html/Overload_MailKit_MailFolder_OpenAsync.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Opened event">
+    <HelpKINode Title="IMailFolder.Opened Event" Url="html/E_MailKit_IMailFolder_Opened.htm" />
+    <HelpKINode Title="MailFolder.Opened Event" Url="html/E_MailKit_MailFolder_Opened.htm" />
   </HelpKINode>
   <HelpKINode Title="OpenFolder field" Url="html/F_MailKit_AccessRight_OpenFolder.htm" />
   <HelpKINode Title="OpenPgpContext class">
@@ -6147,6 +6159,7 @@
   <HelpKINode Title="ParseException.TokenIndex property" Url="html/P_MimeKit_ParseException_TokenIndex.htm" />
   <HelpKINode Title="ParseHeaders method" Url="html/M_MimeKit_MimeParser_ParseHeaders.htm" />
   <HelpKINode Title="ParseMessage method" Url="html/M_MimeKit_MimeParser_ParseMessage.htm" />
+  <HelpKINode Title="ParseMessageId method" Url="html/Overload_MimeKit_Utils_MimeUtils_ParseMessageId.htm" />
   <HelpKINode Title="ParserOptions class">
     <HelpKINode Title="ParserOptions Class" Url="html/T_MimeKit_ParserOptions.htm" />
     <HelpKINode Title="about ParserOptions class" Url="html/T_MimeKit_ParserOptions.htm" />
@@ -7522,7 +7535,11 @@
     <HelpKINode Title="SmtpCapabilities Enumeration" Url="html/T_MailKit_Net_Smtp_SmtpCapabilities.htm" />
   </HelpKINode>
   <HelpKINode Title="Size field" Url="html/F_MailKit_Search_OrderBy_Size.htm" />
-  <HelpKINode Title="Size property" Url="html/P_MimeKit_ContentDisposition_Size.htm" />
+  <HelpKINode Title="Size property">
+    <HelpKINode Title="ContentDisposition.Size Property " Url="html/P_MimeKit_ContentDisposition_Size.htm" />
+    <HelpKINode Title="IMessageSummary.Size Property " Url="html/P_MailKit_IMessageSummary_Size.htm" />
+    <HelpKINode Title="MessageSummary.Size Property " Url="html/P_MailKit_MessageSummary_Size.htm" />
+  </HelpKINode>
   <HelpKINode Title="Small enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
   <HelpKINode Title="SmallerThan method" Url="html/M_MailKit_Search_SearchQuery_SmallerThan.htm" />
   <HelpKINode Title="SmtpAddress enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
@@ -7579,15 +7596,7 @@
   </HelpKINode>
   <HelpKINode Title="SmtpProtocolException.SmtpProtocolException constructor" Url="html/Overload_MailKit_Net_Smtp_SmtpProtocolException__ctor.htm" />
   <HelpKINode Title="Sort enumeration member" Url="html/T_MailKit_Net_Imap_ImapCapabilities.htm" />
-  <HelpKINode Title="Sort(Of T) method" Url="html/M_MailKit_MessageSorter_Sort__1.htm" />
-  <HelpKINode Title="Sort&lt;T&gt; method" Url="html/M_MailKit_MessageSorter_Sort__1.htm" />
-  <HelpKINode Title="SortableCc property" Url="html/P_MailKit_ISortable_SortableCc.htm" />
-  <HelpKINode Title="SortableDate property" Url="html/P_MailKit_ISortable_SortableDate.htm" />
-  <HelpKINode Title="SortableFrom property" Url="html/P_MailKit_ISortable_SortableFrom.htm" />
-  <HelpKINode Title="SortableIndex property" Url="html/P_MailKit_ISortable_SortableIndex.htm" />
-  <HelpKINode Title="SortableSize property" Url="html/P_MailKit_ISortable_SortableSize.htm" />
-  <HelpKINode Title="SortableSubject property" Url="html/P_MailKit_ISortable_SortableSubject.htm" />
-  <HelpKINode Title="SortableTo property" Url="html/P_MailKit_ISortable_SortableTo.htm" />
+  <HelpKINode Title="Sort method" Url="html/Overload_MailKit_MessageSorter_Sort.htm" />
   <HelpKINode Title="SortDisplay enumeration member" Url="html/T_MailKit_Net_Imap_ImapCapabilities.htm" />
   <HelpKINode Title="Source enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
   <HelpKINode Title="Source property" Url="html/P_MimeKit_IO_FilteredStream_Source.htm" />
@@ -7851,6 +7860,7 @@
   <HelpKINode Title="TextArea enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
   <HelpKINode Title="TextBody property">
     <HelpKINode Title="BodyBuilder.TextBody Property " Url="html/P_MimeKit_BodyBuilder_TextBody.htm" />
+    <HelpKINode Title="IMessageSummary.TextBody Property " Url="html/P_MailKit_IMessageSummary_TextBody.htm" />
     <HelpKINode Title="MessageSummary.TextBody Property " Url="html/P_MailKit_MessageSummary_TextBody.htm" />
     <HelpKINode Title="MimeMessage.TextBody Property " Url="html/P_MimeKit_MimeMessage_TextBody.htm" />
     <HelpKINode Title="MultipartAlternative.TextBody Property " Url="html/P_MimeKit_MultipartAlternative_TextBody.htm" />
@@ -7953,10 +7963,6 @@
     <HelpKINode Title="MailFolder.Thread Method " Url="html/Overload_MailKit_MailFolder_Thread.htm" />
     <HelpKINode Title="MessageThreader.Thread Method " Url="html/Overload_MailKit_MessageThreader_Thread.htm" />
   </HelpKINode>
-  <HelpKINode Title="ThreadableMessageId property" Url="html/P_MailKit_IThreadable_ThreadableMessageId.htm" />
-  <HelpKINode Title="ThreadableReferences property" Url="html/P_MailKit_IThreadable_ThreadableReferences.htm" />
-  <HelpKINode Title="ThreadableSubject property" Url="html/P_MailKit_IThreadable_ThreadableSubject.htm" />
-  <HelpKINode Title="ThreadableUniqueId property" Url="html/P_MailKit_IThreadable_ThreadableUniqueId.htm" />
   <HelpKINode Title="ThreadAsync method">
     <HelpKINode Title="IMailFolder.ThreadAsync Method " Url="html/Overload_MailKit_IMailFolder_ThreadAsync.htm" />
     <HelpKINode Title="MailFolder.ThreadAsync Method " Url="html/Overload_MailKit_MailFolder_ThreadAsync.htm" />
@@ -8939,6 +8945,7 @@
     <HelpKINode Title="fields" Url="html/Fields_T_MailKit_UniqueId.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MailKit_UniqueId.htm" />
     <HelpKINode Title="operators" Url="html/Operators_T_MailKit_UniqueId.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_MailKit_UniqueId.htm" />
   </HelpKINode>
   <HelpKINode Title="UniqueId.CompareTo method" Url="html/M_MailKit_UniqueId_CompareTo.htm" />
   <HelpKINode Title="UniqueId.Equality operator" Url="html/M_MailKit_UniqueId_op_Equality.htm" />
@@ -8948,6 +8955,8 @@
   <HelpKINode Title="UniqueId.GreaterThanOrEqual operator" Url="html/M_MailKit_UniqueId_op_GreaterThanOrEqual.htm" />
   <HelpKINode Title="UniqueId.Id field" Url="html/F_MailKit_UniqueId_Id.htm" />
   <HelpKINode Title="UniqueId.Inequality operator" Url="html/M_MailKit_UniqueId_op_Inequality.htm" />
+  <HelpKINode Title="UniqueId.Invalid field" Url="html/F_MailKit_UniqueId_Invalid.htm" />
+  <HelpKINode Title="UniqueId.IsValid property" Url="html/P_MailKit_UniqueId_IsValid.htm" />
   <HelpKINode Title="UniqueId.LessThan operator" Url="html/M_MailKit_UniqueId_op_LessThan.htm" />
   <HelpKINode Title="UniqueId.LessThanOrEqual operator" Url="html/M_MailKit_UniqueId_op_LessThanOrEqual.htm" />
   <HelpKINode Title="UniqueId.MaxValue field" Url="html/F_MailKit_UniqueId_MaxValue.htm" />
