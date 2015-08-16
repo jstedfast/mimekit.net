@@ -1260,6 +1260,7 @@
   <HelpKINode Title="ContentObject.DecodeTo method" Url="html/M_MimeKit_ContentObject_DecodeTo.htm" />
   <HelpKINode Title="ContentObject.Encoding property" Url="html/P_MimeKit_ContentObject_Encoding.htm" />
   <HelpKINode Title="ContentObject.Open method" Url="html/M_MimeKit_ContentObject_Open.htm" />
+  <HelpKINode Title="ContentObject.Stream property" Url="html/P_MimeKit_ContentObject_Stream.htm" />
   <HelpKINode Title="ContentObject.WriteTo method" Url="html/M_MimeKit_ContentObject_WriteTo.htm" />
   <HelpKINode Title="ContentReturnRequested enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="ContentReturnRequested field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_ContentReturnRequested.htm" />
@@ -3328,6 +3329,7 @@
   <HelpKINode Title="IContentObject.DecodeTo method" Url="html/M_MimeKit_IContentObject_DecodeTo.htm" />
   <HelpKINode Title="IContentObject.Encoding property" Url="html/P_MimeKit_IContentObject_Encoding.htm" />
   <HelpKINode Title="IContentObject.Open method" Url="html/M_MimeKit_IContentObject_Open.htm" />
+  <HelpKINode Title="IContentObject.Stream property" Url="html/P_MimeKit_IContentObject_Stream.htm" />
   <HelpKINode Title="IContentObject.WriteTo method" Url="html/M_MimeKit_IContentObject_WriteTo.htm" />
   <HelpKINode Title="Id enumeration member">
     <HelpKINode Title="HtmlAttributeId Enumeration" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
@@ -4609,7 +4611,7 @@
   <HelpKINode Title="MailService class">
     <HelpKINode Title="MailService Class" Url="html/T_MailKit_MailService.htm" />
     <HelpKINode Title="about MailService class" Url="html/T_MailKit_MailService.htm" />
-    <HelpKINode Title="constructor" Url="html/M_MailKit_MailService__ctor.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_MailKit_MailService__ctor.htm" />
     <HelpKINode Title="events" Url="html/Events_T_MailKit_MailService.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MailKit_MailService.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MailKit_MailService.htm" />
@@ -4629,7 +4631,7 @@
   <HelpKINode Title="MailService.Finalize method" Url="html/M_MailKit_MailService_Finalize.htm" />
   <HelpKINode Title="MailService.IsAuthenticated property" Url="html/P_MailKit_MailService_IsAuthenticated.htm" />
   <HelpKINode Title="MailService.IsConnected property" Url="html/P_MailKit_MailService_IsConnected.htm" />
-  <HelpKINode Title="MailService.MailService constructor" Url="html/M_MailKit_MailService__ctor.htm" />
+  <HelpKINode Title="MailService.MailService constructor" Url="html/Overload_MailKit_MailService__ctor.htm" />
   <HelpKINode Title="MailService.NoOp method" Url="html/M_MailKit_MailService_NoOp.htm" />
   <HelpKINode Title="MailService.NoOpAsync method" Url="html/M_MailKit_MailService_NoOpAsync.htm" />
   <HelpKINode Title="MailService.OnAuthenticated method" Url="html/M_MailKit_MailService_OnAuthenticated.htm" />
@@ -4638,6 +4640,7 @@
   <HelpKINode Title="MailService.Protocol property" Url="html/P_MailKit_MailService_Protocol.htm" />
   <HelpKINode Title="MailService.ProtocolLogger property" Url="html/P_MailKit_MailService_ProtocolLogger.htm" />
   <HelpKINode Title="MailService.ServerCertificateValidationCallback property" Url="html/P_MailKit_MailService_ServerCertificateValidationCallback.htm" />
+  <HelpKINode Title="MailService.SslProtocols property" Url="html/P_MailKit_MailService_SslProtocols.htm" />
   <HelpKINode Title="MailService.SyncRoot property" Url="html/P_MailKit_MailService_SyncRoot.htm" />
   <HelpKINode Title="MailService.Timeout property" Url="html/P_MailKit_MailService_Timeout.htm" />
   <HelpKINode Title="MailSpool class">
@@ -7641,6 +7644,7 @@
   <HelpKINode Title="SqliteCertificateDatabase.SqliteCertificateDatabase constructor" Url="html/Overload_MimeKit_Cryptography_SqliteCertificateDatabase__ctor.htm" />
   <HelpKINode Title="Src enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
   <HelpKINode Title="SslOnConnect enumeration member" Url="html/T_MailKit_Security_SecureSocketOptions.htm" />
+  <HelpKINode Title="SslProtocols property" Url="html/P_MailKit_MailService_SslProtocols.htm" />
   <HelpKINode Title="StandBy enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
   <HelpKINode Title="Start enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
   <HelpKINode Title="Start property" Url="html/P_MailKit_UniqueIdRange_Start.htm" />
@@ -7648,9 +7652,9 @@
   <HelpKINode Title="StartDate enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="StartDate field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_StartDate.htm" />
   <HelpKINode Title="StartTLS enumeration member">
-    <HelpKINode Title="ImapCapabilities Enumeration" Url="html/T_MailKit_Net_Imap_ImapCapabilities.htm" />
     <HelpKINode Title="Pop3Capabilities Enumeration" Url="html/T_MailKit_Net_Pop3_Pop3Capabilities.htm" />
     <HelpKINode Title="SmtpCapabilities Enumeration" Url="html/T_MailKit_Net_Smtp_SmtpCapabilities.htm" />
+    <HelpKINode Title="ImapCapabilities Enumeration" Url="html/T_MailKit_Net_Imap_ImapCapabilities.htm" />
   </HelpKINode>
   <HelpKINode Title="StartTls enumeration member" Url="html/T_MailKit_Security_SecureSocketOptions.htm" />
   <HelpKINode Title="StartTlsWhenAvailable enumeration member" Url="html/T_MailKit_Security_SecureSocketOptions.htm" />
@@ -7693,6 +7697,10 @@
   <HelpKINode Title="StoreState field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_StoreState.htm" />
   <HelpKINode Title="StoreSupportMask enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="StoreSupportMask field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_StoreSupportMask.htm" />
+  <HelpKINode Title="Stream property">
+    <HelpKINode Title="ContentObject.Stream Property " Url="html/P_MimeKit_ContentObject_Stream.htm" />
+    <HelpKINode Title="IContentObject.Stream Property " Url="html/P_MimeKit_IContentObject_Stream.htm" />
+  </HelpKINode>
   <HelpKINode Title="StreamOffset property" Url="html/P_MimeKit_Tnef_TnefReader_StreamOffset.htm" />
   <HelpKINode Title="StreamTruncated enumeration member" Url="html/T_MimeKit_Tnef_TnefComplianceStatus.htm" />
   <HelpKINode Title="StreetAddress enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
