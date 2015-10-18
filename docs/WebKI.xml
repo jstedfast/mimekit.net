@@ -23,6 +23,11 @@
     <HelpKINode Title="ApplicationPgpSignature.Accept Method " Url="html/M_MimeKit_Cryptography_ApplicationPgpSignature_Accept.htm" />
     <HelpKINode Title="ApplicationPkcs7Mime.Accept Method " Url="html/M_MimeKit_Cryptography_ApplicationPkcs7Mime_Accept.htm" />
     <HelpKINode Title="ApplicationPkcs7Signature.Accept Method " Url="html/M_MimeKit_Cryptography_ApplicationPkcs7Signature_Accept.htm" />
+    <HelpKINode Title="BodyPart.Accept Method " Url="html/M_MailKit_BodyPart_Accept.htm" />
+    <HelpKINode Title="BodyPartBasic.Accept Method " Url="html/M_MailKit_BodyPartBasic_Accept.htm" />
+    <HelpKINode Title="BodyPartMessage.Accept Method " Url="html/M_MailKit_BodyPartMessage_Accept.htm" />
+    <HelpKINode Title="BodyPartMultipart.Accept Method " Url="html/M_MailKit_BodyPartMultipart_Accept.htm" />
+    <HelpKINode Title="BodyPartText.Accept Method " Url="html/M_MailKit_BodyPartText_Accept.htm" />
     <HelpKINode Title="MessageDeliveryStatus.Accept Method " Url="html/M_MimeKit_MessageDeliveryStatus_Accept.htm" />
     <HelpKINode Title="MessageDispositionNotification.Accept Method " Url="html/M_MimeKit_MessageDispositionNotification_Accept.htm" />
     <HelpKINode Title="MessagePart.Accept Method " Url="html/M_MimeKit_MessagePart_Accept.htm" />
@@ -629,6 +634,7 @@
     <HelpKINode Title="methods" Url="html/Methods_T_MailKit_BodyPart.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MailKit_BodyPart.htm" />
   </HelpKINode>
+  <HelpKINode Title="BodyPart.Accept method" Url="html/M_MailKit_BodyPart_Accept.htm" />
   <HelpKINode Title="BodyPart.BodyPart constructor" Url="html/M_MailKit_BodyPart__ctor.htm" />
   <HelpKINode Title="BodyPart.ContentType property" Url="html/P_MailKit_BodyPart_ContentType.htm" />
   <HelpKINode Title="BodyPart.Encode method" Url="html/M_MailKit_BodyPart_Encode.htm" />
@@ -642,6 +648,7 @@
     <HelpKINode Title="methods" Url="html/Methods_T_MailKit_BodyPartBasic.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MailKit_BodyPartBasic.htm" />
   </HelpKINode>
+  <HelpKINode Title="BodyPartBasic.Accept method" Url="html/M_MailKit_BodyPartBasic_Accept.htm" />
   <HelpKINode Title="BodyPartBasic.BodyPartBasic constructor" Url="html/M_MailKit_BodyPartBasic__ctor.htm" />
   <HelpKINode Title="BodyPartBasic.ContentDescription property" Url="html/P_MailKit_BodyPartBasic_ContentDescription.htm" />
   <HelpKINode Title="BodyPartBasic.ContentDisposition property" Url="html/P_MailKit_BodyPartBasic_ContentDisposition.htm" />
@@ -679,6 +686,7 @@
     <HelpKINode Title="methods" Url="html/Methods_T_MailKit_BodyPartMessage.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MailKit_BodyPartMessage.htm" />
   </HelpKINode>
+  <HelpKINode Title="BodyPartMessage.Accept method" Url="html/M_MailKit_BodyPartMessage_Accept.htm" />
   <HelpKINode Title="BodyPartMessage.Body property" Url="html/P_MailKit_BodyPartMessage_Body.htm" />
   <HelpKINode Title="BodyPartMessage.BodyPartMessage constructor" Url="html/M_MailKit_BodyPartMessage__ctor.htm" />
   <HelpKINode Title="BodyPartMessage.Encode method" Url="html/M_MailKit_BodyPartMessage_Encode.htm" />
@@ -691,6 +699,7 @@
     <HelpKINode Title="methods" Url="html/Methods_T_MailKit_BodyPartMultipart.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MailKit_BodyPartMultipart.htm" />
   </HelpKINode>
+  <HelpKINode Title="BodyPartMultipart.Accept method" Url="html/M_MailKit_BodyPartMultipart_Accept.htm" />
   <HelpKINode Title="BodyPartMultipart.BodyPartMultipart constructor" Url="html/M_MailKit_BodyPartMultipart__ctor.htm" />
   <HelpKINode Title="BodyPartMultipart.BodyParts property" Url="html/P_MailKit_BodyPartMultipart_BodyParts.htm" />
   <HelpKINode Title="BodyPartMultipart.ContentDisposition property" Url="html/P_MailKit_BodyPartMultipart_ContentDisposition.htm" />
@@ -710,11 +719,27 @@
     <HelpKINode Title="methods" Url="html/Methods_T_MailKit_BodyPartText.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MailKit_BodyPartText.htm" />
   </HelpKINode>
+  <HelpKINode Title="BodyPartText.Accept method" Url="html/M_MailKit_BodyPartText_Accept.htm" />
   <HelpKINode Title="BodyPartText.BodyPartText constructor" Url="html/M_MailKit_BodyPartText__ctor.htm" />
   <HelpKINode Title="BodyPartText.Encode method" Url="html/M_MailKit_BodyPartText_Encode.htm" />
   <HelpKINode Title="BodyPartText.IsHtml property" Url="html/P_MailKit_BodyPartText_IsHtml.htm" />
   <HelpKINode Title="BodyPartText.IsPlain property" Url="html/P_MailKit_BodyPartText_IsPlain.htm" />
   <HelpKINode Title="BodyPartText.Lines property" Url="html/P_MailKit_BodyPartText_Lines.htm" />
+  <HelpKINode Title="BodyPartVisitor class">
+    <HelpKINode Title="BodyPartVisitor Class" Url="html/T_MailKit_BodyPartVisitor.htm" />
+    <HelpKINode Title="about BodyPartVisitor class" Url="html/T_MailKit_BodyPartVisitor.htm" />
+    <HelpKINode Title="constructor" Url="html/M_MailKit_BodyPartVisitor__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_MailKit_BodyPartVisitor.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BodyPartVisitor.BodyPartVisitor constructor" Url="html/M_MailKit_BodyPartVisitor__ctor.htm" />
+  <HelpKINode Title="BodyPartVisitor.Visit method" Url="html/M_MailKit_BodyPartVisitor_Visit.htm" />
+  <HelpKINode Title="BodyPartVisitor.VisitBodyPart method" Url="html/M_MailKit_BodyPartVisitor_VisitBodyPart.htm" />
+  <HelpKINode Title="BodyPartVisitor.VisitBodyPartBasic method" Url="html/M_MailKit_BodyPartVisitor_VisitBodyPartBasic.htm" />
+  <HelpKINode Title="BodyPartVisitor.VisitBodyPartMessage method" Url="html/M_MailKit_BodyPartVisitor_VisitBodyPartMessage.htm" />
+  <HelpKINode Title="BodyPartVisitor.VisitBodyPartMultipart method" Url="html/M_MailKit_BodyPartVisitor_VisitBodyPartMultipart.htm" />
+  <HelpKINode Title="BodyPartVisitor.VisitBodyPartText method" Url="html/M_MailKit_BodyPartVisitor_VisitBodyPartText.htm" />
+  <HelpKINode Title="BodyPartVisitor.VisitChildren method" Url="html/M_MailKit_BodyPartVisitor_VisitChildren.htm" />
+  <HelpKINode Title="BodyPartVisitor.VisitMessage method" Url="html/M_MailKit_BodyPartVisitor_VisitMessage.htm" />
   <HelpKINode Title="BodyStructure enumeration member" Url="html/T_MailKit_MessageSummaryItems.htm" />
   <HelpKINode Title="BodyW field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_BodyW.htm" />
   <HelpKINode Title="BogusComment enumeration member" Url="html/T_MimeKit_Text_HtmlTokenizerState.htm" />
@@ -3526,6 +3551,7 @@
   <HelpKINode Title="IMailService.DisconnectAsync method" Url="html/M_MailKit_IMailService_DisconnectAsync.htm" />
   <HelpKINode Title="IMailService.Disconnected event" Url="html/E_MailKit_IMailService_Disconnected.htm" />
   <HelpKINode Title="IMailService.IsConnected property" Url="html/P_MailKit_IMailService_IsConnected.htm" />
+  <HelpKINode Title="IMailService.LocalEndPoint property" Url="html/P_MailKit_IMailService_LocalEndPoint.htm" />
   <HelpKINode Title="IMailService.NoOp method" Url="html/M_MailKit_IMailService_NoOp.htm" />
   <HelpKINode Title="IMailService.NoOpAsync method" Url="html/M_MailKit_IMailService_NoOpAsync.htm" />
   <HelpKINode Title="IMailService.ServerCertificateValidationCallback property" Url="html/P_MailKit_IMailService_ServerCertificateValidationCallback.htm" />
@@ -4275,6 +4301,10 @@
     <HelpKINode Title="MimeMessage.Load Method " Url="html/Overload_MimeKit_MimeMessage_Load.htm" />
   </HelpKINode>
   <HelpKINode Title="LocalDomain property" Url="html/P_MailKit_Net_Smtp_SmtpClient_LocalDomain.htm" />
+  <HelpKINode Title="LocalEndPoint property">
+    <HelpKINode Title="IMailService.LocalEndPoint Property " Url="html/P_MailKit_IMailService_LocalEndPoint.htm" />
+    <HelpKINode Title="MailService.LocalEndPoint Property " Url="html/P_MailKit_MailService_LocalEndPoint.htm" />
+  </HelpKINode>
   <HelpKINode Title="Locality enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="LocalityA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_LocalityA.htm" />
   <HelpKINode Title="LocalityW field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_LocalityW.htm" />
@@ -4510,6 +4540,7 @@
   <HelpKINode Title="MailKit.BodyPartMessage class" Url="html/T_MailKit_BodyPartMessage.htm" />
   <HelpKINode Title="MailKit.BodyPartMultipart class" Url="html/T_MailKit_BodyPartMultipart.htm" />
   <HelpKINode Title="MailKit.BodyPartText class" Url="html/T_MailKit_BodyPartText.htm" />
+  <HelpKINode Title="MailKit.BodyPartVisitor class" Url="html/T_MailKit_BodyPartVisitor.htm" />
   <HelpKINode Title="MailKit.CommandException class" Url="html/T_MailKit_CommandException.htm" />
   <HelpKINode Title="MailKit.DeliveryStatusNotification enumeration" Url="html/T_MailKit_DeliveryStatusNotification.htm" />
   <HelpKINode Title="MailKit.Envelope class" Url="html/T_MailKit_Envelope.htm" />
@@ -4631,6 +4662,7 @@
   <HelpKINode Title="MailService.Finalize method" Url="html/M_MailKit_MailService_Finalize.htm" />
   <HelpKINode Title="MailService.IsAuthenticated property" Url="html/P_MailKit_MailService_IsAuthenticated.htm" />
   <HelpKINode Title="MailService.IsConnected property" Url="html/P_MailKit_MailService_IsConnected.htm" />
+  <HelpKINode Title="MailService.LocalEndPoint property" Url="html/P_MailKit_MailService_LocalEndPoint.htm" />
   <HelpKINode Title="MailService.MailService constructor" Url="html/Overload_MailKit_MailService__ctor.htm" />
   <HelpKINode Title="MailService.NoOp method" Url="html/M_MailKit_MailService_NoOp.htm" />
   <HelpKINode Title="MailService.NoOpAsync method" Url="html/M_MailKit_MailService_NoOpAsync.htm" />
@@ -7652,9 +7684,9 @@
   <HelpKINode Title="StartDate enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="StartDate field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_StartDate.htm" />
   <HelpKINode Title="StartTLS enumeration member">
-    <HelpKINode Title="Pop3Capabilities Enumeration" Url="html/T_MailKit_Net_Pop3_Pop3Capabilities.htm" />
     <HelpKINode Title="SmtpCapabilities Enumeration" Url="html/T_MailKit_Net_Smtp_SmtpCapabilities.htm" />
     <HelpKINode Title="ImapCapabilities Enumeration" Url="html/T_MailKit_Net_Imap_ImapCapabilities.htm" />
+    <HelpKINode Title="Pop3Capabilities Enumeration" Url="html/T_MailKit_Net_Pop3_Pop3Capabilities.htm" />
   </HelpKINode>
   <HelpKINode Title="StartTls enumeration member" Url="html/T_MailKit_Security_SecureSocketOptions.htm" />
   <HelpKINode Title="StartTlsWhenAvailable enumeration member" Url="html/T_MailKit_Security_SecureSocketOptions.htm" />
@@ -9165,14 +9197,28 @@
   <HelpKINode Title="Video enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
   <HelpKINode Title="ViewsEntryId enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="ViewsEntryId field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_ViewsEntryId.htm" />
-  <HelpKINode Title="Visit method" Url="html/Overload_MimeKit_MimeVisitor_Visit.htm" />
+  <HelpKINode Title="Visit method">
+    <HelpKINode Title="BodyPartVisitor.Visit Method " Url="html/M_MailKit_BodyPartVisitor_Visit.htm" />
+    <HelpKINode Title="MimeVisitor.Visit Method " Url="html/Overload_MimeKit_MimeVisitor_Visit.htm" />
+  </HelpKINode>
   <HelpKINode Title="VisitApplicationPgpEncrypted method" Url="html/M_MimeKit_MimeVisitor_VisitApplicationPgpEncrypted.htm" />
   <HelpKINode Title="VisitApplicationPgpSignature method" Url="html/M_MimeKit_MimeVisitor_VisitApplicationPgpSignature.htm" />
   <HelpKINode Title="VisitApplicationPkcs7Mime method" Url="html/M_MimeKit_MimeVisitor_VisitApplicationPkcs7Mime.htm" />
   <HelpKINode Title="VisitApplicationPkcs7Signature method" Url="html/M_MimeKit_MimeVisitor_VisitApplicationPkcs7Signature.htm" />
   <HelpKINode Title="VisitBody method" Url="html/M_MimeKit_MimeVisitor_VisitBody.htm" />
-  <HelpKINode Title="VisitChildren method" Url="html/M_MimeKit_MimeVisitor_VisitChildren.htm" />
-  <HelpKINode Title="VisitMessage method" Url="html/M_MimeKit_MimeVisitor_VisitMessage.htm" />
+  <HelpKINode Title="VisitBodyPart method" Url="html/M_MailKit_BodyPartVisitor_VisitBodyPart.htm" />
+  <HelpKINode Title="VisitBodyPartBasic method" Url="html/M_MailKit_BodyPartVisitor_VisitBodyPartBasic.htm" />
+  <HelpKINode Title="VisitBodyPartMessage method" Url="html/M_MailKit_BodyPartVisitor_VisitBodyPartMessage.htm" />
+  <HelpKINode Title="VisitBodyPartMultipart method" Url="html/M_MailKit_BodyPartVisitor_VisitBodyPartMultipart.htm" />
+  <HelpKINode Title="VisitBodyPartText method" Url="html/M_MailKit_BodyPartVisitor_VisitBodyPartText.htm" />
+  <HelpKINode Title="VisitChildren method">
+    <HelpKINode Title="BodyPartVisitor.VisitChildren Method " Url="html/M_MailKit_BodyPartVisitor_VisitChildren.htm" />
+    <HelpKINode Title="MimeVisitor.VisitChildren Method " Url="html/M_MimeKit_MimeVisitor_VisitChildren.htm" />
+  </HelpKINode>
+  <HelpKINode Title="VisitMessage method">
+    <HelpKINode Title="BodyPartVisitor.VisitMessage Method " Url="html/M_MailKit_BodyPartVisitor_VisitMessage.htm" />
+    <HelpKINode Title="MimeVisitor.VisitMessage Method " Url="html/M_MimeKit_MimeVisitor_VisitMessage.htm" />
+  </HelpKINode>
   <HelpKINode Title="VisitMessageDeliveryStatus method" Url="html/M_MimeKit_MimeVisitor_VisitMessageDeliveryStatus.htm" />
   <HelpKINode Title="VisitMessageDispositionNotification method" Url="html/M_MimeKit_MimeVisitor_VisitMessageDispositionNotification.htm" />
   <HelpKINode Title="VisitMessagePart method" Url="html/M_MimeKit_MimeVisitor_VisitMessagePart.htm" />
