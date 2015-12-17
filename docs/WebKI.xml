@@ -1322,6 +1322,7 @@
   <HelpKINode Title="ContentType.Charset property" Url="html/P_MimeKit_ContentType_Charset.htm" />
   <HelpKINode Title="ContentType.ContentType constructor" Url="html/M_MimeKit_ContentType__ctor.htm" />
   <HelpKINode Title="ContentType.Format property" Url="html/P_MimeKit_ContentType_Format.htm" />
+  <HelpKINode Title="ContentType.IsMimeType method" Url="html/M_MimeKit_ContentType_IsMimeType.htm" />
   <HelpKINode Title="ContentType.Matches method" Url="html/M_MimeKit_ContentType_Matches.htm" />
   <HelpKINode Title="ContentType.MediaSubtype property" Url="html/P_MimeKit_ContentType_MediaSubtype.htm" />
   <HelpKINode Title="ContentType.MediaType property" Url="html/P_MimeKit_ContentType_MediaType.htm" />
@@ -1459,6 +1460,7 @@
   <HelpKINode Title="CreateHMAC method">
     <HelpKINode Title="SaslMechanismScramBase.CreateHMAC Method " Url="html/M_MailKit_Security_SaslMechanismScramBase_CreateHMAC.htm" />
     <HelpKINode Title="SaslMechanismScramSha1.CreateHMAC Method " Url="html/M_MailKit_Security_SaslMechanismScramSha1_CreateHMAC.htm" />
+    <HelpKINode Title="SaslMechanismScramSha256.CreateHMAC Method " Url="html/M_MailKit_Security_SaslMechanismScramSha256_CreateHMAC.htm" />
   </HelpKINode>
   <HelpKINode Title="CreateImapFolder method" Url="html/M_MailKit_Net_Imap_ImapClient_CreateImapFolder.htm" />
   <HelpKINode Title="CreateScriptDataToken method" Url="html/M_MimeKit_Text_HtmlTokenizer_CreateScriptDataToken.htm" />
@@ -1603,6 +1605,7 @@
     <HelpKINode Title="ContentEncoding Enumeration" Url="html/T_MimeKit_ContentEncoding.htm" />
     <HelpKINode Title="HtmlWriterState Enumeration" Url="html/T_MimeKit_Text_HtmlWriterState.htm" />
     <HelpKINode Title="MimeFormat Enumeration" Url="html/T_MimeKit_MimeFormat.htm" />
+    <HelpKINode Title="ParameterEncodingMethod Enumeration" Url="html/T_MimeKit_ParameterEncodingMethod.htm" />
   </HelpKINode>
   <HelpKINode Title="Default field">
     <HelpKINode Title="FormatOptions.Default Field" Url="html/F_MimeKit_FormatOptions_Default.htm" />
@@ -2015,6 +2018,7 @@
     <HelpKINode Title="YEncoder.Encoding Property " Url="html/P_MimeKit_Encodings_YEncoder_Encoding.htm" />
   </HelpKINode>
   <HelpKINode Title="EncodingConstraint enumeration" Url="html/T_MimeKit_EncodingConstraint.htm" />
+  <HelpKINode Title="EncodingMethod property" Url="html/P_MimeKit_Parameter_EncodingMethod.htm" />
   <HelpKINode Title="Encrypt method">
     <HelpKINode Title="ApplicationPkcs7Mime.Encrypt Method " Url="html/Overload_MimeKit_Cryptography_ApplicationPkcs7Mime_Encrypt.htm" />
     <HelpKINode Title="CryptographyContext.Encrypt Method " Url="html/M_MimeKit_Cryptography_CryptographyContext_Encrypt.htm" />
@@ -2447,6 +2451,7 @@
   <HelpKINode Title="FormatOptions.International property" Url="html/P_MimeKit_FormatOptions_International.htm" />
   <HelpKINode Title="FormatOptions.MaxLineLength property" Url="html/P_MimeKit_FormatOptions_MaxLineLength.htm" />
   <HelpKINode Title="FormatOptions.NewLineFormat property" Url="html/P_MimeKit_FormatOptions_NewLineFormat.htm" />
+  <HelpKINode Title="FormatOptions.ParameterEncodingMethod property" Url="html/P_MimeKit_FormatOptions_ParameterEncodingMethod.htm" />
   <HelpKINode Title="FormCategory enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="FormCategoryA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_FormCategoryA.htm" />
   <HelpKINode Title="FormCategorySub enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
@@ -2905,6 +2910,7 @@
   <HelpKINode Title="GroupAddress.Equals method" Url="html/Overload_MimeKit_GroupAddress_Equals.htm" />
   <HelpKINode Title="GroupAddress.GroupAddress constructor" Url="html/Overload_MimeKit_GroupAddress__ctor.htm" />
   <HelpKINode Title="GroupAddress.Members property" Url="html/P_MimeKit_GroupAddress_Members.htm" />
+  <HelpKINode Title="GroupAddress.Parse method" Url="html/Overload_MimeKit_GroupAddress_Parse.htm" />
   <HelpKINode Title="GroupAddress.ToString method" Url="html/Overload_MimeKit_GroupAddress_ToString.htm" />
   <HelpKINode Title="GroupAddress.TryParse method" Url="html/Overload_MimeKit_GroupAddress_TryParse.htm" />
   <HelpKINode Title="H1 enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
@@ -2923,6 +2929,7 @@
   <HelpKINode Title="Hash method">
     <HelpKINode Title="SaslMechanismScramBase.Hash Method " Url="html/M_MailKit_Security_SaslMechanismScramBase_Hash.htm" />
     <HelpKINode Title="SaslMechanismScramSha1.Hash Method " Url="html/M_MailKit_Security_SaslMechanismScramSha1_Hash.htm" />
+    <HelpKINode Title="SaslMechanismScramSha256.Hash Method " Url="html/M_MailKit_Security_SaslMechanismScramSha256_Hash.htm" />
   </HelpKINode>
   <HelpKINode Title="HasNoChildren enumeration member" Url="html/T_MailKit_FolderAttributes.htm" />
   <HelpKINode Title="Haval5160 enumeration member" Url="html/T_MimeKit_Cryptography_DigestAlgorithm.htm" />
@@ -4089,7 +4096,6 @@
     <HelpKINode Title="SmtpClient.IsAuthenticated Property " Url="html/P_MailKit_Net_Smtp_SmtpClient_IsAuthenticated.htm" />
   </HelpKINode>
   <HelpKINode Title="IsBogusComment property" Url="html/P_MimeKit_Text_HtmlCommentToken_IsBogusComment.htm" />
-  <HelpKINode Title="IsComputedProperty property" Url="html/P_MimeKit_Tnef_TnefPropertyReader_IsComputedProperty.htm" />
   <HelpKINode Title="IsConnected property">
     <HelpKINode Title="IMailService.IsConnected Property " Url="html/P_MailKit_IMailService_IsConnected.htm" />
     <HelpKINode Title="ImapClient.IsConnected Property " Url="html/P_MailKit_Net_Imap_ImapClient_IsConnected.htm" />
@@ -4121,8 +4127,8 @@
   <HelpKINode Title="IsIdle property" Url="html/P_MailKit_Net_Imap_ImapClient_IsIdle.htm" />
   <HelpKINode Title="IsIndex enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
   <HelpKINode Title="IsInternational property" Url="html/P_MimeKit_MailboxAddress_IsInternational.htm" />
-  <HelpKINode Title="IsLargeValue property" Url="html/P_MimeKit_Tnef_TnefPropertyReader_IsLargeValue.htm" />
   <HelpKINode Title="IsMap enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
+  <HelpKINode Title="IsMimeType method" Url="html/M_MimeKit_ContentType_IsMimeType.htm" />
   <HelpKINode Title="IsMultiValued property" Url="html/P_MimeKit_Tnef_TnefPropertyTag_IsMultiValued.htm" />
   <HelpKINode Title="IsMultiValuedProperty property" Url="html/P_MimeKit_Tnef_TnefPropertyReader_IsMultiValuedProperty.htm" />
   <HelpKINode Title="IsNamed property" Url="html/P_MimeKit_Tnef_TnefPropertyTag_IsNamed.htm" />
@@ -4399,6 +4405,7 @@
   <HelpKINode Title="MailboxAddress.Equals method" Url="html/Overload_MimeKit_MailboxAddress_Equals.htm" />
   <HelpKINode Title="MailboxAddress.IsInternational property" Url="html/P_MimeKit_MailboxAddress_IsInternational.htm" />
   <HelpKINode Title="MailboxAddress.MailboxAddress constructor" Url="html/Overload_MimeKit_MailboxAddress__ctor.htm" />
+  <HelpKINode Title="MailboxAddress.Parse method" Url="html/Overload_MimeKit_MailboxAddress_Parse.htm" />
   <HelpKINode Title="MailboxAddress.Route property" Url="html/P_MimeKit_MailboxAddress_Route.htm" />
   <HelpKINode Title="MailboxAddress.ToString method" Url="html/Overload_MimeKit_MailboxAddress_ToString.htm" />
   <HelpKINode Title="MailboxAddress.TryParse method" Url="html/Overload_MimeKit_MailboxAddress_TryParse.htm" />
@@ -4648,6 +4655,7 @@
   <HelpKINode Title="MailKit.Security.SaslMechanismPlain class" Url="html/T_MailKit_Security_SaslMechanismPlain.htm" />
   <HelpKINode Title="MailKit.Security.SaslMechanismScramBase class" Url="html/T_MailKit_Security_SaslMechanismScramBase.htm" />
   <HelpKINode Title="MailKit.Security.SaslMechanismScramSha1 class" Url="html/T_MailKit_Security_SaslMechanismScramSha1.htm" />
+  <HelpKINode Title="MailKit.Security.SaslMechanismScramSha256 class" Url="html/T_MailKit_Security_SaslMechanismScramSha256.htm" />
   <HelpKINode Title="MailKit.Security.SecureSocketOptions enumeration" Url="html/T_MailKit_Security_SecureSocketOptions.htm" />
   <HelpKINode Title="MailKit.ServiceNotAuthenticatedException class" Url="html/T_MailKit_ServiceNotAuthenticatedException.htm" />
   <HelpKINode Title="MailKit.ServiceNotConnectedException class" Url="html/T_MailKit_ServiceNotConnectedException.htm" />
@@ -4834,6 +4842,7 @@
     <HelpKINode Title="SaslMechanismOAuth2.MechanismName Property " Url="html/P_MailKit_Security_SaslMechanismOAuth2_MechanismName.htm" />
     <HelpKINode Title="SaslMechanismPlain.MechanismName Property " Url="html/P_MailKit_Security_SaslMechanismPlain_MechanismName.htm" />
     <HelpKINode Title="SaslMechanismScramSha1.MechanismName Property " Url="html/P_MailKit_Security_SaslMechanismScramSha1_MechanismName.htm" />
+    <HelpKINode Title="SaslMechanismScramSha256.MechanismName Property " Url="html/P_MailKit_Security_SaslMechanismScramSha256_MechanismName.htm" />
   </HelpKINode>
   <HelpKINode Title="Media enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
   <HelpKINode Title="MediaSubtype property" Url="html/P_MimeKit_ContentType_MediaSubtype.htm" />
@@ -5352,6 +5361,7 @@
   <HelpKINode Title="MimeKit.MultipartRelated class" Url="html/T_MimeKit_MultipartRelated.htm" />
   <HelpKINode Title="MimeKit.NewLineFormat enumeration" Url="html/T_MimeKit_NewLineFormat.htm" />
   <HelpKINode Title="MimeKit.Parameter class" Url="html/T_MimeKit_Parameter.htm" />
+  <HelpKINode Title="MimeKit.ParameterEncodingMethod enumeration" Url="html/T_MimeKit_ParameterEncodingMethod.htm" />
   <HelpKINode Title="MimeKit.ParameterList class" Url="html/T_MimeKit_ParameterList.htm" />
   <HelpKINode Title="MimeKit.ParseException class" Url="html/T_MimeKit_ParseException.htm" />
   <HelpKINode Title="MimeKit.ParserOptions class" Url="html/T_MimeKit_ParserOptions.htm" />
@@ -5823,7 +5833,6 @@
     <HelpKINode Title="HtmlTagId Enumeration" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
     <HelpKINode Title="TnefPropertyType Enumeration" Url="html/T_MimeKit_Tnef_TnefPropertyType.htm" />
   </HelpKINode>
-  <HelpKINode Title="ObjectIid property" Url="html/P_MimeKit_Tnef_TnefPropertyReader_ObjectIid.htm" />
   <HelpKINode Title="ObjectType enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="ObjectType field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_ObjectType.htm" />
   <HelpKINode Title="ObsoletedIpms enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
@@ -6153,11 +6162,14 @@
     <HelpKINode Title="properties" Url="html/Properties_T_MimeKit_Parameter.htm" />
   </HelpKINode>
   <HelpKINode Title="Parameter.Encoding property" Url="html/P_MimeKit_Parameter_Encoding.htm" />
+  <HelpKINode Title="Parameter.EncodingMethod property" Url="html/P_MimeKit_Parameter_EncodingMethod.htm" />
   <HelpKINode Title="Parameter.Name property" Url="html/P_MimeKit_Parameter_Name.htm" />
   <HelpKINode Title="Parameter.Parameter constructor" Url="html/Overload_MimeKit_Parameter__ctor.htm" />
   <HelpKINode Title="Parameter.ToString method" Url="html/M_MimeKit_Parameter_ToString.htm" />
   <HelpKINode Title="Parameter.Value property" Url="html/P_MimeKit_Parameter_Value.htm" />
   <HelpKINode Title="ParameterComplianceMode property" Url="html/P_MimeKit_ParserOptions_ParameterComplianceMode.htm" />
+  <HelpKINode Title="ParameterEncodingMethod enumeration" Url="html/T_MimeKit_ParameterEncodingMethod.htm" />
+  <HelpKINode Title="ParameterEncodingMethod property" Url="html/P_MimeKit_FormatOptions_ParameterEncodingMethod.htm" />
   <HelpKINode Title="ParameterList class">
     <HelpKINode Title="ParameterList Class" Url="html/T_MimeKit_ParameterList.htm" />
     <HelpKINode Title="about ParameterList class" Url="html/T_MimeKit_ParameterList.htm" />
@@ -6200,8 +6212,10 @@
   <HelpKINode Title="Parse method">
     <HelpKINode Title="ContentDisposition.Parse Method " Url="html/Overload_MimeKit_ContentDisposition_Parse.htm" />
     <HelpKINode Title="ContentType.Parse Method " Url="html/Overload_MimeKit_ContentType_Parse.htm" />
+    <HelpKINode Title="GroupAddress.Parse Method " Url="html/Overload_MimeKit_GroupAddress_Parse.htm" />
     <HelpKINode Title="InternetAddress.Parse Method " Url="html/Overload_MimeKit_InternetAddress_Parse.htm" />
     <HelpKINode Title="InternetAddressList.Parse Method " Url="html/Overload_MimeKit_InternetAddressList_Parse.htm" />
+    <HelpKINode Title="MailboxAddress.Parse Method " Url="html/Overload_MimeKit_MailboxAddress_Parse.htm" />
     <HelpKINode Title="UniqueId.Parse Method " Url="html/Overload_MailKit_UniqueId_Parse.htm" />
   </HelpKINode>
   <HelpKINode Title="ParseEntity method" Url="html/M_MimeKit_MimeParser_ParseEntity.htm" />
@@ -6989,11 +7003,13 @@
     <HelpKINode Title="about Rfc2047 class" Url="html/T_MimeKit_Utils_Rfc2047.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MimeKit_Utils_Rfc2047.htm" />
   </HelpKINode>
+  <HelpKINode Title="Rfc2047 enumeration member" Url="html/T_MimeKit_ParameterEncodingMethod.htm" />
   <HelpKINode Title="Rfc2047.DecodePhrase method" Url="html/Overload_MimeKit_Utils_Rfc2047_DecodePhrase.htm" />
   <HelpKINode Title="Rfc2047.DecodeText method" Url="html/Overload_MimeKit_Utils_Rfc2047_DecodeText.htm" />
   <HelpKINode Title="Rfc2047.EncodePhrase method" Url="html/Overload_MimeKit_Utils_Rfc2047_EncodePhrase.htm" />
   <HelpKINode Title="Rfc2047.EncodeText method" Url="html/Overload_MimeKit_Utils_Rfc2047_EncodeText.htm" />
   <HelpKINode Title="Rfc2047ComplianceMode property" Url="html/P_MimeKit_ParserOptions_Rfc2047ComplianceMode.htm" />
+  <HelpKINode Title="Rfc2231 enumeration member" Url="html/T_MimeKit_ParameterEncodingMethod.htm" />
   <HelpKINode Title="RfcComplianceMode enumeration" Url="html/T_MimeKit_RfcComplianceMode.htm" />
   <HelpKINode Title="RichText enumeration member" Url="html/T_MimeKit_Text_TextFormat.htm" />
   <HelpKINode Title="Right field" Url="html/F_MailKit_AccessRight_Right.htm" />
@@ -7178,6 +7194,17 @@
   <HelpKINode Title="SaslMechanismScramSha1.Hash method" Url="html/M_MailKit_Security_SaslMechanismScramSha1_Hash.htm" />
   <HelpKINode Title="SaslMechanismScramSha1.MechanismName property" Url="html/P_MailKit_Security_SaslMechanismScramSha1_MechanismName.htm" />
   <HelpKINode Title="SaslMechanismScramSha1.SaslMechanismScramSha1 constructor" Url="html/M_MailKit_Security_SaslMechanismScramSha1__ctor.htm" />
+  <HelpKINode Title="SaslMechanismScramSha256 class">
+    <HelpKINode Title="SaslMechanismScramSha256 Class" Url="html/T_MailKit_Security_SaslMechanismScramSha256.htm" />
+    <HelpKINode Title="about SaslMechanismScramSha256 class" Url="html/T_MailKit_Security_SaslMechanismScramSha256.htm" />
+    <HelpKINode Title="constructor" Url="html/M_MailKit_Security_SaslMechanismScramSha256__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_MailKit_Security_SaslMechanismScramSha256.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_MailKit_Security_SaslMechanismScramSha256.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SaslMechanismScramSha256.CreateHMAC method" Url="html/M_MailKit_Security_SaslMechanismScramSha256_CreateHMAC.htm" />
+  <HelpKINode Title="SaslMechanismScramSha256.Hash method" Url="html/M_MailKit_Security_SaslMechanismScramSha256_Hash.htm" />
+  <HelpKINode Title="SaslMechanismScramSha256.MechanismName property" Url="html/P_MailKit_Security_SaslMechanismScramSha256_MechanismName.htm" />
+  <HelpKINode Title="SaslMechanismScramSha256.SaslMechanismScramSha256 constructor" Url="html/M_MailKit_Security_SaslMechanismScramSha256__ctor.htm" />
   <HelpKINode Title="SaslPrep method" Url="html/M_MailKit_Security_SaslMechanism_SaslPrep.htm" />
   <HelpKINode Title="SavePublicKeyRingBundle method" Url="html/M_MimeKit_Cryptography_OpenPgpContext_SavePublicKeyRingBundle.htm" />
   <HelpKINode Title="SaveRemainingInput method" Url="html/M_MimeKit_IO_Filters_MimeFilterBase_SaveRemainingInput.htm" />
@@ -8129,13 +8156,10 @@
   <HelpKINode Title="TnefPropertyReader.GetEmbeddedMessageReader method" Url="html/M_MimeKit_Tnef_TnefPropertyReader_GetEmbeddedMessageReader.htm" />
   <HelpKINode Title="TnefPropertyReader.GetHashCode method" Url="html/M_MimeKit_Tnef_TnefPropertyReader_GetHashCode.htm" />
   <HelpKINode Title="TnefPropertyReader.GetRawValueReadStream method" Url="html/M_MimeKit_Tnef_TnefPropertyReader_GetRawValueReadStream.htm" />
-  <HelpKINode Title="TnefPropertyReader.IsComputedProperty property" Url="html/P_MimeKit_Tnef_TnefPropertyReader_IsComputedProperty.htm" />
   <HelpKINode Title="TnefPropertyReader.IsEmbeddedMessage property" Url="html/P_MimeKit_Tnef_TnefPropertyReader_IsEmbeddedMessage.htm" />
-  <HelpKINode Title="TnefPropertyReader.IsLargeValue property" Url="html/P_MimeKit_Tnef_TnefPropertyReader_IsLargeValue.htm" />
   <HelpKINode Title="TnefPropertyReader.IsMultiValuedProperty property" Url="html/P_MimeKit_Tnef_TnefPropertyReader_IsMultiValuedProperty.htm" />
   <HelpKINode Title="TnefPropertyReader.IsNamedProperty property" Url="html/P_MimeKit_Tnef_TnefPropertyReader_IsNamedProperty.htm" />
   <HelpKINode Title="TnefPropertyReader.IsObjectProperty property" Url="html/P_MimeKit_Tnef_TnefPropertyReader_IsObjectProperty.htm" />
-  <HelpKINode Title="TnefPropertyReader.ObjectIid property" Url="html/P_MimeKit_Tnef_TnefPropertyReader_ObjectIid.htm" />
   <HelpKINode Title="TnefPropertyReader.PropertyCount property" Url="html/P_MimeKit_Tnef_TnefPropertyReader_PropertyCount.htm" />
   <HelpKINode Title="TnefPropertyReader.PropertyNameId property" Url="html/P_MimeKit_Tnef_TnefPropertyReader_PropertyNameId.htm" />
   <HelpKINode Title="TnefPropertyReader.PropertyTag property" Url="html/P_MimeKit_Tnef_TnefPropertyReader_PropertyTag.htm" />
