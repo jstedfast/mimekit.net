@@ -330,7 +330,7 @@ multipart/alternative
         <span class="highlight-comment">// even if the IsAttachment property is false.</span>
         attachments.Add (entity);
     }
-}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EACAEAAA");</script><p>And the way you'd use this visitor might look something like this:</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAAEAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAAEAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAAAEAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAAEAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">void</span> Render (WebBrowser browser, MimeMessage message)
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EACAEAAA");</script><p>And the way you'd use this visitor might look something like this:</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAAEAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAAEAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAAAEAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAAEAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">void</span> Render (MimeMessage message)
 {
     <span class="highlight-keyword">var</span> tmpDir = Path.Combine (Path.GetTempPath (), message.MessageId);
     <span class="highlight-keyword">var</span> visitor = <span class="highlight-keyword">new</span> HtmlPreviewVisitor (tmpDir);
@@ -339,7 +339,8 @@ multipart/alternative
 
     message.Accept (visitor);
 
-    browser.DocumentText = visitor.HtmlBody;
+    DisplayHtml (visitor.HtmlBody);
+    DisplayAttachments (visitor.Attachments);
 }</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAAEAAA");</script></div><div class="collapsibleAreaRegion" id="TextBodyAndHtmlBody"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID3RB')" onkeypress="SectionExpandCollapse_CheckKey('ID3RB', event)" tabindex="0"><img id="ID3RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Using the TextBody and HtmlBody Properties</span></div><div id="ID3RBSection" class="collapsibleSection"><p>
           To simplify the common task of getting the text of a message, MimeKit includes
           two properties that can help you get the <span class="literal">text/plain</span> or
