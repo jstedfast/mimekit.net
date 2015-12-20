@@ -1439,16 +1439,16 @@
     <HelpKINode Title="CryptographyContext.Create Method " Url="html/M_MimeKit_Cryptography_CryptographyContext_Create.htm" />
     <HelpKINode Title="DecoderFilter.Create Method " Url="html/Overload_MimeKit_IO_Filters_DecoderFilter_Create.htm" />
     <HelpKINode Title="EncoderFilter.Create Method " Url="html/Overload_MimeKit_IO_Filters_EncoderFilter_Create.htm" />
-    <HelpKINode Title="IMailFolder.Create Method " Url="html/M_MailKit_IMailFolder_Create.htm" />
-    <HelpKINode Title="ImapFolder.Create Method " Url="html/M_MailKit_Net_Imap_ImapFolder_Create.htm" />
-    <HelpKINode Title="MailFolder.Create Method " Url="html/M_MailKit_MailFolder_Create.htm" />
+    <HelpKINode Title="IMailFolder.Create Method " Url="html/Overload_MailKit_IMailFolder_Create.htm" />
+    <HelpKINode Title="ImapFolder.Create Method " Url="html/Overload_MailKit_Net_Imap_ImapFolder_Create.htm" />
+    <HelpKINode Title="MailFolder.Create Method " Url="html/Overload_MailKit_MailFolder_Create.htm" />
     <HelpKINode Title="MultipartEncrypted.Create Method " Url="html/Overload_MimeKit_Cryptography_MultipartEncrypted_Create.htm" />
     <HelpKINode Title="MultipartSigned.Create Method " Url="html/Overload_MimeKit_Cryptography_MultipartSigned_Create.htm" />
     <HelpKINode Title="SaslMechanism.Create Method " Url="html/M_MailKit_Security_SaslMechanism_Create.htm" />
   </HelpKINode>
   <HelpKINode Title="CreateAsync method">
-    <HelpKINode Title="IMailFolder.CreateAsync Method " Url="html/M_MailKit_IMailFolder_CreateAsync.htm" />
-    <HelpKINode Title="MailFolder.CreateAsync Method " Url="html/M_MailKit_MailFolder_CreateAsync.htm" />
+    <HelpKINode Title="IMailFolder.CreateAsync Method " Url="html/Overload_MailKit_IMailFolder_CreateAsync.htm" />
+    <HelpKINode Title="MailFolder.CreateAsync Method " Url="html/Overload_MailKit_MailFolder_CreateAsync.htm" />
   </HelpKINode>
   <HelpKINode Title="CreateAttribute method" Url="html/M_MimeKit_Text_HtmlTokenizer_CreateAttribute.htm" />
   <HelpKINode Title="CreateCDataToken method" Url="html/M_MimeKit_Text_HtmlTokenizer_CreateCDataToken.htm" />
@@ -2094,6 +2094,7 @@
     <HelpKINode Title="InternetAddress.Equals Method " Url="html/Overload_MimeKit_InternetAddress_Equals.htm" />
     <HelpKINode Title="InternetAddressList.Equals Method " Url="html/Overload_MimeKit_InternetAddressList_Equals.htm" />
     <HelpKINode Title="MailboxAddress.Equals Method " Url="html/Overload_MimeKit_MailboxAddress_Equals.htm" />
+    <HelpKINode Title="MetadataTag.Equals Method " Url="html/M_MailKit_MetadataTag_Equals.htm" />
     <HelpKINode Title="TnefNameId.Equals Method " Url="html/M_MimeKit_Tnef_TnefNameId_Equals.htm" />
     <HelpKINode Title="TnefPropertyReader.Equals Method " Url="html/M_MimeKit_Tnef_TnefPropertyReader_Equals.htm" />
     <HelpKINode Title="TnefPropertyTag.Equals Method " Url="html/M_MimeKit_Tnef_TnefPropertyTag_Equals.htm" />
@@ -2647,6 +2648,7 @@
   <HelpKINode Title="GetHashAlgorithm method" Url="html/M_MimeKit_Cryptography_OpenPgpContext_GetHashAlgorithm.htm" />
   <HelpKINode Title="GetHashCode method">
     <HelpKINode Title="AccessRight.GetHashCode Method " Url="html/M_MailKit_AccessRight_GetHashCode.htm" />
+    <HelpKINode Title="MetadataTag.GetHashCode Method " Url="html/M_MailKit_MetadataTag_GetHashCode.htm" />
     <HelpKINode Title="TnefNameId.GetHashCode Method " Url="html/M_MimeKit_Tnef_TnefNameId_GetHashCode.htm" />
     <HelpKINode Title="TnefPropertyReader.GetHashCode Method " Url="html/M_MimeKit_Tnef_TnefPropertyReader_GetHashCode.htm" />
     <HelpKINode Title="TnefPropertyTag.GetHashCode Method " Url="html/M_MimeKit_Tnef_TnefPropertyTag_GetHashCode.htm" />
@@ -2747,6 +2749,15 @@
     <HelpKINode Title="IMailSpool.GetMessageUidsAsync Method " Url="html/M_MailKit_IMailSpool_GetMessageUidsAsync.htm" />
     <HelpKINode Title="MailSpool.GetMessageUidsAsync Method " Url="html/M_MailKit_MailSpool_GetMessageUidsAsync.htm" />
   </HelpKINode>
+  <HelpKINode Title="GetMetadata method">
+    <HelpKINode Title="IMailFolder.GetMetadata Method " Url="html/Overload_MailKit_IMailFolder_GetMetadata.htm" />
+    <HelpKINode Title="ImapFolder.GetMetadata Method " Url="html/Overload_MailKit_Net_Imap_ImapFolder_GetMetadata.htm" />
+    <HelpKINode Title="MailFolder.GetMetadata Method " Url="html/Overload_MailKit_MailFolder_GetMetadata.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetMetadataAsync method">
+    <HelpKINode Title="IMailFolder.GetMetadataAsync Method " Url="html/Overload_MailKit_IMailFolder_GetMetadataAsync.htm" />
+    <HelpKINode Title="MailFolder.GetMetadataAsync Method " Url="html/Overload_MailKit_MailFolder_GetMetadataAsync.htm" />
+  </HelpKINode>
   <HelpKINode Title="GetMimeType method" Url="html/M_MimeKit_MimeTypes_GetMimeType.htm" />
   <HelpKINode Title="GetMyAccessRights method">
     <HelpKINode Title="IMailFolder.GetMyAccessRights Method " Url="html/M_MailKit_IMailFolder_GetMyAccessRights.htm" />
@@ -2833,13 +2844,13 @@
     <HelpKINode Title="MailFolder.GetSubfolderAsync Method " Url="html/M_MailKit_MailFolder_GetSubfolderAsync.htm" />
   </HelpKINode>
   <HelpKINode Title="GetSubfolders method">
-    <HelpKINode Title="IMailFolder.GetSubfolders Method " Url="html/M_MailKit_IMailFolder_GetSubfolders.htm" />
-    <HelpKINode Title="ImapFolder.GetSubfolders Method " Url="html/M_MailKit_Net_Imap_ImapFolder_GetSubfolders.htm" />
-    <HelpKINode Title="MailFolder.GetSubfolders Method " Url="html/M_MailKit_MailFolder_GetSubfolders.htm" />
+    <HelpKINode Title="IMailFolder.GetSubfolders Method " Url="html/Overload_MailKit_IMailFolder_GetSubfolders.htm" />
+    <HelpKINode Title="ImapFolder.GetSubfolders Method " Url="html/Overload_MailKit_Net_Imap_ImapFolder_GetSubfolders.htm" />
+    <HelpKINode Title="MailFolder.GetSubfolders Method " Url="html/Overload_MailKit_MailFolder_GetSubfolders.htm" />
   </HelpKINode>
   <HelpKINode Title="GetSubfoldersAsync method">
-    <HelpKINode Title="IMailFolder.GetSubfoldersAsync Method " Url="html/M_MailKit_IMailFolder_GetSubfoldersAsync.htm" />
-    <HelpKINode Title="MailFolder.GetSubfoldersAsync Method " Url="html/M_MailKit_MailFolder_GetSubfoldersAsync.htm" />
+    <HelpKINode Title="IMailFolder.GetSubfoldersAsync Method " Url="html/Overload_MailKit_IMailFolder_GetSubfoldersAsync.htm" />
+    <HelpKINode Title="MailFolder.GetSubfoldersAsync Method " Url="html/Overload_MailKit_MailFolder_GetSubfoldersAsync.htm" />
   </HelpKINode>
   <HelpKINode Title="GetSubjectEmailAddress method" Url="html/M_MimeKit_Cryptography_X509CertificateExtensions_GetSubjectEmailAddress.htm" />
   <HelpKINode Title="GetSubjectName method" Url="html/M_MimeKit_Cryptography_X509CertificateExtensions_GetSubjectName.htm" />
@@ -3391,6 +3402,7 @@
     <HelpKINode Title="HtmlAttribute.Id Property " Url="html/P_MimeKit_Text_HtmlAttribute_Id.htm" />
     <HelpKINode Title="HtmlTagToken.Id Property " Url="html/P_MimeKit_Text_HtmlTagToken_Id.htm" />
     <HelpKINode Title="MessagePartial.Id Property " Url="html/P_MimeKit_MessagePartial_Id.htm" />
+    <HelpKINode Title="MetadataTag.Id Property " Url="html/P_MailKit_MetadataTag_Id.htm" />
     <HelpKINode Title="TnefNameId.Id Property " Url="html/P_MimeKit_Tnef_TnefNameId_Id.htm" />
     <HelpKINode Title="TnefPropertyTag.Id Property " Url="html/P_MimeKit_Tnef_TnefPropertyTag_Id.htm" />
     <HelpKINode Title="X509CertificateRecord.Id Property " Url="html/P_MimeKit_Cryptography_X509CertificateRecord_Id.htm" />
@@ -3466,8 +3478,8 @@
   <HelpKINode Title="IMailFolder.CopyToAsync method" Url="html/Overload_MailKit_IMailFolder_CopyToAsync.htm" />
   <HelpKINode Title="IMailFolder.Count property" Url="html/P_MailKit_IMailFolder_Count.htm" />
   <HelpKINode Title="IMailFolder.CountChanged event" Url="html/E_MailKit_IMailFolder_CountChanged.htm" />
-  <HelpKINode Title="IMailFolder.Create method" Url="html/M_MailKit_IMailFolder_Create.htm" />
-  <HelpKINode Title="IMailFolder.CreateAsync method" Url="html/M_MailKit_IMailFolder_CreateAsync.htm" />
+  <HelpKINode Title="IMailFolder.Create method" Url="html/Overload_MailKit_IMailFolder_Create.htm" />
+  <HelpKINode Title="IMailFolder.CreateAsync method" Url="html/Overload_MailKit_IMailFolder_CreateAsync.htm" />
   <HelpKINode Title="IMailFolder.Delete method" Url="html/M_MailKit_IMailFolder_Delete.htm" />
   <HelpKINode Title="IMailFolder.DeleteAsync method" Url="html/M_MailKit_IMailFolder_DeleteAsync.htm" />
   <HelpKINode Title="IMailFolder.Deleted event" Url="html/E_MailKit_IMailFolder_Deleted.htm" />
@@ -3487,6 +3499,8 @@
   <HelpKINode Title="IMailFolder.GetBodyPartAsync method" Url="html/Overload_MailKit_IMailFolder_GetBodyPartAsync.htm" />
   <HelpKINode Title="IMailFolder.GetMessage method" Url="html/Overload_MailKit_IMailFolder_GetMessage.htm" />
   <HelpKINode Title="IMailFolder.GetMessageAsync method" Url="html/Overload_MailKit_IMailFolder_GetMessageAsync.htm" />
+  <HelpKINode Title="IMailFolder.GetMetadata method" Url="html/Overload_MailKit_IMailFolder_GetMetadata.htm" />
+  <HelpKINode Title="IMailFolder.GetMetadataAsync method" Url="html/Overload_MailKit_IMailFolder_GetMetadataAsync.htm" />
   <HelpKINode Title="IMailFolder.GetMyAccessRights method" Url="html/M_MailKit_IMailFolder_GetMyAccessRights.htm" />
   <HelpKINode Title="IMailFolder.GetMyAccessRightsAsync method" Url="html/M_MailKit_IMailFolder_GetMyAccessRightsAsync.htm" />
   <HelpKINode Title="IMailFolder.GetQuota method" Url="html/M_MailKit_IMailFolder_GetQuota.htm" />
@@ -3495,8 +3509,8 @@
   <HelpKINode Title="IMailFolder.GetStreamAsync method" Url="html/Overload_MailKit_IMailFolder_GetStreamAsync.htm" />
   <HelpKINode Title="IMailFolder.GetSubfolder method" Url="html/M_MailKit_IMailFolder_GetSubfolder.htm" />
   <HelpKINode Title="IMailFolder.GetSubfolderAsync method" Url="html/M_MailKit_IMailFolder_GetSubfolderAsync.htm" />
-  <HelpKINode Title="IMailFolder.GetSubfolders method" Url="html/M_MailKit_IMailFolder_GetSubfolders.htm" />
-  <HelpKINode Title="IMailFolder.GetSubfoldersAsync method" Url="html/M_MailKit_IMailFolder_GetSubfoldersAsync.htm" />
+  <HelpKINode Title="IMailFolder.GetSubfolders method" Url="html/Overload_MailKit_IMailFolder_GetSubfolders.htm" />
+  <HelpKINode Title="IMailFolder.GetSubfoldersAsync method" Url="html/Overload_MailKit_IMailFolder_GetSubfoldersAsync.htm" />
   <HelpKINode Title="IMailFolder.HighestModSeq property" Url="html/P_MailKit_IMailFolder_HighestModSeq.htm" />
   <HelpKINode Title="IMailFolder.IsNamespace property" Url="html/P_MailKit_IMailFolder_IsNamespace.htm" />
   <HelpKINode Title="IMailFolder.IsOpen property" Url="html/P_MailKit_IMailFolder_IsOpen.htm" />
@@ -3536,6 +3550,8 @@
   <HelpKINode Title="IMailFolder.SetFlagsAsync method" Url="html/Overload_MailKit_IMailFolder_SetFlagsAsync.htm" />
   <HelpKINode Title="IMailFolder.SetLabels method" Url="html/Overload_MailKit_IMailFolder_SetLabels.htm" />
   <HelpKINode Title="IMailFolder.SetLabelsAsync method" Url="html/Overload_MailKit_IMailFolder_SetLabelsAsync.htm" />
+  <HelpKINode Title="IMailFolder.SetMetadata method" Url="html/M_MailKit_IMailFolder_SetMetadata.htm" />
+  <HelpKINode Title="IMailFolder.SetMetadataAsync method" Url="html/M_MailKit_IMailFolder_SetMetadataAsync.htm" />
   <HelpKINode Title="IMailFolder.SetQuota method" Url="html/M_MailKit_IMailFolder_SetQuota.htm" />
   <HelpKINode Title="IMailFolder.SetQuotaAsync method" Url="html/M_MailKit_IMailFolder_SetQuotaAsync.htm" />
   <HelpKINode Title="IMailFolder.Status method" Url="html/M_MailKit_IMailFolder_Status.htm" />
@@ -3718,7 +3734,7 @@
   <HelpKINode Title="ImapFolder.Close method" Url="html/M_MailKit_Net_Imap_ImapFolder_Close.htm" />
   <HelpKINode Title="ImapFolder.CommitStream method" Url="html/M_MailKit_Net_Imap_ImapFolder_CommitStream.htm" />
   <HelpKINode Title="ImapFolder.CopyTo method" Url="html/Overload_MailKit_Net_Imap_ImapFolder_CopyTo.htm" />
-  <HelpKINode Title="ImapFolder.Create method" Url="html/M_MailKit_Net_Imap_ImapFolder_Create.htm" />
+  <HelpKINode Title="ImapFolder.Create method" Url="html/Overload_MailKit_Net_Imap_ImapFolder_Create.htm" />
   <HelpKINode Title="ImapFolder.CreateStream method" Url="html/M_MailKit_Net_Imap_ImapFolder_CreateStream.htm" />
   <HelpKINode Title="ImapFolder.Delete method" Url="html/M_MailKit_Net_Imap_ImapFolder_Delete.htm" />
   <HelpKINode Title="ImapFolder.Expunge method" Url="html/Overload_MailKit_Net_Imap_ImapFolder_Expunge.htm" />
@@ -3728,11 +3744,12 @@
   <HelpKINode Title="ImapFolder.GetBodyPart method" Url="html/Overload_MailKit_Net_Imap_ImapFolder_GetBodyPart.htm" />
   <HelpKINode Title="ImapFolder.GetEnumerator method" Url="html/M_MailKit_Net_Imap_ImapFolder_GetEnumerator.htm" />
   <HelpKINode Title="ImapFolder.GetMessage method" Url="html/Overload_MailKit_Net_Imap_ImapFolder_GetMessage.htm" />
+  <HelpKINode Title="ImapFolder.GetMetadata method" Url="html/Overload_MailKit_Net_Imap_ImapFolder_GetMetadata.htm" />
   <HelpKINode Title="ImapFolder.GetMyAccessRights method" Url="html/M_MailKit_Net_Imap_ImapFolder_GetMyAccessRights.htm" />
   <HelpKINode Title="ImapFolder.GetQuota method" Url="html/M_MailKit_Net_Imap_ImapFolder_GetQuota.htm" />
   <HelpKINode Title="ImapFolder.GetStream method" Url="html/Overload_MailKit_Net_Imap_ImapFolder_GetStream.htm" />
   <HelpKINode Title="ImapFolder.GetSubfolder method" Url="html/M_MailKit_Net_Imap_ImapFolder_GetSubfolder.htm" />
-  <HelpKINode Title="ImapFolder.GetSubfolders method" Url="html/M_MailKit_Net_Imap_ImapFolder_GetSubfolders.htm" />
+  <HelpKINode Title="ImapFolder.GetSubfolders method" Url="html/Overload_MailKit_Net_Imap_ImapFolder_GetSubfolders.htm" />
   <HelpKINode Title="ImapFolder.ImapFolder constructor" Url="html/M_MailKit_Net_Imap_ImapFolder__ctor.htm" />
   <HelpKINode Title="ImapFolder.IsOpen property" Url="html/P_MailKit_Net_Imap_ImapFolder_IsOpen.htm" />
   <HelpKINode Title="ImapFolder.MoveTo method" Url="html/Overload_MailKit_Net_Imap_ImapFolder_MoveTo.htm" />
@@ -3747,6 +3764,7 @@
   <HelpKINode Title="ImapFolder.SetAccessRights method" Url="html/M_MailKit_Net_Imap_ImapFolder_SetAccessRights.htm" />
   <HelpKINode Title="ImapFolder.SetFlags method" Url="html/Overload_MailKit_Net_Imap_ImapFolder_SetFlags.htm" />
   <HelpKINode Title="ImapFolder.SetLabels method" Url="html/Overload_MailKit_Net_Imap_ImapFolder_SetLabels.htm" />
+  <HelpKINode Title="ImapFolder.SetMetadata method" Url="html/M_MailKit_Net_Imap_ImapFolder_SetMetadata.htm" />
   <HelpKINode Title="ImapFolder.SetQuota method" Url="html/M_MailKit_Net_Imap_ImapFolder_SetQuota.htm" />
   <HelpKINode Title="ImapFolder.Status method" Url="html/M_MailKit_Net_Imap_ImapFolder_Status.htm" />
   <HelpKINode Title="ImapFolder.Subscribe method" Url="html/M_MailKit_Net_Imap_ImapFolder_Subscribe.htm" />
@@ -4443,8 +4461,8 @@
   <HelpKINode Title="MailFolder.CopyToAsync method" Url="html/Overload_MailKit_MailFolder_CopyToAsync.htm" />
   <HelpKINode Title="MailFolder.Count property" Url="html/P_MailKit_MailFolder_Count.htm" />
   <HelpKINode Title="MailFolder.CountChanged event" Url="html/E_MailKit_MailFolder_CountChanged.htm" />
-  <HelpKINode Title="MailFolder.Create method" Url="html/M_MailKit_MailFolder_Create.htm" />
-  <HelpKINode Title="MailFolder.CreateAsync method" Url="html/M_MailKit_MailFolder_CreateAsync.htm" />
+  <HelpKINode Title="MailFolder.Create method" Url="html/Overload_MailKit_MailFolder_Create.htm" />
+  <HelpKINode Title="MailFolder.CreateAsync method" Url="html/Overload_MailKit_MailFolder_CreateAsync.htm" />
   <HelpKINode Title="MailFolder.Delete method" Url="html/M_MailKit_MailFolder_Delete.htm" />
   <HelpKINode Title="MailFolder.DeleteAsync method" Url="html/M_MailKit_MailFolder_DeleteAsync.htm" />
   <HelpKINode Title="MailFolder.Deleted event" Url="html/E_MailKit_MailFolder_Deleted.htm" />
@@ -4465,6 +4483,8 @@
   <HelpKINode Title="MailFolder.GetEnumerator method" Url="html/M_MailKit_MailFolder_GetEnumerator.htm" />
   <HelpKINode Title="MailFolder.GetMessage method" Url="html/Overload_MailKit_MailFolder_GetMessage.htm" />
   <HelpKINode Title="MailFolder.GetMessageAsync method" Url="html/Overload_MailKit_MailFolder_GetMessageAsync.htm" />
+  <HelpKINode Title="MailFolder.GetMetadata method" Url="html/Overload_MailKit_MailFolder_GetMetadata.htm" />
+  <HelpKINode Title="MailFolder.GetMetadataAsync method" Url="html/Overload_MailKit_MailFolder_GetMetadataAsync.htm" />
   <HelpKINode Title="MailFolder.GetMyAccessRights method" Url="html/M_MailKit_MailFolder_GetMyAccessRights.htm" />
   <HelpKINode Title="MailFolder.GetMyAccessRightsAsync method" Url="html/M_MailKit_MailFolder_GetMyAccessRightsAsync.htm" />
   <HelpKINode Title="MailFolder.GetQuota method" Url="html/M_MailKit_MailFolder_GetQuota.htm" />
@@ -4473,8 +4493,8 @@
   <HelpKINode Title="MailFolder.GetStreamAsync method" Url="html/Overload_MailKit_MailFolder_GetStreamAsync.htm" />
   <HelpKINode Title="MailFolder.GetSubfolder method" Url="html/M_MailKit_MailFolder_GetSubfolder.htm" />
   <HelpKINode Title="MailFolder.GetSubfolderAsync method" Url="html/M_MailKit_MailFolder_GetSubfolderAsync.htm" />
-  <HelpKINode Title="MailFolder.GetSubfolders method" Url="html/M_MailKit_MailFolder_GetSubfolders.htm" />
-  <HelpKINode Title="MailFolder.GetSubfoldersAsync method" Url="html/M_MailKit_MailFolder_GetSubfoldersAsync.htm" />
+  <HelpKINode Title="MailFolder.GetSubfolders method" Url="html/Overload_MailKit_MailFolder_GetSubfolders.htm" />
+  <HelpKINode Title="MailFolder.GetSubfoldersAsync method" Url="html/Overload_MailKit_MailFolder_GetSubfoldersAsync.htm" />
   <HelpKINode Title="MailFolder.HighestModSeq property" Url="html/P_MailKit_MailFolder_HighestModSeq.htm" />
   <HelpKINode Title="MailFolder.HighestModSeqChanged event" Url="html/E_MailKit_MailFolder_HighestModSeqChanged.htm" />
   <HelpKINode Title="MailFolder.IsNamespace property" Url="html/P_MailKit_MailFolder_IsNamespace.htm" />
@@ -4533,6 +4553,8 @@
   <HelpKINode Title="MailFolder.SetFlagsAsync method" Url="html/Overload_MailKit_MailFolder_SetFlagsAsync.htm" />
   <HelpKINode Title="MailFolder.SetLabels method" Url="html/Overload_MailKit_MailFolder_SetLabels.htm" />
   <HelpKINode Title="MailFolder.SetLabelsAsync method" Url="html/Overload_MailKit_MailFolder_SetLabelsAsync.htm" />
+  <HelpKINode Title="MailFolder.SetMetadata method" Url="html/M_MailKit_MailFolder_SetMetadata.htm" />
+  <HelpKINode Title="MailFolder.SetMetadataAsync method" Url="html/M_MailKit_MailFolder_SetMetadataAsync.htm" />
   <HelpKINode Title="MailFolder.SetQuota method" Url="html/M_MailKit_MailFolder_SetQuota.htm" />
   <HelpKINode Title="MailFolder.SetQuotaAsync method" Url="html/M_MailKit_MailFolder_SetQuotaAsync.htm" />
   <HelpKINode Title="MailFolder.SettableFlags field" Url="html/F_MailKit_MailFolder_SettableFlags.htm" />
@@ -4605,6 +4627,9 @@
   <HelpKINode Title="MailKit.MessagesVanishedEventArgs class" Url="html/T_MailKit_MessagesVanishedEventArgs.htm" />
   <HelpKINode Title="MailKit.MessageThread class" Url="html/T_MailKit_MessageThread.htm" />
   <HelpKINode Title="MailKit.MessageThreader class" Url="html/T_MailKit_MessageThreader.htm" />
+  <HelpKINode Title="MailKit.Metadata class" Url="html/T_MailKit_Metadata.htm" />
+  <HelpKINode Title="MailKit.MetadataCollection class" Url="html/T_MailKit_MetadataCollection.htm" />
+  <HelpKINode Title="MailKit.MetadataTag structure" Url="html/T_MailKit_MetadataTag.htm" />
   <HelpKINode Title="MailKit.Net.Imap namespace" Url="html/N_MailKit_Net_Imap.htm" />
   <HelpKINode Title="MailKit.Net.Imap.ImapCapabilities enumeration" Url="html/T_MailKit_Net_Imap_ImapCapabilities.htm" />
   <HelpKINode Title="MailKit.Net.Imap.ImapClient class" Url="html/T_MailKit_Net_Imap_ImapClient.htm" />
@@ -5161,7 +5186,42 @@
   <HelpKINode Title="MessageToMe enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="MessageToMe field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_MessageToMe.htm" />
   <HelpKINode Title="Meta enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
+  <HelpKINode Title="Metadata class">
+    <HelpKINode Title="Metadata Class" Url="html/T_MailKit_Metadata.htm" />
+    <HelpKINode Title="about Metadata class" Url="html/T_MailKit_Metadata.htm" />
+    <HelpKINode Title="constructor" Url="html/M_MailKit_Metadata__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_MailKit_Metadata.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_MailKit_Metadata.htm" />
+  </HelpKINode>
   <HelpKINode Title="Metadata enumeration member" Url="html/T_MailKit_Net_Imap_ImapCapabilities.htm" />
+  <HelpKINode Title="Metadata.Metadata constructor" Url="html/M_MailKit_Metadata__ctor.htm" />
+  <HelpKINode Title="Metadata.Tag property" Url="html/P_MailKit_Metadata_Tag.htm" />
+  <HelpKINode Title="Metadata.Value property" Url="html/P_MailKit_Metadata_Value.htm" />
+  <HelpKINode Title="MetadataCollection class">
+    <HelpKINode Title="MetadataCollection Class" Url="html/T_MailKit_MetadataCollection.htm" />
+    <HelpKINode Title="about MetadataCollection class" Url="html/T_MailKit_MetadataCollection.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_MailKit_MetadataCollection__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_MailKit_MetadataCollection.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_MailKit_MetadataCollection.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MetadataCollection.MetadataCollection constructor" Url="html/Overload_MailKit_MetadataCollection__ctor.htm" />
+  <HelpKINode Title="MetadataTag structure">
+    <HelpKINode Title="MetadataTag Structure" Url="html/T_MailKit_MetadataTag.htm" />
+    <HelpKINode Title="about MetadataTag structure" Url="html/T_MailKit_MetadataTag.htm" />
+    <HelpKINode Title="constructor" Url="html/M_MailKit_MetadataTag__ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_MailKit_MetadataTag.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_MailKit_MetadataTag.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_MailKit_MetadataTag.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MetadataTag.Equals method" Url="html/M_MailKit_MetadataTag_Equals.htm" />
+  <HelpKINode Title="MetadataTag.GetHashCode method" Url="html/M_MailKit_MetadataTag_GetHashCode.htm" />
+  <HelpKINode Title="MetadataTag.Id property" Url="html/P_MailKit_MetadataTag_Id.htm" />
+  <HelpKINode Title="MetadataTag.MetadataTag constructor" Url="html/M_MailKit_MetadataTag__ctor.htm" />
+  <HelpKINode Title="MetadataTag.PrivateComment field" Url="html/F_MailKit_MetadataTag_PrivateComment.htm" />
+  <HelpKINode Title="MetadataTag.PrivateSpecialUse field" Url="html/F_MailKit_MetadataTag_PrivateSpecialUse.htm" />
+  <HelpKINode Title="MetadataTag.SharedAdmin field" Url="html/F_MailKit_MetadataTag_SharedAdmin.htm" />
+  <HelpKINode Title="MetadataTag.SharedComment field" Url="html/F_MailKit_MetadataTag_SharedComment.htm" />
+  <HelpKINode Title="MetadataTag.ToString method" Url="html/M_MailKit_MetadataTag_ToString.htm" />
   <HelpKINode Title="Meter enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
   <HelpKINode Title="Method enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
   <HelpKINode Title="MhsCommonName enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
@@ -5468,7 +5528,7 @@
   <HelpKINode Title="MimeMessage.TextBody property" Url="html/P_MimeKit_MimeMessage_TextBody.htm" />
   <HelpKINode Title="MimeMessage.To property" Url="html/P_MimeKit_MimeMessage_To.htm" />
   <HelpKINode Title="MimeMessage.ToString method" Url="html/M_MimeKit_MimeMessage_ToString.htm" />
-  <HelpKINode Title="MimeMessage.Verify method" Url="html/M_MimeKit_MimeMessage_Verify.htm" />
+  <HelpKINode Title="MimeMessage.Verify method" Url="html/Overload_MimeKit_MimeMessage_Verify.htm" />
   <HelpKINode Title="MimeMessage.WriteTo method" Url="html/Overload_MimeKit_MimeMessage_WriteTo.htm" />
   <HelpKINode Title="MimeParser class">
     <HelpKINode Title="MimeParser Class" Url="html/T_MimeKit_MimeParser.htm" />
@@ -5743,6 +5803,7 @@
     <HelpKINode Title="PublicKeyAlgorithm Enumeration" Url="html/T_MimeKit_Cryptography_PublicKeyAlgorithm.htm" />
     <HelpKINode Title="SecureSocketOptions Enumeration" Url="html/T_MailKit_Security_SecureSocketOptions.htm" />
     <HelpKINode Title="SmtpCapabilities Enumeration" Url="html/T_MailKit_Net_Smtp_SmtpCapabilities.htm" />
+    <HelpKINode Title="StatusItems Enumeration" Url="html/T_MailKit_StatusItems.htm" />
     <HelpKINode Title="TnefAttachFlags Enumeration" Url="html/T_MimeKit_Tnef_TnefAttachFlags.htm" />
     <HelpKINode Title="TnefAttachMethod Enumeration" Url="html/T_MimeKit_Tnef_TnefAttachMethod.htm" />
     <HelpKINode Title="X509KeyUsageFlags Enumeration" Url="html/T_MimeKit_Cryptography_X509KeyUsageFlags.htm" />
@@ -6463,6 +6524,7 @@
   </HelpKINode>
   <HelpKINode Title="Priority field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_Priority.htm" />
   <HelpKINode Title="Priority property" Url="html/P_MimeKit_MimeMessage_Priority.htm" />
+  <HelpKINode Title="PrivateComment field" Url="html/F_MailKit_MetadataTag_PrivateComment.htm" />
   <HelpKINode Title="PrivateKey enumeration member" Url="html/T_MimeKit_Cryptography_X509CertificateRecordFields.htm" />
   <HelpKINode Title="PrivateKey property">
     <HelpKINode Title="CmsSigner.PrivateKey Property " Url="html/P_MimeKit_Cryptography_CmsSigner_PrivateKey.htm" />
@@ -6480,6 +6542,7 @@
   <HelpKINode Title="PrivateKeyNotFoundException.GetObjectData method" Url="html/M_MimeKit_Cryptography_PrivateKeyNotFoundException_GetObjectData.htm" />
   <HelpKINode Title="PrivateKeyNotFoundException.KeyId property" Url="html/P_MimeKit_Cryptography_PrivateKeyNotFoundException_KeyId.htm" />
   <HelpKINode Title="PrivateKeyNotFoundException.PrivateKeyNotFoundException constructor" Url="html/Overload_MimeKit_Cryptography_PrivateKeyNotFoundException__ctor.htm" />
+  <HelpKINode Title="PrivateSpecialUse field" Url="html/F_MailKit_MetadataTag_PrivateSpecialUse.htm" />
   <HelpKINode Title="ProcessRcptToResponse method" Url="html/M_MailKit_Net_Smtp_SmtpClient_ProcessRcptToResponse.htm" />
   <HelpKINode Title="Profession enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="ProfessionA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_ProfessionA.htm" />
@@ -7564,6 +7627,15 @@
   <HelpKINode Title="SetMessageDeleted field" Url="html/F_MailKit_AccessRight_SetMessageDeleted.htm" />
   <HelpKINode Title="SetMessageFlags field" Url="html/F_MailKit_AccessRight_SetMessageFlags.htm" />
   <HelpKINode Title="SetMessageSeen field" Url="html/F_MailKit_AccessRight_SetMessageSeen.htm" />
+  <HelpKINode Title="SetMetadata method">
+    <HelpKINode Title="IMailFolder.SetMetadata Method " Url="html/M_MailKit_IMailFolder_SetMetadata.htm" />
+    <HelpKINode Title="ImapFolder.SetMetadata Method " Url="html/M_MailKit_Net_Imap_ImapFolder_SetMetadata.htm" />
+    <HelpKINode Title="MailFolder.SetMetadata Method " Url="html/M_MailKit_MailFolder_SetMetadata.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SetMetadataAsync method">
+    <HelpKINode Title="IMailFolder.SetMetadataAsync Method " Url="html/M_MailKit_IMailFolder_SetMetadataAsync.htm" />
+    <HelpKINode Title="MailFolder.SetMetadataAsync Method " Url="html/M_MailKit_MailFolder_SetMetadataAsync.htm" />
+  </HelpKINode>
   <HelpKINode Title="SetQuota method">
     <HelpKINode Title="IMailFolder.SetQuota Method " Url="html/M_MailKit_IMailFolder_SetQuota.htm" />
     <HelpKINode Title="ImapFolder.SetQuota Method " Url="html/M_MailKit_Net_Imap_ImapFolder_SetQuota.htm" />
@@ -7589,6 +7661,8 @@
   <HelpKINode Title="Sha384 enumeration member" Url="html/T_MimeKit_Cryptography_DigestAlgorithm.htm" />
   <HelpKINode Title="Sha512 enumeration member" Url="html/T_MimeKit_Cryptography_DigestAlgorithm.htm" />
   <HelpKINode Title="Shape enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
+  <HelpKINode Title="SharedAdmin field" Url="html/F_MailKit_MetadataTag_SharedAdmin.htm" />
+  <HelpKINode Title="SharedComment field" Url="html/F_MailKit_MetadataTag_SharedComment.htm" />
   <HelpKINode Title="SharedNamespaces property">
     <HelpKINode Title="IMailStore.SharedNamespaces Property " Url="html/P_MailKit_IMailStore_SharedNamespaces.htm" />
     <HelpKINode Title="ImapClient.SharedNamespaces Property " Url="html/P_MailKit_Net_Imap_ImapClient_SharedNamespaces.htm" />
@@ -7754,12 +7828,12 @@
   <HelpKINode Title="StartDate enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="StartDate field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_StartDate.htm" />
   <HelpKINode Title="StartMailInput enumeration member" Url="html/T_MailKit_Net_Smtp_SmtpStatusCode.htm" />
+  <HelpKINode Title="StartTls enumeration member" Url="html/T_MailKit_Security_SecureSocketOptions.htm" />
   <HelpKINode Title="StartTLS enumeration member">
     <HelpKINode Title="ImapCapabilities Enumeration" Url="html/T_MailKit_Net_Imap_ImapCapabilities.htm" />
     <HelpKINode Title="Pop3Capabilities Enumeration" Url="html/T_MailKit_Net_Pop3_Pop3Capabilities.htm" />
     <HelpKINode Title="SmtpCapabilities Enumeration" Url="html/T_MailKit_Net_Smtp_SmtpCapabilities.htm" />
   </HelpKINode>
-  <HelpKINode Title="StartTls enumeration member" Url="html/T_MailKit_Security_SecureSocketOptions.htm" />
   <HelpKINode Title="StartTlsWhenAvailable enumeration member" Url="html/T_MailKit_Security_SecureSocketOptions.htm" />
   <HelpKINode Title="StateOrProvince enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="StateOrProvinceA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_StateOrProvinceA.htm" />
@@ -7933,6 +8007,7 @@
     <HelpKINode Title="HtmlTokenKind Enumeration" Url="html/T_MimeKit_Text_HtmlTokenKind.htm" />
     <HelpKINode Title="HtmlWriterState Enumeration" Url="html/T_MimeKit_Text_HtmlWriterState.htm" />
   </HelpKINode>
+  <HelpKINode Title="Tag property" Url="html/P_MailKit_Metadata_Tag.htm" />
   <HelpKINode Title="TagId property" Url="html/P_MimeKit_Text_HtmlTagContext_TagId.htm" />
   <HelpKINode Title="TagName enumeration member" Url="html/T_MimeKit_Text_HtmlTokenizerState.htm" />
   <HelpKINode Title="TagName property" Url="html/P_MimeKit_Text_HtmlTagContext_TagName.htm" />
@@ -8944,6 +9019,7 @@
     <HelpKINode Title="MailboxAddress.ToString Method " Url="html/Overload_MimeKit_MailboxAddress_ToString.htm" />
     <HelpKINode Title="MailFolder.ToString Method " Url="html/M_MailKit_MailFolder_ToString.htm" />
     <HelpKINode Title="MessageIdList.ToString Method " Url="html/M_MimeKit_MessageIdList_ToString.htm" />
+    <HelpKINode Title="MetadataTag.ToString Method " Url="html/M_MailKit_MetadataTag_ToString.htm" />
     <HelpKINode Title="MimeEntity.ToString Method " Url="html/M_MimeKit_MimeEntity_ToString.htm" />
     <HelpKINode Title="MimeMessage.ToString Method " Url="html/M_MimeKit_MimeMessage_ToString.htm" />
     <HelpKINode Title="Parameter.ToString Method " Url="html/M_MimeKit_Parameter_ToString.htm" />
@@ -9248,6 +9324,7 @@
     <HelpKINode Title="Header.Value Property " Url="html/P_MimeKit_Header_Value.htm" />
     <HelpKINode Title="HeaderSearchQuery.Value Property " Url="html/P_MailKit_Search_HeaderSearchQuery_Value.htm" />
     <HelpKINode Title="HtmlAttribute.Value Property " Url="html/P_MimeKit_Text_HtmlAttribute_Value.htm" />
+    <HelpKINode Title="Metadata.Value Property " Url="html/P_MailKit_Metadata_Value.htm" />
     <HelpKINode Title="NumericSearchQuery.Value Property " Url="html/P_MailKit_Search_NumericSearchQuery_Value.htm" />
     <HelpKINode Title="Parameter.Value Property " Url="html/P_MimeKit_Parameter_Value.htm" />
   </HelpKINode>
@@ -9261,7 +9338,7 @@
     <HelpKINode Title="ApplicationPkcs7Mime.Verify Method " Url="html/Overload_MimeKit_Cryptography_ApplicationPkcs7Mime_Verify.htm" />
     <HelpKINode Title="CryptographyContext.Verify Method " Url="html/M_MimeKit_Cryptography_CryptographyContext_Verify.htm" />
     <HelpKINode Title="IDigitalSignature.Verify Method " Url="html/M_MimeKit_Cryptography_IDigitalSignature_Verify.htm" />
-    <HelpKINode Title="MimeMessage.Verify Method " Url="html/M_MimeKit_MimeMessage_Verify.htm" />
+    <HelpKINode Title="MimeMessage.Verify Method " Url="html/Overload_MimeKit_MimeMessage_Verify.htm" />
     <HelpKINode Title="MultipartSigned.Verify Method " Url="html/Overload_MimeKit_Cryptography_MultipartSigned_Verify.htm" />
     <HelpKINode Title="OpenPgpContext.Verify Method " Url="html/M_MimeKit_Cryptography_OpenPgpContext_Verify.htm" />
     <HelpKINode Title="OpenPgpDigitalSignature.Verify Method " Url="html/M_MimeKit_Cryptography_OpenPgpDigitalSignature_Verify.htm" />

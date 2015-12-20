@@ -438,7 +438,7 @@ multipart/mixed
           to support.
         </p><p>
           You can easily serialize a MimeMessage to a stream using the
-          <span class="nolink">WriteTo<span id="LST7885CE3A_3"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST7885CE3A_3?cs=()|vb=|cpp=()|nu=()|fs=()");</script></span>
+          <a href="Overload_MimeKit_MimeMessage_WriteTo.htm">WriteTo</a>
           methods.
         </p></div><div class="collapsibleAreaRegion" id="UntitledAttachments"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID8RB')" onkeypress="SectionExpandCollapse_CheckKey('ID8RB', event)" tabindex="0"><img id="ID8RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Why do attachments with unicode filenames appear as "ATT0####.dat" in Outlook?</span></div><div id="ID8RBSection" class="collapsibleSection"><p>
           An attachment filename is stored as a MIME parameter on the <span class="literal">Content-Disposition</span>
@@ -512,7 +512,7 @@ Y3J5cHRlZApibHVyYi4gTW1ta2F5PyBUaGFua3MuCg==
           To deal with these kinds of messages, MimeKit's
           <a href="T_MimeKit_Cryptography_OpenPgpContext.htm">OpenPgpContext</a>
           includes a
-          <a href="Overload_MimeKit_Cryptography_OpenPgpContext_GetDecryptedStream.htm">GetDecryptedStream<span id="LST7885CE3A_4"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST7885CE3A_4?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a>
+          <a href="Overload_MimeKit_Cryptography_OpenPgpContext_GetDecryptedStream.htm">GetDecryptedStream<span id="LST7885CE3A_3"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST7885CE3A_3?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a>
           method which can be used to get the raw decrypted stream.
         </p><p>
           The method variant that has a
@@ -536,9 +536,9 @@ Y3J5cHRlZApibHVyYi4gTW1ta2F5PyBUaGFua3MuCg==
           take care of parsing the HTTP headers (which includes the <span class="literal">Content-Type</span> header)
           and only offer a content stream to consume, MimeKit provides a way to deal with this using the
           following two static methods:
-          <a href="M_MimeKit_MimeEntity_Load_1.htm">MimeEntity<span id="LST7885CE3A_5"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST7885CE3A_5?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Load(ParserOptions, ContentType, Stream, CancellationToken)</a>
+          <a href="M_MimeKit_MimeEntity_Load_1.htm">MimeEntity<span id="LST7885CE3A_4"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST7885CE3A_4?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Load(ParserOptions, ContentType, Stream, CancellationToken)</a>
           and
-          <a href="M_MimeKit_MimeEntity_Load.htm">MimeEntity<span id="LST7885CE3A_6"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST7885CE3A_6?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Load(ContentType, Stream, CancellationToken)</a></p><p>
+          <a href="M_MimeKit_MimeEntity_Load.htm">MimeEntity<span id="LST7885CE3A_5"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST7885CE3A_5?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Load(ContentType, Stream, CancellationToken)</a></p><p>
           Here's how you might use these methods:
         </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EACAFAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EACAFAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EACAFAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EACAFAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">MimeEntity ParseMultipartFormData (HttpWebResponse response)
 {
