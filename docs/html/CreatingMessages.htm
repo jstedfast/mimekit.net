@@ -115,6 +115,7 @@ Will you be my +1?
             <span class="highlight-comment">// In order to reference sexy-pose.jpg from the html text, we'll need to add it</span>
             <span class="highlight-comment">// to builder.LinkedResources and then use its Content-Id value in the img src.</span>
             <span class="highlight-keyword">var</span> image = builder.LinkedResources.Add (<span class="highlight-literal">@"C:\Users\Joey\Documents\Selfies\sexy-pose.jpg"</span>);
+            image.ContentId = MimeUtils.GenerateMessageId ();
 
             <span class="highlight-comment">// Set the html version of the message text</span>
             builder.HtmlBody = <span class="highlight-keyword">string</span>.Format (<span class="highlight-literal">@"&lt;p&gt;Hey Alice,&lt;br&gt;

@@ -39,6 +39,7 @@
     <HelpKINode Title="MultipartAlternative.Accept Method " Url="html/M_MimeKit_MultipartAlternative_Accept.htm" />
     <HelpKINode Title="MultipartEncrypted.Accept Method " Url="html/M_MimeKit_Cryptography_MultipartEncrypted_Accept.htm" />
     <HelpKINode Title="MultipartRelated.Accept Method " Url="html/M_MimeKit_MultipartRelated_Accept.htm" />
+    <HelpKINode Title="MultipartReport.Accept Method " Url="html/M_MimeKit_MultipartReport_Accept.htm" />
     <HelpKINode Title="MultipartSigned.Accept Method " Url="html/M_MimeKit_Cryptography_MultipartSigned_Accept.htm" />
     <HelpKINode Title="TextPart.Accept Method " Url="html/M_MimeKit_TextPart_Accept.htm" />
   </HelpKINode>
@@ -178,6 +179,7 @@
   <HelpKINode Title="AddRange method">
     <HelpKINode Title="AccessRights.AddRange Method " Url="html/Overload_MailKit_AccessRights_AddRange.htm" />
     <HelpKINode Title="InternetAddressList.AddRange Method " Url="html/M_MimeKit_InternetAddressList_AddRange.htm" />
+    <HelpKINode Title="MessageIdList.AddRange Method " Url="html/M_MimeKit_MessageIdList_AddRange.htm" />
     <HelpKINode Title="UniqueIdSet.AddRange Method " Url="html/M_MailKit_UniqueIdSet_AddRange.htm" />
     <HelpKINode Title="X509CertificateChain.AddRange Method " Url="html/M_MimeKit_Cryptography_X509CertificateChain_AddRange.htm" />
     <HelpKINode Title="X509CertificateStore.AddRange Method " Url="html/M_MimeKit_Cryptography_X509CertificateStore_AddRange.htm" />
@@ -453,14 +455,14 @@
   <HelpKINode Title="AttributeValueUnquoted enumeration member" Url="html/T_MimeKit_Text_HtmlTokenizerState.htm" />
   <HelpKINode Title="Audio enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
   <HelpKINode Title="Authenticate method">
-    <HelpKINode Title="IMailService.Authenticate Method " Url="html/M_MailKit_IMailService_Authenticate.htm" />
+    <HelpKINode Title="IMailService.Authenticate Method " Url="html/Overload_MailKit_IMailService_Authenticate.htm" />
     <HelpKINode Title="ImapClient.Authenticate Method " Url="html/Overload_MailKit_Net_Imap_ImapClient_Authenticate.htm" />
     <HelpKINode Title="MailService.Authenticate Method " Url="html/Overload_MailKit_MailService_Authenticate.htm" />
     <HelpKINode Title="Pop3Client.Authenticate Method " Url="html/Overload_MailKit_Net_Pop3_Pop3Client_Authenticate.htm" />
     <HelpKINode Title="SmtpClient.Authenticate Method " Url="html/Overload_MailKit_Net_Smtp_SmtpClient_Authenticate.htm" />
   </HelpKINode>
   <HelpKINode Title="AuthenticateAsync method">
-    <HelpKINode Title="IMailService.AuthenticateAsync Method " Url="html/M_MailKit_IMailService_AuthenticateAsync.htm" />
+    <HelpKINode Title="IMailService.AuthenticateAsync Method " Url="html/Overload_MailKit_IMailService_AuthenticateAsync.htm" />
     <HelpKINode Title="MailService.AuthenticateAsync Method " Url="html/Overload_MailKit_MailService_AuthenticateAsync.htm" />
   </HelpKINode>
   <HelpKINode Title="Authenticated event">
@@ -1010,11 +1012,14 @@
     <HelpKINode Title="Base64Decoder.Clone Method " Url="html/M_MimeKit_Encodings_Base64Decoder_Clone.htm" />
     <HelpKINode Title="Base64Encoder.Clone Method " Url="html/M_MimeKit_Encodings_Base64Encoder_Clone.htm" />
     <HelpKINode Title="FormatOptions.Clone Method " Url="html/M_MimeKit_FormatOptions_Clone.htm" />
+    <HelpKINode Title="GroupAddress.Clone Method " Url="html/M_MimeKit_GroupAddress_Clone.htm" />
     <HelpKINode Title="Header.Clone Method " Url="html/M_MimeKit_Header_Clone.htm" />
     <HelpKINode Title="HexDecoder.Clone Method " Url="html/M_MimeKit_Encodings_HexDecoder_Clone.htm" />
     <HelpKINode Title="HexEncoder.Clone Method " Url="html/M_MimeKit_Encodings_HexEncoder_Clone.htm" />
     <HelpKINode Title="IMimeDecoder.Clone Method " Url="html/M_MimeKit_Encodings_IMimeDecoder_Clone.htm" />
     <HelpKINode Title="IMimeEncoder.Clone Method " Url="html/M_MimeKit_Encodings_IMimeEncoder_Clone.htm" />
+    <HelpKINode Title="InternetAddress.Clone Method " Url="html/M_MimeKit_InternetAddress_Clone.htm" />
+    <HelpKINode Title="MailboxAddress.Clone Method " Url="html/M_MimeKit_MailboxAddress_Clone.htm" />
     <HelpKINode Title="MessageIdList.Clone Method " Url="html/M_MimeKit_MessageIdList_Clone.htm" />
     <HelpKINode Title="ParserOptions.Clone Method " Url="html/M_MimeKit_ParserOptions_Clone.htm" />
     <HelpKINode Title="PassThroughDecoder.Clone Method " Url="html/M_MimeKit_Encodings_PassThroughDecoder_Clone.htm" />
@@ -1451,7 +1456,7 @@
     <HelpKINode Title="MailFolder.Create Method " Url="html/Overload_MailKit_MailFolder_Create.htm" />
     <HelpKINode Title="MultipartEncrypted.Create Method " Url="html/Overload_MimeKit_Cryptography_MultipartEncrypted_Create.htm" />
     <HelpKINode Title="MultipartSigned.Create Method " Url="html/Overload_MimeKit_Cryptography_MultipartSigned_Create.htm" />
-    <HelpKINode Title="SaslMechanism.Create Method " Url="html/M_MailKit_Security_SaslMechanism_Create.htm" />
+    <HelpKINode Title="SaslMechanism.Create Method " Url="html/Overload_MailKit_Security_SaslMechanism_Create.htm" />
   </HelpKINode>
   <HelpKINode Title="CreateAsync method">
     <HelpKINode Title="IMailFolder.CreateAsync Method " Url="html/Overload_MailKit_IMailFolder_CreateAsync.htm" />
@@ -2150,6 +2155,8 @@
     <HelpKINode Title="IMailFolder.Exists Property " Url="html/P_MailKit_IMailFolder_Exists.htm" />
     <HelpKINode Title="MailFolder.Exists Property " Url="html/P_MailKit_MailFolder_Exists.htm" />
   </HelpKINode>
+  <HelpKINode Title="Expand method" Url="html/M_MailKit_Net_Smtp_SmtpClient_Expand.htm" />
+  <HelpKINode Title="ExpandAsync method" Url="html/M_MailKit_Net_Smtp_SmtpClient_ExpandAsync.htm" />
   <HelpKINode Title="ExpandBeginTime enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="ExpandBeginTime field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_ExpandBeginTime.htm" />
   <HelpKINode Title="ExpandedBeginTime enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
@@ -2939,6 +2946,7 @@
     <HelpKINode Title="methods" Url="html/Methods_T_MimeKit_GroupAddress.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MimeKit_GroupAddress.htm" />
   </HelpKINode>
+  <HelpKINode Title="GroupAddress.Clone method" Url="html/M_MimeKit_GroupAddress_Clone.htm" />
   <HelpKINode Title="GroupAddress.Equals method" Url="html/Overload_MimeKit_GroupAddress_Equals.htm" />
   <HelpKINode Title="GroupAddress.GroupAddress constructor" Url="html/Overload_MimeKit_GroupAddress__ctor.htm" />
   <HelpKINode Title="GroupAddress.Members property" Url="html/P_MimeKit_GroupAddress_Members.htm" />
@@ -3598,8 +3606,8 @@
     <HelpKINode Title="methods" Url="html/Methods_T_MailKit_IMailService.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MailKit_IMailService.htm" />
   </HelpKINode>
-  <HelpKINode Title="IMailService.Authenticate method" Url="html/M_MailKit_IMailService_Authenticate.htm" />
-  <HelpKINode Title="IMailService.AuthenticateAsync method" Url="html/M_MailKit_IMailService_AuthenticateAsync.htm" />
+  <HelpKINode Title="IMailService.Authenticate method" Url="html/Overload_MailKit_IMailService_Authenticate.htm" />
+  <HelpKINode Title="IMailService.AuthenticateAsync method" Url="html/Overload_MailKit_IMailService_AuthenticateAsync.htm" />
   <HelpKINode Title="IMailService.Authenticated event" Url="html/E_MailKit_IMailService_Authenticated.htm" />
   <HelpKINode Title="IMailService.AuthenticationMechanisms property" Url="html/P_MailKit_IMailService_AuthenticationMechanisms.htm" />
   <HelpKINode Title="IMailService.ClientCertificates property" Url="html/P_MailKit_IMailService_ClientCertificates.htm" />
@@ -4005,6 +4013,7 @@
     <HelpKINode Title="methods" Url="html/Methods_T_MimeKit_InternetAddress.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MimeKit_InternetAddress.htm" />
   </HelpKINode>
+  <HelpKINode Title="InternetAddress.Clone method" Url="html/M_MimeKit_InternetAddress_Clone.htm" />
   <HelpKINode Title="InternetAddress.CompareTo method" Url="html/M_MimeKit_InternetAddress_CompareTo.htm" />
   <HelpKINode Title="InternetAddress.Encoding property" Url="html/P_MimeKit_InternetAddress_Encoding.htm" />
   <HelpKINode Title="InternetAddress.Equals method" Url="html/Overload_MimeKit_InternetAddress_Equals.htm" />
@@ -4452,6 +4461,7 @@
   </HelpKINode>
   <HelpKINode Title="MailboxAddress to MailAddress conversion" Url="html/M_MimeKit_MailboxAddress_op_Explicit.htm" />
   <HelpKINode Title="MailboxAddress.Address property" Url="html/P_MimeKit_MailboxAddress_Address.htm" />
+  <HelpKINode Title="MailboxAddress.Clone method" Url="html/M_MimeKit_MailboxAddress_Clone.htm" />
   <HelpKINode Title="MailboxAddress.Equals method" Url="html/Overload_MimeKit_MailboxAddress_Equals.htm" />
   <HelpKINode Title="MailboxAddress.IsInternational property" Url="html/P_MimeKit_MailboxAddress_IsInternational.htm" />
   <HelpKINode Title="MailboxAddress.MailboxAddress constructor" Url="html/Overload_MimeKit_MailboxAddress__ctor.htm" />
@@ -5027,6 +5037,7 @@
     <HelpKINode Title="properties" Url="html/Properties_T_MimeKit_MessageIdList.htm" />
   </HelpKINode>
   <HelpKINode Title="MessageIdList.Add method" Url="html/M_MimeKit_MessageIdList_Add.htm" />
+  <HelpKINode Title="MessageIdList.AddRange method" Url="html/M_MimeKit_MessageIdList_AddRange.htm" />
   <HelpKINode Title="MessageIdList.Clear method" Url="html/M_MimeKit_MessageIdList_Clear.htm" />
   <HelpKINode Title="MessageIdList.Clone method" Url="html/M_MimeKit_MessageIdList_Clone.htm" />
   <HelpKINode Title="MessageIdList.Contains method" Url="html/M_MimeKit_MessageIdList_Contains.htm" />
@@ -5455,6 +5466,7 @@
   <HelpKINode Title="MimeKit.Multipart class" Url="html/T_MimeKit_Multipart.htm" />
   <HelpKINode Title="MimeKit.MultipartAlternative class" Url="html/T_MimeKit_MultipartAlternative.htm" />
   <HelpKINode Title="MimeKit.MultipartRelated class" Url="html/T_MimeKit_MultipartRelated.htm" />
+  <HelpKINode Title="MimeKit.MultipartReport class" Url="html/T_MimeKit_MultipartReport.htm" />
   <HelpKINode Title="MimeKit.NewLineFormat enumeration" Url="html/T_MimeKit_NewLineFormat.htm" />
   <HelpKINode Title="MimeKit.Parameter class" Url="html/T_MimeKit_Parameter.htm" />
   <HelpKINode Title="MimeKit.ParameterEncodingMethod enumeration" Url="html/T_MimeKit_ParameterEncodingMethod.htm" />
@@ -5652,6 +5664,7 @@
   <HelpKINode Title="MimeVisitor.VisitMultipartAlternative method" Url="html/M_MimeKit_MimeVisitor_VisitMultipartAlternative.htm" />
   <HelpKINode Title="MimeVisitor.VisitMultipartEncrypted method" Url="html/M_MimeKit_MimeVisitor_VisitMultipartEncrypted.htm" />
   <HelpKINode Title="MimeVisitor.VisitMultipartRelated method" Url="html/M_MimeKit_MimeVisitor_VisitMultipartRelated.htm" />
+  <HelpKINode Title="MimeVisitor.VisitMultipartReport method" Url="html/M_MimeKit_MimeVisitor_VisitMultipartReport.htm" />
   <HelpKINode Title="MimeVisitor.VisitMultipartSigned method" Url="html/M_MimeKit_MimeVisitor_VisitMultipartSigned.htm" />
   <HelpKINode Title="MimeVisitor.VisitTextPart method" Url="html/M_MimeKit_MimeVisitor_VisitTextPart.htm" />
   <HelpKINode Title="MimeVisitor.VisitTnefPart method" Url="html/M_MimeKit_MimeVisitor_VisitTnefPart.htm" />
@@ -5761,6 +5774,16 @@
   <HelpKINode Title="MultipartRelated.MultipartRelated constructor" Url="html/Overload_MimeKit_MultipartRelated__ctor.htm" />
   <HelpKINode Title="MultipartRelated.Open method" Url="html/Overload_MimeKit_MultipartRelated_Open.htm" />
   <HelpKINode Title="MultipartRelated.Root property" Url="html/P_MimeKit_MultipartRelated_Root.htm" />
+  <HelpKINode Title="MultipartReport class">
+    <HelpKINode Title="MultipartReport Class" Url="html/T_MimeKit_MultipartReport.htm" />
+    <HelpKINode Title="about MultipartReport class" Url="html/T_MimeKit_MultipartReport.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_MimeKit_MultipartReport__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_MimeKit_MultipartReport.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_MimeKit_MultipartReport.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MultipartReport.Accept method" Url="html/M_MimeKit_MultipartReport_Accept.htm" />
+  <HelpKINode Title="MultipartReport.MultipartReport constructor" Url="html/Overload_MimeKit_MultipartReport__ctor.htm" />
+  <HelpKINode Title="MultipartReport.ReportType property" Url="html/P_MimeKit_MultipartReport_ReportType.htm" />
   <HelpKINode Title="MultipartSigned class">
     <HelpKINode Title="MultipartSigned Class" Url="html/T_MimeKit_Cryptography_MultipartSigned.htm" />
     <HelpKINode Title="about MultipartSigned class" Url="html/T_MimeKit_Cryptography_MultipartSigned.htm" />
@@ -7015,6 +7038,7 @@
   <HelpKINode Title="ReportTextW field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_ReportTextW.htm" />
   <HelpKINode Title="ReportTime enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="ReportTime field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_ReportTime.htm" />
+  <HelpKINode Title="ReportType property" Url="html/P_MimeKit_MultipartReport_ReportType.htm" />
   <HelpKINode Title="RequestedDeliveryMethod enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="RequestedDeliveryMethod field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_RequestedDeliveryMethod.htm" />
   <HelpKINode Title="RequestResponse enumeration member" Url="html/T_MimeKit_Tnef_TnefAttributeTag.htm" />
@@ -7207,7 +7231,7 @@
   </HelpKINode>
   <HelpKINode Title="SaslMechanism.AuthMechanismRank field" Url="html/F_MailKit_Security_SaslMechanism_AuthMechanismRank.htm" />
   <HelpKINode Title="SaslMechanism.Challenge method" Url="html/Overload_MailKit_Security_SaslMechanism_Challenge.htm" />
-  <HelpKINode Title="SaslMechanism.Create method" Url="html/M_MailKit_Security_SaslMechanism_Create.htm" />
+  <HelpKINode Title="SaslMechanism.Create method" Url="html/Overload_MailKit_Security_SaslMechanism_Create.htm" />
   <HelpKINode Title="SaslMechanism.Credentials property" Url="html/P_MailKit_Security_SaslMechanism_Credentials.htm" />
   <HelpKINode Title="SaslMechanism.IsAuthenticated property" Url="html/P_MailKit_Security_SaslMechanism_IsAuthenticated.htm" />
   <HelpKINode Title="SaslMechanism.IsSupported method" Url="html/M_MailKit_Security_SaslMechanism_IsSupported.htm" />
@@ -7241,14 +7265,14 @@
   <HelpKINode Title="SaslMechanismLogin class">
     <HelpKINode Title="SaslMechanismLogin Class" Url="html/T_MailKit_Security_SaslMechanismLogin.htm" />
     <HelpKINode Title="about SaslMechanismLogin class" Url="html/T_MailKit_Security_SaslMechanismLogin.htm" />
-    <HelpKINode Title="constructor" Url="html/M_MailKit_Security_SaslMechanismLogin__ctor.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_MailKit_Security_SaslMechanismLogin__ctor.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MailKit_Security_SaslMechanismLogin.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MailKit_Security_SaslMechanismLogin.htm" />
   </HelpKINode>
   <HelpKINode Title="SaslMechanismLogin.Challenge method" Url="html/Overload_MailKit_Security_SaslMechanismLogin_Challenge.htm" />
   <HelpKINode Title="SaslMechanismLogin.MechanismName property" Url="html/P_MailKit_Security_SaslMechanismLogin_MechanismName.htm" />
   <HelpKINode Title="SaslMechanismLogin.Reset method" Url="html/M_MailKit_Security_SaslMechanismLogin_Reset.htm" />
-  <HelpKINode Title="SaslMechanismLogin.SaslMechanismLogin constructor" Url="html/M_MailKit_Security_SaslMechanismLogin__ctor.htm" />
+  <HelpKINode Title="SaslMechanismLogin.SaslMechanismLogin constructor" Url="html/Overload_MailKit_Security_SaslMechanismLogin__ctor.htm" />
   <HelpKINode Title="SaslMechanismLogin.SupportsInitialResponse property" Url="html/P_MailKit_Security_SaslMechanismLogin_SupportsInitialResponse.htm" />
   <HelpKINode Title="SaslMechanismNtlm class">
     <HelpKINode Title="SaslMechanismNtlm Class" Url="html/T_MailKit_Security_SaslMechanismNtlm.htm" />
@@ -7276,13 +7300,13 @@
   <HelpKINode Title="SaslMechanismPlain class">
     <HelpKINode Title="SaslMechanismPlain Class" Url="html/T_MailKit_Security_SaslMechanismPlain.htm" />
     <HelpKINode Title="about SaslMechanismPlain class" Url="html/T_MailKit_Security_SaslMechanismPlain.htm" />
-    <HelpKINode Title="constructor" Url="html/M_MailKit_Security_SaslMechanismPlain__ctor.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_MailKit_Security_SaslMechanismPlain__ctor.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MailKit_Security_SaslMechanismPlain.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MailKit_Security_SaslMechanismPlain.htm" />
   </HelpKINode>
   <HelpKINode Title="SaslMechanismPlain.Challenge method" Url="html/Overload_MailKit_Security_SaslMechanismPlain_Challenge.htm" />
   <HelpKINode Title="SaslMechanismPlain.MechanismName property" Url="html/P_MailKit_Security_SaslMechanismPlain_MechanismName.htm" />
-  <HelpKINode Title="SaslMechanismPlain.SaslMechanismPlain constructor" Url="html/M_MailKit_Security_SaslMechanismPlain__ctor.htm" />
+  <HelpKINode Title="SaslMechanismPlain.SaslMechanismPlain constructor" Url="html/Overload_MailKit_Security_SaslMechanismPlain__ctor.htm" />
   <HelpKINode Title="SaslMechanismPlain.SupportsInitialResponse property" Url="html/P_MailKit_Security_SaslMechanismPlain_SupportsInitialResponse.htm" />
   <HelpKINode Title="SaslMechanismScramBase class">
     <HelpKINode Title="SaslMechanismScramBase Class" Url="html/T_MailKit_Security_SaslMechanismScramBase.htm" />
@@ -7779,6 +7803,8 @@
   <HelpKINode Title="SmtpClient.Connect method" Url="html/Overload_MailKit_Net_Smtp_SmtpClient_Connect.htm" />
   <HelpKINode Title="SmtpClient.Disconnect method" Url="html/M_MailKit_Net_Smtp_SmtpClient_Disconnect.htm" />
   <HelpKINode Title="SmtpClient.Dispose method" Url="html/Overload_MailKit_Net_Smtp_SmtpClient_Dispose.htm" />
+  <HelpKINode Title="SmtpClient.Expand method" Url="html/M_MailKit_Net_Smtp_SmtpClient_Expand.htm" />
+  <HelpKINode Title="SmtpClient.ExpandAsync method" Url="html/M_MailKit_Net_Smtp_SmtpClient_ExpandAsync.htm" />
   <HelpKINode Title="SmtpClient.GetDeliveryStatusNotifications method" Url="html/M_MailKit_Net_Smtp_SmtpClient_GetDeliveryStatusNotifications.htm" />
   <HelpKINode Title="SmtpClient.GetEnvelopeId method" Url="html/M_MailKit_Net_Smtp_SmtpClient_GetEnvelopeId.htm" />
   <HelpKINode Title="SmtpClient.IsAuthenticated property" Url="html/P_MailKit_Net_Smtp_SmtpClient_IsAuthenticated.htm" />
@@ -7793,6 +7819,8 @@
   <HelpKINode Title="SmtpClient.SmtpClient constructor" Url="html/Overload_MailKit_Net_Smtp_SmtpClient__ctor.htm" />
   <HelpKINode Title="SmtpClient.SyncRoot property" Url="html/P_MailKit_Net_Smtp_SmtpClient_SyncRoot.htm" />
   <HelpKINode Title="SmtpClient.Timeout property" Url="html/P_MailKit_Net_Smtp_SmtpClient_Timeout.htm" />
+  <HelpKINode Title="SmtpClient.Verify method" Url="html/M_MailKit_Net_Smtp_SmtpClient_Verify.htm" />
+  <HelpKINode Title="SmtpClient.VerifyAsync method" Url="html/M_MailKit_Net_Smtp_SmtpClient_VerifyAsync.htm" />
   <HelpKINode Title="SmtpCommandException class">
     <HelpKINode Title="SmtpCommandException Class" Url="html/T_MailKit_Net_Smtp_SmtpCommandException.htm" />
     <HelpKINode Title="about SmtpCommandException class" Url="html/T_MailKit_Net_Smtp_SmtpCommandException.htm" />
@@ -7887,8 +7915,8 @@
   <HelpKINode Title="StartDate field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_StartDate.htm" />
   <HelpKINode Title="StartMailInput enumeration member" Url="html/T_MailKit_Net_Smtp_SmtpStatusCode.htm" />
   <HelpKINode Title="StartTLS enumeration member">
-    <HelpKINode Title="Pop3Capabilities Enumeration" Url="html/T_MailKit_Net_Pop3_Pop3Capabilities.htm" />
     <HelpKINode Title="ImapCapabilities Enumeration" Url="html/T_MailKit_Net_Imap_ImapCapabilities.htm" />
+    <HelpKINode Title="Pop3Capabilities Enumeration" Url="html/T_MailKit_Net_Pop3_Pop3Capabilities.htm" />
     <HelpKINode Title="SmtpCapabilities Enumeration" Url="html/T_MailKit_Net_Smtp_SmtpCapabilities.htm" />
   </HelpKINode>
   <HelpKINode Title="StartTls enumeration member" Url="html/T_MailKit_Security_SecureSocketOptions.htm" />
@@ -9437,7 +9465,9 @@
     <HelpKINode Title="OpenPgpDigitalSignature.Verify Method " Url="html/M_MimeKit_Cryptography_OpenPgpDigitalSignature_Verify.htm" />
     <HelpKINode Title="SecureMimeContext.Verify Method " Url="html/Overload_MimeKit_Cryptography_SecureMimeContext_Verify.htm" />
     <HelpKINode Title="SecureMimeDigitalSignature.Verify Method " Url="html/M_MimeKit_Cryptography_SecureMimeDigitalSignature_Verify.htm" />
+    <HelpKINode Title="SmtpClient.Verify Method " Url="html/M_MailKit_Net_Smtp_SmtpClient_Verify.htm" />
   </HelpKINode>
+  <HelpKINode Title="VerifyAsync method" Url="html/M_MailKit_Net_Smtp_SmtpClient_VerifyAsync.htm" />
   <HelpKINode Title="VerifyContentMd5 method" Url="html/M_MimeKit_MimePart_VerifyContentMd5.htm" />
   <HelpKINode Title="Version enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
   <HelpKINode Title="Version property" Url="html/P_MailKit_Net_Imap_ImapImplementation_Version.htm" />
@@ -9477,6 +9507,7 @@
   <HelpKINode Title="VisitMultipartAlternative method" Url="html/M_MimeKit_MimeVisitor_VisitMultipartAlternative.htm" />
   <HelpKINode Title="VisitMultipartEncrypted method" Url="html/M_MimeKit_MimeVisitor_VisitMultipartEncrypted.htm" />
   <HelpKINode Title="VisitMultipartRelated method" Url="html/M_MimeKit_MimeVisitor_VisitMultipartRelated.htm" />
+  <HelpKINode Title="VisitMultipartReport method" Url="html/M_MimeKit_MimeVisitor_VisitMultipartReport.htm" />
   <HelpKINode Title="VisitMultipartSigned method" Url="html/M_MimeKit_MimeVisitor_VisitMultipartSigned.htm" />
   <HelpKINode Title="VisitTextPart method" Url="html/M_MimeKit_MimeVisitor_VisitTextPart.htm" />
   <HelpKINode Title="VisitTnefPart method" Url="html/M_MimeKit_MimeVisitor_VisitTnefPart.htm" />
