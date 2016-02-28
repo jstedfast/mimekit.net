@@ -2628,6 +2628,7 @@
     <HelpKINode Title="SecureMimeContext.GetDigestAlgorithmName Method " Url="html/M_MimeKit_Cryptography_SecureMimeContext_GetDigestAlgorithmName.htm" />
   </HelpKINode>
   <HelpKINode Title="GetDigestOid method" Url="html/M_MimeKit_Cryptography_SecureMimeContext_GetDigestOid.htm" />
+  <HelpKINode Title="GetDigitalSignatures method" Url="html/M_MimeKit_Cryptography_SecureMimeContext_GetDigitalSignatures.htm" />
   <HelpKINode Title="GetEmbeddedMessageReader method" Url="html/M_MimeKit_Tnef_TnefPropertyReader_GetEmbeddedMessageReader.htm" />
   <HelpKINode Title="GetEnumerator method">
     <HelpKINode Title="AccessRights.GetEnumerator Method " Url="html/M_MailKit_AccessRights_GetEnumerator.htm" />
@@ -7492,6 +7493,7 @@
   <HelpKINode Title="SecureMimeContext.GetDigestAlgorithm method" Url="html/M_MimeKit_Cryptography_SecureMimeContext_GetDigestAlgorithm.htm" />
   <HelpKINode Title="SecureMimeContext.GetDigestAlgorithmName method" Url="html/M_MimeKit_Cryptography_SecureMimeContext_GetDigestAlgorithmName.htm" />
   <HelpKINode Title="SecureMimeContext.GetDigestOid method" Url="html/M_MimeKit_Cryptography_SecureMimeContext_GetDigestOid.htm" />
+  <HelpKINode Title="SecureMimeContext.GetDigitalSignatures method" Url="html/M_MimeKit_Cryptography_SecureMimeContext_GetDigitalSignatures.htm" />
   <HelpKINode Title="SecureMimeContext.GetIntermediateCertificates method" Url="html/M_MimeKit_Cryptography_SecureMimeContext_GetIntermediateCertificates.htm" />
   <HelpKINode Title="SecureMimeContext.GetPreferredEncryptionAlgorithm method" Url="html/M_MimeKit_Cryptography_SecureMimeContext_GetPreferredEncryptionAlgorithm.htm" />
   <HelpKINode Title="SecureMimeContext.GetPrivateKey method" Url="html/M_MimeKit_Cryptography_SecureMimeContext_GetPrivateKey.htm" />
@@ -7914,12 +7916,12 @@
   <HelpKINode Title="StartDate enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="StartDate field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_StartDate.htm" />
   <HelpKINode Title="StartMailInput enumeration member" Url="html/T_MailKit_Net_Smtp_SmtpStatusCode.htm" />
+  <HelpKINode Title="StartTls enumeration member" Url="html/T_MailKit_Security_SecureSocketOptions.htm" />
   <HelpKINode Title="StartTLS enumeration member">
     <HelpKINode Title="ImapCapabilities Enumeration" Url="html/T_MailKit_Net_Imap_ImapCapabilities.htm" />
     <HelpKINode Title="Pop3Capabilities Enumeration" Url="html/T_MailKit_Net_Pop3_Pop3Capabilities.htm" />
     <HelpKINode Title="SmtpCapabilities Enumeration" Url="html/T_MailKit_Net_Smtp_SmtpCapabilities.htm" />
   </HelpKINode>
-  <HelpKINode Title="StartTls enumeration member" Url="html/T_MailKit_Security_SecureSocketOptions.htm" />
   <HelpKINode Title="StartTlsWhenAvailable enumeration member" Url="html/T_MailKit_Security_SecureSocketOptions.htm" />
   <HelpKINode Title="StateOrProvince enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="StateOrProvinceA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_StateOrProvinceA.htm" />
