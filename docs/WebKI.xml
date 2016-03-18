@@ -1650,6 +1650,7 @@
   <HelpKINode Title="DefaultSecureMimeContext.GetTrustedAnchors method" Url="html/M_MimeKit_Cryptography_DefaultSecureMimeContext_GetTrustedAnchors.htm" />
   <HelpKINode Title="DefaultSecureMimeContext.Import method" Url="html/Overload_MimeKit_Cryptography_DefaultSecureMimeContext_Import.htm" />
   <HelpKINode Title="DefaultSecureMimeContext.UpdateSecureMimeCapabilities method" Url="html/M_MimeKit_Cryptography_DefaultSecureMimeContext_UpdateSecureMimeCapabilities.htm" />
+  <HelpKINode Title="DefaultServerCertificateValidationCallback method" Url="html/M_MailKit_MailService_DefaultServerCertificateValidationCallback.htm" />
   <HelpKINode Title="DefaultStore enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="DefaultStore field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_DefaultStore.htm" />
   <HelpKINode Title="DefaultViewEntryId enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
@@ -4755,6 +4756,7 @@
   <HelpKINode Title="MailService.Connect method" Url="html/Overload_MailKit_MailService_Connect.htm" />
   <HelpKINode Title="MailService.ConnectAsync method" Url="html/Overload_MailKit_MailService_ConnectAsync.htm" />
   <HelpKINode Title="MailService.Connected event" Url="html/E_MailKit_MailService_Connected.htm" />
+  <HelpKINode Title="MailService.DefaultServerCertificateValidationCallback method" Url="html/M_MailKit_MailService_DefaultServerCertificateValidationCallback.htm" />
   <HelpKINode Title="MailService.Disconnect method" Url="html/M_MailKit_MailService_Disconnect.htm" />
   <HelpKINode Title="MailService.DisconnectAsync method" Url="html/M_MailKit_MailService_DisconnectAsync.htm" />
   <HelpKINode Title="MailService.Disconnected event" Url="html/E_MailKit_MailService_Disconnected.htm" />
@@ -6004,13 +6006,18 @@
   <HelpKINode Title="OnMessageSent method" Url="html/M_MailKit_MailTransport_OnMessageSent.htm" />
   <HelpKINode Title="OnMessageSummaryFetched method" Url="html/M_MailKit_MailFolder_OnMessageSummaryFetched.htm" />
   <HelpKINode Title="OnMessagesVanished method" Url="html/M_MailKit_MailFolder_OnMessagesVanished.htm" />
+  <HelpKINode Title="OnNoRecipientsAccepted method" Url="html/M_MailKit_Net_Smtp_SmtpClient_OnNoRecipientsAccepted.htm" />
   <HelpKINode Title="OnOpened method" Url="html/M_MailKit_MailFolder_OnOpened.htm" />
   <HelpKINode Title="OnParentFolderRenamed method">
     <HelpKINode Title="ImapFolder.OnParentFolderRenamed Method " Url="html/M_MailKit_Net_Imap_ImapFolder_OnParentFolderRenamed.htm" />
     <HelpKINode Title="MailFolder.OnParentFolderRenamed Method " Url="html/M_MailKit_MailFolder_OnParentFolderRenamed.htm" />
   </HelpKINode>
   <HelpKINode Title="OnRecentChanged method" Url="html/M_MailKit_MailFolder_OnRecentChanged.htm" />
+  <HelpKINode Title="OnRecipientAccepted method" Url="html/M_MailKit_Net_Smtp_SmtpClient_OnRecipientAccepted.htm" />
+  <HelpKINode Title="OnRecipientNotAccepted method" Url="html/M_MailKit_Net_Smtp_SmtpClient_OnRecipientNotAccepted.htm" />
   <HelpKINode Title="OnRenamed method" Url="html/M_MailKit_MailFolder_OnRenamed.htm" />
+  <HelpKINode Title="OnSenderAccepted method" Url="html/M_MailKit_Net_Smtp_SmtpClient_OnSenderAccepted.htm" />
+  <HelpKINode Title="OnSenderNotAccepted method" Url="html/M_MailKit_Net_Smtp_SmtpClient_OnSenderNotAccepted.htm" />
   <HelpKINode Title="OnSubscribed method" Url="html/M_MailKit_MailFolder_OnSubscribed.htm" />
   <HelpKINode Title="OnUidValidityChanged method" Url="html/M_MailKit_MailFolder_OnUidValidityChanged.htm" />
   <HelpKINode Title="OnUnsubscribed method" Url="html/M_MailKit_MailFolder_OnUnsubscribed.htm" />
@@ -6618,7 +6625,6 @@
   <HelpKINode Title="PrivateKeyNotFoundException.KeyId property" Url="html/P_MimeKit_Cryptography_PrivateKeyNotFoundException_KeyId.htm" />
   <HelpKINode Title="PrivateKeyNotFoundException.PrivateKeyNotFoundException constructor" Url="html/Overload_MimeKit_Cryptography_PrivateKeyNotFoundException__ctor.htm" />
   <HelpKINode Title="PrivateSpecialUse field" Url="html/F_MailKit_MetadataTag_PrivateSpecialUse.htm" />
-  <HelpKINode Title="ProcessRcptToResponse method" Url="html/M_MailKit_Net_Smtp_SmtpClient_ProcessRcptToResponse.htm" />
   <HelpKINode Title="Profession enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="ProfessionA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_ProfessionA.htm" />
   <HelpKINode Title="ProfessionW field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_ProfessionW.htm" />
@@ -7815,7 +7821,11 @@
   <HelpKINode Title="SmtpClient.LocalDomain property" Url="html/P_MailKit_Net_Smtp_SmtpClient_LocalDomain.htm" />
   <HelpKINode Title="SmtpClient.MaxSize property" Url="html/P_MailKit_Net_Smtp_SmtpClient_MaxSize.htm" />
   <HelpKINode Title="SmtpClient.NoOp method" Url="html/M_MailKit_Net_Smtp_SmtpClient_NoOp.htm" />
-  <HelpKINode Title="SmtpClient.ProcessRcptToResponse method" Url="html/M_MailKit_Net_Smtp_SmtpClient_ProcessRcptToResponse.htm" />
+  <HelpKINode Title="SmtpClient.OnNoRecipientsAccepted method" Url="html/M_MailKit_Net_Smtp_SmtpClient_OnNoRecipientsAccepted.htm" />
+  <HelpKINode Title="SmtpClient.OnRecipientAccepted method" Url="html/M_MailKit_Net_Smtp_SmtpClient_OnRecipientAccepted.htm" />
+  <HelpKINode Title="SmtpClient.OnRecipientNotAccepted method" Url="html/M_MailKit_Net_Smtp_SmtpClient_OnRecipientNotAccepted.htm" />
+  <HelpKINode Title="SmtpClient.OnSenderAccepted method" Url="html/M_MailKit_Net_Smtp_SmtpClient_OnSenderAccepted.htm" />
+  <HelpKINode Title="SmtpClient.OnSenderNotAccepted method" Url="html/M_MailKit_Net_Smtp_SmtpClient_OnSenderNotAccepted.htm" />
   <HelpKINode Title="SmtpClient.Protocol property" Url="html/P_MailKit_Net_Smtp_SmtpClient_Protocol.htm" />
   <HelpKINode Title="SmtpClient.Send method" Url="html/Overload_MailKit_Net_Smtp_SmtpClient_Send.htm" />
   <HelpKINode Title="SmtpClient.SmtpClient constructor" Url="html/Overload_MailKit_Net_Smtp_SmtpClient__ctor.htm" />
