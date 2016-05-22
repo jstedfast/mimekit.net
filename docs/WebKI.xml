@@ -230,6 +230,7 @@
     <HelpKINode Title="FolderAttributes Enumeration" Url="html/T_MailKit_FolderAttributes.htm" />
     <HelpKINode Title="MessageSummaryItems Enumeration" Url="html/T_MailKit_MessageSummaryItems.htm" />
     <HelpKINode Title="SearchOptions Enumeration" Url="html/T_MailKit_Search_SearchOptions.htm" />
+    <HelpKINode Title="SearchTerm Enumeration" Url="html/T_MailKit_Search_SearchTerm.htm" />
     <HelpKINode Title="SpecialFolder Enumeration" Url="html/T_MailKit_SpecialFolder.htm" />
   </HelpKINode>
   <HelpKINode Title="All field" Url="html/F_MailKit_Search_SearchQuery_All.htm" />
@@ -239,11 +240,15 @@
   <HelpKINode Title="AlternateRecipient field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_AlternateRecipient.htm" />
   <HelpKINode Title="AlternateRecipientAllowed enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="AlternateRecipientAllowed field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_AlternateRecipientAllowed.htm" />
+  <HelpKINode Title="And enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="And method" Url="html/Overload_MailKit_Search_SearchQuery_And.htm" />
   <HelpKINode Title="Anr enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="AnrA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_AnrA.htm" />
   <HelpKINode Title="AnrW field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_AnrW.htm" />
-  <HelpKINode Title="Answered enumeration member" Url="html/T_MailKit_MessageFlags.htm" />
+  <HelpKINode Title="Answered enumeration member">
+    <HelpKINode Title="MessageFlags Enumeration" Url="html/T_MailKit_MessageFlags.htm" />
+    <HelpKINode Title="SearchTerm Enumeration" Url="html/T_MailKit_Search_SearchTerm.htm" />
+  </HelpKINode>
   <HelpKINode Title="Answered field" Url="html/F_MailKit_Search_SearchQuery_Answered.htm" />
   <HelpKINode Title="Apop enumeration member" Url="html/T_MailKit_Net_Pop3_Pop3Capabilities.htm" />
   <HelpKINode Title="ApparentlyTo enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
@@ -553,6 +558,7 @@
     <HelpKINode Title="Envelope.Bcc Property " Url="html/P_MailKit_Envelope_Bcc.htm" />
     <HelpKINode Title="MimeMessage.Bcc Property " Url="html/P_MimeKit_MimeMessage_Bcc.htm" />
   </HelpKINode>
+  <HelpKINode Title="BccContains enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="BccContains method" Url="html/M_MailKit_Search_SearchQuery_BccContains.htm" />
   <HelpKINode Title="Bdi enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
   <HelpKINode Title="Bdo enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
@@ -588,9 +594,11 @@
   <HelpKINode Title="BinarySearchQuery class">
     <HelpKINode Title="BinarySearchQuery Class" Url="html/T_MailKit_Search_BinarySearchQuery.htm" />
     <HelpKINode Title="about BinarySearchQuery class" Url="html/T_MailKit_Search_BinarySearchQuery.htm" />
+    <HelpKINode Title="constructor" Url="html/M_MailKit_Search_BinarySearchQuery__ctor.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MailKit_Search_BinarySearchQuery.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MailKit_Search_BinarySearchQuery.htm" />
   </HelpKINode>
+  <HelpKINode Title="BinarySearchQuery.BinarySearchQuery constructor" Url="html/M_MailKit_Search_BinarySearchQuery__ctor.htm" />
   <HelpKINode Title="BinarySearchQuery.Left property" Url="html/P_MailKit_Search_BinarySearchQuery_Left.htm" />
   <HelpKINode Title="BinarySearchQuery.Right property" Url="html/P_MailKit_Search_BinarySearchQuery_Right.htm" />
   <HelpKINode Title="Birthday enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
@@ -624,6 +632,7 @@
   <HelpKINode Title="BodyBuilder.LinkedResources property" Url="html/P_MimeKit_BodyBuilder_LinkedResources.htm" />
   <HelpKINode Title="BodyBuilder.TextBody property" Url="html/P_MimeKit_BodyBuilder_TextBody.htm" />
   <HelpKINode Title="BodyBuilder.ToMessageBody method" Url="html/M_MimeKit_BodyBuilder_ToMessageBody.htm" />
+  <HelpKINode Title="BodyContains enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="BodyContains method" Url="html/M_MailKit_Search_SearchQuery_BodyContains.htm" />
   <HelpKINode Title="BodyContentId enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="BodyContentIdA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_BodyContentIdA.htm" />
@@ -871,6 +880,7 @@
     <HelpKINode Title="Envelope.Cc Property " Url="html/P_MailKit_Envelope_Cc.htm" />
     <HelpKINode Title="MimeMessage.Cc Property " Url="html/P_MimeKit_MimeMessage_Cc.htm" />
   </HelpKINode>
+  <HelpKINode Title="CcContains enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="CcContains method" Url="html/M_MailKit_Search_SearchQuery_CcContains.htm" />
   <HelpKINode Title="CData enumeration member" Url="html/T_MimeKit_Text_HtmlTokenKind.htm" />
   <HelpKINode Title="CDataSection enumeration member" Url="html/T_MimeKit_Text_HtmlTokenizerState.htm" />
@@ -1556,10 +1566,12 @@
   <HelpKINode Title="DateSearchQuery class">
     <HelpKINode Title="DateSearchQuery Class" Url="html/T_MailKit_Search_DateSearchQuery.htm" />
     <HelpKINode Title="about DateSearchQuery class" Url="html/T_MailKit_Search_DateSearchQuery.htm" />
+    <HelpKINode Title="constructor" Url="html/M_MailKit_Search_DateSearchQuery__ctor.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MailKit_Search_DateSearchQuery.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MailKit_Search_DateSearchQuery.htm" />
   </HelpKINode>
   <HelpKINode Title="DateSearchQuery.Date property" Url="html/P_MailKit_Search_DateSearchQuery_Date.htm" />
+  <HelpKINode Title="DateSearchQuery.DateSearchQuery constructor" Url="html/M_MailKit_Search_DateSearchQuery__ctor.htm" />
   <HelpKINode Title="DateSent enumeration member" Url="html/T_MimeKit_Tnef_TnefAttributeTag.htm" />
   <HelpKINode Title="DateStart enumeration member" Url="html/T_MimeKit_Tnef_TnefAttributeTag.htm" />
   <HelpKINode Title="DateTime enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
@@ -1688,7 +1700,10 @@
     <HelpKINode Title="IMailFolder.DeleteAsync Method " Url="html/M_MailKit_IMailFolder_DeleteAsync.htm" />
     <HelpKINode Title="MailFolder.DeleteAsync Method " Url="html/M_MailKit_MailFolder_DeleteAsync.htm" />
   </HelpKINode>
-  <HelpKINode Title="Deleted enumeration member" Url="html/T_MailKit_MessageFlags.htm" />
+  <HelpKINode Title="Deleted enumeration member">
+    <HelpKINode Title="MessageFlags Enumeration" Url="html/T_MailKit_MessageFlags.htm" />
+    <HelpKINode Title="SearchTerm Enumeration" Url="html/T_MailKit_Search_SearchTerm.htm" />
+  </HelpKINode>
   <HelpKINode Title="Deleted event">
     <HelpKINode Title="IMailFolder.Deleted Event" Url="html/E_MailKit_IMailFolder_Deleted.htm" />
     <HelpKINode Title="MailFolder.Deleted Event" Url="html/E_MailKit_MailFolder_Deleted.htm" />
@@ -1719,8 +1734,11 @@
     <HelpKINode Title="FlowedToText.DeleteSpace Property " Url="html/P_MimeKit_Text_FlowedToText_DeleteSpace.htm" />
   </HelpKINode>
   <HelpKINode Title="DeleteTag property" Url="html/P_MimeKit_Text_HtmlTagContext_DeleteTag.htm" />
+  <HelpKINode Title="DeliveredAfter enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="DeliveredAfter method" Url="html/M_MailKit_Search_SearchQuery_DeliveredAfter.htm" />
+  <HelpKINode Title="DeliveredBefore enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="DeliveredBefore method" Url="html/M_MailKit_Search_SearchQuery_DeliveredBefore.htm" />
+  <HelpKINode Title="DeliveredOn enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="DeliveredOn method" Url="html/M_MailKit_Search_SearchQuery_DeliveredOn.htm" />
   <HelpKINode Title="DeliverTime enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="DeliverTime field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_DeliverTime.htm" />
@@ -1927,7 +1945,10 @@
   <HelpKINode Title="Dos2UnixFilter.Reset method" Url="html/M_MimeKit_IO_Filters_Dos2UnixFilter_Reset.htm" />
   <HelpKINode Title="Double enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyType.htm" />
   <HelpKINode Title="DoubleSha enumeration member" Url="html/T_MimeKit_Cryptography_DigestAlgorithm.htm" />
-  <HelpKINode Title="Draft enumeration member" Url="html/T_MailKit_MessageFlags.htm" />
+  <HelpKINode Title="Draft enumeration member">
+    <HelpKINode Title="MessageFlags Enumeration" Url="html/T_MailKit_MessageFlags.htm" />
+    <HelpKINode Title="SearchTerm Enumeration" Url="html/T_MailKit_Search_SearchTerm.htm" />
+  </HelpKINode>
   <HelpKINode Title="Draft field" Url="html/F_MailKit_Search_SearchQuery_Draft.htm" />
   <HelpKINode Title="Drafts enumeration member">
     <HelpKINode Title="FolderAttributes Enumeration" Url="html/T_MailKit_FolderAttributes.htm" />
@@ -2305,6 +2326,7 @@
   <HelpKINode Title="Flagged enumeration member">
     <HelpKINode Title="FolderAttributes Enumeration" Url="html/T_MailKit_FolderAttributes.htm" />
     <HelpKINode Title="MessageFlags Enumeration" Url="html/T_MailKit_MessageFlags.htm" />
+    <HelpKINode Title="SearchTerm Enumeration" Url="html/T_MailKit_Search_SearchTerm.htm" />
     <HelpKINode Title="SpecialFolder Enumeration" Url="html/T_MailKit_SpecialFolder.htm" />
   </HelpKINode>
   <HelpKINode Title="Flagged field" Url="html/F_MailKit_Search_SearchQuery_Flagged.htm" />
@@ -2522,6 +2544,7 @@
     <HelpKINode Title="Envelope.From Property " Url="html/P_MailKit_Envelope_From.htm" />
     <HelpKINode Title="MimeMessage.From Property " Url="html/P_MimeKit_MimeMessage_From.htm" />
   </HelpKINode>
+  <HelpKINode Title="FromContains enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="FromContains method" Url="html/M_MailKit_Search_SearchQuery_FromContains.htm" />
   <HelpKINode Title="FtpSite enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="FtpSiteA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_FtpSiteA.htm" />
@@ -2532,6 +2555,7 @@
     <HelpKINode Title="ImapFolderConstructorArgs.FullName Property " Url="html/P_MailKit_Net_Imap_ImapFolderConstructorArgs_FullName.htm" />
     <HelpKINode Title="MailFolder.FullName Property " Url="html/P_MailKit_MailFolder_FullName.htm" />
   </HelpKINode>
+  <HelpKINode Title="Fuzzy enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="Fuzzy method" Url="html/M_MailKit_Search_SearchQuery_Fuzzy.htm" />
   <HelpKINode Title="FuzzySearch enumeration member" Url="html/T_MailKit_Net_Imap_ImapCapabilities.htm" />
   <HelpKINode Title="Gender enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
@@ -2910,19 +2934,29 @@
   <HelpKINode Title="GivenNameA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_GivenNameA.htm" />
   <HelpKINode Title="GivenNameW field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_GivenNameW.htm" />
   <HelpKINode Title="GMailExt1 enumeration member" Url="html/T_MailKit_Net_Imap_ImapCapabilities.htm" />
-  <HelpKINode Title="GMailLabels enumeration member" Url="html/T_MailKit_MessageSummaryItems.htm" />
+  <HelpKINode Title="GMailLabels enumeration member">
+    <HelpKINode Title="MessageSummaryItems Enumeration" Url="html/T_MailKit_MessageSummaryItems.htm" />
+    <HelpKINode Title="SearchTerm Enumeration" Url="html/T_MailKit_Search_SearchTerm.htm" />
+  </HelpKINode>
   <HelpKINode Title="GMailLabels property">
     <HelpKINode Title="IMessageSummary.GMailLabels Property " Url="html/P_MailKit_IMessageSummary_GMailLabels.htm" />
     <HelpKINode Title="MessageSummary.GMailLabels Property " Url="html/P_MailKit_MessageSummary_GMailLabels.htm" />
   </HelpKINode>
-  <HelpKINode Title="GMailMessageId enumeration member" Url="html/T_MailKit_MessageSummaryItems.htm" />
+  <HelpKINode Title="GMailMessageId enumeration member">
+    <HelpKINode Title="MessageSummaryItems Enumeration" Url="html/T_MailKit_MessageSummaryItems.htm" />
+    <HelpKINode Title="SearchTerm Enumeration" Url="html/T_MailKit_Search_SearchTerm.htm" />
+  </HelpKINode>
   <HelpKINode Title="GMailMessageId method" Url="html/M_MailKit_Search_SearchQuery_GMailMessageId.htm" />
   <HelpKINode Title="GMailMessageId property">
     <HelpKINode Title="IMessageSummary.GMailMessageId Property " Url="html/P_MailKit_IMessageSummary_GMailMessageId.htm" />
     <HelpKINode Title="MessageSummary.GMailMessageId Property " Url="html/P_MailKit_MessageSummary_GMailMessageId.htm" />
   </HelpKINode>
+  <HelpKINode Title="GMailRaw enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="GMailRawSearch method" Url="html/M_MailKit_Search_SearchQuery_GMailRawSearch.htm" />
-  <HelpKINode Title="GMailThreadId enumeration member" Url="html/T_MailKit_MessageSummaryItems.htm" />
+  <HelpKINode Title="GMailThreadId enumeration member">
+    <HelpKINode Title="MessageSummaryItems Enumeration" Url="html/T_MailKit_MessageSummaryItems.htm" />
+    <HelpKINode Title="SearchTerm Enumeration" Url="html/T_MailKit_Search_SearchTerm.htm" />
+  </HelpKINode>
   <HelpKINode Title="GMailThreadId method" Url="html/M_MailKit_Search_SearchQuery_GMailThreadId.htm" />
   <HelpKINode Title="GMailThreadId property">
     <HelpKINode Title="IMessageSummary.GMailThreadId Property " Url="html/P_MailKit_IMessageSummary_GMailThreadId.htm" />
@@ -3006,6 +3040,7 @@
   <HelpKINode Title="Header.TryParse method" Url="html/Overload_MimeKit_Header_TryParse.htm" />
   <HelpKINode Title="Header.Unfold method" Url="html/M_MimeKit_Header_Unfold.htm" />
   <HelpKINode Title="Header.Value property" Url="html/P_MimeKit_Header_Value.htm" />
+  <HelpKINode Title="HeaderContains enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="HeaderContains method" Url="html/M_MailKit_Search_SearchQuery_HeaderContains.htm" />
   <HelpKINode Title="HeaderFolderEntryId enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="HeaderFolderEntryId field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_HeaderFolderEntryId.htm" />
@@ -3075,10 +3110,12 @@
   <HelpKINode Title="HeaderSearchQuery class">
     <HelpKINode Title="HeaderSearchQuery Class" Url="html/T_MailKit_Search_HeaderSearchQuery.htm" />
     <HelpKINode Title="about HeaderSearchQuery class" Url="html/T_MailKit_Search_HeaderSearchQuery.htm" />
+    <HelpKINode Title="constructor" Url="html/M_MailKit_Search_HeaderSearchQuery__ctor.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MailKit_Search_HeaderSearchQuery.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MailKit_Search_HeaderSearchQuery.htm" />
   </HelpKINode>
   <HelpKINode Title="HeaderSearchQuery.Field property" Url="html/P_MailKit_Search_HeaderSearchQuery_Field.htm" />
+  <HelpKINode Title="HeaderSearchQuery.HeaderSearchQuery constructor" Url="html/M_MailKit_Search_HeaderSearchQuery__ctor.htm" />
   <HelpKINode Title="HeaderSearchQuery.Value property" Url="html/P_MailKit_Search_HeaderSearchQuery_Value.htm" />
   <HelpKINode Title="Height enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
   <HelpKINode Title="HelpMessage enumeration member" Url="html/T_MailKit_Net_Smtp_SmtpStatusCode.htm" />
@@ -3110,7 +3147,11 @@
   <HelpKINode Title="HexEncoder.HexEncoder constructor" Url="html/M_MimeKit_Encodings_HexEncoder__ctor.htm" />
   <HelpKINode Title="HexEncoder.Reset method" Url="html/M_MimeKit_Encodings_HexEncoder_Reset.htm" />
   <HelpKINode Title="HiddenHeaders property" Url="html/P_MimeKit_FormatOptions_HiddenHeaders.htm" />
-  <HelpKINode Title="High enumeration member" Url="html/T_MimeKit_MessageImportance.htm" />
+  <HelpKINode Title="High enumeration member">
+    <HelpKINode Title="MessageImportance Enumeration" Url="html/T_MimeKit_MessageImportance.htm" />
+    <HelpKINode Title="XMessagePriority Enumeration" Url="html/T_MimeKit_XMessagePriority.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Highest enumeration member" Url="html/T_MimeKit_XMessagePriority.htm" />
   <HelpKINode Title="HighestModSeq enumeration member" Url="html/T_MailKit_StatusItems.htm" />
   <HelpKINode Title="HighestModSeq property">
     <HelpKINode Title="IMailFolder.HighestModSeq Property " Url="html/P_MailKit_IMailFolder_HighestModSeq.htm" />
@@ -4296,7 +4337,10 @@
   <HelpKINode Title="KeyId property" Url="html/P_MimeKit_Cryptography_PrivateKeyNotFoundException_KeyId.htm" />
   <HelpKINode Title="Keys property" Url="html/P_MailKit_UniqueIdMap_Keys.htm" />
   <HelpKINode Title="KeyUsage property" Url="html/P_MimeKit_Cryptography_X509CertificateRecord_KeyUsage.htm" />
-  <HelpKINode Title="Keyword enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
+  <HelpKINode Title="Keyword enumeration member">
+    <HelpKINode Title="SearchTerm Enumeration" Url="html/T_MailKit_Search_SearchTerm.htm" />
+    <HelpKINode Title="TnefPropertyId Enumeration" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
+  </HelpKINode>
   <HelpKINode Title="KeywordA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_KeywordA.htm" />
   <HelpKINode Title="Keywords enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
   <HelpKINode Title="KeywordW field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_KeywordW.htm" />
@@ -4324,6 +4368,7 @@
   <HelpKINode Title="LanguagesA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_LanguagesA.htm" />
   <HelpKINode Title="LanguagesW field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_LanguagesW.htm" />
   <HelpKINode Title="LanguageW field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_LanguageW.htm" />
+  <HelpKINode Title="LargerThan enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="LargerThan method" Url="html/M_MailKit_Search_SearchQuery_LargerThan.htm" />
   <HelpKINode Title="LastIndexOf method" Url="html/Overload_MimeKit_HeaderList_LastIndexOf.htm" />
   <HelpKINode Title="LastModificationTime enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
@@ -4444,7 +4489,11 @@
     <HelpKINode Title="RfcComplianceMode Enumeration" Url="html/T_MimeKit_RfcComplianceMode.htm" />
     <HelpKINode Title="TnefComplianceMode Enumeration" Url="html/T_MimeKit_Tnef_TnefComplianceMode.htm" />
   </HelpKINode>
-  <HelpKINode Title="Low enumeration member" Url="html/T_MimeKit_MessageImportance.htm" />
+  <HelpKINode Title="Low enumeration member">
+    <HelpKINode Title="MessageImportance Enumeration" Url="html/T_MimeKit_MessageImportance.htm" />
+    <HelpKINode Title="XMessagePriority Enumeration" Url="html/T_MimeKit_XMessagePriority.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Lowest enumeration member" Url="html/T_MimeKit_XMessagePriority.htm" />
   <HelpKINode Title="LowSrc enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
   <HelpKINode Title="MailAddress to MailboxAddress conversion" Url="html/M_MimeKit_MailboxAddress_op_Explicit_1.htm" />
   <HelpKINode Title="MailAddressCollection to InternetAddressList conversion" Url="html/M_MimeKit_InternetAddressList_op_Explicit_1.htm" />
@@ -4619,6 +4668,7 @@
   <HelpKINode Title="MailFolder.Unsubscribe method" Url="html/M_MailKit_MailFolder_Unsubscribe.htm" />
   <HelpKINode Title="MailFolder.UnsubscribeAsync method" Url="html/M_MailKit_MailFolder_UnsubscribeAsync.htm" />
   <HelpKINode Title="MailFolder.Unsubscribed event" Url="html/E_MailKit_MailFolder_Unsubscribed.htm" />
+  <HelpKINode Title="MailFromOrRcptToParametersNotRecognizedOrNotImplemented enumeration member" Url="html/T_MailKit_Net_Smtp_SmtpStatusCode.htm" />
   <HelpKINode Title="MailKit namespace" Url="html/N_MailKit.htm" />
   <HelpKINode Title="MailKit.AccessControl class" Url="html/T_MailKit_AccessControl.htm" />
   <HelpKINode Title="MailKit.AccessControlList class" Url="html/T_MailKit_AccessControlList.htm" />
@@ -4710,6 +4760,7 @@
   <HelpKINode Title="MailKit.Search.SearchOptions enumeration" Url="html/T_MailKit_Search_SearchOptions.htm" />
   <HelpKINode Title="MailKit.Search.SearchQuery class" Url="html/T_MailKit_Search_SearchQuery.htm" />
   <HelpKINode Title="MailKit.Search.SearchResults class" Url="html/T_MailKit_Search_SearchResults.htm" />
+  <HelpKINode Title="MailKit.Search.SearchTerm enumeration" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="MailKit.Search.SortOrder enumeration" Url="html/T_MailKit_Search_SortOrder.htm" />
   <HelpKINode Title="MailKit.Search.TextSearchQuery class" Url="html/T_MailKit_Search_TextSearchQuery.htm" />
   <HelpKINode Title="MailKit.Search.UnarySearchQuery class" Url="html/T_MailKit_Search_UnarySearchQuery.htm" />
@@ -4967,6 +5018,7 @@
   <HelpKINode Title="MessageCodepage enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="MessageCodepage field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_MessageCodepage.htm" />
   <HelpKINode Title="MessageCodepage property" Url="html/P_MimeKit_Tnef_TnefReader_MessageCodepage.htm" />
+  <HelpKINode Title="MessageContains enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="MessageContains method" Url="html/M_MailKit_Search_SearchQuery_MessageContains.htm" />
   <HelpKINode Title="MessageDeliveryId enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="MessageDeliveryId field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_MessageDeliveryId.htm" />
@@ -5533,6 +5585,7 @@
   <HelpKINode Title="MimeKit.Utils.DateUtils class" Url="html/T_MimeKit_Utils_DateUtils.htm" />
   <HelpKINode Title="MimeKit.Utils.MimeUtils class" Url="html/T_MimeKit_Utils_MimeUtils.htm" />
   <HelpKINode Title="MimeKit.Utils.Rfc2047 class" Url="html/T_MimeKit_Utils_Rfc2047.htm" />
+  <HelpKINode Title="MimeKit.XMessagePriority enumeration" Url="html/T_MimeKit_XMessagePriority.htm" />
   <HelpKINode Title="MimeMessage class">
     <HelpKINode Title="MimeMessage Class" Url="html/T_MimeKit_MimeMessage.htm" />
     <HelpKINode Title="about MimeMessage class" Url="html/T_MimeKit_MimeMessage.htm" />
@@ -5581,6 +5634,7 @@
   <HelpKINode Title="MimeMessage.ToString method" Url="html/M_MimeKit_MimeMessage_ToString.htm" />
   <HelpKINode Title="MimeMessage.Verify method" Url="html/Overload_MimeKit_MimeMessage_Verify.htm" />
   <HelpKINode Title="MimeMessage.WriteTo method" Url="html/Overload_MimeKit_MimeMessage_WriteTo.htm" />
+  <HelpKINode Title="MimeMessage.XPriority property" Url="html/P_MimeKit_MimeMessage_XPriority.htm" />
   <HelpKINode Title="MimeParser class">
     <HelpKINode Title="MimeParser Class" Url="html/T_MimeKit_MimeParser.htm" />
     <HelpKINode Title="about MimeParser class" Url="html/T_MimeKit_MimeParser.htm" />
@@ -5690,6 +5744,7 @@
   <HelpKINode Title="ModSeq enumeration member">
     <HelpKINode Title="MessageSummaryItems Enumeration" Url="html/T_MailKit_MessageSummaryItems.htm" />
     <HelpKINode Title="OrderByType Enumeration" Url="html/T_MailKit_Search_OrderByType.htm" />
+    <HelpKINode Title="SearchTerm Enumeration" Url="html/T_MailKit_Search_SearchTerm.htm" />
   </HelpKINode>
   <HelpKINode Title="ModSeq property">
     <HelpKINode Title="IMessageSummary.ModSeq Property " Url="html/P_MailKit_IMessageSummary_ModSeq.htm" />
@@ -5833,6 +5888,7 @@
   <HelpKINode Title="NdrStatusCode field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_NdrStatusCode.htm" />
   <HelpKINode Title="NestingTooDeep enumeration member" Url="html/T_MimeKit_Tnef_TnefComplianceStatus.htm" />
   <HelpKINode Title="Never enumeration member" Url="html/T_MailKit_DeliveryStatusNotification.htm" />
+  <HelpKINode Title="New enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="New field" Url="html/F_MailKit_Search_SearchQuery_New.htm" />
   <HelpKINode Title="NewLineFormat enumeration" Url="html/T_MimeKit_NewLineFormat.htm" />
   <HelpKINode Title="NewLineFormat property" Url="html/P_MimeKit_FormatOptions_NewLineFormat.htm" />
@@ -5898,6 +5954,7 @@
   <HelpKINode Title="Normal enumeration member">
     <HelpKINode Title="MessageImportance Enumeration" Url="html/T_MimeKit_MessageImportance.htm" />
     <HelpKINode Title="MessagePriority Enumeration" Url="html/T_MimeKit_MessagePriority.htm" />
+    <HelpKINode Title="XMessagePriority Enumeration" Url="html/T_MimeKit_XMessagePriority.htm" />
   </HelpKINode>
   <HelpKINode Title="NormalizedSubject enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="NormalizedSubject property">
@@ -5909,15 +5966,23 @@
   <HelpKINode Title="NoScript enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
   <HelpKINode Title="NoSelect enumeration member" Url="html/T_MailKit_FolderAttributes.htm" />
   <HelpKINode Title="NoShade enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
+  <HelpKINode Title="Not enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="Not method" Url="html/M_MailKit_Search_SearchQuery_Not.htm" />
   <HelpKINode Title="NotAfter property" Url="html/P_MimeKit_Cryptography_X509CertificateRecord_NotAfter.htm" />
+  <HelpKINode Title="NotAnswered enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="NotAnswered field" Url="html/F_MailKit_Search_SearchQuery_NotAnswered.htm" />
   <HelpKINode Title="NotBefore property" Url="html/P_MimeKit_Cryptography_X509CertificateRecord_NotBefore.htm" />
+  <HelpKINode Title="NotDeleted enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="NotDeleted field" Url="html/F_MailKit_Search_SearchQuery_NotDeleted.htm" />
+  <HelpKINode Title="NotDraft enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="NotDraft field" Url="html/F_MailKit_Search_SearchQuery_NotDraft.htm" />
+  <HelpKINode Title="NotFlagged enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="NotFlagged field" Url="html/F_MailKit_Search_SearchQuery_NotFlagged.htm" />
   <HelpKINode Title="Notify enumeration member" Url="html/T_MailKit_Net_Imap_ImapCapabilities.htm" />
+  <HelpKINode Title="NotKeyword enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
+  <HelpKINode Title="NotRecent enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="NotRecent field" Url="html/F_MailKit_Search_SearchQuery_NotRecent.htm" />
+  <HelpKINode Title="NotSeen enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="NotSeen field" Url="html/F_MailKit_Search_SearchQuery_NotSeen.htm" />
   <HelpKINode Title="NoWrap enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
   <HelpKINode Title="NpgsqlCertificateDatabase class">
@@ -5953,9 +6018,11 @@
   <HelpKINode Title="NumericSearchQuery class">
     <HelpKINode Title="NumericSearchQuery Class" Url="html/T_MailKit_Search_NumericSearchQuery.htm" />
     <HelpKINode Title="about NumericSearchQuery class" Url="html/T_MailKit_Search_NumericSearchQuery.htm" />
+    <HelpKINode Title="constructor" Url="html/M_MailKit_Search_NumericSearchQuery__ctor.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MailKit_Search_NumericSearchQuery.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MailKit_Search_NumericSearchQuery.htm" />
   </HelpKINode>
+  <HelpKINode Title="NumericSearchQuery.NumericSearchQuery constructor" Url="html/M_MailKit_Search_NumericSearchQuery__ctor.htm" />
   <HelpKINode Title="NumericSearchQuery.Value property" Url="html/P_MailKit_Search_NumericSearchQuery_Value.htm" />
   <HelpKINode Title="Object enumeration member">
     <HelpKINode Title="HtmlAttributeId Enumeration" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
@@ -5983,6 +6050,7 @@
     <HelpKINode Title="SmtpStatusCode Enumeration" Url="html/T_MailKit_Net_Smtp_SmtpStatusCode.htm" />
   </HelpKINode>
   <HelpKINode Title="OL enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
+  <HelpKINode Title="Older enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="OlderThan method" Url="html/M_MailKit_Search_SearchQuery_OlderThan.htm" />
   <HelpKINode Title="OldName property" Url="html/P_MailKit_FolderRenamedEventArgs_OldName.htm" />
   <HelpKINode Title="Ole enumeration member" Url="html/T_MimeKit_Tnef_TnefAttachMethod.htm" />
@@ -6104,6 +6172,7 @@
   <HelpKINode Title="Operand property" Url="html/P_MailKit_Search_UnarySearchQuery_Operand.htm" />
   <HelpKINode Title="OptGroup enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
   <HelpKINode Title="Option enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
+  <HelpKINode Title="Or enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="Or method" Url="html/Overload_MailKit_Search_SearchQuery_Or.htm" />
   <HelpKINode Title="Order property" Url="html/P_MailKit_Search_OrderBy_Order.htm" />
   <HelpKINode Title="OrderBy class">
@@ -6861,6 +6930,7 @@
   <HelpKINode Title="ReceiveFolderSettings field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_ReceiveFolderSettings.htm" />
   <HelpKINode Title="Recent enumeration member">
     <HelpKINode Title="MessageFlags Enumeration" Url="html/T_MailKit_MessageFlags.htm" />
+    <HelpKINode Title="SearchTerm Enumeration" Url="html/T_MailKit_Search_SearchTerm.htm" />
     <HelpKINode Title="StatusItems Enumeration" Url="html/T_MailKit_StatusItems.htm" />
   </HelpKINode>
   <HelpKINode Title="Recent field" Url="html/F_MailKit_Search_SearchQuery_Recent.htm" />
@@ -7396,8 +7466,10 @@
   <HelpKINode Title="SearchQuery class">
     <HelpKINode Title="SearchQuery Class" Url="html/T_MailKit_Search_SearchQuery.htm" />
     <HelpKINode Title="about SearchQuery class" Url="html/T_MailKit_Search_SearchQuery.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_MailKit_Search_SearchQuery__ctor.htm" />
     <HelpKINode Title="fields" Url="html/Fields_T_MailKit_Search_SearchQuery.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MailKit_Search_SearchQuery.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_MailKit_Search_SearchQuery.htm" />
   </HelpKINode>
   <HelpKINode Title="SearchQuery.All field" Url="html/F_MailKit_Search_SearchQuery_All.htm" />
   <HelpKINode Title="SearchQuery.And method" Url="html/Overload_MailKit_Search_SearchQuery_And.htm" />
@@ -7439,12 +7511,14 @@
   <HelpKINode Title="SearchQuery.OlderThan method" Url="html/M_MailKit_Search_SearchQuery_OlderThan.htm" />
   <HelpKINode Title="SearchQuery.Or method" Url="html/Overload_MailKit_Search_SearchQuery_Or.htm" />
   <HelpKINode Title="SearchQuery.Recent field" Url="html/F_MailKit_Search_SearchQuery_Recent.htm" />
+  <HelpKINode Title="SearchQuery.SearchQuery constructor" Url="html/Overload_MailKit_Search_SearchQuery__ctor.htm" />
   <HelpKINode Title="SearchQuery.Seen field" Url="html/F_MailKit_Search_SearchQuery_Seen.htm" />
   <HelpKINode Title="SearchQuery.SentAfter method" Url="html/M_MailKit_Search_SearchQuery_SentAfter.htm" />
   <HelpKINode Title="SearchQuery.SentBefore method" Url="html/M_MailKit_Search_SearchQuery_SentBefore.htm" />
   <HelpKINode Title="SearchQuery.SentOn method" Url="html/M_MailKit_Search_SearchQuery_SentOn.htm" />
   <HelpKINode Title="SearchQuery.SmallerThan method" Url="html/M_MailKit_Search_SearchQuery_SmallerThan.htm" />
   <HelpKINode Title="SearchQuery.SubjectContains method" Url="html/M_MailKit_Search_SearchQuery_SubjectContains.htm" />
+  <HelpKINode Title="SearchQuery.Term property" Url="html/P_MailKit_Search_SearchQuery_Term.htm" />
   <HelpKINode Title="SearchQuery.ToContains method" Url="html/M_MailKit_Search_SearchQuery_ToContains.htm" />
   <HelpKINode Title="SearchQuery.YoungerThan method" Url="html/M_MailKit_Search_SearchQuery_YoungerThan.htm" />
   <HelpKINode Title="SearchResults class">
@@ -7461,6 +7535,7 @@
   <HelpKINode Title="SearchResults.ModSeq property" Url="html/P_MailKit_Search_SearchResults_ModSeq.htm" />
   <HelpKINode Title="SearchResults.SearchResults constructor" Url="html/M_MailKit_Search_SearchResults__ctor.htm" />
   <HelpKINode Title="SearchResults.UniqueIds property" Url="html/P_MailKit_Search_SearchResults_UniqueIds.htm" />
+  <HelpKINode Title="SearchTerm enumeration" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="SecretKeyRingBundle property" Url="html/P_MimeKit_Cryptography_OpenPgpContext_SecretKeyRingBundle.htm" />
   <HelpKINode Title="SecretKeyRingPath property" Url="html/P_MimeKit_Cryptography_OpenPgpContext_SecretKeyRingPath.htm" />
   <HelpKINode Title="Section enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
@@ -7554,7 +7629,10 @@
     <HelpKINode Title="MeasuringStream.Seek Method " Url="html/M_MimeKit_IO_MeasuringStream_Seek.htm" />
     <HelpKINode Title="MemoryBlockStream.Seek Method " Url="html/M_MimeKit_IO_MemoryBlockStream_Seek.htm" />
   </HelpKINode>
-  <HelpKINode Title="Seen enumeration member" Url="html/T_MailKit_MessageFlags.htm" />
+  <HelpKINode Title="Seen enumeration member">
+    <HelpKINode Title="MessageFlags Enumeration" Url="html/T_MailKit_MessageFlags.htm" />
+    <HelpKINode Title="SearchTerm Enumeration" Url="html/T_MailKit_Search_SearchTerm.htm" />
+  </HelpKINode>
   <HelpKINode Title="Seen field" Url="html/F_MailKit_Search_SearchQuery_Seen.htm" />
   <HelpKINode Title="Select enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
   <HelpKINode Title="Selectable enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
@@ -7605,11 +7683,14 @@
     <HelpKINode Title="FolderAttributes Enumeration" Url="html/T_MailKit_FolderAttributes.htm" />
     <HelpKINode Title="SpecialFolder Enumeration" Url="html/T_MailKit_SpecialFolder.htm" />
   </HelpKINode>
+  <HelpKINode Title="SentAfter enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="SentAfter method" Url="html/M_MailKit_Search_SearchQuery_SentAfter.htm" />
+  <HelpKINode Title="SentBefore enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="SentBefore method" Url="html/M_MailKit_Search_SearchQuery_SentBefore.htm" />
   <HelpKINode Title="SentFor enumeration member" Url="html/T_MimeKit_Tnef_TnefAttributeTag.htm" />
   <HelpKINode Title="SentmailEntryId enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="SentmailEntryId field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_SentmailEntryId.htm" />
+  <HelpKINode Title="SentOn enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="SentOn method" Url="html/M_MailKit_Search_SearchQuery_SentOn.htm" />
   <HelpKINode Title="SentRepresentingAddrtype enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="SentRepresentingAddrtypeA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_SentRepresentingAddrtypeA.htm" />
@@ -7792,6 +7873,7 @@
     <HelpKINode Title="MessageSummary.Size Property " Url="html/P_MailKit_MessageSummary_Size.htm" />
   </HelpKINode>
   <HelpKINode Title="Small enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
+  <HelpKINode Title="SmallerThan enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="SmallerThan method" Url="html/M_MailKit_Search_SearchQuery_SmallerThan.htm" />
   <HelpKINode Title="SmtpAddress enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="SmtpAddressA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_SmtpAddressA.htm" />
@@ -7926,12 +8008,12 @@
   <HelpKINode Title="StartDate enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="StartDate field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_StartDate.htm" />
   <HelpKINode Title="StartMailInput enumeration member" Url="html/T_MailKit_Net_Smtp_SmtpStatusCode.htm" />
-  <HelpKINode Title="StartTls enumeration member" Url="html/T_MailKit_Security_SecureSocketOptions.htm" />
   <HelpKINode Title="StartTLS enumeration member">
     <HelpKINode Title="ImapCapabilities Enumeration" Url="html/T_MailKit_Net_Imap_ImapCapabilities.htm" />
     <HelpKINode Title="Pop3Capabilities Enumeration" Url="html/T_MailKit_Net_Pop3_Pop3Capabilities.htm" />
     <HelpKINode Title="SmtpCapabilities Enumeration" Url="html/T_MailKit_Net_Smtp_SmtpCapabilities.htm" />
   </HelpKINode>
+  <HelpKINode Title="StartTls enumeration member" Url="html/T_MailKit_Security_SecureSocketOptions.htm" />
   <HelpKINode Title="StartTlsWhenAvailable enumeration member" Url="html/T_MailKit_Security_SecureSocketOptions.htm" />
   <HelpKINode Title="StateOrProvince enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="StateOrProvinceA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_StateOrProvinceA.htm" />
@@ -8010,6 +8092,7 @@
     <HelpKINode Title="MimeMessage.Subject Property " Url="html/P_MimeKit_MimeMessage_Subject.htm" />
   </HelpKINode>
   <HelpKINode Title="SubjectA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_SubjectA.htm" />
+  <HelpKINode Title="SubjectContains enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="SubjectContains method" Url="html/M_MailKit_Search_SearchQuery_SubjectContains.htm" />
   <HelpKINode Title="SubjectEmail property" Url="html/P_MimeKit_Cryptography_X509CertificateRecord_SubjectEmail.htm" />
   <HelpKINode Title="SubjectIdentifierType enumeration" Url="html/T_MimeKit_Cryptography_SubjectIdentifierType.htm" />
@@ -8138,6 +8221,7 @@
   <HelpKINode Title="TemporarySecureMimeContext.Import method" Url="html/Overload_MimeKit_Cryptography_TemporarySecureMimeContext_Import.htm" />
   <HelpKINode Title="TemporarySecureMimeContext.TemporarySecureMimeContext constructor" Url="html/M_MimeKit_Cryptography_TemporarySecureMimeContext__ctor.htm" />
   <HelpKINode Title="TemporarySecureMimeContext.UpdateSecureMimeCapabilities method" Url="html/M_MimeKit_Cryptography_TemporarySecureMimeContext_UpdateSecureMimeCapabilities.htm" />
+  <HelpKINode Title="Term property" Url="html/P_MailKit_Search_SearchQuery_Term.htm" />
   <HelpKINode Title="Text enumeration member">
     <HelpKINode Title="HeaderFooterFormat Enumeration" Url="html/T_MimeKit_Text_HeaderFooterFormat.htm" />
     <HelpKINode Title="HtmlAttributeId Enumeration" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
@@ -8192,10 +8276,12 @@
   <HelpKINode Title="TextSearchQuery class">
     <HelpKINode Title="TextSearchQuery Class" Url="html/T_MailKit_Search_TextSearchQuery.htm" />
     <HelpKINode Title="about TextSearchQuery class" Url="html/T_MailKit_Search_TextSearchQuery.htm" />
+    <HelpKINode Title="constructor" Url="html/M_MailKit_Search_TextSearchQuery__ctor.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MailKit_Search_TextSearchQuery.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MailKit_Search_TextSearchQuery.htm" />
   </HelpKINode>
   <HelpKINode Title="TextSearchQuery.Text property" Url="html/P_MailKit_Search_TextSearchQuery_Text.htm" />
+  <HelpKINode Title="TextSearchQuery.TextSearchQuery constructor" Url="html/M_MailKit_Search_TextSearchQuery__ctor.htm" />
   <HelpKINode Title="TextToFlowed class">
     <HelpKINode Title="TextToFlowed Class" Url="html/T_MimeKit_Text_TextToFlowed.htm" />
     <HelpKINode Title="about TextToFlowed class" Url="html/T_MimeKit_Text_TextToFlowed.htm" />
@@ -9097,6 +9183,7 @@
   </HelpKINode>
   <HelpKINode Title="ToArray method" Url="html/M_MimeKit_IO_MemoryBlockStream_ToArray.htm" />
   <HelpKINode Title="ToAttributeName method" Url="html/M_MimeKit_Text_HtmlAttributeIdExtensions_ToAttributeName.htm" />
+  <HelpKINode Title="ToContains enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="ToContains method" Url="html/M_MailKit_Search_SearchQuery_ToContains.htm" />
   <HelpKINode Title="ToHeaderName method" Url="html/M_MimeKit_HeaderIdExtensions_ToHeaderName.htm" />
   <HelpKINode Title="ToHtmlTagName method" Url="html/M_MimeKit_Text_HtmlTagIdExtensions_ToHtmlTagName.htm" />
@@ -9199,6 +9286,7 @@
   <HelpKINode Title="TypeOfMtsUser enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="TypeOfMtsUser field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_TypeOfMtsUser.htm" />
   <HelpKINode Title="U enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
+  <HelpKINode Title="Uid enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="UIDL enumeration member" Url="html/T_MailKit_Net_Pop3_Pop3Capabilities.htm" />
   <HelpKINode Title="UidNext enumeration member" Url="html/T_MailKit_StatusItems.htm" />
   <HelpKINode Title="UidNext property">
@@ -9219,10 +9307,12 @@
   <HelpKINode Title="UnarySearchQuery class">
     <HelpKINode Title="UnarySearchQuery Class" Url="html/T_MailKit_Search_UnarySearchQuery.htm" />
     <HelpKINode Title="about UnarySearchQuery class" Url="html/T_MailKit_Search_UnarySearchQuery.htm" />
+    <HelpKINode Title="constructor" Url="html/M_MailKit_Search_UnarySearchQuery__ctor.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MailKit_Search_UnarySearchQuery.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MailKit_Search_UnarySearchQuery.htm" />
   </HelpKINode>
   <HelpKINode Title="UnarySearchQuery.Operand property" Url="html/P_MailKit_Search_UnarySearchQuery_Operand.htm" />
+  <HelpKINode Title="UnarySearchQuery.UnarySearchQuery constructor" Url="html/M_MailKit_Search_UnarySearchQuery__ctor.htm" />
   <HelpKINode Title="Uncompressed enumeration member" Url="html/T_MimeKit_Tnef_RtfCompressionMode.htm" />
   <HelpKINode Title="UnexpectedStatusCode enumeration member" Url="html/T_MailKit_Net_Smtp_SmtpErrorCode.htm" />
   <HelpKINode Title="Unfold method" Url="html/M_MimeKit_Header_Unfold.htm" />
@@ -9716,6 +9806,7 @@
   <HelpKINode Title="XLink enumeration member" Url="html/T_MimeKit_Text_HtmlNamespace.htm" />
   <HelpKINode Title="XList enumeration member" Url="html/T_MailKit_Net_Imap_ImapCapabilities.htm" />
   <HelpKINode Title="XMailer enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
+  <HelpKINode Title="XMessagePriority enumeration" Url="html/T_MimeKit_XMessagePriority.htm" />
   <HelpKINode Title="Xml enumeration member">
     <HelpKINode Title="HtmlNamespace Enumeration" Url="html/T_MimeKit_Text_HtmlNamespace.htm" />
     <HelpKINode Title="HtmlTagId Enumeration" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
@@ -9729,6 +9820,7 @@
   <HelpKINode Title="Xpos enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="Xpos field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_Xpos.htm" />
   <HelpKINode Title="XPriority enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
+  <HelpKINode Title="XPriority property" Url="html/P_MimeKit_MimeMessage_XPriority.htm" />
   <HelpKINode Title="XStatus enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
   <HelpKINode Title="YDecoder class">
     <HelpKINode Title="YDecoder Class" Url="html/T_MimeKit_Encodings_YDecoder.htm" />
@@ -9759,6 +9851,7 @@
   <HelpKINode Title="YEncoder.Flush method" Url="html/M_MimeKit_Encodings_YEncoder_Flush.htm" />
   <HelpKINode Title="YEncoder.Reset method" Url="html/M_MimeKit_Encodings_YEncoder_Reset.htm" />
   <HelpKINode Title="YEncoder.YEncoder constructor" Url="html/M_MimeKit_Encodings_YEncoder__ctor.htm" />
+  <HelpKINode Title="Younger enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="YoungerThan method" Url="html/M_MailKit_Search_SearchQuery_YoungerThan.htm" />
   <HelpKINode Title="Ypos enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="Ypos field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_Ypos.htm" />
