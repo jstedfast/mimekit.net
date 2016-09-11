@@ -261,6 +261,15 @@
     <HelpKINode Title="IMailFolder.AppendAsync Method " Url="html/Overload_MailKit_IMailFolder_AppendAsync.htm" />
     <HelpKINode Title="MailFolder.AppendAsync Method " Url="html/Overload_MailKit_MailFolder_AppendAsync.htm" />
   </HelpKINode>
+  <HelpKINode Title="AppendLimit enumeration member">
+    <HelpKINode Title="ImapCapabilities Enumeration" Url="html/T_MailKit_Net_Imap_ImapCapabilities.htm" />
+    <HelpKINode Title="StatusItems Enumeration" Url="html/T_MailKit_StatusItems.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AppendLimit property">
+    <HelpKINode Title="IMailFolder.AppendLimit Property " Url="html/P_MailKit_IMailFolder_AppendLimit.htm" />
+    <HelpKINode Title="ImapClient.AppendLimit Property " Url="html/P_MailKit_Net_Imap_ImapClient_AppendLimit.htm" />
+    <HelpKINode Title="MailFolder.AppendLimit Property " Url="html/P_MailKit_MailFolder_AppendLimit.htm" />
+  </HelpKINode>
   <HelpKINode Title="AppendMessages field" Url="html/F_MailKit_AccessRight_AppendMessages.htm" />
   <HelpKINode Title="Applet enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
   <HelpKINode Title="ApplicationPgpEncrypted class">
@@ -1172,14 +1181,14 @@
   <HelpKINode Title="ComputerNetworkNameW field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_ComputerNetworkNameW.htm" />
   <HelpKINode Title="CondStore enumeration member" Url="html/T_MailKit_Net_Imap_ImapCapabilities.htm" />
   <HelpKINode Title="Connect method">
-    <HelpKINode Title="IMailService.Connect Method " Url="html/M_MailKit_IMailService_Connect.htm" />
+    <HelpKINode Title="IMailService.Connect Method " Url="html/Overload_MailKit_IMailService_Connect.htm" />
     <HelpKINode Title="ImapClient.Connect Method " Url="html/Overload_MailKit_Net_Imap_ImapClient_Connect.htm" />
     <HelpKINode Title="MailService.Connect Method " Url="html/Overload_MailKit_MailService_Connect.htm" />
     <HelpKINode Title="Pop3Client.Connect Method " Url="html/Overload_MailKit_Net_Pop3_Pop3Client_Connect.htm" />
     <HelpKINode Title="SmtpClient.Connect Method " Url="html/Overload_MailKit_Net_Smtp_SmtpClient_Connect.htm" />
   </HelpKINode>
   <HelpKINode Title="ConnectAsync method">
-    <HelpKINode Title="IMailService.ConnectAsync Method " Url="html/M_MailKit_IMailService_ConnectAsync.htm" />
+    <HelpKINode Title="IMailService.ConnectAsync Method " Url="html/Overload_MailKit_IMailService_ConnectAsync.htm" />
     <HelpKINode Title="MailService.ConnectAsync Method " Url="html/Overload_MailKit_MailService_ConnectAsync.htm" />
   </HelpKINode>
   <HelpKINode Title="Connected event">
@@ -2828,6 +2837,7 @@
     <HelpKINode Title="FolderNotOpenException.GetObjectData Method " Url="html/M_MailKit_FolderNotOpenException_GetObjectData.htm" />
     <HelpKINode Title="ImapCommandException.GetObjectData Method " Url="html/M_MailKit_Net_Imap_ImapCommandException_GetObjectData.htm" />
     <HelpKINode Title="ParseException.GetObjectData Method " Url="html/M_MimeKit_ParseException_GetObjectData.htm" />
+    <HelpKINode Title="Pop3CommandException.GetObjectData Method " Url="html/M_MailKit_Net_Pop3_Pop3CommandException_GetObjectData.htm" />
     <HelpKINode Title="PrivateKeyNotFoundException.GetObjectData Method " Url="html/M_MimeKit_Cryptography_PrivateKeyNotFoundException_GetObjectData.htm" />
     <HelpKINode Title="PublicKeyNotFoundException.GetObjectData Method " Url="html/M_MimeKit_Cryptography_PublicKeyNotFoundException_GetObjectData.htm" />
     <HelpKINode Title="SaslException.GetObjectData Method " Url="html/M_MailKit_Security_SaslException_GetObjectData.htm" />
@@ -3540,6 +3550,7 @@
   <HelpKINode Title="IMailFolder.AddLabelsAsync method" Url="html/Overload_MailKit_IMailFolder_AddLabelsAsync.htm" />
   <HelpKINode Title="IMailFolder.Append method" Url="html/Overload_MailKit_IMailFolder_Append.htm" />
   <HelpKINode Title="IMailFolder.AppendAsync method" Url="html/Overload_MailKit_IMailFolder_AppendAsync.htm" />
+  <HelpKINode Title="IMailFolder.AppendLimit property" Url="html/P_MailKit_IMailFolder_AppendLimit.htm" />
   <HelpKINode Title="IMailFolder.Attributes property" Url="html/P_MailKit_IMailFolder_Attributes.htm" />
   <HelpKINode Title="IMailFolder.Check method" Url="html/M_MailKit_IMailFolder_Check.htm" />
   <HelpKINode Title="IMailFolder.CheckAsync method" Url="html/M_MailKit_IMailFolder_CheckAsync.htm" />
@@ -3654,8 +3665,8 @@
   <HelpKINode Title="IMailService.Authenticated event" Url="html/E_MailKit_IMailService_Authenticated.htm" />
   <HelpKINode Title="IMailService.AuthenticationMechanisms property" Url="html/P_MailKit_IMailService_AuthenticationMechanisms.htm" />
   <HelpKINode Title="IMailService.ClientCertificates property" Url="html/P_MailKit_IMailService_ClientCertificates.htm" />
-  <HelpKINode Title="IMailService.Connect method" Url="html/M_MailKit_IMailService_Connect.htm" />
-  <HelpKINode Title="IMailService.ConnectAsync method" Url="html/M_MailKit_IMailService_ConnectAsync.htm" />
+  <HelpKINode Title="IMailService.Connect method" Url="html/Overload_MailKit_IMailService_Connect.htm" />
+  <HelpKINode Title="IMailService.ConnectAsync method" Url="html/Overload_MailKit_IMailService_ConnectAsync.htm" />
   <HelpKINode Title="IMailService.Connected event" Url="html/E_MailKit_IMailService_Connected.htm" />
   <HelpKINode Title="IMailService.Disconnect method" Url="html/M_MailKit_IMailService_Disconnect.htm" />
   <HelpKINode Title="IMailService.DisconnectAsync method" Url="html/M_MailKit_IMailService_DisconnectAsync.htm" />
@@ -3745,6 +3756,7 @@
     <HelpKINode Title="methods" Url="html/Methods_T_MailKit_Net_Imap_ImapClient.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MailKit_Net_Imap_ImapClient.htm" />
   </HelpKINode>
+  <HelpKINode Title="ImapClient.AppendLimit property" Url="html/P_MailKit_Net_Imap_ImapClient_AppendLimit.htm" />
   <HelpKINode Title="ImapClient.Authenticate method" Url="html/Overload_MailKit_Net_Imap_ImapClient_Authenticate.htm" />
   <HelpKINode Title="ImapClient.AuthenticationMechanisms property" Url="html/P_MailKit_Net_Imap_ImapClient_AuthenticationMechanisms.htm" />
   <HelpKINode Title="ImapClient.Capabilities property" Url="html/P_MailKit_Net_Imap_ImapClient_Capabilities.htm" />
@@ -4422,6 +4434,7 @@
   </HelpKINode>
   <HelpKINode Title="ListUnsubscribeA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_ListUnsubscribeA.htm" />
   <HelpKINode Title="ListUnsubscribeW field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_ListUnsubscribeW.htm" />
+  <HelpKINode Title="LiteralMinus enumeration member" Url="html/T_MailKit_Net_Imap_ImapCapabilities.htm" />
   <HelpKINode Title="LiteralPlus enumeration member" Url="html/T_MailKit_Net_Imap_ImapCapabilities.htm" />
   <HelpKINode Title="Load method">
     <HelpKINode Title="HeaderList.Load Method " Url="html/Overload_MimeKit_HeaderList_Load.htm" />
@@ -4544,6 +4557,7 @@
   <HelpKINode Title="MailFolder.AddLabelsAsync method" Url="html/Overload_MailKit_MailFolder_AddLabelsAsync.htm" />
   <HelpKINode Title="MailFolder.Append method" Url="html/Overload_MailKit_MailFolder_Append.htm" />
   <HelpKINode Title="MailFolder.AppendAsync method" Url="html/Overload_MailKit_MailFolder_AppendAsync.htm" />
+  <HelpKINode Title="MailFolder.AppendLimit property" Url="html/P_MailKit_MailFolder_AppendLimit.htm" />
   <HelpKINode Title="MailFolder.Attributes property" Url="html/P_MailKit_MailFolder_Attributes.htm" />
   <HelpKINode Title="MailFolder.Check method" Url="html/M_MailKit_MailFolder_Check.htm" />
   <HelpKINode Title="MailFolder.CheckAsync method" Url="html/M_MailKit_MailFolder_CheckAsync.htm" />
@@ -6535,6 +6549,7 @@
     <HelpKINode Title="Pop3Capabilities Enumeration" Url="html/T_MailKit_Net_Pop3_Pop3Capabilities.htm" />
     <HelpKINode Title="SmtpCapabilities Enumeration" Url="html/T_MailKit_Net_Smtp_SmtpCapabilities.htm" />
   </HelpKINode>
+  <HelpKINode Title="Plain enumeration member" Url="html/T_MimeKit_Text_TextFormat.htm" />
   <HelpKINode Title="PlainText enumeration member">
     <HelpKINode Title="HtmlTagId Enumeration" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
     <HelpKINode Title="HtmlTokenizerState Enumeration" Url="html/T_MimeKit_Text_HtmlTokenizerState.htm" />
@@ -6596,6 +6611,7 @@
     <HelpKINode Title="methods" Url="html/Methods_T_MailKit_Net_Pop3_Pop3CommandException.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MailKit_Net_Pop3_Pop3CommandException.htm" />
   </HelpKINode>
+  <HelpKINode Title="Pop3CommandException.GetObjectData method" Url="html/M_MailKit_Net_Pop3_Pop3CommandException_GetObjectData.htm" />
   <HelpKINode Title="Pop3CommandException.Pop3CommandException constructor" Url="html/Overload_MailKit_Net_Pop3_Pop3CommandException__ctor.htm" />
   <HelpKINode Title="Pop3CommandException.StatusText property" Url="html/P_MailKit_Net_Pop3_Pop3CommandException_StatusText.htm" />
   <HelpKINode Title="Pop3Language class">
