@@ -362,11 +362,19 @@ multipart/alternative
           and <a href="P_MimeKit_MimeMessage_Attachments.htm">Attachments</a>
           properties which flatten out the hierarchy and allow you to iterate over all
           of the body parts (or attachments) in depth-first order.
-        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAACAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAACAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAAACAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">foreach</span> (<span class="highlight-keyword">var</span> attachment <span class="highlight-keyword">in</span> message.Attachments.OfType&lt;MimePart&gt; ()) {
-    <span class="highlight-keyword">var</span> fileName = attachment.FileName;
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAACAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAACAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAAACAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">foreach</span> (<span class="highlight-keyword">var</span> attachment <span class="highlight-keyword">in</span> message.Attachments) {
+    <span class="highlight-keyword">var</span> fileName = attachment.ContentDisposition?.FileName ?? attachment.ContentType.Name;
 
     <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> stream = File.Create (fileName)) {
-        attachment.ContentObject.DecodeTo (stream);
+        <span class="highlight-keyword">if</span> (attachment <span class="highlight-keyword">is</span> MessagePart) {
+            <span class="highlight-keyword">var</span> rfc822 = (MessagePart) attachment;
+
+            rfc822.Message.WriteTo (stream);
+        } <span class="highlight-keyword">else</span> {
+            <span class="highlight-keyword">var</span> part = (MimePart) attachment;
+
+            part.ContentObject.DecodeTo (stream);
+        }
     }
 }</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAACAAA");</script></div><div class="collapsibleAreaRegion" id="DecodingContent"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID5RB')" onkeypress="SectionExpandCollapse_CheckKey('ID5RB', event)" tabindex="0"><img id="ID5RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Getting the Decoded Content of a MimePart</span></div><div id="ID5RBSection" class="collapsibleSection"><p>
           At some point, you're going to want to extract the decoded content of a

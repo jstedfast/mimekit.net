@@ -1,9 +1,101 @@
-﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Frequently Asked Questions</title><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Id" content="FrequentlyAskedQuestions" /><meta name="Description" content="Yes. MimeKit and MailKit are both completely free and open source. They are both covered under the MIThttps://opensource.org/licenses/MIT_blank license." /><meta name="Microsoft.Help.ContentType" content="Concepts" /><meta name="BrandingAware" content="true" /><link type="text/css" rel="stylesheet" href="../styles/highlight.css" /><script type="text/javascript" src="../scripts/highlight.js"> </script><link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" /><script type="text/javascript" src="../scripts/jquery-1.11.0.min.js"></script><script type="text/javascript" src="../scripts/branding-Website.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">MimeKit Documentation<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Introduction.htm" title="MimeKit Documentation" tocid="roottoc">MimeKit Documentation</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="Introduction.htm" title="Introduction" tocid="Introduction">Introduction</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="License.htm" title="License Agreement" tocid="License">License Agreement</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="GettingStarted.htm" title="Getting Started" tocid="GettingStarted">Getting Started</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="CreatingMessages.htm" title="Creating Messages" tocid="CreatingMessages">Creating Messages</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="ParsingMessages.htm" title="Parsing Messages" tocid="ParsingMessages">Parsing Messages</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="WorkingWithMessages.htm" title="Working with Messages" tocid="WorkingWithMessages">Working with Messages</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="WorkingWithPGP.htm" title="Working with OpenPGP" tocid="WorkingWithPGP">Working with OpenPGP</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="WorkingWithSMime.htm" title="Working with S/MIME" tocid="WorkingWithSMime">Working with S/MIME</a></div><div class="toclevel1 current" data-toclevel="1"><a data-tochassubtree="false" href="FrequentlyAskedQuestions.htm" title="Frequently Asked Questions" tocid="FrequentlyAskedQuestions">Frequently Asked Questions</a></div><div class="toclevel1" data-toclevel="1"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="R_Project_Documentation.htm" title="API Reference" tocid="R_Project_Documentation">API Reference</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="logoColumn"><img alt="MimeKit" src="../icons/Help.png" /></td><td class="titleColumn">Frequently Asked Questions</td></tr></table><span class="introStyle"></span><div class="introduction"><p>This topic contains the following sections:</p><ul class="autoOutline"><li class="outlineSectionEntry"><a href="#CompletelyFree">Are MimeKit and MailKit completely free? Can I use them in my proprietary product(s)?</a></li><li class="outlineSectionEntry"><a href="#CreateAttachments">How do I create a message with attachments?</a></li><li class="outlineSectionEntry"><a href="#MessageBody">How do I get the main body of a message?</a></li><li class="outlineSectionEntry"><a href="#HasAttachments">How do I tell if a message has attachments?</a></li><li class="outlineSectionEntry"><a href="#EmailAddresses">How do I get the email addresses in the From, To, and Cc headers?</a></li><li class="outlineSectionEntry"><a href="#UnreadMessages">How do I get all of the unread messages in a folder?</a></li><li class="outlineSectionEntry"><a href="#Serialize">Why doesn't the MimeMessage class implement ISerializable so that I can serialize a
-      message to disk and read it back later?</a></li><li class="outlineSectionEntry"><a href="#UntitledAttachments">Why do attachments with unicode filenames appear as "ATT0####.dat" in Outlook?</a></li><li class="outlineSectionEntry"><a href="#DecryptInlinePGP">How do I decrypt PGP messages that are embedded in the main message text?</a></li><li class="outlineSectionEntry"><a href="#Reply">How do I reply to a message using MimeKit?</a></li><li class="outlineSectionEntry"><a href="#ParseWebRequestFormData">How would I parse multipart/form-data from an HTTP web request?</a></li><li class="outlineSectionEntry"><a href="#ProtocolLog">How do I debug SMTP, POP3 and/or IMAP errors?</a></li><li class="outlineSectionEntry"><a href="#GMail">How do I access GMail using MailKit?</a></li><li class="outlineSectionEntry"><a href="#GMailAuthenticationFailed">Why do I get an exception when I try to authenticate with GMail?</a></li><li class="outlineSectionEntry"><a href="#GMailHiddenMessages">Why don't I see some of my messages when accessing GMail with POP3?</a></li></ul></div><div class="collapsibleAreaRegion" id="CompletelyFree"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID0RB')" onkeypress="SectionExpandCollapse_CheckKey('ID0RB', event)" tabindex="0"><img id="ID0RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Are MimeKit and MailKit completely free? Can I use them in my proprietary product(s)?</span></div><div id="ID0RBSection" class="collapsibleSection"><p>
+﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Frequently Asked Questions</title><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Id" content="FrequentlyAskedQuestions" /><meta name="Description" content="Yes. MimeKit and MailKit are both completely free and open source. They are both covered under the MIThttps://opensource.org/licenses/MIT_blank license." /><meta name="Microsoft.Help.ContentType" content="Concepts" /><meta name="BrandingAware" content="true" /><link type="text/css" rel="stylesheet" href="../styles/highlight.css" /><script type="text/javascript" src="../scripts/highlight.js"> </script><link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" /><script type="text/javascript" src="../scripts/jquery-1.11.0.min.js"></script><script type="text/javascript" src="../scripts/branding-Website.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">MimeKit Documentation<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="Introduction.htm" title="MimeKit Documentation" tocid="roottoc">MimeKit Documentation</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="Introduction.htm" title="Introduction" tocid="Introduction">Introduction</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="License.htm" title="License Agreement" tocid="License">License Agreement</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="GettingStarted.htm" title="Getting Started" tocid="GettingStarted">Getting Started</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="CreatingMessages.htm" title="Creating Messages" tocid="CreatingMessages">Creating Messages</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="ParsingMessages.htm" title="Parsing Messages" tocid="ParsingMessages">Parsing Messages</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="WorkingWithMessages.htm" title="Working with Messages" tocid="WorkingWithMessages">Working with Messages</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="WorkingWithPGP.htm" title="Working with OpenPGP" tocid="WorkingWithPGP">Working with OpenPGP</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="WorkingWithSMime.htm" title="Working with S/MIME" tocid="WorkingWithSMime">Working with S/MIME</a></div><div class="toclevel1 current" data-toclevel="1"><a data-tochassubtree="false" href="FrequentlyAskedQuestions.htm" title="Frequently Asked Questions" tocid="FrequentlyAskedQuestions">Frequently Asked Questions</a></div><div class="toclevel1" data-toclevel="1"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="R_Project_Documentation.htm" title="API Reference" tocid="R_Project_Documentation">API Reference</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="logoColumn"><img alt="MimeKit" src="../icons/Help.png" /></td><td class="titleColumn">Frequently Asked Questions</td></tr></table><span class="introStyle"></span><div class="introduction"><p>This topic contains the following sections:</p><ul class="autoOutline"><li class="outlineSectionEntry"><a href="#CompletelyFree">Are MimeKit and MailKit completely free? Can I use them in my proprietary product(s)?</a></li><li class="outlineSectionEntry"><a href="#InvalidSslCertificate">Why do I get 'The remote certificate is invalid according to the validation procedure' when I try to Connect?</a></li><li class="outlineSectionEntry"><a href="#ProtocolLog">How do I debug SMTP, POP3 and/or IMAP errors?</a></li><li class="outlineSectionEntry"><a href="#GMailHiddenMessages">Why don't I see some of my messages when accessing GMail with POP3?</a></li><li class="outlineSectionEntry"><a href="#GMailAccess">How do I access GMail using MailKit?</a></li><li class="outlineSectionEntry"><a href="#CreateAttachments">How do I create a message with attachments?</a></li><li class="outlineSectionEntry"><a href="#MessageBody">How do I get the main body of a message?</a></li><li class="outlineSectionEntry"><a href="#HasAttachments">How do I tell if a message has attachments?</a></li><li class="outlineSectionEntry"><a href="#Serialize">Why doesn't the MimeMessage class implement ISerializable so that I can serialize a
+      message to disk and read it back later?</a></li><li class="outlineSectionEntry"><a href="#SaveMessages">How do I save messages?</a></li><li class="outlineSectionEntry"><a href="#SaveAttachments">How do I save attachments?</a></li><li class="outlineSectionEntry"><a href="#AddressHeaders">How do I get the email addresses in the From, To, and Cc headers?</a></li><li class="outlineSectionEntry"><a href="#UntitledAttachments">Why do attachments with unicode filenames appear as "ATT0####.dat" in Outlook?</a></li><li class="outlineSectionEntry"><a href="#DecryptInlinePGP">How do I decrypt PGP messages that are embedded in the main message text?</a></li><li class="outlineSectionEntry"><a href="#Reply">How do I reply to a message using MimeKit?</a></li><li class="outlineSectionEntry"><a href="#Forward">How do I forward a message?</a></li><li class="outlineSectionEntry"><a href="#UnreadMessages">How do I get all of the unread messages in a folder?</a></li><li class="outlineSectionEntry"><a href="#ParseWebRequestFormData">How would I parse multipart/form-data from an HTTP web request?</a></li></ul></div><div class="collapsibleAreaRegion" id="CompletelyFree"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID0RB')" onkeypress="SectionExpandCollapse_CheckKey('ID0RB', event)" tabindex="0"><img id="ID0RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Are MimeKit and MailKit completely free? Can I use them in my proprietary product(s)?</span></div><div id="ID0RBSection" class="collapsibleSection"><p>
           Yes. MimeKit and MailKit are both completely free and open source. They are both covered under
           the
           <a href="https://opensource.org/licenses/MIT" target="_blank">MIT</a> license.
-        </p></div><div class="collapsibleAreaRegion" id="CreateAttachments"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />How do I create a message with attachments?</span></div><div id="ID2RBSection" class="collapsibleSection"><p>
+        </p></div><div class="collapsibleAreaRegion" id="InvalidSslCertificate"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Why do I get 'The remote certificate is invalid according to the validation procedure' when I try to Connect?</span></div><div id="ID2RBSection" class="collapsibleSection"><p>
+          When you get an exception with that error message, it means that the IMAP, POP3 or SMTP
+          server that you are connecting to is using an SSL certificate that is either expired
+          or untrusted by your system.
+        </p><p>
+          Often times, mail servers will use self-signed certificates instead of using a certificate
+          that has been signed by a trusted Certificate Authority. When your system is unable to
+          validate the mail server's certificate because it is not signed by a known and trusted
+          Certificate Authority, the above error will occur.
+        </p><p>
+          You can work around this problem by supplying a custom <a href="https://msdn.microsoft.com/en-us/library/ms145054" target="_blank">RemoteServerCertificateValidationCallback</a>
+          and setting it on the client's <a href="P_MailKit_MailService_ServerCertificateValidationCallback.htm">ServerCertificateValidationCallback</a> property.
+        </p><p>
+          In the most simplest example, you could do something like this (although I would strongly recommend against it in production use):
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EABARAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EABARAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EABARAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EABARAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> client = <span class="highlight-keyword">new</span> SmtpClient ()) {
+    client.ServerCertificateValidationCallback = (s, c, h, e) =&gt; <span class="highlight-keyword">true</span>;
+
+    client.Connect (<span class="highlight-literal">"smtp.gmail.com"</span>, <span class="highlight-number">465</span>, SecureSocketOptions.SslOnConnect);
+
+    client.Authenticate (<span class="highlight-literal">"username"</span>, <span class="highlight-literal">"password"</span>);
+
+    client.Send (message);
+
+    client.Disconnect (<span class="highlight-keyword">true</span>);
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EABARAAA");</script><p>
+          Most likely you'll want to instead compare the certificate's <a href="https://msdn.microsoft.com/en-us/library/system.security.cryptography.x509certificates.x509certificate2.thumbprint(v=vs.110).aspx" target="_blank">Thumbprint</a>
+          property to a known value that you have verified at a prior date.
+        </p></div><div class="collapsibleAreaRegion" id="ProtocolLog"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID3RB')" onkeypress="SectionExpandCollapse_CheckKey('ID3RB', event)" tabindex="0"><img id="ID3RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />How do I debug SMTP, POP3 and/or IMAP errors?</span></div><div id="ID3RBSection" class="collapsibleSection"><p>
+          All of MailKit's client implementations have a constructor that takes a nifty
+          <a href="T_MailKit_IProtocolLogger.htm">IProtocolLogger</a> interface for logging client/server communications.
+          Out of the box, you can use the handy <a href="T_MailKit_ProtocolLogger.htm">ProtocolLogger</a> class. Here are
+          some examples of how to use it:
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EABAQAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EABAQAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EABAQAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EABAQAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">// log to a file called 'imap.log'</span>
+<span class="highlight-keyword">var</span> client = <span class="highlight-keyword">new</span> ImapClient (<span class="highlight-keyword">new</span> ProtocolLogger (<span class="highlight-literal">"imap.log"</span>));
+
+<span class="highlight-comment">// log to standard output (i.e. the console)</span>
+<span class="highlight-keyword">var</span> client = <span class="highlight-keyword">new</span> ImapClient (<span class="highlight-keyword">new</span> ProtocolLogger (Console.OpenStandardOutput ()));</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EABAQAAA");</script><p>
+          Note: When submitting a protocol log as part of a bug report, make sure to scrub any sensitive
+          information including your authentication credentials. This information will generally be the base64
+          encoded blob immediately following an <span class="literal">AUTHENTICATE</span> or <span class="literal">AUTH</span> command
+          (depending on the type of server) or the cleartext username and password strings in a <span class="literal">LOGIN</span> command.
+          The only exception to this case is if you are authenticating with <span class="literal">NTLM</span> in which case I may need this
+          information, but only if the bug/error is in the authentication step.
+        </p></div><div class="collapsibleAreaRegion" id="GMailHiddenMessages"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID4RB')" onkeypress="SectionExpandCollapse_CheckKey('ID4RB', event)" tabindex="0"><img id="ID4RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Why don't I see some of my messages when accessing GMail with POP3?</span></div><div id="ID4RBSection" class="collapsibleSection"><p>
+          By default, GMail's POP3 server does not behave like a standard POP3 server and hides messages
+          from clients (as well as having other non-standard behavior) that have already been viewed.
+        </p><p>
+          If you want to configure your GMail POP3 settings to behave the way POP3 is intended to behave,
+          you'll need to log in to your GMail account via your web browser and navigate to the
+          <strong>Forwarding and POP/IMAP</strong> tab of your
+          <strong>GMail Settings</strong> page and make the following changes in the
+          <strong>POP3 Download</strong> section:
+        </p><ul class="noBullet"><li><p><strong>Enable POP for all mail (even if it has already been downloaded)</strong>.
+            </p></li><li><p>
+              When messages are accessed with POP, <strong>keep GMail's copy in the Inbox</strong>.
+            </p></li></ul></div><div class="collapsibleAreaRegion" id="GMailAccess"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID5RB')" onkeypress="SectionExpandCollapse_CheckKey('ID5RB', event)" tabindex="0"><img id="ID5RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />How do I access GMail using MailKit?</span></div><div id="ID5RBSection" class="collapsibleSection"><p>
+          The first thing that you will need to do is to configure your GMail account to
+          <a href="https://www.google.com/settings/security/lesssecureapps" target="_blank">enable less secure apps</a>, or you'll need to use OAuth 2.0 authentication (which is a bit more complex).
+        </p><p>
+          Then, assuming that your GMail account is <span class="literal">user@gmail.com</span>, you would use the following
+          code snippet to connect to GMail via IMAP:
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAEAOAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAEAOAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAEAOAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAEAOAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> client = <span class="highlight-keyword">new</span> ImapClient ()) {
+    client.Connect (<span class="highlight-literal">"imap.gmail.com"</span>, <span class="highlight-number">993</span>, SecureSocketOptions.SslOnConnect);
+
+    <span class="highlight-comment">// disable OAuth2 authentication unless you are actually using an access_token</span>
+    client.AuthenticationMechanisms.Remove (<span class="highlight-literal">"XOAUTH2"</span>);
+
+    client.Authenticate (<span class="highlight-literal">"user@gmail.com"</span>, <span class="highlight-literal">"password"</span>);
+
+    <span class="highlight-comment">// do stuff...</span>
+
+    client.Disconnect (<span class="highlight-keyword">true</span>);
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAEAOAAA");</script><p>
+          Connecting via POP3 or SMTP is identical except for the host names and ports (and, of course, you'd
+          use a Pop3Client or SmtpClient as appropriate).
+        </p><p>
+          If you decide to authenticate via OAuth 2.0 instead of enabling less secure apps, you'll need to read
+          <a href="https://developers.google.com/identity/protocols/OAuth2" target="_blank">Google's OAuth 2.0 documentation</a> to learn how to do this.
+        </p><p>
+          Once you've got the access_token, you simply use it as if it were the password when
+          calling the <strong>Authenticate</strong> method.
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAAOAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAAOAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAAAOAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAAOAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">var</span> certificate = <span class="highlight-keyword">new</span> X509Certificate2 (<span class="highlight-literal">@"C:\path\to\certificate.p12"</span>, <span class="highlight-literal">"password"</span>, X509KeyStorageFlags.Exportable);
+<span class="highlight-keyword">var</span> credential = <span class="highlight-keyword">new</span> ServiceAccountCredential (<span class="highlight-keyword">new</span> ServiceAccountCredential.Initializer (<span class="highlight-literal">"your-developer-id@developer.gserviceaccount.com"</span>) {
+    <span class="highlight-comment">// Note: other scopes can be found here: https://developers.google.com/gmail/api/auth/scopes</span>
+    Scopes = <span class="highlight-keyword">new</span>[] { <span class="highlight-literal">"https://mail.google.com/"</span> },
+    User = <span class="highlight-literal">"user@gmail.com"</span>
+}.FromCertificate (certificate));
+
+<span class="highlight-comment">// Note: result will be true if the access token was received successfully</span>
+<span class="highlight-keyword">bool</span> result = <span class="highlight-keyword">await</span> credential.RequestAccessTokenAsync (cancel.Token);
+
+<span class="highlight-comment">// use the access token as the password string</span>
+client.Authenticate (<span class="highlight-literal">"user@gmail.com"</span>, credential.Token.AccessToken);</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAAOAAA");</script></div><div class="collapsibleAreaRegion" id="CreateAttachments"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID6RB')" onkeypress="SectionExpandCollapse_CheckKey('ID6RB', event)" tabindex="0"><img id="ID6RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />How do I create a message with attachments?</span></div><div id="ID6RBSection" class="collapsibleSection"><p>
           To construct a message with attachments, the first thing you'll need to do is create a
           <span class="literal">multipart/mixed</span> container which you'll then want to add the message
           body to first. Once you've added the body, you can then add MIME parts to it that contain
@@ -15,7 +107,7 @@
           is to simply use the <a href="P_MimeKit_MimePart_FileName.htm">MimePart<span id="LST7885CE3A_0"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST7885CE3A_0?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>FileName</a> property which will set both parameters
           for you as well as setting the <span class="literal">Content-Disposition</span> header value to
           <span class="literal">attachment</span> if it has not already been set to something else.
-        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EADAOAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EADAOAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EADAOAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EADAOAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">var</span> message = <span class="highlight-keyword">new</span> MimeMessage ();
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EADANAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EADANAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EADANAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EADANAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">var</span> message = <span class="highlight-keyword">new</span> MimeMessage ();
 message.From.Add (<span class="highlight-keyword">new</span> MailboxAddress (<span class="highlight-literal">"Joey"</span>, <span class="highlight-literal">"joey@friends.com"</span>));
 message.To.Add (<span class="highlight-keyword">new</span> MailboxAddress (<span class="highlight-literal">"Alice"</span>, <span class="highlight-literal">"alice@wonderland.com"</span>));
 message.Subject = <span class="highlight-literal">"How you doin?"</span>;
@@ -48,10 +140,10 @@ multipart.Add (body);
 multipart.Add (attachment);
 
 <span class="highlight-comment">// now set the multipart/mixed as the message body</span>
-message.Body = multipart;</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EADAOAAA");</script><p>
+message.Body = multipart;</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EADANAAA");</script><p>
           A simpler way to construct messages with attachments is to take advantage of the
           <a href="T_MimeKit_BodyBuilder.htm">BodyBuilder</a> class.
-        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EABAOAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EABAOAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EABAOAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EABAOAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">            <span class="highlight-keyword">var</span> message = <span class="highlight-keyword">new</span> MimeMessage ();
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EABANAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EABANAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EABANAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EABANAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">            <span class="highlight-keyword">var</span> message = <span class="highlight-keyword">new</span> MimeMessage ();
             message.From.Add (<span class="highlight-keyword">new</span> MailboxAddress (<span class="highlight-literal">"Joey"</span>, <span class="highlight-literal">"joey@friends.com"</span>));
             message.To.Add (<span class="highlight-keyword">new</span> MailboxAddress (<span class="highlight-literal">"Alice"</span>, <span class="highlight-literal">"alice@wonderland.com"</span>));
             message.Subject = <span class="highlight-literal">"How you doin?"</span>;
@@ -73,9 +165,9 @@ Will you be my +1?
             builder.Attachments.Add (<span class="highlight-literal">@"C:\Users\Joey\Documents\party.ics"</span>);
 
             <span class="highlight-comment">// Now we just need to set the message body and we're done</span>
-            message.Body = builder.ToMessageBody ();</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EABAOAAA");</script><p>
+            message.Body = builder.ToMessageBody ();</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EABANAAA");</script><p>
           For more information, see <a href="CreatingMessages.htm">Creating Messages</a>.
-        </p></div><div class="collapsibleAreaRegion" id="MessageBody"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID3RB')" onkeypress="SectionExpandCollapse_CheckKey('ID3RB', event)" tabindex="0"><img id="ID3RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />How do I get the main body of a message?</span></div><div id="ID3RBSection" class="collapsibleSection"><p>
+        </p></div><div class="collapsibleAreaRegion" id="MessageBody"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID7RB')" onkeypress="SectionExpandCollapse_CheckKey('ID7RB', event)" tabindex="0"><img id="ID7RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />How do I get the main body of a message?</span></div><div id="ID7RBSection" class="collapsibleSection"><p>
           (Note: for the TL;DR version, skip to the end)
         </p><p>
           MIME is a tree structure of parts. There are multiparts which contain other parts
@@ -131,7 +223,7 @@ multipart/mixed
           <a href="P_MimeKit_MimeMessage_HtmlBody.htm">HtmlBody</a>.
         </p><p>
           For more information, see <a href="WorkingWithMessages.htm">Working with Messages</a>.
-        </p></div><div class="collapsibleAreaRegion" id="HasAttachments"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID4RB')" onkeypress="SectionExpandCollapse_CheckKey('ID4RB', event)" tabindex="0"><img id="ID4RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />How do I tell if a message has attachments?</span></div><div id="ID4RBSection" class="collapsibleSection"><p>
+        </p></div><div class="collapsibleAreaRegion" id="HasAttachments"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID8RB')" onkeypress="SectionExpandCollapse_CheckKey('ID8RB', event)" tabindex="0"><img id="ID8RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />How do I tell if a message has attachments?</span></div><div id="ID8RBSection" class="collapsibleSection"><p>
           In most cases, a message with a body that has a MIME-type of <span class="literal">multipart/mixed</span>
           containing more than a single part probably has attachments. As illustrated above, the first part
           of a <span class="literal">multipart/mixed</span> is typically the textual body of the message, but it is
@@ -144,11 +236,11 @@ multipart/mixed
           Unfortunately, not all mail clients follow this convention and so you may need to write your
           own custom logic. For example, you may wish to treat all body parts having a <span class="literal">name</span>
           or <span class="literal">filename</span> parameter set on them:
-        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAFAMAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAFAMAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAFAMAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAFAMAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">var</span> attachments = message.BodyParts.OfType&lt;MimePart&gt; ().Where (part =&gt; !<span class="highlight-keyword">string</span>.IsNullOrEmpty (part.FileName));</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAFAMAAA");</script><p>
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAFALAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAFALAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAFALAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAFALAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">var</span> attachments = message.BodyParts.OfType&lt;MimePart&gt; ().Where (part =&gt; !<span class="highlight-keyword">string</span>.IsNullOrEmpty (part.FileName));</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAFALAAA");</script><p>
           A more sophisticated approach is to treat body parts not referenced by the main textual body part of
           the message as attachments. In other words, treat any body part not used for rendering the message
           as an attachment. For an example on how to do this, consider the following code snippets:
-        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EADAMAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EADAMAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EADAMAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EADAMAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">/// &lt;summary&gt;</span>
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EADALAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EADALAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EADALAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EADALAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">/// &lt;summary&gt;</span>
 <span class="highlight-comment">/// Visits a MimeMessage and generates HTML suitable to be rendered by a browser control.</span>
 <span class="highlight-comment">/// &lt;/summary&gt;</span>
 <span class="highlight-keyword">class</span> HtmlPreviewVisitor : MimeVisitor
@@ -345,7 +437,7 @@ multipart/mixed
         <span class="highlight-comment">// even if the IsAttachment property is false.</span>
         attachments.Add (entity);
     }
-}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EADAMAAA");</script><p>And the way you'd use this visitor might look something like this:</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EABAMAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EABAMAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EABAMAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EABAMAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">void</span> Render (MimeMessage message)
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EADALAAA");</script><p>And the way you'd use this visitor might look something like this:</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EABALAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EABALAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EABALAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EABALAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">void</span> Render (MimeMessage message)
 {
     <span class="highlight-keyword">var</span> tmpDir = Path.Combine (Path.GetTempPath (), message.MessageId);
     <span class="highlight-keyword">var</span> visitor = <span class="highlight-keyword">new</span> HtmlPreviewVisitor (tmpDir);
@@ -356,12 +448,64 @@ multipart/mixed
 
     DisplayHtml (visitor.HtmlBody);
     DisplayAttachments (visitor.Attachments);
-}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EABAMAAA");</script><p>
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EABALAAA");</script><p>
           Once you've rendered the message using the above technique, you'll have a list of attachments
           that were not used, even if they did not match the simplistic criteria used by the
           <a href="P_MimeKit_MimeMessage_Attachments.htm">MimeMessage<span id="LST7885CE3A_2"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST7885CE3A_2?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Attachments</a>
           property.
-        </p></div><div class="collapsibleAreaRegion" id="EmailAddresses"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID5RB')" onkeypress="SectionExpandCollapse_CheckKey('ID5RB', event)" tabindex="0"><img id="ID5RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />How do I get the email addresses in the From, To, and Cc headers?</span></div><div id="ID5RBSection" class="collapsibleSection"><p>
+        </p></div><div class="collapsibleAreaRegion" id="Serialize"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID9RB')" onkeypress="SectionExpandCollapse_CheckKey('ID9RB', event)" tabindex="0"><img id="ID9RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Why doesn't the MimeMessage class implement ISerializable so that I can serialize a
+      message to disk and read it back later?</span></div><div id="ID9RBSection" class="collapsibleSection"><p>
+          The MimeKit API was designed to use the existing MIME format for serialization. In light
+          of this, the ability to use the .NET serialization API and format did not make much sense
+          to support.
+        </p><p>
+          You can easily serialize a MimeMessage to a stream using the
+          <a href="Overload_MimeKit_MimeMessage_WriteTo.htm">WriteTo</a>
+          methods.
+        </p></div><div class="collapsibleAreaRegion" id="SaveMessages"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID10RB')" onkeypress="SectionExpandCollapse_CheckKey('ID10RB', event)" tabindex="0"><img id="ID10RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />How do I save messages?</span></div><div id="ID10RBSection" class="collapsibleSection"><p>
+          One you've got a <a href="T_MimeKit_MimeMessage.htm">MimeMessage</a>, you can save it to a
+          file using the <a href="Overload_MimeKit_MimeMessage_WriteTo.htm">WriteTo<span id="LST7885CE3A_3"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST7885CE3A_3?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a> method:
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EADAJAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EADAJAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EADAJAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EADAJAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">message.WriteTo (<span class="highlight-literal">"message.eml"</span>);</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EADAJAAA");</script><p>
+          The <span class="literal">WriteTo</span> method also has overloads that allow you to write the message to a
+          <span class="literal">Stream</span> instead.
+        </p><p>
+          By default, the <span class="literal">WriteTo</span> method will save the message using DOS line-endings on Windows
+          and Unix line-endings on Unix-based systems such as macOS and Linux. You can override this behavior by
+          passing a <a href="T_MimeKit_FormatOptions.htm">FormatOptions</a> argument to the method:
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAAJAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAAJAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAAAJAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAAJAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">// clone the default formatting options</span>
+<span class="highlight-keyword">var</span> format = FormatOptions.Default.Clone ();
+
+<span class="highlight-comment">// override the line-endings to be DOS no matter what platform we are on</span>
+format.NewLineFormat = NewLineFormat.Dos;
+
+message.WriteTo (format, <span class="highlight-literal">"message.eml"</span>);</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAAJAAA");</script></div><div class="collapsibleAreaRegion" id="SaveAttachments"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID11RB')" onkeypress="SectionExpandCollapse_CheckKey('ID11RB', event)" tabindex="0"><img id="ID11RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />How do I save attachments?</span></div><div id="ID11RBSection" class="collapsibleSection"><p>
+          If you've already got a <a href="T_MimeKit_MimePart.htm">MimePart</a> that represents
+          the attachment that you'd like to save, here's how you might save it:
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAGAIAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAGAIAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAGAIAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAGAIAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> stream = File.Create (fileName))
+    attachment.ContentObject.DecodeTo (stream);</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAGAIAAA");</script><p>
+          Pretty simple, right?
+        </p><p>
+          But what if your attachment is actually a <a href="T_MimeKit_MessagePart.htm">MessagePart</a>?
+        </p><p>
+          To save the content of a <span class="literal">message/rfc822</span> part, you'd use the following code snippet:
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EACAIAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EACAIAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EACAIAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EACAIAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> stream = File.Create (fileName))
+    attachment.Message.WriteTo (stream);</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EACAIAAA");</script><p>
+          If you are iterating over all of the attachments in a message, you might do something like this:
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAAIAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAAIAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAAAIAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAAIAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">foreach</span> (<span class="highlight-keyword">var</span> attachment <span class="highlight-keyword">in</span> message.Attachments) {
+    <span class="highlight-keyword">var</span> fileName = attachment.ContentDisposition?.FileName ?? attachment.ContentType.Name;
+
+    <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> stream = File.Create (fileName)) {
+        <span class="highlight-keyword">if</span> (attachment <span class="highlight-keyword">is</span> MessagePart) {
+            <span class="highlight-keyword">var</span> rfc822 = (MessagePart) attachment;
+
+            rfc822.Message.WriteTo (stream);
+        } <span class="highlight-keyword">else</span> {
+            <span class="highlight-keyword">var</span> part = (MimePart) attachment;
+
+            part.ContentObject.DecodeTo (stream);
+        }
+    }
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAAIAAA");</script></div><div class="collapsibleAreaRegion" id="AddressHeaders"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID12RB')" onkeypress="SectionExpandCollapse_CheckKey('ID12RB', event)" tabindex="0"><img id="ID12RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />How do I get the email addresses in the From, To, and Cc headers?</span></div><div id="ID12RBSection" class="collapsibleSection"><p>
           The <a href="P_MimeKit_MimeMessage_From.htm">From</a>,
           <a href="P_MimeKit_MimeMessage_To.htm">To</a>, and
           <a href="P_MimeKit_MimeMessage_Cc.htm">Cc</a>
@@ -423,22 +567,8 @@ multipart/mixed
         </p><p><span class="literal">To: John Smith &lt;john@smith.com&gt;</span></p><p>
           If you only care about getting a flattened list of the mailbox addresses in one of
           the address headers, you can simply do something like this:
-        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAALAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAALAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAAALAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAALAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">foreach</span> (<span class="highlight-keyword">var</span> mailbox <span class="highlight-keyword">in</span> message.To.Mailboxes)
-    Console.WriteLine (<span class="highlight-literal">"{0}'s email address is {1}"</span>, mailbox.Name, mailbox.Address);</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAALAAA");</script></div><div class="collapsibleAreaRegion" id="UnreadMessages"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID6RB')" onkeypress="SectionExpandCollapse_CheckKey('ID6RB', event)" tabindex="0"><img id="ID6RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />How do I get all of the unread messages in a folder?</span></div><div id="ID6RBSection" class="collapsibleSection"><p>
-          The easiest way is to search for all of the messages that do not have the
-          <span class="literal">\Seen</span> flag on them, like so:
-        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAAKAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAAKAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAAAKAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAAKAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">foreach</span> (<span class="highlight-keyword">var</span> uid <span class="highlight-keyword">in</span> folder.Search (SearchQuery.NotSeen)) {
-    <span class="highlight-keyword">var</span> message = folder.GetMessage (uid);
-}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAAKAAA");</script></div><div class="collapsibleAreaRegion" id="Serialize"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID7RB')" onkeypress="SectionExpandCollapse_CheckKey('ID7RB', event)" tabindex="0"><img id="ID7RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Why doesn't the MimeMessage class implement ISerializable so that I can serialize a
-      message to disk and read it back later?</span></div><div id="ID7RBSection" class="collapsibleSection"><p>
-          The MimeKit API was designed to use the existing MIME format for serialization. In light
-          of this, the ability to use the .NET serialization API and format did not make much sense
-          to support.
-        </p><p>
-          You can easily serialize a MimeMessage to a stream using the
-          <a href="Overload_MimeKit_MimeMessage_WriteTo.htm">WriteTo</a>
-          methods.
-        </p></div><div class="collapsibleAreaRegion" id="UntitledAttachments"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID8RB')" onkeypress="SectionExpandCollapse_CheckKey('ID8RB', event)" tabindex="0"><img id="ID8RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Why do attachments with unicode filenames appear as "ATT0####.dat" in Outlook?</span></div><div id="ID8RBSection" class="collapsibleSection"><p>
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAAHAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAAHAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAAAHAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAAHAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">foreach</span> (<span class="highlight-keyword">var</span> mailbox <span class="highlight-keyword">in</span> message.To.Mailboxes)
+    Console.WriteLine (<span class="highlight-literal">"{0}'s email address is {1}"</span>, mailbox.Name, mailbox.Address);</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAAHAAA");</script></div><div class="collapsibleAreaRegion" id="UntitledAttachments"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID13RB')" onkeypress="SectionExpandCollapse_CheckKey('ID13RB', event)" tabindex="0"><img id="ID13RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Why do attachments with unicode filenames appear as "ATT0####.dat" in Outlook?</span></div><div id="ID13RBSection" class="collapsibleSection"><p>
           An attachment filename is stored as a MIME parameter on the <span class="literal">Content-Disposition</span>
           header. Unfortunately, the original MIME specifications did not specify a method for encoding
           non-ascii filenames. In 1997,
@@ -462,21 +592,21 @@ multipart/mixed
         </p><p>
           The first way is to set the encoding method on each individual
           <a href="T_MimeKit_Parameter.htm">Parameter</a>:
-        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EACAIAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EACAIAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EACAIAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EACAIAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">Parameter param;
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EACAGAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EACAGAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EACAGAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EACAGAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">Parameter param;
 
 <span class="highlight-keyword">if</span> (attachment.ContentDisposition.Parameters.TryGetValue (<span class="highlight-literal">"filename"</span>, <span class="highlight-keyword">out</span> param))
-    param.EncodingMethod = ParameterEncodingMethod.Rfc2047;</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EACAIAAA");</script><p>
+    param.EncodingMethod = ParameterEncodingMethod.Rfc2047;</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EACAGAAA");</script><p>
           The other way is to use a <a href="T_MimeKit_FormatOptions.htm">FormatOptions</a>:
-        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAAIAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAAIAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAAAIAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAAIAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">var</span> options = FormatOptions.Default.Clone ();
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAAGAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAAGAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAAAGAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAAGAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">var</span> options = FormatOptions.Default.Clone ();
 options.ParameterEncodingMethod = ParameterEncodingMethod.Rfc2047;
 
-message.WriteTo (options, stream);</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAAIAAA");</script></div><div class="collapsibleAreaRegion" id="DecryptInlinePGP"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID9RB')" onkeypress="SectionExpandCollapse_CheckKey('ID9RB', event)" tabindex="0"><img id="ID9RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />How do I decrypt PGP messages that are embedded in the main message text?</span></div><div id="ID9RBSection" class="collapsibleSection"><p>
+message.WriteTo (options, stream);</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAAGAAA");</script></div><div class="collapsibleAreaRegion" id="DecryptInlinePGP"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID14RB')" onkeypress="SectionExpandCollapse_CheckKey('ID14RB', event)" tabindex="0"><img id="ID14RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />How do I decrypt PGP messages that are embedded in the main message text?</span></div><div id="ID14RBSection" class="collapsibleSection"><p>
           Some PGP-enabled mail clients, such as <strong>Thunderbird</strong>, embed
           encrypted PGP blurbs within the <span class="literal">text/plain</span> body of the message
           rather than using the PGP/MIME format that MimeKit prefers.
         </p><p>
           These messages often look something like this:
-        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAEAHAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAEAHAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAEAHAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">Return-Path: &lt;pgp-enthusiast@example.com&gt;
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAEAFAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAEAFAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAEAFAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">Return-Path: &lt;pgp-enthusiast@example.com&gt;
 Received: from [127.0.0.1] (hostname.example.com. [201.95.8.17])
     by mx.google.com with ESMTPSA id l67sm26628445yha.8.2014.04.27.13.49.44
     for &lt;pgp-enthusiast@example.com&gt;
@@ -506,11 +636,11 @@ ZCEKCkknbSBqdXN0IHVzaW5nIHRoaXMgYXMgYW4gZXhhbXBsZSwgdGhvdWdoLCBz
 byBpdCBkb2Vzbid0IHJlYWxseSBtYXR0ZXIuCgpGb3IgdGhlIHNha2Ugb2YgYXJn
 dW1lbnQsIHdlJ2xsIHByZXRlbmQgdGhhdCB0aGlzIGlzIGFjdHVhbGx5IGFuIGVu
 Y3J5cHRlZApibHVyYi4gTW1ta2F5PyBUaGFua3MuCg==
------END PGP MESSAGE-----</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAEAHAAA");</script><p>
+-----END PGP MESSAGE-----</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAEAFAAA");</script><p>
           To deal with these kinds of messages, MimeKit's
           <a href="T_MimeKit_Cryptography_OpenPgpContext.htm">OpenPgpContext</a>
           includes a
-          <a href="Overload_MimeKit_Cryptography_OpenPgpContext_GetDecryptedStream.htm">GetDecryptedStream<span id="LST7885CE3A_3"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST7885CE3A_3?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a>
+          <a href="Overload_MimeKit_Cryptography_OpenPgpContext_GetDecryptedStream.htm">GetDecryptedStream<span id="LST7885CE3A_4"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST7885CE3A_4?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a>
           method which can be used to get the raw decrypted stream.
         </p><p>
           The method variant that has a
@@ -520,7 +650,7 @@ Y3J5cHRlZApibHVyYi4gTW1ta2F5PyBUaGFua3MuCg==
           each of them.
         </p><p>
           To decrypt the sample message above, you could use the following code snippet:
-        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAAHAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAAHAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAAAHAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAAHAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">static</span> Stream Decrypt (MimeMessage message)
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAAFAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAAFAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAAAFAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAAFAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">static</span> Stream Decrypt (MimeMessage message)
 {
     <span class="highlight-keyword">var</span> text = message.TextBody;
 
@@ -529,7 +659,7 @@ Y3J5cHRlZApibHVyYi4gTW1ta2F5PyBUaGFua3MuCg==
             <span class="highlight-keyword">return</span> ctx.GetDecryptedStream (memory);
         }
     }
-}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAAHAAA");</script></div><div class="collapsibleAreaRegion" id="Reply"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID10RB')" onkeypress="SectionExpandCollapse_CheckKey('ID10RB', event)" tabindex="0"><img id="ID10RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />How do I reply to a message using MimeKit?</span></div><div id="ID10RBSection" class="collapsibleSection"><p>
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAAFAAA");</script></div><div class="collapsibleAreaRegion" id="Reply"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID15RB')" onkeypress="SectionExpandCollapse_CheckKey('ID15RB', event)" tabindex="0"><img id="ID15RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />How do I reply to a message using MimeKit?</span></div><div id="ID15RBSection" class="collapsibleSection"><p>
           Replying to a message is fairly simple. For the most part, you'd just create the reply message
           the same way you'd create any other message. There are only a few slight differences:
         </p><ol><li><p>
@@ -549,7 +679,7 @@ Y3J5cHRlZApibHVyYi4gTW1ta2F5PyBUaGFua3MuCg==
               You will probably want to "quote" the original message's text in the reply.
             </p></li></ol><p>
           If this logic were to be expressed in code, it might look something like this:
-        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAFAGAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAFAGAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAFAGAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAFAGAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> MimeMessage Reply (MimeMessage message, MailboxAddress <span class="highlight-keyword">from</span>, <span class="highlight-keyword">bool</span> replyToAll)
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAFAEAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAFAEAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAFAEAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAFAEAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> MimeMessage Reply (MimeMessage message, MailboxAddress <span class="highlight-keyword">from</span>, <span class="highlight-keyword">bool</span> replyToAll)
 {
     <span class="highlight-keyword">var</span> reply = <span class="highlight-keyword">new</span> MimeMessage ();
 
@@ -605,7 +735,7 @@ Y3J5cHRlZApibHVyYi4gTW1ta2F5PyBUaGFua3MuCg==
     }
 
     <span class="highlight-keyword">return</span> reply;
-}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAFAGAAA");</script><p>
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAFAEAAA");</script><p>
           But what if you wanted to reply to a message and quote the HTML formatting of the original message
           body (assuming it has an HTML body) while still including the embedded images?
         </p><p>
@@ -613,7 +743,7 @@ Y3J5cHRlZApibHVyYi4gTW1ta2F5PyBUaGFua3MuCg==
         </p><p>
           The first thing we'd need to do is implement our own <a href="T_MimeKit_MimeVisitor.htm">MimeVisitor</a>
           to handle this:
-        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EABAGAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EABAGAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EABAGAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EABAGAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> ReplyVisitor : MimeVisitor
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EABAEAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EABAEAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EABAEAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EABAEAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> ReplyVisitor : MimeVisitor
 {
     <span class="highlight-keyword">readonly</span> Stack&lt;Multipart&gt; stack = <span class="highlight-keyword">new</span> Stack&lt;Multipart&gt; ();
     MimeMessage message;
@@ -794,7 +924,7 @@ Y3J5cHRlZApibHVyYi4gTW1ta2F5PyBUaGFua3MuCg==
     {
         <span class="highlight-comment">// don't descend into message/rfc822 parts</span>
     }
-}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EABAGAAA");</script><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAAGAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAAGAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAAAGAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAAGAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> MimeMessage Reply (MimeMessage message, MailboxAddress <span class="highlight-keyword">from</span>, <span class="highlight-keyword">bool</span> replyToAll)
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EABAEAAA");</script><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAAEAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAAEAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAAAEAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAAEAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> MimeMessage Reply (MimeMessage message, MailboxAddress <span class="highlight-keyword">from</span>, <span class="highlight-keyword">bool</span> replyToAll)
 {
     <span class="highlight-keyword">var</span> visitor = <span class="highlight-keyword">new</span> ReplyVisitor ();
     <span class="highlight-keyword">var</span> reply = <span class="highlight-keyword">new</span> MimeMessage ();
@@ -835,25 +965,94 @@ Y3J5cHRlZApibHVyYi4gTW1ta2F5PyBUaGFua3MuCg==
     reply.Body = visitor.Body ?? <span class="highlight-keyword">new</span> TextPart (<span class="highlight-literal">"plain"</span>) { Text = ReplyVisitor.GetOnDateSenderWrote (message) + Environment.NewLine };
 
     <span class="highlight-keyword">return</span> reply;
-}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAAGAAA");</script></div><div class="collapsibleAreaRegion" id="ParseWebRequestFormData"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID11RB')" onkeypress="SectionExpandCollapse_CheckKey('ID11RB', event)" tabindex="0"><img id="ID11RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />How would I parse multipart/form-data from an HTTP web request?</span></div><div id="ID11RBSection" class="collapsibleSection"><p>
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAAEAAA");</script></div><div class="collapsibleAreaRegion" id="Forward"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID16RB')" onkeypress="SectionExpandCollapse_CheckKey('ID16RB', event)" tabindex="0"><img id="ID16RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />How do I forward a message?</span></div><div id="ID16RBSection" class="collapsibleSection"><p>
+          There are 2 common ways of forwarding a message: attaching the original message as an attachment and
+          inlining the message body much like replying typically does. Which method you choose is up to you.
+        </p><p>
+          To forward a message by attaching it as an attachment, you would do do something like this:
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EACADAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EACADAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EACADAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EACADAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> MimeMessage Forward (MimeMessage original, MailboxAddress <span class="highlight-keyword">from</span>, IEnumerable&lt;InternetAddress&gt; to)
+{
+    <span class="highlight-keyword">var</span> message = <span class="highlight-keyword">new</span> MimeMessage ();
+    message.From.Add (<span class="highlight-keyword">from</span>);
+    message.To.AddRange (to);
+
+    <span class="highlight-comment">// set the forwarded subject</span>
+    <span class="highlight-keyword">if</span> (!original.Subject.StartsWith (<span class="highlight-literal">"FW:"</span>, StringComparison.OrdinalIgnoreCase))
+        message.Subject = <span class="highlight-literal">"FW: "</span> + original.Subject;
+    <span class="highlight-keyword">else</span>
+        message.Subject = original.Subject;
+
+    <span class="highlight-comment">// create the main textual body of the message</span>
+    <span class="highlight-keyword">var</span> text = <span class="highlight-keyword">new</span> TextPart (<span class="highlight-literal">"plain"</span>) { Text = <span class="highlight-literal">"Here's the forwarded message:"</span> };
+
+    <span class="highlight-comment">// create the message/rfc822 attachment for the original message</span>
+    <span class="highlight-keyword">var</span> rfc822 = <span class="highlight-keyword">new</span> MessagePart { Message = original };
+
+    <span class="highlight-comment">// create a multipart/mixed container for the text body and the forwarded message</span>
+    <span class="highlight-keyword">var</span> multipart = <span class="highlight-keyword">new</span> Multipart (<span class="highlight-literal">"mixed"</span>);
+    multipart.Add (text);
+    multipart.Add (rfc822);
+
+    <span class="highlight-comment">// set the multipart as the body of the message</span>
+    message.Body = multipart;
+
+    <span class="highlight-keyword">return</span> message;
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EACADAAA");</script><p>
+          To forward a message by simply inlining the original message's text content, you can do something like this:
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAADAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAADAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAAADAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAADAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> MimeMessage Forward (MimeMessage original, MailboxAddress <span class="highlight-keyword">from</span>, IEnumerable&lt;InternetAddress&gt; to)
+{
+    <span class="highlight-keyword">var</span> message = <span class="highlight-keyword">new</span> MimeMessage ();
+    message.From.Add (<span class="highlight-keyword">from</span>);
+    message.To.AddRange (to);
+
+    <span class="highlight-comment">// set the forwarded subject</span>
+    <span class="highlight-keyword">if</span> (!original.Subject.StartsWith (<span class="highlight-literal">"FW:"</span>, StringComparison.OrdinalIgnoreCase))
+        message.Subject = <span class="highlight-literal">"FW: "</span> + original.Subject;
+    <span class="highlight-keyword">else</span>
+        message.Subject = original.Subject;
+
+    <span class="highlight-comment">// quote the original message text</span>
+    <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> text = <span class="highlight-keyword">new</span> StringWriter ()) {
+        text.WriteLine ();
+        text.WriteLine (<span class="highlight-literal">"-----Original Message-----"</span>);
+        test.WriteLine (<span class="highlight-literal">"From: {0}"</span>, original.From);
+        text.WriteLine (<span class="highlight-literal">"Sent: {0}"</span>, DateUtils.FormatDate (original.Date));
+        text.WriteLine (<span class="highlight-literal">"To: {0}"</span>, original.To);
+        text.WriteLine (<span class="highlight-literal">"Subject: {0}"</span>, original.Subject);
+        text.WriteLine ();
+
+        text.Write (original.TextBody);
+
+        message.Body = <span class="highlight-keyword">new</span> TextPart (<span class="highlight-literal">"plain"</span>) {
+            Text = text.ToString ()
+        };
+    }
+
+    <span class="highlight-keyword">return</span> message;
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAADAAA");</script></div><div class="collapsibleAreaRegion" id="UnreadMessages"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID17RB')" onkeypress="SectionExpandCollapse_CheckKey('ID17RB', event)" tabindex="0"><img id="ID17RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />How do I get all of the unread messages in a folder?</span></div><div id="ID17RBSection" class="collapsibleSection"><p>
+          The easiest way is to search for all of the messages that do not have the
+          <span class="literal">\Seen</span> flag on them, like so:
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAACAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAACAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAAACAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">foreach</span> (<span class="highlight-keyword">var</span> uid <span class="highlight-keyword">in</span> folder.Search (SearchQuery.NotSeen)) {
+    <span class="highlight-keyword">var</span> message = folder.GetMessage (uid);
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAACAAA");</script></div><div class="collapsibleAreaRegion" id="ParseWebRequestFormData"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID18RB')" onkeypress="SectionExpandCollapse_CheckKey('ID18RB', event)" tabindex="0"><img id="ID18RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />How would I parse multipart/form-data from an HTTP web request?</span></div><div id="ID18RBSection" class="collapsibleSection"><p>
           Since classes like <a href="http://msdn2.microsoft.com/en-us/library/8y7x3zz2" target="_blank">HttpWebRequest</a>
           take care of parsing the HTTP headers (which includes the <span class="literal">Content-Type</span> header)
           and only offer a content stream to consume, MimeKit provides a way to deal with this using the
           following two static methods:
-          <a href="M_MimeKit_MimeEntity_Load_1.htm">MimeEntity<span id="LST7885CE3A_4"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST7885CE3A_4?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Load(ParserOptions, ContentType, Stream, CancellationToken)</a>
+          <a href="M_MimeKit_MimeEntity_Load_1.htm">MimeEntity<span id="LST7885CE3A_5"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST7885CE3A_5?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Load(ParserOptions, ContentType, Stream, CancellationToken)</a>
           and
-          <a href="M_MimeKit_MimeEntity_Load.htm">MimeEntity<span id="LST7885CE3A_5"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST7885CE3A_5?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Load(ContentType, Stream, CancellationToken)</a></p><p>
+          <a href="M_MimeKit_MimeEntity_Load.htm">MimeEntity<span id="LST7885CE3A_6"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST7885CE3A_6?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Load(ContentType, Stream, CancellationToken)</a></p><p>
           Here's how you might use these methods:
-        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EACAFAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EACAFAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EACAFAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EACAFAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">MimeEntity ParseMultipartFormData (HttpWebResponse response)
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EACABAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EACABAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EACABAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EACABAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">MimeEntity ParseMultipartFormData (HttpWebResponse response)
 {
     <span class="highlight-keyword">var</span> contentType = ContentType.Parse (response.ContentType);
 
     <span class="highlight-keyword">return</span> MimeEntity.Parse (contentType, response.GetResponseStream ());
-}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EACAFAAA");</script><p>
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EACABAAA");</script><p>
           If the multipart/form-data HTTP response is expected to be large and you do
           not wish for the content to be read into memory, you can use the following
           approach:
-        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAAFAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAAFAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAAAFAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAAFAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">MimeEntity ParseMultipartFormData (HttpWebResponse response)
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAABAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAABAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAAABAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAABAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">MimeEntity ParseMultipartFormData (HttpWebResponse response)
 {
     <span class="highlight-comment">// create a temporary file to store our large HTTP data stream</span>
     <span class="highlight-keyword">var</span> tmp = Path.GetTempFileName ();
@@ -875,65 +1074,4 @@ Y3J5cHRlZApibHVyYi4gTW1ta2F5PyBUaGFua3MuCg==
         <span class="highlight-comment">// parse the MIME entity with persistent = true, telling the parser not to load the content into memory</span>
         <span class="highlight-keyword">return</span> MimeEntity.Load (stream, persistent: <span class="highlight-keyword">true</span>);
     }
-}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAAFAAA");</script></div><div class="collapsibleAreaRegion" id="ProtocolLog"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID12RB')" onkeypress="SectionExpandCollapse_CheckKey('ID12RB', event)" tabindex="0"><img id="ID12RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />How do I debug SMTP, POP3 and/or IMAP errors?</span></div><div id="ID12RBSection" class="collapsibleSection"><p>
-          All of MailKit's client implementations have a constructor that takes a nifty
-          <a href="T_MailKit_IProtocolLogger.htm">IProtocolLogger</a> interface for logging client/server communications.
-          Out of the box, you can use the handy <a href="T_MailKit_ProtocolLogger.htm">ProtocolLogger</a> class. Here are
-          some examples of how to use it:
-        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAAEAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAAEAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAAAEAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAAEAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">// log to a file called 'imap.log'</span>
-<span class="highlight-keyword">var</span> client = <span class="highlight-keyword">new</span> ImapClient (<span class="highlight-keyword">new</span> ProtocolLogger (<span class="highlight-literal">"imap.log"</span>));
-
-<span class="highlight-comment">// log to standard output (i.e. the console)</span>
-<span class="highlight-keyword">var</span> client = <span class="highlight-keyword">new</span> ImapClient (<span class="highlight-keyword">new</span> ProtocolLogger (Console.OpenStandardOutput ()));</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAAEAAA");</script></div><div class="collapsibleAreaRegion" id="GMail"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID13RB')" onkeypress="SectionExpandCollapse_CheckKey('ID13RB', event)" tabindex="0"><img id="ID13RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />How do I access GMail using MailKit?</span></div><div id="ID13RBSection" class="collapsibleSection"><p>
-          The first thing that you will need to do is to configure your GMail account to
-          <a href="https://www.google.com/settings/security/lesssecureapps" target="_blank">enable less secure apps</a>, or you'll need to use OAuth 2.0 authentication (which is a bit more complex).
-        </p><p>
-          Then, assuming that your GMail account is <span class="literal">user@gmail.com</span>, you would use the following
-          code snippet to connect to GMail via IMAP:
-        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAEADAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAEADAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAEADAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAEADAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> client = <span class="highlight-keyword">new</span> ImapClient ()) {
-    client.Connect (<span class="highlight-literal">"imap.gmail.com"</span>, <span class="highlight-number">993</span>, SecureSocketOptions.SslOnConnect);
-
-    <span class="highlight-comment">// disable OAuth2 authentication unless you are actually using an access_token</span>
-    client.AuthenticationMechanisms.Remove (<span class="highlight-literal">"XOAUTH2"</span>);
-
-    client.Authenticate (<span class="highlight-literal">"user@gmail.com"</span>, <span class="highlight-literal">"password"</span>);
-
-    <span class="highlight-comment">// do stuff...</span>
-
-    client.Disconnect (<span class="highlight-keyword">true</span>);
-}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAEADAAA");</script><p>
-          Connecting via POP3 or SMTP is identical except for the host names and ports (and, of course, you'd
-          use a Pop3Client or SmtpClient as appropriate).
-        </p><p>
-          If you decide to authenticate via OAuth 2.0 instead of enabling less secure apps, you'll need to read
-          <a href="https://developers.google.com/identity/protocols/OAuth2" target="_blank">Google's OAuth 2.0 documentation</a> to learn how to do this.
-        </p><p>
-          Once you've got the access_token, you simply use it as if it were the password when
-          calling the <strong>Authenticate</strong> method.
-        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAADAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAADAAA_copyCode" href="#" onclick="javascript:CopyToClipboard('ID1EAAADAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAADAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">var</span> certificate = <span class="highlight-keyword">new</span> X509Certificate2 (<span class="highlight-literal">@"C:\path\to\certificate.p12"</span>, <span class="highlight-literal">"password"</span>, X509KeyStorageFlags.Exportable);
-<span class="highlight-keyword">var</span> credential = <span class="highlight-keyword">new</span> ServiceAccountCredential (<span class="highlight-keyword">new</span> ServiceAccountCredential.Initializer (<span class="highlight-literal">"your-developer-id@developer.gserviceaccount.com"</span>) {
-    <span class="highlight-comment">// Note: other scopes can be found here: https://developers.google.com/gmail/api/auth/scopes</span>
-    Scopes = <span class="highlight-keyword">new</span>[] { <span class="highlight-literal">"https://mail.google.com/"</span> },
-    User = <span class="highlight-literal">"user@gmail.com"</span>
-}.FromCertificate (certificate));
-
-<span class="highlight-comment">// Note: result will be true if the access token was received successfully</span>
-<span class="highlight-keyword">bool</span> result = <span class="highlight-keyword">await</span> credential.RequestAccessTokenAsync (cancel.Token);
-
-<span class="highlight-comment">// use the access token as the password string</span>
-client.Authenticate (<span class="highlight-literal">"user@gmail.com"</span>, credential.Token.AccessToken);</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAADAAA");</script></div><div class="collapsibleAreaRegion" id="GMailAuthenticationFailed"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID14RB')" onkeypress="SectionExpandCollapse_CheckKey('ID14RB', event)" tabindex="0"><img id="ID14RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Why do I get an exception when I try to authenticate with GMail?</span></div><div id="ID14RBSection" class="collapsibleSection"><p>
-          You probably forgot to
-          <a href="https://www.google.com/settings/security/lesssecureapps" target="_blank">enable less secure apps</a>.
-        </p></div><div class="collapsibleAreaRegion" id="GMailHiddenMessages"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID15RB')" onkeypress="SectionExpandCollapse_CheckKey('ID15RB', event)" tabindex="0"><img id="ID15RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Why don't I see some of my messages when accessing GMail with POP3?</span></div><div id="ID15RBSection" class="collapsibleSection"><p>
-          By default, GMail's POP3 server does not behave like a standard POP3 server and hides messages
-          from clients (as well as having other non-standard behavior) that have already been viewed.
-        </p><p>
-          If you want to configure your GMail POP3 settings to behave the way POP3 is intended to behave,
-          you'll need to log in to your GMail account via your web browser and navigate to the
-          <strong>Forwarding and POP/IMAP</strong> tab of your
-          <strong>GMail Settings</strong> page and make the following changes in the
-          <strong>POP3 Download</strong> section:
-        </p><ul class="noBullet"><li><p><strong>Enable POP for all mail (even if it has already been downloaded)</strong>.
-            </p></li><li><p>
-              When messages are accessed with POP, <strong>keep GMail's copy in the Inbox</strong>.
-            </p></li></ul></div></div></div><div id="pageFooter" class="pageFooter"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-63841238-1', 'auto'); ga('send', 'pageview');</script></div></body></html>
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAABAAA");</script></div></div></div><div id="pageFooter" class="pageFooter"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-63841238-1', 'auto'); ga('send', 'pageview');</script></div></body></html>

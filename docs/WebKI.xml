@@ -1540,7 +1540,7 @@
   <HelpKINode Title="CryptographyContext.GetDigestAlgorithmName method" Url="html/M_MimeKit_Cryptography_CryptographyContext_GetDigestAlgorithmName.htm" />
   <HelpKINode Title="CryptographyContext.Import method" Url="html/M_MimeKit_Cryptography_CryptographyContext_Import.htm" />
   <HelpKINode Title="CryptographyContext.KeyExchangeProtocol property" Url="html/P_MimeKit_Cryptography_CryptographyContext_KeyExchangeProtocol.htm" />
-  <HelpKINode Title="CryptographyContext.Register method" Url="html/M_MimeKit_Cryptography_CryptographyContext_Register.htm" />
+  <HelpKINode Title="CryptographyContext.Register method" Url="html/Overload_MimeKit_Cryptography_CryptographyContext_Register.htm" />
   <HelpKINode Title="CryptographyContext.Sign method" Url="html/M_MimeKit_Cryptography_CryptographyContext_Sign.htm" />
   <HelpKINode Title="CryptographyContext.SignatureProtocol property" Url="html/P_MimeKit_Cryptography_CryptographyContext_SignatureProtocol.htm" />
   <HelpKINode Title="CryptographyContext.Supports method" Url="html/M_MimeKit_Cryptography_CryptographyContext_Supports.htm" />
@@ -3712,6 +3712,7 @@
   <HelpKINode Title="IMailService.Disconnect method" Url="html/M_MailKit_IMailService_Disconnect.htm" />
   <HelpKINode Title="IMailService.DisconnectAsync method" Url="html/M_MailKit_IMailService_DisconnectAsync.htm" />
   <HelpKINode Title="IMailService.Disconnected event" Url="html/E_MailKit_IMailService_Disconnected.htm" />
+  <HelpKINode Title="IMailService.IsAuthenticated property" Url="html/P_MailKit_IMailService_IsAuthenticated.htm" />
   <HelpKINode Title="IMailService.IsConnected property" Url="html/P_MailKit_IMailService_IsConnected.htm" />
   <HelpKINode Title="IMailService.IsSecure property" Url="html/P_MailKit_IMailService_IsSecure.htm" />
   <HelpKINode Title="IMailService.LocalEndPoint property" Url="html/P_MailKit_IMailService_LocalEndPoint.htm" />
@@ -4245,6 +4246,7 @@
     <HelpKINode Title="MimeEntity.IsAttachment Property " Url="html/P_MimeKit_MimeEntity_IsAttachment.htm" />
   </HelpKINode>
   <HelpKINode Title="IsAuthenticated property">
+    <HelpKINode Title="IMailService.IsAuthenticated Property " Url="html/P_MailKit_IMailService_IsAuthenticated.htm" />
     <HelpKINode Title="ImapClient.IsAuthenticated Property " Url="html/P_MailKit_Net_Imap_ImapClient_IsAuthenticated.htm" />
     <HelpKINode Title="MailService.IsAuthenticated Property " Url="html/P_MailKit_MailService_IsAuthenticated.htm" />
     <HelpKINode Title="Pop3Client.IsAuthenticated Property " Url="html/P_MailKit_Net_Pop3_Pop3Client_IsAuthenticated.htm" />
@@ -7087,7 +7089,7 @@
   <HelpKINode Title="ReferredByName enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="ReferredByNameA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_ReferredByNameA.htm" />
   <HelpKINode Title="ReferredByNameW field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_ReferredByNameW.htm" />
-  <HelpKINode Title="Register method" Url="html/M_MimeKit_Cryptography_CryptographyContext_Register.htm" />
+  <HelpKINode Title="Register method" Url="html/Overload_MimeKit_Cryptography_CryptographyContext_Register.htm" />
   <HelpKINode Title="RegisteredMailType enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="RegisteredMailType field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_RegisteredMailType.htm" />
   <HelpKINode Title="RegisterMimeType method" Url="html/M_MimeKit_ParserOptions_RegisterMimeType.htm" />
