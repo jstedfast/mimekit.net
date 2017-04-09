@@ -527,6 +527,7 @@
   <HelpKINode Title="AutoForwardingComment enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="AutoForwardingCommentA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_AutoForwardingCommentA.htm" />
   <HelpKINode Title="AutoForwardingCommentW field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_AutoForwardingCommentW.htm" />
+  <HelpKINode Title="AutoKeyRetrieve property" Url="html/P_MimeKit_Cryptography_OpenPgpContext_AutoKeyRetrieve.htm" />
   <HelpKINode Title="AutoResponseSuppress enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="AutoResponseSuppress field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_AutoResponseSuppress.htm" />
   <HelpKINode Title="Axis enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
@@ -1609,6 +1610,7 @@
     <HelpKINode Title="UUDecoder.Decode Method " Url="html/Overload_MimeKit_Encodings_UUDecoder_Decode.htm" />
     <HelpKINode Title="YDecoder.Decode Method " Url="html/Overload_MimeKit_Encodings_YDecoder_Decode.htm" />
   </HelpKINode>
+  <HelpKINode Title="DecodeAddrspec method" Url="html/M_MimeKit_MailboxAddress_DecodeAddrspec.htm" />
   <HelpKINode Title="DecodeCharacterReferences property" Url="html/P_MimeKit_Text_HtmlTokenizer_DecodeCharacterReferences.htm" />
   <HelpKINode Title="DecodePhrase method" Url="html/Overload_MimeKit_Utils_Rfc2047_DecodePhrase.htm" />
   <HelpKINode Title="Decoder property" Url="html/P_MimeKit_IO_Filters_DecoderFilter_Decoder.htm" />
@@ -1792,6 +1794,7 @@
     <HelpKINode Title="OpenPgpDigitalSignature.DigestAlgorithm Property " Url="html/P_MimeKit_Cryptography_OpenPgpDigitalSignature_DigestAlgorithm.htm" />
     <HelpKINode Title="SecureMimeDigitalSignature.DigestAlgorithm Property " Url="html/P_MimeKit_Cryptography_SecureMimeDigitalSignature_DigestAlgorithm.htm" />
   </HelpKINode>
+  <HelpKINode Title="DigestSigner property" Url="html/P_MimeKit_Cryptography_DkimSigner_DigestSigner.htm" />
   <HelpKINode Title="DigitalSignature enumeration member" Url="html/T_MimeKit_Cryptography_X509KeyUsageFlags.htm" />
   <HelpKINode Title="DigitalSignatureCollection class">
     <HelpKINode Title="DigitalSignatureCollection Class" Url="html/T_MimeKit_Cryptography_DigitalSignatureCollection.htm" />
@@ -1906,6 +1909,7 @@
     <HelpKINode Title="properties" Url="html/Properties_T_MimeKit_Cryptography_DkimSigner.htm" />
   </HelpKINode>
   <HelpKINode Title="DkimSigner.AgentOrUserIdentifier property" Url="html/P_MimeKit_Cryptography_DkimSigner_AgentOrUserIdentifier.htm" />
+  <HelpKINode Title="DkimSigner.DigestSigner property" Url="html/P_MimeKit_Cryptography_DkimSigner_DigestSigner.htm" />
   <HelpKINode Title="DkimSigner.DkimSigner constructor" Url="html/Overload_MimeKit_Cryptography_DkimSigner__ctor.htm" />
   <HelpKINode Title="DkimSigner.Domain property" Url="html/P_MimeKit_Cryptography_DkimSigner_Domain.htm" />
   <HelpKINode Title="DkimSigner.PrivateKey property" Url="html/P_MimeKit_Cryptography_DkimSigner_PrivateKey.htm" />
@@ -1978,6 +1982,7 @@
   <HelpKINode Title="DT enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
   <HelpKINode Title="DynSrc enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
   <HelpKINode Title="Earlier property" Url="html/P_MailKit_MessagesVanishedEventArgs_Earlier.htm" />
+  <HelpKINode Title="EdwardsCurveDsa enumeration member" Url="html/T_MimeKit_Cryptography_PublicKeyAlgorithm.htm" />
   <HelpKINode Title="EightBit enumeration member">
     <HelpKINode Title="ContentEncoding Enumeration" Url="html/T_MimeKit_ContentEncoding.htm" />
     <HelpKINode Title="EncodingConstraint Enumeration" Url="html/T_MimeKit_EncodingConstraint.htm" />
@@ -2042,6 +2047,7 @@
     <HelpKINode Title="UUEncoder.Encode Method " Url="html/M_MimeKit_Encodings_UUEncoder_Encode.htm" />
     <HelpKINode Title="YEncoder.Encode Method " Url="html/M_MimeKit_Encodings_YEncoder_Encode.htm" />
   </HelpKINode>
+  <HelpKINode Title="EncodeAddrspec method" Url="html/M_MimeKit_MailboxAddress_EncodeAddrspec.htm" />
   <HelpKINode Title="EncodePhrase method" Url="html/Overload_MimeKit_Utils_Rfc2047_EncodePhrase.htm" />
   <HelpKINode Title="Encoder property" Url="html/P_MimeKit_IO_Filters_EncoderFilter_Encoder.htm" />
   <HelpKINode Title="EncoderFilter class">
@@ -2748,6 +2754,15 @@
     <HelpKINode Title="TnefPropertyReader.GetHashCode Method " Url="html/M_MimeKit_Tnef_TnefPropertyReader_GetHashCode.htm" />
     <HelpKINode Title="TnefPropertyTag.GetHashCode Method " Url="html/M_MimeKit_Tnef_TnefPropertyTag_GetHashCode.htm" />
     <HelpKINode Title="UniqueId.GetHashCode Method " Url="html/M_MailKit_UniqueId_GetHashCode.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetHeaders method">
+    <HelpKINode Title="IMailFolder.GetHeaders Method " Url="html/Overload_MailKit_IMailFolder_GetHeaders.htm" />
+    <HelpKINode Title="ImapFolder.GetHeaders Method " Url="html/Overload_MailKit_Net_Imap_ImapFolder_GetHeaders.htm" />
+    <HelpKINode Title="MailFolder.GetHeaders Method " Url="html/Overload_MailKit_MailFolder_GetHeaders.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetHeadersAsync method">
+    <HelpKINode Title="IMailFolder.GetHeadersAsync Method " Url="html/Overload_MailKit_IMailFolder_GetHeadersAsync.htm" />
+    <HelpKINode Title="MailFolder.GetHeadersAsync Method " Url="html/Overload_MailKit_MailFolder_GetHeadersAsync.htm" />
   </HelpKINode>
   <HelpKINode Title="GetInsertCommand method">
     <HelpKINode Title="SqlCertificateDatabase.GetInsertCommand Method " Url="html/Overload_MimeKit_Cryptography_SqlCertificateDatabase_GetInsertCommand.htm" />
@@ -3618,6 +3633,8 @@
   <HelpKINode Title="IMailFolder.GetAccessRightsAsync method" Url="html/M_MailKit_IMailFolder_GetAccessRightsAsync.htm" />
   <HelpKINode Title="IMailFolder.GetBodyPart method" Url="html/Overload_MailKit_IMailFolder_GetBodyPart.htm" />
   <HelpKINode Title="IMailFolder.GetBodyPartAsync method" Url="html/Overload_MailKit_IMailFolder_GetBodyPartAsync.htm" />
+  <HelpKINode Title="IMailFolder.GetHeaders method" Url="html/Overload_MailKit_IMailFolder_GetHeaders.htm" />
+  <HelpKINode Title="IMailFolder.GetHeadersAsync method" Url="html/Overload_MailKit_IMailFolder_GetHeadersAsync.htm" />
   <HelpKINode Title="IMailFolder.GetMessage method" Url="html/Overload_MailKit_IMailFolder_GetMessage.htm" />
   <HelpKINode Title="IMailFolder.GetMessageAsync method" Url="html/Overload_MailKit_IMailFolder_GetMessageAsync.htm" />
   <HelpKINode Title="IMailFolder.GetMetadata method" Url="html/Overload_MailKit_IMailFolder_GetMetadata.htm" />
@@ -3878,6 +3895,7 @@
   <HelpKINode Title="ImapFolder.GetAccessRights method" Url="html/M_MailKit_Net_Imap_ImapFolder_GetAccessRights.htm" />
   <HelpKINode Title="ImapFolder.GetBodyPart method" Url="html/Overload_MailKit_Net_Imap_ImapFolder_GetBodyPart.htm" />
   <HelpKINode Title="ImapFolder.GetEnumerator method" Url="html/M_MailKit_Net_Imap_ImapFolder_GetEnumerator.htm" />
+  <HelpKINode Title="ImapFolder.GetHeaders method" Url="html/Overload_MailKit_Net_Imap_ImapFolder_GetHeaders.htm" />
   <HelpKINode Title="ImapFolder.GetMessage method" Url="html/Overload_MailKit_Net_Imap_ImapFolder_GetMessage.htm" />
   <HelpKINode Title="ImapFolder.GetMetadata method" Url="html/Overload_MailKit_Net_Imap_ImapFolder_GetMetadata.htm" />
   <HelpKINode Title="ImapFolder.GetMyAccessRights method" Url="html/M_MailKit_Net_Imap_ImapFolder_GetMyAccessRights.htm" />
@@ -4400,7 +4418,9 @@
   </HelpKINode>
   <HelpKINode Title="Keygen enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
   <HelpKINode Title="KeyId property" Url="html/P_MimeKit_Cryptography_PrivateKeyNotFoundException_KeyId.htm" />
+  <HelpKINode Title="KeyRing property" Url="html/P_MimeKit_Cryptography_OpenPgpDigitalCertificate_KeyRing.htm" />
   <HelpKINode Title="Keys property" Url="html/P_MailKit_UniqueIdMap_Keys.htm" />
+  <HelpKINode Title="KeyServer property" Url="html/P_MimeKit_Cryptography_OpenPgpContext_KeyServer.htm" />
   <HelpKINode Title="KeyUsage property" Url="html/P_MimeKit_Cryptography_X509CertificateRecord_KeyUsage.htm" />
   <HelpKINode Title="Keyword enumeration member">
     <HelpKINode Title="SearchTerm Enumeration" Url="html/T_MailKit_Search_SearchTerm.htm" />
@@ -4580,6 +4600,8 @@
   <HelpKINode Title="MailboxAddress to MailAddress conversion" Url="html/M_MimeKit_MailboxAddress_op_Explicit.htm" />
   <HelpKINode Title="MailboxAddress.Address property" Url="html/P_MimeKit_MailboxAddress_Address.htm" />
   <HelpKINode Title="MailboxAddress.Clone method" Url="html/M_MimeKit_MailboxAddress_Clone.htm" />
+  <HelpKINode Title="MailboxAddress.DecodeAddrspec method" Url="html/M_MimeKit_MailboxAddress_DecodeAddrspec.htm" />
+  <HelpKINode Title="MailboxAddress.EncodeAddrspec method" Url="html/M_MimeKit_MailboxAddress_EncodeAddrspec.htm" />
   <HelpKINode Title="MailboxAddress.Equals method" Url="html/Overload_MimeKit_MailboxAddress_Equals.htm" />
   <HelpKINode Title="MailboxAddress.IsInternational property" Url="html/P_MimeKit_MailboxAddress_IsInternational.htm" />
   <HelpKINode Title="MailboxAddress.MailboxAddress constructor" Url="html/Overload_MimeKit_MailboxAddress__ctor.htm" />
@@ -4642,6 +4664,8 @@
   <HelpKINode Title="MailFolder.GetBodyPart method" Url="html/Overload_MailKit_MailFolder_GetBodyPart.htm" />
   <HelpKINode Title="MailFolder.GetBodyPartAsync method" Url="html/Overload_MailKit_MailFolder_GetBodyPartAsync.htm" />
   <HelpKINode Title="MailFolder.GetEnumerator method" Url="html/M_MailKit_MailFolder_GetEnumerator.htm" />
+  <HelpKINode Title="MailFolder.GetHeaders method" Url="html/Overload_MailKit_MailFolder_GetHeaders.htm" />
+  <HelpKINode Title="MailFolder.GetHeadersAsync method" Url="html/Overload_MailKit_MailFolder_GetHeadersAsync.htm" />
   <HelpKINode Title="MailFolder.GetMessage method" Url="html/Overload_MailKit_MailFolder_GetMessage.htm" />
   <HelpKINode Title="MailFolder.GetMessageAsync method" Url="html/Overload_MailKit_MailFolder_GetMessageAsync.htm" />
   <HelpKINode Title="MailFolder.GetMetadata method" Url="html/Overload_MailKit_MailFolder_GetMetadata.htm" />
@@ -6229,6 +6253,7 @@
     <HelpKINode Title="methods" Url="html/Methods_T_MimeKit_Cryptography_OpenPgpContext.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MimeKit_Cryptography_OpenPgpContext.htm" />
   </HelpKINode>
+  <HelpKINode Title="OpenPgpContext.AutoKeyRetrieve property" Url="html/P_MimeKit_Cryptography_OpenPgpContext_AutoKeyRetrieve.htm" />
   <HelpKINode Title="OpenPgpContext.Decrypt method" Url="html/Overload_MimeKit_Cryptography_OpenPgpContext_Decrypt.htm" />
   <HelpKINode Title="OpenPgpContext.DefaultEncryptionAlgorithm property" Url="html/P_MimeKit_Cryptography_OpenPgpContext_DefaultEncryptionAlgorithm.htm" />
   <HelpKINode Title="OpenPgpContext.Encrypt method" Url="html/Overload_MimeKit_Cryptography_OpenPgpContext_Encrypt.htm" />
@@ -6247,6 +6272,7 @@
   <HelpKINode Title="OpenPgpContext.Import method" Url="html/Overload_MimeKit_Cryptography_OpenPgpContext_Import.htm" />
   <HelpKINode Title="OpenPgpContext.ImportSecretKeys method" Url="html/M_MimeKit_Cryptography_OpenPgpContext_ImportSecretKeys.htm" />
   <HelpKINode Title="OpenPgpContext.KeyExchangeProtocol property" Url="html/P_MimeKit_Cryptography_OpenPgpContext_KeyExchangeProtocol.htm" />
+  <HelpKINode Title="OpenPgpContext.KeyServer property" Url="html/P_MimeKit_Cryptography_OpenPgpContext_KeyServer.htm" />
   <HelpKINode Title="OpenPgpContext.OpenPgpContext constructor" Url="html/Overload_MimeKit_Cryptography_OpenPgpContext__ctor.htm" />
   <HelpKINode Title="OpenPgpContext.PublicKeyRingBundle property" Url="html/P_MimeKit_Cryptography_OpenPgpContext_PublicKeyRingBundle.htm" />
   <HelpKINode Title="OpenPgpContext.PublicKeyRingPath property" Url="html/P_MimeKit_Cryptography_OpenPgpContext_PublicKeyRingPath.htm" />
@@ -6269,6 +6295,7 @@
   <HelpKINode Title="OpenPgpDigitalCertificate.Email property" Url="html/P_MimeKit_Cryptography_OpenPgpDigitalCertificate_Email.htm" />
   <HelpKINode Title="OpenPgpDigitalCertificate.ExpirationDate property" Url="html/P_MimeKit_Cryptography_OpenPgpDigitalCertificate_ExpirationDate.htm" />
   <HelpKINode Title="OpenPgpDigitalCertificate.Fingerprint property" Url="html/P_MimeKit_Cryptography_OpenPgpDigitalCertificate_Fingerprint.htm" />
+  <HelpKINode Title="OpenPgpDigitalCertificate.KeyRing property" Url="html/P_MimeKit_Cryptography_OpenPgpDigitalCertificate_KeyRing.htm" />
   <HelpKINode Title="OpenPgpDigitalCertificate.Name property" Url="html/P_MimeKit_Cryptography_OpenPgpDigitalCertificate_Name.htm" />
   <HelpKINode Title="OpenPgpDigitalCertificate.PublicKey property" Url="html/P_MimeKit_Cryptography_OpenPgpDigitalCertificate_PublicKey.htm" />
   <HelpKINode Title="OpenPgpDigitalCertificate.PublicKeyAlgorithm property" Url="html/P_MimeKit_Cryptography_OpenPgpDigitalCertificate_PublicKeyAlgorithm.htm" />
@@ -7995,6 +8022,7 @@
   <HelpKINode Title="Simple enumeration member" Url="html/T_MimeKit_Cryptography_DkimCanonicalizationAlgorithm.htm" />
   <HelpKINode Title="Size enumeration member">
     <HelpKINode Title="HtmlAttributeId Enumeration" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
+    <HelpKINode Title="MessageSummaryItems Enumeration" Url="html/T_MailKit_MessageSummaryItems.htm" />
     <HelpKINode Title="OrderByType Enumeration" Url="html/T_MailKit_Search_OrderByType.htm" />
     <HelpKINode Title="SmtpCapabilities Enumeration" Url="html/T_MailKit_Net_Smtp_SmtpCapabilities.htm" />
   </HelpKINode>
@@ -8151,12 +8179,12 @@
   <HelpKINode Title="StartDate enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="StartDate field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_StartDate.htm" />
   <HelpKINode Title="StartMailInput enumeration member" Url="html/T_MailKit_Net_Smtp_SmtpStatusCode.htm" />
+  <HelpKINode Title="StartTls enumeration member" Url="html/T_MailKit_Security_SecureSocketOptions.htm" />
   <HelpKINode Title="StartTLS enumeration member">
     <HelpKINode Title="ImapCapabilities Enumeration" Url="html/T_MailKit_Net_Imap_ImapCapabilities.htm" />
     <HelpKINode Title="Pop3Capabilities Enumeration" Url="html/T_MailKit_Net_Pop3_Pop3Capabilities.htm" />
     <HelpKINode Title="SmtpCapabilities Enumeration" Url="html/T_MailKit_Net_Smtp_SmtpCapabilities.htm" />
   </HelpKINode>
-  <HelpKINode Title="StartTls enumeration member" Url="html/T_MailKit_Security_SecureSocketOptions.htm" />
   <HelpKINode Title="StartTlsWhenAvailable enumeration member" Url="html/T_MailKit_Security_SecureSocketOptions.htm" />
   <HelpKINode Title="StateOrProvince enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="StateOrProvinceA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_StateOrProvinceA.htm" />
