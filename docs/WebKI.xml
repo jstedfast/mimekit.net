@@ -238,6 +238,7 @@
     <HelpKINode Title="SearchQuery.All Field" Url="html/F_MailKit_Search_SearchQuery_All.htm" />
     <HelpKINode Title="UniqueIdRange.All Field" Url="html/F_MailKit_UniqueIdRange_All.htm" />
   </HelpKINode>
+  <HelpKINode Title="AllowAddressesWithoutDomain property" Url="html/P_MimeKit_ParserOptions_AllowAddressesWithoutDomain.htm" />
   <HelpKINode Title="AllowMixedHeaderCharsets property" Url="html/P_MimeKit_FormatOptions_AllowMixedHeaderCharsets.htm" />
   <HelpKINode Title="Alt enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
   <HelpKINode Title="AlternateRecipient enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
@@ -1645,7 +1646,10 @@
     <HelpKINode Title="SecureMimeContext.Decrypt Method " Url="html/M_MimeKit_Cryptography_SecureMimeContext_Decrypt.htm" />
     <HelpKINode Title="WindowsSecureMimeContext.Decrypt Method " Url="html/M_MimeKit_Cryptography_WindowsSecureMimeContext_Decrypt.htm" />
   </HelpKINode>
-  <HelpKINode Title="DecryptTo method" Url="html/M_MimeKit_Cryptography_SecureMimeContext_DecryptTo.htm" />
+  <HelpKINode Title="DecryptTo method">
+    <HelpKINode Title="SecureMimeContext.DecryptTo Method " Url="html/M_MimeKit_Cryptography_SecureMimeContext_DecryptTo.htm" />
+    <HelpKINode Title="WindowsSecureMimeContext.DecryptTo Method " Url="html/M_MimeKit_Cryptography_WindowsSecureMimeContext_DecryptTo.htm" />
+  </HelpKINode>
   <HelpKINode Title="Default enumeration member">
     <HelpKINode Title="ContentEncoding Enumeration" Url="html/T_MimeKit_ContentEncoding.htm" />
     <HelpKINode Title="HtmlWriterState Enumeration" Url="html/T_MimeKit_Text_HtmlWriterState.htm" />
@@ -1807,12 +1811,14 @@
   <HelpKINode Title="DigitalSignatureVerifyException class">
     <HelpKINode Title="DigitalSignatureVerifyException Class" Url="html/T_MimeKit_Cryptography_DigitalSignatureVerifyException.htm" />
     <HelpKINode Title="about DigitalSignatureVerifyException class" Url="html/T_MimeKit_Cryptography_DigitalSignatureVerifyException.htm" />
-    <HelpKINode Title="constructor" Url="html/M_MimeKit_Cryptography_DigitalSignatureVerifyException__ctor.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_MimeKit_Cryptography_DigitalSignatureVerifyException__ctor.htm" />
     <HelpKINode Title="events" Url="html/Events_T_MimeKit_Cryptography_DigitalSignatureVerifyException.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MimeKit_Cryptography_DigitalSignatureVerifyException.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MimeKit_Cryptography_DigitalSignatureVerifyException.htm" />
   </HelpKINode>
-  <HelpKINode Title="DigitalSignatureVerifyException.DigitalSignatureVerifyException constructor" Url="html/M_MimeKit_Cryptography_DigitalSignatureVerifyException__ctor.htm" />
+  <HelpKINode Title="DigitalSignatureVerifyException.DigitalSignatureVerifyException constructor" Url="html/Overload_MimeKit_Cryptography_DigitalSignatureVerifyException__ctor.htm" />
+  <HelpKINode Title="DigitalSignatureVerifyException.GetObjectData method" Url="html/M_MimeKit_Cryptography_DigitalSignatureVerifyException_GetObjectData.htm" />
+  <HelpKINode Title="DigitalSignatureVerifyException.KeyId property" Url="html/P_MimeKit_Cryptography_DigitalSignatureVerifyException_KeyId.htm" />
   <HelpKINode Title="Dir enumeration member">
     <HelpKINode Title="HtmlAttributeId Enumeration" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
     <HelpKINode Title="HtmlTagId Enumeration" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
@@ -2097,6 +2103,7 @@
     <HelpKINode Title="MultipartEncrypted.Encrypt Method " Url="html/Overload_MimeKit_Cryptography_MultipartEncrypted_Encrypt.htm" />
     <HelpKINode Title="OpenPgpContext.Encrypt Method " Url="html/Overload_MimeKit_Cryptography_OpenPgpContext_Encrypt.htm" />
     <HelpKINode Title="SecureMimeContext.Encrypt Method " Url="html/Overload_MimeKit_Cryptography_SecureMimeContext_Encrypt.htm" />
+    <HelpKINode Title="WindowsSecureMimeContext.Encrypt Method " Url="html/Overload_MimeKit_Cryptography_WindowsSecureMimeContext_Encrypt.htm" />
   </HelpKINode>
   <HelpKINode Title="Encrypted enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
   <HelpKINode Title="EncryptionAlgorithm enumeration" Url="html/T_MimeKit_Cryptography_EncryptionAlgorithm.htm" />
@@ -2172,6 +2179,7 @@
     <HelpKINode Title="UniqueId.Equals Method " Url="html/Overload_MailKit_UniqueId_Equals.htm" />
   </HelpKINode>
   <HelpKINode Title="Error enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyType.htm" />
+  <HelpKINode Title="Error property" Url="html/P_MimeKit_Tnef_TnefException_Error.htm" />
   <HelpKINode Title="ErrorCode property">
     <HelpKINode Title="SaslException.ErrorCode Property " Url="html/P_MailKit_Security_SaslException_ErrorCode.htm" />
     <HelpKINode Title="SmtpCommandException.ErrorCode Property " Url="html/P_MailKit_Net_Smtp_SmtpCommandException_ErrorCode.htm" />
@@ -2885,6 +2893,7 @@
   </HelpKINode>
   <HelpKINode Title="GetObjectData method">
     <HelpKINode Title="CertificateNotFoundException.GetObjectData Method " Url="html/M_MimeKit_Cryptography_CertificateNotFoundException_GetObjectData.htm" />
+    <HelpKINode Title="DigitalSignatureVerifyException.GetObjectData Method " Url="html/M_MimeKit_Cryptography_DigitalSignatureVerifyException_GetObjectData.htm" />
     <HelpKINode Title="FolderNotFoundException.GetObjectData Method " Url="html/M_MailKit_FolderNotFoundException_GetObjectData.htm" />
     <HelpKINode Title="FolderNotOpenException.GetObjectData Method " Url="html/M_MailKit_FolderNotOpenException_GetObjectData.htm" />
     <HelpKINode Title="ImapCommandException.GetObjectData Method " Url="html/M_MailKit_Net_Imap_ImapCommandException_GetObjectData.htm" />
@@ -2894,9 +2903,13 @@
     <HelpKINode Title="PublicKeyNotFoundException.GetObjectData Method " Url="html/M_MimeKit_Cryptography_PublicKeyNotFoundException_GetObjectData.htm" />
     <HelpKINode Title="SaslException.GetObjectData Method " Url="html/M_MailKit_Security_SaslException_GetObjectData.htm" />
     <HelpKINode Title="SmtpCommandException.GetObjectData Method " Url="html/M_MailKit_Net_Smtp_SmtpCommandException_GetObjectData.htm" />
+    <HelpKINode Title="TnefException.GetObjectData Method " Url="html/M_MimeKit_Tnef_TnefException_GetObjectData.htm" />
   </HelpKINode>
   <HelpKINode Title="GetPasswordForKey method" Url="html/M_MimeKit_Cryptography_OpenPgpContext_GetPasswordForKey.htm" />
-  <HelpKINode Title="GetPreferredEncryptionAlgorithm method" Url="html/M_MimeKit_Cryptography_SecureMimeContext_GetPreferredEncryptionAlgorithm.htm" />
+  <HelpKINode Title="GetPreferredEncryptionAlgorithm method">
+    <HelpKINode Title="SecureMimeContext.GetPreferredEncryptionAlgorithm Method " Url="html/M_MimeKit_Cryptography_SecureMimeContext_GetPreferredEncryptionAlgorithm.htm" />
+    <HelpKINode Title="WindowsSecureMimeContext.GetPreferredEncryptionAlgorithm Method " Url="html/Overload_MimeKit_Cryptography_WindowsSecureMimeContext_GetPreferredEncryptionAlgorithm.htm" />
+  </HelpKINode>
   <HelpKINode Title="GetPrivateKey method">
     <HelpKINode Title="DefaultSecureMimeContext.GetPrivateKey Method " Url="html/M_MimeKit_Cryptography_DefaultSecureMimeContext_GetPrivateKey.htm" />
     <HelpKINode Title="OpenPgpContext.GetPrivateKey Method " Url="html/Overload_MimeKit_Cryptography_OpenPgpContext_GetPrivateKey.htm" />
@@ -4417,7 +4430,10 @@
     <HelpKINode Title="SecureMimeContext.KeyExchangeProtocol Property " Url="html/P_MimeKit_Cryptography_SecureMimeContext_KeyExchangeProtocol.htm" />
   </HelpKINode>
   <HelpKINode Title="Keygen enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
-  <HelpKINode Title="KeyId property" Url="html/P_MimeKit_Cryptography_PrivateKeyNotFoundException_KeyId.htm" />
+  <HelpKINode Title="KeyId property">
+    <HelpKINode Title="DigitalSignatureVerifyException.KeyId Property " Url="html/P_MimeKit_Cryptography_DigitalSignatureVerifyException_KeyId.htm" />
+    <HelpKINode Title="PrivateKeyNotFoundException.KeyId Property " Url="html/P_MimeKit_Cryptography_PrivateKeyNotFoundException_KeyId.htm" />
+  </HelpKINode>
   <HelpKINode Title="KeyRing property" Url="html/P_MimeKit_Cryptography_OpenPgpDigitalCertificate_KeyRing.htm" />
   <HelpKINode Title="Keys property" Url="html/P_MailKit_UniqueIdMap_Keys.htm" />
   <HelpKINode Title="KeyServer property" Url="html/P_MimeKit_Cryptography_OpenPgpContext_KeyServer.htm" />
@@ -6022,6 +6038,7 @@
   <HelpKINode Title="NdrReasonCode field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_NdrReasonCode.htm" />
   <HelpKINode Title="NdrStatusCode enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="NdrStatusCode field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_NdrStatusCode.htm" />
+  <HelpKINode Title="NegotiatedSecurityLayer property" Url="html/P_MailKit_Security_SaslMechanism_NegotiatedSecurityLayer.htm" />
   <HelpKINode Title="NestingTooDeep enumeration member" Url="html/T_MimeKit_Tnef_TnefComplianceStatus.htm" />
   <HelpKINode Title="Never enumeration member" Url="html/T_MailKit_DeliveryStatusNotification.htm" />
   <HelpKINode Title="New enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
@@ -6595,6 +6612,7 @@
     <HelpKINode Title="properties" Url="html/Properties_T_MimeKit_ParserOptions.htm" />
   </HelpKINode>
   <HelpKINode Title="ParserOptions.AddressParserComplianceMode property" Url="html/P_MimeKit_ParserOptions_AddressParserComplianceMode.htm" />
+  <HelpKINode Title="ParserOptions.AllowAddressesWithoutDomain property" Url="html/P_MimeKit_ParserOptions_AllowAddressesWithoutDomain.htm" />
   <HelpKINode Title="ParserOptions.CharsetEncoding property" Url="html/P_MimeKit_ParserOptions_CharsetEncoding.htm" />
   <HelpKINode Title="ParserOptions.Clone method" Url="html/M_MimeKit_ParserOptions_Clone.htm" />
   <HelpKINode Title="ParserOptions.Default field" Url="html/F_MimeKit_ParserOptions_Default.htm" />
@@ -7461,6 +7479,7 @@
   <HelpKINode Title="SaslMechanism.IsAuthenticated property" Url="html/P_MailKit_Security_SaslMechanism_IsAuthenticated.htm" />
   <HelpKINode Title="SaslMechanism.IsSupported method" Url="html/M_MailKit_Security_SaslMechanism_IsSupported.htm" />
   <HelpKINode Title="SaslMechanism.MechanismName property" Url="html/P_MailKit_Security_SaslMechanism_MechanismName.htm" />
+  <HelpKINode Title="SaslMechanism.NegotiatedSecurityLayer property" Url="html/P_MailKit_Security_SaslMechanism_NegotiatedSecurityLayer.htm" />
   <HelpKINode Title="SaslMechanism.Reset method" Url="html/M_MailKit_Security_SaslMechanism_Reset.htm" />
   <HelpKINode Title="SaslMechanism.SaslMechanism constructor" Url="html/M_MailKit_Security_SaslMechanism__ctor.htm" />
   <HelpKINode Title="SaslMechanism.SaslPrep method" Url="html/M_MailKit_Security_SaslMechanism_SaslPrep.htm" />
@@ -8549,6 +8568,8 @@
     <HelpKINode Title="methods" Url="html/Methods_T_MimeKit_Tnef_TnefException.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MimeKit_Tnef_TnefException.htm" />
   </HelpKINode>
+  <HelpKINode Title="TnefException.Error property" Url="html/P_MimeKit_Tnef_TnefException_Error.htm" />
+  <HelpKINode Title="TnefException.GetObjectData method" Url="html/M_MimeKit_Tnef_TnefException_GetObjectData.htm" />
   <HelpKINode Title="TnefException.TnefException constructor" Url="html/Overload_MimeKit_Tnef_TnefException__ctor.htm" />
   <HelpKINode Title="TnefNameId structure">
     <HelpKINode Title="TnefNameId Structure" Url="html/T_MimeKit_Tnef_TnefNameId.htm" />
@@ -9813,12 +9834,15 @@
     <HelpKINode Title="properties" Url="html/Properties_T_MimeKit_Cryptography_WindowsSecureMimeContext.htm" />
   </HelpKINode>
   <HelpKINode Title="WindowsSecureMimeContext.Decrypt method" Url="html/M_MimeKit_Cryptography_WindowsSecureMimeContext_Decrypt.htm" />
+  <HelpKINode Title="WindowsSecureMimeContext.DecryptTo method" Url="html/M_MimeKit_Cryptography_WindowsSecureMimeContext_DecryptTo.htm" />
   <HelpKINode Title="WindowsSecureMimeContext.EncapsulatedSign method" Url="html/Overload_MimeKit_Cryptography_WindowsSecureMimeContext_EncapsulatedSign.htm" />
+  <HelpKINode Title="WindowsSecureMimeContext.Encrypt method" Url="html/Overload_MimeKit_Cryptography_WindowsSecureMimeContext_Encrypt.htm" />
   <HelpKINode Title="WindowsSecureMimeContext.GetCertificate method" Url="html/M_MimeKit_Cryptography_WindowsSecureMimeContext_GetCertificate.htm" />
   <HelpKINode Title="WindowsSecureMimeContext.GetCertificateRevocationLists method" Url="html/M_MimeKit_Cryptography_WindowsSecureMimeContext_GetCertificateRevocationLists.htm" />
   <HelpKINode Title="WindowsSecureMimeContext.GetCmsRecipient method" Url="html/M_MimeKit_Cryptography_WindowsSecureMimeContext_GetCmsRecipient.htm" />
   <HelpKINode Title="WindowsSecureMimeContext.GetCmsSigner method" Url="html/M_MimeKit_Cryptography_WindowsSecureMimeContext_GetCmsSigner.htm" />
   <HelpKINode Title="WindowsSecureMimeContext.GetIntermediateCertificates method" Url="html/M_MimeKit_Cryptography_WindowsSecureMimeContext_GetIntermediateCertificates.htm" />
+  <HelpKINode Title="WindowsSecureMimeContext.GetPreferredEncryptionAlgorithm method" Url="html/Overload_MimeKit_Cryptography_WindowsSecureMimeContext_GetPreferredEncryptionAlgorithm.htm" />
   <HelpKINode Title="WindowsSecureMimeContext.GetPrivateKey method" Url="html/M_MimeKit_Cryptography_WindowsSecureMimeContext_GetPrivateKey.htm" />
   <HelpKINode Title="WindowsSecureMimeContext.GetTrustedAnchors method" Url="html/M_MimeKit_Cryptography_WindowsSecureMimeContext_GetTrustedAnchors.htm" />
   <HelpKINode Title="WindowsSecureMimeContext.Import method" Url="html/Overload_MimeKit_Cryptography_WindowsSecureMimeContext_Import.htm" />
