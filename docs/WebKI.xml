@@ -547,8 +547,8 @@
   <HelpKINode Title="Autocrypt enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
   <HelpKINode Title="AutocryptGossip enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
   <HelpKINode Title="AutocryptSetupMessage enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
-  <HelpKINode Title="Autoforwarded enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
   <HelpKINode Title="AutoForwarded enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
+  <HelpKINode Title="Autoforwarded enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
   <HelpKINode Title="AutoForwarded field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_AutoForwarded.htm" />
   <HelpKINode Title="AutoForwardingComment enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="AutoForwardingCommentA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_AutoForwardingCommentA.htm" />
