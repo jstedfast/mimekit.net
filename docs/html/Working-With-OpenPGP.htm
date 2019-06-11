@@ -30,7 +30,7 @@ CryptographyContext.Register (<span class="highlight-keyword">typeof</span> (MyG
           to encapsulate encrypted data. To encrypt any
           <a href="T_MimeKit_MimeEntity.htm">MimeEntity</a>,
           use the
-          <span class="nolink">MultipartEncrypted.Create</span>
+          <a href="Overload_MimeKit_Cryptography_MultipartEncrypted_Encrypt.htm">MultipartEncrypted.Encrypt</a>
           method:
         </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EABAEAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EABAEAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EABAEAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EABAEAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> <span class="highlight-keyword">void</span> Encrypt (MimeMessage message)
 {
@@ -63,7 +63,7 @@ CryptographyContext.Register (<span class="highlight-keyword">typeof</span> (MyG
         </p><p>
           The first thing you must do is find the
           <a href="T_MimeKit_Cryptography_MultipartEncrypted.htm">MultipartEncrypted</a>
-          part (see the section on <span class="nolink">[workingwithmessages]</span>).
+          part (see the section on <a href="Working-With-Messages.htm#TraversingMessages">Working with messages</a>).
         </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EAAADAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAAADAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAAADAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAAADAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> MimeEntity Decrypt (MimeMessage message)
 {
     <span class="highlight-keyword">if</span> (message.Body <span class="highlight-keyword">is</span> MultipartEncrypted) {
@@ -142,7 +142,7 @@ CryptographyContext.Register (<span class="highlight-keyword">typeof</span> (MyG
             }
         }
     }
-}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAAABAAA");</script></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID6RB')" onkeypress="SectionExpandCollapse_CheckKey('ID6RB', event)" tabindex="0"><img id="ID6RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID6RBSection" class="collapsibleSection"><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="Working-With-Messages.htm">Working with messages</a></div><div class="seeAlsoStyle"><a href="Working-With-SMime.htm">Working with S/MIME</a></div></div></div></div><div id="pageFooter" class="pageFooter"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-63841238-1', 'auto'); ga('send', 'pageview');</script><p><a href="https://github.com/jstedfast" target="_blank">Copyright © 2013-2018 Jeffrey Stedfast</a></p><div class="feedbackLink">Send comments on this topic to
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAAABAAA");</script></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID6RB')" onkeypress="SectionExpandCollapse_CheckKey('ID6RB', event)" tabindex="0"><img id="ID6RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID6RBSection" class="collapsibleSection"><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="Working-With-Messages.htm">Working with messages</a></div><div class="seeAlsoStyle"><a href="Working-With-SMime.htm">Working with S/MIME</a></div></div></div></div><div id="pageFooter" class="pageFooter"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-63841238-1', 'auto'); ga('send', 'pageview');</script><p><a href="https://github.com/jstedfast" target="_blank">Copyright © 2013-2019 Jeffrey Stedfast</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:jestedfa%40microsoft.com?Subject=MailKit Documentation">Jeffrey Stedfast</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");

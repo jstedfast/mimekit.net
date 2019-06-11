@@ -164,7 +164,7 @@ Will you be my +1?
 
             <span class="highlight-comment">// Now we just need to set the message body and we're done</span>
             message.Body = builder.ToMessageBody ();</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EABANAAA");</script><p>
-          For more information, see <span class="nolink">Creating Messages</span>.
+          For more information, see <a href="Creating-Messages.htm">Creating Messages</a>.
         </p></div><div class="collapsibleAreaRegion" id="MessageBody"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID7RB')" onkeypress="SectionExpandCollapse_CheckKey('ID7RB', event)" tabindex="0"><img id="ID7RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />How do I get the main body of a message?</span></div><div id="ID7RBSection" class="collapsibleSection"><p>
           (Note: for the TL;DR version, skip to the end)
         </p><p>
@@ -196,8 +196,8 @@ multipart/mixed
   application/octet-stream
   application/zip</pre></p></li><li id="MessageBodyExample5"><p>
               The same as above, but with the first part replaced with either
-              <span class="nolink">#2</span> or
-              <span class="nolink">#3</span>
+              <a href="Frequently-Asked-Questions.htm#MessageBodyExample2">#2</a> or
+              <a href="Frequently-Asked-Questions.htm#MessageBodyExample3">#3</a>
               To illustrate:<pre>
 multipart/mixed
   multipart/alternative
@@ -220,7 +220,7 @@ multipart/mixed
           <a href="P_MimeKit_MimeMessage_TextBody.htm">TextBody</a> and
           <a href="P_MimeKit_MimeMessage_HtmlBody.htm">HtmlBody</a>.
         </p><p>
-          For more information, see <span class="nolink">[workingwithmessages]</span>.
+          For more information, see <a href="Working-With-Messages.htm">Working with messages</a>.
         </p></div><div class="collapsibleAreaRegion" id="HasAttachments"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID8RB')" onkeypress="SectionExpandCollapse_CheckKey('ID8RB', event)" tabindex="0"><img id="ID8RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />How do I tell if a message has attachments?</span></div><div id="ID8RBSection" class="collapsibleSection"><p>
           In most cases, a message with a body that has a MIME-type of <span class="literal">multipart/mixed</span>
           containing more than a single part probably has attachments. As illustrated above, the first part
@@ -491,11 +491,14 @@ message.WriteTo (format, <span class="highlight-literal">"message.eml"</span>);<
           If you are iterating over all of the attachments in a message, you might do something like this:
         </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAAIAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAAIAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID1EAAAIAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAAIAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">foreach</span> (<span class="highlight-keyword">var</span> attachment <span class="highlight-keyword">in</span> message.Attachments) {
     <span class="highlight-keyword">if</span> (attachment <span class="highlight-keyword">is</span> MessagePart) {
-        <span class="highlight-keyword">var</span> fileName = attachment.ContentDisposition?.FileName :
-            (attachment.ContentType.Name ?? <span class="highlight-literal">"attached.eml"</span>);
+        <span class="highlight-keyword">var</span> fileName = attachment.ContentDisposition?.FileName;
         <span class="highlight-keyword">var</span> rfc822 = (MessagePart) attachment;
 
-        rfc822.Message.WriteTo (stream);
+        <span class="highlight-keyword">if</span> (<span class="highlight-keyword">string</span>.IsNullOrEmoty (fileName))
+            fileName = <span class="highlight-literal">"attached-message.eml"</span>;
+
+        <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> stream = File.Create (fileName))
+            rfc822.Message.WriteTo (stream);
     } <span class="highlight-keyword">else</span> {
         <span class="highlight-keyword">var</span> part = (MimePart) attachment;
         <span class="highlight-keyword">var</span> fileName = part.FileName;
@@ -638,7 +641,7 @@ Y3J5cHRlZApibHVyYi4gTW1ta2F5PyBUaGFua3MuCg==
           To deal with these kinds of messages, MimeKit's
           <a href="T_MimeKit_Cryptography_OpenPgpContext.htm">OpenPgpContext</a>
           includes a
-          <span class="nolink">GetDecryptedStream</span>
+          <a href="M_MimeKit_Cryptography_OpenPgpContext_DecryptTo.htm">DecryptTo(Stream, Stream, CancellationToken)</a>
           method which can be used to get the raw decrypted stream.
         </p><p>
           The method variant that has a
@@ -652,9 +655,14 @@ Y3J5cHRlZApibHVyYi4gTW1ta2F5PyBUaGFua3MuCg==
 {
     <span class="highlight-keyword">var</span> text = message.TextBody;
 
-    <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> memory = <span class="highlight-keyword">new</span> MemoryStream (Encoding.ASCII.GetBytes (text), <span class="highlight-keyword">false</span>)) {
+    <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> encrypted = <span class="highlight-keyword">new</span> MemoryStream (Encoding.ASCII.GetBytes (text), <span class="highlight-keyword">false</span>)) {
         <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> ctx = <span class="highlight-keyword">new</span> MyGnuPGContext ()) {
-            <span class="highlight-keyword">return</span> ctx.GetDecryptedStream (memory);
+            <span class="highlight-keyword">var</span> decrypted = <span class="highlight-keyword">new</span> MemoryStream ();
+
+            ctx.DecryptTo (encrypted, decrypted);
+            decrypted.Position = <span class="highlight-number">0</span>;
+
+            <span class="highlight-keyword">return</span> decrypted;
         }
     }
 }</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAAFAAA");</script></div><div class="collapsibleAreaRegion" id="Reply"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID15RB')" onkeypress="SectionExpandCollapse_CheckKey('ID15RB', event)" tabindex="0"><img id="ID15RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />How do I reply to a message using MimeKit?</span></div><div id="ID15RBSection" class="collapsibleSection"><p>
@@ -1072,7 +1080,7 @@ Y3J5cHRlZApibHVyYi4gTW1ta2F5PyBUaGFua3MuCg==
         <span class="highlight-comment">// parse the MIME entity with persistent = true, telling the parser not to load the content into memory</span>
         <span class="highlight-keyword">return</span> MimeEntity.Load (stream, persistent: <span class="highlight-keyword">true</span>);
     }
-}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAABAAA");</script></div></div></div><div id="pageFooter" class="pageFooter"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-63841238-1', 'auto'); ga('send', 'pageview');</script><p><a href="https://github.com/jstedfast" target="_blank">Copyright © 2013-2018 Jeffrey Stedfast</a></p><div class="feedbackLink">Send comments on this topic to
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAABAAA");</script></div></div></div><div id="pageFooter" class="pageFooter"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-63841238-1', 'auto'); ga('send', 'pageview');</script><p><a href="https://github.com/jstedfast" target="_blank">Copyright © 2013-2019 Jeffrey Stedfast</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:jestedfa%40microsoft.com?Subject=MailKit Documentation">Jeffrey Stedfast</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
