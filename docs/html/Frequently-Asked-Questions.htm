@@ -494,7 +494,7 @@ message.WriteTo (format, <span class="highlight-literal">"message.eml"</span>);<
         <span class="highlight-keyword">var</span> fileName = attachment.ContentDisposition?.FileName;
         <span class="highlight-keyword">var</span> rfc822 = (MessagePart) attachment;
 
-        <span class="highlight-keyword">if</span> (<span class="highlight-keyword">string</span>.IsNullOrEmoty (fileName))
+        <span class="highlight-keyword">if</span> (<span class="highlight-keyword">string</span>.IsNullOrEmpty (fileName))
             fileName = <span class="highlight-literal">"attached-message.eml"</span>;
 
         <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> stream = File.Create (fileName))

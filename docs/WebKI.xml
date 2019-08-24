@@ -125,6 +125,7 @@
   <HelpKINode Title="Acl enumeration member" Url="html/T_MailKit_Net_Imap_ImapCapabilities.htm" />
   <HelpKINode Title="Acronym enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
   <HelpKINode Title="Action enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
+  <HelpKINode Title="Action property" Url="html/P_MimeKit_Cryptography_AuthenticationMethodResult_Action.htm" />
   <HelpKINode Title="Add method">
     <HelpKINode Title="AccessRights.Add Method " Url="html/Overload_MailKit_AccessRights_Add.htm" />
     <HelpKINode Title="AttachmentCollection.Add Method " Url="html/Overload_MimeKit_AttachmentCollection_Add.htm" />
@@ -249,10 +250,115 @@
   <HelpKINode Title="AlternateRecipient field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_AlternateRecipient.htm" />
   <HelpKINode Title="AlternateRecipientAllowed enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="AlternateRecipientAllowed field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_AlternateRecipientAllowed.htm" />
+  <HelpKINode Title="AltSubject field" Url="html/F_MailKit_AnnotationEntry_AltSubject.htm" />
   <HelpKINode Title="And enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="And method" Url="html/Overload_MailKit_Search_SearchQuery_And.htm" />
   <HelpKINode Title="Annotate enumeration member" Url="html/T_MailKit_Net_Imap_ImapCapabilities.htm" />
+  <HelpKINode Title="Annotation class">
+    <HelpKINode Title="Annotation Class" Url="html/T_MailKit_Annotation.htm" />
+    <HelpKINode Title="constructor" Url="html/M_MailKit_Annotation__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_MailKit_Annotation.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_MailKit_Annotation.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Annotation enumeration member">
+    <HelpKINode Title="OrderByType Enumeration" Url="html/T_MailKit_Search_OrderByType.htm" />
+    <HelpKINode Title="SearchTerm Enumeration" Url="html/T_MailKit_Search_SearchTerm.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Annotation.Annotation constructor" Url="html/M_MailKit_Annotation__ctor.htm" />
+  <HelpKINode Title="Annotation.Entry property" Url="html/P_MailKit_Annotation_Entry.htm" />
+  <HelpKINode Title="Annotation.Properties property" Url="html/P_MailKit_Annotation_Properties.htm" />
+  <HelpKINode Title="AnnotationAccess enumeration" Url="html/T_MailKit_AnnotationAccess.htm" />
+  <HelpKINode Title="AnnotationAccess property">
+    <HelpKINode Title="IMailFolder.AnnotationAccess Property " Url="html/P_MailKit_IMailFolder_AnnotationAccess.htm" />
+    <HelpKINode Title="MailFolder.AnnotationAccess Property " Url="html/P_MailKit_MailFolder_AnnotationAccess.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AnnotationAttribute class">
+    <HelpKINode Title="AnnotationAttribute Class" Url="html/T_MailKit_AnnotationAttribute.htm" />
+    <HelpKINode Title="constructor" Url="html/M_MailKit_AnnotationAttribute__ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_MailKit_AnnotationAttribute.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_MailKit_AnnotationAttribute.htm" />
+    <HelpKINode Title="operators" Url="html/Operators_T_MailKit_AnnotationAttribute.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_MailKit_AnnotationAttribute.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AnnotationAttribute.AnnotationAttribute constructor" Url="html/M_MailKit_AnnotationAttribute__ctor.htm" />
+  <HelpKINode Title="AnnotationAttribute.Equality operator" Url="html/M_MailKit_AnnotationAttribute_op_Equality.htm" />
+  <HelpKINode Title="AnnotationAttribute.Equals method" Url="html/Overload_MailKit_AnnotationAttribute_Equals.htm" />
+  <HelpKINode Title="AnnotationAttribute.GetHashCode method" Url="html/M_MailKit_AnnotationAttribute_GetHashCode.htm" />
+  <HelpKINode Title="AnnotationAttribute.Inequality operator" Url="html/M_MailKit_AnnotationAttribute_op_Inequality.htm" />
+  <HelpKINode Title="AnnotationAttribute.Name property" Url="html/P_MailKit_AnnotationAttribute_Name.htm" />
+  <HelpKINode Title="AnnotationAttribute.PrivateSize field" Url="html/F_MailKit_AnnotationAttribute_PrivateSize.htm" />
+  <HelpKINode Title="AnnotationAttribute.PrivateValue field" Url="html/F_MailKit_AnnotationAttribute_PrivateValue.htm" />
+  <HelpKINode Title="AnnotationAttribute.Scope property" Url="html/P_MailKit_AnnotationAttribute_Scope.htm" />
+  <HelpKINode Title="AnnotationAttribute.SharedSize field" Url="html/F_MailKit_AnnotationAttribute_SharedSize.htm" />
+  <HelpKINode Title="AnnotationAttribute.SharedValue field" Url="html/F_MailKit_AnnotationAttribute_SharedValue.htm" />
+  <HelpKINode Title="AnnotationAttribute.Size field" Url="html/F_MailKit_AnnotationAttribute_Size.htm" />
+  <HelpKINode Title="AnnotationAttribute.Specifier property" Url="html/P_MailKit_AnnotationAttribute_Specifier.htm" />
+  <HelpKINode Title="AnnotationAttribute.ToString method" Url="html/M_MailKit_AnnotationAttribute_ToString.htm" />
+  <HelpKINode Title="AnnotationAttribute.Value field" Url="html/F_MailKit_AnnotationAttribute_Value.htm" />
   <HelpKINode Title="AnnotationChange field" Url="html/F_MailKit_Net_Imap_ImapEvent_AnnotationChange.htm" />
+  <HelpKINode Title="AnnotationEntry class">
+    <HelpKINode Title="AnnotationEntry Class" Url="html/T_MailKit_AnnotationEntry.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_MailKit_AnnotationEntry__ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_MailKit_AnnotationEntry.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_MailKit_AnnotationEntry.htm" />
+    <HelpKINode Title="operators" Url="html/Operators_T_MailKit_AnnotationEntry.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_MailKit_AnnotationEntry.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AnnotationEntry.AltSubject field" Url="html/F_MailKit_AnnotationEntry_AltSubject.htm" />
+  <HelpKINode Title="AnnotationEntry.AnnotationEntry constructor" Url="html/Overload_MailKit_AnnotationEntry__ctor.htm" />
+  <HelpKINode Title="AnnotationEntry.Comment field" Url="html/F_MailKit_AnnotationEntry_Comment.htm" />
+  <HelpKINode Title="AnnotationEntry.Entry property" Url="html/P_MailKit_AnnotationEntry_Entry.htm" />
+  <HelpKINode Title="AnnotationEntry.Equality operator" Url="html/M_MailKit_AnnotationEntry_op_Equality.htm" />
+  <HelpKINode Title="AnnotationEntry.Equals method" Url="html/Overload_MailKit_AnnotationEntry_Equals.htm" />
+  <HelpKINode Title="AnnotationEntry.Flags field" Url="html/F_MailKit_AnnotationEntry_Flags.htm" />
+  <HelpKINode Title="AnnotationEntry.GetHashCode method" Url="html/M_MailKit_AnnotationEntry_GetHashCode.htm" />
+  <HelpKINode Title="AnnotationEntry.Inequality operator" Url="html/M_MailKit_AnnotationEntry_op_Inequality.htm" />
+  <HelpKINode Title="AnnotationEntry.Parse method" Url="html/M_MailKit_AnnotationEntry_Parse.htm" />
+  <HelpKINode Title="AnnotationEntry.PartSpecifier property" Url="html/P_MailKit_AnnotationEntry_PartSpecifier.htm" />
+  <HelpKINode Title="AnnotationEntry.Path property" Url="html/P_MailKit_AnnotationEntry_Path.htm" />
+  <HelpKINode Title="AnnotationEntry.PrivateAltSubject field" Url="html/F_MailKit_AnnotationEntry_PrivateAltSubject.htm" />
+  <HelpKINode Title="AnnotationEntry.PrivateComment field" Url="html/F_MailKit_AnnotationEntry_PrivateComment.htm" />
+  <HelpKINode Title="AnnotationEntry.PrivateFlags field" Url="html/F_MailKit_AnnotationEntry_PrivateFlags.htm" />
+  <HelpKINode Title="AnnotationEntry.Scope property" Url="html/P_MailKit_AnnotationEntry_Scope.htm" />
+  <HelpKINode Title="AnnotationEntry.SharedAltSubject field" Url="html/F_MailKit_AnnotationEntry_SharedAltSubject.htm" />
+  <HelpKINode Title="AnnotationEntry.SharedComment field" Url="html/F_MailKit_AnnotationEntry_SharedComment.htm" />
+  <HelpKINode Title="AnnotationEntry.SharedFlags field" Url="html/F_MailKit_AnnotationEntry_SharedFlags.htm" />
+  <HelpKINode Title="AnnotationEntry.ToString method" Url="html/M_MailKit_AnnotationEntry_ToString.htm" />
+  <HelpKINode Title="Annotations enumeration member" Url="html/T_MailKit_MessageSummaryItems.htm" />
+  <HelpKINode Title="Annotations property">
+    <HelpKINode Title="AnnotationsChangedEventArgs.Annotations Property " Url="html/P_MailKit_AnnotationsChangedEventArgs_Annotations.htm" />
+    <HelpKINode Title="IMessageSummary.Annotations Property " Url="html/P_MailKit_IMessageSummary_Annotations.htm" />
+    <HelpKINode Title="MessageSummary.Annotations Property " Url="html/P_MailKit_MessageSummary_Annotations.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AnnotationsChanged event">
+    <HelpKINode Title="IMailFolder.AnnotationsChanged Event" Url="html/E_MailKit_IMailFolder_AnnotationsChanged.htm" />
+    <HelpKINode Title="MailFolder.AnnotationsChanged Event" Url="html/E_MailKit_MailFolder_AnnotationsChanged.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AnnotationsChangedEventArgs class">
+    <HelpKINode Title="AnnotationsChangedEventArgs Class" Url="html/T_MailKit_AnnotationsChangedEventArgs.htm" />
+    <HelpKINode Title="constructor" Url="html/M_MailKit_AnnotationsChangedEventArgs__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_MailKit_AnnotationsChangedEventArgs.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_MailKit_AnnotationsChangedEventArgs.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AnnotationsChangedEventArgs.Annotations property" Url="html/P_MailKit_AnnotationsChangedEventArgs_Annotations.htm" />
+  <HelpKINode Title="AnnotationsChangedEventArgs.AnnotationsChangedEventArgs constructor" Url="html/M_MailKit_AnnotationsChangedEventArgs__ctor.htm" />
+  <HelpKINode Title="AnnotationsChangedEventArgs.ModSeq property" Url="html/P_MailKit_AnnotationsChangedEventArgs_ModSeq.htm" />
+  <HelpKINode Title="AnnotationsContain method" Url="html/M_MailKit_Search_SearchQuery_AnnotationsContain.htm" />
+  <HelpKINode Title="AnnotationScope enumeration" Url="html/T_MailKit_AnnotationScope.htm" />
+  <HelpKINode Title="AnnotationScopes property">
+    <HelpKINode Title="IMailFolder.AnnotationScopes Property " Url="html/P_MailKit_IMailFolder_AnnotationScopes.htm" />
+    <HelpKINode Title="MailFolder.AnnotationScopes Property " Url="html/P_MailKit_MailFolder_AnnotationScopes.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AnnotationSearchQuery class">
+    <HelpKINode Title="AnnotationSearchQuery Class" Url="html/T_MailKit_Search_AnnotationSearchQuery.htm" />
+    <HelpKINode Title="constructor" Url="html/M_MailKit_Search_AnnotationSearchQuery__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_MailKit_Search_AnnotationSearchQuery.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_MailKit_Search_AnnotationSearchQuery.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AnnotationSearchQuery.AnnotationSearchQuery constructor" Url="html/M_MailKit_Search_AnnotationSearchQuery__ctor.htm" />
+  <HelpKINode Title="AnnotationSearchQuery.Attribute property" Url="html/P_MailKit_Search_AnnotationSearchQuery_Attribute.htm" />
+  <HelpKINode Title="AnnotationSearchQuery.Entry property" Url="html/P_MailKit_Search_AnnotationSearchQuery_Entry.htm" />
+  <HelpKINode Title="AnnotationSearchQuery.Value property" Url="html/P_MailKit_Search_AnnotationSearchQuery_Value.htm" />
   <HelpKINode Title="Anr enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="AnrA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_AnrA.htm" />
   <HelpKINode Title="AnrW field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_AnrW.htm" />
@@ -516,6 +622,10 @@
   <HelpKINode Title="AttachTransportNameA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_AttachTransportNameA.htm" />
   <HelpKINode Title="AttachTransportNameW field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_AttachTransportNameW.htm" />
   <HelpKINode Title="Attribute enumeration member" Url="html/T_MimeKit_Text_HtmlWriterState.htm" />
+  <HelpKINode Title="Attribute property">
+    <HelpKINode Title="AnnotationSearchQuery.Attribute Property " Url="html/P_MailKit_Search_AnnotationSearchQuery_Attribute.htm" />
+    <HelpKINode Title="OrderByAnnotation.Attribute Property " Url="html/P_MailKit_Search_OrderByAnnotation_Attribute.htm" />
+  </HelpKINode>
   <HelpKINode Title="AttributeLevel property" Url="html/P_MimeKit_Tnef_TnefReader_AttributeLevel.htm" />
   <HelpKINode Title="AttributeName enumeration member" Url="html/T_MimeKit_Text_HtmlTokenizerState.htm" />
   <HelpKINode Title="AttributeOverflow enumeration member" Url="html/T_MimeKit_Tnef_TnefComplianceStatus.htm" />
@@ -594,6 +704,7 @@
     <HelpKINode Title="methods" Url="html/Methods_T_MimeKit_Cryptography_AuthenticationMethodResult.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MimeKit_Cryptography_AuthenticationMethodResult.htm" />
   </HelpKINode>
+  <HelpKINode Title="AuthenticationMethodResult.Action property" Url="html/P_MimeKit_Cryptography_AuthenticationMethodResult_Action.htm" />
   <HelpKINode Title="AuthenticationMethodResult.AuthenticationMethodResult constructor" Url="html/M_MimeKit_Cryptography_AuthenticationMethodResult__ctor.htm" />
   <HelpKINode Title="AuthenticationMethodResult.Method property" Url="html/P_MimeKit_Cryptography_AuthenticationMethodResult_Method.htm" />
   <HelpKINode Title="AuthenticationMethodResult.Properties property" Url="html/P_MimeKit_Cryptography_AuthenticationMethodResult_Properties.htm" />
@@ -631,8 +742,8 @@
   <HelpKINode Title="Autocrypt enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
   <HelpKINode Title="AutocryptGossip enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
   <HelpKINode Title="AutocryptSetupMessage enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
-  <HelpKINode Title="Autoforwarded enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
   <HelpKINode Title="AutoForwarded enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
+  <HelpKINode Title="Autoforwarded enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
   <HelpKINode Title="AutoForwarded field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_AutoForwarded.htm" />
   <HelpKINode Title="AutoForwardingComment enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="AutoForwardingCommentA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_AutoForwardingCommentA.htm" />
@@ -640,8 +751,8 @@
   <HelpKINode Title="AutoKeyRetrieve property" Url="html/P_MimeKit_Cryptography_OpenPgpContext_AutoKeyRetrieve.htm" />
   <HelpKINode Title="AutoResponseSuppress enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="AutoResponseSuppress field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_AutoResponseSuppress.htm" />
-  <HelpKINode Title="AutoSubmitted enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
   <HelpKINode Title="Autosubmitted enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
+  <HelpKINode Title="AutoSubmitted enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
   <HelpKINode Title="Axis enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
   <HelpKINode Title="B enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
   <HelpKINode Title="Background enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
@@ -885,6 +996,7 @@
   <HelpKINode Title="BogusDocType enumeration member" Url="html/T_MimeKit_Text_HtmlTokenizerState.htm" />
   <HelpKINode Title="Boolean enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyType.htm" />
   <HelpKINode Title="Border enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
+  <HelpKINode Title="Both enumeration member" Url="html/T_MailKit_AnnotationScope.htm" />
   <HelpKINode Title="BouncyCastleCertificateExtensions class">
     <HelpKINode Title="BouncyCastleCertificateExtensions Class" Url="html/T_MimeKit_Cryptography_BouncyCastleCertificateExtensions.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MimeKit_Cryptography_BouncyCastleCertificateExtensions.htm" />
@@ -906,6 +1018,7 @@
     <HelpKINode Title="properties" Url="html/Properties_T_MimeKit_Cryptography_BouncyCastleSecureMimeContext.htm" />
   </HelpKINode>
   <HelpKINode Title="BouncyCastleSecureMimeContext.BouncyCastleSecureMimeContext constructor" Url="html/M_MimeKit_Cryptography_BouncyCastleSecureMimeContext__ctor.htm" />
+  <HelpKINode Title="BouncyCastleSecureMimeContext.BuildCertificateChain method" Url="html/M_MimeKit_Cryptography_BouncyCastleSecureMimeContext_BuildCertificateChain.htm" />
   <HelpKINode Title="BouncyCastleSecureMimeContext.CheckCertificateRevocation property" Url="html/P_MimeKit_Cryptography_BouncyCastleSecureMimeContext_CheckCertificateRevocation.htm" />
   <HelpKINode Title="BouncyCastleSecureMimeContext.Decrypt method" Url="html/M_MimeKit_Cryptography_BouncyCastleSecureMimeContext_Decrypt.htm" />
   <HelpKINode Title="BouncyCastleSecureMimeContext.DecryptTo method" Url="html/M_MimeKit_Cryptography_BouncyCastleSecureMimeContext_DecryptTo.htm" />
@@ -961,6 +1074,7 @@
   <HelpKINode Title="BoundStream.WriteAsync method" Url="html/Overload_MimeKit_IO_BoundStream_WriteAsync.htm" />
   <HelpKINode Title="BoundStream.WriteTimeout property" Url="html/P_MimeKit_IO_BoundStream_WriteTimeout.htm" />
   <HelpKINode Title="Br enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
+  <HelpKINode Title="BuildCertificateChain method" Url="html/M_MimeKit_Cryptography_BouncyCastleSecureMimeContext_BuildCertificateChain.htm" />
   <HelpKINode Title="Business2TelephoneNumber enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="Business2TelephoneNumberA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_Business2TelephoneNumberA.htm" />
   <HelpKINode Title="Business2TelephoneNumberAMv field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_Business2TelephoneNumberAMv.htm" />
@@ -1316,6 +1430,7 @@
     <HelpKINode Title="HtmlTokenKind Enumeration" Url="html/T_MimeKit_Text_HtmlTokenKind.htm" />
     <HelpKINode Title="TnefPropertyId Enumeration" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   </HelpKINode>
+  <HelpKINode Title="Comment field" Url="html/F_MailKit_AnnotationEntry_Comment.htm" />
   <HelpKINode Title="Comment property" Url="html/P_MimeKit_Text_HtmlCommentToken_Comment.htm" />
   <HelpKINode Title="CommentA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_CommentA.htm" />
   <HelpKINode Title="CommentEnd enumeration member" Url="html/T_MimeKit_Text_HtmlTokenizerState.htm" />
@@ -2425,6 +2540,12 @@
   <HelpKINode Title="EnsureNewLine property" Url="html/P_MimeKit_FormatOptions_EnsureNewLine.htm" />
   <HelpKINode Title="EnsureOutputSize method" Url="html/M_MimeKit_IO_Filters_MimeFilterBase_EnsureOutputSize.htm" />
   <HelpKINode Title="Entity enumeration member" Url="html/T_MimeKit_MimeFormat.htm" />
+  <HelpKINode Title="Entry property">
+    <HelpKINode Title="Annotation.Entry Property " Url="html/P_MailKit_Annotation_Entry.htm" />
+    <HelpKINode Title="AnnotationEntry.Entry Property " Url="html/P_MailKit_AnnotationEntry_Entry.htm" />
+    <HelpKINode Title="AnnotationSearchQuery.Entry Property " Url="html/P_MailKit_Search_AnnotationSearchQuery_Entry.htm" />
+    <HelpKINode Title="OrderByAnnotation.Entry Property " Url="html/P_MailKit_Search_OrderByAnnotation_Entry.htm" />
+  </HelpKINode>
   <HelpKINode Title="EntryId enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="EntryId field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_EntryId.htm" />
   <HelpKINode Title="EnumeratePublicKeyRings method" Url="html/Overload_MimeKit_Cryptography_OpenPgpContext_EnumeratePublicKeyRings.htm" />
@@ -2462,10 +2583,14 @@
   <HelpKINode Title="Epilogue property" Url="html/P_MimeKit_Multipart_Epilogue.htm" />
   <HelpKINode Title="Equality operator">
     <HelpKINode Title="AccessRight.Equality Operator " Url="html/M_MailKit_AccessRight_op_Equality.htm" />
+    <HelpKINode Title="AnnotationAttribute.Equality Operator " Url="html/M_MailKit_AnnotationAttribute_op_Equality.htm" />
+    <HelpKINode Title="AnnotationEntry.Equality Operator " Url="html/M_MailKit_AnnotationEntry_op_Equality.htm" />
     <HelpKINode Title="UniqueId.Equality Operator " Url="html/M_MailKit_UniqueId_op_Equality.htm" />
   </HelpKINode>
   <HelpKINode Title="Equals method">
     <HelpKINode Title="AccessRight.Equals Method " Url="html/Overload_MailKit_AccessRight_Equals.htm" />
+    <HelpKINode Title="AnnotationAttribute.Equals Method " Url="html/Overload_MailKit_AnnotationAttribute_Equals.htm" />
+    <HelpKINode Title="AnnotationEntry.Equals Method " Url="html/Overload_MailKit_AnnotationEntry_Equals.htm" />
     <HelpKINode Title="GroupAddress.Equals Method " Url="html/Overload_MimeKit_GroupAddress_Equals.htm" />
     <HelpKINode Title="InternetAddress.Equals Method " Url="html/Overload_MimeKit_InternetAddress_Equals.htm" />
     <HelpKINode Title="InternetAddressList.Equals Method " Url="html/Overload_MimeKit_InternetAddressList_Equals.htm" />
@@ -2684,6 +2809,7 @@
   </HelpKINode>
   <HelpKINode Title="Flagged field" Url="html/F_MailKit_Search_SearchQuery_Flagged.htm" />
   <HelpKINode Title="Flags enumeration member" Url="html/T_MailKit_MessageSummaryItems.htm" />
+  <HelpKINode Title="Flags field" Url="html/F_MailKit_AnnotationEntry_Flags.htm" />
   <HelpKINode Title="Flags property">
     <HelpKINode Title="IMessageSummary.Flags Property " Url="html/P_MailKit_IMessageSummary_Flags.htm" />
     <HelpKINode Title="MessageFlagsChangedEventArgs.Flags Property " Url="html/P_MailKit_MessageFlagsChangedEventArgs_Flags.htm" />
@@ -3090,6 +3216,8 @@
   <HelpKINode Title="GetHashAlgorithm method" Url="html/M_MimeKit_Cryptography_OpenPgpContext_GetHashAlgorithm.htm" />
   <HelpKINode Title="GetHashCode method">
     <HelpKINode Title="AccessRight.GetHashCode Method " Url="html/M_MailKit_AccessRight_GetHashCode.htm" />
+    <HelpKINode Title="AnnotationAttribute.GetHashCode Method " Url="html/M_MailKit_AnnotationAttribute_GetHashCode.htm" />
+    <HelpKINode Title="AnnotationEntry.GetHashCode Method " Url="html/M_MailKit_AnnotationEntry_GetHashCode.htm" />
     <HelpKINode Title="InternetAddress.GetHashCode Method " Url="html/M_MimeKit_InternetAddress_GetHashCode.htm" />
     <HelpKINode Title="InternetAddressList.GetHashCode Method " Url="html/M_MimeKit_InternetAddressList_GetHashCode.htm" />
     <HelpKINode Title="MetadataTag.GetHashCode Method " Url="html/M_MailKit_MetadataTag_GetHashCode.htm" />
@@ -3293,6 +3421,8 @@
   </HelpKINode>
   <HelpKINode Title="GetSignerCertificate method" Url="html/M_MimeKit_Cryptography_WindowsSecureMimeContext_GetSignerCertificate.htm" />
   <HelpKINode Title="GetSigningKey method" Url="html/M_MimeKit_Cryptography_OpenPgpContext_GetSigningKey.htm" />
+  <HelpKINode Title="GetSize method" Url="html/M_MailKit_Net_Smtp_SmtpClient_GetSize.htm" />
+  <HelpKINode Title="GetSizeAsync method" Url="html/M_MailKit_Net_Smtp_SmtpClient_GetSizeAsync.htm" />
   <HelpKINode Title="GetStream method">
     <HelpKINode Title="IMailFolder.GetStream Method " Url="html/Overload_MailKit_IMailFolder_GetStream.htm" />
     <HelpKINode Title="IMailSpool.GetStream Method " Url="html/M_MailKit_IMailSpool_GetStream.htm" />
@@ -3967,6 +4097,9 @@
   <HelpKINode Title="IMailFolder.AddFlagsAsync method" Url="html/Overload_MailKit_IMailFolder_AddFlagsAsync.htm" />
   <HelpKINode Title="IMailFolder.AddLabels method" Url="html/Overload_MailKit_IMailFolder_AddLabels.htm" />
   <HelpKINode Title="IMailFolder.AddLabelsAsync method" Url="html/Overload_MailKit_IMailFolder_AddLabelsAsync.htm" />
+  <HelpKINode Title="IMailFolder.AnnotationAccess property" Url="html/P_MailKit_IMailFolder_AnnotationAccess.htm" />
+  <HelpKINode Title="IMailFolder.AnnotationsChanged event" Url="html/E_MailKit_IMailFolder_AnnotationsChanged.htm" />
+  <HelpKINode Title="IMailFolder.AnnotationScopes property" Url="html/P_MailKit_IMailFolder_AnnotationScopes.htm" />
   <HelpKINode Title="IMailFolder.Append method" Url="html/Overload_MailKit_IMailFolder_Append.htm" />
   <HelpKINode Title="IMailFolder.AppendAsync method" Url="html/Overload_MailKit_IMailFolder_AppendAsync.htm" />
   <HelpKINode Title="IMailFolder.AppendLimit property" Url="html/P_MailKit_IMailFolder_AppendLimit.htm" />
@@ -4022,6 +4155,7 @@
   <HelpKINode Title="IMailFolder.IsNamespace property" Url="html/P_MailKit_IMailFolder_IsNamespace.htm" />
   <HelpKINode Title="IMailFolder.IsOpen property" Url="html/P_MailKit_IMailFolder_IsOpen.htm" />
   <HelpKINode Title="IMailFolder.IsSubscribed property" Url="html/P_MailKit_IMailFolder_IsSubscribed.htm" />
+  <HelpKINode Title="IMailFolder.MaxAnnotationSize property" Url="html/P_MailKit_IMailFolder_MaxAnnotationSize.htm" />
   <HelpKINode Title="IMailFolder.MessageExpunged event" Url="html/E_MailKit_IMailFolder_MessageExpunged.htm" />
   <HelpKINode Title="IMailFolder.MessageFlagsChanged event" Url="html/E_MailKit_IMailFolder_MessageFlagsChanged.htm" />
   <HelpKINode Title="IMailFolder.MessageLabelsChanged event" Url="html/E_MailKit_IMailFolder_MessageLabelsChanged.htm" />
@@ -4068,6 +4202,8 @@
   <HelpKINode Title="IMailFolder.SortAsync method" Url="html/Overload_MailKit_IMailFolder_SortAsync.htm" />
   <HelpKINode Title="IMailFolder.Status method" Url="html/M_MailKit_IMailFolder_Status.htm" />
   <HelpKINode Title="IMailFolder.StatusAsync method" Url="html/M_MailKit_IMailFolder_StatusAsync.htm" />
+  <HelpKINode Title="IMailFolder.Store method" Url="html/Overload_MailKit_IMailFolder_Store.htm" />
+  <HelpKINode Title="IMailFolder.StoreAsync method" Url="html/Overload_MailKit_IMailFolder_StoreAsync.htm" />
   <HelpKINode Title="IMailFolder.Subscribe method" Url="html/M_MailKit_IMailFolder_Subscribe.htm" />
   <HelpKINode Title="IMailFolder.SubscribeAsync method" Url="html/M_MailKit_IMailFolder_SubscribeAsync.htm" />
   <HelpKINode Title="IMailFolder.Subscribed event" Url="html/E_MailKit_IMailFolder_Subscribed.htm" />
@@ -4372,6 +4508,8 @@
   <HelpKINode Title="ImapFolder.SortAsync method" Url="html/Overload_MailKit_Net_Imap_ImapFolder_SortAsync.htm" />
   <HelpKINode Title="ImapFolder.Status method" Url="html/M_MailKit_Net_Imap_ImapFolder_Status.htm" />
   <HelpKINode Title="ImapFolder.StatusAsync method" Url="html/M_MailKit_Net_Imap_ImapFolder_StatusAsync.htm" />
+  <HelpKINode Title="ImapFolder.Store method" Url="html/Overload_MailKit_Net_Imap_ImapFolder_Store.htm" />
+  <HelpKINode Title="ImapFolder.StoreAsync method" Url="html/Overload_MailKit_Net_Imap_ImapFolder_StoreAsync.htm" />
   <HelpKINode Title="ImapFolder.Subscribe method" Url="html/M_MailKit_Net_Imap_ImapFolder_Subscribe.htm" />
   <HelpKINode Title="ImapFolder.SubscribeAsync method" Url="html/M_MailKit_Net_Imap_ImapFolder_SubscribeAsync.htm" />
   <HelpKINode Title="ImapFolder.SyncRoot property" Url="html/P_MailKit_Net_Imap_ImapFolder_SyncRoot.htm" />
@@ -4441,6 +4579,7 @@
     <HelpKINode Title="IMessageSummary Interface" Url="html/T_MailKit_IMessageSummary.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MailKit_IMessageSummary.htm" />
   </HelpKINode>
+  <HelpKINode Title="IMessageSummary.Annotations property" Url="html/P_MailKit_IMessageSummary_Annotations.htm" />
   <HelpKINode Title="IMessageSummary.Attachments property" Url="html/P_MailKit_IMessageSummary_Attachments.htm" />
   <HelpKINode Title="IMessageSummary.Body property" Url="html/P_MailKit_IMessageSummary_Body.htm" />
   <HelpKINode Title="IMessageSummary.BodyParts property" Url="html/P_MailKit_IMessageSummary_BodyParts.htm" />
@@ -4558,6 +4697,8 @@
   </HelpKINode>
   <HelpKINode Title="Inequality operator">
     <HelpKINode Title="AccessRight.Inequality Operator " Url="html/M_MailKit_AccessRight_op_Inequality.htm" />
+    <HelpKINode Title="AnnotationAttribute.Inequality Operator " Url="html/M_MailKit_AnnotationAttribute_op_Inequality.htm" />
+    <HelpKINode Title="AnnotationEntry.Inequality Operator " Url="html/M_MailKit_AnnotationEntry_op_Inequality.htm" />
     <HelpKINode Title="UniqueId.Inequality Operator " Url="html/M_MailKit_UniqueId_op_Inequality.htm" />
   </HelpKINode>
   <HelpKINode Title="INetMailOverrideCharset enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
@@ -5169,6 +5310,9 @@
   <HelpKINode Title="MailFolder.AddFlagsAsync method" Url="html/Overload_MailKit_MailFolder_AddFlagsAsync.htm" />
   <HelpKINode Title="MailFolder.AddLabels method" Url="html/Overload_MailKit_MailFolder_AddLabels.htm" />
   <HelpKINode Title="MailFolder.AddLabelsAsync method" Url="html/Overload_MailKit_MailFolder_AddLabelsAsync.htm" />
+  <HelpKINode Title="MailFolder.AnnotationAccess property" Url="html/P_MailKit_MailFolder_AnnotationAccess.htm" />
+  <HelpKINode Title="MailFolder.AnnotationsChanged event" Url="html/E_MailKit_MailFolder_AnnotationsChanged.htm" />
+  <HelpKINode Title="MailFolder.AnnotationScopes property" Url="html/P_MailKit_MailFolder_AnnotationScopes.htm" />
   <HelpKINode Title="MailFolder.Append method" Url="html/Overload_MailKit_MailFolder_Append.htm" />
   <HelpKINode Title="MailFolder.AppendAsync method" Url="html/Overload_MailKit_MailFolder_AppendAsync.htm" />
   <HelpKINode Title="MailFolder.AppendLimit property" Url="html/P_MailKit_MailFolder_AppendLimit.htm" />
@@ -5226,6 +5370,7 @@
   <HelpKINode Title="MailFolder.IsOpen property" Url="html/P_MailKit_MailFolder_IsOpen.htm" />
   <HelpKINode Title="MailFolder.IsSubscribed property" Url="html/P_MailKit_MailFolder_IsSubscribed.htm" />
   <HelpKINode Title="MailFolder.MailFolder constructor" Url="html/M_MailKit_MailFolder__ctor.htm" />
+  <HelpKINode Title="MailFolder.MaxAnnotationSize property" Url="html/P_MailKit_MailFolder_MaxAnnotationSize.htm" />
   <HelpKINode Title="MailFolder.MessageExpunged event" Url="html/E_MailKit_MailFolder_MessageExpunged.htm" />
   <HelpKINode Title="MailFolder.MessageFlagsChanged event" Url="html/E_MailKit_MailFolder_MessageFlagsChanged.htm" />
   <HelpKINode Title="MailFolder.MessageLabelsChanged event" Url="html/E_MailKit_MailFolder_MessageLabelsChanged.htm" />
@@ -5236,6 +5381,7 @@
   <HelpKINode Title="MailFolder.MoveTo method" Url="html/Overload_MailKit_MailFolder_MoveTo.htm" />
   <HelpKINode Title="MailFolder.MoveToAsync method" Url="html/Overload_MailKit_MailFolder_MoveToAsync.htm" />
   <HelpKINode Title="MailFolder.Name property" Url="html/P_MailKit_MailFolder_Name.htm" />
+  <HelpKINode Title="MailFolder.OnAnnotationsChanged method" Url="html/M_MailKit_MailFolder_OnAnnotationsChanged.htm" />
   <HelpKINode Title="MailFolder.OnClosed method" Url="html/M_MailKit_MailFolder_OnClosed.htm" />
   <HelpKINode Title="MailFolder.OnCountChanged method" Url="html/M_MailKit_MailFolder_OnCountChanged.htm" />
   <HelpKINode Title="MailFolder.OnDeleted method" Url="html/M_MailKit_MailFolder_OnDeleted.htm" />
@@ -5295,6 +5441,8 @@
   <HelpKINode Title="MailFolder.SortAsync method" Url="html/Overload_MailKit_MailFolder_SortAsync.htm" />
   <HelpKINode Title="MailFolder.Status method" Url="html/M_MailKit_MailFolder_Status.htm" />
   <HelpKINode Title="MailFolder.StatusAsync method" Url="html/M_MailKit_MailFolder_StatusAsync.htm" />
+  <HelpKINode Title="MailFolder.Store method" Url="html/Overload_MailKit_MailFolder_Store.htm" />
+  <HelpKINode Title="MailFolder.StoreAsync method" Url="html/Overload_MailKit_MailFolder_StoreAsync.htm" />
   <HelpKINode Title="MailFolder.Subscribe method" Url="html/M_MailKit_MailFolder_Subscribe.htm" />
   <HelpKINode Title="MailFolder.SubscribeAsync method" Url="html/M_MailKit_MailFolder_SubscribeAsync.htm" />
   <HelpKINode Title="MailFolder.Subscribed event" Url="html/E_MailKit_MailFolder_Subscribed.htm" />
@@ -5319,6 +5467,12 @@
   <HelpKINode Title="MailKit.AccessRight structure" Url="html/T_MailKit_AccessRight.htm" />
   <HelpKINode Title="MailKit.AccessRights class" Url="html/T_MailKit_AccessRights.htm" />
   <HelpKINode Title="MailKit.AlertEventArgs class" Url="html/T_MailKit_AlertEventArgs.htm" />
+  <HelpKINode Title="MailKit.Annotation class" Url="html/T_MailKit_Annotation.htm" />
+  <HelpKINode Title="MailKit.AnnotationAccess enumeration" Url="html/T_MailKit_AnnotationAccess.htm" />
+  <HelpKINode Title="MailKit.AnnotationAttribute class" Url="html/T_MailKit_AnnotationAttribute.htm" />
+  <HelpKINode Title="MailKit.AnnotationEntry class" Url="html/T_MailKit_AnnotationEntry.htm" />
+  <HelpKINode Title="MailKit.AnnotationsChangedEventArgs class" Url="html/T_MailKit_AnnotationsChangedEventArgs.htm" />
+  <HelpKINode Title="MailKit.AnnotationScope enumeration" Url="html/T_MailKit_AnnotationScope.htm" />
   <HelpKINode Title="MailKit.AuthenticatedEventArgs class" Url="html/T_MailKit_AuthenticatedEventArgs.htm" />
   <HelpKINode Title="MailKit.BodyPart class" Url="html/T_MailKit_BodyPart.htm" />
   <HelpKINode Title="MailKit.BodyPartBasic class" Url="html/T_MailKit_BodyPartBasic.htm" />
@@ -5417,12 +5571,14 @@
   <HelpKINode Title="MailKit.ProtocolException class" Url="html/T_MailKit_ProtocolException.htm" />
   <HelpKINode Title="MailKit.ProtocolLogger class" Url="html/T_MailKit_ProtocolLogger.htm" />
   <HelpKINode Title="MailKit.Search namespace" Url="html/N_MailKit_Search.htm" />
+  <HelpKINode Title="MailKit.Search.AnnotationSearchQuery class" Url="html/T_MailKit_Search_AnnotationSearchQuery.htm" />
   <HelpKINode Title="MailKit.Search.BinarySearchQuery class" Url="html/T_MailKit_Search_BinarySearchQuery.htm" />
   <HelpKINode Title="MailKit.Search.DateSearchQuery class" Url="html/T_MailKit_Search_DateSearchQuery.htm" />
   <HelpKINode Title="MailKit.Search.FilterSearchQuery class" Url="html/T_MailKit_Search_FilterSearchQuery.htm" />
   <HelpKINode Title="MailKit.Search.HeaderSearchQuery class" Url="html/T_MailKit_Search_HeaderSearchQuery.htm" />
   <HelpKINode Title="MailKit.Search.NumericSearchQuery class" Url="html/T_MailKit_Search_NumericSearchQuery.htm" />
   <HelpKINode Title="MailKit.Search.OrderBy class" Url="html/T_MailKit_Search_OrderBy.htm" />
+  <HelpKINode Title="MailKit.Search.OrderByAnnotation class" Url="html/T_MailKit_Search_OrderByAnnotation.htm" />
   <HelpKINode Title="MailKit.Search.OrderByType enumeration" Url="html/T_MailKit_Search_OrderByType.htm" />
   <HelpKINode Title="MailKit.Search.SearchOptions enumeration" Url="html/T_MailKit_Search_SearchOptions.htm" />
   <HelpKINode Title="MailKit.Search.SearchQuery class" Url="html/T_MailKit_Search_SearchQuery.htm" />
@@ -5598,6 +5754,10 @@
     <HelpKINode Title="UniqueIdRange.Max Property " Url="html/P_MailKit_UniqueIdRange_Max.htm" />
   </HelpKINode>
   <HelpKINode Title="MaxAddressGroupDepth property" Url="html/P_MimeKit_ParserOptions_MaxAddressGroupDepth.htm" />
+  <HelpKINode Title="MaxAnnotationSize property">
+    <HelpKINode Title="IMailFolder.MaxAnnotationSize Property " Url="html/P_MailKit_IMailFolder_MaxAnnotationSize.htm" />
+    <HelpKINode Title="MailFolder.MaxAnnotationSize Property " Url="html/P_MailKit_MailFolder_MaxAnnotationSize.htm" />
+  </HelpKINode>
   <HelpKINode Title="MaxLength enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
   <HelpKINode Title="MaxLineLength property" Url="html/P_MimeKit_FormatOptions_MaxLineLength.htm" />
   <HelpKINode Title="MaxSize property">
@@ -5726,12 +5886,13 @@
   <HelpKINode Title="MessageDownloadTime field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_MessageDownloadTime.htm" />
   <HelpKINode Title="MessageEventArgs class">
     <HelpKINode Title="MessageEventArgs Class" Url="html/T_MailKit_MessageEventArgs.htm" />
-    <HelpKINode Title="constructor" Url="html/M_MailKit_MessageEventArgs__ctor.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_MailKit_MessageEventArgs__ctor.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MailKit_MessageEventArgs.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MailKit_MessageEventArgs.htm" />
   </HelpKINode>
   <HelpKINode Title="MessageEventArgs.Index property" Url="html/P_MailKit_MessageEventArgs_Index.htm" />
-  <HelpKINode Title="MessageEventArgs.MessageEventArgs constructor" Url="html/M_MailKit_MessageEventArgs__ctor.htm" />
+  <HelpKINode Title="MessageEventArgs.MessageEventArgs constructor" Url="html/Overload_MailKit_MessageEventArgs__ctor.htm" />
+  <HelpKINode Title="MessageEventArgs.UniqueId property" Url="html/P_MailKit_MessageEventArgs_UniqueId.htm" />
   <HelpKINode Title="MessageExpunge field" Url="html/F_MailKit_Net_Imap_ImapEvent_MessageExpunge.htm" />
   <HelpKINode Title="MessageExpunged event">
     <HelpKINode Title="IMailFolder.MessageExpunged Event" Url="html/E_MailKit_IMailFolder_MessageExpunged.htm" />
@@ -5754,7 +5915,6 @@
   <HelpKINode Title="MessageFlagsChangedEventArgs.Keywords property" Url="html/P_MailKit_MessageFlagsChangedEventArgs_Keywords.htm" />
   <HelpKINode Title="MessageFlagsChangedEventArgs.MessageFlagsChangedEventArgs constructor" Url="html/Overload_MailKit_MessageFlagsChangedEventArgs__ctor.htm" />
   <HelpKINode Title="MessageFlagsChangedEventArgs.ModSeq property" Url="html/P_MailKit_MessageFlagsChangedEventArgs_ModSeq.htm" />
-  <HelpKINode Title="MessageFlagsChangedEventArgs.UniqueId property" Url="html/P_MailKit_MessageFlagsChangedEventArgs_UniqueId.htm" />
   <HelpKINode Title="MessageFlagsChangedEventArgs.UserFlags property" Url="html/P_MailKit_MessageFlagsChangedEventArgs_UserFlags.htm" />
   <HelpKINode Title="MessageId enumeration member">
     <HelpKINode Title="HeaderId Enumeration" Url="html/T_MimeKit_HeaderId.htm" />
@@ -5800,7 +5960,6 @@
   <HelpKINode Title="MessageLabelsChangedEventArgs.Labels property" Url="html/P_MailKit_MessageLabelsChangedEventArgs_Labels.htm" />
   <HelpKINode Title="MessageLabelsChangedEventArgs.MessageLabelsChangedEventArgs constructor" Url="html/Overload_MailKit_MessageLabelsChangedEventArgs__ctor.htm" />
   <HelpKINode Title="MessageLabelsChangedEventArgs.ModSeq property" Url="html/P_MailKit_MessageLabelsChangedEventArgs_ModSeq.htm" />
-  <HelpKINode Title="MessageLabelsChangedEventArgs.UniqueId property" Url="html/P_MailKit_MessageLabelsChangedEventArgs_UniqueId.htm" />
   <HelpKINode Title="MessageLimit property" Url="html/P_MailKit_FolderQuota_MessageLimit.htm" />
   <HelpKINode Title="MessageNew class">
     <HelpKINode Title="methods" Url="html/Methods_T_MailKit_Net_Imap_ImapEvent_MessageNew.htm" />
@@ -5877,6 +6036,7 @@
     <HelpKINode Title="methods" Url="html/Methods_T_MailKit_MessageSummary.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MailKit_MessageSummary.htm" />
   </HelpKINode>
+  <HelpKINode Title="MessageSummary.Annotations property" Url="html/P_MailKit_MessageSummary_Annotations.htm" />
   <HelpKINode Title="MessageSummary.Attachments property" Url="html/P_MailKit_MessageSummary_Attachments.htm" />
   <HelpKINode Title="MessageSummary.Body property" Url="html/P_MailKit_MessageSummary_Body.htm" />
   <HelpKINode Title="MessageSummary.BodyParts property" Url="html/P_MailKit_MessageSummary_BodyParts.htm" />
@@ -6470,6 +6630,7 @@
     <HelpKINode Title="SearchTerm Enumeration" Url="html/T_MailKit_Search_SearchTerm.htm" />
   </HelpKINode>
   <HelpKINode Title="ModSeq property">
+    <HelpKINode Title="AnnotationsChangedEventArgs.ModSeq Property " Url="html/P_MailKit_AnnotationsChangedEventArgs_ModSeq.htm" />
     <HelpKINode Title="IMessageSummary.ModSeq Property " Url="html/P_MailKit_IMessageSummary_ModSeq.htm" />
     <HelpKINode Title="MessageFlagsChangedEventArgs.ModSeq Property " Url="html/P_MailKit_MessageFlagsChangedEventArgs_ModSeq.htm" />
     <HelpKINode Title="MessageLabelsChangedEventArgs.ModSeq Property " Url="html/P_MailKit_MessageLabelsChangedEventArgs_ModSeq.htm" />
@@ -6489,7 +6650,6 @@
   </HelpKINode>
   <HelpKINode Title="ModSeqChangedEventArgs.ModSeq property" Url="html/P_MailKit_ModSeqChangedEventArgs_ModSeq.htm" />
   <HelpKINode Title="ModSeqChangedEventArgs.ModSeqChangedEventArgs constructor" Url="html/Overload_MailKit_ModSeqChangedEventArgs__ctor.htm" />
-  <HelpKINode Title="ModSeqChangedEventArgs.UniqueId property" Url="html/P_MailKit_ModSeqChangedEventArgs_UniqueId.htm" />
   <HelpKINode Title="Move enumeration member" Url="html/T_MailKit_Net_Imap_ImapCapabilities.htm" />
   <HelpKINode Title="MoveNext method" Url="html/M_MimeKit_MimeIterator_MoveNext.htm" />
   <HelpKINode Title="MoveTo method">
@@ -6596,6 +6756,7 @@
   </HelpKINode>
   <HelpKINode Title="Name property">
     <HelpKINode Title="AccessControl.Name Property " Url="html/P_MailKit_AccessControl_Name.htm" />
+    <HelpKINode Title="AnnotationAttribute.Name Property " Url="html/P_MailKit_AnnotationAttribute_Name.htm" />
     <HelpKINode Title="ContentType.Name Property " Url="html/P_MimeKit_ContentType_Name.htm" />
     <HelpKINode Title="FilterSearchQuery.Name Property " Url="html/P_MailKit_Search_FilterSearchQuery_Name.htm" />
     <HelpKINode Title="HtmlAttribute.Name Property " Url="html/P_MimeKit_Text_HtmlAttribute_Name.htm" />
@@ -6652,6 +6813,8 @@
   <HelpKINode Title="NoHref enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
   <HelpKINode Title="NoInferiors enumeration member" Url="html/T_MailKit_FolderAttributes.htm" />
   <HelpKINode Title="None enumeration member">
+    <HelpKINode Title="AnnotationAccess Enumeration" Url="html/T_MailKit_AnnotationAccess.htm" />
+    <HelpKINode Title="AnnotationScope Enumeration" Url="html/T_MailKit_AnnotationScope.htm" />
     <HelpKINode Title="ArcSignatureValidationResult Enumeration" Url="html/T_MimeKit_Cryptography_ArcSignatureValidationResult.htm" />
     <HelpKINode Title="DigestAlgorithm Enumeration" Url="html/T_MimeKit_Cryptography_DigestAlgorithm.htm" />
     <HelpKINode Title="EncodingConstraint Enumeration" Url="html/T_MimeKit_EncodingConstraint.htm" />
@@ -6803,6 +6966,7 @@
   <HelpKINode Title="OldName property" Url="html/P_MailKit_FolderRenamedEventArgs_OldName.htm" />
   <HelpKINode Title="Ole enumeration member" Url="html/T_MimeKit_Tnef_TnefAttachMethod.htm" />
   <HelpKINode Title="OnAlert method" Url="html/M_MailKit_MailStore_OnAlert.htm" />
+  <HelpKINode Title="OnAnnotationsChanged method" Url="html/M_MailKit_MailFolder_OnAnnotationsChanged.htm" />
   <HelpKINode Title="OnAuthenticated method" Url="html/M_MailKit_MailService_OnAuthenticated.htm" />
   <HelpKINode Title="OnChanged method" Url="html/M_MimeKit_InternetAddress_OnChanged.htm" />
   <HelpKINode Title="OnClosed method" Url="html/M_MailKit_MailFolder_OnClosed.htm" />
@@ -6987,6 +7151,15 @@
   <HelpKINode Title="OrderBy.Subject field" Url="html/F_MailKit_Search_OrderBy_Subject.htm" />
   <HelpKINode Title="OrderBy.To field" Url="html/F_MailKit_Search_OrderBy_To.htm" />
   <HelpKINode Title="OrderBy.Type property" Url="html/P_MailKit_Search_OrderBy_Type.htm" />
+  <HelpKINode Title="OrderByAnnotation class">
+    <HelpKINode Title="OrderByAnnotation Class" Url="html/T_MailKit_Search_OrderByAnnotation.htm" />
+    <HelpKINode Title="constructor" Url="html/M_MailKit_Search_OrderByAnnotation__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_MailKit_Search_OrderByAnnotation.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_MailKit_Search_OrderByAnnotation.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OrderByAnnotation.Attribute property" Url="html/P_MailKit_Search_OrderByAnnotation_Attribute.htm" />
+  <HelpKINode Title="OrderByAnnotation.Entry property" Url="html/P_MailKit_Search_OrderByAnnotation_Entry.htm" />
+  <HelpKINode Title="OrderByAnnotation.OrderByAnnotation constructor" Url="html/M_MailKit_Search_OrderByAnnotation__ctor.htm" />
   <HelpKINode Title="OrderByType enumeration" Url="html/T_MailKit_Search_OrderByType.htm" />
   <HelpKINode Title="OrderedSubject enumeration member" Url="html/T_MailKit_ThreadingAlgorithm.htm" />
   <HelpKINode Title="OrdinalIgnoreCase field" Url="html/F_MimeKit_Utils_MimeUtils_OrdinalIgnoreCase.htm" />
@@ -7208,6 +7381,7 @@
   <HelpKINode Title="ParentKey enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="ParentKey field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_ParentKey.htm" />
   <HelpKINode Title="Parse method">
+    <HelpKINode Title="AnnotationEntry.Parse Method " Url="html/M_MailKit_AnnotationEntry_Parse.htm" />
     <HelpKINode Title="AuthenticationResults.Parse Method " Url="html/Overload_MimeKit_Cryptography_AuthenticationResults_Parse.htm" />
     <HelpKINode Title="ContentDisposition.Parse Method " Url="html/Overload_MimeKit_ContentDisposition_Parse.htm" />
     <HelpKINode Title="ContentType.Parse Method " Url="html/Overload_MimeKit_ContentType_Parse.htm" />
@@ -7254,7 +7428,10 @@
   <HelpKINode Title="ParserOptions.RegisterMimeType method" Url="html/M_MimeKit_ParserOptions_RegisterMimeType.htm" />
   <HelpKINode Title="ParserOptions.RespectContentLength property" Url="html/P_MimeKit_ParserOptions_RespectContentLength.htm" />
   <HelpKINode Title="ParserOptions.Rfc2047ComplianceMode property" Url="html/P_MimeKit_ParserOptions_Rfc2047ComplianceMode.htm" />
-  <HelpKINode Title="PartSpecifier property" Url="html/P_MailKit_BodyPart_PartSpecifier.htm" />
+  <HelpKINode Title="PartSpecifier property">
+    <HelpKINode Title="AnnotationEntry.PartSpecifier Property " Url="html/P_MailKit_AnnotationEntry_PartSpecifier.htm" />
+    <HelpKINode Title="BodyPart.PartSpecifier Property " Url="html/P_MailKit_BodyPart_PartSpecifier.htm" />
+  </HelpKINode>
   <HelpKINode Title="Pass enumeration member" Url="html/T_MimeKit_Cryptography_ArcSignatureValidationResult.htm" />
   <HelpKINode Title="PassThroughDecoder class">
     <HelpKINode Title="PassThroughDecoder Class" Url="html/T_MimeKit_Encodings_PassThroughDecoder.htm" />
@@ -7293,6 +7470,7 @@
   <HelpKINode Title="PasswordTransitionNeeded enumeration member" Url="html/T_MailKit_Net_Smtp_SmtpStatusCode.htm" />
   <HelpKINode Title="Path enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
   <HelpKINode Title="Path field" Url="html/F_MailKit_FolderNamespace_Path.htm" />
+  <HelpKINode Title="Path property" Url="html/P_MailKit_AnnotationEntry_Path.htm" />
   <HelpKINode Title="PathSpecifier property" Url="html/P_MimeKit_MimeIterator_PathSpecifier.htm" />
   <HelpKINode Title="PermanentFlags property">
     <HelpKINode Title="IMailFolder.PermanentFlags Property " Url="html/P_MailKit_IMailFolder_PermanentFlags.htm" />
@@ -7467,6 +7645,7 @@
     <HelpKINode Title="MimePart.Prepare Method " Url="html/M_MimeKit_MimePart_Prepare.htm" />
     <HelpKINode Title="Multipart.Prepare Method " Url="html/M_MimeKit_Multipart_Prepare.htm" />
     <HelpKINode Title="MultipartSigned.Prepare Method " Url="html/M_MimeKit_Cryptography_MultipartSigned_Prepare.htm" />
+    <HelpKINode Title="SmtpClient.Prepare Method " Url="html/M_MailKit_Net_Smtp_SmtpClient_Prepare.htm" />
   </HelpKINode>
   <HelpKINode Title="Preprocess enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="Preprocess field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_Preprocess.htm" />
@@ -7491,7 +7670,13 @@
   </HelpKINode>
   <HelpKINode Title="Priority field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_Priority.htm" />
   <HelpKINode Title="Priority property" Url="html/P_MimeKit_MimeMessage_Priority.htm" />
-  <HelpKINode Title="PrivateComment field" Url="html/F_MailKit_MetadataTag_PrivateComment.htm" />
+  <HelpKINode Title="Private enumeration member" Url="html/T_MailKit_AnnotationScope.htm" />
+  <HelpKINode Title="PrivateAltSubject field" Url="html/F_MailKit_AnnotationEntry_PrivateAltSubject.htm" />
+  <HelpKINode Title="PrivateComment field">
+    <HelpKINode Title="AnnotationEntry.PrivateComment Field" Url="html/F_MailKit_AnnotationEntry_PrivateComment.htm" />
+    <HelpKINode Title="MetadataTag.PrivateComment Field" Url="html/F_MailKit_MetadataTag_PrivateComment.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PrivateFlags field" Url="html/F_MailKit_AnnotationEntry_PrivateFlags.htm" />
   <HelpKINode Title="PrivateKey enumeration member">
     <HelpKINode Title="OpenPgpDataType Enumeration" Url="html/T_MimeKit_Cryptography_OpenPgpDataType.htm" />
     <HelpKINode Title="X509CertificateRecordFields Enumeration" Url="html/T_MimeKit_Cryptography_X509CertificateRecordFields.htm" />
@@ -7511,7 +7696,9 @@
   <HelpKINode Title="PrivateKeyNotFoundException.GetObjectData method" Url="html/M_MimeKit_Cryptography_PrivateKeyNotFoundException_GetObjectData.htm" />
   <HelpKINode Title="PrivateKeyNotFoundException.KeyId property" Url="html/P_MimeKit_Cryptography_PrivateKeyNotFoundException_KeyId.htm" />
   <HelpKINode Title="PrivateKeyNotFoundException.PrivateKeyNotFoundException constructor" Url="html/Overload_MimeKit_Cryptography_PrivateKeyNotFoundException__ctor.htm" />
+  <HelpKINode Title="PrivateSize field" Url="html/F_MailKit_AnnotationAttribute_PrivateSize.htm" />
   <HelpKINode Title="PrivateSpecialUse field" Url="html/F_MailKit_MetadataTag_PrivateSpecialUse.htm" />
+  <HelpKINode Title="PrivateValue field" Url="html/F_MailKit_AnnotationAttribute_PrivateValue.htm" />
   <HelpKINode Title="Profession enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="ProfessionA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_ProfessionA.htm" />
   <HelpKINode Title="ProfessionW field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_ProfessionW.htm" />
@@ -7530,6 +7717,7 @@
   <HelpKINode Title="ProofOfSubmissionRequested enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="ProofOfSubmissionRequested field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_ProofOfSubmissionRequested.htm" />
   <HelpKINode Title="Properties property">
+    <HelpKINode Title="Annotation.Properties Property " Url="html/P_MailKit_Annotation_Properties.htm" />
     <HelpKINode Title="AuthenticationMethodResult.Properties Property " Url="html/P_MimeKit_Cryptography_AuthenticationMethodResult_Properties.htm" />
     <HelpKINode Title="ImapImplementation.Properties Property " Url="html/P_MailKit_Net_Imap_ImapImplementation_Properties.htm" />
   </HelpKINode>
@@ -7559,6 +7747,7 @@
     <HelpKINode Title="ProtocolLogger Class" Url="html/T_MailKit_ProtocolLogger.htm" />
     <HelpKINode Title="constructor" Url="html/Overload_MailKit_ProtocolLogger__ctor.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MailKit_ProtocolLogger.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_MailKit_ProtocolLogger.htm" />
   </HelpKINode>
   <HelpKINode Title="ProtocolLogger property" Url="html/P_MailKit_MailService_ProtocolLogger.htm" />
   <HelpKINode Title="ProtocolLogger.Dispose method" Url="html/Overload_MailKit_ProtocolLogger_Dispose.htm" />
@@ -7567,6 +7756,7 @@
   <HelpKINode Title="ProtocolLogger.LogConnect method" Url="html/M_MailKit_ProtocolLogger_LogConnect.htm" />
   <HelpKINode Title="ProtocolLogger.LogServer method" Url="html/M_MailKit_ProtocolLogger_LogServer.htm" />
   <HelpKINode Title="ProtocolLogger.ProtocolLogger constructor" Url="html/Overload_MailKit_ProtocolLogger__ctor.htm" />
+  <HelpKINode Title="ProtocolLogger.Stream property" Url="html/P_MailKit_ProtocolLogger_Stream.htm" />
   <HelpKINode Title="ProviderDisplay enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="ProviderDisplayA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_ProviderDisplayA.htm" />
   <HelpKINode Title="ProviderDisplayW field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_ProviderDisplayW.htm" />
@@ -7748,6 +7938,7 @@
   <HelpKINode Title="ReadNextToken method" Url="html/M_MimeKit_Text_HtmlTokenizer_ReadNextToken.htm" />
   <HelpKINode Title="ReadNextValue method" Url="html/M_MimeKit_Tnef_TnefPropertyReader_ReadNextValue.htm" />
   <HelpKINode Title="ReadOnly enumeration member">
+    <HelpKINode Title="AnnotationAccess Enumeration" Url="html/T_MailKit_AnnotationAccess.htm" />
     <HelpKINode Title="FolderAccess Enumeration" Url="html/T_MailKit_FolderAccess.htm" />
     <HelpKINode Title="HtmlAttributeId Enumeration" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
   </HelpKINode>
@@ -7774,7 +7965,10 @@
   <HelpKINode Title="ReadValueAsInt32 method" Url="html/M_MimeKit_Tnef_TnefPropertyReader_ReadValueAsInt32.htm" />
   <HelpKINode Title="ReadValueAsInt64 method" Url="html/M_MimeKit_Tnef_TnefPropertyReader_ReadValueAsInt64.htm" />
   <HelpKINode Title="ReadValueAsString method" Url="html/M_MimeKit_Tnef_TnefPropertyReader_ReadValueAsString.htm" />
-  <HelpKINode Title="ReadWrite enumeration member" Url="html/T_MailKit_FolderAccess.htm" />
+  <HelpKINode Title="ReadWrite enumeration member">
+    <HelpKINode Title="AnnotationAccess Enumeration" Url="html/T_MailKit_AnnotationAccess.htm" />
+    <HelpKINode Title="FolderAccess Enumeration" Url="html/T_MailKit_FolderAccess.htm" />
+  </HelpKINode>
   <HelpKINode Title="Reason property" Url="html/P_MimeKit_Cryptography_AuthenticationMethodResult_Reason.htm" />
   <HelpKINode Title="ReceiptTime enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="ReceiptTime field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_ReceiptTime.htm" />
@@ -8300,6 +8494,10 @@
   <HelpKINode Title="SaveSecretKeyRingBundle method" Url="html/M_MimeKit_Cryptography_OpenPgpContext_SaveSecretKeyRingBundle.htm" />
   <HelpKINode Title="Scheme enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
   <HelpKINode Title="Scope enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
+  <HelpKINode Title="Scope property">
+    <HelpKINode Title="AnnotationAttribute.Scope Property " Url="html/P_MailKit_AnnotationAttribute_Scope.htm" />
+    <HelpKINode Title="AnnotationEntry.Scope Property " Url="html/P_MailKit_AnnotationEntry_Scope.htm" />
+  </HelpKINode>
   <HelpKINode Title="Script enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
   <HelpKINode Title="ScriptData enumeration member">
     <HelpKINode Title="HtmlTokenizerState Enumeration" Url="html/T_MimeKit_Text_HtmlTokenizerState.htm" />
@@ -8348,6 +8546,7 @@
   </HelpKINode>
   <HelpKINode Title="SearchQuery.All field" Url="html/F_MailKit_Search_SearchQuery_All.htm" />
   <HelpKINode Title="SearchQuery.And method" Url="html/Overload_MailKit_Search_SearchQuery_And.htm" />
+  <HelpKINode Title="SearchQuery.AnnotationsContain method" Url="html/M_MailKit_Search_SearchQuery_AnnotationsContain.htm" />
   <HelpKINode Title="SearchQuery.Answered field" Url="html/F_MailKit_Search_SearchQuery_Answered.htm" />
   <HelpKINode Title="SearchQuery.BccContains method" Url="html/M_MailKit_Search_SearchQuery_BccContains.htm" />
   <HelpKINode Title="SearchQuery.BodyContains method" Url="html/M_MailKit_Search_SearchQuery_BodyContains.htm" />
@@ -8521,6 +8720,8 @@
     <HelpKINode Title="MailTransport.SendAsync Method " Url="html/Overload_MailKit_MailTransport_SendAsync.htm" />
     <HelpKINode Title="SmtpClient.SendAsync Method " Url="html/Overload_MailKit_Net_Smtp_SmtpClient_SendAsync.htm" />
   </HelpKINode>
+  <HelpKINode Title="SendCommand method" Url="html/M_MailKit_Net_Smtp_SmtpClient_SendCommand.htm" />
+  <HelpKINode Title="SendCommandAsync method" Url="html/M_MailKit_Net_Smtp_SmtpClient_SendCommandAsync.htm" />
   <HelpKINode Title="Sender enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
   <HelpKINode Title="Sender property">
     <HelpKINode Title="Envelope.Sender Property " Url="html/P_MailKit_Envelope_Sender.htm" />
@@ -8710,13 +8911,21 @@
   <HelpKINode Title="Sha384 enumeration member" Url="html/T_MimeKit_Cryptography_DigestAlgorithm.htm" />
   <HelpKINode Title="Sha512 enumeration member" Url="html/T_MimeKit_Cryptography_DigestAlgorithm.htm" />
   <HelpKINode Title="Shape enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
+  <HelpKINode Title="Shared enumeration member" Url="html/T_MailKit_AnnotationScope.htm" />
   <HelpKINode Title="SharedAdmin field" Url="html/F_MailKit_MetadataTag_SharedAdmin.htm" />
-  <HelpKINode Title="SharedComment field" Url="html/F_MailKit_MetadataTag_SharedComment.htm" />
+  <HelpKINode Title="SharedAltSubject field" Url="html/F_MailKit_AnnotationEntry_SharedAltSubject.htm" />
+  <HelpKINode Title="SharedComment field">
+    <HelpKINode Title="AnnotationEntry.SharedComment Field" Url="html/F_MailKit_AnnotationEntry_SharedComment.htm" />
+    <HelpKINode Title="MetadataTag.SharedComment Field" Url="html/F_MailKit_MetadataTag_SharedComment.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SharedFlags field" Url="html/F_MailKit_AnnotationEntry_SharedFlags.htm" />
   <HelpKINode Title="SharedNamespaces property">
     <HelpKINode Title="IMailStore.SharedNamespaces Property " Url="html/P_MailKit_IMailStore_SharedNamespaces.htm" />
     <HelpKINode Title="ImapClient.SharedNamespaces Property " Url="html/P_MailKit_Net_Imap_ImapClient_SharedNamespaces.htm" />
     <HelpKINode Title="MailStore.SharedNamespaces Property " Url="html/P_MailKit_MailStore_SharedNamespaces.htm" />
   </HelpKINode>
+  <HelpKINode Title="SharedSize field" Url="html/F_MailKit_AnnotationAttribute_SharedSize.htm" />
+  <HelpKINode Title="SharedValue field" Url="html/F_MailKit_AnnotationAttribute_SharedValue.htm" />
   <HelpKINode Title="Sign method">
     <HelpKINode Title="ApplicationPkcs7Mime.Sign Method " Url="html/Overload_MimeKit_Cryptography_ApplicationPkcs7Mime_Sign.htm" />
     <HelpKINode Title="ArcSigner.Sign Method " Url="html/Overload_MimeKit_Cryptography_ArcSigner_Sign.htm" />
@@ -8764,7 +8973,10 @@
     <HelpKINode Title="SmtpCapabilities Enumeration" Url="html/T_MailKit_Net_Smtp_SmtpCapabilities.htm" />
     <HelpKINode Title="StatusItems Enumeration" Url="html/T_MailKit_StatusItems.htm" />
   </HelpKINode>
-  <HelpKINode Title="Size field" Url="html/F_MailKit_Search_OrderBy_Size.htm" />
+  <HelpKINode Title="Size field">
+    <HelpKINode Title="AnnotationAttribute.Size Field" Url="html/F_MailKit_AnnotationAttribute_Size.htm" />
+    <HelpKINode Title="OrderBy.Size Field" Url="html/F_MailKit_Search_OrderBy_Size.htm" />
+  </HelpKINode>
   <HelpKINode Title="Size property">
     <HelpKINode Title="ContentDisposition.Size Property " Url="html/P_MimeKit_ContentDisposition_Size.htm" />
     <HelpKINode Title="IMailFolder.Size Property " Url="html/P_MailKit_IMailFolder_Size.htm" />
@@ -8804,6 +9016,8 @@
   <HelpKINode Title="SmtpClient.ExpandAsync method" Url="html/M_MailKit_Net_Smtp_SmtpClient_ExpandAsync.htm" />
   <HelpKINode Title="SmtpClient.GetDeliveryStatusNotifications method" Url="html/M_MailKit_Net_Smtp_SmtpClient_GetDeliveryStatusNotifications.htm" />
   <HelpKINode Title="SmtpClient.GetEnvelopeId method" Url="html/M_MailKit_Net_Smtp_SmtpClient_GetEnvelopeId.htm" />
+  <HelpKINode Title="SmtpClient.GetSize method" Url="html/M_MailKit_Net_Smtp_SmtpClient_GetSize.htm" />
+  <HelpKINode Title="SmtpClient.GetSizeAsync method" Url="html/M_MailKit_Net_Smtp_SmtpClient_GetSizeAsync.htm" />
   <HelpKINode Title="SmtpClient.IsAuthenticated property" Url="html/P_MailKit_Net_Smtp_SmtpClient_IsAuthenticated.htm" />
   <HelpKINode Title="SmtpClient.IsConnected property" Url="html/P_MailKit_Net_Smtp_SmtpClient_IsConnected.htm" />
   <HelpKINode Title="SmtpClient.IsSecure property" Url="html/P_MailKit_Net_Smtp_SmtpClient_IsSecure.htm" />
@@ -8816,9 +9030,12 @@
   <HelpKINode Title="SmtpClient.OnRecipientNotAccepted method" Url="html/M_MailKit_Net_Smtp_SmtpClient_OnRecipientNotAccepted.htm" />
   <HelpKINode Title="SmtpClient.OnSenderAccepted method" Url="html/M_MailKit_Net_Smtp_SmtpClient_OnSenderAccepted.htm" />
   <HelpKINode Title="SmtpClient.OnSenderNotAccepted method" Url="html/M_MailKit_Net_Smtp_SmtpClient_OnSenderNotAccepted.htm" />
+  <HelpKINode Title="SmtpClient.Prepare method" Url="html/M_MailKit_Net_Smtp_SmtpClient_Prepare.htm" />
   <HelpKINode Title="SmtpClient.Protocol property" Url="html/P_MailKit_Net_Smtp_SmtpClient_Protocol.htm" />
   <HelpKINode Title="SmtpClient.Send method" Url="html/Overload_MailKit_Net_Smtp_SmtpClient_Send.htm" />
   <HelpKINode Title="SmtpClient.SendAsync method" Url="html/Overload_MailKit_Net_Smtp_SmtpClient_SendAsync.htm" />
+  <HelpKINode Title="SmtpClient.SendCommand method" Url="html/M_MailKit_Net_Smtp_SmtpClient_SendCommand.htm" />
+  <HelpKINode Title="SmtpClient.SendCommandAsync method" Url="html/M_MailKit_Net_Smtp_SmtpClient_SendCommandAsync.htm" />
   <HelpKINode Title="SmtpClient.SmtpClient constructor" Url="html/Overload_MailKit_Net_Smtp_SmtpClient__ctor.htm" />
   <HelpKINode Title="SmtpClient.SyncRoot property" Url="html/P_MailKit_Net_Smtp_SmtpClient_SyncRoot.htm" />
   <HelpKINode Title="SmtpClient.Timeout property" Url="html/P_MailKit_Net_Smtp_SmtpClient_Timeout.htm" />
@@ -8918,6 +9135,7 @@
   </HelpKINode>
   <HelpKINode Title="SpecialFolder enumeration" Url="html/T_MailKit_SpecialFolder.htm" />
   <HelpKINode Title="SpecialUse enumeration member" Url="html/T_MailKit_Net_Imap_ImapCapabilities.htm" />
+  <HelpKINode Title="Specifier property" Url="html/P_MailKit_AnnotationAttribute_Specifier.htm" />
   <HelpKINode Title="Split method" Url="html/M_MimeKit_MessagePartial_Split.htm" />
   <HelpKINode Title="SpoolerStatus enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="SpoolerStatus field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_SpoolerStatus.htm" />
@@ -8971,8 +9189,8 @@
   <HelpKINode Title="StartMailInput enumeration member" Url="html/T_MailKit_Net_Smtp_SmtpStatusCode.htm" />
   <HelpKINode Title="StartTLS enumeration member">
     <HelpKINode Title="ImapCapabilities Enumeration" Url="html/T_MailKit_Net_Imap_ImapCapabilities.htm" />
-    <HelpKINode Title="Pop3Capabilities Enumeration" Url="html/T_MailKit_Net_Pop3_Pop3Capabilities.htm" />
     <HelpKINode Title="SmtpCapabilities Enumeration" Url="html/T_MailKit_Net_Smtp_SmtpCapabilities.htm" />
+    <HelpKINode Title="Pop3Capabilities Enumeration" Url="html/T_MailKit_Net_Pop3_Pop3Capabilities.htm" />
   </HelpKINode>
   <HelpKINode Title="StartTls enumeration member" Url="html/T_MailKit_Security_SecureSocketOptions.htm" />
   <HelpKINode Title="StartTlsWhenAvailable enumeration member" Url="html/T_MailKit_Security_SecureSocketOptions.htm" />
@@ -9009,6 +9227,16 @@
   <HelpKINode Title="StatusStringW field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_StatusStringW.htm" />
   <HelpKINode Title="StatusText property" Url="html/P_MailKit_Net_Pop3_Pop3CommandException_StatusText.htm" />
   <HelpKINode Title="StorageLimit property" Url="html/P_MailKit_FolderQuota_StorageLimit.htm" />
+  <HelpKINode Title="Store method">
+    <HelpKINode Title="IMailFolder.Store Method " Url="html/Overload_MailKit_IMailFolder_Store.htm" />
+    <HelpKINode Title="ImapFolder.Store Method " Url="html/Overload_MailKit_Net_Imap_ImapFolder_Store.htm" />
+    <HelpKINode Title="MailFolder.Store Method " Url="html/Overload_MailKit_MailFolder_Store.htm" />
+  </HelpKINode>
+  <HelpKINode Title="StoreAsync method">
+    <HelpKINode Title="IMailFolder.StoreAsync Method " Url="html/Overload_MailKit_IMailFolder_StoreAsync.htm" />
+    <HelpKINode Title="ImapFolder.StoreAsync Method " Url="html/Overload_MailKit_Net_Imap_ImapFolder_StoreAsync.htm" />
+    <HelpKINode Title="MailFolder.StoreAsync Method " Url="html/Overload_MailKit_MailFolder_StoreAsync.htm" />
+  </HelpKINode>
   <HelpKINode Title="StoreEntryId enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="StoreEntryId field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_StoreEntryId.htm" />
   <HelpKINode Title="StoreLocation property" Url="html/P_MimeKit_Cryptography_WindowsSecureMimeContext_StoreLocation.htm" />
@@ -9023,6 +9251,7 @@
   <HelpKINode Title="Stream property">
     <HelpKINode Title="IMimeContent.Stream Property " Url="html/P_MimeKit_IMimeContent_Stream.htm" />
     <HelpKINode Title="MimeContent.Stream Property " Url="html/P_MimeKit_MimeContent_Stream.htm" />
+    <HelpKINode Title="ProtocolLogger.Stream Property " Url="html/P_MailKit_ProtocolLogger_Stream.htm" />
   </HelpKINode>
   <HelpKINode Title="StreamOffset property" Url="html/P_MimeKit_Tnef_TnefReader_StreamOffset.htm" />
   <HelpKINode Title="StreamTruncated enumeration member" Url="html/T_MimeKit_Tnef_TnefComplianceStatus.htm" />
@@ -10172,6 +10401,8 @@
   <HelpKINode Title="ToString method">
     <HelpKINode Title="AccessRight.ToString Method " Url="html/M_MailKit_AccessRight_ToString.htm" />
     <HelpKINode Title="AccessRights.ToString Method " Url="html/M_MailKit_AccessRights_ToString.htm" />
+    <HelpKINode Title="AnnotationAttribute.ToString Method " Url="html/M_MailKit_AnnotationAttribute_ToString.htm" />
+    <HelpKINode Title="AnnotationEntry.ToString Method " Url="html/M_MailKit_AnnotationEntry_ToString.htm" />
     <HelpKINode Title="AuthenticationMethodProperty.ToString Method " Url="html/M_MimeKit_Cryptography_AuthenticationMethodProperty_ToString.htm" />
     <HelpKINode Title="AuthenticationMethodResult.ToString Method " Url="html/M_MimeKit_Cryptography_AuthenticationMethodResult_ToString.htm" />
     <HelpKINode Title="AuthenticationResults.ToString Method " Url="html/M_MimeKit_Cryptography_AuthenticationResults_ToString.htm" />
@@ -10317,11 +10548,9 @@
   <HelpKINode Title="UniqueId enumeration member" Url="html/T_MailKit_MessageSummaryItems.htm" />
   <HelpKINode Title="UniqueId property">
     <HelpKINode Title="IMessageSummary.UniqueId Property " Url="html/P_MailKit_IMessageSummary_UniqueId.htm" />
-    <HelpKINode Title="MessageFlagsChangedEventArgs.UniqueId Property " Url="html/P_MailKit_MessageFlagsChangedEventArgs_UniqueId.htm" />
-    <HelpKINode Title="MessageLabelsChangedEventArgs.UniqueId Property " Url="html/P_MailKit_MessageLabelsChangedEventArgs_UniqueId.htm" />
+    <HelpKINode Title="MessageEventArgs.UniqueId Property " Url="html/P_MailKit_MessageEventArgs_UniqueId.htm" />
     <HelpKINode Title="MessageSummary.UniqueId Property " Url="html/P_MailKit_MessageSummary_UniqueId.htm" />
     <HelpKINode Title="MessageThread.UniqueId Property " Url="html/P_MailKit_MessageThread_UniqueId.htm" />
-    <HelpKINode Title="ModSeqChangedEventArgs.UniqueId Property " Url="html/P_MailKit_ModSeqChangedEventArgs_UniqueId.htm" />
   </HelpKINode>
   <HelpKINode Title="UniqueId structure">
     <HelpKINode Title="UniqueId Structure" Url="html/T_MailKit_UniqueId.htm" />
@@ -10542,7 +10771,9 @@
   </HelpKINode>
   <HelpKINode Title="Valign enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
   <HelpKINode Title="Value enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
+  <HelpKINode Title="Value field" Url="html/F_MailKit_AnnotationAttribute_Value.htm" />
   <HelpKINode Title="Value property">
+    <HelpKINode Title="AnnotationSearchQuery.Value Property " Url="html/P_MailKit_Search_AnnotationSearchQuery_Value.htm" />
     <HelpKINode Title="AuthenticationMethodProperty.Value Property " Url="html/P_MimeKit_Cryptography_AuthenticationMethodProperty_Value.htm" />
     <HelpKINode Title="Header.Value Property " Url="html/P_MimeKit_Header_Value.htm" />
     <HelpKINode Title="HeaderSearchQuery.Value Property " Url="html/P_MailKit_Search_HeaderSearchQuery_Value.htm" />
