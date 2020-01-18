@@ -1,0 +1,357 @@
+﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>SmtpDataFilter Class</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="SmtpDataFilter class" /><meta name="System.Keywords" content="MailKit.Net.Smtp.SmtpDataFilter class" /><meta name="Microsoft.Help.F1" content="MailKit.Net.Smtp.SmtpDataFilter" /><meta name="Microsoft.Help.Id" content="T:MailKit.Net.Smtp.SmtpDataFilter" /><meta name="Description" content="An SMTP filter designed to format a message stream for the DATA command." /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="true" /><meta name="container" content="MailKit.Net.Smtp" /><meta name="file" content="T_MailKit_Net_Smtp_SmtpDataFilter" /><meta name="guid" content="T_MailKit_Net_Smtp_SmtpDataFilter" /><link type="text/css" rel="stylesheet" href="../styles/highlight.css" /><script type="text/javascript" src="../scripts/highlight.js"> </script><link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" /><script type="text/javascript" src="../scripts/jquery-1.11.0.min.js"></script><script type="text/javascript" src="../scripts/branding-Website.js"></script><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">MailKit Documentation<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html\Introduction.htm" title="MailKit Documentation" tocid="roottoc">MailKit Documentation</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/R_Project_Documentation.htm" title="API Reference" tocid="R_Project_Documentation">API Reference</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/N_MailKit_Net_Smtp.htm" title="MailKit.Net.Smtp" tocid="N_MailKit_Net_Smtp">MailKit.Net.Smtp</a></div><div class="toclevel1 current" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MailKit_Net_Smtp_SmtpDataFilter.htm" title="SmtpDataFilter Class" tocid="T_MailKit_Net_Smtp_SmtpDataFilter">SmtpDataFilter Class</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/M_MailKit_Net_Smtp_SmtpDataFilter__ctor.htm" title="SmtpDataFilter Constructor " tocid="M_MailKit_Net_Smtp_SmtpDataFilter__ctor">SmtpDataFilter Constructor </a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/Properties_T_MailKit_Net_Smtp_SmtpDataFilter.htm" title="SmtpDataFilter Properties" tocid="Properties_T_MailKit_Net_Smtp_SmtpDataFilter">SmtpDataFilter Properties</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/Methods_T_MailKit_Net_Smtp_SmtpDataFilter.htm" title="SmtpDataFilter Methods" tocid="Methods_T_MailKit_Net_Smtp_SmtpDataFilter">SmtpDataFilter Methods</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="logoColumn"><img alt="MimeKit" src="../icons/Help.png" /></td><td class="titleColumn"><h1>SmtpDataFilter Class</h1></td></tr></table><span class="introStyle"></span> <div class="summary">
+            An SMTP filter designed to format a message stream for the DATA command.
+            </div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID0RB')" onkeypress="SectionExpandCollapse_CheckKey('ID0RB', event)" tabindex="0"><img id="ID0RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Inheritance Hierarchy</span></div><div id="ID0RBSection" class="collapsibleSection"><a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">System<span id="LST389FA93A_0"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST389FA93A_0?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Object</a><br />  <a href="T_MimeKit_IO_Filters_MimeFilterBase.htm">MimeKit.IO.Filters<span id="LST389FA93A_1"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST389FA93A_1?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>MimeFilterBase</a><br />    <span class="selflink">MailKit.Net.Smtp<span id="LST389FA93A_2"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST389FA93A_2?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>SmtpDataFilter</span><br /></div><p> </p>
+    <strong>Namespace:</strong> 
+   <a href="N_MailKit_Net_Smtp.htm">MailKit.Net.Smtp</a><br />
+    <strong>Assembly:</strong>
+   MailKit (in MailKit.dll) Version: 2.5.0<div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Syntax</span></div><div id="ID2RBSection" class="collapsibleSection"><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EACA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EACA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID1EACA');return false;" title="Copy">Copy</a></div></div><div id="ID1EACA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">SmtpDataFilter</span> : <span class="identifier">MimeFilterBase</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EACA");</script></div><p>The <span class="selflink">SmtpDataFilter</span> type exposes the following members.</p><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID3RB')" onkeypress="SectionExpandCollapse_CheckKey('ID3RB', event)" tabindex="0"><img id="ID3RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Constructors</span></div><div id="ID3RBSection" class="collapsibleSection"><table class="members" id="constructorList"><tr><th class="iconColumn">
+								 
+							</th><th>Name</th><th>Description</th></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="M_MailKit_Net_Smtp_SmtpDataFilter__ctor.htm">SmtpDataFilter</a></td><td><div class="summary">
+            Initializes a new instance of the <span class="selflink">SmtpDataFilter</span> class.
+            </div></td></tr></table><a href="#PageHeader">Top</a></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID4RB')" onkeypress="SectionExpandCollapse_CheckKey('ID4RB', event)" tabindex="0"><img id="ID4RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Properties</span></div><div id="ID4RBSection" class="collapsibleSection"><table class="members" id="propertyList"><tr><th class="iconColumn">
+								 
+							</th><th>Name</th><th>Description</th></tr><tr data="protected;inherited;notNetfw;"><td><img src="../icons/protproperty.gif" alt="Protected property" title="Protected property" /></td><td><a href="P_MimeKit_IO_Filters_MimeFilterBase_OutputBuffer.htm">OutputBuffer</a></td><td><div class="summary">
+            Gets the output buffer.
+            </div> (Inherited from <a href="T_MimeKit_IO_Filters_MimeFilterBase.htm">MimeFilterBase</a>.)</td></tr></table><a href="#PageHeader">Top</a></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID5RB')" onkeypress="SectionExpandCollapse_CheckKey('ID5RB', event)" tabindex="0"><img id="ID5RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Methods</span></div><div id="ID5RBSection" class="collapsibleSection"><table class="members" id="methodList"><tr><th class="iconColumn">
+								 
+							</th><th>Name</th><th>Description</th></tr><tr data="protected;inherited;notNetfw;"><td><img src="../icons/protmethod.gif" alt="Protected method" title="Protected method" /></td><td><a href="M_MimeKit_IO_Filters_MimeFilterBase_EnsureOutputSize.htm">EnsureOutputSize</a></td><td><div class="summary">
+            Ensures that the output buffer is greater than or equal to the specified size.
+            </div> (Inherited from <a href="T_MimeKit_IO_Filters_MimeFilterBase.htm">MimeFilterBase</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/bsc2ak47" target="_blank">Equals</a></td><td><div class="summary">Determines whether the specified object is equal to the current object.</div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_MimeKit_IO_Filters_MimeFilterBase_Filter.htm">Filter(<span id="LST389FA93A_3"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST389FA93A_3?cpp=array&lt;");</script>Byte<span id="LST389FA93A_4"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST389FA93A_4?cpp=&gt;|cs=[]|vb=()|nu=[]|fs=[]");</script>, Int32, Int32, Int32<span id="LST389FA93A_5"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST389FA93A_5?cpp=%");</script>, Int32<span id="LST389FA93A_6"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST389FA93A_6?cpp=%");</script>)</a></td><td><div class="summary">
+            Filters the specified input.
+            </div> (Inherited from <a href="T_MimeKit_IO_Filters_MimeFilterBase.htm">MimeFilterBase</a>.)</td></tr><tr data="protected;declared;notNetfw;"><td><img src="../icons/protmethod.gif" alt="Protected method" title="Protected method" /></td><td><a href="M_MailKit_Net_Smtp_SmtpDataFilter_Filter.htm">Filter(<span id="LST389FA93A_7"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST389FA93A_7?cpp=array&lt;");</script>Byte<span id="LST389FA93A_8"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST389FA93A_8?cpp=&gt;|cs=[]|vb=()|nu=[]|fs=[]");</script>, Int32, Int32, Int32<span id="LST389FA93A_9"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST389FA93A_9?cpp=%");</script>, Int32<span id="LST389FA93A_10"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST389FA93A_10?cpp=%");</script>, Boolean)</a></td><td><div class="summary">
+            Filter the specified input.
+            </div> (Overrides <a href="M_MimeKit_IO_Filters_MimeFilterBase_Filter_1.htm">MimeFilterBase<span id="LST389FA93A_11"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST389FA93A_11?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Filter(<span id="LST389FA93A_12"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST389FA93A_12?cpp=array&lt;");</script>Byte<span id="LST389FA93A_13"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST389FA93A_13?cpp=&gt;|cs=[]|vb=()|nu=[]|fs=[]");</script>, Int32, Int32, Int32<span id="LST389FA93A_14"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST389FA93A_14?cpp=%");</script>, Int32<span id="LST389FA93A_15"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST389FA93A_15?cpp=%");</script>, Boolean)</a>.)</td></tr><tr data="protected;inherited;notNetfw;"><td><img src="../icons/protmethod.gif" alt="Protected method" title="Protected method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/4k87zsw7" target="_blank">Finalize</a></td><td><div class="summary">Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.</div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_MimeKit_IO_Filters_MimeFilterBase_Flush.htm">Flush</a></td><td><div class="summary">
+            Filters the specified input, flushing all internally buffered data to the output.
+            </div> (Inherited from <a href="T_MimeKit_IO_Filters_MimeFilterBase.htm">MimeFilterBase</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/zdee4b3y" target="_blank">GetHashCode</a></td><td><div class="summary">Serves as the default hash function.</div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/dfwy45w9" target="_blank">GetType</a></td><td><div class="summary">Gets the <a href="http://msdn2.microsoft.com/en-us/library/42892f65" target="_blank">Type</a> of the current instance.</div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr><tr data="protected;inherited;notNetfw;"><td><img src="../icons/protmethod.gif" alt="Protected method" title="Protected method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/57ctke0a" target="_blank">MemberwiseClone</a></td><td><div class="summary">Creates a shallow copy of the current <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.</div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_MailKit_Net_Smtp_SmtpDataFilter_Reset.htm">Reset</a></td><td><div class="summary">
+            Reset the filter.
+            </div> (Overrides <a href="M_MimeKit_IO_Filters_MimeFilterBase_Reset.htm">MimeFilterBase<span id="LST389FA93A_16"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST389FA93A_16?cs=.|vb=.|cpp=::|nu=.|fs=.");</script>Reset<span id="LST389FA93A_17"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST389FA93A_17?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a>.)</td></tr><tr data="protected;inherited;notNetfw;"><td><img src="../icons/protmethod.gif" alt="Protected method" title="Protected method" /></td><td><a href="M_MimeKit_IO_Filters_MimeFilterBase_SaveRemainingInput.htm">SaveRemainingInput</a></td><td><div class="summary">
+            Saves the remaining input for the next round of processing.
+            </div> (Inherited from <a href="T_MimeKit_IO_Filters_MimeFilterBase.htm">MimeFilterBase</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/7bxwbwt2" target="_blank">ToString</a></td><td><div class="summary">Returns a string that represents the current object.</div> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr></table><a href="#PageHeader">Top</a></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID6RB')" onkeypress="SectionExpandCollapse_CheckKey('ID6RB', event)" tabindex="0"><img id="ID6RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Remarks</span></div><div id="ID6RBSection" class="collapsibleSection">
+            A special stream filter that escapes lines beginning with a '.' as needed when
+            sending a message via the SMTP protocol or when saving a message to an IIS
+            message pickup directory.
+            </div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID7RB')" onkeypress="SectionExpandCollapse_CheckKey('ID7RB', event)" tabindex="0"><img id="ID7RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Examples</span></div><div id="ID7RBSection" class="collapsibleSection"><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAABA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAABA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID1EAAABA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAABA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">void</span> SaveToPickupDirectory (MimeMessage message, <span class="highlight-keyword">string</span> pickupDirectory)
+{
+    <span class="highlight-keyword">do</span> {
+        <span class="highlight-comment">// Generate a random file name to save the message to.</span>
+        <span class="highlight-keyword">var</span> path = Path.Combine (pickupDirectory, Guid.NewGuid ().ToString () + <span class="highlight-literal">".eml"</span>);
+        Stream stream;
+
+        <span class="highlight-keyword">try</span> {
+            <span class="highlight-comment">// Attempt to create the new file.</span>
+            stream = File.Open (path, FileMode.CreateNew);
+        } <span class="highlight-keyword">catch</span> (IOException) {
+            <span class="highlight-comment">// If the file already exists, try again with a new Guid.</span>
+            <span class="highlight-keyword">if</span> (File.Exists (path))
+                <span class="highlight-keyword">continue</span>;
+
+            <span class="highlight-comment">// Otherwise, fail immediately since it probably means that there is</span>
+            <span class="highlight-comment">// no graceful way to recover from this error.</span>
+            <span class="highlight-keyword">throw</span>;
+        }
+
+        <span class="highlight-keyword">try</span> {
+            <span class="highlight-keyword">using</span> (stream) {
+                <span class="highlight-comment">// IIS pickup directories expect the message to be "byte-stuffed"</span>
+                <span class="highlight-comment">// which means that lines beginning with "." need to be escaped</span>
+                <span class="highlight-comment">// by adding an extra "." to the beginning of the line.</span>
+                <span class="highlight-comment">// </span>
+                <span class="highlight-comment">// Use an SmtpDataFilter "byte-stuff" the message as it is written</span>
+                <span class="highlight-comment">// to the file stream. This is the same process that an SmtpClient</span>
+                <span class="highlight-comment">// would use when sending the message in a `DATA` command.</span>
+                <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> filtered = <span class="highlight-keyword">new</span> FilteredStream (stream)) {
+                    filtered.Add (<span class="highlight-keyword">new</span> SmtpDataFilter ());
+
+                    <span class="highlight-comment">// Make sure to write the message in DOS (&lt;CR&gt;&lt;LF&gt;) format.</span>
+                    <span class="highlight-keyword">var</span> options = FormatOptions.Default.Clone ();
+                    options.NewLineFormat = NewLineFormat.Dos;
+
+                    message.WriteTo (options, filtered);
+                    filtered.Flush ();
+                    <span class="highlight-keyword">return</span>;
+                }
+            }
+        } <span class="highlight-keyword">catch</span> {
+            <span class="highlight-comment">// An exception here probably means that the disk is full.</span>
+            <span class="highlight-comment">// </span>
+            <span class="highlight-comment">// Delete the file that was created above so that incomplete files are not</span>
+            <span class="highlight-comment">// left behind for IIS to send accidentally.</span>
+            File.Delete (path);
+            <span class="highlight-keyword">throw</span>;
+        }
+    } <span class="highlight-keyword">while</span> (<span class="highlight-keyword">true</span>);
+}
+<span class="highlight-preprocessor">#endif</span>
+
+<span class="highlight-preprocessor">#region</span> ProtocolLogger
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">void</span> SendMessage (MimeMessage message)
+{
+    <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> client = <span class="highlight-keyword">new</span> SmtpClient (<span class="highlight-keyword">new</span> ProtocolLogger (<span class="highlight-literal">"smtp.log"</span>))) {
+        client.Connect (<span class="highlight-literal">"smtp.gmail.com"</span>, <span class="highlight-number">465</span>, SecureSocketOptions.SslOnConnect);
+
+        client.Authenticate (<span class="highlight-literal">"username"</span>, <span class="highlight-literal">"password"</span>);
+
+        client.Send (message);
+
+        client.Disconnect (<span class="highlight-keyword">true</span>);
+    }
+
+    <span class="highlight-comment">// Example log:</span>
+    <span class="highlight-comment">// </span>
+    <span class="highlight-comment">// Connected to smtps://smtp.gmail.com:465/</span>
+    <span class="highlight-comment">// S: 220 smtp.gmail.com ESMTP w81sm22057166qkg.43 - gsmtp</span>
+    <span class="highlight-comment">// C: EHLO [192.168.1.220]</span>
+    <span class="highlight-comment">// S: 250-smtp.gmail.com at your service, [192.168.1.220]</span>
+    <span class="highlight-comment">// S: 250-SIZE 35882577</span>
+    <span class="highlight-comment">// S: 250-8BITMIME</span>
+    <span class="highlight-comment">// S: 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH</span>
+    <span class="highlight-comment">// S: 250-ENHANCEDSTATUSCODES</span>
+    <span class="highlight-comment">// S: 250-PIPELINING</span>
+    <span class="highlight-comment">// S: 250-CHUNKING</span>
+    <span class="highlight-comment">// S: 250 SMTPUTF8</span>
+    <span class="highlight-comment">// C: AUTH PLAIN AHVzZXJuYW1lAHBhc3N3b3Jk</span>
+    <span class="highlight-comment">// S: 235 2.7.0 Accepted</span>
+    <span class="highlight-comment">// C: MAIL FROM:&lt;from.addr@gmail.com&gt;</span>
+    <span class="highlight-comment">// C: RCPT TO:&lt;to.addr@gmail.com&gt;</span>
+    <span class="highlight-comment">// S: 250 2.1.0 OK w81sm22057166qkg.43 - gsmtp</span>
+    <span class="highlight-comment">// S: 250 2.1.5 OK w81sm22057166qkg.43 - gsmtp</span>
+    <span class="highlight-comment">// C: DATA</span>
+    <span class="highlight-comment">// S: 354  Go ahead w81sm22057166qkg.43 - gsmtp</span>
+    <span class="highlight-comment">// C: From: "LastName, FirstName" &lt;from.addr@gmail.com&gt;</span>
+    <span class="highlight-comment">// C: Date: Thu, 27 Dec 2018 10:55:18 -0500</span>
+    <span class="highlight-comment">// C: Subject: This is a test message</span>
+    <span class="highlight-comment">// C: Message-Id: &lt;C7GVXWE3C6U4.7ZQ0K9OUHTDP1@MADUNLA-SP4.northamerica.corp.microsoft.com&gt;</span>
+    <span class="highlight-comment">// C: To: "LastName, FirstName" &lt;to.addr@gmail.com&gt;</span>
+    <span class="highlight-comment">// C: MIME-Version: 1.0</span>
+    <span class="highlight-comment">// C: Content-Type: multipart/alternative; boundary="=-CToJI+AD2gS6z+fFlzDvhg=="</span>
+    <span class="highlight-comment">// C: </span>
+    <span class="highlight-comment">// C: --=-CToJI+AD2gS6z+fFlzDvhg==</span>
+    <span class="highlight-comment">// C: Content-Type: text/plain; charset=utf-8</span>
+    <span class="highlight-comment">// C: Content-Transfer-Encoding: quoted-printable</span>
+    <span class="highlight-comment">// C: </span>
+    <span class="highlight-comment">// C: This is the text/plain message body.</span>
+    <span class="highlight-comment">// C: --=-CToJI+AD2gS6z+fFlzDvhg==</span>
+    <span class="highlight-comment">// C: Content-Type: text/html; charset=utf-8</span>
+    <span class="highlight-comment">// C: Content-Transfer-Encoding: quoted-printable</span>
+    <span class="highlight-comment">// C: </span>
+    <span class="highlight-comment">// C: &lt;html&gt;&lt;body&gt;&lt;center&gt;This is the &lt;b&gt;text/html&lt;/b&gt; message body.&lt;/center&gt;&lt;/body&gt;&lt;/html&gt;</span>
+    <span class="highlight-comment">// C: --=-CToJI+AD2gS6z+fFlzDvhg==--</span>
+    <span class="highlight-comment">// C: </span>
+    <span class="highlight-comment">// C: .</span>
+    <span class="highlight-comment">// S: 250 2.0.0 OK 1545926120 w81sm22057166qkg.43 - gsmtp</span>
+    <span class="highlight-comment">// C: QUIT</span>
+    <span class="highlight-comment">// S: 221 2.0.0 closing connection w81sm22057166qkg.43 - gsmtp</span>
+}
+<span class="highlight-preprocessor">#endregion</span>
+
+<span class="highlight-preprocessor">#region</span> Capabilities
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">void</span> PrintCapabilities ()
+{
+    <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> client = <span class="highlight-keyword">new</span> SmtpClient ()) {
+        client.Connect (<span class="highlight-literal">"smtp.gmail.com"</span>, <span class="highlight-number">465</span>, SecureSocketOptions.SslOnConnect);
+
+        <span class="highlight-keyword">if</span> (client.Capabilities.HasFlag (SmtpCapabilities.Authentication)) {
+            <span class="highlight-keyword">var</span> mechanisms = <span class="highlight-keyword">string</span>.Join (<span class="highlight-literal">", "</span>, client.AuthenticationMechanisms);
+            Console.WriteLine (<span class="highlight-literal">"The SMTP server supports the following SASL mechanisms: {0}"</span>, mechanisms);
+            client.Authenticate (<span class="highlight-literal">"username"</span>, <span class="highlight-literal">"password"</span>);
+        }
+
+        <span class="highlight-keyword">if</span> (client.Capabilities.HasFlag (SmtpCapabilities.Size))
+            Console.WriteLine (<span class="highlight-literal">"The SMTP server has a size restriction on messages: {0}."</span>, client.MaxSize);
+
+        <span class="highlight-keyword">if</span> (client.Capabilities.HasFlag (SmtpCapabilities.Dsn))
+            Console.WriteLine (<span class="highlight-literal">"The SMTP server supports delivery-status notifications."</span>);
+
+        <span class="highlight-keyword">if</span> (client.Capabilities.HasFlag (SmtpCapabilities.EightBitMime))
+            Console.WriteLine (<span class="highlight-literal">"The SMTP server supports Content-Transfer-Encoding: 8bit"</span>);
+
+        <span class="highlight-keyword">if</span> (client.Capabilities.HasFlag (SmtpCapabilities.BinaryMime))
+            Console.WriteLine (<span class="highlight-literal">"The SMTP server supports Content-Transfer-Encoding: binary"</span>);
+
+        <span class="highlight-keyword">if</span> (client.Capabilities.HasFlag (SmtpCapabilities.UTF8))
+            Console.WriteLine (<span class="highlight-literal">"The SMTP server supports UTF-8 in message headers."</span>);
+
+        client.Disconnect (<span class="highlight-keyword">true</span>);
+    }
+}
+<span class="highlight-preprocessor">#endregion</span>
+
+<span class="highlight-preprocessor">#region</span> ExceptionHandling
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">void</span> SendMessage (MimeMessage message)
+{
+    <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> client = <span class="highlight-keyword">new</span> SmtpClient ()) {
+        <span class="highlight-keyword">try</span> {
+            client.Connect (<span class="highlight-literal">"smtp.gmail.com"</span>, <span class="highlight-number">465</span>, SecureSocketOptions.SslOnConnect);
+        } <span class="highlight-keyword">catch</span> (SmtpCommandException ex) {
+            Console.WriteLine (<span class="highlight-literal">"Error trying to connect: {0}"</span>, ex.Message);
+            Console.WriteLine (<span class="highlight-literal">"\tStatusCode: {0}"</span>, ex.StatusCode);
+            <span class="highlight-keyword">return</span>;
+        } <span class="highlight-keyword">catch</span> (SmtpProtocolException ex) {
+            Console.WriteLine (<span class="highlight-literal">"Protocol error while trying to connect: {0}"</span>, ex.Message);
+            <span class="highlight-keyword">return</span>;
+        }
+
+        <span class="highlight-comment">// Note: Not all SMTP servers support authentication, but GMail does.</span>
+        <span class="highlight-keyword">if</span> (client.Capabilities.HasFlag (SmtpCapabilities.Authentication)) {
+            <span class="highlight-keyword">try</span> {
+                client.Authenticate (<span class="highlight-literal">"username"</span>, <span class="highlight-literal">"password"</span>);
+            } <span class="highlight-keyword">catch</span> (AuthenticationException ex) {
+                Console.WriteLine (<span class="highlight-literal">"Invalid user name or password."</span>);
+                <span class="highlight-keyword">return</span>;
+            } <span class="highlight-keyword">catch</span> (SmtpCommandException ex) {
+                Console.WriteLine (<span class="highlight-literal">"Error trying to authenticate: {0}"</span>, ex.Message);
+                Console.WriteLine (<span class="highlight-literal">"\tStatusCode: {0}"</span>, ex.StatusCode);
+                <span class="highlight-keyword">return</span>;
+            } <span class="highlight-keyword">catch</span> (SmtpProtocolException ex) {
+                Console.WriteLine (<span class="highlight-literal">"Protocol error while trying to authenticate: {0}"</span>, ex.Message);
+                <span class="highlight-keyword">return</span>;
+            }
+        }
+
+        <span class="highlight-keyword">try</span> {
+            client.Send (message);
+        } <span class="highlight-keyword">catch</span> (SmtpCommandException ex) {
+            Console.WriteLine (<span class="highlight-literal">"Error sending message: {0}"</span>, ex.Message);
+            Console.WriteLine (<span class="highlight-literal">"\tStatusCode: {0}"</span>, ex.StatusCode);
+
+            <span class="highlight-keyword">switch</span> (ex.ErrorCode) {
+            <span class="highlight-keyword">case</span> SmtpErrorCode.RecipientNotAccepted:
+                Console.WriteLine (<span class="highlight-literal">"\tRecipient not accepted: {0}"</span>, ex.Mailbox);
+                <span class="highlight-keyword">break</span>;
+            <span class="highlight-keyword">case</span> SmtpErrorCode.SenderNotAccepted:
+                Console.WriteLine (<span class="highlight-literal">"\tSender not accepted: {0}"</span>, ex.Mailbox);
+                <span class="highlight-keyword">break</span>;
+            <span class="highlight-keyword">case</span> SmtpErrorCode.MessageNotAccepted:
+                Console.WriteLine (<span class="highlight-literal">"\tMessage not accepted."</span>);
+                <span class="highlight-keyword">break</span>;
+            }
+        } <span class="highlight-keyword">catch</span> (SmtpProtocolException ex) {
+            Console.WriteLine (<span class="highlight-literal">"Protocol error while sending message: {0}"</span>, ex.Message);
+        }
+
+        client.Disconnect (<span class="highlight-keyword">true</span>);
+    }
+}
+<span class="highlight-preprocessor">#endregion</span>
+
+<span class="highlight-preprocessor">#region</span> SendMessage
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">void</span> SendMessage (MimeMessage message)
+{
+    <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> client = <span class="highlight-keyword">new</span> SmtpClient ()) {
+        client.Connect (<span class="highlight-literal">"smtp.gmail.com"</span>, <span class="highlight-number">465</span>, SecureSocketOptions.SslOnConnect);
+
+        client.Authenticate (<span class="highlight-literal">"username"</span>, <span class="highlight-literal">"password"</span>);
+
+        client.Send (message);
+
+        client.Disconnect (<span class="highlight-keyword">true</span>);
+    }
+}
+<span class="highlight-preprocessor">#endregion</span>
+
+<span class="highlight-preprocessor">#region</span> SendMessageUri
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">void</span> SendMessage (MimeMessage message)
+{
+    <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> client = <span class="highlight-keyword">new</span> SmtpClient ()) {
+        <span class="highlight-comment">// Note: since GMail requires SSL at connection time, use the "smtps"</span>
+        <span class="highlight-comment">// protocol instead of "smtp".</span>
+        <span class="highlight-keyword">var</span> uri = <span class="highlight-keyword">new</span> Uri (<span class="highlight-literal">"smtps://smtp.gmail.com:465"</span>);
+
+        client.Connect (uri);
+
+        client.Authenticate (<span class="highlight-literal">"username"</span>, <span class="highlight-literal">"password"</span>);
+
+        client.Send (message);
+
+        client.Disconnect (<span class="highlight-keyword">true</span>);
+    }
+}
+<span class="highlight-preprocessor">#endregion</span>
+
+<span class="highlight-preprocessor">#region</span> SendMessageWithOptions
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">void</span> SendMessageWithOptions (MimeMessage message)
+{
+    <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> client = <span class="highlight-keyword">new</span> SmtpClient ()) {
+        client.Connect (<span class="highlight-literal">"smtp.gmail.com"</span>, <span class="highlight-number">465</span>, SecureSocketOptions.SslOnConnect);
+
+        client.Authenticate (<span class="highlight-literal">"username"</span>, <span class="highlight-literal">"password"</span>);
+
+        <span class="highlight-keyword">var</span> options = FormatOptions.Default.Clone ();
+
+        <span class="highlight-keyword">if</span> (client.Capabilities.HasFlag (SmtpCapabilities.UTF8))
+            options.International = <span class="highlight-keyword">true</span>;
+
+        client.Send (options, message);
+
+        client.Disconnect (<span class="highlight-keyword">true</span>);
+    }
+}
+<span class="highlight-preprocessor">#endregion</span>
+
+<span class="highlight-preprocessor">#region</span> SendMessages
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">void</span> SendMessages (IList&lt;MimeMessage&gt; messages)
+{
+    <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> client = <span class="highlight-keyword">new</span> SmtpClient ()) {
+        client.Connect (<span class="highlight-literal">"smtp.gmail.com"</span>, <span class="highlight-number">465</span>, SecureSocketOptions.SslOnConnect);
+
+        client.Authenticate (<span class="highlight-literal">"username"</span>, <span class="highlight-literal">"password"</span>);
+
+        <span class="highlight-keyword">foreach</span> (<span class="highlight-keyword">var</span> message <span class="highlight-keyword">in</span> messages) {
+            client.Send (message);
+        }
+
+        client.Disconnect (<span class="highlight-keyword">true</span>);
+    }
+}
+<span class="highlight-preprocessor">#endregion</span>
+
+<span class="highlight-preprocessor">#region</span> DeliveryStatusNotification
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> DSNSmtpClient : SmtpClient
+{
+    <span class="highlight-keyword">public</span> DSNSmtpClient ()
+    {
+    }
+
+    <span class="highlight-comment">/// &lt;summary&gt;</span>
+    <span class="highlight-comment">/// Get the envelope identifier to be used with delivery status notifications.</span>
+    <span class="highlight-comment">/// &lt;/summary&gt;</span>
+    <span class="highlight-comment">/// &lt;remarks&gt;</span>
+    <span class="highlight-comment">/// &lt;para&gt;The envelope identifier, if non-empty, is useful in determining which message</span>
+    <span class="highlight-comment">/// a delivery status notification was issued for.&lt;/para&gt;</span>
+    <span class="highlight-comment">/// &lt;para&gt;The envelope identifier should be unique and may be up to 100 characters in</span>
+    <span class="highlight-comment">/// length, but must consist only of printable ASCII characters and no white space.&lt;/para&gt;</span>
+    <span class="highlight-comment">/// &lt;para&gt;For more information, see rfc3461, section 4.4.&lt;/para&gt;</span>
+    <span class="highlight-comment">/// &lt;/remarks&gt;</span>
+    <span class="highlight-comment">/// &lt;returns&gt;The envelope identifier.&lt;/returns&gt;</span>
+    <span class="highlight-comment">/// &lt;param name="message"&gt;The message.&lt;/param&gt;</span>
+    <span class="highlight-keyword">protected</span> <span class="highlight-keyword">override</span> <span class="highlight-keyword">string</span> GetEnvelopeId (MimeMessage message)
+    {
+        <span class="highlight-comment">// Since you will want to be able to map whatever identifier you return here to the</span>
+        <span class="highlight-comment">// message, the obvious identifier to use is probably the Message-Id value.</span>
+        <span class="highlight-keyword">return</span> message.MessageId;
+    }
+
+    <span class="highlight-comment">/// &lt;summary&gt;</span>
+    <span class="highlight-comment">/// Get the types of delivery status notification desired for the specified recipient mailbox.</span>
+    <span class="highlight-comment">/// &lt;/summary&gt;</span>
+    <span class="highlight-comment">/// &lt;remarks&gt;</span>
+    <span class="highlight-comment">/// Gets the types of delivery status notification desired for the specified recipient mailbox.</span>
+    <span class="highlight-comment">/// &lt;/remarks&gt;</span>
+    <span class="highlight-comment">/// &lt;returns&gt;The desired delivery status notification type.&lt;/returns&gt;</span>
+    <span class="highlight-comment">/// &lt;param name="message"&gt;The message being sent.&lt;/param&gt;</span>
+    <span class="highlight-comment">/// &lt;param name="mailbox"&gt;The mailbox.&lt;/param&gt;</span>
+    <span class="highlight-keyword">protected</span> <span class="highlight-keyword">override</span> DeliveryStatusNotification? GetDeliveryStatusNotifications (MimeMessage message, MailboxAddress mailbox)
+    {
+        <span class="highlight-comment">// In this example, we only want to be notified of failures to deliver to a mailbox.</span>
+        <span class="highlight-comment">// If you also want to be notified of delays or successful deliveries, simply bitwise-or</span>
+        <span class="highlight-comment">// whatever combination of flags you want to be notified about.</span>
+        <span class="highlight-keyword">return</span> DeliveryStatusNotification.Failure;
+    }
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAABA");</script></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID8RB')" onkeypress="SectionExpandCollapse_CheckKey('ID8RB', event)" tabindex="0"><img id="ID8RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID8RBSection" class="collapsibleSection"><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="N_MailKit_Net_Smtp.htm">MailKit.Net.Smtp Namespace</a></div></div></div></div><div id="pageFooter" class="pageFooter"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-63841238-1', 'auto'); ga('send', 'pageview');</script><p><a href="https://github.com/jstedfast" target="_blank">Copyright © 2013-2020 Jeffrey Stedfast</a></p><div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:jestedfa%40microsoft.com?Subject=MailKit Documentation">Jeffrey Stedfast</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        var HT_mailLinkText = HT_mailLink.innerHTML;
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        HT_mailLink.innerHTML = HT_mailLinkText;
+        </script> </div></body></html>
