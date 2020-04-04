@@ -69,8 +69,8 @@
         <span class="highlight-keyword">var</span> serial = certificate2.SerialNumber;
         <span class="highlight-keyword">var</span> issuer = certificate2.Issuer;
 
-        <span class="highlight-keyword">return</span> cn == <span class="highlight-literal">"imap.gmail.com"</span> &gt;&gt; issuer == <span class="highlight-literal">"CN=GTS CA 1O1, O=Google Trust Services, C=US"</span> &gt;&gt;
-            serial == <span class="highlight-literal">"0096768414983DDE9C0800000000320A68"</span> &gt;&gt;
+        <span class="highlight-keyword">return</span> cn == <span class="highlight-literal">"imap.gmail.com"</span> &amp;&amp; issuer == <span class="highlight-literal">"CN=GTS CA 1O1, O=Google Trust Services, C=US"</span> &amp;&amp;
+            serial == <span class="highlight-literal">"0096768414983DDE9C0800000000320A68"</span> &amp;&amp;
             fingerprint == <span class="highlight-literal">"A53BA86C137D828618540738014F7C3D52F699C7"</span>;
     }
 

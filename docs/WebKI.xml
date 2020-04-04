@@ -758,8 +758,8 @@
   <HelpKINode Title="Autocrypt enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
   <HelpKINode Title="AutocryptGossip enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
   <HelpKINode Title="AutocryptSetupMessage enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
-  <HelpKINode Title="AutoForwarded enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="Autoforwarded enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
+  <HelpKINode Title="AutoForwarded enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="AutoForwarded field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_AutoForwarded.htm" />
   <HelpKINode Title="AutoForwardingComment enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="AutoForwardingCommentA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_AutoForwardingCommentA.htm" />
@@ -767,8 +767,8 @@
   <HelpKINode Title="AutoKeyRetrieve property" Url="html/P_MimeKit_Cryptography_OpenPgpContext_AutoKeyRetrieve.htm" />
   <HelpKINode Title="AutoResponseSuppress enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="AutoResponseSuppress field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_AutoResponseSuppress.htm" />
-  <HelpKINode Title="Autosubmitted enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
   <HelpKINode Title="AutoSubmitted enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
+  <HelpKINode Title="Autosubmitted enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
   <HelpKINode Title="Axis enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
   <HelpKINode Title="B enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
   <HelpKINode Title="Background enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
@@ -9510,12 +9510,12 @@
   <HelpKINode Title="StartDate enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="StartDate field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_StartDate.htm" />
   <HelpKINode Title="StartMailInput enumeration member" Url="html/T_MailKit_Net_Smtp_SmtpStatusCode.htm" />
-  <HelpKINode Title="StartTls enumeration member" Url="html/T_MailKit_Security_SecureSocketOptions.htm" />
   <HelpKINode Title="StartTLS enumeration member">
-    <HelpKINode Title="ImapCapabilities Enumeration" Url="html/T_MailKit_Net_Imap_ImapCapabilities.htm" />
     <HelpKINode Title="Pop3Capabilities Enumeration" Url="html/T_MailKit_Net_Pop3_Pop3Capabilities.htm" />
     <HelpKINode Title="SmtpCapabilities Enumeration" Url="html/T_MailKit_Net_Smtp_SmtpCapabilities.htm" />
+    <HelpKINode Title="ImapCapabilities Enumeration" Url="html/T_MailKit_Net_Imap_ImapCapabilities.htm" />
   </HelpKINode>
+  <HelpKINode Title="StartTls enumeration member" Url="html/T_MailKit_Security_SecureSocketOptions.htm" />
   <HelpKINode Title="StartTlsWhenAvailable enumeration member" Url="html/T_MailKit_Security_SecureSocketOptions.htm" />
   <HelpKINode Title="StateOrProvince enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="StateOrProvinceA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_StateOrProvinceA.htm" />
