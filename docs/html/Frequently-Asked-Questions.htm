@@ -20,7 +20,7 @@
               (which either do not support any SSL/TLS encryption at all or only via the <span class="literal">STARTTLS</span>
               command extension) and the SSL ports which require SSL/TLS encryption immediately upon a
               successful connection to the remote host.
-            </p><div class="tableSection"><table><tr><th>Protocol</th><th>Standard Port</th><th>SSL Port</th></tr><tr><td>SMTP</td><td>25 or 587</td><td>465</td></tr><tr><td>POP3</td><td>110</td><td>995</td></tr><tr><td>IMAP</td><td>143</td><td>993</td></tr></table></div><p>
+            </p><div class="tableSection"><table><tr><th><p>Protocol</p></th><th><p>Standard Port</p></th><th><p>SSL Port</p></th></tr><tr><td><p>SMTP</p></td><td><p>25 or 587</p></td><td><p>465</p></td></tr><tr><td><p>POP3</p></td><td><p>110</p></td><td><p>995</p></td></tr><tr><td><p>IMAP</p></td><td><p>143</p></td><td><p>993</p></td></tr></table></div><p>
               It is important to use the correct <a href="T_MailKit_Security_SecureSocketOptions.htm">SecureSocketOptions</a> for
               the port that you are connecting to.
             </p><p>
@@ -70,8 +70,8 @@
         <span class="highlight-keyword">var</span> issuer = certificate2.Issuer;
 
         <span class="highlight-keyword">return</span> cn == <span class="highlight-literal">"imap.gmail.com"</span> &amp;&amp; issuer == <span class="highlight-literal">"CN=GTS CA 1O1, O=Google Trust Services, C=US"</span> &amp;&amp;
-            serial == <span class="highlight-literal">"0096768414983DDE9C0800000000320A68"</span> &amp;&amp;
-            fingerprint == <span class="highlight-literal">"A53BA86C137D828618540738014F7C3D52F699C7"</span>;
+            serial == <span class="highlight-literal">"00BABE95B167C9ECAF08000000006065B6"</span> &amp;&amp;
+            fingerprint == <span class="highlight-literal">"E79A011EF55EEC72D2B7E391D193761372796836"</span>;
     }
 
     <span class="highlight-keyword">return</span> <span class="highlight-keyword">false</span>;
@@ -108,11 +108,11 @@
               MailKit attempts to keep up with the latest security recommendations and so is continuously removing older SSL and TLS
               protocols that are no longer considered secure from the default configuration. This often means that MailKit's SMTP,
               POP3 and IMAP clients will fail to connect to servers that are still using older SSL and TLS protocols. Currently,
-              the SSL and TLS protocols that are not supported by default are: SSL v2.0, SSL v3.0, and TLS v1.0.
+              the SSL and TLS protocols that are not supported by default are: SSL v2.0, SSL v3.0, TLS v1.0 and TLS v1.1.
             </p><p>
               You can override MailKit's default set of supported
               <a href="https://docs.microsoft.com/en-us/dotnet/api/system.security.authentication.sslprotocols?view=netframework-4.8" target="_blank">SSL and TLS protocols</a>
-              by setting the value of the P:MailKit.MailService.SslProtocols
+              by setting the value of the <a href="P_MailKit_MailService_SslProtocols.htm">SslProtocols</a>
               property on your SMTP, POP3 or IMAP client.
             </p><p>For example:</p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID1EAAAAASAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID1EAAAAASAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID1EAAAAASAAA');return false;" title="Copy">Copy</a></div></div><div id="ID1EAAAAASAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> client = <span class="highlight-keyword">new</span> SmtpClient ()) {
     <span class="highlight-comment">// Allow SSLv3.0 and all versions of TLS</span>
@@ -146,10 +146,10 @@
           <strong>Forwarding and POP/IMAP</strong> tab of your
           <strong>GMail Settings</strong> page and make the following changes in the
           <strong>POP3 Download</strong> section:
-        </p><ul class="noBullet"><li><p><strong>Enable POP for all mail (even if it has already been downloaded)</strong>.
+        </p><ol><li><p><strong>Enable POP for all mail (even if it has already been downloaded)</strong>.
             </p></li><li><p>
               When messages are accessed with POP, <strong>keep GMail's copy in the Inbox</strong>.
-            </p></li></ul></div><div class="collapsibleAreaRegion" id="GMailAccess"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID5RB')" onkeypress="SectionExpandCollapse_CheckKey('ID5RB', event)" tabindex="0"><img id="ID5RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />How do I access GMail using MailKit?</span></div><div id="ID5RBSection" class="collapsibleSection"><p>
+            </p></li></ol></div><div class="collapsibleAreaRegion" id="GMailAccess"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID5RB')" onkeypress="SectionExpandCollapse_CheckKey('ID5RB', event)" tabindex="0"><img id="ID5RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />How do I access GMail using MailKit?</span></div><div id="ID5RBSection" class="collapsibleSection"><p>
           The first thing that you will need to do is to configure your GMail account to
           <a href="https://www.google.com/settings/security/lesssecureapps" target="_blank">enable less secure apps</a>, or you'll need to use OAuth 2.0 authentication (which is a bit more complex).
         </p><p>
@@ -750,7 +750,7 @@ Y3J5cHRlZApibHVyYi4gTW1ta2F5PyBUaGFua3MuCg==
           To deal with these kinds of messages, MimeKit's
           <a href="T_MimeKit_Cryptography_OpenPgpContext.htm">OpenPgpContext</a>
           includes a
-          <a href="M_MimeKit_Cryptography_OpenPgpContext_DecryptTo.htm">DecryptTo(Stream, Stream, CancellationToken)</a>
+          <a href="M_MimeKit_Cryptography_OpenPgpContextBase_DecryptTo.htm">DecryptTo(Stream, Stream, CancellationToken)</a>
           method which can be used to get the raw decrypted stream.
         </p><p>
           The method variant that has a
@@ -1189,7 +1189,7 @@ Y3J5cHRlZApibHVyYi4gTW1ta2F5PyBUaGFua3MuCg==
         <span class="highlight-comment">// parse the MIME entity with persistent = true, telling the parser not to load the content into memory</span>
         <span class="highlight-keyword">return</span> MimeEntity.Load (stream, persistent: <span class="highlight-keyword">true</span>);
     }
-}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAABAAA");</script></div></div></div><div id="pageFooter" class="pageFooter"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-63841238-1', 'auto'); ga('send', 'pageview');</script><p><a href="https://github.com/jstedfast" target="_blank">Copyright © 2013-2020 Jeffrey Stedfast</a></p><div class="feedbackLink">Send comments on this topic to
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID1EAAABAAA");</script></div></div></div><div id="pageFooter" class="pageFooter"><p><a href="https://github.com/jstedfast" target="_blank">Copyright © 2013-2020 Jeffrey Stedfast</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:jestedfa%40microsoft.com?Subject=MailKit%20Documentation">Jeffrey Stedfast</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
