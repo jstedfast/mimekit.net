@@ -160,6 +160,7 @@
     <HelpKINode Title="ImapFolder.AddAccessRightsAsync Method " Url="html/M_MailKit_Net_Imap_ImapFolder_AddAccessRightsAsync.htm" />
     <HelpKINode Title="MailFolder.AddAccessRightsAsync Method " Url="html/M_MailKit_MailFolder_AddAccessRightsAsync.htm" />
   </HelpKINode>
+  <HelpKINode Title="AddAsync method" Url="html/Overload_MimeKit_AttachmentCollection_AddAsync.htm" />
   <HelpKINode Title="Added enumeration member" Url="html/T_MimeKit_HeaderListChangedAction.htm" />
   <HelpKINode Title="AddFlags method">
     <HelpKINode Title="IMailFolder.AddFlags Method " Url="html/Overload_MailKit_IMailFolder_AddFlags.htm" />
@@ -258,6 +259,8 @@
   <HelpKINode Title="AlternateRecipientAllowed enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="AlternateRecipientAllowed field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_AlternateRecipientAllowed.htm" />
   <HelpKINode Title="AltSubject field" Url="html/F_MailKit_AnnotationEntry_AltSubject.htm" />
+  <HelpKINode Title="AlwaysQuote property" Url="html/P_MimeKit_Parameter_AlwaysQuote.htm" />
+  <HelpKINode Title="AlwaysQuoteParameterValues property" Url="html/P_MimeKit_FormatOptions_AlwaysQuoteParameterValues.htm" />
   <HelpKINode Title="And enumeration member" Url="html/T_MailKit_Search_SearchTerm.htm" />
   <HelpKINode Title="And method" Url="html/Overload_MailKit_Search_SearchQuery_And.htm" />
   <HelpKINode Title="Annotate enumeration member" Url="html/T_MailKit_Net_Imap_ImapCapabilities.htm" />
@@ -585,6 +588,7 @@
     <HelpKINode Title="properties" Url="html/Properties_T_MimeKit_AttachmentCollection.htm" />
   </HelpKINode>
   <HelpKINode Title="AttachmentCollection.Add method" Url="html/Overload_MimeKit_AttachmentCollection_Add.htm" />
+  <HelpKINode Title="AttachmentCollection.AddAsync method" Url="html/Overload_MimeKit_AttachmentCollection_AddAsync.htm" />
   <HelpKINode Title="AttachmentCollection.AttachmentCollection constructor" Url="html/Overload_MimeKit_AttachmentCollection__ctor.htm" />
   <HelpKINode Title="AttachmentCollection.Clear method" Url="html/M_MimeKit_AttachmentCollection_Clear.htm" />
   <HelpKINode Title="AttachmentCollection.Contains method" Url="html/M_MimeKit_AttachmentCollection_Contains.htm" />
@@ -774,8 +778,8 @@
   <HelpKINode Title="AutoKeyRetrieve property" Url="html/P_MimeKit_Cryptography_OpenPgpContextBase_AutoKeyRetrieve.htm" />
   <HelpKINode Title="AutoResponseSuppress enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="AutoResponseSuppress field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_AutoResponseSuppress.htm" />
-  <HelpKINode Title="AutoSubmitted enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
   <HelpKINode Title="Autosubmitted enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
+  <HelpKINode Title="AutoSubmitted enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
   <HelpKINode Title="Axis enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
   <HelpKINode Title="B enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
   <HelpKINode Title="Background enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
@@ -3096,6 +3100,7 @@
     <HelpKINode Title="properties" Url="html/Properties_T_MimeKit_FormatOptions.htm" />
   </HelpKINode>
   <HelpKINode Title="FormatOptions.AllowMixedHeaderCharsets property" Url="html/P_MimeKit_FormatOptions_AllowMixedHeaderCharsets.htm" />
+  <HelpKINode Title="FormatOptions.AlwaysQuoteParameterValues property" Url="html/P_MimeKit_FormatOptions_AlwaysQuoteParameterValues.htm" />
   <HelpKINode Title="FormatOptions.Clone method" Url="html/M_MimeKit_FormatOptions_Clone.htm" />
   <HelpKINode Title="FormatOptions.Default field" Url="html/F_MimeKit_FormatOptions_Default.htm" />
   <HelpKINode Title="FormatOptions.EnsureNewLine property" Url="html/P_MimeKit_FormatOptions_EnsureNewLine.htm" />
@@ -3679,11 +3684,11 @@
   </HelpKINode>
   <HelpKINode Title="GnuPGContext class">
     <HelpKINode Title="GnuPGContext Class" Url="html/T_MimeKit_Cryptography_GnuPGContext.htm" />
-    <HelpKINode Title="constructor" Url="html/M_MimeKit_Cryptography_GnuPGContext__ctor.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_MimeKit_Cryptography_GnuPGContext__ctor.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MimeKit_Cryptography_GnuPGContext.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MimeKit_Cryptography_GnuPGContext.htm" />
   </HelpKINode>
-  <HelpKINode Title="GnuPGContext.GnuPGContext constructor" Url="html/M_MimeKit_Cryptography_GnuPGContext__ctor.htm" />
+  <HelpKINode Title="GnuPGContext.GnuPGContext constructor" Url="html/Overload_MimeKit_Cryptography_GnuPGContext__ctor.htm" />
   <HelpKINode Title="GovernmentIdNumber enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="GovernmentIdNumberA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_GovernmentIdNumberA.htm" />
   <HelpKINode Title="GovernmentIdNumberW field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_GovernmentIdNumberW.htm" />
@@ -4453,12 +4458,21 @@
   <HelpKINode Title="IMailService.Disconnected event" Url="html/E_MailKit_IMailService_Disconnected.htm" />
   <HelpKINode Title="IMailService.IsAuthenticated property" Url="html/P_MailKit_IMailService_IsAuthenticated.htm" />
   <HelpKINode Title="IMailService.IsConnected property" Url="html/P_MailKit_IMailService_IsConnected.htm" />
+  <HelpKINode Title="IMailService.IsEncrypted property" Url="html/P_MailKit_IMailService_IsEncrypted.htm" />
   <HelpKINode Title="IMailService.IsSecure property" Url="html/P_MailKit_IMailService_IsSecure.htm" />
+  <HelpKINode Title="IMailService.IsSigned property" Url="html/P_MailKit_IMailService_IsSigned.htm" />
   <HelpKINode Title="IMailService.LocalEndPoint property" Url="html/P_MailKit_IMailService_LocalEndPoint.htm" />
   <HelpKINode Title="IMailService.NoOp method" Url="html/M_MailKit_IMailService_NoOp.htm" />
   <HelpKINode Title="IMailService.NoOpAsync method" Url="html/M_MailKit_IMailService_NoOpAsync.htm" />
   <HelpKINode Title="IMailService.ProxyClient property" Url="html/P_MailKit_IMailService_ProxyClient.htm" />
   <HelpKINode Title="IMailService.ServerCertificateValidationCallback property" Url="html/P_MailKit_IMailService_ServerCertificateValidationCallback.htm" />
+  <HelpKINode Title="IMailService.SslCipherAlgorithm property" Url="html/P_MailKit_IMailService_SslCipherAlgorithm.htm" />
+  <HelpKINode Title="IMailService.SslCipherStrength property" Url="html/P_MailKit_IMailService_SslCipherStrength.htm" />
+  <HelpKINode Title="IMailService.SslHashAlgorithm property" Url="html/P_MailKit_IMailService_SslHashAlgorithm.htm" />
+  <HelpKINode Title="IMailService.SslHashStrength property" Url="html/P_MailKit_IMailService_SslHashStrength.htm" />
+  <HelpKINode Title="IMailService.SslKeyExchangeAlgorithm property" Url="html/P_MailKit_IMailService_SslKeyExchangeAlgorithm.htm" />
+  <HelpKINode Title="IMailService.SslKeyExchangeStrength property" Url="html/P_MailKit_IMailService_SslKeyExchangeStrength.htm" />
+  <HelpKINode Title="IMailService.SslProtocol property" Url="html/P_MailKit_IMailService_SslProtocol.htm" />
   <HelpKINode Title="IMailService.SslProtocols property" Url="html/P_MailKit_IMailService_SslProtocols.htm" />
   <HelpKINode Title="IMailService.SyncRoot property" Url="html/P_MailKit_IMailService_SyncRoot.htm" />
   <HelpKINode Title="IMailService.Timeout property" Url="html/P_MailKit_IMailService_Timeout.htm" />
@@ -4576,12 +4590,15 @@
   <HelpKINode Title="ImapClient.InternationalizationLevel property" Url="html/P_MailKit_Net_Imap_ImapClient_InternationalizationLevel.htm" />
   <HelpKINode Title="ImapClient.IsAuthenticated property" Url="html/P_MailKit_Net_Imap_ImapClient_IsAuthenticated.htm" />
   <HelpKINode Title="ImapClient.IsConnected property" Url="html/P_MailKit_Net_Imap_ImapClient_IsConnected.htm" />
+  <HelpKINode Title="ImapClient.IsEncrypted property" Url="html/P_MailKit_Net_Imap_ImapClient_IsEncrypted.htm" />
   <HelpKINode Title="ImapClient.IsIdle property" Url="html/P_MailKit_Net_Imap_ImapClient_IsIdle.htm" />
   <HelpKINode Title="ImapClient.IsSecure property" Url="html/P_MailKit_Net_Imap_ImapClient_IsSecure.htm" />
+  <HelpKINode Title="ImapClient.IsSigned property" Url="html/P_MailKit_Net_Imap_ImapClient_IsSigned.htm" />
   <HelpKINode Title="ImapClient.NoOp method" Url="html/M_MailKit_Net_Imap_ImapClient_NoOp.htm" />
   <HelpKINode Title="ImapClient.NoOpAsync method" Url="html/M_MailKit_Net_Imap_ImapClient_NoOpAsync.htm" />
   <HelpKINode Title="ImapClient.Notify method" Url="html/M_MailKit_Net_Imap_ImapClient_Notify.htm" />
   <HelpKINode Title="ImapClient.NotifyAsync method" Url="html/M_MailKit_Net_Imap_ImapClient_NotifyAsync.htm" />
+  <HelpKINode Title="ImapClient.OnWebAlert method" Url="html/M_MailKit_Net_Imap_ImapClient_OnWebAlert.htm" />
   <HelpKINode Title="ImapClient.OtherNamespaces property" Url="html/P_MailKit_Net_Imap_ImapClient_OtherNamespaces.htm" />
   <HelpKINode Title="ImapClient.PersonalNamespaces property" Url="html/P_MailKit_Net_Imap_ImapClient_PersonalNamespaces.htm" />
   <HelpKINode Title="ImapClient.Protocol property" Url="html/P_MailKit_Net_Imap_ImapClient_Protocol.htm" />
@@ -4589,10 +4606,18 @@
   <HelpKINode Title="ImapClient.SetMetadata method" Url="html/M_MailKit_Net_Imap_ImapClient_SetMetadata.htm" />
   <HelpKINode Title="ImapClient.SetMetadataAsync method" Url="html/M_MailKit_Net_Imap_ImapClient_SetMetadataAsync.htm" />
   <HelpKINode Title="ImapClient.SharedNamespaces property" Url="html/P_MailKit_Net_Imap_ImapClient_SharedNamespaces.htm" />
+  <HelpKINode Title="ImapClient.SslCipherAlgorithm property" Url="html/P_MailKit_Net_Imap_ImapClient_SslCipherAlgorithm.htm" />
+  <HelpKINode Title="ImapClient.SslCipherStrength property" Url="html/P_MailKit_Net_Imap_ImapClient_SslCipherStrength.htm" />
+  <HelpKINode Title="ImapClient.SslHashAlgorithm property" Url="html/P_MailKit_Net_Imap_ImapClient_SslHashAlgorithm.htm" />
+  <HelpKINode Title="ImapClient.SslHashStrength property" Url="html/P_MailKit_Net_Imap_ImapClient_SslHashStrength.htm" />
+  <HelpKINode Title="ImapClient.SslKeyExchangeAlgorithm property" Url="html/P_MailKit_Net_Imap_ImapClient_SslKeyExchangeAlgorithm.htm" />
+  <HelpKINode Title="ImapClient.SslKeyExchangeStrength property" Url="html/P_MailKit_Net_Imap_ImapClient_SslKeyExchangeStrength.htm" />
+  <HelpKINode Title="ImapClient.SslProtocol property" Url="html/P_MailKit_Net_Imap_ImapClient_SslProtocol.htm" />
   <HelpKINode Title="ImapClient.SupportsQuotas property" Url="html/P_MailKit_Net_Imap_ImapClient_SupportsQuotas.htm" />
   <HelpKINode Title="ImapClient.SyncRoot property" Url="html/P_MailKit_Net_Imap_ImapClient_SyncRoot.htm" />
   <HelpKINode Title="ImapClient.ThreadingAlgorithms property" Url="html/P_MailKit_Net_Imap_ImapClient_ThreadingAlgorithms.htm" />
   <HelpKINode Title="ImapClient.Timeout property" Url="html/P_MailKit_Net_Imap_ImapClient_Timeout.htm" />
+  <HelpKINode Title="ImapClient.WebAlert event" Url="html/E_MailKit_Net_Imap_ImapClient_WebAlert.htm" />
   <HelpKINode Title="ImapCommandException class">
     <HelpKINode Title="ImapCommandException Class" Url="html/T_MailKit_Net_Imap_ImapCommandException.htm" />
     <HelpKINode Title="constructor" Url="html/Overload_MailKit_Net_Imap_ImapCommandException__ctor.htm" />
@@ -5190,6 +5215,13 @@
     <HelpKINode Title="CryptographyContext.IsEnabled Method " Url="html/Overload_MimeKit_Cryptography_CryptographyContext_IsEnabled.htm" />
     <HelpKINode Title="DkimVerifierBase.IsEnabled Method " Url="html/M_MimeKit_Cryptography_DkimVerifierBase_IsEnabled.htm" />
   </HelpKINode>
+  <HelpKINode Title="IsEncrypted property">
+    <HelpKINode Title="IMailService.IsEncrypted Property " Url="html/P_MailKit_IMailService_IsEncrypted.htm" />
+    <HelpKINode Title="ImapClient.IsEncrypted Property " Url="html/P_MailKit_Net_Imap_ImapClient_IsEncrypted.htm" />
+    <HelpKINode Title="MailService.IsEncrypted Property " Url="html/P_MailKit_MailService_IsEncrypted.htm" />
+    <HelpKINode Title="Pop3Client.IsEncrypted Property " Url="html/P_MailKit_Net_Pop3_Pop3Client_IsEncrypted.htm" />
+    <HelpKINode Title="SmtpClient.IsEncrypted Property " Url="html/P_MailKit_Net_Smtp_SmtpClient_IsEncrypted.htm" />
+  </HelpKINode>
   <HelpKINode Title="IsEndOfStream property" Url="html/P_MimeKit_MimeParser_IsEndOfStream.htm" />
   <HelpKINode Title="IsEndTag property">
     <HelpKINode Title="HtmlTagContext.IsEndTag Property " Url="html/P_MimeKit_Text_HtmlTagContext_IsEndTag.htm" />
@@ -5272,6 +5304,13 @@
     <HelpKINode Title="MailService.IsSecure Property " Url="html/P_MailKit_MailService_IsSecure.htm" />
     <HelpKINode Title="Pop3Client.IsSecure Property " Url="html/P_MailKit_Net_Pop3_Pop3Client_IsSecure.htm" />
     <HelpKINode Title="SmtpClient.IsSecure Property " Url="html/P_MailKit_Net_Smtp_SmtpClient_IsSecure.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IsSigned property">
+    <HelpKINode Title="IMailService.IsSigned Property " Url="html/P_MailKit_IMailService_IsSigned.htm" />
+    <HelpKINode Title="ImapClient.IsSigned Property " Url="html/P_MailKit_Net_Imap_ImapClient_IsSigned.htm" />
+    <HelpKINode Title="MailService.IsSigned Property " Url="html/P_MailKit_MailService_IsSigned.htm" />
+    <HelpKINode Title="Pop3Client.IsSigned Property " Url="html/P_MailKit_Net_Pop3_Pop3Client_IsSigned.htm" />
+    <HelpKINode Title="SmtpClient.IsSigned Property " Url="html/P_MailKit_Net_Smtp_SmtpClient_IsSigned.htm" />
   </HelpKINode>
   <HelpKINode Title="IsSocks4a property" Url="html/P_MailKit_Net_Proxy_Socks4Client_IsSocks4a.htm" />
   <HelpKINode Title="IsSubscribed property">
@@ -5917,6 +5956,7 @@
   <HelpKINode Title="MailKit.UniqueIdMap class" Url="html/T_MailKit_UniqueIdMap.htm" />
   <HelpKINode Title="MailKit.UniqueIdRange class" Url="html/T_MailKit_UniqueIdRange.htm" />
   <HelpKINode Title="MailKit.UniqueIdSet class" Url="html/T_MailKit_UniqueIdSet.htm" />
+  <HelpKINode Title="MailKit.WebAlertEventArgs class" Url="html/T_MailKit_WebAlertEventArgs.htm" />
   <HelpKINode Title="MailMessage to MimeMessage conversion" Url="html/M_MimeKit_MimeMessage_op_Explicit.htm" />
   <HelpKINode Title="MailPermission enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="MailPermission field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_MailPermission.htm" />
@@ -5944,7 +5984,9 @@
   <HelpKINode Title="MailService.Finalize method" Url="html/M_MailKit_MailService_Finalize.htm" />
   <HelpKINode Title="MailService.IsAuthenticated property" Url="html/P_MailKit_MailService_IsAuthenticated.htm" />
   <HelpKINode Title="MailService.IsConnected property" Url="html/P_MailKit_MailService_IsConnected.htm" />
+  <HelpKINode Title="MailService.IsEncrypted property" Url="html/P_MailKit_MailService_IsEncrypted.htm" />
   <HelpKINode Title="MailService.IsSecure property" Url="html/P_MailKit_MailService_IsSecure.htm" />
+  <HelpKINode Title="MailService.IsSigned property" Url="html/P_MailKit_MailService_IsSigned.htm" />
   <HelpKINode Title="MailService.LocalEndPoint property" Url="html/P_MailKit_MailService_LocalEndPoint.htm" />
   <HelpKINode Title="MailService.MailService constructor" Url="html/Overload_MailKit_MailService__ctor.htm" />
   <HelpKINode Title="MailService.NoOp method" Url="html/M_MailKit_MailService_NoOp.htm" />
@@ -5956,6 +5998,13 @@
   <HelpKINode Title="MailService.ProtocolLogger property" Url="html/P_MailKit_MailService_ProtocolLogger.htm" />
   <HelpKINode Title="MailService.ProxyClient property" Url="html/P_MailKit_MailService_ProxyClient.htm" />
   <HelpKINode Title="MailService.ServerCertificateValidationCallback property" Url="html/P_MailKit_MailService_ServerCertificateValidationCallback.htm" />
+  <HelpKINode Title="MailService.SslCipherAlgorithm property" Url="html/P_MailKit_MailService_SslCipherAlgorithm.htm" />
+  <HelpKINode Title="MailService.SslCipherStrength property" Url="html/P_MailKit_MailService_SslCipherStrength.htm" />
+  <HelpKINode Title="MailService.SslHashAlgorithm property" Url="html/P_MailKit_MailService_SslHashAlgorithm.htm" />
+  <HelpKINode Title="MailService.SslHashStrength property" Url="html/P_MailKit_MailService_SslHashStrength.htm" />
+  <HelpKINode Title="MailService.SslKeyExchangeAlgorithm property" Url="html/P_MailKit_MailService_SslKeyExchangeAlgorithm.htm" />
+  <HelpKINode Title="MailService.SslKeyExchangeStrength property" Url="html/P_MailKit_MailService_SslKeyExchangeStrength.htm" />
+  <HelpKINode Title="MailService.SslProtocol property" Url="html/P_MailKit_MailService_SslProtocol.htm" />
   <HelpKINode Title="MailService.SslProtocols property" Url="html/P_MailKit_MailService_SslProtocols.htm" />
   <HelpKINode Title="MailService.SyncRoot property" Url="html/P_MailKit_MailService_SyncRoot.htm" />
   <HelpKINode Title="MailService.Timeout property" Url="html/P_MailKit_MailService_Timeout.htm" />
@@ -7419,6 +7468,7 @@
   <HelpKINode Title="OnUidValidityChanged method" Url="html/M_MailKit_MailFolder_OnUidValidityChanged.htm" />
   <HelpKINode Title="OnUnreadChanged method" Url="html/M_MailKit_MailFolder_OnUnreadChanged.htm" />
   <HelpKINode Title="OnUnsubscribed method" Url="html/M_MailKit_MailFolder_OnUnsubscribed.htm" />
+  <HelpKINode Title="OnWebAlert method" Url="html/M_MailKit_Net_Imap_ImapClient_OnWebAlert.htm" />
   <HelpKINode Title="OofReplyType enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="OofReplyType field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_OofReplyType.htm" />
   <HelpKINode Title="Open method">
@@ -7702,7 +7752,10 @@
   <HelpKINode Title="OrigMessageClassA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_OrigMessageClassA.htm" />
   <HelpKINode Title="OrigMessageClassW field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_OrigMessageClassW.htm" />
   <HelpKINode Title="OS property" Url="html/P_MailKit_Net_Imap_ImapImplementation_OS.htm" />
-  <HelpKINode Title="OSVersion property" Url="html/P_MailKit_Net_Imap_ImapImplementation_OSVersion.htm" />
+  <HelpKINode Title="OSVersion property">
+    <HelpKINode Title="ImapImplementation.OSVersion Property " Url="html/P_MailKit_Net_Imap_ImapImplementation_OSVersion.htm" />
+    <HelpKINode Title="SaslMechanismNtlm.OSVersion Property " Url="html/P_MailKit_Security_SaslMechanismNtlm_OSVersion.htm" />
+  </HelpKINode>
   <HelpKINode Title="OtherAddressCity enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="OtherAddressCityA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_OtherAddressCityA.htm" />
   <HelpKINode Title="OtherAddressCityW field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_OtherAddressCityW.htm" />
@@ -7762,6 +7815,7 @@
     <HelpKINode Title="methods" Url="html/Methods_T_MimeKit_Parameter.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_MimeKit_Parameter.htm" />
   </HelpKINode>
+  <HelpKINode Title="Parameter.AlwaysQuote property" Url="html/P_MimeKit_Parameter_AlwaysQuote.htm" />
   <HelpKINode Title="Parameter.Encoding property" Url="html/P_MimeKit_Parameter_Encoding.htm" />
   <HelpKINode Title="Parameter.EncodingMethod property" Url="html/P_MimeKit_Parameter_EncodingMethod.htm" />
   <HelpKINode Title="Parameter.Name property" Url="html/P_MimeKit_Parameter_Name.htm" />
@@ -8014,7 +8068,9 @@
   <HelpKINode Title="Pop3Client.Implementation property" Url="html/P_MailKit_Net_Pop3_Pop3Client_Implementation.htm" />
   <HelpKINode Title="Pop3Client.IsAuthenticated property" Url="html/P_MailKit_Net_Pop3_Pop3Client_IsAuthenticated.htm" />
   <HelpKINode Title="Pop3Client.IsConnected property" Url="html/P_MailKit_Net_Pop3_Pop3Client_IsConnected.htm" />
+  <HelpKINode Title="Pop3Client.IsEncrypted property" Url="html/P_MailKit_Net_Pop3_Pop3Client_IsEncrypted.htm" />
   <HelpKINode Title="Pop3Client.IsSecure property" Url="html/P_MailKit_Net_Pop3_Pop3Client_IsSecure.htm" />
+  <HelpKINode Title="Pop3Client.IsSigned property" Url="html/P_MailKit_Net_Pop3_Pop3Client_IsSigned.htm" />
   <HelpKINode Title="Pop3Client.LoginDelay property" Url="html/P_MailKit_Net_Pop3_Pop3Client_LoginDelay.htm" />
   <HelpKINode Title="Pop3Client.NoOp method" Url="html/M_MailKit_Net_Pop3_Pop3Client_NoOp.htm" />
   <HelpKINode Title="Pop3Client.NoOpAsync method" Url="html/M_MailKit_Net_Pop3_Pop3Client_NoOpAsync.htm" />
@@ -8024,6 +8080,13 @@
   <HelpKINode Title="Pop3Client.ResetAsync method" Url="html/M_MailKit_Net_Pop3_Pop3Client_ResetAsync.htm" />
   <HelpKINode Title="Pop3Client.SetLanguage method" Url="html/M_MailKit_Net_Pop3_Pop3Client_SetLanguage.htm" />
   <HelpKINode Title="Pop3Client.SetLanguageAsync method" Url="html/M_MailKit_Net_Pop3_Pop3Client_SetLanguageAsync.htm" />
+  <HelpKINode Title="Pop3Client.SslCipherAlgorithm property" Url="html/P_MailKit_Net_Pop3_Pop3Client_SslCipherAlgorithm.htm" />
+  <HelpKINode Title="Pop3Client.SslCipherStrength property" Url="html/P_MailKit_Net_Pop3_Pop3Client_SslCipherStrength.htm" />
+  <HelpKINode Title="Pop3Client.SslHashAlgorithm property" Url="html/P_MailKit_Net_Pop3_Pop3Client_SslHashAlgorithm.htm" />
+  <HelpKINode Title="Pop3Client.SslHashStrength property" Url="html/P_MailKit_Net_Pop3_Pop3Client_SslHashStrength.htm" />
+  <HelpKINode Title="Pop3Client.SslKeyExchangeAlgorithm property" Url="html/P_MailKit_Net_Pop3_Pop3Client_SslKeyExchangeAlgorithm.htm" />
+  <HelpKINode Title="Pop3Client.SslKeyExchangeStrength property" Url="html/P_MailKit_Net_Pop3_Pop3Client_SslKeyExchangeStrength.htm" />
+  <HelpKINode Title="Pop3Client.SslProtocol property" Url="html/P_MailKit_Net_Pop3_Pop3Client_SslProtocol.htm" />
   <HelpKINode Title="Pop3Client.SupportsUids property" Url="html/P_MailKit_Net_Pop3_Pop3Client_SupportsUids.htm" />
   <HelpKINode Title="Pop3Client.SyncRoot property" Url="html/P_MailKit_Net_Pop3_Pop3Client_SyncRoot.htm" />
   <HelpKINode Title="Pop3Client.Timeout property" Url="html/P_MailKit_Net_Pop3_Pop3Client_Timeout.htm" />
@@ -8960,6 +9023,7 @@
   </HelpKINode>
   <HelpKINode Title="SaslMechanismNtlm.Challenge method" Url="html/Overload_MailKit_Security_SaslMechanismNtlm_Challenge.htm" />
   <HelpKINode Title="SaslMechanismNtlm.MechanismName property" Url="html/P_MailKit_Security_SaslMechanismNtlm_MechanismName.htm" />
+  <HelpKINode Title="SaslMechanismNtlm.OSVersion property" Url="html/P_MailKit_Security_SaslMechanismNtlm_OSVersion.htm" />
   <HelpKINode Title="SaslMechanismNtlm.Reset method" Url="html/M_MailKit_Security_SaslMechanismNtlm_Reset.htm" />
   <HelpKINode Title="SaslMechanismNtlm.SaslMechanismNtlm constructor" Url="html/Overload_MailKit_Security_SaslMechanismNtlm__ctor.htm" />
   <HelpKINode Title="SaslMechanismNtlm.SupportsInitialResponse property" Url="html/P_MailKit_Security_SaslMechanismNtlm_SupportsInitialResponse.htm" />
@@ -9606,7 +9670,9 @@
   <HelpKINode Title="SmtpClient.GetSizeAsync method" Url="html/M_MailKit_Net_Smtp_SmtpClient_GetSizeAsync.htm" />
   <HelpKINode Title="SmtpClient.IsAuthenticated property" Url="html/P_MailKit_Net_Smtp_SmtpClient_IsAuthenticated.htm" />
   <HelpKINode Title="SmtpClient.IsConnected property" Url="html/P_MailKit_Net_Smtp_SmtpClient_IsConnected.htm" />
+  <HelpKINode Title="SmtpClient.IsEncrypted property" Url="html/P_MailKit_Net_Smtp_SmtpClient_IsEncrypted.htm" />
   <HelpKINode Title="SmtpClient.IsSecure property" Url="html/P_MailKit_Net_Smtp_SmtpClient_IsSecure.htm" />
+  <HelpKINode Title="SmtpClient.IsSigned property" Url="html/P_MailKit_Net_Smtp_SmtpClient_IsSigned.htm" />
   <HelpKINode Title="SmtpClient.LocalDomain property" Url="html/P_MailKit_Net_Smtp_SmtpClient_LocalDomain.htm" />
   <HelpKINode Title="SmtpClient.MaxSize property" Url="html/P_MailKit_Net_Smtp_SmtpClient_MaxSize.htm" />
   <HelpKINode Title="SmtpClient.NoOp method" Url="html/M_MailKit_Net_Smtp_SmtpClient_NoOp.htm" />
@@ -9624,6 +9690,13 @@
   <HelpKINode Title="SmtpClient.SendCommand method" Url="html/M_MailKit_Net_Smtp_SmtpClient_SendCommand.htm" />
   <HelpKINode Title="SmtpClient.SendCommandAsync method" Url="html/M_MailKit_Net_Smtp_SmtpClient_SendCommandAsync.htm" />
   <HelpKINode Title="SmtpClient.SmtpClient constructor" Url="html/Overload_MailKit_Net_Smtp_SmtpClient__ctor.htm" />
+  <HelpKINode Title="SmtpClient.SslCipherAlgorithm property" Url="html/P_MailKit_Net_Smtp_SmtpClient_SslCipherAlgorithm.htm" />
+  <HelpKINode Title="SmtpClient.SslCipherStrength property" Url="html/P_MailKit_Net_Smtp_SmtpClient_SslCipherStrength.htm" />
+  <HelpKINode Title="SmtpClient.SslHashAlgorithm property" Url="html/P_MailKit_Net_Smtp_SmtpClient_SslHashAlgorithm.htm" />
+  <HelpKINode Title="SmtpClient.SslHashStrength property" Url="html/P_MailKit_Net_Smtp_SmtpClient_SslHashStrength.htm" />
+  <HelpKINode Title="SmtpClient.SslKeyExchangeAlgorithm property" Url="html/P_MailKit_Net_Smtp_SmtpClient_SslKeyExchangeAlgorithm.htm" />
+  <HelpKINode Title="SmtpClient.SslKeyExchangeStrength property" Url="html/P_MailKit_Net_Smtp_SmtpClient_SslKeyExchangeStrength.htm" />
+  <HelpKINode Title="SmtpClient.SslProtocol property" Url="html/P_MailKit_Net_Smtp_SmtpClient_SslProtocol.htm" />
   <HelpKINode Title="SmtpClient.SyncRoot property" Url="html/P_MailKit_Net_Smtp_SmtpClient_SyncRoot.htm" />
   <HelpKINode Title="SmtpClient.Timeout property" Url="html/P_MailKit_Net_Smtp_SmtpClient_Timeout.htm" />
   <HelpKINode Title="SmtpClient.Verify method" Url="html/M_MailKit_Net_Smtp_SmtpClient_Verify.htm" />
@@ -9789,6 +9862,20 @@
   <HelpKINode Title="SQLServerCertificateDatabase.RemoveIndex method" Url="html/M_MimeKit_Cryptography_SQLServerCertificateDatabase_RemoveIndex.htm" />
   <HelpKINode Title="SQLServerCertificateDatabase.SQLServerCertificateDatabase constructor" Url="html/M_MimeKit_Cryptography_SQLServerCertificateDatabase__ctor.htm" />
   <HelpKINode Title="Src enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
+  <HelpKINode Title="SslCipherAlgorithm property">
+    <HelpKINode Title="IMailService.SslCipherAlgorithm Property " Url="html/P_MailKit_IMailService_SslCipherAlgorithm.htm" />
+    <HelpKINode Title="ImapClient.SslCipherAlgorithm Property " Url="html/P_MailKit_Net_Imap_ImapClient_SslCipherAlgorithm.htm" />
+    <HelpKINode Title="MailService.SslCipherAlgorithm Property " Url="html/P_MailKit_MailService_SslCipherAlgorithm.htm" />
+    <HelpKINode Title="Pop3Client.SslCipherAlgorithm Property " Url="html/P_MailKit_Net_Pop3_Pop3Client_SslCipherAlgorithm.htm" />
+    <HelpKINode Title="SmtpClient.SslCipherAlgorithm Property " Url="html/P_MailKit_Net_Smtp_SmtpClient_SslCipherAlgorithm.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SslCipherStrength property">
+    <HelpKINode Title="IMailService.SslCipherStrength Property " Url="html/P_MailKit_IMailService_SslCipherStrength.htm" />
+    <HelpKINode Title="ImapClient.SslCipherStrength Property " Url="html/P_MailKit_Net_Imap_ImapClient_SslCipherStrength.htm" />
+    <HelpKINode Title="MailService.SslCipherStrength Property " Url="html/P_MailKit_MailService_SslCipherStrength.htm" />
+    <HelpKINode Title="Pop3Client.SslCipherStrength Property " Url="html/P_MailKit_Net_Pop3_Pop3Client_SslCipherStrength.htm" />
+    <HelpKINode Title="SmtpClient.SslCipherStrength Property " Url="html/P_MailKit_Net_Smtp_SmtpClient_SslCipherStrength.htm" />
+  </HelpKINode>
   <HelpKINode Title="SslHandshakeException class">
     <HelpKINode Title="SslHandshakeException Class" Url="html/T_MailKit_Security_SslHandshakeException.htm" />
     <HelpKINode Title="constructor" Url="html/Overload_MailKit_Security_SslHandshakeException__ctor.htm" />
@@ -9800,7 +9887,42 @@
   <HelpKINode Title="SslHandshakeException.RootCertificateAuthority property" Url="html/P_MailKit_Security_SslHandshakeException_RootCertificateAuthority.htm" />
   <HelpKINode Title="SslHandshakeException.ServerCertificate property" Url="html/P_MailKit_Security_SslHandshakeException_ServerCertificate.htm" />
   <HelpKINode Title="SslHandshakeException.SslHandshakeException constructor" Url="html/Overload_MailKit_Security_SslHandshakeException__ctor.htm" />
+  <HelpKINode Title="SslHashAlgorithm property">
+    <HelpKINode Title="IMailService.SslHashAlgorithm Property " Url="html/P_MailKit_IMailService_SslHashAlgorithm.htm" />
+    <HelpKINode Title="ImapClient.SslHashAlgorithm Property " Url="html/P_MailKit_Net_Imap_ImapClient_SslHashAlgorithm.htm" />
+    <HelpKINode Title="MailService.SslHashAlgorithm Property " Url="html/P_MailKit_MailService_SslHashAlgorithm.htm" />
+    <HelpKINode Title="Pop3Client.SslHashAlgorithm Property " Url="html/P_MailKit_Net_Pop3_Pop3Client_SslHashAlgorithm.htm" />
+    <HelpKINode Title="SmtpClient.SslHashAlgorithm Property " Url="html/P_MailKit_Net_Smtp_SmtpClient_SslHashAlgorithm.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SslHashStrength property">
+    <HelpKINode Title="IMailService.SslHashStrength Property " Url="html/P_MailKit_IMailService_SslHashStrength.htm" />
+    <HelpKINode Title="ImapClient.SslHashStrength Property " Url="html/P_MailKit_Net_Imap_ImapClient_SslHashStrength.htm" />
+    <HelpKINode Title="MailService.SslHashStrength Property " Url="html/P_MailKit_MailService_SslHashStrength.htm" />
+    <HelpKINode Title="Pop3Client.SslHashStrength Property " Url="html/P_MailKit_Net_Pop3_Pop3Client_SslHashStrength.htm" />
+    <HelpKINode Title="SmtpClient.SslHashStrength Property " Url="html/P_MailKit_Net_Smtp_SmtpClient_SslHashStrength.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SslKeyExchangeAlgorithm property">
+    <HelpKINode Title="IMailService.SslKeyExchangeAlgorithm Property " Url="html/P_MailKit_IMailService_SslKeyExchangeAlgorithm.htm" />
+    <HelpKINode Title="ImapClient.SslKeyExchangeAlgorithm Property " Url="html/P_MailKit_Net_Imap_ImapClient_SslKeyExchangeAlgorithm.htm" />
+    <HelpKINode Title="MailService.SslKeyExchangeAlgorithm Property " Url="html/P_MailKit_MailService_SslKeyExchangeAlgorithm.htm" />
+    <HelpKINode Title="Pop3Client.SslKeyExchangeAlgorithm Property " Url="html/P_MailKit_Net_Pop3_Pop3Client_SslKeyExchangeAlgorithm.htm" />
+    <HelpKINode Title="SmtpClient.SslKeyExchangeAlgorithm Property " Url="html/P_MailKit_Net_Smtp_SmtpClient_SslKeyExchangeAlgorithm.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SslKeyExchangeStrength property">
+    <HelpKINode Title="IMailService.SslKeyExchangeStrength Property " Url="html/P_MailKit_IMailService_SslKeyExchangeStrength.htm" />
+    <HelpKINode Title="ImapClient.SslKeyExchangeStrength Property " Url="html/P_MailKit_Net_Imap_ImapClient_SslKeyExchangeStrength.htm" />
+    <HelpKINode Title="MailService.SslKeyExchangeStrength Property " Url="html/P_MailKit_MailService_SslKeyExchangeStrength.htm" />
+    <HelpKINode Title="Pop3Client.SslKeyExchangeStrength Property " Url="html/P_MailKit_Net_Pop3_Pop3Client_SslKeyExchangeStrength.htm" />
+    <HelpKINode Title="SmtpClient.SslKeyExchangeStrength Property " Url="html/P_MailKit_Net_Smtp_SmtpClient_SslKeyExchangeStrength.htm" />
+  </HelpKINode>
   <HelpKINode Title="SslOnConnect enumeration member" Url="html/T_MailKit_Security_SecureSocketOptions.htm" />
+  <HelpKINode Title="SslProtocol property">
+    <HelpKINode Title="IMailService.SslProtocol Property " Url="html/P_MailKit_IMailService_SslProtocol.htm" />
+    <HelpKINode Title="ImapClient.SslProtocol Property " Url="html/P_MailKit_Net_Imap_ImapClient_SslProtocol.htm" />
+    <HelpKINode Title="MailService.SslProtocol Property " Url="html/P_MailKit_MailService_SslProtocol.htm" />
+    <HelpKINode Title="Pop3Client.SslProtocol Property " Url="html/P_MailKit_Net_Pop3_Pop3Client_SslProtocol.htm" />
+    <HelpKINode Title="SmtpClient.SslProtocol Property " Url="html/P_MailKit_Net_Smtp_SmtpClient_SslProtocol.htm" />
+  </HelpKINode>
   <HelpKINode Title="SslProtocols property">
     <HelpKINode Title="IMailService.SslProtocols Property " Url="html/P_MailKit_IMailService_SslProtocols.htm" />
     <HelpKINode Title="MailService.SslProtocols Property " Url="html/P_MailKit_MailService_SslProtocols.htm" />
@@ -9813,9 +9935,9 @@
   <HelpKINode Title="StartDate field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_StartDate.htm" />
   <HelpKINode Title="StartMailInput enumeration member" Url="html/T_MailKit_Net_Smtp_SmtpStatusCode.htm" />
   <HelpKINode Title="StartTLS enumeration member">
+    <HelpKINode Title="SmtpCapabilities Enumeration" Url="html/T_MailKit_Net_Smtp_SmtpCapabilities.htm" />
     <HelpKINode Title="ImapCapabilities Enumeration" Url="html/T_MailKit_Net_Imap_ImapCapabilities.htm" />
     <HelpKINode Title="Pop3Capabilities Enumeration" Url="html/T_MailKit_Net_Pop3_Pop3Capabilities.htm" />
-    <HelpKINode Title="SmtpCapabilities Enumeration" Url="html/T_MailKit_Net_Smtp_SmtpCapabilities.htm" />
   </HelpKINode>
   <HelpKINode Title="StartTls enumeration member" Url="html/T_MailKit_Security_SecureSocketOptions.htm" />
   <HelpKINode Title="StartTlsWhenAvailable enumeration member" Url="html/T_MailKit_Security_SecureSocketOptions.htm" />
@@ -11529,6 +11651,16 @@
   <HelpKINode Title="Vlink enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
   <HelpKINode Title="Vspace enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
   <HelpKINode Title="Wbr enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
+  <HelpKINode Title="WebAlert event" Url="html/E_MailKit_Net_Imap_ImapClient_WebAlert.htm" />
+  <HelpKINode Title="WebAlertEventArgs class">
+    <HelpKINode Title="WebAlertEventArgs Class" Url="html/T_MailKit_WebAlertEventArgs.htm" />
+    <HelpKINode Title="constructor" Url="html/M_MailKit_WebAlertEventArgs__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_MailKit_WebAlertEventArgs.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_MailKit_WebAlertEventArgs.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WebAlertEventArgs.WebAlertEventArgs constructor" Url="html/M_MailKit_WebAlertEventArgs__ctor.htm" />
+  <HelpKINode Title="WebAlertEventArgs.WebUri property" Url="html/P_MailKit_WebAlertEventArgs_WebUri.htm" />
+  <HelpKINode Title="WebUri property" Url="html/P_MailKit_WebAlertEventArgs_WebUri.htm" />
   <HelpKINode Title="WeddingAnniversary enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="WeddingAnniversary field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_WeddingAnniversary.htm" />
   <HelpKINode Title="Width enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
