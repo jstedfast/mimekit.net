@@ -4,7 +4,7 @@
     <strong>Namespace:</strong> 
    <a href="N_MailKit_Net_Smtp.htm">MailKit.Net.Smtp</a><br />
     <strong>Assembly:</strong>
-   MailKit (in MailKit.dll) Version: 2.13.0<div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Syntax</span></div><div id="ID1RBSection" class="collapsibleSection"><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EACA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EACA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EACA');return false;" title="Copy">Copy</a></div></div><div id="ID0EACA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="keyword">public</span> <span class="identifier">SmtpDataFilter</span>()</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EACA");</script></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Remarks</span></div><div id="ID2RBSection" class="collapsibleSection">
+   MailKit (in MailKit.dll) Version: 2.14.0<div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Syntax</span></div><div id="ID1RBSection" class="collapsibleSection"><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EACA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EACA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EACA');return false;" title="Copy">Copy</a></div></div><div id="ID0EACA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="keyword">public</span> <span class="identifier">SmtpDataFilter</span>()</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EACA");</script></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Remarks</span></div><div id="ID2RBSection" class="collapsibleSection">
             Creates a new <a href="T_MailKit_Net_Smtp_SmtpDataFilter.htm">SmtpDataFilter</a>.
             </div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID3RB')" onkeypress="SectionExpandCollapse_CheckKey('ID3RB', event)" tabindex="0"><img id="ID3RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Examples</span></div><div id="ID3RBSection" class="collapsibleSection"><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EAAABA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAAABA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAAABA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAAABA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">void</span> SaveToPickupDirectory (MimeMessage message, <span class="highlight-keyword">string</span> pickupDirectory)
 {
@@ -322,6 +322,37 @@
         <span class="highlight-comment">// If you also want to be notified of delays or successful deliveries, simply bitwise-or</span>
         <span class="highlight-comment">// whatever combination of flags you want to be notified about.</span>
         <span class="highlight-keyword">return</span> DeliveryStatusNotification.Failure;
+    }
+}
+<span class="highlight-preprocessor">#endregion</span>
+
+<span class="highlight-preprocessor">#region</span> SslConnectionInformation
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">void</span> PrintSslConnectionInfo (<span class="highlight-keyword">string</span> host, <span class="highlight-keyword">int</span> port)
+{
+    <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> client = <span class="highlight-keyword">new</span> SmtpClient ()) {
+        client.Connect (host, port, SecureSocketOptions.Auto);
+
+        Console.WriteLine ($<span class="highlight-literal">"Negotiated the following SSL options with {host}:"</span>);
+        Console.WriteLine ($<span class="highlight-literal">"        Protocol Version: {client.SslProtocol}"</span>);
+        Console.WriteLine ($<span class="highlight-literal">"        Cipher Algorithm: {client.SslCipherAlgorithm}"</span>);
+        Console.WriteLine ($<span class="highlight-literal">"         Cipher Strength: {client.SslCipherStrength}"</span>);
+        Console.WriteLine ($<span class="highlight-literal">"          Hash Algorithm: {client.SslHashAlgorithm}"</span>);
+        Console.WriteLine ($<span class="highlight-literal">"           Hash Strength: {client.SslHashStrength}"</span>);
+        Console.WriteLine ($<span class="highlight-literal">"  Key-Exchange Algorithm: {client.SslKeyExchangeAlgorithm}"</span>);
+        Console.WriteLine ($<span class="highlight-literal">"   Key-Exchange Strength: {client.SslKeyExchangeStrength}"</span>);
+
+        <span class="highlight-comment">// Example Log:</span>
+        <span class="highlight-comment">// </span>
+        <span class="highlight-comment">// Negotiated the following SSL options with smtp.gmail.com:</span>
+        <span class="highlight-comment">//         Protocol Version: Tls12</span>
+        <span class="highlight-comment">//         Cipher Algorithm: Aes128</span>
+        <span class="highlight-comment">//          Cipher Strength: 128</span>
+        <span class="highlight-comment">//           Hash Algorithm: Sha256</span>
+        <span class="highlight-comment">//            Hash Strength: 0</span>
+        <span class="highlight-comment">//   Key-Exchange Algorithm: 44550</span>
+        <span class="highlight-comment">//    Key-Exchange Strength: 255</span>
+
+        client.Disconnect (<span class="highlight-keyword">true</span>);
     }
 }</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAAABA");</script></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID4RB')" onkeypress="SectionExpandCollapse_CheckKey('ID4RB', event)" tabindex="0"><img id="ID4RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID4RBSection" class="collapsibleSection"><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="T_MailKit_Net_Smtp_SmtpDataFilter.htm">SmtpDataFilter Class</a></div><div class="seeAlsoStyle"><a href="N_MailKit_Net_Smtp.htm">MailKit.Net.Smtp Namespace</a></div></div></div></div><div id="pageFooter" class="pageFooter"><!-- Global site tag (gtag.js) - Google Analytics -->
 <script src="https://www.googletagmanager.com/gtag/js?id=UA-63841238-1"></script>

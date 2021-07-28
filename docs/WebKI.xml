@@ -403,6 +403,7 @@
     <HelpKINode Title="MailFolder.AppendLimit Property " Url="html/P_MailKit_MailFolder_AppendLimit.htm" />
   </HelpKINode>
   <HelpKINode Title="AppendMessages field" Url="html/F_MailKit_AccessRight_AppendMessages.htm" />
+  <HelpKINode Title="AppendQuoted method" Url="html/M_MimeKit_Utils_MimeUtils_AppendQuoted.htm" />
   <HelpKINode Title="Applet enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
   <HelpKINode Title="ApplicationPgpEncrypted class">
     <HelpKINode Title="ApplicationPgpEncrypted Class" Url="html/T_MimeKit_Cryptography_ApplicationPgpEncrypted.htm" />
@@ -755,6 +756,20 @@
   <HelpKINode Title="AuthenticationResults.ToString method" Url="html/M_MimeKit_Cryptography_AuthenticationResults_ToString.htm" />
   <HelpKINode Title="AuthenticationResults.TryParse method" Url="html/Overload_MimeKit_Cryptography_AuthenticationResults_TryParse.htm" />
   <HelpKINode Title="AuthenticationResults.Version property" Url="html/P_MimeKit_Cryptography_AuthenticationResults_Version.htm" />
+  <HelpKINode Title="AuthenticationSecret structure">
+    <HelpKINode Title="AuthenticationSecret Structure" Url="html/T_MailKit_AuthenticationSecret.htm" />
+    <HelpKINode Title="constructor" Url="html/M_MailKit_AuthenticationSecret__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_MailKit_AuthenticationSecret.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_MailKit_AuthenticationSecret.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AuthenticationSecret.AuthenticationSecret constructor" Url="html/M_MailKit_AuthenticationSecret__ctor.htm" />
+  <HelpKINode Title="AuthenticationSecret.Length property" Url="html/P_MailKit_AuthenticationSecret_Length.htm" />
+  <HelpKINode Title="AuthenticationSecret.StartIndex property" Url="html/P_MailKit_AuthenticationSecret_StartIndex.htm" />
+  <HelpKINode Title="AuthenticationSecretDetector property">
+    <HelpKINode Title="IProtocolLogger.AuthenticationSecretDetector Property " Url="html/P_MailKit_IProtocolLogger_AuthenticationSecretDetector.htm" />
+    <HelpKINode Title="NullProtocolLogger.AuthenticationSecretDetector Property " Url="html/P_MailKit_NullProtocolLogger_AuthenticationSecretDetector.htm" />
+    <HelpKINode Title="ProtocolLogger.AuthenticationSecretDetector Property " Url="html/P_MailKit_ProtocolLogger_AuthenticationSecretDetector.htm" />
+  </HelpKINode>
   <HelpKINode Title="AuthenticationServiceIdentifier property" Url="html/P_MimeKit_Cryptography_AuthenticationResults_AuthenticationServiceIdentifier.htm" />
   <HelpKINode Title="AuthenticationSuccessful enumeration member" Url="html/T_MailKit_Net_Smtp_SmtpStatusCode.htm" />
   <HelpKINode Title="AuthEnvelopedData enumeration member" Url="html/T_MimeKit_Cryptography_SecureMimeType.htm" />
@@ -769,8 +784,8 @@
   <HelpKINode Title="Autocrypt enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
   <HelpKINode Title="AutocryptGossip enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
   <HelpKINode Title="AutocryptSetupMessage enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
-  <HelpKINode Title="Autoforwarded enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
   <HelpKINode Title="AutoForwarded enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
+  <HelpKINode Title="Autoforwarded enumeration member" Url="html/T_MimeKit_HeaderId.htm" />
   <HelpKINode Title="AutoForwarded field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_AutoForwarded.htm" />
   <HelpKINode Title="AutoForwardingComment enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="AutoForwardingCommentA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_AutoForwardingCommentA.htm" />
@@ -2197,6 +2212,7 @@
   <HelpKINode Title="DetailsTable enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="DetailsTable field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_DetailsTable.htm" />
   <HelpKINode Title="DetectEncodingFromByteOrderMark property" Url="html/P_MimeKit_Text_TextConverter_DetectEncodingFromByteOrderMark.htm" />
+  <HelpKINode Title="DetectSecrets method" Url="html/M_MailKit_IAuthenticationSecretDetector_DetectSecrets.htm" />
   <HelpKINode Title="Dfn enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
   <HelpKINode Title="Dialog enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
   <HelpKINode Title="DiffieHellman enumeration member" Url="html/T_MimeKit_Cryptography_PublicKeyAlgorithm.htm" />
@@ -3388,6 +3404,7 @@
     <HelpKINode Title="Pop3Client.GetMessageCount Method " Url="html/M_MailKit_Net_Pop3_Pop3Client_GetMessageCount.htm" />
   </HelpKINode>
   <HelpKINode Title="GetMessageCountAsync method">
+    <HelpKINode Title="IMailSpool.GetMessageCountAsync Method " Url="html/M_MailKit_IMailSpool_GetMessageCountAsync.htm" />
     <HelpKINode Title="MailSpool.GetMessageCountAsync Method " Url="html/M_MailKit_MailSpool_GetMessageCountAsync.htm" />
     <HelpKINode Title="Pop3Client.GetMessageCountAsync Method " Url="html/M_MailKit_Net_Pop3_Pop3Client_GetMessageCountAsync.htm" />
   </HelpKINode>
@@ -4167,6 +4184,11 @@
   <HelpKINode Title="I18NLevel enumeration member" Url="html/T_MailKit_Net_Imap_ImapCapabilities.htm" />
   <HelpKINode Title="I2 enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyType.htm" />
   <HelpKINode Title="I8 enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyType.htm" />
+  <HelpKINode Title="IAuthenticationSecretDetector interface">
+    <HelpKINode Title="IAuthenticationSecretDetector Interface" Url="html/T_MailKit_IAuthenticationSecretDetector.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_MailKit_IAuthenticationSecretDetector.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IAuthenticationSecretDetector.DetectSecrets method" Url="html/M_MailKit_IAuthenticationSecretDetector_DetectSecrets.htm" />
   <HelpKINode Title="ICancellableStream interface">
     <HelpKINode Title="ICancellableStream Interface" Url="html/T_MimeKit_IO_ICancellableStream.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MimeKit_IO_ICancellableStream.htm" />
@@ -4492,6 +4514,7 @@
   <HelpKINode Title="IMailSpool.GetMessage method" Url="html/M_MailKit_IMailSpool_GetMessage.htm" />
   <HelpKINode Title="IMailSpool.GetMessageAsync method" Url="html/M_MailKit_IMailSpool_GetMessageAsync.htm" />
   <HelpKINode Title="IMailSpool.GetMessageCount method" Url="html/M_MailKit_IMailSpool_GetMessageCount.htm" />
+  <HelpKINode Title="IMailSpool.GetMessageCountAsync method" Url="html/M_MailKit_IMailSpool_GetMessageCountAsync.htm" />
   <HelpKINode Title="IMailSpool.GetMessageHeaders method" Url="html/Overload_MailKit_IMailSpool_GetMessageHeaders.htm" />
   <HelpKINode Title="IMailSpool.GetMessageHeadersAsync method" Url="html/Overload_MailKit_IMailSpool_GetMessageHeadersAsync.htm" />
   <HelpKINode Title="IMailSpool.GetMessages method" Url="html/Overload_MailKit_IMailSpool_GetMessages.htm" />
@@ -5165,7 +5188,9 @@
   <HelpKINode Title="IProtocolLogger interface">
     <HelpKINode Title="IProtocolLogger Interface" Url="html/T_MailKit_IProtocolLogger.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MailKit_IProtocolLogger.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_MailKit_IProtocolLogger.htm" />
   </HelpKINode>
+  <HelpKINode Title="IProtocolLogger.AuthenticationSecretDetector property" Url="html/P_MailKit_IProtocolLogger_AuthenticationSecretDetector.htm" />
   <HelpKINode Title="IProtocolLogger.LogClient method" Url="html/M_MailKit_IProtocolLogger_LogClient.htm" />
   <HelpKINode Title="IProtocolLogger.LogConnect method" Url="html/M_MailKit_IProtocolLogger_LogConnect.htm" />
   <HelpKINode Title="IProtocolLogger.LogServer method" Url="html/M_MailKit_IProtocolLogger_LogServer.htm" />
@@ -5440,6 +5465,7 @@
   <HelpKINode Title="LeftMargin enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
   <HelpKINode Title="Legend enumeration member" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
   <HelpKINode Title="Length property">
+    <HelpKINode Title="AuthenticationSecret.Length Property " Url="html/P_MailKit_AuthenticationSecret_Length.htm" />
     <HelpKINode Title="BoundStream.Length Property " Url="html/P_MimeKit_IO_BoundStream_Length.htm" />
     <HelpKINode Title="ChainedStream.Length Property " Url="html/P_MimeKit_IO_ChainedStream_Length.htm" />
     <HelpKINode Title="FilteredStream.Length Property " Url="html/P_MimeKit_IO_FilteredStream_Length.htm" />
@@ -5570,6 +5596,7 @@
     <HelpKINode Title="NullProtocolLogger.LogServer Method " Url="html/M_MailKit_NullProtocolLogger_LogServer.htm" />
     <HelpKINode Title="ProtocolLogger.LogServer Method " Url="html/M_MailKit_ProtocolLogger_LogServer.htm" />
   </HelpKINode>
+  <HelpKINode Title="LogTimestamps property" Url="html/P_MailKit_ProtocolLogger_LogTimestamps.htm" />
   <HelpKINode Title="Long enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyType.htm" />
   <HelpKINode Title="LongDesc enumeration member" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
   <HelpKINode Title="LongEntries property" Url="html/P_MailKit_MetadataOptions_LongEntries.htm" />
@@ -5578,6 +5605,7 @@
     <HelpKINode Title="RfcComplianceMode Enumeration" Url="html/T_MimeKit_RfcComplianceMode.htm" />
     <HelpKINode Title="TnefComplianceMode Enumeration" Url="html/T_MimeKit_Tnef_TnefComplianceMode.htm" />
   </HelpKINode>
+  <HelpKINode Title="Looser enumeration member" Url="html/T_MimeKit_RfcComplianceMode.htm" />
   <HelpKINode Title="Low enumeration member">
     <HelpKINode Title="MessageImportance Enumeration" Url="html/T_MimeKit_MessageImportance.htm" />
     <HelpKINode Title="XMessagePriority Enumeration" Url="html/T_MimeKit_XMessagePriority.htm" />
@@ -5808,6 +5836,7 @@
   <HelpKINode Title="MailKit.AnnotationsChangedEventArgs class" Url="html/T_MailKit_AnnotationsChangedEventArgs.htm" />
   <HelpKINode Title="MailKit.AnnotationScope enumeration" Url="html/T_MailKit_AnnotationScope.htm" />
   <HelpKINode Title="MailKit.AuthenticatedEventArgs class" Url="html/T_MailKit_AuthenticatedEventArgs.htm" />
+  <HelpKINode Title="MailKit.AuthenticationSecret structure" Url="html/T_MailKit_AuthenticationSecret.htm" />
   <HelpKINode Title="MailKit.BodyPart class" Url="html/T_MailKit_BodyPart.htm" />
   <HelpKINode Title="MailKit.BodyPartBasic class" Url="html/T_MailKit_BodyPartBasic.htm" />
   <HelpKINode Title="MailKit.BodyPartCollection class" Url="html/T_MailKit_BodyPartCollection.htm" />
@@ -5830,6 +5859,7 @@
   <HelpKINode Title="MailKit.FolderNotOpenException class" Url="html/T_MailKit_FolderNotOpenException.htm" />
   <HelpKINode Title="MailKit.FolderQuota class" Url="html/T_MailKit_FolderQuota.htm" />
   <HelpKINode Title="MailKit.FolderRenamedEventArgs class" Url="html/T_MailKit_FolderRenamedEventArgs.htm" />
+  <HelpKINode Title="MailKit.IAuthenticationSecretDetector interface" Url="html/T_MailKit_IAuthenticationSecretDetector.htm" />
   <HelpKINode Title="MailKit.IMailFolder interface" Url="html/T_MailKit_IMailFolder.htm" />
   <HelpKINode Title="MailKit.IMailService interface" Url="html/T_MailKit_IMailService.htm" />
   <HelpKINode Title="MailKit.IMailSpool interface" Url="html/T_MailKit_IMailSpool.htm" />
@@ -7007,6 +7037,7 @@
     <HelpKINode Title="fields" Url="html/Fields_T_MimeKit_Utils_MimeUtils.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MimeKit_Utils_MimeUtils.htm" />
   </HelpKINode>
+  <HelpKINode Title="MimeUtils.AppendQuoted method" Url="html/M_MimeKit_Utils_MimeUtils_AppendQuoted.htm" />
   <HelpKINode Title="MimeUtils.EnumerateReferences method" Url="html/Overload_MimeKit_Utils_MimeUtils_EnumerateReferences.htm" />
   <HelpKINode Title="MimeUtils.GenerateMessageId method" Url="html/Overload_MimeKit_Utils_MimeUtils_GenerateMessageId.htm" />
   <HelpKINode Title="MimeUtils.OrdinalIgnoreCase field" Url="html/F_MimeKit_Utils_MimeUtils_OrdinalIgnoreCase.htm" />
@@ -7365,7 +7396,9 @@
     <HelpKINode Title="NullProtocolLogger Class" Url="html/T_MailKit_NullProtocolLogger.htm" />
     <HelpKINode Title="constructor" Url="html/M_MailKit_NullProtocolLogger__ctor.htm" />
     <HelpKINode Title="methods" Url="html/Methods_T_MailKit_NullProtocolLogger.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_MailKit_NullProtocolLogger.htm" />
   </HelpKINode>
+  <HelpKINode Title="NullProtocolLogger.AuthenticationSecretDetector property" Url="html/P_MailKit_NullProtocolLogger_AuthenticationSecretDetector.htm" />
   <HelpKINode Title="NullProtocolLogger.Dispose method" Url="html/M_MailKit_NullProtocolLogger_Dispose.htm" />
   <HelpKINode Title="NullProtocolLogger.LogClient method" Url="html/M_MailKit_NullProtocolLogger_LogClient.htm" />
   <HelpKINode Title="NullProtocolLogger.LogConnect method" Url="html/M_MailKit_NullProtocolLogger_LogConnect.htm" />
@@ -8265,6 +8298,7 @@
     <HelpKINode Title="properties" Url="html/Properties_T_MailKit_ProtocolLogger.htm" />
   </HelpKINode>
   <HelpKINode Title="ProtocolLogger property" Url="html/P_MailKit_MailService_ProtocolLogger.htm" />
+  <HelpKINode Title="ProtocolLogger.AuthenticationSecretDetector property" Url="html/P_MailKit_ProtocolLogger_AuthenticationSecretDetector.htm" />
   <HelpKINode Title="ProtocolLogger.ClientPrefix property" Url="html/P_MailKit_ProtocolLogger_ClientPrefix.htm" />
   <HelpKINode Title="ProtocolLogger.DefaultClientPrefix property" Url="html/P_MailKit_ProtocolLogger_DefaultClientPrefix.htm" />
   <HelpKINode Title="ProtocolLogger.DefaultServerPrefix property" Url="html/P_MailKit_ProtocolLogger_DefaultServerPrefix.htm" />
@@ -8273,9 +8307,12 @@
   <HelpKINode Title="ProtocolLogger.LogClient method" Url="html/M_MailKit_ProtocolLogger_LogClient.htm" />
   <HelpKINode Title="ProtocolLogger.LogConnect method" Url="html/M_MailKit_ProtocolLogger_LogConnect.htm" />
   <HelpKINode Title="ProtocolLogger.LogServer method" Url="html/M_MailKit_ProtocolLogger_LogServer.htm" />
+  <HelpKINode Title="ProtocolLogger.LogTimestamps property" Url="html/P_MailKit_ProtocolLogger_LogTimestamps.htm" />
   <HelpKINode Title="ProtocolLogger.ProtocolLogger constructor" Url="html/Overload_MailKit_ProtocolLogger__ctor.htm" />
+  <HelpKINode Title="ProtocolLogger.RedactSecrets property" Url="html/P_MailKit_ProtocolLogger_RedactSecrets.htm" />
   <HelpKINode Title="ProtocolLogger.ServerPrefix property" Url="html/P_MailKit_ProtocolLogger_ServerPrefix.htm" />
   <HelpKINode Title="ProtocolLogger.Stream property" Url="html/P_MailKit_ProtocolLogger_Stream.htm" />
+  <HelpKINode Title="ProtocolLogger.TimestampFormat property" Url="html/P_MailKit_ProtocolLogger_TimestampFormat.htm" />
   <HelpKINode Title="ProviderDisplay enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="ProviderDisplayA field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_ProviderDisplayA.htm" />
   <HelpKINode Title="ProviderDisplayW field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_ProviderDisplayW.htm" />
@@ -8546,6 +8583,7 @@
   <HelpKINode Title="RecipientType enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="RecipientType field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_RecipientType.htm" />
   <HelpKINode Title="RecordKey enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
+  <HelpKINode Title="RedactSecrets property" Url="html/P_MailKit_ProtocolLogger_RedactSecrets.htm" />
   <HelpKINode Title="RedirectionHistory enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="RedirectionHistory field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_RedirectionHistory.htm" />
   <HelpKINode Title="References enumeration member">
@@ -9933,11 +9971,12 @@
   <HelpKINode Title="StartBoundary property" Url="html/P_MimeKit_IO_BoundStream_StartBoundary.htm" />
   <HelpKINode Title="StartDate enumeration member" Url="html/T_MimeKit_Tnef_TnefPropertyId.htm" />
   <HelpKINode Title="StartDate field" Url="html/F_MimeKit_Tnef_TnefPropertyTag_StartDate.htm" />
+  <HelpKINode Title="StartIndex property" Url="html/P_MailKit_AuthenticationSecret_StartIndex.htm" />
   <HelpKINode Title="StartMailInput enumeration member" Url="html/T_MailKit_Net_Smtp_SmtpStatusCode.htm" />
   <HelpKINode Title="StartTLS enumeration member">
-    <HelpKINode Title="SmtpCapabilities Enumeration" Url="html/T_MailKit_Net_Smtp_SmtpCapabilities.htm" />
     <HelpKINode Title="ImapCapabilities Enumeration" Url="html/T_MailKit_Net_Imap_ImapCapabilities.htm" />
     <HelpKINode Title="Pop3Capabilities Enumeration" Url="html/T_MailKit_Net_Pop3_Pop3Capabilities.htm" />
+    <HelpKINode Title="SmtpCapabilities Enumeration" Url="html/T_MailKit_Net_Smtp_SmtpCapabilities.htm" />
   </HelpKINode>
   <HelpKINode Title="StartTls enumeration member" Url="html/T_MailKit_Security_SecureSocketOptions.htm" />
   <HelpKINode Title="StartTlsWhenAvailable enumeration member" Url="html/T_MailKit_Security_SecureSocketOptions.htm" />
@@ -10330,6 +10369,7 @@
     <HelpKINode Title="Pop3Client.Timeout Property " Url="html/P_MailKit_Net_Pop3_Pop3Client_Timeout.htm" />
     <HelpKINode Title="SmtpClient.Timeout Property " Url="html/P_MailKit_Net_Smtp_SmtpClient_Timeout.htm" />
   </HelpKINode>
+  <HelpKINode Title="TimestampFormat property" Url="html/P_MailKit_ProtocolLogger_TimestampFormat.htm" />
   <HelpKINode Title="Title enumeration member">
     <HelpKINode Title="HtmlAttributeId Enumeration" Url="html/T_MimeKit_Text_HtmlAttributeId.htm" />
     <HelpKINode Title="HtmlTagId Enumeration" Url="html/T_MimeKit_Text_HtmlTagId.htm" />
