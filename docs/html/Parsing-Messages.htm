@@ -8,14 +8,30 @@
         <a href="T_MimeKit_MimeParser.htm">MimeParser</a> class.
         For the most part, using the MimeParser directly is not necessary unless
         you wish to parse a Unix mbox file stream. However, this is how you would
-        do it:</p><div id="IDBBEAB" class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="IDBBEAB_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="IDBBEAB_copyCode" href="#" class="copyCodeSnippet" onclick="CopyToClipboard('IDBBEAB');return false;" title="Copy">Copy</a></div></div><div id="IDBBEAB_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">// Load a MimeMessage from a stream</span>
-<span class="highlight-keyword">var</span> parser = <span class="highlight-keyword">new</span> MimeParser (stream, MimeFormat.Entity);
-<span class="highlight-keyword">var</span> message = parser.ParseMessage ();</pre></div></div></div><p>For Unix mbox file streams, you would use the parser like this:</p><div id="IDDBEAB" class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="IDDBEAB_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="IDDBEAB_copyCode" href="#" class="copyCodeSnippet" onclick="CopyToClipboard('IDDBEAB');return false;" title="Copy">Copy</a></div></div><div id="IDDBEAB_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">// Load every message from a Unix mbox</span>
-<span class="highlight-keyword">var</span> parser = <span class="highlight-keyword">new</span> MimeParser (stream, MimeFormat.Mbox);
-<span class="highlight-keyword">while</span> (!parser.IsEndOfStream) {
-    <span class="highlight-keyword">var</span> message = parser.ParseMessage ();
+        do it:</p><div id="IDBBEAB" class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="IDBBEAB_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="IDBBEAB_copyCode" href="#" class="copyCodeSnippet" onclick="CopyToClipboard('IDBBEAB');return false;" title="Copy">Copy</a></div></div><div id="IDBBEAB_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> MimeMessage ParseMessage (<span class="highlight-keyword">string</span> fileName)
+{
+    <span class="highlight-comment">// Load a MimeMessage from a file path or stream</span>
+    <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> stream = File.OpenRead (fileName)) {
+        <span class="highlight-keyword">var</span> parser = <span class="highlight-keyword">new</span> MimeParser (stream, MimeFormat.Entity);
 
-    <span class="highlight-comment">// do something with the message</span>
+        <span class="highlight-keyword">return</span> parser.ParseMessage ();
+    }
+}</pre></div></div></div><p>For Unix mbox file streams, you would use the parser like this:</p><div id="IDDBEAB" class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="IDDBEAB_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="IDDBEAB_copyCode" href="#" class="copyCodeSnippet" onclick="CopyToClipboard('IDDBEAB');return false;" title="Copy">Copy</a></div></div><div id="IDDBEAB_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">void</span> ParseMbox (<span class="highlight-keyword">string</span> fileName)
+{
+    <span class="highlight-comment">// Load every message from a Unix mbox spool.</span>
+    <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> stream = fileName.OpenRead (fileName)) {
+        <span class="highlight-keyword">var</span> parser = <span class="highlight-keyword">new</span> MimeParser (stream, MimeFormat.Mbox);
+
+        <span class="highlight-keyword">while</span> (!parser.IsEndOfStream) {
+            MimeMessage message = parser.ParseMessage ();
+            <span class="highlight-keyword">long</span> mboxMarkerOffset = parser.MboxMarkerOffset;
+            <span class="highlight-keyword">string</span> mboxMarker = parser.MboxMarker;
+
+            Console.WriteLine ($<span class="highlight-literal">"MBOX marker found @ {mboxMarkerOffset}: {mboxMarker}"</span>);
+
+            <span class="highlight-comment">// TODO: Do something with the message.</span>
+        }
+    }
 }</pre></div></div></div></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('seeAlso')" onkeypress="SectionExpandCollapse_CheckKey('seeAlso', event)" tabindex="0"><img id="seeAlsoToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="seeAlsoSection" class="collapsibleSection"><h4>Other Resources</h4><div><a href="Creating-Messages.htm">Creating messages</a></div><div><a href="Working-With-Messages.htm">Working with messages</a></div></div></div></div><div id="PageFooter" class="pageFooter"><!-- Global site tag (gtag.js) - Google Analytics -->
 <script src="https://www.googletagmanager.com/gtag/js?id=UA-63841238-1"></script>
 <script>

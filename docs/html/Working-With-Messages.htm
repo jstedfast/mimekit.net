@@ -138,16 +138,13 @@ multipart/alternative
 {
     List&lt;MultipartRelated&gt; stack = <span class="highlight-keyword">new</span> List&lt;MultipartRelated&gt; ();
     List&lt;MimeEntity&gt; attachments = <span class="highlight-keyword">new</span> List&lt;MimeEntity&gt; ();
-    <span class="highlight-keyword">readonly</span> <span class="highlight-keyword">string</span> tempDir;
     <span class="highlight-keyword">string</span> body;
 
     <span class="highlight-comment">/// &lt;summary&gt;</span>
     <span class="highlight-comment">/// Creates a new HtmlPreviewVisitor.</span>
     <span class="highlight-comment">/// &lt;/summary&gt;</span>
-    <span class="highlight-comment">/// &lt;param name="tempDirectory"&gt;A temporary directory used for storing image files.&lt;/param&gt;</span>
-    <span class="highlight-keyword">public</span> HtmlPreviewVisitor (<span class="highlight-keyword">string</span> tempDirectory)
+    <span class="highlight-keyword">public</span> HtmlPreviewVisitor ()
     {
-        tempDir = tempDirectory;
     }
 
     <span class="highlight-comment">/// &lt;summary&gt;</span>
