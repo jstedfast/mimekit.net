@@ -1108,8 +1108,8 @@ Y3J5cHRlZApibHVyYi4gTW1ta2F5PyBUaGFua3MuCg==
     message.To.AddRange (to);
 
     <span class="highlight-comment">// set the forwarded subject</span>
-    <span class="highlight-keyword">if</span> (!original.Subject.StartsWith (<span class="highlight-literal">"FW:"</span>, StringComparison.OrdinalIgnoreCase))
-        message.Subject = <span class="highlight-literal">"FW: "</span> + original.Subject;
+    <span class="highlight-keyword">if</span> (!original.Subject?.StartsWith (<span class="highlight-literal">"FW:"</span>, StringComparison.OrdinalIgnoreCase))
+        message.Subject = <span class="highlight-literal">"FW: "</span> + (original.Subject ?? <span class="highlight-keyword">string</span>.Empty);
     <span class="highlight-keyword">else</span>
         message.Subject = original.Subject;
 
@@ -1137,8 +1137,8 @@ Y3J5cHRlZApibHVyYi4gTW1ta2F5PyBUaGFua3MuCg==
     message.To.AddRange (to);
 
     <span class="highlight-comment">// set the forwarded subject</span>
-    <span class="highlight-keyword">if</span> (!original.Subject.StartsWith (<span class="highlight-literal">"FW:"</span>, StringComparison.OrdinalIgnoreCase))
-        message.Subject = <span class="highlight-literal">"FW: "</span> + original.Subject;
+    <span class="highlight-keyword">if</span> (!original.Subject?.StartsWith (<span class="highlight-literal">"FW:"</span>, StringComparison.OrdinalIgnoreCase))
+        message.Subject = <span class="highlight-literal">"FW: "</span> + (original.Subject ?? <span class="highlight-keyword">string</span>.Empty);
     <span class="highlight-keyword">else</span>
         message.Subject = original.Subject;
 
@@ -1149,7 +1149,7 @@ Y3J5cHRlZApibHVyYi4gTW1ta2F5PyBUaGFua3MuCg==
         test.WriteLine (<span class="highlight-literal">"From: {0}"</span>, original.From);
         text.WriteLine (<span class="highlight-literal">"Sent: {0}"</span>, DateUtils.FormatDate (original.Date));
         text.WriteLine (<span class="highlight-literal">"To: {0}"</span>, original.To);
-        text.WriteLine (<span class="highlight-literal">"Subject: {0}"</span>, original.Subject);
+        text.WriteLine (<span class="highlight-literal">"Subject: {0}"</span>, original.Subject ?? <span class="highlight-keyword">string</span>.Empty);
         text.WriteLine ();
 
         text.Write (original.TextBody);
