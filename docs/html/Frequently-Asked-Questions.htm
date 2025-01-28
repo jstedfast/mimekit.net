@@ -76,7 +76,7 @@
     <span class="highlight-keyword">return</span> <span class="highlight-keyword">false</span>;
 }</pre></div></div></div><p>
               The downside of the above example is that it requires hard-coding known values for "trusted" mail server
-              certificates which can quickly become unweildy to deal with if your program is meant to be used with
+              certificates which can quickly become unwieldy to deal with if your program is meant to be used with
               a wide range of mail servers.
             </p><p>
               The best approach would be to prompt the user with a dialog explaining that the certificate is
@@ -772,7 +772,7 @@ Y3J5cHRlZApibHVyYi4gTW1ta2F5PyBUaGFua3MuCg==
           The method variant that has a
           <a href="T_MimeKit_Cryptography_DigitalSignatureCollection.htm">DigitalSignatureCollection</a>
           output parameter is useful in cases where the encrypted PGP blurb is also digitally signed,
-          allowing you to get your hands on the list of digitial signatures in order for you to verify
+          allowing you to get your hands on the list of digital signatures in order for you to verify
           each of them.
         </p><p>
           To decrypt the sample message above, you could use the following code snippet:
@@ -1166,7 +1166,7 @@ Y3J5cHRlZApibHVyYi4gTW1ta2F5PyBUaGFua3MuCg==
         </p><div id="IDBBTAB" class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="IDBBTAB_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="IDBBTAB_copyCode" href="#" class="copyCodeSnippet" onclick="CopyToClipboard('IDBBTAB');return false;" title="Copy">Copy</a></div></div><div id="IDBBTAB_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">foreach</span> (<span class="highlight-keyword">var</span> uid <span class="highlight-keyword">in</span> folder.Search (SearchQuery.NotSeen)) {
     <span class="highlight-keyword">var</span> message = folder.GetMessage (uid);
 }</pre></div></div></div></div><div class="collapsibleAreaRegion" id="ParseWebRequestFormData"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('IDUAB')" onkeypress="SectionExpandCollapse_CheckKey('IDUAB', event)" tabindex="0"><img id="IDUABToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />How would I parse multipart/form-data from an HTTP web request?</span></div><div id="IDUABSection" class="collapsibleSection"><p>
-          Since classes like <a href="https://docs.microsoft.com/dotnet/api/system.net.httpwebrequest" target="_blank" rel="noopener noreferrer">HttpWebRequest</a>
+          Since classes like <a href="https://learn.microsoft.com/dotnet/api/system.net.httpwebrequest" target="_blank" rel="noopener noreferrer">HttpWebRequest</a>
           take care of parsing the HTTP headers (which includes the <span class="literal">Content-Type</span> header)
           and only offer a content stream to consume, MimeKit provides a way to deal with this using the
           following two static methods:
@@ -1213,7 +1213,7 @@ Y3J5cHRlZApibHVyYi4gTW1ta2F5PyBUaGFua3MuCg==
   gtag('js', new Date());
 
   gtag('config', 'UA-63841238-1');
-</script><p><a href="https://github.com/jstedfast" target="_blank" rel="noopener noreferrer">Copyright © 2013-2023 Jeffrey Stedfast</a></p><div class="feedbackLink">Send comments on this topic to
+</script><p><a href="https://github.com/jstedfast" target="_blank" rel="noopener noreferrer">Copyright © 2013-2025 Jeffrey Stedfast</a></p><div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:jestedfa%40microsoft.com?Subject=MailKit%20Documentation">Jeffrey Stedfast</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
