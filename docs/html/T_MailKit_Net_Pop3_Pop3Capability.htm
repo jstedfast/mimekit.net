@@ -1,0 +1,344 @@
+﻿<!DOCTYPE html []>
+<html lang="en-US" data-theme="light">
+  <head><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B7CEM3SL1V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B7CEM3SL1V');
+</script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/fontawesome.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/solid.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/regular.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/brands.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/presentationStyle.css?v=50DD4085" />
+    <script src="../scripts/jquery-3.7.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js?v=50DD4085"></script>
+    <script src="../scripts/highlight.min.js?v=50DD4085"></script>
+    <script src="../scripts/themeSwitcher.js?v=50DD4085"></script>
+    <script src="../scripts/presentationStyle.js?v=50DD4085"></script>
+    <title>Pop3Capability Enumeration</title>
+    <meta name="Title" content="Pop3Capability" />
+    <meta name="Help.Id" content="T:MailKit.Net.Pop3.Pop3Capability" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MailKit.Net.Pop3" />
+    <meta name="guid" content="T_MailKit_Net_Pop3_Pop3Capability" />
+    <meta name="Description" content="A capability supported by a POP3 server." />
+    <meta name="tocParentId" content="647" />
+  </head>
+  <body>
+    <header class="pageHeader" id="Header">
+      <div class="level mb-0 py-2 px-4">
+        <div id="TitleContainer" class="level-left">
+          <div id="DocumentationTitle" class="level-item">MailKit Documentation</div>
+        </div>
+        <div id="LangFilterSearchContainer" class="level-right">
+          <div id="ProjectLink" class="level-item" title="Project website" aria-label="Project website">
+            <a href="https://github.com/jstedfast/MailKit" rel="noopener noreferrer" target="_blank">
+              <span class="icon">
+                <i class="fa-brands fa-github"></i>
+              </span>
+            </a>
+          </div>
+          <div id="ThemeSwitcher" class="level-item" title="Toggle theme" aria-label="Toggle theme">
+            <span class="icon">
+              <i class="fa fa-regular fa-moon theme-icon-dark"></i>
+              <i class="fa fa-sun theme-icon-light"></i>
+            </span>
+          </div>
+          <div class="level-item">
+            <div class="dropdown is-hoverable">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span id="CurrentLanguage"></span>
+                  <span class="icon is-small">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" role="menu">
+                <div id="LanguageSelections" class="dropdown-content">
+                  <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="level-item">
+            <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+              <div class="field">
+                <div class="control has-icons-left">
+                  <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-search"></i>
+                  </span>
+                  <button id="SearchButton" type="submit" class="is-hidden"></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article>
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile toc-resizable">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu">
+                <li>Loading...</li>
+              </ul>
+            </nav>
+          </div>
+          <div id="Resizer" class="toc-resizer"></div>
+          <div id="TopicContent" class="column content is-7 toc-resizable-content">
+            <h1>Pop<wbr />3Capability Enumeration</h1>
+            <div class="summary">
+            A capability supported by a POP3 server.
+            </div>
+            <h2 class="quickLinkHeader">Definition</h2>
+            <div id="IDBSection">
+              <strong>Namespace:</strong> <a href="N_MailKit_Net_Pop3.htm">MailKit.Net.Pop3</a><br /><strong>Assembly:</strong> MailKit (in MailKit.dll) Version: 5.0.0<div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">enum</span> <span class="identifier">Pop3Capability</span></code></pre></div></div></div>
+            <h2 class="quickLinkHeader">Remarks</h2>
+            <div id="IDBCSection">
+            Capabilities are read as part of the response to the <span class="code">CAPA</span> command that
+            is issued during the connection and authentication phases of the
+            <a href="T_MailKit_Net_Pop3_Pop3Client.htm">Pop3Client</a>.
+            </div>
+            <h2 class="quickLinkHeader">Example</h2>
+            <div id="IDCCSection">
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void PrintCapabilities ()
+{
+    using (var client = new Pop3Client ()) {
+        client.Connect ("pop.gmail.com", 995, SecureSocketOptions.SslOnConnect);
+
+        if (client.Capabilities.Contains (Pop3Capability.Sasl)) {
+            var mechanisms = string.Join (", ", client.AuthenticationMechanisms);
+            Console.WriteLine ("The POP3 server supports the following SASL mechanisms: {0}", mechanisms);
+        }
+
+        client.Authenticate ("username", "password");
+
+        if (client.Capabilities.Contains (Pop3Capability.Apop))
+            Console.WriteLine ("The server supports APOP authentication.");
+
+        if (client.Capabilities.Contains (Pop3Capability.Expire)) {
+            if (client.ExpirePolicy &gt; 0)
+                Console.WriteLine ("The POP3 server automatically expires messages after {0} days", client.ExpirePolicy);
+            else
+                Console.WriteLine ("The POP3 server will never expire messages.");
+        }
+
+        if (client.Capabilities.Contains (Pop3Capability.LoginDelay))
+            Console.WriteLine ("The minimum number of seconds between login attempts is {0}.", client.LoginDelay);
+
+        if (client.Capabilities.Contains (Pop3Capability.Pipelining))
+            Console.WriteLine ("The POP3 server can pipeline commands, so using client.GetMessages() will be faster.");
+
+        if (client.Capabilities.Contains (Pop3Capability.Top))
+            Console.WriteLine ("The POP3 server supports the TOP command, so it's possible to download message headers.");
+
+        if (client.Capabilities.Contains (Pop3Capability.UIDL))
+            Console.WriteLine ("The POP3 server supports the UIDL command which means we can track messages by UID.");
+
+        client.Disconnect (true);
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            <h2 class="quickLinkHeader">Members</h2>
+            <div id="IDADASection">
+              <table id="enumMemberList" class="table is-hoverable">
+                <tr>
+                  <td>Apop</td>
+                  <td>0</td>
+                  <td>
+            The server supports <a href="https://tools.ietf.org/html/rfc1939#page-15">APOP</a>
+            authentication.
+            </td>
+                </tr>
+                <tr>
+                  <td>Expire</td>
+                  <td>1</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc2449">EXPIRE</a> extension
+            and defines the expiration policy for messages (see <a href="P_MailKit_Net_Pop3_Pop3Client_ExpirePolicy.htm">ExpirePolicy</a>).
+            </td>
+                </tr>
+                <tr>
+                  <td>LoginDelay</td>
+                  <td>2</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc2449">LOGIN-DELAY</a> extension,
+            allowing the server to specify to the client a minimum number of seconds between login attempts
+            (see <a href="P_MailKit_Net_Pop3_Pop3Client_LoginDelay.htm">LoginDelay</a>).
+            </td>
+                </tr>
+                <tr>
+                  <td>Pipelining</td>
+                  <td>3</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc2449">PIPELINING</a> extension,
+            allowing the client to batch multiple requests to the server at at time.
+            </td>
+                </tr>
+                <tr>
+                  <td>ResponseCodes</td>
+                  <td>4</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc2449">RESP-CODES</a> extension,
+            allowing the server to provide clients with extended information in error responses.
+            </td>
+                </tr>
+                <tr>
+                  <td>Sasl</td>
+                  <td>5</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc2449">SASL</a> authentication
+            extension, allowing the client to authenticate using the advertized authentication mechanisms
+            (see <a href="P_MailKit_Net_Pop3_Pop3Client_AuthenticationMechanisms.htm">AuthenticationMechanisms</a>).
+            </td>
+                </tr>
+                <tr>
+                  <td>StartTLS</td>
+                  <td>6</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc2595">STLS</a> extension,
+            allowing clients to switch to an encrypted SSL/TLS connection after connecting.
+            </td>
+                </tr>
+                <tr>
+                  <td>Top</td>
+                  <td>7</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc1939#page-11">TOP</a> command,
+            allowing clients to fetch the headers plus an arbitrary number of lines.
+            </td>
+                </tr>
+                <tr>
+                  <td>UIDL</td>
+                  <td>8</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc1939#page-12">UIDL</a> command,
+            allowing the client to refer to messages via a UID as opposed to a sequence ID.
+            </td>
+                </tr>
+                <tr>
+                  <td>User</td>
+                  <td>9</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc1939#page-13">USER</a>
+            authentication command, allowing the client to authenticate via a plain-text username
+            and password command (not recommended unless no other authentication mechanisms exist).
+            </td>
+                </tr>
+                <tr>
+                  <td>UTF8</td>
+                  <td>10</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc6856">UTF8</a> extension,
+            allowing clients to retrieve messages in the UTF-8 encoding.
+            </td>
+                </tr>
+                <tr>
+                  <td>UTF8User</td>
+                  <td>11</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc6856">UTF8=USER</a> extension,
+            allowing clients to authenticate using UTF-8 encoded usernames and passwords.
+            </td>
+                </tr>
+                <tr>
+                  <td>Lang</td>
+                  <td>12</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc6856">LANG</a> extension,
+            allowing clients to specify which language the server should use for error strings.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Reference</h4>
+              <div>
+                <a href="N_MailKit_Net_Pop3.htm">MailKit.Net.Pop3 Namespace</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Definition</a>
+                </li>
+                <li>
+                  <a class="quickLink">Remarks</a>
+                </li>
+                <li>
+                  <a class="quickLink">Example</a>
+                </li>
+                <li>
+                  <a class="quickLink">Members</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer id="PageFooter" class="footer border-top py-3">
+      <div class="columns">
+        <div id="FooterContent" class="column">
+          <p class="site-footer-links">
+            <a href="https://mimekit.net/">Home</a> <a href="https://github.com/jstedfast/MimeKit">MimeKit on GitHub</a> <a href="https://github.com/jstedfast/MailKit">MailKit on GitHub</a> <a href="https://github.com/sponsors/jstedfast">    Sponsor</a></p>
+          <p>
+            <a href="https://github.com/jstedfast" target="_blank" rel="noopener noreferrer">Copyright © 2013-2026 Jeffrey Stedfast</a>
+          </p>
+          <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:jestedfa%40microsoft.com?Subject=MailKit%20Documentation">Jeffrey Stedfast</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script></div>
+      </div>
+    </footer>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadToc();
+InitializeQuickLinks();
+hljs.highlightAll();
+});</script>
+  </body>
+</html>

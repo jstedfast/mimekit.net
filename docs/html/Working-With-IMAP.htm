@@ -1,0 +1,1773 @@
+﻿<!DOCTYPE html []>
+<html lang="en-US" data-theme="light">
+  <head><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B7CEM3SL1V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B7CEM3SL1V');
+</script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/fontawesome.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/solid.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/regular.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/brands.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/presentationStyle.css?v=50DD4085" />
+    <script src="../scripts/jquery-3.7.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js?v=50DD4085"></script>
+    <script src="../scripts/highlight.min.js?v=50DD4085"></script>
+    <script src="../scripts/themeSwitcher.js?v=50DD4085"></script>
+    <script src="../scripts/presentationStyle.js?v=50DD4085"></script>
+    <title>Working with IMAP</title>
+    <meta name="Title" content="Working with IMAP" />
+    <meta name="Help.Id" content="Working-With-IMAP" />
+    <meta name="Help.ContentType" content="Concepts" />
+    <meta name="guid" content="Working-With-IMAP" />
+    <meta name="Description" content="T:MailKit.Net.Imap.ImapClient provides access to messages stored on an IMAP server." />
+    <meta name="tocParentId" content="1" />
+  </head>
+  <body>
+    <header class="pageHeader" id="Header">
+      <div class="level mb-0 py-2 px-4">
+        <div id="TitleContainer" class="level-left">
+          <div id="DocumentationTitle" class="level-item">MailKit Documentation</div>
+        </div>
+        <div id="LangFilterSearchContainer" class="level-right">
+          <div id="ProjectLink" class="level-item" title="Project website" aria-label="Project website">
+            <a href="https://github.com/jstedfast/MailKit" rel="noopener noreferrer" target="_blank">
+              <span class="icon">
+                <i class="fa-brands fa-github"></i>
+              </span>
+            </a>
+          </div>
+          <div id="ThemeSwitcher" class="level-item" title="Toggle theme" aria-label="Toggle theme">
+            <span class="icon">
+              <i class="fa fa-regular fa-moon theme-icon-dark"></i>
+              <i class="fa fa-sun theme-icon-light"></i>
+            </span>
+          </div>
+          <div class="level-item">
+            <div class="dropdown is-hoverable">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span id="CurrentLanguage"></span>
+                  <span class="icon is-small">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" role="menu">
+                <div id="LanguageSelections" class="dropdown-content">
+                  <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="level-item">
+            <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+              <div class="field">
+                <div class="control has-icons-left">
+                  <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-search"></i>
+                  </span>
+                  <button id="SearchButton" type="submit" class="is-hidden"></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article>
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile toc-resizable">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu">
+                <li>Loading...</li>
+              </ul>
+            </nav>
+          </div>
+          <div id="Resizer" class="toc-resizer"></div>
+          <div id="TopicContent" class="column content is-7 toc-resizable-content">
+            <h1>Working with IMAP</h1>
+            <div>
+              <p>
+                <a href="T_MailKit_Net_Imap_ImapClient.htm">ImapClient</a> provides access to messages
+        stored on an IMAP server. Unlike POP3, IMAP is designed for leaving messages on the server: it supports
+        multiple folders, message flags and keywords, server-side searching and sorting, partial downloads and
+        notifications of changes made by other clients.
+      </p>
+              <p>
+        For information about connecting securely, logging and error handling, see
+        <a href="Connecting-To-A-Server.htm">Connecting to a server</a>. For information about authenticating, see
+        <a href="Authentication.htm">Authentication</a>.
+      </p>
+              <p class="is-hidden-tablet">This topic contains the following sections:</p>
+              <ul class="is-hidden-tablet">
+                <li>
+                  <a href="#Capabilities">Server capabilities</a>
+                </li>
+                <li>
+                  <a href="#Folders">Folders</a>
+                </li>
+                <li>
+                  <a href="#SpecialFolders">Special folders</a>
+                </li>
+                <li>
+                  <a href="#ManagingFolders">Creating, renaming and deleting folders</a>
+                </li>
+                <li>
+                  <a href="#OpeningFolders">Opening folders</a>
+                </li>
+                <li>
+                  <a href="#MessageIdentifiers">Indexes and unique identifiers</a>
+                </li>
+                <li>
+                  <a href="#FetchingSummaries">Fetching message summaries</a>
+                </li>
+                <li>
+                  <a href="#DownloadingMessages">Downloading messages</a>
+                </li>
+                <li>
+                  <a href="#Flags">Flags and keywords</a>
+                </li>
+                <li>
+                  <a href="#Searching">Searching and sorting</a>
+                </li>
+                <li>
+                  <a href="#AppendCopyMove">Appending, copying and moving messages</a>
+                </li>
+                <li>
+                  <a href="#DeletingMessages">Deleting messages</a>
+                </li>
+                <li>
+                  <a href="#Synchronizing">Synchronizing a local cache</a>
+                </li>
+                <li>
+                  <a href="#Idle">Receiving notifications with IDLE</a>
+                </li>
+                <li>
+                  <a href="#seeAlsoSection">See Also</a>
+                </li>
+              </ul>
+            </div>
+            <h2 id="Capabilities" class="quickLinkHeader">Server capabilities</h2>
+            <div id="IDBABSection">
+              <p>
+          IMAP has a large number of extensions, and servers vary widely in which ones they support. After
+          connecting (and again after authenticating, since many servers advertise additional capabilities
+          once the user has logged in), the <a href="P_MailKit_Net_Imap_ImapClient_Capabilities.htm">Capabilities</a>
+          property lists the extensions supported by the server. MailKit uses these extensions automatically
+          where possible, but some features (such as sorting, threading or <span class="literal">QRESYNC</span>) are only
+          available when the server supports them.
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void Capabilities ()
+{
+    using (var client = new ImapClient ()) {
+        client.Connect ("imap.gmail.com", 993, SecureSocketOptions.SslOnConnect);
+
+        var mechanisms = string.Join (", ", client.AuthenticationMechanisms);
+        Console.WriteLine ("The IMAP server supports the following SASL authentication mechanisms: {0}", mechanisms);
+
+        client.Authenticate ("username", "password");
+
+        if (client.Capabilities.Contains (ImapCapability.Id)) {
+            var clientImplementation = new ImapImplementation { Name = "MailKit", Version = "1.0" };
+            var serverImplementation = client.Identify (clientImplementation);
+
+            Console.WriteLine ("Server implementation details:");
+            foreach (var property in serverImplementation.Properties)
+                Console.WriteLine ("  {0} = {1}", property.Key, property.Value);
+        }
+
+        if (client.Capabilities.Contains (ImapCapability.Acl)) {
+            Console.WriteLine ("The IMAP server supports Access Control Lists.");
+
+            Console.WriteLine ("The IMAP server supports the following access rights: {0}", client.Rights);
+
+            Console.WriteLine ("The Inbox has the following access controls:");
+            var acl = client.Inbox.GetAccessControlList ();
+            foreach (var ac in acl)
+                Console.WriteLine ("  {0} = {1}", ac.Name, ac.Rights);
+
+            var myRights = client.Inbox.GetMyAccessRights ();
+            Console.WriteLine ("Your current rights for the Inbox folder are: {0}", myRights);
+        }
+
+        if (client.Capabilities.Contains (ImapCapability.Quota)) {
+            Console.WriteLine ("The IMAP server supports quotas.");
+
+            Console.WriteLine ("The current quota for the Inbox is:");
+            var quota = client.Inbox.GetQuota ();
+
+            if (quota.StorageLimit.HasValue)
+                Console.WriteLine ("  Limited by storage space. Using {0} out of {1} kilobytes.", quota.CurrentStorageSize.Value, quota.StorageLimit.Value);
+
+            if (quota.MessageLimit.HasValue)
+                Console.WriteLine ("  Limited by the number of messages. Using {0} out of {1} messages.", quota.CurrentMessageCount.Value, quota.MessageLimit.Value);
+
+            Console.WriteLine ("The quota root is: {0}", quota.QuotaRoot);
+        }
+
+        if (client.Capabilities.Contains (ImapCapability.Thread)) {
+            if (client.ThreadingAlgorithms.Contains (ThreadingAlgorithm.OrderedSubject))
+                Console.WriteLine ("The IMAP server supports threading by subject.");
+            if (client.ThreadingAlgorithms.Contains (ThreadingAlgorithm.References))
+                Console.WriteLine ("The IMAP server supports threading by references.");
+        }
+
+        client.Disconnect (true);
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+              <p>
+          Many folder-level features can also be checked using
+          <a href="M_MailKit_IMailFolder_Supports.htm">Supports</a>.
+        </p>
+            </div>
+            <h2 id="Folders" class="quickLinkHeader">Folders</h2>
+            <div id="IDCABSection">
+              <p>
+          The <a href="P_MailKit_Net_Imap_ImapClient_Inbox.htm">Inbox</a> folder is always
+          available. Other folders live inside one or more namespaces. Most servers have a single personal
+          namespace, but some also have namespaces for folders that are shared with other users or are public:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void ShowNamespaces ()
+{
+    using (var client = new ImapClient ()) {
+        client.Connect ("imap.mail-server.com", 993, SecureSocketOptions.SslOnConnect);
+        client.Authenticate ("username", "password");
+
+        Console.WriteLine ("Personal namespaces:");
+        foreach (var ns in client.PersonalNamespaces)
+            Console.WriteLine ($"* \"{ns.Path}\" \"{ns.DirectorySeparator}\"");
+        Console.WriteLine ();
+        Console.WriteLine ("Shared namespaces:");
+        foreach (var ns in client.SharedNamespaces)
+            Console.WriteLine ($"* \"{ns.Path}\" \"{ns.DirectorySeparator}\"");
+        Console.WriteLine ();
+        Console.WriteLine ("Other namespaces:");
+        foreach (var ns in client.OtherNamespaces)
+            Console.WriteLine ($"* \"{ns.Path}\" \"{ns.DirectorySeparator}\"");
+        Console.WriteLine ();
+
+        // get the folder that represents the first personal namespace
+        var personal = client.GetFolder (client.PersonalNamespaces[0]);
+
+        // list the folders under the first personal namespace
+        var subfolders = personal.GetSubfolders ();
+
+        Console.WriteLine ("The list of folders that are direct children of the first personal namespace:");
+        foreach (var folder in subfolders)
+            Console.WriteLine ($"* {folder.Name}");
+
+        client.Disconnect (true);
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+              <p>
+          You can list all of the folders in a namespace at once (optionally requesting status information such
+          as the message count for each folder in the same round-trip), or walk the folder hierarchy one level
+          at a time:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void ListFolders (ImapClient client)
+{
+    // Most servers have a single personal namespace, but some have more (or none at all).
+    foreach (var ns in client.PersonalNamespaces) {
+        var folders = client.GetFolders (ns, StatusItems.Count | StatusItems.Unread, subscribedOnly: false);
+
+        foreach (var folder in folders)
+            Console.WriteLine ("{0}: {1} messages, {2} unread", folder.FullName, folder.Count, folder.Unread);
+    }
+
+    // Folders can also be walked as a tree, starting from the root of a namespace.
+    var root = client.GetFolder (client.PersonalNamespaces[0]);
+
+    foreach (var subfolder in root.GetSubfolders ())
+        Console.WriteLine ("[{0}] {1}", subfolder.Attributes, subfolder.Name);
+}</code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            <h2 id="SpecialFolders" class="quickLinkHeader">Special folders</h2>
+            <div id="IDDABSection">
+              <p>
+          Folder names such as "Sent", "Drafts" or "Trash" vary between servers and are often localized. If the
+          server supports the <span class="literal">SPECIAL-USE</span> (or Gmail's <span class="literal">XLIST</span>) extension,
+          <a href="M_MailKit_IMailStore_GetFolder_1.htm">GetFolder(SpecialFolder)</a> can
+          be used to locate them regardless of their names:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static IMailFolder? GetSentFolder (ImapClient client)
+{
+    // The SPECIAL-USE and XLIST extensions let the server tell us which folder is used for Sent
+    // messages (or Drafts, Junk, Trash, etc.), regardless of what it is named.
+    if (client.Capabilities.Contains (ImapCapability.SpecialUse) || client.Capabilities.Contains (ImapCapability.XList))
+        return client.GetFolder (SpecialFolder.Sent);
+
+    // Otherwise, fall back to guessing based on common folder names.
+    var personal = client.GetFolder (client.PersonalNamespaces[0]);
+
+    foreach (var folder in personal.GetSubfolders ()) {
+        if (folder.Name.Equals ("Sent", StringComparison.OrdinalIgnoreCase) ||
+            folder.Name.Equals ("Sent Items", StringComparison.OrdinalIgnoreCase))
+            return folder;
+    }
+
+    return null;
+}</code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            <h2 id="ManagingFolders" class="quickLinkHeader">Creating, renaming and deleting folders</h2>
+            <div id="IDEABSection">
+              <p>
+          Folders can be created, renamed, deleted, subscribed to and unsubscribed from.
+          <a href="M_MailKit_IMailFolder_Status.htm">Status</a> can be
+          used to get information such as the message count or unread count of a folder without opening it:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void ManageFolders (ImapClient client)
+{
+    var personal = client.GetFolder (client.PersonalNamespaces[0]);
+
+    // Create a new folder that can contain messages.
+    var projects = personal.Create ("Projects", true);
+
+    if (projects == null)
+        return;
+
+    projects.Subscribe ();
+
+    // Rename it (and/or move it to a different parent folder).
+    projects.Rename (personal, "Archived Projects");
+
+    // Query the server for status information without opening (selecting) the folder.
+    projects.Status (StatusItems.Count | StatusItems.Unread | StatusItems.UidNext | StatusItems.UidValidity);
+    Console.WriteLine ("{0} has {1} messages ({2} unread)", projects.FullName, projects.Count, projects.Unread);
+
+    projects.Unsubscribe ();
+    projects.Delete ();
+}</code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            <h2 id="OpeningFolders" class="quickLinkHeader">Opening folders</h2>
+            <div id="IDFABSection">
+              <p>
+          Before you can access the messages in a folder, it must be opened using
+          <a href="Overload_MailKit_IMailFolder_Open.htm">Open</a>. Only one
+          folder can be open at a time per connection; opening a folder implicitly closes the previously opened
+          folder.
+        </p>
+              <ul>
+                <li>
+                  <p>
+                    <span class="code">FolderAccess.ReadOnly</span> opens the folder without allowing changes. Use this
+              when you only need to read messages.
+            </p>
+                </li>
+                <li>
+                  <p>
+                    <span class="code">FolderAccess.ReadWrite</span> is required to change flags, append, expunge or
+              move messages out of the folder.
+            </p>
+                </li>
+              </ul>
+              <p>
+          Once open, properties such as <a href="P_MailKit_IMailFolder_Count.htm">Count</a>,
+          <a href="P_MailKit_IMailFolder_UidValidity.htm">UidValidity</a>,
+          <a href="P_MailKit_IMailFolder_UidNext.htm">UidNext</a> and
+          <a href="P_MailKit_IMailFolder_PermanentFlags.htm">PermanentFlags</a> are populated and
+          kept up-to-date as the server sends notifications.
+        </p>
+              <article class="message is-info">
+                <div class="message-header">
+                  <p>
+                    <span class="icon">
+                      <i class="fa fa-info-circle"></i>
+                    </span>  Note</p>
+                </div>
+                <div class="message-body">
+                  <p>
+            MailKit never implicitly marks messages as <span class="literal">\Seen</span> when downloading them, even in a
+            folder opened with <span class="code">FolderAccess.ReadWrite</span>. To mark a message as read, add the
+            <span class="literal">\Seen</span> flag explicitly (see <a href="#Flags">Flags and keywords</a>).
+          </p>
+                </div>
+              </article>
+            </div>
+            <h2 id="MessageIdentifiers" class="quickLinkHeader">Indexes and unique identifiers</h2>
+            <div id="IDGABSection">
+              <p>
+          Messages in an open folder can be referred to in two ways:
+        </p>
+              <ul>
+                <li>
+                  <p>
+              By <em>index</em> (a zero-based sequence number). Indexes shift whenever a
+              message is expunged, so they should only be used briefly and never stored.
+            </p>
+                </li>
+                <li>
+                  <p>
+              By <em>unique identifier</em> (a <a href="T_MailKit_UniqueId.htm">UniqueId</a>).
+              A message's UID never changes as long as the folder's
+              <a href="P_MailKit_IMailFolder_UidValidity.htm">UidValidity</a> stays the same, so
+              UIDs are suitable for persisting between sessions.
+            </p>
+                </li>
+              </ul>
+              <p>
+          Most APIs have overloads that accept either. Prefer UIDs wherever possible.
+        </p>
+            </div>
+            <h2 id="FetchingSummaries" class="quickLinkHeader">Fetching message summaries</h2>
+            <div id="IDHABSection">
+              <p>
+          Downloading entire messages just to display a message list is slow and wasteful. Instead, use
+          <a href="Overload_MailKit_IMailFolder_Fetch.htm">Fetch</a> to
+          request only the information you need, such as the envelope (subject, addresses, date), flags, size,
+          a short preview of the text or the MIME structure of the message. The results are returned as
+          <a href="T_MailKit_IMessageSummary.htm">IMessageSummary</a> objects:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void FetchSummaries (ImapClient client)
+{
+    var inbox = client.Inbox;
+
+    inbox.Open (FolderAccess.ReadOnly);
+
+    // Request only the information that is actually needed. This is far more efficient than
+    // downloading each message just to display a list of messages.
+    var request = new FetchRequest (MessageSummaryItems.UniqueId | MessageSummaryItems.Envelope |
+        MessageSummaryItems.Flags | MessageSummaryItems.InternalDate | MessageSummaryItems.Size |
+        MessageSummaryItems.PreviewText | MessageSummaryItems.BodyStructure,
+        new [] { HeaderId.ListId, HeaderId.Importance });
+
+    // Fetch the summaries for every message in the folder (0 to -1 means "first to last").
+    foreach (var summary in inbox.Fetch (0, -1, request)) {
+        Console.WriteLine ("[{0}] {1}", summary.UniqueId, summary.Envelope?.Subject);
+        Console.WriteLine ("    From: {0}", summary.Envelope?.From);
+        Console.WriteLine ("    Received: {0} ({1} bytes)", summary.InternalDate, summary.Size);
+        Console.WriteLine ("    Flags: {0}", summary.Flags);
+        Console.WriteLine ("    List-Id: {0}", summary.Headers?[HeaderId.ListId]);
+        Console.WriteLine ("    Preview: {0}", summary.PreviewText);
+
+        // The BodyStructure makes it possible to see attachments without downloading the message.
+        foreach (var attachment in summary.Attachments)
+            Console.WriteLine ("    Attachment: {0}", attachment.FileName);
+    }
+
+    inbox.Close ();
+}</code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            <h2 id="DownloadingMessages" class="quickLinkHeader">Downloading messages</h2>
+            <div id="IDIABSection">
+              <p>
+          Use <a href="Overload_MailKit_IMailFolder_GetMessage.htm">GetMessage</a>
+          to download and parse an entire message:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void DownloadMessages ()
+{
+    using (var client = new ImapClient ()) {
+        client.Connect ("imap.gmail.com", 993, SecureSocketOptions.SslOnConnect);
+
+        client.Authenticate ("username", "password");
+
+        client.Inbox.Open (FolderAccess.ReadOnly);
+
+        var uids = client.Inbox.Search (SearchQuery.All);
+
+        foreach (var uid in uids) {
+            var message = client.Inbox.GetMessage (uid);
+
+            // write the message to a file
+            message.WriteTo (string.Format ("{0}.eml", uid));
+        }
+
+        client.Disconnect (true);
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+              <p>
+          To save messages to disk without parsing them (or to process very large messages without loading them
+          entirely into memory), use <a href="Overload_MailKit_IMailFolder_GetStream.htm">GetStream</a>:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void DownloadMessages ()
+{
+    using (var client = new ImapClient ()) {
+        client.Connect ("imap.gmail.com", 993, SecureSocketOptions.SslOnConnect);
+
+        client.Authenticate ("username", "password");
+
+        client.Inbox.Open (FolderAccess.ReadOnly);
+
+        var uids = client.Inbox.Search (SearchQuery.All);
+
+        foreach (var uid in uids) {
+            using (var stream = client.Inbox.GetStream (uid)) {
+                using (var output = File.Create ($"{uid}.eml"))
+                    stream.CopyTo (output);
+            }
+        }
+
+        client.Disconnect (true);
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+              <p>
+          If you have fetched the <span class="code">BodyStructure</span> of a message, you can download
+          individual parts (such as only the text body, or a single attachment) using
+          <a href="Overload_MailKit_IMailFolder_GetBodyPart.htm">GetBodyPart</a>:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void DownloadBodyAndAttachments (string baseDirectory)
+{
+    using (var client = new ImapClient ()) {
+        client.Connect ("imap.gmail.com", 993, SecureSocketOptions.SslOnConnect);
+
+        client.Authenticate ("username", "password");
+
+        client.Inbox.Open (FolderAccess.ReadOnly);
+
+        // search for messages where the Subject header contains either "MimeKit" or "MailKit"
+        var query = SearchQuery.SubjectContains ("MimeKit").Or (SearchQuery.SubjectContains ("MailKit"));
+        var uids = client.Inbox.Search (query);
+
+        // fetch summary information for the search results (we will want the UID and the BODYSTRUCTURE
+        // of each message so that we can extract the text body and the attachments)
+        var items = client.Inbox.Fetch (uids, MessageSummaryItems.UniqueId | MessageSummaryItems.BodyStructure);
+
+        foreach (var item in items) {
+            // determine a directory to save stuff in
+            var directory = Path.Combine (baseDirectory, item.UniqueId.ToString ());
+
+            // create the directory
+            Directory.CreateDirectory (directory);
+
+            // IMessageSummary.TextBody is a convenience property that finds the 'text/plain' body part for us
+            var bodyPart = item.TextBody;
+
+            if (bodyPart != null) {
+                // download the 'text/plain' body part
+                var plain = (TextPart) client.Inbox.GetBodyPart (item.UniqueId, bodyPart);
+
+                // TextPart.Text is a convenience property that decodes the content and converts the result to
+                // a string for us
+                var text = plain.Text;
+
+                File.WriteAllText (Path.Combine (directory, "body.txt"), text);
+            }
+
+            // IMessageSummary.HtmlBody is a convenience property that finds the 'text/html' body part for us
+            bodyPart = item.HtmlBody;
+
+            if (bodyPart != null) {
+                // download the 'text/html' body part
+                var html = (TextPart) client.Inbox.GetBodyPart (item.UniqueId, bodyPart);
+
+                // TextPart.Text is a convenience property that decodes the content and converts the result to
+                // a string for us
+                var text = html.Text;
+
+                File.WriteAllText (Path.Combine (directory, "body.html"), text);
+            }
+
+            // now iterate over all of the attachments and save them to disk
+            foreach (var attachment in item.Attachments) {
+                // download the attachment just like we did with the body
+                var entity = client.Inbox.GetBodyPart (item.UniqueId, attachment);
+
+                // attachments can be either message/rfc822 parts or regular MIME parts
+                if (entity is MessagePart) {
+                    var rfc822 = (MessagePart) entity;
+
+                    var path = Path.Combine (directory, attachment.PartSpecifier + ".eml");
+
+                    rfc822.Message.WriteTo (path);
+                } else {
+                    var part = (MimePart) entity;
+
+                    // default to using the sending client's suggested fileName value
+                    var fileName = attachment.FileName;
+
+                    if (string.IsNullOrEmpty (fileName)) {
+                        // the FileName wasn't defined, so generate one...
+                        if (!MimeTypes.TryGetExtension (attachment.ContentType.MimeType, out string extension))
+                            extension = ".dat";
+
+                        fileName = Guid.NewGuid ().ToString () + extension;
+                    }
+
+                    var path = Path.Combine (directory, fileName);
+
+                    // decode and save the content to a file
+                    using (var stream = File.Create (path))
+                        part.Content.DecodeTo (stream);
+                }
+            }
+        }
+
+        client.Disconnect (true);
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            <h2 id="Flags" class="quickLinkHeader">Flags and keywords</h2>
+            <div id="IDJABSection">
+              <p>
+          Each message has a set of system flags (<a href="T_MailKit_MessageFlags.htm">MessageFlags</a>,
+          such as <span class="literal">\Seen</span>, <span class="literal">\Flagged</span>, <span class="literal">\Answered</span> and
+          <span class="literal">\Deleted</span>) and may have any number of user-defined keywords (if the folder's
+          <a href="P_MailKit_IMailFolder_PermanentFlags.htm">PermanentFlags</a> include
+          <span class="code">MessageFlags.UserDefined</span>). Flags can be added, removed or replaced:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void MarkAsRead (ImapClient client, IList&lt;UniqueId&gt; uids)
+{
+    var inbox = client.Inbox;
+
+    inbox.Open (FolderAccess.ReadWrite);
+
+    // Add the \Seen flag. Setting Silent = true tells the server not to send back the
+    // updated flags since we don't need them.
+    inbox.Store (uids, new StoreFlagsRequest (StoreAction.Add, MessageFlags.Seen) { Silent = true });
+
+    // Remove the \Flagged flag.
+    inbox.Store (uids, new StoreFlagsRequest (StoreAction.Remove, MessageFlags.Flagged) { Silent = true });
+
+    // Add a custom keyword (if the server allows clients to create new keywords).
+    if (inbox.PermanentFlags.HasFlag (MessageFlags.UserDefined))
+        inbox.Store (uids, new StoreFlagsRequest (StoreAction.Add, new [] { "$Processed" }) { Silent = true });
+
+    // The same thing can also be done using the convenience extension methods.
+    inbox.AddFlags (uids, MessageFlags.Seen, true);
+    inbox.RemoveFlags (uids, MessageFlags.Flagged, true);
+
+    inbox.Close ();
+}</code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            <h2 id="Searching" class="quickLinkHeader">Searching and sorting</h2>
+            <div id="IDKABSection">
+              <p>
+          Searching is performed on the server using a <a href="T_MailKit_Search_SearchQuery.htm">SearchQuery</a>,
+          which can be combined using <span class="code">And</span>, <span class="code">Or</span> and
+          <span class="code">Not</span>. The result is a list of UIDs that can then be passed to
+          <a href="Overload_MailKit_IMailFolder_Fetch.htm">Fetch</a> or
+          <a href="Overload_MailKit_IMailFolder_GetMessage.htm">GetMessage</a>:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void Search (ImapClient client)
+{
+    var inbox = client.Inbox;
+
+    inbox.Open (FolderAccess.ReadOnly);
+
+    // Find unread messages from a particular sender delivered in the last week.
+    var query = SearchQuery.NotSeen
+        .And (SearchQuery.FromContains ("alice@example.com"))
+        .And (SearchQuery.DeliveredAfter (DateTime.Today.AddDays (-7)));
+
+    IList&lt;UniqueId&gt; uids = inbox.Search (query);
+
+    Console.WriteLine ("Found {0} matching messages.", uids.Count);
+
+    // Queries can be combined using And, Or and Not.
+    var important = SearchQuery.Or (SearchQuery.Flagged, SearchQuery.SubjectContains ("urgent"));
+    var notJunk = SearchQuery.Not (SearchQuery.HasKeyword ("$Junk"));
+
+    uids = inbox.Search (SearchQuery.And (important, notJunk));
+
+    // If the server supports the ESEARCH extension, it is possible to request only some of the results.
+    if (client.Capabilities.Contains (ImapCapability.ESearch)) {
+        var results = inbox.Search (SearchOptions.Count | SearchOptions.Min | SearchOptions.Max, query);
+
+        Console.WriteLine ("Count: {0}, Min: {1}, Max: {2}", results.Count, results.Min, results.Max);
+    }
+
+    inbox.Close ();
+}</code>
+                  </pre>
+                </div>
+              </div>
+              <p>
+          If the server supports the <span class="literal">SORT</span> extension, results can also be sorted on the server.
+          Otherwise, fetch the summaries and sort them on the client using
+          <a href="Overload_MailKit_MessageSorter_Sort.htm">Sort</a>:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void Sort (ImapClient client)
+{
+    var inbox = client.Inbox;
+
+    inbox.Open (FolderAccess.ReadOnly);
+
+    // Server-side sorting requires the SORT extension.
+    if (inbox.Supports (FolderFeature.Sorting)) {
+        var orderBy = new [] { OrderBy.ReverseArrival, OrderBy.Subject };
+        var uids = inbox.Sort (SearchQuery.All, orderBy);
+
+        Console.WriteLine ("The newest message has UID {0}", uids[0]);
+    }
+
+    inbox.Close ();
+}</code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            <h2 id="AppendCopyMove" class="quickLinkHeader">Appending, copying and moving messages</h2>
+            <div id="IDLABSection">
+              <p>
+                <a href="Overload_MailKit_IMailFolder_Append.htm">Append</a>
+          uploads a message into a folder (for example, to save a copy of a sent message in the Sent folder).
+          <a href="Overload_MailKit_IMailFolder_CopyTo.htm">CopyTo</a> and
+          <a href="Overload_MailKit_IMailFolder_MoveTo.htm">MoveTo</a>
+          copy or move messages between folders. If the server supports the <span class="literal">UIDPLUS</span> extension,
+          these methods return the UIDs of the new messages in the destination folder.
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void AppendCopyMove (ImapClient client, MimeMessage message)
+{
+    var sent = client.GetFolder (SpecialFolder.Sent);
+    var archive = client.GetFolder (SpecialFolder.Archive);
+
+    if (sent == null || archive == null)
+        return;
+
+    // Save a copy of a message that was just sent. Append does not require the folder to be open.
+    // If the server supports UIDPLUS, the UID of the new message is returned.
+    UniqueId? uid = sent.Append (new AppendRequest (message, MessageFlags.Seen));
+
+    if (uid.HasValue)
+        Console.WriteLine ("The message was appended with UID {0}", uid.Value);
+
+    // Copy and move operate on messages in the currently open folder.
+    client.Inbox.Open (FolderAccess.ReadWrite);
+
+    var uids = client.Inbox.Search (SearchQuery.Seen.And (SearchQuery.DeliveredBefore (DateTime.Today.AddYears (-1))));
+
+    // Move the messages to the Archive folder. If the server does not support the MOVE extension,
+    // MailKit emulates it using COPY, STORE and EXPUNGE. The returned UniqueIdMap maps each source
+    // UID to its new UID in the destination folder (if the server supports UIDPLUS).
+    UniqueIdMap map = client.Inbox.MoveTo (uids, archive);
+
+    for (int i = 0; i &lt; map.Source.Count; i++)
+        Console.WriteLine ("{0} is now {1} in {2}", map.Source[i], map.Destination[i], archive.FullName);
+}</code>
+                  </pre>
+                </div>
+              </div>
+              <article class="message is-info">
+                <div class="message-header">
+                  <p>
+                    <span class="icon">
+                      <i class="fa fa-info-circle"></i>
+                    </span>  Note</p>
+                </div>
+                <div class="message-body">
+                  <p>
+            If the server does not support the <span class="literal">MOVE</span> extension, MailKit emulates
+            <span class="code">MoveTo</span> by copying the messages, marking the originals as
+            <span class="literal">\Deleted</span> and expunging them.
+          </p>
+                </div>
+              </article>
+            </div>
+            <h2 id="DeletingMessages" class="quickLinkHeader">Deleting messages</h2>
+            <div id="IDMABSection">
+              <p>
+          Deleting messages in IMAP is a two-step process: messages are first marked with the
+          <span class="literal">\Deleted</span> flag and are then permanently removed when the folder is
+          <em>expunged</em>. Calling
+          <a href="Overload_MailKit_IMailFolder_Expunge.htm">Expunge</a>
+          with no arguments removes <em>all</em> messages marked as deleted, including any that
+          were marked by other clients. If the server supports <span class="literal">UIDPLUS</span>, you can expunge only
+          specific messages.
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void DeleteMessages (ImapClient client, IList&lt;UniqueId&gt; uids)
+{
+    var inbox = client.Inbox;
+
+    inbox.Open (FolderAccess.ReadWrite);
+
+    // In IMAP, deleting a message is a two-step process: first the message is marked with
+    // the \Deleted flag and then the folder is expunged.
+    inbox.Store (uids, new StoreFlagsRequest (StoreAction.Add, MessageFlags.Deleted) { Silent = true });
+
+    if (client.Capabilities.Contains (ImapCapability.UidPlus)) {
+        // Only expunge the messages that we marked as deleted.
+        inbox.Expunge (uids);
+    } else {
+        // Expunge *all* messages marked as \Deleted (including ones marked by other clients).
+        inbox.Expunge ();
+    }
+
+    // Alternatively, closing the folder with expunge = true will also expunge deleted messages.
+    inbox.Close (false);
+}</code>
+                  </pre>
+                </div>
+              </div>
+              <p>
+          Many clients (and servers such as Gmail) treat "delete" as "move to Trash" instead. In that case, use
+          <a href="Overload_MailKit_IMailFolder_MoveTo.htm">MoveTo</a> with the
+          <span class="code">SpecialFolder.Trash</span> folder.
+        </p>
+            </div>
+            <h2 id="Synchronizing" class="quickLinkHeader">Synchronizing a local cache</h2>
+            <div id="IDNABSection">
+              <p>
+          Applications that display a mailbox (rather than just processing new messages) usually keep a local
+          cache of message summaries so that they do not need to re-download everything each time they connect.
+          Keeping the cache in sync with the server relies on three values:
+        </p>
+              <table class="table is-hoverable">
+                <thead>
+                  <tr>
+                    <th>
+                      <p>Value</p>
+                    </th>
+                    <th>
+                      <p>Purpose</p>
+                    </th>
+                  </tr>
+                </thead>
+                <tr>
+                  <td>
+                    <p>
+                      <a href="P_MailKit_IMailFolder_UidValidity.htm">UidValidity</a>
+                    </p>
+                  </td>
+                  <td>
+                    <p>
+                Identifies the "generation" of UIDs in the folder. If it ever changes (for example, because the
+                folder was deleted and re-created), every cached UID is invalid and the cache must be discarded.
+              </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <a href="P_MailKit_IMailFolder_UidNext.htm">UidNext</a>
+                    </p>
+                  </td>
+                  <td>
+                    <p>
+                The UID that will be assigned to the next message added to the folder. Any message with a UID
+                greater than or equal to the value saved during the previous sync is new.
+              </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <a href="P_MailKit_IMailFolder_HighestModSeq.htm">HighestModSeq</a>
+                    </p>
+                  </td>
+                  <td>
+                    <p>
+                Only available if the server supports <span class="literal">CONDSTORE</span>. Every change to a message's
+                flags increments the folder's mod-sequence, making it possible to ask for only the messages that
+                have changed since the previous sync.
+              </p>
+                  </td>
+                </tr>
+              </table>
+              <p>
+          At a minimum, the cache needs to store these values for each folder along with the UID and any other
+          information you display for each message:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">// The information that needs to be persisted (e.g. in a database) for each folder between sessions.
+public class CachedMessage
+{
+    public UniqueId UniqueId { get; set; }
+    public MessageFlags Flags { get; set; }
+    public HashSet&lt;string&gt; Keywords { get; set; } = new HashSet&lt;string&gt; ();
+    public ulong ModSeq { get; set; }
+    public string? Subject { get; set; }
+    public string? From { get; set; }
+    public DateTimeOffset? InternalDate { get; set; }
+}
+
+public class FolderCache
+{
+    // The UIDVALIDITY value of the folder at the time the cache was last synchronized.
+    // If the server's UIDVALIDITY ever differs, all cached UIDs are invalid.
+    public uint UidValidity { get; set; }
+
+    // The UIDNEXT value of the folder at the time the cache was last synchronized.
+    // Any message with a UID greater than or equal to this value is new.
+    public uint UidNext { get; set; }
+
+    // The HIGHESTMODSEQ value of the folder at the time the cache was last synchronized.
+    // Only used if the server supports CONDSTORE.
+    public ulong HighestModSeq { get; set; }
+
+    public Dictionary&lt;uint, CachedMessage&gt; Messages { get; } = new Dictionary&lt;uint, CachedMessage&gt; ();
+
+    public IList&lt;UniqueId&gt; GetCachedUids ()
+    {
+        return Messages.Keys.OrderBy (id =&gt; id).Select (id =&gt; new UniqueId (UidValidity, id)).ToList ();
+    }
+
+    public void Clear (uint uidValidity)
+    {
+        Messages.Clear ();
+        UidValidity = uidValidity;
+        HighestModSeq = 0;
+        UidNext = 0;
+    }
+
+    public void Update (IMessageSummary summary)
+    {
+        if (!Messages.TryGetValue (summary.UniqueId.Id, out var message)) {
+            message = new CachedMessage { UniqueId = summary.UniqueId };
+            Messages.Add (summary.UniqueId.Id, message);
+        }
+
+        if (summary.Flags.HasValue)
+            message.Flags = summary.Flags.Value;
+
+        if (summary.Keywords != null)
+            message.Keywords = new HashSet&lt;string&gt; (summary.Keywords);
+
+        if (summary.ModSeq.HasValue)
+            message.ModSeq = summary.ModSeq.Value;
+
+        if (summary.Envelope != null) {
+            message.Subject = summary.Envelope.Subject;
+            message.From = summary.Envelope.From.ToString ();
+        }
+
+        if (summary.InternalDate.HasValue)
+            message.InternalDate = summary.InternalDate;
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+              <p>
+          New messages can be fetched by requesting the range of UIDs starting at the previously saved
+          <span class="literal">UIDNEXT</span> value:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">static void FetchNewMessages (IMailFolder folder, FolderCache cache)
+{
+    IList&lt;UniqueId&gt; range;
+
+    if (cache.UidNext &gt; 0) {
+        // Only fetch messages with a UID &gt;= the UIDNEXT value from the last sync.
+        range = new UniqueIdRange (new UniqueId (folder.UidValidity, cache.UidNext), UniqueId.MaxValue);
+    } else {
+        range = UniqueIdRange.All;
+    }
+
+    foreach (var summary in folder.Fetch (range, new FetchRequest (NewMessageItems))) {
+        // Note: Per the IMAP specification, a UID range of "N:*" always matches at least the
+        // last message in the folder, even if its UID is less than N, so filter those out.
+        if (summary.UniqueId.Id &gt;= cache.UidNext)
+            cache.Update (summary);
+    }
+
+    if (folder.UidNext.HasValue)
+        cache.UidNext = folder.UidNext.Value.Id;
+    else if (cache.Messages.Count &gt; 0)
+        cache.UidNext = cache.Messages.Keys.Max () + 1;
+}</code>
+                  </pre>
+                </div>
+              </div>
+              <p>
+                <strong>Basic synchronization.</strong> Without any extensions, the client must check the
+          <span class="literal">UIDVALIDITY</span>, search for all of the UIDs in the folder to find which cached messages
+          have been expunged, re-fetch the flags for every cached message and then fetch any new messages. This
+          works with every server, but the cost grows with the size of the folder:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">// Synchronizes the cache with any IMAP server, without relying on any extensions.
+public static void BasicSync (ImapClient client, IMailFolder folder, FolderCache cache)
+{
+    folder.Open (FolderAccess.ReadOnly);
+
+    // Step 1: If the UIDVALIDITY has changed, all of our cached UIDs are invalid and the cache must be flushed.
+    if (folder.UidValidity != cache.UidValidity)
+        cache.Clear (folder.UidValidity);
+
+    if (cache.Messages.Count &gt; 0) {
+        // Step 2: Find out which of our cached messages have been expunged from the server.
+        var existing = new HashSet&lt;uint&gt; (folder.Search (SearchQuery.All).Select (uid =&gt; uid.Id));
+
+        foreach (var id in cache.Messages.Keys.Where (id =&gt; !existing.Contains (id)).ToList ())
+            cache.Messages.Remove (id);
+
+        // Step 3: Re-fetch the flags for each of the remaining cached messages.
+        var cached = cache.GetCachedUids ();
+
+        if (cached.Count &gt; 0) {
+            foreach (var summary in folder.Fetch (cached, MessageSummaryItems.UniqueId | MessageSummaryItems.Flags))
+                cache.Update (summary);
+        }
+    }
+
+    // Step 4: Fetch the summary information for any new messages.
+    FetchNewMessages (folder, cache);
+
+    folder.Close ();
+}</code>
+                  </pre>
+                </div>
+              </div>
+              <p>
+                <strong>CONDSTORE.</strong> If the server supports the <span class="literal">CONDSTORE</span> extension,
+          the client can use a <a href="T_MailKit_FetchRequest.htm">FetchRequest</a> with
+          <a href="P_MailKit_FetchRequest_ChangedSince.htm">ChangedSince</a> set to the previously
+          saved <span class="literal">HIGHESTMODSEQ</span> so that only the messages whose flags have actually changed are
+          returned:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">// Synchronizes the cache using the CONDSTORE extension so that only the flags that have
+// actually changed since the last sync need to be downloaded.
+public static void CondStoreSync (ImapClient client, IMailFolder folder, FolderCache cache)
+{
+    folder.Open (FolderAccess.ReadOnly);
+
+    if (!folder.Supports (FolderFeature.ModSequences)) {
+        folder.Close ();
+        BasicSync (client, folder, cache);
+        return;
+    }
+
+    if (folder.UidValidity != cache.UidValidity)
+        cache.Clear (folder.UidValidity);
+
+    if (cache.Messages.Count &gt; 0) {
+        // Expunged messages still need to be detected by comparing UIDs.
+        var existing = new HashSet&lt;uint&gt; (folder.Search (SearchQuery.All).Select (uid =&gt; uid.Id));
+
+        foreach (var id in cache.Messages.Keys.Where (id =&gt; !existing.Contains (id)).ToList ())
+            cache.Messages.Remove (id);
+
+        // Only fetch the flags for messages whose mod-sequence value has changed since our last sync.
+        if (cache.HighestModSeq &gt; 0 &amp;&amp; folder.HighestModSeq != cache.HighestModSeq) {
+            var request = new FetchRequest (MessageSummaryItems.UniqueId | MessageSummaryItems.Flags | MessageSummaryItems.ModSeq) {
+                ChangedSince = cache.HighestModSeq
+            };
+
+            foreach (var summary in folder.Fetch (cache.GetCachedUids (), request))
+                cache.Update (summary);
+        }
+    }
+
+    FetchNewMessages (folder, cache);
+
+    cache.HighestModSeq = folder.HighestModSeq;
+
+    folder.Close ();
+}</code>
+                  </pre>
+                </div>
+              </div>
+              <p>
+                <strong>QRESYNC.</strong> The <span class="literal">QRESYNC</span> extension goes further: by passing the
+          saved <span class="literal">UIDVALIDITY</span>, <span class="literal">HIGHESTMODSEQ</span> and known UIDs when opening the
+          folder, the server reports both expunged messages (via the
+          <a href="E_MailKit_IMailFolder_MessagesVanished.htm">MessagesVanished</a> event) and changed
+          flags (via the <a href="E_MailKit_IMailFolder_MessageFlagsChanged.htm">MessageFlagsChanged</a>
+          event) as part of opening the folder, so that no searching is needed. <span class="literal">QRESYNC</span> must be
+          enabled once per connection using
+          <a href="M_MailKit_Net_Imap_ImapClient_Enable.htm">Enable</a>
+          before any folders are opened:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">// Must be called once per connection, after authenticating but before opening any folders.
+public static bool EnableQuickResync (ImapClient client)
+{
+    if (!client.Capabilities.Contains (ImapCapability.QuickResync))
+        return false;
+
+    client.Enable (ImapFeatures.QuickResync);
+
+    return true;
+}
+
+// Synchronizes the cache using the QRESYNC extension. The server reports which messages have
+// been expunged and which flags have changed as part of opening the folder.
+public static void QuickResyncSync (ImapClient client, IMailFolder folder, FolderCache cache)
+{
+    void OnMessagesVanished (object? sender, MessagesVanishedEventArgs e)
+    {
+        foreach (var uid in e.UniqueIds)
+            cache.Messages.Remove (uid.Id);
+    }
+
+    void OnMessageFlagsChanged (object? sender, MessageFlagsChangedEventArgs e)
+    {
+        if (e.UniqueId.HasValue &amp;&amp; cache.Messages.TryGetValue (e.UniqueId.Value.Id, out var message)) {
+            message.Flags = e.Flags;
+            message.Keywords = new HashSet&lt;string&gt; (e.Keywords);
+
+            if (e.ModSeq.HasValue)
+                message.ModSeq = e.ModSeq.Value;
+        }
+    }
+
+    folder.MessagesVanished += OnMessagesVanished;
+    folder.MessageFlagsChanged += OnMessageFlagsChanged;
+
+    try {
+        if (cache.UidValidity != 0 &amp;&amp; cache.HighestModSeq &gt; 0) {
+            // Pass the state from our last sync to the server. If the UIDVALIDITY still matches,
+            // the server will emit VANISHED (EARLIER) and FETCH responses for everything that
+            // changed while we were away, which raise the events above.
+            folder.Open (FolderAccess.ReadOnly, cache.UidValidity, cache.HighestModSeq, cache.GetCachedUids ());
+        } else {
+            folder.Open (FolderAccess.ReadOnly);
+        }
+
+        if (folder.UidValidity != cache.UidValidity) {
+            // The server ignores the QRESYNC parameters if the UIDVALIDITY doesn't match.
+            cache.Clear (folder.UidValidity);
+        }
+
+        FetchNewMessages (folder, cache);
+
+        cache.HighestModSeq = folder.HighestModSeq;
+
+        folder.Close ();
+    } finally {
+        folder.MessagesVanished -= OnMessagesVanished;
+        folder.MessageFlagsChanged -= OnMessageFlagsChanged;
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+              <article class="message is-info">
+                <div class="message-header">
+                  <p>
+                    <span class="icon">
+                      <i class="fa fa-info-circle"></i>
+                    </span>  Tip</p>
+                </div>
+                <div class="message-body">
+                  <p>
+            While a folder is open, keep the cache up-to-date by handling the
+            <a href="E_MailKit_IMailFolder_CountChanged.htm">CountChanged</a>,
+            <a href="E_MailKit_IMailFolder_MessageExpunged.htm">MessageExpunged</a> (or
+            <a href="E_MailKit_IMailFolder_MessagesVanished.htm">MessagesVanished</a> when
+            <span class="literal">QRESYNC</span> is enabled) and
+            <a href="E_MailKit_IMailFolder_MessageFlagsChanged.htm">MessageFlagsChanged</a> events, and save
+            the <span class="literal">UIDNEXT</span> and <span class="literal">HIGHESTMODSEQ</span> values when you are done.
+          </p>
+                </div>
+              </article>
+            </div>
+            <h2 id="Idle" class="quickLinkHeader">Receiving notifications with IDLE</h2>
+            <div id="IDOABSection">
+              <p>
+          IMAP servers only send notifications about changes (new messages, expunged messages, flag changes)
+          in response to a command. To be notified immediately, use the <span class="literal">IDLE</span> extension,
+          which allows the server to push notifications to the client while it waits.
+        </p>
+              <p>
+                <a href="M_MailKit_Net_Imap_ImapClient_CreateIdleSession.htm">CreateIdleSession(ImapIdleOptions)</a>
+          creates an <a href="T_MailKit_Net_Imap_ImapIdleSession.htm">ImapIdleSession</a> that manages
+          the details for you: it automatically re-issues the <span class="literal">IDLE</span> command before the server
+          times it out, falls back to polling with <span class="literal">NOOP</span> if the server does not support
+          <span class="literal">IDLE</span>, and coalesces bursts of notifications. The following example monitors the
+          Inbox for new messages:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">using System;
+using System.IO;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Collections.Generic;
+
+using MailKit;
+using MailKit.Net.Imap;
+using MailKit.Security;
+
+namespace ImapIdleSessionExample {
+    class Program
+    {
+        // Connection-related properties
+        const SecureSocketOptions SslOptions = SecureSocketOptions.Auto;
+        const string Host = "imap.gmail.com";
+        const int Port = 993;
+
+        // Authentication-related properties
+        const string Username = "username@gmail.com";
+        const string Password = "password";
+
+        public static void Main (string[] args)
+        {
+            using (var client = new IdleClient (Host, Port, SslOptions, Username, Password)) {
+                Console.WriteLine ("Hit any key to end the demo.");
+
+                var idleTask = client.RunAsync ();
+
+                Task.Run (() =&gt; {
+                    Console.ReadKey (true);
+                }).Wait ();
+
+                client.Exit ();
+
+                idleTask.GetAwaiter ().GetResult ();
+            }
+        }
+    }
+
+    class IdleClient : IDisposable
+    {
+        readonly string host, username, password;
+        readonly SecureSocketOptions sslOptions;
+        readonly int port;
+        readonly List&lt;IMessageSummary&gt; messages;
+        readonly CancellationTokenSource cancel;
+        readonly FetchRequest request;
+        readonly ImapClient client;
+
+        public IdleClient (string host, int port, SecureSocketOptions sslOptions, string username, string password)
+        {
+            this.client = new ImapClient (new ProtocolLogger (Console.OpenStandardError ()));
+            this.request = new FetchRequest (MessageSummaryItems.Full | MessageSummaryItems.UniqueId);
+            this.messages = new List&lt;IMessageSummary&gt; ();
+            this.cancel = new CancellationTokenSource ();
+            this.sslOptions = sslOptions;
+            this.username = username;
+            this.password = password;
+            this.host = host;
+            this.port = port;
+        }
+
+        async Task ReconnectAsync ()
+        {
+            if (!client.IsConnected)
+                await client.ConnectAsync (host, port, sslOptions, cancel.Token);
+
+            if (!client.IsAuthenticated) {
+                await client.AuthenticateAsync (username, password, cancel.Token);
+
+                await client.Inbox.OpenAsync (FolderAccess.ReadOnly, cancel.Token);
+            }
+        }
+
+        async Task FetchMessageSummariesAsync (bool print)
+        {
+            IList&lt;IMessageSummary&gt; fetched;
+
+            do {
+                try {
+                    // fetch summary information for messages that we don't already have
+                    int startIndex = messages.Count;
+
+                    fetched = await client.Inbox.FetchAsync (startIndex, -1, request, cancel.Token);
+                    break;
+                } catch (ImapProtocolException) {
+                    // protocol exceptions often result in the client getting disconnected
+                    await ReconnectAsync ();
+                } catch (IOException) {
+                    // I/O exceptions always result in the client getting disconnected
+                    await ReconnectAsync ();
+                }
+            } while (true);
+
+            foreach (var message in fetched) {
+                if (print)
+                    Console.WriteLine ("{0}: new message: {1}", client.Inbox, message.Envelope.Subject);
+                messages.Add (message);
+            }
+        }
+
+        async Task&lt;ImapIdleChanges&gt; WaitForChangesAsync (ImapIdleSession session)
+        {
+            do {
+                try {
+                    // Note: The session uses IDLE when the server supports it (refreshing it periodically
+                    // so that the server doesn't drop the connection) and falls back to polling with NOOP
+                    // when it doesn't.
+                    return await session.WaitForChangesAsync (cancel.Token);
+                } catch (ImapProtocolException) {
+                    // protocol exceptions often result in the client getting disconnected
+                    await ReconnectAsync ();
+                } catch (IOException) {
+                    // I/O exceptions always result in the client getting disconnected
+                    await ReconnectAsync ();
+                }
+            } while (true);
+        }
+
+        void ProcessChanges (ImapIdleChanges changes)
+        {
+            // Note: Events are reported in the order that the server sent them, so applying
+            // them in order keeps our 'messages' cache consistent with the folder.
+            foreach (var e in changes.Events) {
+                switch (e) {
+                case CountChangedIdleEvent countChanged:
+                    Console.WriteLine ("{0}: message count changed from {1} to {2}.", e.Folder, countChanged.PreviousCount, countChanged.Count);
+                    break;
+                case MessageExpungedIdleEvent expunged:
+                    if (expunged.Index &lt; messages.Count) {
+                        var message = messages[expunged.Index];
+
+                        Console.WriteLine ("{0}: message #{1} has been expunged: {2}", e.Folder, expunged.Index, message.Envelope.Subject);
+
+                        // Note: If you are keeping a local cache of message information
+                        // (e.g. MessageSummary data) for the folder, then you'll need
+                        // to remove the message at expunged.Index.
+                        messages.RemoveAt (expunged.Index);
+                    } else {
+                        Console.WriteLine ("{0}: message #{1} has been expunged.", e.Folder, expunged.Index);
+                    }
+                    break;
+                case MessagesVanishedIdleEvent vanished:
+                    // Note: This is only reported by servers when QRESYNC has been enabled.
+                    Console.WriteLine ("{0}: {1} messages have vanished.", e.Folder, vanished.UniqueIds.Count);
+                    break;
+                case MessageChangedIdleEvent changed:
+                    if (changed.Message.Flags.HasValue)
+                        Console.WriteLine ("{0}: flags have changed for message #{1} ({2}).", e.Folder, changed.Message.Index, changed.Message.Flags.Value);
+                    break;
+                case FolderStatusChangedIdleEvent statusChanged:
+                    Console.WriteLine ("{0}: folder status changed ({1}).", e.Folder, statusChanged.Item);
+                    break;
+                }
+            }
+        }
+
+        async Task IdleAsync ()
+        {
+            // Note: The default options are suitable for most servers (including GMail), but they
+            // can be tweaked by passing an ImapIdleOptions to CreateIdleSession().
+            var session = client.CreateIdleSession ();
+
+            // Note: If you don't need to handle reconnecting, this loop can be simplified to:
+            //
+            // await foreach (var changes in session.ReadChangesAsync (cancel.Token)) { ... }
+            try {
+                do {
+                    var changes = await WaitForChangesAsync (session);
+
+                    ProcessChanges (changes);
+
+                    // Note: Unlike when handling the folder events (such as CountChanged) while
+                    // idling, it is safe to send new commands here because the IDLE command has
+                    // already been ended by the time WaitForChangesAsync() returns.
+                    if (changes.MessagesArrived)
+                        await FetchMessageSummariesAsync (true);
+                } while (true);
+            } catch (OperationCanceledException) {
+                // Exit() was called. The IDLE command was ended gracefully, so the client is
+                // still connected and usable.
+            }
+        }
+
+        public async Task RunAsync ()
+        {
+            // connect to the IMAP server and get our initial list of messages
+            try {
+                await ReconnectAsync ();
+                await FetchMessageSummariesAsync (false);
+            } catch (OperationCanceledException) {
+                await client.DisconnectAsync (true);
+                return;
+            }
+
+            await IdleAsync ();
+
+            await client.DisconnectAsync (true);
+        }
+
+        public void Exit ()
+        {
+            cancel.Cancel ();
+        }
+
+        public void Dispose ()
+        {
+            client.Dispose ();
+            cancel.Dispose ();
+        }
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+              <article class="message is-info">
+                <div class="message-header">
+                  <p>
+                    <span class="icon">
+                      <i class="fa fa-info-circle"></i>
+                    </span>  Note</p>
+                </div>
+                <div class="message-body">
+                  <p>
+            The session ends the <span class="literal">IDLE</span> command before returning each batch of changes, so the
+            same connection can be used to fetch the new messages before waiting again. However, no other
+            commands can be sent while the session is waiting; use a separate
+            <a href="T_MailKit_Net_Imap_ImapClient.htm">ImapClient</a> if you need to perform other
+            operations concurrently.
+          </p>
+                </div>
+              </article>
+            </div>
+            <h2 class="quickLinkHeader">See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Other Resources</h4>
+              <div>
+                <a href="Connecting-To-A-Server.htm">Connecting to a server</a>
+              </div>
+              <div>
+                <a href="Authentication.htm">Authentication</a>
+              </div>
+              <div>
+                <a href="Retrieving-Messages-With-POP3.htm">Retrieving messages with POP3</a>
+              </div>
+              <div>
+                <a href="Parsing-Messages.htm">Parsing messages</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Server capabilities</a>
+                </li>
+                <li>
+                  <a class="quickLink">Folders</a>
+                </li>
+                <li>
+                  <a class="quickLink">Special folders</a>
+                </li>
+                <li>
+                  <a class="quickLink">Creating, renaming and deleting folders</a>
+                </li>
+                <li>
+                  <a class="quickLink">Opening folders</a>
+                </li>
+                <li>
+                  <a class="quickLink">Indexes and unique identifiers</a>
+                </li>
+                <li>
+                  <a class="quickLink">Fetching message summaries</a>
+                </li>
+                <li>
+                  <a class="quickLink">Downloading messages</a>
+                </li>
+                <li>
+                  <a class="quickLink">Flags and keywords</a>
+                </li>
+                <li>
+                  <a class="quickLink">Searching and sorting</a>
+                </li>
+                <li>
+                  <a class="quickLink">Appending, copying and moving messages</a>
+                </li>
+                <li>
+                  <a class="quickLink">Deleting messages</a>
+                </li>
+                <li>
+                  <a class="quickLink">Synchronizing a local cache</a>
+                </li>
+                <li>
+                  <a class="quickLink">Receiving notifications with IDLE</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer id="PageFooter" class="footer border-top py-3">
+      <div class="columns">
+        <div id="FooterContent" class="column">
+          <p class="site-footer-links">
+            <a href="https://mimekit.net/">Home</a> <a href="https://github.com/jstedfast/MimeKit">MimeKit on GitHub</a> <a href="https://github.com/jstedfast/MailKit">MailKit on GitHub</a> <a href="https://github.com/sponsors/jstedfast">    Sponsor</a></p>
+          <p>
+            <a href="https://github.com/jstedfast" target="_blank" rel="noopener noreferrer">Copyright © 2013-2026 Jeffrey Stedfast</a>
+          </p>
+          <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:jestedfa%40microsoft.com?Subject=MailKit%20Documentation">Jeffrey Stedfast</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script></div>
+      </div>
+    </footer>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadToc();
+InitializeQuickLinks();
+hljs.highlightAll();
+});</script>
+  </body>
+</html>

@@ -1,0 +1,574 @@
+﻿<!DOCTYPE html []>
+<html lang="en-US" data-theme="light">
+  <head><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B7CEM3SL1V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B7CEM3SL1V');
+</script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/fontawesome.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/solid.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/regular.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/brands.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/presentationStyle.css?v=50DD4085" />
+    <script src="../scripts/jquery-3.7.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js?v=50DD4085"></script>
+    <script src="../scripts/highlight.min.js?v=50DD4085"></script>
+    <script src="../scripts/themeSwitcher.js?v=50DD4085"></script>
+    <script src="../scripts/presentationStyle.js?v=50DD4085"></script>
+    <title>Authentication</title>
+    <meta name="Title" content="Authentication" />
+    <meta name="Help.Id" content="Authentication" />
+    <meta name="Help.ContentType" content="Concepts" />
+    <meta name="guid" content="Authentication" />
+    <meta name="Description" content="T:MailKit.Net.Smtp.SmtpClient, T:MailKit.Net.Pop3.Pop3Client and T:MailKit.Net.Imap.ImapClient all authenticate using SASLhttps://tools.ietf.org/html/rfc4422_blank (Simple Authentication and Security Layer) mechanisms." />
+    <meta name="tocParentId" content="0" />
+  </head>
+  <body>
+    <header class="pageHeader" id="Header">
+      <div class="level mb-0 py-2 px-4">
+        <div id="TitleContainer" class="level-left">
+          <div id="DocumentationTitle" class="level-item">MailKit Documentation</div>
+        </div>
+        <div id="LangFilterSearchContainer" class="level-right">
+          <div id="ProjectLink" class="level-item" title="Project website" aria-label="Project website">
+            <a href="https://github.com/jstedfast/MailKit" rel="noopener noreferrer" target="_blank">
+              <span class="icon">
+                <i class="fa-brands fa-github"></i>
+              </span>
+            </a>
+          </div>
+          <div id="ThemeSwitcher" class="level-item" title="Toggle theme" aria-label="Toggle theme">
+            <span class="icon">
+              <i class="fa fa-regular fa-moon theme-icon-dark"></i>
+              <i class="fa fa-sun theme-icon-light"></i>
+            </span>
+          </div>
+          <div class="level-item">
+            <div class="dropdown is-hoverable">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span id="CurrentLanguage"></span>
+                  <span class="icon is-small">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" role="menu">
+                <div id="LanguageSelections" class="dropdown-content">
+                  <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="level-item">
+            <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+              <div class="field">
+                <div class="control has-icons-left">
+                  <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-search"></i>
+                  </span>
+                  <button id="SearchButton" type="submit" class="is-hidden"></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article>
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile toc-resizable">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu">
+                <li>Loading...</li>
+              </ul>
+            </nav>
+          </div>
+          <div id="Resizer" class="toc-resizer"></div>
+          <div id="TopicContent" class="column content is-7 toc-resizable-content">
+            <h1>Authentication</h1>
+            <div>
+              <p>
+                <a href="T_MailKit_Net_Smtp_SmtpClient.htm">SmtpClient</a>,
+        <a href="T_MailKit_Net_Pop3_Pop3Client.htm">Pop3Client</a> and
+        <a href="T_MailKit_Net_Imap_ImapClient.htm">ImapClient</a> all authenticate using
+        <a href="https://tools.ietf.org/html/rfc4422" target="_blank" rel="noopener noreferrer">SASL</a>
+        (Simple Authentication and Security Layer) mechanisms. This topic explains how MailKit chooses a
+        mechanism and how to choose one yourself.
+      </p>
+              <p class="is-hidden-tablet">This topic contains the following sections:</p>
+              <ul class="is-hidden-tablet">
+                <li>
+                  <a href="#Credentials">Authenticating with a user name and password</a>
+                </li>
+                <li>
+                  <a href="#RemovingMechanisms">Preventing MailKit from using a mechanism</a>
+                </li>
+                <li>
+                  <a href="#SaslMechanisms">Choosing a mechanism</a>
+                </li>
+                <li>
+                  <a href="#ChannelBinding">Channel binding</a>
+                </li>
+                <li>
+                  <a href="#OtherTopics">OAuth 2.0, NTLM and Kerberos</a>
+                </li>
+                <li>
+                  <a href="#seeAlsoSection">See Also</a>
+                </li>
+              </ul>
+            </div>
+            <h2 id="Credentials" class="quickLinkHeader">Authenticating with a user name and password</h2>
+            <div id="IDBABSection">
+              <p>
+          After connecting, the <a href="P_MailKit_IMailService_AuthenticationMechanisms.htm">AuthenticationMechanisms</a>
+          property contains the list of SASL mechanisms advertised by the server. When you call
+          <a href="Overload_MailKit_MailService_Authenticate.htm">Authenticate</a>
+          with a user name and password (or an <a href="https://learn.microsoft.com/dotnet/api/system.net.icredentials" target="_blank" rel="noopener noreferrer">ICredentials</a>),
+          MailKit picks the strongest mechanism that is supported by both the client and the server:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void AuthenticateWithCredentials ()
+{
+    using (var client = new ImapClient ()) {
+        client.Connect ("imap.example.com", 993, SecureSocketOptions.SslOnConnect);
+
+        // The AuthenticationMechanisms property contains the SASL mechanisms advertised by the server.
+        Console.WriteLine ("Supported mechanisms: {0}", string.Join (", ", client.AuthenticationMechanisms));
+
+        // MailKit will pick the strongest mechanism supported by both the client and the server.
+        client.Authenticate (new NetworkCredential ("username", "password"));
+
+        client.Disconnect (true);
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+              <p>
+          MailKit chooses from the mechanisms advertised by the server in the following order of preference:
+        </p>
+              <table class="table is-hoverable">
+                <thead>
+                  <tr>
+                    <th>
+                      <p>Mechanism</p>
+                    </th>
+                    <th>
+                      <p>Notes</p>
+                    </th>
+                  </tr>
+                </thead>
+                <tr>
+                  <td>
+                    <p>SCRAM-SHA-512(-PLUS), SCRAM-SHA-256(-PLUS), SCRAM-SHA-1(-PLUS)</p>
+                  </td>
+                  <td>
+                    <p>
+                The password is never sent to the server. The <span class="literal">-PLUS</span> variants are preferred
+                when the server advertises them because they bind the authentication to the TLS session (see
+                <a href="#ChannelBinding">Channel binding</a>).
+              </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>NTLM</p>
+                  </td>
+                  <td>
+                    <p>
+                See <a href="Authentication-NTLM-Kerberos.htm">NTLM and Kerberos</a>.
+              </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>DIGEST-MD5, CRAM-MD5</p>
+                  </td>
+                  <td>
+                    <p>
+                Legacy challenge-response mechanisms based on MD5. Skipped on platforms where MD5 is
+                unavailable (such as when FIPS mode is enforced).
+              </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>PLAIN, LOGIN</p>
+                  </td>
+                  <td>
+                    <p>
+                The password is sent to the server (base64-encoded, not encrypted), so these should only be used
+                over a TLS connection.
+              </p>
+                  </td>
+                </tr>
+              </table>
+              <p>
+          If none of these mechanisms are available, <a href="T_MailKit_Net_Imap_ImapClient.htm">ImapClient</a>
+          falls back to the IMAP <span class="literal">LOGIN</span> command (unless the server advertises
+          <span class="literal">LOGINDISABLED</span>) and <a href="T_MailKit_Net_Pop3_Pop3Client.htm">Pop3Client</a>
+          falls back to the <span class="literal">USER</span>/<span class="literal">PASS</span> commands.
+          <a href="T_MailKit_Net_Pop3_Pop3Client.htm">Pop3Client</a> also uses the
+          <span class="literal">APOP</span> command, in preference to SASL, if the server supports it.
+        </p>
+              <p>
+          Mechanisms that require something other than a password, such as <span class="literal">XOAUTH2</span>,
+          <span class="literal">OAUTHBEARER</span>, <span class="literal">GSSAPI</span> and <span class="literal">ANONYMOUS</span>, are never
+          chosen automatically. To use them, see <a href="#SaslMechanisms">Choosing a mechanism</a>.
+        </p>
+              <p>
+          If authentication fails, an <a href="T_MailKit_Security_AuthenticationException.htm">AuthenticationException</a>
+          is thrown and the client remains connected so that you can try again.
+        </p>
+            </div>
+            <h2 id="RemovingMechanisms" class="quickLinkHeader">Preventing MailKit from using a mechanism</h2>
+            <div id="IDCABSection">
+              <p>
+          Some servers advertise mechanisms that do not work correctly (or that are not enabled for a particular
+          account), and a few servers will drop the connection or lock the account after a failed attempt. To
+          prevent MailKit from trying a mechanism, remove it from
+          <a href="P_MailKit_IMailService_AuthenticationMechanisms.htm">AuthenticationMechanisms</a> after
+          connecting and before authenticating:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void RemoveAuthenticationMechanisms ()
+{
+    using (var client = new SmtpClient ()) {
+        client.Connect ("smtp.example.com", 587, SecureSocketOptions.StartTls);
+
+        // Prevent MailKit from trying mechanisms that we know are broken or undesirable
+        // for this particular server. This must be done after Connect() and before
+        // Authenticate().
+        client.AuthenticationMechanisms.Remove ("NTLM");
+        client.AuthenticationMechanisms.Remove ("CRAM-MD5");
+        client.AuthenticationMechanisms.Remove ("DIGEST-MD5");
+
+        client.Authenticate ("username", "password");
+
+        client.Disconnect (true);
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            <h2 id="SaslMechanisms" class="quickLinkHeader">Choosing a mechanism</h2>
+            <div id="IDDABSection">
+              <p>
+          To use a specific mechanism, create an instance of the corresponding
+          <a href="T_MailKit_Security_SaslMechanism.htm">SaslMechanism</a> subclass and pass it to
+          <a href="Overload_MailKit_MailService_Authenticate.htm">Authenticate</a>:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void AuthenticateWithSaslMechanism ()
+{
+    using (var client = new ImapClient ()) {
+        client.Connect ("imap.example.com", 993, SecureSocketOptions.SslOnConnect);
+
+        var credentials = new NetworkCredential ("username", "password");
+        SaslMechanism sasl;
+
+        // Explicitly choose a mechanism rather than letting MailKit pick one.
+        if (client.AuthenticationMechanisms.Contains ("SCRAM-SHA-256-PLUS"))
+            sasl = new SaslMechanismScramSha256Plus (credentials);
+        else if (client.AuthenticationMechanisms.Contains ("SCRAM-SHA-256"))
+            sasl = new SaslMechanismScramSha256 (credentials);
+        else
+            throw new AuthenticationException ("The server does not support SCRAM-SHA-256.");
+
+        client.Authenticate (sasl);
+
+        // SCRAM-*-PLUS mechanisms bind the authentication to the underlying TLS channel.
+        Console.WriteLine ("Channel binding negotiated: {0}", sasl.NegotiatedChannelBinding);
+
+        client.Disconnect (true);
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+              <p>
+          The following mechanisms are available:
+        </p>
+              <table class="table is-hoverable">
+                <thead>
+                  <tr>
+                    <th>
+                      <p>Mechanism</p>
+                    </th>
+                    <th>
+                      <p>Class</p>
+                    </th>
+                  </tr>
+                </thead>
+                <tr>
+                  <td>
+                    <p>ANONYMOUS</p>
+                  </td>
+                  <td>
+                    <p>
+                      <a href="T_MailKit_Security_SaslMechanismAnonymous.htm">SaslMechanismAnonymous</a>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>CRAM-MD5</p>
+                  </td>
+                  <td>
+                    <p>
+                      <a href="T_MailKit_Security_SaslMechanismCramMd5.htm">SaslMechanismCramMd5</a>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>DIGEST-MD5</p>
+                  </td>
+                  <td>
+                    <p>
+                      <a href="T_MailKit_Security_SaslMechanismDigestMd5.htm">SaslMechanismDigestMd5</a>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>GSSAPI (Kerberos)</p>
+                  </td>
+                  <td>
+                    <p>
+                      <a href="T_MailKit_Security_SaslMechanismGssapi.htm">SaslMechanismGssapi</a> (.NET 8 and later)</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>LOGIN</p>
+                  </td>
+                  <td>
+                    <p>
+                      <a href="T_MailKit_Security_SaslMechanismLogin.htm">SaslMechanismLogin</a>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>NTLM</p>
+                  </td>
+                  <td>
+                    <p>
+                      <a href="T_MailKit_Security_SaslMechanismNtlm.htm">SaslMechanismNtlm</a> (managed) or
+                <a href="T_MailKit_Security_SaslMechanismNtlmNative.htm">SaslMechanismNtlmNative</a> (.NET 8 and later)
+              </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>OAUTHBEARER</p>
+                  </td>
+                  <td>
+                    <p>
+                      <a href="T_MailKit_Security_SaslMechanismOAuthBearer.htm">SaslMechanismOAuthBearer</a>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>PLAIN</p>
+                  </td>
+                  <td>
+                    <p>
+                      <a href="T_MailKit_Security_SaslMechanismPlain.htm">SaslMechanismPlain</a>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>SCRAM-SHA-1(-PLUS)</p>
+                  </td>
+                  <td>
+                    <p>
+                      <a href="T_MailKit_Security_SaslMechanismScramSha1.htm">SaslMechanismScramSha1</a>,
+                <a href="T_MailKit_Security_SaslMechanismScramSha1Plus.htm">SaslMechanismScramSha1Plus</a></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>SCRAM-SHA-256(-PLUS)</p>
+                  </td>
+                  <td>
+                    <p>
+                      <a href="T_MailKit_Security_SaslMechanismScramSha256.htm">SaslMechanismScramSha256</a>,
+                <a href="T_MailKit_Security_SaslMechanismScramSha256Plus.htm">SaslMechanismScramSha256Plus</a></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>SCRAM-SHA-512(-PLUS)</p>
+                  </td>
+                  <td>
+                    <p>
+                      <a href="T_MailKit_Security_SaslMechanismScramSha512.htm">SaslMechanismScramSha512</a>,
+                <a href="T_MailKit_Security_SaslMechanismScramSha512Plus.htm">SaslMechanismScramSha512Plus</a></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>XOAUTH2</p>
+                  </td>
+                  <td>
+                    <p>
+                      <a href="T_MailKit_Security_SaslMechanismOAuth2.htm">SaslMechanismOAuth2</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+              <p>
+                <a href="Overload_MailKit_Security_SaslMechanism_Create.htm">Create</a>
+          and <a href="Overload_MailKit_Security_SaslMechanism_TryCreate.htm">TryCreate</a>
+          can be used to create a mechanism by name, and
+          <a href="M_MailKit_Security_SaslMechanism_IsSupported.htm">IsSupported(String)</a>
+          checks whether MailKit supports a mechanism on the current platform.
+        </p>
+            </div>
+            <h2 id="ChannelBinding" class="quickLinkHeader">Channel binding</h2>
+            <div id="IDEABSection">
+              <p>
+          Channel binding ties the authentication exchange to the underlying TLS session. Even if an attacker
+          manages to intercept the TLS connection (for example, by using a fraudulent certificate), the server
+          will reject the authentication because the TLS session the client sees is different from the one the
+          server sees.
+        </p>
+              <p>
+          The <span class="literal">SCRAM-*-PLUS</span> mechanisms always use channel binding, and the NTLM and GSSAPI
+          mechanisms can optionally use it. After authenticating, the
+          <a href="P_MailKit_Security_SaslMechanism_NegotiatedChannelBinding.htm">NegotiatedChannelBinding</a>
+          property indicates whether channel binding was used.
+        </p>
+            </div>
+            <h2 id="OtherTopics" class="quickLinkHeader">OAuth 2.0, NTLM and Kerberos</h2>
+            <div id="IDFABSection">
+              <p>
+          Many providers (including Gmail and Microsoft 365) no longer allow password authentication and
+          require OAuth 2.0 instead; see <a href="Authentication-OAuth2.htm">OAuth 2.0</a>. For authenticating
+          to Microsoft Exchange and other servers that use Windows authentication, see
+          <a href="Authentication-NTLM-Kerberos.htm">NTLM and Kerberos</a>.
+        </p>
+            </div>
+            <h2 class="quickLinkHeader">See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Other Resources</h4>
+              <div>
+                <a href="Authentication-OAuth2.htm">OAuth 2.0</a>
+              </div>
+              <div>
+                <a href="Authentication-NTLM-Kerberos.htm">NTLM and Kerberos</a>
+              </div>
+              <div>
+                <a href="Connecting-To-A-Server.htm">Connecting to a server</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Authenticating with a user name and password</a>
+                </li>
+                <li>
+                  <a class="quickLink">Preventing MailKit from using a mechanism</a>
+                </li>
+                <li>
+                  <a class="quickLink">Choosing a mechanism</a>
+                </li>
+                <li>
+                  <a class="quickLink">Channel binding</a>
+                </li>
+                <li>
+                  <a class="quickLink">OAuth 2.0, NTLM and Kerberos</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer id="PageFooter" class="footer border-top py-3">
+      <div class="columns">
+        <div id="FooterContent" class="column">
+          <p class="site-footer-links">
+            <a href="https://mimekit.net/">Home</a> <a href="https://github.com/jstedfast/MimeKit">MimeKit on GitHub</a> <a href="https://github.com/jstedfast/MailKit">MailKit on GitHub</a> <a href="https://github.com/sponsors/jstedfast">    Sponsor</a></p>
+          <p>
+            <a href="https://github.com/jstedfast" target="_blank" rel="noopener noreferrer">Copyright © 2013-2026 Jeffrey Stedfast</a>
+          </p>
+          <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:jestedfa%40microsoft.com?Subject=MailKit%20Documentation">Jeffrey Stedfast</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script></div>
+      </div>
+    </footer>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadToc();
+InitializeQuickLinks();
+hljs.highlightAll();
+});</script>
+  </body>
+</html>

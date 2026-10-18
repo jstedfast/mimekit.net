@@ -1,40 +1,257 @@
-﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="Microsoft.Help.SelfBranded" content="true" /><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Locale" content="en-us" /><meta name="Microsoft.Help.TopicLocale" content="en-us" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"></script><title>MimeKit.IO.Filters Namespace</title><meta name="Title" content="MimeKit.IO.Filters" /><meta name="Microsoft.Help.Id" content="N:MimeKit.IO.Filters" /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="System.Keywords" content="MimeKit.IO.Filters namespace" /><meta name="Microsoft.Help.F1" content="MimeKit.IO.Filters" /><meta name="container" content="MimeKit.IO.Filters" /><meta name="file" content="N_MimeKit_IO_Filters" /><meta name="guid" content="N_MimeKit_IO_Filters" /><meta name="Description" content="The MimeKit.IO.Filters namespace provides filters for use with MimeKit.IO.FilteredStream." /><link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" /><script type="text/javascript" src="../scripts/jquery-3.7.1.min.js"></script><script type="text/javascript" src="../scripts/branding-Website.js"></script><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="SetDefaultLanguage('cs');"><input type="hidden" id="userDataCache" class="userDataStyle" /><div id="PageHeader" class="pageHeader">MailKit Documentation<form id="SearchForm" method="get" action="#" onsubmit="TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/Introduction.htm" title="MailKit Documentation" tocid="roottoc">MailKit Documentation</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/R_Project_Documentation.htm" title="API Reference" tocid="R_Project_Documentation">API Reference</a></div><div class="toclevel1 current" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/N_MimeKit_IO_Filters.htm" title="MimeKit.IO.Filters" tocid="N_MimeKit_IO_Filters">MimeKit.IO.Filters</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_IO_Filters_ArmoredFromFilter.htm" title="ArmoredFromFilter Class" tocid="T_MimeKit_IO_Filters_ArmoredFromFilter">ArmoredFromFilter Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_IO_Filters_BestEncodingFilter.htm" title="BestEncodingFilter Class" tocid="T_MimeKit_IO_Filters_BestEncodingFilter">BestEncodingFilter Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_IO_Filters_CharsetFilter.htm" title="CharsetFilter Class" tocid="T_MimeKit_IO_Filters_CharsetFilter">CharsetFilter Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_IO_Filters_DecoderFilter.htm" title="DecoderFilter Class" tocid="T_MimeKit_IO_Filters_DecoderFilter">DecoderFilter Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_IO_Filters_Dos2UnixFilter.htm" title="Dos2UnixFilter Class" tocid="T_MimeKit_IO_Filters_Dos2UnixFilter">Dos2UnixFilter Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_IO_Filters_EncoderFilter.htm" title="EncoderFilter Class" tocid="T_MimeKit_IO_Filters_EncoderFilter">EncoderFilter Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_IO_Filters_IMimeFilter.htm" title="IMimeFilter Interface" tocid="T_MimeKit_IO_Filters_IMimeFilter">IMimeFilter Interface</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_IO_Filters_MboxFromFilter.htm" title="MboxFromFilter Class" tocid="T_MimeKit_IO_Filters_MboxFromFilter">MboxFromFilter Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_IO_Filters_MimeFilterBase.htm" title="MimeFilterBase Class" tocid="T_MimeKit_IO_Filters_MimeFilterBase">MimeFilterBase Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_IO_Filters_PassThroughFilter.htm" title="PassThroughFilter Class" tocid="T_MimeKit_IO_Filters_PassThroughFilter">PassThroughFilter Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_IO_Filters_TrailingWhitespaceFilter.htm" title="TrailingWhitespaceFilter Class" tocid="T_MimeKit_IO_Filters_TrailingWhitespaceFilter">TrailingWhitespaceFilter Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_IO_Filters_Unix2DosFilter.htm" title="Unix2DosFilter Class" tocid="T_MimeKit_IO_Filters_Unix2DosFilter">Unix2DosFilter Class</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div id="TopicContent" class="topicContent"><table class="titleTable"><tr><td class="logoColumn"><img alt="MimeKit" src="../icons/Help.png" /></td><td class="titleColumn"><h1>Mime<wbr />Kit.<wbr />IO.<wbr />Filters Namespace</h1></td></tr></table><div class="summary">The <b>MimeKit.IO.Filters</b> namespace provides filters for use with <a href="T_MimeKit_IO_FilteredStream.htm">MimeKit.IO.FilteredStream</a>.</div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('IDACA')" onkeypress="SectionExpandCollapse_CheckKey('IDACA', event)" tabindex="0"><img id="IDACAToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Classes</span></div><div id="IDACASection" class="collapsibleSection"><table id="classList" class="members"><tr><th class="iconColumn"> </th><th>Class</th><th>Description</th></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_IO_Filters_ArmoredFromFilter.htm">ArmoredFromFilter</a></td><td>
-            A filter that armors lines beginning with "From " by encoding the 'F' with the
-            Quoted-Printable encoding.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_IO_Filters_BestEncodingFilter.htm">BestEncodingFilter</a></td><td>
-            A filter that can be used to determine the most efficient Content-Transfer-Encoding.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_IO_Filters_CharsetFilter.htm">CharsetFilter</a></td><td>
-            A charset filter for incrementally converting text streams from
-            one charset encoding to another.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_IO_Filters_DecoderFilter.htm">DecoderFilter</a></td><td>
-            A filter for decoding MIME content.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_IO_Filters_Dos2UnixFilter.htm">Dos2UnixFilter</a></td><td>
-            A filter that will convert from Windows/DOS line endings to Unix line endings.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_IO_Filters_EncoderFilter.htm">EncoderFilter</a></td><td>
-            A filter for encoding MIME content.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_IO_Filters_MboxFromFilter.htm">MboxFromFilter</a></td><td>
-            A filter that munges lines beginning with "From " by stuffing a '&gt;' into the beginning of the line.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_IO_Filters_MimeFilterBase.htm">MimeFilterBase</a></td><td>
-            A base implementation for MIME filters.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_IO_Filters_PassThroughFilter.htm">PassThroughFilter</a></td><td>
-            A filter that simply passes data through without any processing.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_IO_Filters_TrailingWhitespaceFilter.htm">TrailingWhitespaceFilter</a></td><td>
-            A filter for stripping trailing whitespace from lines in a textual stream.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_IO_Filters_Unix2DosFilter.htm">Unix2DosFilter</a></td><td>
-            A filter that will convert from Unix line endings to Windows/DOS line endings.
-            </td></tr></table></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('IDGCA')" onkeypress="SectionExpandCollapse_CheckKey('IDGCA', event)" tabindex="0"><img id="IDGCAToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Interfaces</span></div><div id="IDGCASection" class="collapsibleSection"><table id="interfaceList" class="members"><tr><th class="iconColumn"> </th><th>Interface</th><th>Description</th></tr><tr><td><img src="../icons/pubInterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_MimeKit_IO_Filters_IMimeFilter.htm">IMimeFilter</a></td><td>
-            An interface for incrementally filtering data.
-            </td></tr></table></div></div></div><div id="PageFooter" class="pageFooter"><!-- Global site tag (gtag.js) - Google Analytics -->
-<script src="https://www.googletagmanager.com/gtag/js?id=UA-63841238-1"></script>
+﻿<!DOCTYPE html []>
+<html lang="en-US" data-theme="light">
+  <head><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B7CEM3SL1V"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-63841238-1');
-</script><p><a href="https://github.com/jstedfast" target="_blank" rel="noopener noreferrer">Copyright © 2013-2026 Jeffrey Stedfast</a></p><div class="feedbackLink">Send comments on this topic to
+  gtag('config', 'G-B7CEM3SL1V');
+</script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/fontawesome.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/solid.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/regular.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/brands.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/presentationStyle.css?v=50DD4085" />
+    <script src="../scripts/jquery-3.7.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js?v=50DD4085"></script>
+    <script src="../scripts/highlight.min.js?v=50DD4085"></script>
+    <script src="../scripts/themeSwitcher.js?v=50DD4085"></script>
+    <script src="../scripts/presentationStyle.js?v=50DD4085"></script>
+    <title>MimeKit.IO.Filters Namespace</title>
+    <meta name="Title" content="MimeKit.IO.Filters" />
+    <meta name="Help.Id" content="N:MimeKit.IO.Filters" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MimeKit.IO.Filters" />
+    <meta name="guid" content="N_MimeKit_IO_Filters" />
+    <meta name="Description" content="The MimeKit.IO.Filters namespace provides filters for use with MimeKit.IO.FilteredStream." />
+    <meta name="tocParentId" content="3" />
+  </head>
+  <body>
+    <header class="pageHeader" id="Header">
+      <div class="level mb-0 py-2 px-4">
+        <div id="TitleContainer" class="level-left">
+          <div id="DocumentationTitle" class="level-item">MailKit Documentation</div>
+        </div>
+        <div id="LangFilterSearchContainer" class="level-right">
+          <div id="ProjectLink" class="level-item" title="Project website" aria-label="Project website">
+            <a href="https://github.com/jstedfast/MailKit" rel="noopener noreferrer" target="_blank">
+              <span class="icon">
+                <i class="fa-brands fa-github"></i>
+              </span>
+            </a>
+          </div>
+          <div id="ThemeSwitcher" class="level-item" title="Toggle theme" aria-label="Toggle theme">
+            <span class="icon">
+              <i class="fa fa-regular fa-moon theme-icon-dark"></i>
+              <i class="fa fa-sun theme-icon-light"></i>
+            </span>
+          </div>
+          <div class="level-item">
+            <div class="dropdown is-hoverable">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span id="CurrentLanguage"></span>
+                  <span class="icon is-small">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" role="menu">
+                <div id="LanguageSelections" class="dropdown-content">
+                  <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="level-item">
+            <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+              <div class="field">
+                <div class="control has-icons-left">
+                  <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-search"></i>
+                  </span>
+                  <button id="SearchButton" type="submit" class="is-hidden"></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article>
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile toc-resizable">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu">
+                <li>Loading...</li>
+              </ul>
+            </nav>
+          </div>
+          <div id="Resizer" class="toc-resizer"></div>
+          <div id="TopicContent" class="column content is-7 toc-resizable-content">
+            <h1>Mime<wbr />Kit.<wbr />IO.<wbr />Filters Namespace</h1>
+            <div class="summary">The <b>MimeKit.IO.Filters</b> namespace provides filters for use with <a href="T_MimeKit_IO_FilteredStream.htm">MimeKit.IO.FilteredStream</a>.</div>
+            <h2 class="quickLinkHeader">Classes</h2>
+            <div id="IDACASection">
+              <table id="classList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_IO_Filters_ArmoredFromFilter.htm">ArmoredFromFilter</a>
+                  </td>
+                  <td>
+            A filter that armors lines beginning with "From " by encoding the 'F' with the
+            Quoted-Printable encoding.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_IO_Filters_BestEncodingFilter.htm">BestEncodingFilter</a>
+                  </td>
+                  <td>
+            A filter that can be used to determine the most efficient Content-Transfer-Encoding.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_IO_Filters_CharsetFilter.htm">CharsetFilter</a>
+                  </td>
+                  <td>
+            A charset filter for incrementally converting text streams from
+            one charset encoding to another.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_IO_Filters_DecoderFilter.htm">DecoderFilter</a>
+                  </td>
+                  <td>
+            A filter for decoding MIME content.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_IO_Filters_Dos2UnixFilter.htm">Dos2UnixFilter</a>
+                  </td>
+                  <td>
+            A filter that will convert from Windows/DOS line endings to Unix line endings.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_IO_Filters_EncoderFilter.htm">EncoderFilter</a>
+                  </td>
+                  <td>
+            A filter for encoding MIME content.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_IO_Filters_MboxFromFilter.htm">MboxFromFilter</a>
+                  </td>
+                  <td>
+            A filter that munges lines beginning with "From " by stuffing a '&gt;' into the beginning of the line.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_IO_Filters_MimeFilterBase.htm">MimeFilterBase</a>
+                  </td>
+                  <td>
+            A base implementation for MIME filters.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_IO_Filters_PassThroughFilter.htm">PassThroughFilter</a>
+                  </td>
+                  <td>
+            A filter that simply passes data through without any processing.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_IO_Filters_TrailingWhitespaceFilter.htm">TrailingWhitespaceFilter</a>
+                  </td>
+                  <td>
+            A filter for stripping trailing whitespace from lines in a textual stream.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_IO_Filters_Unix2DosFilter.htm">Unix2DosFilter</a>
+                  </td>
+                  <td>
+            A filter that will convert from Unix line endings to Windows/DOS line endings.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">Interfaces</h2>
+            <div id="IDGCASection">
+              <table id="interfaceList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_IO_Filters_IMimeFilter.htm">IMimeFilter</a>
+                  </td>
+                  <td>
+            An interface for incrementally filtering data.
+            </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Classes</a>
+                </li>
+                <li>
+                  <a class="quickLink">Interfaces</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer id="PageFooter" class="footer border-top py-3">
+      <div class="columns">
+        <div id="FooterContent" class="column">
+          <p class="site-footer-links">
+            <a href="https://mimekit.net/">Home</a> <a href="https://github.com/jstedfast/MimeKit">MimeKit on GitHub</a> <a href="https://github.com/jstedfast/MailKit">MailKit on GitHub</a> <a href="https://github.com/sponsors/jstedfast">    Sponsor</a></p>
+          <p>
+            <a href="https://github.com/jstedfast" target="_blank" rel="noopener noreferrer">Copyright © 2013-2026 Jeffrey Stedfast</a>
+          </p>
+          <div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:jestedfa%40microsoft.com?Subject=MailKit%20Documentation">Jeffrey Stedfast</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
         HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
-        </script></div></body></html>
+        </script></div>
+      </div>
+    </footer>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadToc();
+InitializeQuickLinks();
+});</script>
+  </body>
+</html>

@@ -1,0 +1,497 @@
+﻿<!DOCTYPE html []>
+<html lang="en-US" data-theme="light">
+  <head><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B7CEM3SL1V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B7CEM3SL1V');
+</script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/fontawesome.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/solid.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/regular.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/brands.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/presentationStyle.css?v=50DD4085" />
+    <script src="../scripts/jquery-3.7.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js?v=50DD4085"></script>
+    <script src="../scripts/highlight.min.js?v=50DD4085"></script>
+    <script src="../scripts/themeSwitcher.js?v=50DD4085"></script>
+    <script src="../scripts/presentationStyle.js?v=50DD4085"></script>
+    <title>ImapIdleSession.ReadChangesAsync Method</title>
+    <meta name="Title" content="ReadChangesAsync" />
+    <meta name="Help.Id" content="M:MailKit.Net.Imap.ImapIdleSession.ReadChangesAsync(System.Threading.CancellationToken)" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MailKit.Net.Imap" />
+    <meta name="guid" content="M_MailKit_Net_Imap_ImapIdleSession_ReadChangesAsync" />
+    <meta name="Description" content="Asynchronously read batches of changes as they are reported by the server." />
+    <meta name="tocParentId" content="601" />
+  </head>
+  <body>
+    <header class="pageHeader" id="Header">
+      <div class="level mb-0 py-2 px-4">
+        <div id="TitleContainer" class="level-left">
+          <div id="DocumentationTitle" class="level-item">MailKit Documentation</div>
+        </div>
+        <div id="LangFilterSearchContainer" class="level-right">
+          <div id="ProjectLink" class="level-item" title="Project website" aria-label="Project website">
+            <a href="https://github.com/jstedfast/MailKit" rel="noopener noreferrer" target="_blank">
+              <span class="icon">
+                <i class="fa-brands fa-github"></i>
+              </span>
+            </a>
+          </div>
+          <div id="ThemeSwitcher" class="level-item" title="Toggle theme" aria-label="Toggle theme">
+            <span class="icon">
+              <i class="fa fa-regular fa-moon theme-icon-dark"></i>
+              <i class="fa fa-sun theme-icon-light"></i>
+            </span>
+          </div>
+          <div class="level-item">
+            <div class="dropdown is-hoverable">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span id="CurrentLanguage"></span>
+                  <span class="icon is-small">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" role="menu">
+                <div id="LanguageSelections" class="dropdown-content">
+                  <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="level-item">
+            <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+              <div class="field">
+                <div class="control has-icons-left">
+                  <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-search"></i>
+                  </span>
+                  <button id="SearchButton" type="submit" class="is-hidden"></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article>
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile toc-resizable">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu">
+                <li>Loading...</li>
+              </ul>
+            </nav>
+          </div>
+          <div id="Resizer" class="toc-resizer"></div>
+          <div id="TopicContent" class="column content is-7 toc-resizable-content">
+            <h1>Imap<wbr />Idle<wbr />Session<span id="LSTC9F2EEFC_0" data-languageSpecificText="cpp=::|nu=."></span>Read<wbr />Changes<wbr />Async Method</h1>
+            <div class="summary">
+            Asynchronously read batches of changes as they are reported by the server.
+            </div>
+            <h2 class="quickLinkHeader">Definition</h2>
+            <div id="IDBSection">
+              <strong>Namespace:</strong> <a href="N_MailKit_Net_Imap.htm">MailKit.Net.Imap</a><br /><strong>Assembly:</strong> MailKit (in MailKit.dll) Version: 5.0.0<div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="identifier">IAsyncEnumerable</span>&lt;<span class="identifier">ImapIdleChanges</span>&gt; <span class="identifier">ReadChangesAsync</span>(
+	<span class="identifier">CancellationToken</span> <span class="parameter">cancellationToken</span> = <span class="keyword">default</span>
+)</code></pre></div></div><h4 class="quickLinkHeader">Parameters</h4><dl><dt class="has-text-weight-normal"><span class="parameter">cancellationToken</span>  <a href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken" target="_blank" rel="noopener noreferrer">CancellationToken</a>  (Optional)</dt><dd>The cancellation token used to stop waiting. Cancelling it ends
+            the <span class="code">IDLE</span> command gracefully, so the client remains usable.</dd></dl><h4 class="quickLinkHeader">Return Value</h4><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1" target="_blank" rel="noopener noreferrer">IAsyncEnumerable</a><span id="LSTC9F2EEFC_1" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_Net_Imap_ImapIdleChanges.htm">ImapIdleChanges</a><span id="LSTC9F2EEFC_2" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span><br />The batches of changes reported by the server.</div>
+            <h2 class="quickLinkHeader">Remarks</h2>
+            <div id="IDBCSection">
+              <p>Repeatedly calls <a href="M_MailKit_Net_Imap_ImapIdleSession_WaitForChangesAsync.htm">WaitForChangesAsync(CancellationToken)</a> and yields each batch
+            of changes.</p>
+              <p>While the caller is processing a batch, the client is not idle, so other commands may be
+            issued. Requesting the next batch resumes waiting for changes.</p>
+              <p>The enumeration only ends by throwing an exception, such as an
+            <a href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception" target="_blank" rel="noopener noreferrer">OperationCanceledException</a> when the <span class="parameter">cancellationToken</span>
+            is cancelled.</p>
+            </div>
+            <h2 class="quickLinkHeader">Example</h2>
+            <div id="IDCCSection">
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">using System;
+using System.IO;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Collections.Generic;
+
+using MailKit;
+using MailKit.Net.Imap;
+using MailKit.Security;
+
+namespace ImapIdleSessionExample {
+    class Program
+    {
+        // Connection-related properties
+        const SecureSocketOptions SslOptions = SecureSocketOptions.Auto;
+        const string Host = "imap.gmail.com";
+        const int Port = 993;
+
+        // Authentication-related properties
+        const string Username = "username@gmail.com";
+        const string Password = "password";
+
+        public static void Main (string[] args)
+        {
+            using (var client = new IdleClient (Host, Port, SslOptions, Username, Password)) {
+                Console.WriteLine ("Hit any key to end the demo.");
+
+                var idleTask = client.RunAsync ();
+
+                Task.Run (() =&gt; {
+                    Console.ReadKey (true);
+                }).Wait ();
+
+                client.Exit ();
+
+                idleTask.GetAwaiter ().GetResult ();
+            }
+        }
+    }
+
+    class IdleClient : IDisposable
+    {
+        readonly string host, username, password;
+        readonly SecureSocketOptions sslOptions;
+        readonly int port;
+        readonly List&lt;IMessageSummary&gt; messages;
+        readonly CancellationTokenSource cancel;
+        readonly FetchRequest request;
+        readonly ImapClient client;
+
+        public IdleClient (string host, int port, SecureSocketOptions sslOptions, string username, string password)
+        {
+            this.client = new ImapClient (new ProtocolLogger (Console.OpenStandardError ()));
+            this.request = new FetchRequest (MessageSummaryItems.Full | MessageSummaryItems.UniqueId);
+            this.messages = new List&lt;IMessageSummary&gt; ();
+            this.cancel = new CancellationTokenSource ();
+            this.sslOptions = sslOptions;
+            this.username = username;
+            this.password = password;
+            this.host = host;
+            this.port = port;
+        }
+
+        async Task ReconnectAsync ()
+        {
+            if (!client.IsConnected)
+                await client.ConnectAsync (host, port, sslOptions, cancel.Token);
+
+            if (!client.IsAuthenticated) {
+                await client.AuthenticateAsync (username, password, cancel.Token);
+
+                await client.Inbox.OpenAsync (FolderAccess.ReadOnly, cancel.Token);
+            }
+        }
+
+        async Task FetchMessageSummariesAsync (bool print)
+        {
+            IList&lt;IMessageSummary&gt; fetched;
+
+            do {
+                try {
+                    // fetch summary information for messages that we don't already have
+                    int startIndex = messages.Count;
+
+                    fetched = await client.Inbox.FetchAsync (startIndex, -1, request, cancel.Token);
+                    break;
+                } catch (ImapProtocolException) {
+                    // protocol exceptions often result in the client getting disconnected
+                    await ReconnectAsync ();
+                } catch (IOException) {
+                    // I/O exceptions always result in the client getting disconnected
+                    await ReconnectAsync ();
+                }
+            } while (true);
+
+            foreach (var message in fetched) {
+                if (print)
+                    Console.WriteLine ("{0}: new message: {1}", client.Inbox, message.Envelope.Subject);
+                messages.Add (message);
+            }
+        }
+
+        async Task&lt;ImapIdleChanges&gt; WaitForChangesAsync (ImapIdleSession session)
+        {
+            do {
+                try {
+                    // Note: The session uses IDLE when the server supports it (refreshing it periodically
+                    // so that the server doesn't drop the connection) and falls back to polling with NOOP
+                    // when it doesn't.
+                    return await session.WaitForChangesAsync (cancel.Token);
+                } catch (ImapProtocolException) {
+                    // protocol exceptions often result in the client getting disconnected
+                    await ReconnectAsync ();
+                } catch (IOException) {
+                    // I/O exceptions always result in the client getting disconnected
+                    await ReconnectAsync ();
+                }
+            } while (true);
+        }
+
+        void ProcessChanges (ImapIdleChanges changes)
+        {
+            // Note: Events are reported in the order that the server sent them, so applying
+            // them in order keeps our 'messages' cache consistent with the folder.
+            foreach (var e in changes.Events) {
+                switch (e) {
+                case CountChangedIdleEvent countChanged:
+                    Console.WriteLine ("{0}: message count changed from {1} to {2}.", e.Folder, countChanged.PreviousCount, countChanged.Count);
+                    break;
+                case MessageExpungedIdleEvent expunged:
+                    if (expunged.Index &lt; messages.Count) {
+                        var message = messages[expunged.Index];
+
+                        Console.WriteLine ("{0}: message #{1} has been expunged: {2}", e.Folder, expunged.Index, message.Envelope.Subject);
+
+                        // Note: If you are keeping a local cache of message information
+                        // (e.g. MessageSummary data) for the folder, then you'll need
+                        // to remove the message at expunged.Index.
+                        messages.RemoveAt (expunged.Index);
+                    } else {
+                        Console.WriteLine ("{0}: message #{1} has been expunged.", e.Folder, expunged.Index);
+                    }
+                    break;
+                case MessagesVanishedIdleEvent vanished:
+                    // Note: This is only reported by servers when QRESYNC has been enabled.
+                    Console.WriteLine ("{0}: {1} messages have vanished.", e.Folder, vanished.UniqueIds.Count);
+                    break;
+                case MessageChangedIdleEvent changed:
+                    if (changed.Message.Flags.HasValue)
+                        Console.WriteLine ("{0}: flags have changed for message #{1} ({2}).", e.Folder, changed.Message.Index, changed.Message.Flags.Value);
+                    break;
+                case FolderStatusChangedIdleEvent statusChanged:
+                    Console.WriteLine ("{0}: folder status changed ({1}).", e.Folder, statusChanged.Item);
+                    break;
+                }
+            }
+        }
+
+        async Task IdleAsync ()
+        {
+            // Note: The default options are suitable for most servers (including GMail), but they
+            // can be tweaked by passing an ImapIdleOptions to CreateIdleSession().
+            var session = client.CreateIdleSession ();
+
+            // Note: If you don't need to handle reconnecting, this loop can be simplified to:
+            //
+            // await foreach (var changes in session.ReadChangesAsync (cancel.Token)) { ... }
+            try {
+                do {
+                    var changes = await WaitForChangesAsync (session);
+
+                    ProcessChanges (changes);
+
+                    // Note: Unlike when handling the folder events (such as CountChanged) while
+                    // idling, it is safe to send new commands here because the IDLE command has
+                    // already been ended by the time WaitForChangesAsync() returns.
+                    if (changes.MessagesArrived)
+                        await FetchMessageSummariesAsync (true);
+                } while (true);
+            } catch (OperationCanceledException) {
+                // Exit() was called. The IDLE command was ended gracefully, so the client is
+                // still connected and usable.
+            }
+        }
+
+        public async Task RunAsync ()
+        {
+            // connect to the IMAP server and get our initial list of messages
+            try {
+                await ReconnectAsync ();
+                await FetchMessageSummariesAsync (false);
+            } catch (OperationCanceledException) {
+                await client.DisconnectAsync (true);
+                return;
+            }
+
+            await IdleAsync ();
+
+            await client.DisconnectAsync (true);
+        }
+
+        public void Exit ()
+        {
+            cancel.Cancel ();
+        }
+
+        public void Dispose ()
+        {
+            client.Dispose ();
+            cancel.Dispose ();
+        }
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            <h2 class="quickLinkHeader">Exceptions</h2>
+            <div id="IDFCSection">
+              <table class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception" target="_blank" rel="noopener noreferrer">ObjectDisposedException</a>
+                  </td>
+                  <td>
+            The <a href="T_MailKit_Net_Imap_ImapClient.htm">ImapClient</a> has been disposed.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MailKit_ServiceNotConnectedException.htm">ServiceNotConnectedException</a>
+                  </td>
+                  <td>
+            The <a href="T_MailKit_Net_Imap_ImapClient.htm">ImapClient</a> is not connected.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MailKit_ServiceNotAuthenticatedException.htm">ServiceNotAuthenticatedException</a>
+                  </td>
+                  <td>
+            The <a href="T_MailKit_Net_Imap_ImapClient.htm">ImapClient</a> is not authenticated.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception" target="_blank" rel="noopener noreferrer">InvalidOperationException</a>
+                  </td>
+                  <td>
+                    <p>A <a href="T_MailKit_Net_Imap_ImapFolder.htm">ImapFolder</a> has not been opened.</p>
+                    <p>-or-</p>
+                    <p>The session (or another session for the same client) is already waiting for changes.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception" target="_blank" rel="noopener noreferrer">OperationCanceledException</a>
+                  </td>
+                  <td>
+            The operation was canceled via the cancellation token.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.io.ioexception" target="_blank" rel="noopener noreferrer">IOException</a>
+                  </td>
+                  <td>
+            An I/O error occurred.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MailKit_Net_Imap_ImapCommandException.htm">ImapCommandException</a>
+                  </td>
+                  <td>
+            The server replied to the IDLE or NOOP command with a NO or BAD response.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MailKit_Net_Imap_ImapProtocolException.htm">ImapProtocolException</a>
+                  </td>
+                  <td>
+            The server responded with an unexpected token.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Reference</h4>
+              <div>
+                <a href="T_MailKit_Net_Imap_ImapIdleSession.htm">ImapIdleSession Class</a>
+              </div>
+              <div>
+                <a href="N_MailKit_Net_Imap.htm">MailKit.Net.Imap Namespace</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Definition</a>
+                  <ul class="menu">
+                    <li>
+                      <a class="quickLink">Parameters</a>
+                    </li>
+                    <li>
+                      <a class="quickLink">Return Value</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="quickLink">Remarks</a>
+                </li>
+                <li>
+                  <a class="quickLink">Example</a>
+                </li>
+                <li>
+                  <a class="quickLink">Exceptions</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer id="PageFooter" class="footer border-top py-3">
+      <div class="columns">
+        <div id="FooterContent" class="column">
+          <p class="site-footer-links">
+            <a href="https://mimekit.net/">Home</a> <a href="https://github.com/jstedfast/MimeKit">MimeKit on GitHub</a> <a href="https://github.com/jstedfast/MailKit">MailKit on GitHub</a> <a href="https://github.com/sponsors/jstedfast">    Sponsor</a></p>
+          <p>
+            <a href="https://github.com/jstedfast" target="_blank" rel="noopener noreferrer">Copyright © 2013-2026 Jeffrey Stedfast</a>
+          </p>
+          <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:jestedfa%40microsoft.com?Subject=MailKit%20Documentation">Jeffrey Stedfast</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script></div>
+      </div>
+    </footer>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadToc();
+InitializeQuickLinks();
+hljs.highlightAll();
+});</script>
+  </body>
+</html>

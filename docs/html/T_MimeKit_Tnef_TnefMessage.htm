@@ -1,0 +1,416 @@
+﻿<!DOCTYPE html []>
+<html lang="en-US" data-theme="light">
+  <head><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B7CEM3SL1V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B7CEM3SL1V');
+</script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/fontawesome.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/solid.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/regular.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/brands.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/presentationStyle.css?v=50DD4085" />
+    <script src="../scripts/jquery-3.7.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js?v=50DD4085"></script>
+    <script src="../scripts/highlight.min.js?v=50DD4085"></script>
+    <script src="../scripts/themeSwitcher.js?v=50DD4085"></script>
+    <script src="../scripts/presentationStyle.js?v=50DD4085"></script>
+    <title>TnefMessage Class</title>
+    <meta name="Title" content="TnefMessage" />
+    <meta name="Help.Id" content="T:MimeKit.Tnef.TnefMessage" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MimeKit.Tnef" />
+    <meta name="guid" content="T_MimeKit_Tnef_TnefMessage" />
+    <meta name="Description" content="A TNEF message." />
+    <meta name="tocParentId" content="1880" />
+  </head>
+  <body>
+    <header class="pageHeader" id="Header">
+      <div class="level mb-0 py-2 px-4">
+        <div id="TitleContainer" class="level-left">
+          <div id="DocumentationTitle" class="level-item">MailKit Documentation</div>
+        </div>
+        <div id="LangFilterSearchContainer" class="level-right">
+          <div id="ProjectLink" class="level-item" title="Project website" aria-label="Project website">
+            <a href="https://github.com/jstedfast/MailKit" rel="noopener noreferrer" target="_blank">
+              <span class="icon">
+                <i class="fa-brands fa-github"></i>
+              </span>
+            </a>
+          </div>
+          <div id="ThemeSwitcher" class="level-item" title="Toggle theme" aria-label="Toggle theme">
+            <span class="icon">
+              <i class="fa fa-regular fa-moon theme-icon-dark"></i>
+              <i class="fa fa-sun theme-icon-light"></i>
+            </span>
+          </div>
+          <div class="level-item">
+            <div class="dropdown is-hoverable">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span id="CurrentLanguage"></span>
+                  <span class="icon is-small">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" role="menu">
+                <div id="LanguageSelections" class="dropdown-content">
+                  <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="level-item">
+            <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+              <div class="field">
+                <div class="control has-icons-left">
+                  <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-search"></i>
+                  </span>
+                  <button id="SearchButton" type="submit" class="is-hidden"></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article>
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile toc-resizable">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu">
+                <li>Loading...</li>
+              </ul>
+            </nav>
+          </div>
+          <div id="Resizer" class="toc-resizer"></div>
+          <div id="TopicContent" class="column content is-7 toc-resizable-content">
+            <h1>Tnef<wbr />Message Class</h1>
+            <div class="summary">
+            A TNEF message.
+            </div>
+            <h2 class="quickLinkHeader">Definition</h2>
+            <div id="IDBSection">
+              <strong>Namespace:</strong> <a href="N_MimeKit_Tnef.htm">MimeKit.Tnef</a><br /><strong>Assembly:</strong> MimeKit.Core (in MimeKit.Core.dll) Version: 5.0.0<div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">sealed</span> <span class="keyword">class</span> <span class="identifier">TnefMessage</span> : <span class="identifier">IDisposable</span></code></pre></div></div><dl class="inheritanceHierarchy"><dt>Inheritance</dt><dd><a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <span class="selflink">TnefMessage</span></dd></dl><dl class="implementsList"><dt>Implements</dt><dd><a href="https://learn.microsoft.com/dotnet/api/system.idisposable" target="_blank" rel="noopener noreferrer">IDisposable</a></dd></dl></div>
+            <h2 class="quickLinkHeader">Remarks</h2>
+            <div id="IDBCSection">
+              <p>A <span class="selflink">TnefMessage</span> is an in-memory representation of a TNEF stream, as specified by [MS-OXTNEF]:
+            the message's MAPI properties, its recipients, its bodies and its attachments.</p>
+              <p>The legacy TNEF attributes (such as <a href="T_MimeKit_Tnef_TnefAttributeTag.htm">Subject</a> and
+            <a href="T_MimeKit_Tnef_TnefAttributeTag.htm">From</a>) are decoded into the MAPI properties that they correspond to, as specified by
+            [MS-OXTNEF] section 2.1.3.4. When a TNEF stream contains both a legacy attribute and the corresponding MAPI property,
+            the MAPI property takes precedence.</p>
+              <p>The bodies and attachment content are buffered in memory, subject to the limits specified by
+            <a href="T_MimeKit_Tnef_TnefOptions.htm">TnefOptions</a>. A <span class="selflink">TnefMessage</span> should be disposed once it is no longer needed.</p>
+              <p>Malformed TNEF streams are read on a best-effort basis. The problems that were encountered are reported to the
+            <a href="P_MimeKit_Tnef_TnefReader_ComplianceLogger.htm">ComplianceLogger</a>, if any.</p>
+            </div>
+            <h2 class="quickLinkHeader">Example</h2>
+            <div id="IDCCSection">
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void PrintMessageProperties (string fileName)
+{
+    using (var stream = File.OpenRead (fileName))
+    using (var tnef = TnefMessage.Load (stream)) {
+        // The most commonly used properties have convenience accessors.
+        Console.WriteLine ("Message-Class: {0}", tnef.MessageClass);
+        Console.WriteLine ("Subject: {0}", tnef.Subject);
+        Console.WriteLine ("Message-Id: {0}", tnef.InternetMessageId);
+
+        // Any other property may be looked up by its tag. Note that a string lookup matches both the
+        // String8 and the Unicode variant of the property tag.
+        var sender = tnef.Properties.GetString (TnefPropertyTag.SenderEmailAddressW);
+        var submitted = tnef.Properties.GetDateTime (TnefPropertyTag.ClientSubmitTime);
+        var importance = tnef.Properties.GetInt32 (TnefPropertyTag.Importance);
+
+        Console.WriteLine ("Sender: {0}", sender);
+        Console.WriteLine ("Submitted: {0} (UTC)", submitted);
+        Console.WriteLine ("Importance: {0}", importance);
+
+        // Named properties are looked up by their TnefNameId.
+        if (tnef.Properties.TryGetValue (TnefNameId.Location, out var location) &amp;&amp; location.TryGetString (out var where))
+            Console.WriteLine ("Location: {0}", where);
+
+        // Multi-valued properties have more than one value.
+        if (tnef.Properties.TryGetValue (TnefNameId.Keywords, out var keywords) &amp;&amp; keywords.TryGetValues&lt;string&gt; (out var categories))
+            Console.WriteLine ("Categories: {0}", string.Join (", ", categories));
+
+        // Or simply enumerate every property.
+        foreach (var property in tnef.Properties) {
+            var name = property.Name.HasValue ? property.Name.Value.ToString () : property.Tag.Id.ToString ();
+            var value = property.Value;
+
+            if (value is byte[] bytes)
+                value = string.Format ("&lt;{0} bytes&gt;", bytes.Length);
+            else if (value is Array array)
+                value = string.Join (", ", array.Cast&lt;object&gt; ());
+
+            Console.WriteLine ("{0} ({1}) = {2}", name, property.PropertyType, value);
+        }
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            <h2 class="quickLinkHeader">Properties</h2>
+            <div id="IDIFASection">
+              <table id="PropertyList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="P_MimeKit_Tnef_TnefMessage_Attachments.htm">Attachments</a>
+                  </td>
+                  <td>
+            Get the attachments of the message.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="P_MimeKit_Tnef_TnefMessage_Codepage.htm">Codepage</a>
+                  </td>
+                  <td>
+            Get the codepage of the message.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="P_MimeKit_Tnef_TnefMessage_HtmlBody.htm">HtmlBody</a>
+                  </td>
+                  <td>
+            Get the HTML body of the message.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="P_MimeKit_Tnef_TnefMessage_InternetMessageId.htm">InternetMessageId</a>
+                  </td>
+                  <td>
+            Get the Internet message identifier of the message.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="P_MimeKit_Tnef_TnefMessage_LegacyKey.htm">LegacyKey</a>
+                  </td>
+                  <td>
+            Get the legacy key from the TNEF stream header.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="P_MimeKit_Tnef_TnefMessage_MessageClass.htm">MessageClass</a>
+                  </td>
+                  <td>
+            Get the message class.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="P_MimeKit_Tnef_TnefMessage_Properties.htm">Properties</a>
+                  </td>
+                  <td>
+            Get the message's MAPI properties.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="P_MimeKit_Tnef_TnefMessage_Recipients.htm">Recipients</a>
+                  </td>
+                  <td>
+            Get the recipients of the message.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="P_MimeKit_Tnef_TnefMessage_RtfBody.htm">RtfBody</a>
+                  </td>
+                  <td>
+            Get the compressed RTF body of the message.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="P_MimeKit_Tnef_TnefMessage_Subject.htm">Subject</a>
+                  </td>
+                  <td>
+            Get the subject of the message.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="P_MimeKit_Tnef_TnefMessage_TextBody.htm">TextBody</a>
+                  </td>
+                  <td>
+            Get the plain text body of the message.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">Methods</h2>
+            <div id="IDAFASection">
+              <table id="MethodList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="M_MimeKit_Tnef_TnefMessage_ConvertToMime.htm">ConvertToMime</a>
+                  </td>
+                  <td>
+            Convert the message to MIME.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="M_MimeKit_Tnef_TnefMessage_Dispose.htm">Dispose</a>
+                  </td>
+                  <td>
+            Release all resources used by the <span class="selflink">TnefMessage</span> object.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)" target="_blank" rel="noopener noreferrer">Equals</a>
+                  </td>
+                  <td>Determines whether the specified object is equal to the current object.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode" target="_blank" rel="noopener noreferrer">GetHashCode</a>
+                  </td>
+                  <td>Serves as the default hash function.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.object.gettype" target="_blank" rel="noopener noreferrer">GetType</a>
+                  </td>
+                  <td>Gets the <a href="https://learn.microsoft.com/dotnet/api/system.type" target="_blank" rel="noopener noreferrer">Type</a> of the current instance.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="M_MimeKit_Tnef_TnefMessage_Load.htm">Load(TnefReader, CancellationToken)</a>
+                  </td>
+                  <td>
+            Load a TNEF message using the specified reader.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="M_MimeKit_Tnef_TnefMessage_Load_1.htm">Load(Stream, TnefOptions, CancellationToken)</a>
+                  </td>
+                  <td>
+            Load a TNEF message from the specified stream.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="M_MimeKit_Tnef_TnefMessage_LoadAsync.htm">LoadAsync(TnefReader, CancellationToken)</a>
+                  </td>
+                  <td>
+            Asynchronously load a TNEF message using the specified reader.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="M_MimeKit_Tnef_TnefMessage_LoadAsync_1.htm">LoadAsync(Stream, TnefOptions, CancellationToken)</a>
+                  </td>
+                  <td>
+            Asynchronously load a TNEF message from the specified stream.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.object.tostring" target="_blank" rel="noopener noreferrer">ToString</a>
+                  </td>
+                  <td>Returns a string that represents the current object.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Reference</h4>
+              <div>
+                <a href="N_MimeKit_Tnef.htm">MimeKit.Tnef Namespace</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Definition</a>
+                </li>
+                <li>
+                  <a class="quickLink">Remarks</a>
+                </li>
+                <li>
+                  <a class="quickLink">Example</a>
+                </li>
+                <li>
+                  <a class="quickLink">Properties</a>
+                </li>
+                <li>
+                  <a class="quickLink">Methods</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer id="PageFooter" class="footer border-top py-3">
+      <div class="columns">
+        <div id="FooterContent" class="column">
+          <p class="site-footer-links">
+            <a href="https://mimekit.net/">Home</a> <a href="https://github.com/jstedfast/MimeKit">MimeKit on GitHub</a> <a href="https://github.com/jstedfast/MailKit">MailKit on GitHub</a> <a href="https://github.com/sponsors/jstedfast">    Sponsor</a></p>
+          <p>
+            <a href="https://github.com/jstedfast" target="_blank" rel="noopener noreferrer">Copyright © 2013-2026 Jeffrey Stedfast</a>
+          </p>
+          <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:jestedfa%40microsoft.com?Subject=MailKit%20Documentation">Jeffrey Stedfast</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script></div>
+      </div>
+    </footer>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadToc();
+InitializeQuickLinks();
+hljs.highlightAll();
+});</script>
+  </body>
+</html>

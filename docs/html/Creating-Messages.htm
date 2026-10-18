@@ -1,12 +1,153 @@
-﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="Microsoft.Help.SelfBranded" content="true" /><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Locale" content="en-us" /><meta name="Microsoft.Help.TopicLocale" content="en-us" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"></script><title>Creating messages</title><meta name="Microsoft.Help.Id" content="Creating-Messages" /><meta name="Microsoft.Help.ContentType" content="Concepts" /><meta name="Microsoft.Help.Category" content="CSharp" /><meta name="Description" content="MimeKit provides a number of ways to create messages." /><link type="text/css" rel="stylesheet" href="../styles/highlight.css" /><script type="text/javascript" src="../scripts/highlight.js"> </script><link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" /><script type="text/javascript" src="../scripts/jquery-3.7.1.min.js"></script><script type="text/javascript" src="../scripts/branding-Website.js"></script><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="SetDefaultLanguage('cs');"><input type="hidden" id="userDataCache" class="userDataStyle" /><div id="PageHeader" class="pageHeader">MailKit Documentation<form id="SearchForm" method="get" action="#" onsubmit="TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/Introduction.htm" title="MailKit Documentation" tocid="roottoc">MailKit Documentation</a></div><div class="toclevel1" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/Getting-Started.htm" title="Getting Started" tocid="Getting-Started">Getting Started</a></div><div class="toclevel2 current" data-toclevel="2"><a data-tochassubtree="false" href="../html/Creating-Messages.htm" title="Creating messages" tocid="Creating-Messages">Creating messages</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/Parsing-Messages.htm" title="Parsing messages" tocid="Parsing-Messages">Parsing messages</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/Working-With-Messages.htm" title="Working with messages" tocid="Working-With-Messages">Working with messages</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/Working-With-OpenPGP.htm" title="Working with OpenPGP" tocid="Working-With-OpenPGP">Working with OpenPGP</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/Working-With-SMime.htm" title="Working with S/MIME" tocid="Working-With-SMime">Working with S/MIME</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div id="TopicContent" class="topicContent"><table class="titleTable"><tr><td class="logoColumn"><img alt="MimeKit" src="../icons/Help.png" /></td><td class="titleColumn"><h1>Creating messages</h1></td></tr></table><div><p>MimeKit provides a number of ways to create messages.</p><p>This topic contains the following sections:</p><ul><li><a href="#CreatingSimpleMessage">Creating a Simple Message</a></li><li><a href="#CreateMessageWithAttachments">Creating a Message with Attachments</a></li><li><a href="#UsingBodyBuilder">Using a BodyBuilder</a></li><li><a href="#SystemNetMail">Importing from System.Net.Mail</a></li><li><a href="#seeAlsoSection">See Also</a></li></ul></div><div class="collapsibleAreaRegion" id="CreatingSimpleMessage"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('IDCAB')" onkeypress="SectionExpandCollapse_CheckKey('IDCAB', event)" tabindex="0"><img id="IDCABToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Creating a Simple Message</span></div><div id="IDCABSection" class="collapsibleSection"><p>
-          Creating MIME messages using MimeKit is really trivial.
-        </p><div id="IDBBCAB" class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="IDBBCAB_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="IDBBCAB_copyCode" href="#" class="copyCodeSnippet" onclick="CopyToClipboard('IDBBCAB');return false;" title="Copy">Copy</a></div></div><div id="IDBBCAB_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">var</span> message = <span class="highlight-keyword">new</span> MimeMessage ();
-message.From.Add (<span class="highlight-keyword">new</span> MailboxAddress (<span class="highlight-literal">"Joey"</span>, <span class="highlight-literal">"joey@friends.com"</span>));
-message.To.Add (<span class="highlight-keyword">new</span> MailboxAddress (<span class="highlight-literal">"Alice"</span>, <span class="highlight-literal">"alice@wonderland.com"</span>));
-message.Subject = <span class="highlight-literal">"How you doin?"</span>;
+﻿<!DOCTYPE html []>
+<html lang="en-US" data-theme="light">
+  <head><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B7CEM3SL1V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-message.Body = <span class="highlight-keyword">new</span> TextPart (<span class="highlight-literal">"plain"</span>) {
-    Text = <span class="highlight-literal">@"Hey Alice,
+  gtag('config', 'G-B7CEM3SL1V');
+</script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/fontawesome.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/solid.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/regular.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/brands.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/presentationStyle.css?v=50DD4085" />
+    <script src="../scripts/jquery-3.7.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js?v=50DD4085"></script>
+    <script src="../scripts/highlight.min.js?v=50DD4085"></script>
+    <script src="../scripts/themeSwitcher.js?v=50DD4085"></script>
+    <script src="../scripts/presentationStyle.js?v=50DD4085"></script>
+    <title>Creating messages</title>
+    <meta name="Title" content="Creating messages" />
+    <meta name="Help.Id" content="Creating-Messages" />
+    <meta name="Help.ContentType" content="Concepts" />
+    <meta name="guid" content="Creating-Messages" />
+    <meta name="Description" content="MimeKit provides a number of ways to create messages." />
+    <meta name="tocParentId" content="1" />
+  </head>
+  <body>
+    <header class="pageHeader" id="Header">
+      <div class="level mb-0 py-2 px-4">
+        <div id="TitleContainer" class="level-left">
+          <div id="DocumentationTitle" class="level-item">MailKit Documentation</div>
+        </div>
+        <div id="LangFilterSearchContainer" class="level-right">
+          <div id="ProjectLink" class="level-item" title="Project website" aria-label="Project website">
+            <a href="https://github.com/jstedfast/MailKit" rel="noopener noreferrer" target="_blank">
+              <span class="icon">
+                <i class="fa-brands fa-github"></i>
+              </span>
+            </a>
+          </div>
+          <div id="ThemeSwitcher" class="level-item" title="Toggle theme" aria-label="Toggle theme">
+            <span class="icon">
+              <i class="fa fa-regular fa-moon theme-icon-dark"></i>
+              <i class="fa fa-sun theme-icon-light"></i>
+            </span>
+          </div>
+          <div class="level-item">
+            <div class="dropdown is-hoverable">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span id="CurrentLanguage"></span>
+                  <span class="icon is-small">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" role="menu">
+                <div id="LanguageSelections" class="dropdown-content">
+                  <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="level-item">
+            <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+              <div class="field">
+                <div class="control has-icons-left">
+                  <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-search"></i>
+                  </span>
+                  <button id="SearchButton" type="submit" class="is-hidden"></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article>
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile toc-resizable">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu">
+                <li>Loading...</li>
+              </ul>
+            </nav>
+          </div>
+          <div id="Resizer" class="toc-resizer"></div>
+          <div id="TopicContent" class="column content is-7 toc-resizable-content">
+            <h1>Creating messages</h1>
+            <div>
+              <p>MimeKit provides a number of ways to create messages.</p>
+              <p class="is-hidden-tablet">This topic contains the following sections:</p>
+              <ul class="is-hidden-tablet">
+                <li>
+                  <a href="#CreatingSimpleMessage">Creating a Simple Message</a>
+                </li>
+                <li>
+                  <a href="#CreateMessageWithAttachments">Creating a Message with Attachments</a>
+                </li>
+                <li>
+                  <a href="#UsingBodyBuilder">Using a BodyBuilder</a>
+                </li>
+                <li>
+                  <a href="#SystemNetMail">Importing from System.Net.Mail</a>
+                </li>
+                <li>
+                  <a href="#seeAlsoSection">See Also</a>
+                </li>
+              </ul>
+            </div>
+            <h2 id="CreatingSimpleMessage" class="quickLinkHeader">Creating a Simple Message</h2>
+            <div id="IDCABSection">
+              <p>
+          Creating MIME messages using MimeKit is really trivial.
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">var message = new MimeMessage ();
+message.From.Add (new MailboxAddress ("Joey", "joey@friends.com"));
+message.To.Add (new MailboxAddress ("Alice", "alice@wonderland.com"));
+message.Subject = "How you doin?";
+
+message.Body = new TextPart ("plain") {
+    Text = @"Hey Alice,
 
 What are you up to this weekend? Monica is throwing one of her parties on
 Saturday and I was hoping you could make it.
@@ -14,31 +155,53 @@ Saturday and I was hoping you could make it.
 Will you be my +1?
 
 -- Joey
-"</span>
-};</pre></div></div></div><p>
+"
+};</code>
+                  </pre>
+                </div>
+              </div>
+              <p>
           A <a href="T_MimeKit_TextPart.htm">TextPart</a> is a leaf-node
           MIME part with a text media-type. The first argument to the TextPart constructor
           specifies the media-subtype, in this case, <span class="literal">plain</span>. Another
           media subtype you are probably familiar with is the <span class="literal">html</span>
           subtype. Some other examples include <span class="literal">enriched</span>,
           <span class="literal">rtf</span>, and <span class="literal">xml</span>.
-        </p><p>
+        </p>
+              <p>
           The <a href="P_MimeKit_TextPart_Text.htm">Text</a> property
           is the easiest way to both get and set the string content of the MIME part.
-        </p></div><div class="collapsibleAreaRegion" id="CreateMessageWithAttachments"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('IDDAB')" onkeypress="SectionExpandCollapse_CheckKey('IDDAB', event)" tabindex="0"><img id="IDDABToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Creating a Message with Attachments</span></div><div id="IDDABSection" class="collapsibleSection"><p>
+        </p>
+            </div>
+            <h2 id="CreateMessageWithAttachments" class="quickLinkHeader">Creating a Message with Attachments</h2>
+            <div id="IDDABSection">
+              <p>
           Attachments are just like any other
           <a href="T_MimeKit_MimePart.htm">MimePart</a>, the only difference
           is that they typically have a <span class="literal">Content-Disposition</span> header with a
           value of <span class="literal">attachment</span> instead of <span class="literal">inline</span> or no
           <span class="literal">Content-Disposition</span> header at all.
-        </p><div id="IDBBDAB" class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="IDBBDAB_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="IDBBDAB_copyCode" href="#" class="copyCodeSnippet" onclick="CopyToClipboard('IDBBDAB');return false;" title="Copy">Copy</a></div></div><div id="IDBBDAB_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">var</span> message = <span class="highlight-keyword">new</span> MimeMessage ();
-message.From.Add (<span class="highlight-keyword">new</span> MailboxAddress (<span class="highlight-literal">"Joey"</span>, <span class="highlight-literal">"joey@friends.com"</span>));
-message.To.Add (<span class="highlight-keyword">new</span> MailboxAddress (<span class="highlight-literal">"Alice"</span>, <span class="highlight-literal">"alice@wonderland.com"</span>));
-message.Subject = <span class="highlight-literal">"How you doin?"</span>;
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">var message = new MimeMessage ();
+message.From.Add (new MailboxAddress ("Joey", "joey@friends.com"));
+message.To.Add (new MailboxAddress ("Alice", "alice@wonderland.com"));
+message.Subject = "How you doin?";
 
-<span class="highlight-comment">// create our message text, just like before (except don't set it as the message.Body)</span>
-<span class="highlight-keyword">var</span> body = <span class="highlight-keyword">new</span> TextPart (<span class="highlight-literal">"plain"</span>) {
-    Text = <span class="highlight-literal">@"Hey Alice,
+// create our message text, just like before (except don't set it as the message.Body)
+var body = new TextPart ("plain") {
+    Text = @"Hey Alice,
 
 What are you up to this weekend? Monica is throwing one of her parties on
 Saturday and I was hoping you could make it.
@@ -46,63 +209,100 @@ Saturday and I was hoping you could make it.
 Will you be my +1?
 
 -- Joey
-"</span>
+"
 };
 
-<span class="highlight-comment">// create an image attachment for the file located at path</span>
-<span class="highlight-keyword">var</span> attachment = <span class="highlight-keyword">new</span> MimePart (<span class="highlight-literal">"image"</span>, <span class="highlight-literal">"gif"</span>) {
-    Content = <span class="highlight-keyword">new</span> MimeContent (File.OpenRead (path), ContentEncoding.Default),
-    ContentDisposition = <span class="highlight-keyword">new</span> ContentDisposition (ContentDisposition.Attachment),
+// create an image attachment for the file located at path
+var attachment = new MimePart ("image", "gif") {
+    Content = new MimeContent (File.OpenRead (path), ContentEncoding.Unspecified),
+    ContentDisposition = new ContentDisposition (ContentDisposition.Attachment),
     ContentTransferEncoding = ContentEncoding.Base64,
     FileName = Path.GetFileName (path)
 };
 
-<span class="highlight-comment">// now create the multipart/mixed container to hold the message text and the</span>
-<span class="highlight-comment">// image attachment</span>
-<span class="highlight-keyword">var</span> multipart = <span class="highlight-keyword">new</span> Multipart (<span class="highlight-literal">"mixed"</span>);
+// now create the multipart/mixed container to hold the message text and the
+// image attachment
+var multipart = new Multipart ("mixed");
 multipart.Add (body);
 multipart.Add (attachment);
 
-<span class="highlight-comment">// now set the multipart/mixed as the message body</span>
-message.Body = multipart;</pre></div></div></div><p>
+// now set the multipart/mixed as the message body
+message.Body = multipart;</code>
+                  </pre>
+                </div>
+              </div>
+              <p>
           Of course, that is just a simple example. A lot of modern mail clients such as Outlook
           or Thunderbird will send out both a <span class="literal">text/html</span> and a
           <span class="literal">text/plain</span> version of the message text. To do this, you'd create a
           <a href="T_MimeKit_TextPart.htm">TextPart</a> for each part and then
           add them to a <span class="literal">multipart/alternative</span> like so:
-        </p><div id="IDDBDAB" class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="IDDBDAB_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="IDDBDAB_copyCode" href="#" class="copyCodeSnippet" onclick="CopyToClipboard('IDDBDAB');return false;" title="Copy">Copy</a></div></div><div id="IDDBDAB_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">var</span> attachment = CreateImageAttachment ();
-<span class="highlight-keyword">var</span> plain = CreateTextPlainPart ();
-<span class="highlight-keyword">var</span> html = CreateTextHtmlPart ();
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">var attachment = CreateImageAttachment ();
+var plain = CreateTextPlainPart ();
+var html = CreateTextHtmlPart ();
 
-<span class="highlight-comment">// Note: it is important that the text/html part is added second, because it is the</span>
-<span class="highlight-comment">// most expressive version and (probably) the most faithful to the sender's WYSIWYG </span>
-<span class="highlight-comment">// editor.</span>
-<span class="highlight-keyword">var</span> alternative = <span class="highlight-keyword">new</span> MultipartAlternative ();
+// Note: it is important that the text/html part is added second, because it is the
+// most expressive version and (probably) the most faithful to the sender's WYSIWYG 
+// editor.
+var alternative = new MultipartAlternative ();
 alternative.Add (plain);
 alternative.Add (html);
 
-<span class="highlight-comment">// now create the multipart/mixed container to hold the multipart/alternative</span>
-<span class="highlight-comment">// and the image attachment</span>
-<span class="highlight-keyword">var</span> multipart = <span class="highlight-keyword">new</span> Multipart (<span class="highlight-literal">"mixed"</span>);
+// now create the multipart/mixed container to hold the multipart/alternative
+// and the image attachment
+var multipart = new Multipart ("mixed");
 multipart.Add (alternative);
 multipart.Add (attachment);
 
-<span class="highlight-comment">// now set the multipart/mixed as the message body</span>
-message.Body = multipart;</pre></div></div></div></div><div class="collapsibleAreaRegion" id="UsingBodyBuilder"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('IDEAB')" onkeypress="SectionExpandCollapse_CheckKey('IDEAB', event)" tabindex="0"><img id="IDEABToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Using a BodyBuilder</span></div><div id="IDEABSection" class="collapsibleSection"><p>
+// now set the multipart/mixed as the message body
+message.Body = multipart;</code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            <h2 id="UsingBodyBuilder" class="quickLinkHeader">Using a BodyBuilder</h2>
+            <div id="IDEABSection">
+              <p>
           If you are used to <a href="https://learn.microsoft.com/dotnet/api/system.net.mail" target="_blank" rel="noopener noreferrer">System.Net.Mail</a>'s API
           for creating messages, you will probably find using a
           <a href="T_MimeKit_BodyBuilder.htm">BodyBuilder</a> much more friendly
           than manually creating the tree of MIME parts. Here's how you could create a message
           body using a <a href="T_MimeKit_BodyBuilder.htm">BodyBuilder</a>:
-        </p><div id="IDBBEAB" class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="IDBBEAB_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="IDBBEAB_copyCode" href="#" class="copyCodeSnippet" onclick="CopyToClipboard('IDBBEAB');return false;" title="Copy">Copy</a></div></div><div id="IDBBEAB_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">            <span class="highlight-keyword">var</span> message = <span class="highlight-keyword">new</span> MimeMessage ();
-            message.From.Add (<span class="highlight-keyword">new</span> MailboxAddress (<span class="highlight-literal">"Joey"</span>, <span class="highlight-literal">"joey@friends.com"</span>));
-            message.To.Add (<span class="highlight-keyword">new</span> MailboxAddress (<span class="highlight-literal">"Alice"</span>, <span class="highlight-literal">"alice@wonderland.com"</span>));
-            message.Subject = <span class="highlight-literal">"How you doin?"</span>;
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">            var message = new MimeMessage ();
+            message.From.Add (new MailboxAddress ("Joey", "joey@friends.com"));
+            message.To.Add (new MailboxAddress ("Alice", "alice@wonderland.com"));
+            message.Subject = "How you doin?";
 
-            <span class="highlight-keyword">var</span> builder = <span class="highlight-keyword">new</span> BodyBuilder ();
+            var builder = new BodyBuilder ();
 
-            <span class="highlight-comment">// Set the plain-text version of the message text</span>
-            builder.TextBody = <span class="highlight-literal">@"Hey Alice,
+            // Set the plain-text version of the message text
+            builder.TextBody = @"Hey Alice,
 
 What are you up to this weekend? Monica is throwing one of her parties on
 Saturday and I was hoping you could make it.
@@ -110,40 +310,94 @@ Saturday and I was hoping you could make it.
 Will you be my +1?
 
 -- Joey
-"</span>;
+";
 
-            <span class="highlight-comment">// In order to reference selfie.jpg from the html text, we'll need to add it</span>
-            <span class="highlight-comment">// to builder.LinkedResources and then use its Content-Id value in the img src.</span>
-            <span class="highlight-keyword">var</span> image = builder.LinkedResources.Add (<span class="highlight-literal">@"C:\Users\Joey\Documents\Selfies\selfie.jpg"</span>);
+            // In order to reference selfie.jpg from the html text, we'll need to add it
+            // to builder.LinkedResources and then use its Content-Id value in the img src.
+            var image = builder.LinkedResources.Add (@"C:\Users\Joey\Documents\Selfies\selfie.jpg");
             image.ContentId = MimeUtils.GenerateMessageId ();
 
-            <span class="highlight-comment">// Set the html version of the message text</span>
-            builder.HtmlBody = <span class="highlight-keyword">string</span>.Format (<span class="highlight-literal">@"&lt;p&gt;Hey Alice,&lt;br&gt;
+            // Set the html version of the message text
+            builder.HtmlBody = string.Format (@"&lt;p&gt;Hey Alice,&lt;br&gt;
 &lt;p&gt;What are you up to this weekend? Monica is throwing one of her parties on
 Saturday and I was hoping you could make it.&lt;br&gt;
 &lt;p&gt;Will you be my +1?&lt;br&gt;
 &lt;p&gt;-- Joey&lt;br&gt;
-&lt;center&gt;&lt;img src="</span><span class="highlight-literal">"cid:{0}"</span><span class="highlight-literal">"&gt;&lt;/center&gt;"</span>, image.ContentId);
+&lt;center&gt;&lt;img src=""cid:{0}""&gt;&lt;/center&gt;", image.ContentId);
 
-            <span class="highlight-comment">// We may also want to attach a calendar event for Monica's party...</span>
-            builder.Attachments.Add (<span class="highlight-literal">@"C:\Users\Joey\Documents\party.ics"</span>);
+            // We may also want to attach a calendar event for Monica's party...
+            builder.Attachments.Add (@"C:\Users\Joey\Documents\party.ics");
 
-            <span class="highlight-comment">// Now we just need to set the message body and we're done</span>
-            message.Body = builder.ToMessageBody ();</pre></div></div></div></div><div class="collapsibleAreaRegion" id="SystemNetMail"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('IDFAB')" onkeypress="SectionExpandCollapse_CheckKey('IDFAB', event)" tabindex="0"><img id="IDFABToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Importing from System.Net.Mail</span></div><div id="IDFABSection" class="collapsibleSection"><p>
+            // Now we just need to set the message body and we're done
+            message.Body = builder.ToMessageBody ();</code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            <h2 id="SystemNetMail" class="quickLinkHeader">Importing from System.Net.Mail</h2>
+            <div id="IDFABSection">
+              <p>
           To make things even simpler still, MimeKit allows you to explicitly cast
           a <a href="https://learn.microsoft.com/dotnet/api/system.net.mail.mailmessage" target="_blank" rel="noopener noreferrer">MailMessage</a>
           to a <a href="T_MimeKit_MimeMessage.htm">MimeMessage</a>.
-        </p></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('seeAlso')" onkeypress="SectionExpandCollapse_CheckKey('seeAlso', event)" tabindex="0"><img id="seeAlsoToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="seeAlsoSection" class="collapsibleSection"><h4>Other Resources</h4><div><a href="Parsing-Messages.htm">Parsing messages</a></div></div></div></div><div id="PageFooter" class="pageFooter"><!-- Global site tag (gtag.js) - Google Analytics -->
-<script src="https://www.googletagmanager.com/gtag/js?id=UA-63841238-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-63841238-1');
-</script><p><a href="https://github.com/jstedfast" target="_blank" rel="noopener noreferrer">Copyright © 2013-2026 Jeffrey Stedfast</a></p><div class="feedbackLink">Send comments on this topic to
+        </p>
+            </div>
+            <h2 class="quickLinkHeader">See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Other Resources</h4>
+              <div>
+                <a href="Parsing-Messages.htm">Parsing messages</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Creating a Simple Message</a>
+                </li>
+                <li>
+                  <a class="quickLink">Creating a Message with Attachments</a>
+                </li>
+                <li>
+                  <a class="quickLink">Using a BodyBuilder</a>
+                </li>
+                <li>
+                  <a class="quickLink">Importing from System.Net.Mail</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer id="PageFooter" class="footer border-top py-3">
+      <div class="columns">
+        <div id="FooterContent" class="column">
+          <p class="site-footer-links">
+            <a href="https://mimekit.net/">Home</a> <a href="https://github.com/jstedfast/MimeKit">MimeKit on GitHub</a> <a href="https://github.com/jstedfast/MailKit">MailKit on GitHub</a> <a href="https://github.com/sponsors/jstedfast">    Sponsor</a></p>
+          <p>
+            <a href="https://github.com/jstedfast" target="_blank" rel="noopener noreferrer">Copyright © 2013-2026 Jeffrey Stedfast</a>
+          </p>
+          <div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:jestedfa%40microsoft.com?Subject=MailKit%20Documentation">Jeffrey Stedfast</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
         HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
-        </script></div></body></html>
+        </script></div>
+      </div>
+    </footer>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadToc();
+InitializeQuickLinks();
+hljs.highlightAll();
+});</script>
+  </body>
+</html>

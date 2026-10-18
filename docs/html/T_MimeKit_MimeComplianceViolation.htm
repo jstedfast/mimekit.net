@@ -1,0 +1,912 @@
+﻿<!DOCTYPE html []>
+<html lang="en-US" data-theme="light">
+  <head><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B7CEM3SL1V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B7CEM3SL1V');
+</script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/fontawesome.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/solid.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/regular.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/brands.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/presentationStyle.css?v=50DD4085" />
+    <script src="../scripts/jquery-3.7.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js?v=50DD4085"></script>
+    <script src="../scripts/highlight.min.js?v=50DD4085"></script>
+    <script src="../scripts/themeSwitcher.js?v=50DD4085"></script>
+    <script src="../scripts/presentationStyle.js?v=50DD4085"></script>
+    <title>MimeComplianceViolation Enumeration</title>
+    <meta name="Title" content="MimeComplianceViolation" />
+    <meta name="Help.Id" content="T:MimeKit.MimeComplianceViolation" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MimeKit" />
+    <meta name="guid" content="T_MimeKit_MimeComplianceViolation" />
+    <meta name="Description" content="An enumeration of potential MIME compliance violations." />
+    <meta name="tocParentId" content="897" />
+  </head>
+  <body>
+    <header class="pageHeader" id="Header">
+      <div class="level mb-0 py-2 px-4">
+        <div id="TitleContainer" class="level-left">
+          <div id="DocumentationTitle" class="level-item">MailKit Documentation</div>
+        </div>
+        <div id="LangFilterSearchContainer" class="level-right">
+          <div id="ProjectLink" class="level-item" title="Project website" aria-label="Project website">
+            <a href="https://github.com/jstedfast/MailKit" rel="noopener noreferrer" target="_blank">
+              <span class="icon">
+                <i class="fa-brands fa-github"></i>
+              </span>
+            </a>
+          </div>
+          <div id="ThemeSwitcher" class="level-item" title="Toggle theme" aria-label="Toggle theme">
+            <span class="icon">
+              <i class="fa fa-regular fa-moon theme-icon-dark"></i>
+              <i class="fa fa-sun theme-icon-light"></i>
+            </span>
+          </div>
+          <div class="level-item">
+            <div class="dropdown is-hoverable">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span id="CurrentLanguage"></span>
+                  <span class="icon is-small">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" role="menu">
+                <div id="LanguageSelections" class="dropdown-content">
+                  <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="level-item">
+            <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+              <div class="field">
+                <div class="control has-icons-left">
+                  <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-search"></i>
+                  </span>
+                  <button id="SearchButton" type="submit" class="is-hidden"></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article>
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile toc-resizable">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu">
+                <li>Loading...</li>
+              </ul>
+            </nav>
+          </div>
+          <div id="Resizer" class="toc-resizer"></div>
+          <div id="TopicContent" class="column content is-7 toc-resizable-content">
+            <h1>Mime<wbr />Compliance<wbr />Violation Enumeration</h1>
+            <div class="summary">
+            An enumeration of potential MIME compliance violations.
+            </div>
+            <h2 class="quickLinkHeader">Definition</h2>
+            <div id="IDBSection">
+              <strong>Namespace:</strong> <a href="N_MimeKit.htm">MimeKit</a><br /><strong>Assembly:</strong> MimeKit.Core (in MimeKit.Core.dll) Version: 5.0.0<div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">enum</span> <span class="identifier">MimeComplianceViolation</span></code></pre></div></div></div>
+            <h2 class="quickLinkHeader">Remarks</h2>
+            <div id="IDBCSection">
+              <p>An enumeration of the ways in which a message may deviate from the Internet Message
+            Format and MIME specifications, as reported to an <a href="T_MimeKit_IMimeComplianceLogger.htm">IMimeComplianceLogger</a> by
+            <a href="T_MimeKit_MimeReader.htm">MimeReader</a>.</p>
+              <article class="message is-info">
+                <div class="message-header">
+                  <p>
+                    <span class="icon">
+                      <i class="fa fa-info-circle"></i>
+                    </span>  Note</p>
+                </div>
+                <div class="message-body">The <span class="code">UUEncode</span> and <span class="code">UUEncoded</span> spellings are deliberately
+            distinct: <span class="code">UUEncode</span> names a construct belonging to the uuencode format itself (the
+            pretext, the file mode within the begin marker, the end marker) while <span class="code">UUEncoded</span>
+            names the encoded data.</div>
+              </article>
+            </div>
+            <h2 class="quickLinkHeader">Members</h2>
+            <div id="IDADASection">
+              <table id="enumMemberList" class="table is-hoverable">
+                <tr>
+                  <td>None</td>
+                  <td>0</td>
+                  <td>
+            No violation.
+            </td>
+                </tr>
+                <tr>
+                  <td>BareCarriageReturnInHeader</td>
+                  <td>1</td>
+                  <td>
+            A bare carriage return character was found in a MIME part or message header.
+            </td>
+                </tr>
+                <tr>
+                  <td>BareLinefeedInHeader</td>
+                  <td>2</td>
+                  <td>
+            A bare linefeed character was found in a MIME part or message header.
+            </td>
+                </tr>
+                <tr>
+                  <td>BareLinefeedInBody</td>
+                  <td>3</td>
+                  <td>
+            A bare linefeed character was found in the body of the message.
+            </td>
+                </tr>
+                <tr>
+                  <td>OversizedLine</td>
+                  <td>4</td>
+                  <td>
+            A line was found that exceeded the maximum line length permitted by the Internet Message Format.
+            </td>
+                </tr>
+                <tr>
+                  <td>Unexpected8BitBytesInHeader</td>
+                  <td>5</td>
+                  <td>
+            A MIME part or message header contained 8-bit bytes where only 7-bit bytes were expected.
+            </td>
+                </tr>
+                <tr>
+                  <td>Unexpected8BitBytesInBody</td>
+                  <td>6</td>
+                  <td>
+            A MIME part's body contained 8-bit content where only 7-bit content was expected.
+            </td>
+                </tr>
+                <tr>
+                  <td>UnexpectedNullBytesInHeader</td>
+                  <td>7</td>
+                  <td>
+            A MIME part or message header contained illegal null (<span class="code">0x00</span>) bytes.
+            </td>
+                </tr>
+                <tr>
+                  <td>UnexpectedNullBytesInBody</td>
+                  <td>8</td>
+                  <td>
+            A MIME part's body contained null (<span class="code">0x00</span>) bytes without specifying a binary transfer encoding.
+            </td>
+                </tr>
+                <tr>
+                  <td>InvalidHeader</td>
+                  <td>9</td>
+                  <td>
+            A MIME part or message header contained control (or whitespace) characters in the field name.
+            </td>
+                </tr>
+                <tr>
+                  <td>IncompleteHeader</td>
+                  <td>10</td>
+                  <td>
+            A MIME part or message header ended prematurely at the end of the stream.
+            </td>
+                </tr>
+                <tr>
+                  <td>BlankHeaderContinuationLine</td>
+                  <td>11</td>
+                  <td>
+            A folded MIME part or message header contained a continuation line made up entirely of whitespace.
+            </td>
+                </tr>
+                <tr>
+                  <td>RepeatedContentType</td>
+                  <td>12</td>
+                  <td>
+            A MIME part contained multiple Content-Type headers.
+            </td>
+                </tr>
+                <tr>
+                  <td>RepeatedContentDisposition</td>
+                  <td>13</td>
+                  <td>
+            A MIME part contained multiple Content-Disposition headers.
+            </td>
+                </tr>
+                <tr>
+                  <td>RepeatedContentId</td>
+                  <td>14</td>
+                  <td>
+            A MIME part contained multiple Content-Id headers.
+            </td>
+                </tr>
+                <tr>
+                  <td>RepeatedContentTransferEncoding</td>
+                  <td>15</td>
+                  <td>
+            A MIME part contained multiple Content-Transfer-Encoding headers.
+            </td>
+                </tr>
+                <tr>
+                  <td>RepeatedDate</td>
+                  <td>16</td>
+                  <td>
+            The message contained more than one Date header field.
+            </td>
+                </tr>
+                <tr>
+                  <td>RepeatedFrom</td>
+                  <td>17</td>
+                  <td>
+            The message contained more than one From header field.
+            </td>
+                </tr>
+                <tr>
+                  <td>RepeatedSender</td>
+                  <td>18</td>
+                  <td>
+            The message contained more than one Sender header field.
+            </td>
+                </tr>
+                <tr>
+                  <td>RepeatedReplyTo</td>
+                  <td>19</td>
+                  <td>
+            The message contained more than one Reply-To header field.
+            </td>
+                </tr>
+                <tr>
+                  <td>RepeatedTo</td>
+                  <td>20</td>
+                  <td>
+            The message contained more than one To header field.
+            </td>
+                </tr>
+                <tr>
+                  <td>RepeatedCc</td>
+                  <td>21</td>
+                  <td>
+            The message contained more than one Cc header field.
+            </td>
+                </tr>
+                <tr>
+                  <td>RepeatedBcc</td>
+                  <td>22</td>
+                  <td>
+            The message contained more than one Bcc header field.
+            </td>
+                </tr>
+                <tr>
+                  <td>RepeatedMessageId</td>
+                  <td>23</td>
+                  <td>
+            The message contained more than one Message-Id header field.
+            </td>
+                </tr>
+                <tr>
+                  <td>RepeatedInReplyTo</td>
+                  <td>24</td>
+                  <td>
+            The message contained more than one In-Reply-To header field.
+            </td>
+                </tr>
+                <tr>
+                  <td>RepeatedReferences</td>
+                  <td>25</td>
+                  <td>
+            The message contained more than one References header field.
+            </td>
+                </tr>
+                <tr>
+                  <td>RepeatedSubject</td>
+                  <td>26</td>
+                  <td>
+            The message contained more than one Subject header field.
+            </td>
+                </tr>
+                <tr>
+                  <td>RepeatedReturnPath</td>
+                  <td>27</td>
+                  <td>
+            The message contained more than one Return-Path header field.
+            </td>
+                </tr>
+                <tr>
+                  <td>RepeatedResentDate</td>
+                  <td>28</td>
+                  <td>
+            A block of resent header fields contained more than one Resent-Date header field.
+            </td>
+                </tr>
+                <tr>
+                  <td>RepeatedResentFrom</td>
+                  <td>29</td>
+                  <td>
+            A block of resent header fields contained more than one Resent-From header field.
+            </td>
+                </tr>
+                <tr>
+                  <td>RepeatedResentSender</td>
+                  <td>30</td>
+                  <td>
+            A block of resent header fields contained more than one Resent-Sender header field.
+            </td>
+                </tr>
+                <tr>
+                  <td>RepeatedResentTo</td>
+                  <td>31</td>
+                  <td>
+            A block of resent header fields contained more than one Resent-To header field.
+            </td>
+                </tr>
+                <tr>
+                  <td>RepeatedResentCc</td>
+                  <td>32</td>
+                  <td>
+            A block of resent header fields contained more than one Resent-Cc header field.
+            </td>
+                </tr>
+                <tr>
+                  <td>RepeatedResentBcc</td>
+                  <td>33</td>
+                  <td>
+            A block of resent header fields contained more than one Resent-Bcc header field.
+            </td>
+                </tr>
+                <tr>
+                  <td>RepeatedResentMessageId</td>
+                  <td>34</td>
+                  <td>
+            A block of resent header fields contained more than one Resent-Message-Id header field.
+            </td>
+                </tr>
+                <tr>
+                  <td>MissingDate</td>
+                  <td>35</td>
+                  <td>
+            The message did not contain a Date header field.
+            </td>
+                </tr>
+                <tr>
+                  <td>MissingFrom</td>
+                  <td>36</td>
+                  <td>
+            The message did not contain a From header field.
+            </td>
+                </tr>
+                <tr>
+                  <td>MissingMessageId</td>
+                  <td>37</td>
+                  <td>
+            The message did not contain a Message-Id header field.
+            </td>
+                </tr>
+                <tr>
+                  <td>MissingMimeVersion</td>
+                  <td>38</td>
+                  <td>
+            The message contained MIME header fields but no MIME-Version header field.
+            </td>
+                </tr>
+                <tr>
+                  <td>InvalidContentType</td>
+                  <td>39</td>
+                  <td>
+            A Content-Type header value was not valid.
+            </td>
+                </tr>
+                <tr>
+                  <td>InvalidContentTransferEncoding</td>
+                  <td>40</td>
+                  <td>
+            A Content-Transfer-Encoding header value was not valid.
+            </td>
+                </tr>
+                <tr>
+                  <td>IllegalMessageRfc822ContentTransferEncoding</td>
+                  <td>41</td>
+                  <td>
+            A Content-Transfer-Encoding header for a message/rfc822 part contained an illegal value.
+            </td>
+                </tr>
+                <tr>
+                  <td>IllegalMultipartContentTransferEncoding</td>
+                  <td>42</td>
+                  <td>
+            A Content-Transfer-Encoding header for a multipart contained an illegal value.
+            </td>
+                </tr>
+                <tr>
+                  <td>MissingMultipartBoundaryParameter</td>
+                  <td>43</td>
+                  <td>
+            A boundary parameter was missing from a multipart Content-Type header.
+            </td>
+                </tr>
+                <tr>
+                  <td>InvalidMultipartBoundaryParameter</td>
+                  <td>44</td>
+                  <td>
+            A boundary parameter in a multipart Content-Type header was not valid.
+            </td>
+                </tr>
+                <tr>
+                  <td>InvalidParameter</td>
+                  <td>45</td>
+                  <td>
+            A MIME parameter declaration was malformed.
+            </td>
+                </tr>
+                <tr>
+                  <td>InvalidRfc2231Parameter</td>
+                  <td>46</td>
+                  <td>
+            An RFC 2231 encoded parameter value was malformed.
+            </td>
+                </tr>
+                <tr>
+                  <td>EncodedWordInParameter</td>
+                  <td>47</td>
+                  <td>
+            A MIME parameter value contained RFC 2047 encoded-word syntax.
+            </td>
+                </tr>
+                <tr>
+                  <td>RepeatedBoundaryParameter</td>
+                  <td>48</td>
+                  <td>
+            A Content-Type header contained repeated boundary parameter declarations.
+            </td>
+                </tr>
+                <tr>
+                  <td>RepeatedFilenameParameter</td>
+                  <td>49</td>
+                  <td>
+            A Content-Type name or Content-Disposition filename parameter was repeated.
+            </td>
+                </tr>
+                <tr>
+                  <td>RepeatedParameter</td>
+                  <td>50</td>
+                  <td>
+            A MIME parameter other than a boundary or filename parameter was repeated.
+            </td>
+                </tr>
+                <tr>
+                  <td>MissingParameterSegment</td>
+                  <td>51</td>
+                  <td>
+            An RFC 2231 parameter continuation was missing one or more segments.
+            </td>
+                </tr>
+                <tr>
+                  <td>InvalidEncodedWord</td>
+                  <td>52</td>
+                  <td>
+            A header contained malformed RFC 2047 encoded-word syntax.
+            </td>
+                </tr>
+                <tr>
+                  <td>InvalidEncodedWordPlacement</td>
+                  <td>53</td>
+                  <td>
+            An address header contained an encoded-word in a prohibited location.
+            </td>
+                </tr>
+                <tr>
+                  <td>ExcessiveAngleBracketsInAddress</td>
+                  <td>54</td>
+                  <td>
+            An address contained more angle brackets than the one pair that delimits an angle-addr.
+            </td>
+                </tr>
+                <tr>
+                  <td>UnbalancedAngleBracketsInAddress</td>
+                  <td>55</td>
+                  <td>
+            An address had an opening angle bracket without a closing one, or a closing bracket without an opening one.
+            </td>
+                </tr>
+                <tr>
+                  <td>UnbalancedQuotesInAddress</td>
+                  <td>56</td>
+                  <td>
+            An address contained a quoted-string that was never closed.
+            </td>
+                </tr>
+                <tr>
+                  <td>UnbalancedParenthesesInAddress</td>
+                  <td>57</td>
+                  <td>
+            An address contained an unbalanced parenthesis in a comment.
+            </td>
+                </tr>
+                <tr>
+                  <td>UnquotedDisplayName</td>
+                  <td>58</td>
+                  <td>
+            The display-name of an address contained a special character that should have been quoted.
+            </td>
+                </tr>
+                <tr>
+                  <td>AddressInDisplayName</td>
+                  <td>59</td>
+                  <td>
+            The display-name of a mailbox was itself shaped like an address.
+            </td>
+                </tr>
+                <tr>
+                  <td>UnquotedAddressInDisplayName</td>
+                  <td>60</td>
+                  <td>
+            The unquoted display-name of a mailbox was itself shaped like an address.
+            </td>
+                </tr>
+                <tr>
+                  <td>AddressInGroupDisplayName</td>
+                  <td>61</td>
+                  <td>
+            The display-name of an address group was itself shaped like an address.
+            </td>
+                </tr>
+                <tr>
+                  <td>UnquotedAddressInGroupDisplayName</td>
+                  <td>62</td>
+                  <td>
+            The unquoted display-name of an address group was itself shaped like an address.
+            </td>
+                </tr>
+                <tr>
+                  <td>InvalidLocalPart</td>
+                  <td>63</td>
+                  <td>
+            The local-part of an address was not a valid dot-atom or quoted-string.
+            </td>
+                </tr>
+                <tr>
+                  <td>MissingAddressSeparator</td>
+                  <td>64</td>
+                  <td>
+            Two addresses in an address list were not separated by a comma.
+            </td>
+                </tr>
+                <tr>
+                  <td>AmbiguousMailboxBoundary</td>
+                  <td>65</td>
+                  <td>
+            An address list contained two addresses whose boundary was ambiguous.
+            </td>
+                </tr>
+                <tr>
+                  <td>ExtraneousCommaInAddressList</td>
+                  <td>66</td>
+                  <td>
+            An address list contained a comma that did not separate two addresses.
+            </td>
+                </tr>
+                <tr>
+                  <td>ObsoleteRouteAddress</td>
+                  <td>67</td>
+                  <td>
+            An address used the obsolete source route syntax.
+            </td>
+                </tr>
+                <tr>
+                  <td>AddressWithoutDomain</td>
+                  <td>68</td>
+                  <td>
+            An address consisted of a local-part with no domain.
+            </td>
+                </tr>
+                <tr>
+                  <td>ObsoleteDomainSyntax</td>
+                  <td>69</td>
+                  <td>
+            The domain of an address used the obsolete syntax that allows comments and whitespace between its parts.
+            </td>
+                </tr>
+                <tr>
+                  <td>InvalidDomain</td>
+                  <td>70</td>
+                  <td>
+            The domain of an address was not a valid dot-atom.
+            </td>
+                </tr>
+                <tr>
+                  <td>TrailingDotInDomain</td>
+                  <td>71</td>
+                  <td>
+            The domain of an address ended with a dot.
+            </td>
+                </tr>
+                <tr>
+                  <td>WhitespaceInDomainLiteral</td>
+                  <td>72</td>
+                  <td>
+            A domain-literal contained whitespace.
+            </td>
+                </tr>
+                <tr>
+                  <td>InvalidCharacterInDomainLiteral</td>
+                  <td>73</td>
+                  <td>
+            A domain-literal contained a character that the domain-literal syntax does not permit.
+            </td>
+                </tr>
+                <tr>
+                  <td>Invalid8BitAddress</td>
+                  <td>74</td>
+                  <td>
+            An address contained 8-bit bytes that were not valid UTF-8.
+            </td>
+                </tr>
+                <tr>
+                  <td>MissingGroupTerminator</td>
+                  <td>75</td>
+                  <td>
+            An address group was not terminated with a semi-colon.
+            </td>
+                </tr>
+                <tr>
+                  <td>NonConformantAddress</td>
+                  <td>76</td>
+                  <td>
+            An address did not conform to the address syntax defined by rfc5322.
+            </td>
+                </tr>
+                <tr>
+                  <td>NullByteInAddress</td>
+                  <td>77</td>
+                  <td>
+            An address contained a null byte.
+            </td>
+                </tr>
+                <tr>
+                  <td>NullByteInDisplayName</td>
+                  <td>78</td>
+                  <td>
+            The display-name of an address or group contained a null byte.
+            </td>
+                </tr>
+                <tr>
+                  <td>LineBreakInAddress</td>
+                  <td>79</td>
+                  <td>
+            A line break appeared inside a local-part or domain.
+            </td>
+                </tr>
+                <tr>
+                  <td>ControlCharacterInAddress</td>
+                  <td>80</td>
+                  <td>
+            An address contained a control character.
+            </td>
+                </tr>
+                <tr>
+                  <td>Iso2022SequenceInLocalPart</td>
+                  <td>81</td>
+                  <td>
+            The local-part of an address contained an ISO-2022 shift or escape sequence.
+            </td>
+                </tr>
+                <tr>
+                  <td>EmptyGroupName</td>
+                  <td>82</td>
+                  <td>
+            An address group had an empty name.
+            </td>
+                </tr>
+                <tr>
+                  <td>NestedAddressGroup</td>
+                  <td>83</td>
+                  <td>
+            An address group was nested inside another address group.
+            </td>
+                </tr>
+                <tr>
+                  <td>MissingBodySeparator</td>
+                  <td>84</td>
+                  <td>
+            An empty line separating the headers from the body was missing.
+            </td>
+                </tr>
+                <tr>
+                  <td>MissingMultipartBoundary</td>
+                  <td>85</td>
+                  <td>
+            A multipart boundary was missing.
+            </td>
+                </tr>
+                <tr>
+                  <td>MimeDepthLimitExceeded</td>
+                  <td>86</td>
+                  <td>
+            The MIME structure was nested more deeply than the parser allows.
+            </td>
+                </tr>
+                <tr>
+                  <td>IncompleteBase64Quantum</td>
+                  <td>87</td>
+                  <td>
+            The base64 encoded content of a MIME part ended with an incomplete quantum.
+            </td>
+                </tr>
+                <tr>
+                  <td>InvalidBase64Character</td>
+                  <td>88</td>
+                  <td>
+            The base64 encoded content of a MIME part contained invalid characters.
+            </td>
+                </tr>
+                <tr>
+                  <td>InvalidBase64Padding</td>
+                  <td>89</td>
+                  <td>
+            The base64 encoded content of a MIME part contained invalid padding.
+            </td>
+                </tr>
+                <tr>
+                  <td>Base64CharactersAfterPadding</td>
+                  <td>90</td>
+                  <td>
+            The base64 encoded content of a MIME part contained characters after the padding.
+            </td>
+                </tr>
+                <tr>
+                  <td>ObsoleteBase64Comment</td>
+                  <td>91</td>
+                  <td>
+            The base64 encoded content of a MIME part contained an obsolete comment.
+            </td>
+                </tr>
+                <tr>
+                  <td>InvalidQuotedPrintableEncoding</td>
+                  <td>92</td>
+                  <td>
+            The quoted-printable encoded content of a MIME part contained an invalid hex sequence after an '=' character.
+            </td>
+                </tr>
+                <tr>
+                  <td>InvalidQuotedPrintableSoftBreak</td>
+                  <td>93</td>
+                  <td>
+            The quoted-printable encoded content of a MIME part contained an invalid soft-break sequence.
+            </td>
+                </tr>
+                <tr>
+                  <td>InvalidUUEncodePretext</td>
+                  <td>94</td>
+                  <td>
+            The uuencoded content of a MIME part contained non-whitespace content before the begin marker.
+            </td>
+                </tr>
+                <tr>
+                  <td>InvalidUUEncodeFileMode</td>
+                  <td>95</td>
+                  <td>
+            The uuencoded content of a MIME part had an invalid file mode in the begin marker.
+            </td>
+                </tr>
+                <tr>
+                  <td>InvalidUUEncodedContent</td>
+                  <td>96</td>
+                  <td>
+            The uuencoded content of a MIME part contained invalid characters or was otherwise malformed.
+            </td>
+                </tr>
+                <tr>
+                  <td>InvalidUUEncodedLineLength</td>
+                  <td>97</td>
+                  <td>
+            The uuencoded content of a MIME part had an invalid encoded line length.
+            </td>
+                </tr>
+                <tr>
+                  <td>IncompleteUUEncodedLine</td>
+                  <td>98</td>
+                  <td>
+            The uuencoded content of a MIME part contained an incomplete encoded line.
+            </td>
+                </tr>
+                <tr>
+                  <td>InvalidUUEncodedLineExtraData</td>
+                  <td>99</td>
+                  <td>
+            The uuencoded content of a MIME part had extra data beyond the end of a uuencoded line.
+            </td>
+                </tr>
+                <tr>
+                  <td>InvalidUUEncodeEndMarker</td>
+                  <td>100</td>
+                  <td>
+            The uuencoded content of a MIME part contained non-whitespace content after the end marker.
+            </td>
+                </tr>
+                <tr>
+                  <td>IncompleteUUEncodedContent</td>
+                  <td>101</td>
+                  <td>
+            The uuencoded content of a MIME part did not properly end.
+            </td>
+                </tr>
+                <tr>
+                  <td>TooManyComplianceIssues</td>
+                  <td>2,147,483,647</td>
+                  <td>
+            Too many compliance issues were detected and the remainder were suppressed.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Reference</h4>
+              <div>
+                <a href="N_MimeKit.htm">MimeKit Namespace</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Definition</a>
+                </li>
+                <li>
+                  <a class="quickLink">Remarks</a>
+                </li>
+                <li>
+                  <a class="quickLink">Members</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer id="PageFooter" class="footer border-top py-3">
+      <div class="columns">
+        <div id="FooterContent" class="column">
+          <p class="site-footer-links">
+            <a href="https://mimekit.net/">Home</a> <a href="https://github.com/jstedfast/MimeKit">MimeKit on GitHub</a> <a href="https://github.com/jstedfast/MailKit">MailKit on GitHub</a> <a href="https://github.com/sponsors/jstedfast">    Sponsor</a></p>
+          <p>
+            <a href="https://github.com/jstedfast" target="_blank" rel="noopener noreferrer">Copyright © 2013-2026 Jeffrey Stedfast</a>
+          </p>
+          <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:jestedfa%40microsoft.com?Subject=MailKit%20Documentation">Jeffrey Stedfast</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script></div>
+      </div>
+    </footer>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadToc();
+InitializeQuickLinks();
+hljs.highlightAll();
+});</script>
+  </body>
+</html>

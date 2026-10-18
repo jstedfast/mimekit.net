@@ -1,191 +1,1024 @@
-﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="Microsoft.Help.SelfBranded" content="true" /><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Locale" content="en-us" /><meta name="Microsoft.Help.TopicLocale" content="en-us" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"></script><title>MimeKit.Cryptography Namespace</title><meta name="Title" content="MimeKit.Cryptography" /><meta name="Microsoft.Help.Id" content="N:MimeKit.Cryptography" /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="System.Keywords" content="MimeKit.Cryptography namespace" /><meta name="Microsoft.Help.F1" content="MimeKit.Cryptography" /><meta name="container" content="MimeKit.Cryptography" /><meta name="file" content="N_MimeKit_Cryptography" /><meta name="guid" content="N_MimeKit_Cryptography" /><meta name="Microsoft.Help.Category" content="CSharp" /><meta name="Description" content="The MimeKit.Cryptography namespace provides classes that are necessary for dealing with PGP, S/MIME, and other cryptographic services." /><link type="text/css" rel="stylesheet" href="../styles/highlight.css" /><script type="text/javascript" src="../scripts/highlight.js"> </script><link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" /><script type="text/javascript" src="../scripts/jquery-3.7.1.min.js"></script><script type="text/javascript" src="../scripts/branding-Website.js"></script><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="SetDefaultLanguage('cs');"><input type="hidden" id="userDataCache" class="userDataStyle" /><div id="PageHeader" class="pageHeader">MailKit Documentation<form id="SearchForm" method="get" action="#" onsubmit="TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/Introduction.htm" title="MailKit Documentation" tocid="roottoc">MailKit Documentation</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/R_Project_Documentation.htm" title="API Reference" tocid="R_Project_Documentation">API Reference</a></div><div class="toclevel1 current" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/N_MimeKit_Cryptography.htm" title="MimeKit.Cryptography" tocid="N_MimeKit_Cryptography">MimeKit.Cryptography</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_ApplicationPgpEncrypted.htm" title="ApplicationPgpEncrypted Class" tocid="T_MimeKit_Cryptography_ApplicationPgpEncrypted">ApplicationPgpEncrypted Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_ApplicationPgpSignature.htm" title="ApplicationPgpSignature Class" tocid="T_MimeKit_Cryptography_ApplicationPgpSignature">ApplicationPgpSignature Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_ApplicationPkcs7Mime.htm" title="ApplicationPkcs7Mime Class" tocid="T_MimeKit_Cryptography_ApplicationPkcs7Mime">ApplicationPkcs7Mime Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_ApplicationPkcs7Signature.htm" title="ApplicationPkcs7Signature Class" tocid="T_MimeKit_Cryptography_ApplicationPkcs7Signature">ApplicationPkcs7Signature Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_ArcHeaderValidationResult.htm" title="ArcHeaderValidationResult Class" tocid="T_MimeKit_Cryptography_ArcHeaderValidationResult">ArcHeaderValidationResult Class</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/T_MimeKit_Cryptography_ArcSignatureValidationResult.htm" title="ArcSignatureValidationResult Enumeration" tocid="T_MimeKit_Cryptography_ArcSignatureValidationResult">ArcSignatureValidationResult Enumeration</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_ArcSigner.htm" title="ArcSigner Class" tocid="T_MimeKit_Cryptography_ArcSigner">ArcSigner Class</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/T_MimeKit_Cryptography_ArcValidationErrors.htm" title="ArcValidationErrors Enumeration" tocid="T_MimeKit_Cryptography_ArcValidationErrors">ArcValidationErrors Enumeration</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_ArcValidationResult.htm" title="ArcValidationResult Class" tocid="T_MimeKit_Cryptography_ArcValidationResult">ArcValidationResult Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_ArcVerifier.htm" title="ArcVerifier Class" tocid="T_MimeKit_Cryptography_ArcVerifier">ArcVerifier Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_AsymmetricAlgorithmExtensions.htm" title="AsymmetricAlgorithmExtensions Class" tocid="T_MimeKit_Cryptography_AsymmetricAlgorithmExtensions">AsymmetricAlgorithmExtensions Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_AuthenticationMethodProperty.htm" title="AuthenticationMethodProperty Class" tocid="T_MimeKit_Cryptography_AuthenticationMethodProperty">AuthenticationMethodProperty Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_AuthenticationMethodResult.htm" title="AuthenticationMethodResult Class" tocid="T_MimeKit_Cryptography_AuthenticationMethodResult">AuthenticationMethodResult Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_AuthenticationResults.htm" title="AuthenticationResults Class" tocid="T_MimeKit_Cryptography_AuthenticationResults">AuthenticationResults Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_BouncyCastleCertificateExtensions.htm" title="BouncyCastleCertificateExtensions Class" tocid="T_MimeKit_Cryptography_BouncyCastleCertificateExtensions">BouncyCastleCertificateExtensions Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_BouncyCastleSecureMimeContext.htm" title="BouncyCastleSecureMimeContext Class" tocid="T_MimeKit_Cryptography_BouncyCastleSecureMimeContext">BouncyCastleSecureMimeContext Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_CertificateNotFoundException.htm" title="CertificateNotFoundException Class" tocid="T_MimeKit_Cryptography_CertificateNotFoundException">CertificateNotFoundException Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_CmsEnvelopeException.htm" title="CmsEnvelopeException Class" tocid="T_MimeKit_Cryptography_CmsEnvelopeException">CmsEnvelopeException Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_CmsRecipient.htm" title="CmsRecipient Class" tocid="T_MimeKit_Cryptography_CmsRecipient">CmsRecipient Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_CmsRecipientCollection.htm" title="CmsRecipientCollection Class" tocid="T_MimeKit_Cryptography_CmsRecipientCollection">CmsRecipientCollection Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_CmsRecipientException.htm" title="CmsRecipientException Class" tocid="T_MimeKit_Cryptography_CmsRecipientException">CmsRecipientException Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_CmsSigner.htm" title="CmsSigner Class" tocid="T_MimeKit_Cryptography_CmsSigner">CmsSigner Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_CryptographyContext.htm" title="CryptographyContext Class" tocid="T_MimeKit_Cryptography_CryptographyContext">CryptographyContext Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_DefaultSecureMimeContext.htm" title="DefaultSecureMimeContext Class" tocid="T_MimeKit_Cryptography_DefaultSecureMimeContext">DefaultSecureMimeContext Class</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/T_MimeKit_Cryptography_DigestAlgorithm.htm" title="DigestAlgorithm Enumeration" tocid="T_MimeKit_Cryptography_DigestAlgorithm">DigestAlgorithm Enumeration</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_DigitalSignatureCollection.htm" title="DigitalSignatureCollection Class" tocid="T_MimeKit_Cryptography_DigitalSignatureCollection">DigitalSignatureCollection Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_DigitalSignatureVerifyException.htm" title="DigitalSignatureVerifyException Class" tocid="T_MimeKit_Cryptography_DigitalSignatureVerifyException">DigitalSignatureVerifyException Class</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/T_MimeKit_Cryptography_DkimCanonicalizationAlgorithm.htm" title="DkimCanonicalizationAlgorithm Enumeration" tocid="T_MimeKit_Cryptography_DkimCanonicalizationAlgorithm">DkimCanonicalizationAlgorithm Enumeration</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_DkimPublicKeyLocatorBase.htm" title="DkimPublicKeyLocatorBase Class" tocid="T_MimeKit_Cryptography_DkimPublicKeyLocatorBase">DkimPublicKeyLocatorBase Class</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/T_MimeKit_Cryptography_DkimSignatureAlgorithm.htm" title="DkimSignatureAlgorithm Enumeration" tocid="T_MimeKit_Cryptography_DkimSignatureAlgorithm">DkimSignatureAlgorithm Enumeration</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_DkimSigner.htm" title="DkimSigner Class" tocid="T_MimeKit_Cryptography_DkimSigner">DkimSigner Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_DkimSignerBase.htm" title="DkimSignerBase Class" tocid="T_MimeKit_Cryptography_DkimSignerBase">DkimSignerBase Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_DkimVerifier.htm" title="DkimVerifier Class" tocid="T_MimeKit_Cryptography_DkimVerifier">DkimVerifier Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_DkimVerifierBase.htm" title="DkimVerifierBase Class" tocid="T_MimeKit_Cryptography_DkimVerifierBase">DkimVerifierBase Class</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/T_MimeKit_Cryptography_EncryptionAlgorithm.htm" title="EncryptionAlgorithm Enumeration" tocid="T_MimeKit_Cryptography_EncryptionAlgorithm">EncryptionAlgorithm Enumeration</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_GnuPGContext.htm" title="GnuPGContext Class" tocid="T_MimeKit_Cryptography_GnuPGContext">GnuPGContext Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_IApplicationPgpEncrypted.htm" title="IApplicationPgpEncrypted Interface" tocid="T_MimeKit_Cryptography_IApplicationPgpEncrypted">IApplicationPgpEncrypted Interface</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_IApplicationPgpSignature.htm" title="IApplicationPgpSignature Interface" tocid="T_MimeKit_Cryptography_IApplicationPgpSignature">IApplicationPgpSignature Interface</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_IApplicationPkcs7Mime.htm" title="IApplicationPkcs7Mime Interface" tocid="T_MimeKit_Cryptography_IApplicationPkcs7Mime">IApplicationPkcs7Mime Interface</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_IApplicationPkcs7Signature.htm" title="IApplicationPkcs7Signature Interface" tocid="T_MimeKit_Cryptography_IApplicationPkcs7Signature">IApplicationPkcs7Signature Interface</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_ICryptographyContext.htm" title="ICryptographyContext Interface" tocid="T_MimeKit_Cryptography_ICryptographyContext">ICryptographyContext Interface</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_IDigitalCertificate.htm" title="IDigitalCertificate Interface" tocid="T_MimeKit_Cryptography_IDigitalCertificate">IDigitalCertificate Interface</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_IDigitalSignature.htm" title="IDigitalSignature Interface" tocid="T_MimeKit_Cryptography_IDigitalSignature">IDigitalSignature Interface</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_IDkimPublicKeyLocator.htm" title="IDkimPublicKeyLocator Interface" tocid="T_MimeKit_Cryptography_IDkimPublicKeyLocator">IDkimPublicKeyLocator Interface</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_IMultipartEncrypted.htm" title="IMultipartEncrypted Interface" tocid="T_MimeKit_Cryptography_IMultipartEncrypted">IMultipartEncrypted Interface</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_IMultipartSigned.htm" title="IMultipartSigned Interface" tocid="T_MimeKit_Cryptography_IMultipartSigned">IMultipartSigned Interface</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_ISecureMimeContext.htm" title="ISecureMimeContext Interface" tocid="T_MimeKit_Cryptography_ISecureMimeContext">ISecureMimeContext Interface</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_IX509CertificateDatabase.htm" title="IX509CertificateDatabase Interface" tocid="T_MimeKit_Cryptography_IX509CertificateDatabase">IX509CertificateDatabase Interface</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_MultipartEncrypted.htm" title="MultipartEncrypted Class" tocid="T_MimeKit_Cryptography_MultipartEncrypted">MultipartEncrypted Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_MultipartSigned.htm" title="MultipartSigned Class" tocid="T_MimeKit_Cryptography_MultipartSigned">MultipartSigned Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_OpenPgpContext.htm" title="OpenPgpContext Class" tocid="T_MimeKit_Cryptography_OpenPgpContext">OpenPgpContext Class</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/T_MimeKit_Cryptography_OpenPgpDataType.htm" title="OpenPgpDataType Enumeration" tocid="T_MimeKit_Cryptography_OpenPgpDataType">OpenPgpDataType Enumeration</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_OpenPgpDetectionFilter.htm" title="OpenPgpDetectionFilter Class" tocid="T_MimeKit_Cryptography_OpenPgpDetectionFilter">OpenPgpDetectionFilter Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_OpenPgpDigitalCertificate.htm" title="OpenPgpDigitalCertificate Class" tocid="T_MimeKit_Cryptography_OpenPgpDigitalCertificate">OpenPgpDigitalCertificate Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_OpenPgpDigitalSignature.htm" title="OpenPgpDigitalSignature Class" tocid="T_MimeKit_Cryptography_OpenPgpDigitalSignature">OpenPgpDigitalSignature Class</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/T_MimeKit_Cryptography_OpenPgpKeyCertification.htm" title="OpenPgpKeyCertification Enumeration" tocid="T_MimeKit_Cryptography_OpenPgpKeyCertification">OpenPgpKeyCertification Enumeration</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_PrivateKeyNotFoundException.htm" title="PrivateKeyNotFoundException Class" tocid="T_MimeKit_Cryptography_PrivateKeyNotFoundException">PrivateKeyNotFoundException Class</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/T_MimeKit_Cryptography_PublicKeyAlgorithm.htm" title="PublicKeyAlgorithm Enumeration" tocid="T_MimeKit_Cryptography_PublicKeyAlgorithm">PublicKeyAlgorithm Enumeration</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_PublicKeyNotFoundException.htm" title="PublicKeyNotFoundException Class" tocid="T_MimeKit_Cryptography_PublicKeyNotFoundException">PublicKeyNotFoundException Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_RsaEncryptionPadding.htm" title="RsaEncryptionPadding Class" tocid="T_MimeKit_Cryptography_RsaEncryptionPadding">RsaEncryptionPadding Class</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/T_MimeKit_Cryptography_RsaEncryptionPaddingScheme.htm" title="RsaEncryptionPaddingScheme Enumeration" tocid="T_MimeKit_Cryptography_RsaEncryptionPaddingScheme">RsaEncryptionPaddingScheme Enumeration</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_RsaSignaturePadding.htm" title="RsaSignaturePadding Class" tocid="T_MimeKit_Cryptography_RsaSignaturePadding">RsaSignaturePadding Class</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/T_MimeKit_Cryptography_RsaSignaturePaddingScheme.htm" title="RsaSignaturePaddingScheme Enumeration" tocid="T_MimeKit_Cryptography_RsaSignaturePaddingScheme">RsaSignaturePaddingScheme Enumeration</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_SecureMailboxAddress.htm" title="SecureMailboxAddress Class" tocid="T_MimeKit_Cryptography_SecureMailboxAddress">SecureMailboxAddress Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_SecureMimeContext.htm" title="SecureMimeContext Class" tocid="T_MimeKit_Cryptography_SecureMimeContext">SecureMimeContext Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_SecureMimeDigitalCertificate.htm" title="SecureMimeDigitalCertificate Class" tocid="T_MimeKit_Cryptography_SecureMimeDigitalCertificate">SecureMimeDigitalCertificate Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_SecureMimeDigitalSignature.htm" title="SecureMimeDigitalSignature Class" tocid="T_MimeKit_Cryptography_SecureMimeDigitalSignature">SecureMimeDigitalSignature Class</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/T_MimeKit_Cryptography_SecureMimeType.htm" title="SecureMimeType Enumeration" tocid="T_MimeKit_Cryptography_SecureMimeType">SecureMimeType Enumeration</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_SqlCertificateDatabase.htm" title="SqlCertificateDatabase Class" tocid="T_MimeKit_Cryptography_SqlCertificateDatabase">SqlCertificateDatabase Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_SqliteCertificateDatabase.htm" title="SqliteCertificateDatabase Class" tocid="T_MimeKit_Cryptography_SqliteCertificateDatabase">SqliteCertificateDatabase Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_SQLServerCertificateDatabase.htm" title="SQLServerCertificateDatabase Class" tocid="T_MimeKit_Cryptography_SQLServerCertificateDatabase">SQLServerCertificateDatabase Class</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/T_MimeKit_Cryptography_SubjectIdentifierType.htm" title="SubjectIdentifierType Enumeration" tocid="T_MimeKit_Cryptography_SubjectIdentifierType">SubjectIdentifierType Enumeration</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_TemporarySecureMimeContext.htm" title="TemporarySecureMimeContext Class" tocid="T_MimeKit_Cryptography_TemporarySecureMimeContext">TemporarySecureMimeContext Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_WindowsSecureMimeContext.htm" title="WindowsSecureMimeContext Class" tocid="T_MimeKit_Cryptography_WindowsSecureMimeContext">WindowsSecureMimeContext Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_WindowsSecureMimeDigitalCertificate.htm" title="WindowsSecureMimeDigitalCertificate Class" tocid="T_MimeKit_Cryptography_WindowsSecureMimeDigitalCertificate">WindowsSecureMimeDigitalCertificate Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_WindowsSecureMimeDigitalSignature.htm" title="WindowsSecureMimeDigitalSignature Class" tocid="T_MimeKit_Cryptography_WindowsSecureMimeDigitalSignature">WindowsSecureMimeDigitalSignature Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_X509Certificate2Extensions.htm" title="X509Certificate2Extensions Class" tocid="T_MimeKit_Cryptography_X509Certificate2Extensions">X509Certificate2Extensions Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_X509CertificateChain.htm" title="X509CertificateChain Class" tocid="T_MimeKit_Cryptography_X509CertificateChain">X509CertificateChain Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_X509CertificateDatabase.htm" title="X509CertificateDatabase Class" tocid="T_MimeKit_Cryptography_X509CertificateDatabase">X509CertificateDatabase Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_X509CertificateDatabase_CertificateColumnNames.htm" title="X509CertificateDatabase.CertificateColumnNames Class" tocid="T_MimeKit_Cryptography_X509CertificateDatabase_CertificateColumnNames">X509CertificateDatabase.CertificateColumnNames Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_X509CertificateDatabase_CrlColumnNames.htm" title="X509CertificateDatabase.CrlColumnNames Class" tocid="T_MimeKit_Cryptography_X509CertificateDatabase_CrlColumnNames">X509CertificateDatabase.CrlColumnNames Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_X509CertificateRecord.htm" title="X509CertificateRecord Class" tocid="T_MimeKit_Cryptography_X509CertificateRecord">X509CertificateRecord Class</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/T_MimeKit_Cryptography_X509CertificateRecordFields.htm" title="X509CertificateRecordFields Enumeration" tocid="T_MimeKit_Cryptography_X509CertificateRecordFields">X509CertificateRecordFields Enumeration</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_X509CertificateStore.htm" title="X509CertificateStore Class" tocid="T_MimeKit_Cryptography_X509CertificateStore">X509CertificateStore Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_Cryptography_X509CrlRecord.htm" title="X509CrlRecord Class" tocid="T_MimeKit_Cryptography_X509CrlRecord">X509CrlRecord Class</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/T_MimeKit_Cryptography_X509CrlRecordFields.htm" title="X509CrlRecordFields Enumeration" tocid="T_MimeKit_Cryptography_X509CrlRecordFields">X509CrlRecordFields Enumeration</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/T_MimeKit_Cryptography_X509KeyUsageBits.htm" title="X509KeyUsageBits Enumeration" tocid="T_MimeKit_Cryptography_X509KeyUsageBits">X509KeyUsageBits Enumeration</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/T_MimeKit_Cryptography_X509KeyUsageFlags.htm" title="X509KeyUsageFlags Enumeration" tocid="T_MimeKit_Cryptography_X509KeyUsageFlags">X509KeyUsageFlags Enumeration</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div id="TopicContent" class="topicContent"><table class="titleTable"><tr><td class="logoColumn"><img alt="MimeKit" src="../icons/Help.png" /></td><td class="titleColumn"><h1>Mime<wbr />Kit.<wbr />Cryptography Namespace</h1></td></tr></table><div class="summary">The <b>MimeKit.Cryptography</b> namespace provides classes that are necessary for dealing with PGP, S/MIME, and other cryptographic services.</div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('IDACA')" onkeypress="SectionExpandCollapse_CheckKey('IDACA', event)" tabindex="0"><img id="IDACAToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Classes</span></div><div id="IDACASection" class="collapsibleSection"><table id="classList" class="members"><tr><th class="iconColumn"> </th><th>Class</th><th>Description</th></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_ApplicationPgpEncrypted.htm">ApplicationPgpEncrypted</a></td><td>
-            A MIME part with a Content-Type of application/pgp-encrypted.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_ApplicationPgpSignature.htm">ApplicationPgpSignature</a></td><td>
-            A MIME part with a Content-Type of application/pgp-signature.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_ApplicationPkcs7Mime.htm">ApplicationPkcs7Mime</a></td><td>
-            An S/MIME part with a Content-Type of application/pkcs7-mime.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_ApplicationPkcs7Signature.htm">ApplicationPkcs7Signature</a></td><td>
-            An S/MIME part with a Content-Type of application/pkcs7-signature.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /><img src="../icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="T_MimeKit_Cryptography_ArcHeaderValidationResult.htm">ArcHeaderValidationResult</a></td><td>
-            An ARC header validation result.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /><img src="../icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="T_MimeKit_Cryptography_ArcSigner.htm">ArcSigner</a></td><td>
-            An ARC signer.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /><img src="../icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="T_MimeKit_Cryptography_ArcValidationResult.htm">ArcValidationResult</a></td><td>
-            An ARC validation result.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /><img src="../icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="T_MimeKit_Cryptography_ArcVerifier.htm">ArcVerifier</a></td><td>
-            An ARC verifier.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_AsymmetricAlgorithmExtensions.htm">AsymmetricAlgorithmExtensions</a></td><td>
-            Extension methods for System.Security.Cryptography.AsymmetricAlgorithm.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_AuthenticationMethodProperty.htm">AuthenticationMethodProperty</a></td><td>
-            An authentication method property.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_AuthenticationMethodResult.htm">AuthenticationMethodResult</a></td><td>
-            Represents an authentication method and its result.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_AuthenticationResults.htm">AuthenticationResults</a></td><td>
-            A parsed representation of the Authentication-Results header.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_BouncyCastleCertificateExtensions.htm">BouncyCastleCertificateExtensions</a></td><td>
-            Extension methods for use with BouncyCastle X509Certificates.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_BouncyCastleSecureMimeContext.htm">BouncyCastleSecureMimeContext</a></td><td>
-            A Secure MIME (S/MIME) cryptography context.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_CertificateNotFoundException.htm">CertificateNotFoundException</a></td><td>
-            An exception that is thrown when a certificate could not be found for a specified mailbox.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_CmsEnvelopeException.htm">CmsEnvelopeException</a></td><td>
-            The exception that is thrown if an error occurs while generating a CMS envelope.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_CmsRecipient.htm">CmsRecipient</a></td><td>
-            An S/MIME recipient.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_CmsRecipientCollection.htm">CmsRecipientCollection</a></td><td>
-            A collection of <a href="T_MimeKit_Cryptography_CmsRecipient.htm">CmsRecipient</a> objects.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_CmsRecipientException.htm">CmsRecipientException</a></td><td>
-            The exception that is thrown when an error occurs while processing a CMS recipient.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_CmsSigner.htm">CmsSigner</a></td><td>
-            An S/MIME signer.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_CryptographyContext.htm">CryptographyContext</a></td><td>
-            An abstract cryptography context.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_DefaultSecureMimeContext.htm">DefaultSecureMimeContext</a></td><td>
-            A default <a href="T_MimeKit_Cryptography_SecureMimeContext.htm">SecureMimeContext</a> implementation that uses
-            an SQLite database as a certificate and private key store.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_DigitalSignatureCollection.htm">DigitalSignatureCollection</a></td><td>
-            A collection of digital signatures.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_DigitalSignatureVerifyException.htm">DigitalSignatureVerifyException</a></td><td>
-            An exception that is thrown when an error occurrs in <a href="M_MimeKit_Cryptography_IDigitalSignature_Verify.htm">Verify<span id="LST32F4BF0E_0" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /><img src="../icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="T_MimeKit_Cryptography_DkimPublicKeyLocatorBase.htm">DkimPublicKeyLocatorBase</a></td><td>
-            A base class for implemnentations of <a href="T_MimeKit_Cryptography_IDkimPublicKeyLocator.htm">IDkimPublicKeyLocator</a>.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /><img src="../icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="T_MimeKit_Cryptography_DkimSigner.htm">DkimSigner</a></td><td>
-            A DKIM signer.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_DkimSignerBase.htm">DkimSignerBase</a></td><td>
-            A base class for DKIM and ARC signers.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /><img src="../icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="T_MimeKit_Cryptography_DkimVerifier.htm">DkimVerifier</a></td><td>
-            A DKIM-Signature verifier.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_DkimVerifierBase.htm">DkimVerifierBase</a></td><td>
-            A base class for DKIM and ARC verifiers.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_GnuPGContext.htm">GnuPGContext</a></td><td>
-            An <a href="T_MimeKit_Cryptography_OpenPgpContext.htm">OpenPgpContext</a> that uses the GnuPG keyrings.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_MultipartEncrypted.htm">MultipartEncrypted</a></td><td>
-            A multipart MIME part with a ContentType of multipart/encrypted containing an encrypted MIME part.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_MultipartSigned.htm">MultipartSigned</a></td><td>
-            A signed multipart, as used by both S/MIME and PGP/MIME protocols.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_OpenPgpContext.htm">OpenPgpContext</a></td><td>
-            An abstract OpenPGP cryptography context which can be used for PGP/MIME.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_OpenPgpDetectionFilter.htm">OpenPgpDetectionFilter</a></td><td>
-            A filter meant to aid in the detection of OpenPGP blocks.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_OpenPgpDigitalCertificate.htm">OpenPgpDigitalCertificate</a></td><td>
-            An OpenPGP digital certificate.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_OpenPgpDigitalSignature.htm">OpenPgpDigitalSignature</a></td><td>
-            An OpenPGP digital signature.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_PrivateKeyNotFoundException.htm">PrivateKeyNotFoundException</a></td><td>
-            An exception that is thrown when a private key could not be found for a specified mailbox or key id.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_PublicKeyNotFoundException.htm">PublicKeyNotFoundException</a></td><td>
-            An exception that is thrown when a public key could not be found for a specified mailbox.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_RsaEncryptionPadding.htm">RsaEncryptionPadding</a></td><td>
-            The RSA encryption padding schemes and parameters used by S/MIME.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_RsaSignaturePadding.htm">RsaSignaturePadding</a></td><td>
-            The RSA signature padding schemes and parameters used by S/MIME.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_SecureMailboxAddress.htm">SecureMailboxAddress</a></td><td>
-            A secure mailbox address which includes a fingerprint for a certificate.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_SecureMimeContext.htm">SecureMimeContext</a></td><td>
-            A Secure MIME (S/MIME) cryptography context.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_SecureMimeDigitalCertificate.htm">SecureMimeDigitalCertificate</a></td><td>
-            An S/MIME digital certificate.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_SecureMimeDigitalSignature.htm">SecureMimeDigitalSignature</a></td><td>
-            An S/MIME digital signature.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_SqlCertificateDatabase.htm">SqlCertificateDatabase</a></td><td>
-            An abstract X.509 certificate database built on generic SQL storage.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_SqliteCertificateDatabase.htm">SqliteCertificateDatabase</a></td><td>
-            An X.509 certificate database built on SQLite.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_SQLServerCertificateDatabase.htm">SQLServerCertificateDatabase</a></td><td>
-            An X.509 certificate database built on SQL Server.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_TemporarySecureMimeContext.htm">TemporarySecureMimeContext</a></td><td>
-            An S/MIME context that does not persist certificates, private keys or CRLs.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_WindowsSecureMimeContext.htm">WindowsSecureMimeContext</a></td><td>
-            A Secure MIME (S/MIME) cryptography context.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_WindowsSecureMimeDigitalCertificate.htm">WindowsSecureMimeDigitalCertificate</a></td><td>
-            An S/MIME digital certificate.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_WindowsSecureMimeDigitalSignature.htm">WindowsSecureMimeDigitalSignature</a></td><td>
-            An S/MIME digital signature.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_X509Certificate2Extensions.htm">X509Certificate2Extensions</a></td><td>
-            Extension methods for X509Certificate2.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_X509CertificateChain.htm">X509CertificateChain</a></td><td>
-            An X.509 certificate chain.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_X509CertificateDatabase.htm">X509CertificateDatabase</a></td><td>
-            An X.509 certificate database.
-            </td></tr><tr><td><img src="../icons/protClass.gif" alt="Protected class" title="Protected class" /></td><td><a href="T_MimeKit_Cryptography_X509CertificateDatabase_CertificateColumnNames.htm">X509CertificateDatabase<span id="LST32F4BF0E_1" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>CertificateColumnNames</a></td><td>
-            The column names for the certificates table.
-            </td></tr><tr><td><img src="../icons/protClass.gif" alt="Protected class" title="Protected class" /></td><td><a href="T_MimeKit_Cryptography_X509CertificateDatabase_CrlColumnNames.htm">X509CertificateDatabase<span id="LST32F4BF0E_2" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>CrlColumnNames</a></td><td>
-            The column names for the CRLs table.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_X509CertificateRecord.htm">X509CertificateRecord</a></td><td>
-            An X.509 certificate record.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_X509CertificateStore.htm">X509CertificateStore</a></td><td>
-            A store for X.509 certificates and keys.
-            </td></tr><tr><td><img src="../icons/pubClass.gif" alt="Public class" title="Public class" /></td><td><a href="T_MimeKit_Cryptography_X509CrlRecord.htm">X509CrlRecord</a></td><td>
-            An X.509 certificate revocation list (CRL) record.
-            </td></tr></table></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID0EB0CA')" onkeypress="SectionExpandCollapse_CheckKey('ID0EB0CA', event)" tabindex="0"><img id="ID0EB0CAToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Interfaces</span></div><div id="ID0EB0CASection" class="collapsibleSection"><table id="interfaceList" class="members"><tr><th class="iconColumn"> </th><th>Interface</th><th>Description</th></tr><tr><td><img src="../icons/pubInterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_MimeKit_Cryptography_IApplicationPgpEncrypted.htm">IApplicationPgpEncrypted</a></td><td>
-            An interface for a MIME part with a Content-Type of application/pgp-encrypted.
-            </td></tr><tr><td><img src="../icons/pubInterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_MimeKit_Cryptography_IApplicationPgpSignature.htm">IApplicationPgpSignature</a></td><td>
-            An interface for a MIME part with a Content-Type of application/pgp-signature.
-            </td></tr><tr><td><img src="../icons/pubInterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_MimeKit_Cryptography_IApplicationPkcs7Mime.htm">IApplicationPkcs7Mime</a></td><td>
-            An interface for an S/MIME part with a Content-Type of application/pkcs7-mime.
-            </td></tr><tr><td><img src="../icons/pubInterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_MimeKit_Cryptography_IApplicationPkcs7Signature.htm">IApplicationPkcs7Signature</a></td><td>
-            An interface for an S/MIME part with a Content-Type of application/pkcs7-signature.
-            </td></tr><tr><td><img src="../icons/pubInterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_MimeKit_Cryptography_ICryptographyContext.htm">ICryptographyContext</a></td><td>
-            An abstract cryptography context interface.
-            </td></tr><tr><td><img src="../icons/pubInterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_MimeKit_Cryptography_IDigitalCertificate.htm">IDigitalCertificate</a></td><td>
-            An interface for a digital certificate.
-            </td></tr><tr><td><img src="../icons/pubInterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_MimeKit_Cryptography_IDigitalSignature.htm">IDigitalSignature</a></td><td>
-            An interface for a digital signature.
-            </td></tr><tr><td><img src="../icons/pubInterface.gif" alt="Public interface" title="Public interface" /><img src="../icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="T_MimeKit_Cryptography_IDkimPublicKeyLocator.htm">IDkimPublicKeyLocator</a></td><td>
-            An interface for a service which locates and retrieves DKIM public keys (probably via DNS).
-            </td></tr><tr><td><img src="../icons/pubInterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_MimeKit_Cryptography_IMultipartEncrypted.htm">IMultipartEncrypted</a></td><td>
-            An interface for a multipart MIME part with a ContentType of multipart/encrypted containing an encrypted MIME part.
-            </td></tr><tr><td><img src="../icons/pubInterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_MimeKit_Cryptography_IMultipartSigned.htm">IMultipartSigned</a></td><td>
-            An interface for a signed multipart, as used by both S/MIME and PGP/MIME protocols.
-            </td></tr><tr><td><img src="../icons/pubInterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_MimeKit_Cryptography_ISecureMimeContext.htm">ISecureMimeContext</a></td><td>
-            An interface for a Secure MIME (S/MIME) cryptography context.
-            </td></tr><tr><td><img src="../icons/pubInterface.gif" alt="Public interface" title="Public interface" /></td><td><a href="T_MimeKit_Cryptography_IX509CertificateDatabase.htm">IX509CertificateDatabase</a></td><td>
-            An interface for an X.509 Certificate database.
-            </td></tr></table></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('IDFCA')" onkeypress="SectionExpandCollapse_CheckKey('IDFCA', event)" tabindex="0"><img id="IDFCAToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Enumerations</span></div><div id="IDFCASection" class="collapsibleSection"><table id="enumerationList" class="members"><tr><th class="iconColumn"> </th><th>Enumeration</th><th>Description</th></tr><tr><td><img src="../icons/pubEnumeration.gif" alt="Public enumeration" title="Public enumeration" /><img src="../icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="T_MimeKit_Cryptography_ArcSignatureValidationResult.htm">ArcSignatureValidationResult</a></td><td>
-            An ARC signature validation result.
-            </td></tr><tr><td><img src="../icons/pubEnumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_MimeKit_Cryptography_ArcValidationErrors.htm">ArcValidationErrors</a></td><td>
-            An enumeration of possible ARC validation errors.
-            </td></tr><tr><td><img src="../icons/pubEnumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_MimeKit_Cryptography_DigestAlgorithm.htm">DigestAlgorithm</a></td><td>
-            A digest algorithm.
-            </td></tr><tr><td><img src="../icons/pubEnumeration.gif" alt="Public enumeration" title="Public enumeration" /><img src="../icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="T_MimeKit_Cryptography_DkimCanonicalizationAlgorithm.htm">DkimCanonicalizationAlgorithm</a></td><td>
-            A DKIM canonicalization algorithm.
-            </td></tr><tr><td><img src="../icons/pubEnumeration.gif" alt="Public enumeration" title="Public enumeration" /><img src="../icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="T_MimeKit_Cryptography_DkimSignatureAlgorithm.htm">DkimSignatureAlgorithm</a></td><td>
-            A DKIM signature algorithm.
-            </td></tr><tr><td><img src="../icons/pubEnumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_MimeKit_Cryptography_EncryptionAlgorithm.htm">EncryptionAlgorithm</a></td><td>
-            Encryption algorithms supported by S/MIME and OpenPGP.
-            </td></tr><tr><td><img src="../icons/pubEnumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_MimeKit_Cryptography_OpenPgpDataType.htm">OpenPgpDataType</a></td><td>
-            An enum expressing a type of OpenPGP data.
-            </td></tr><tr><td><img src="../icons/pubEnumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_MimeKit_Cryptography_OpenPgpKeyCertification.htm">OpenPgpKeyCertification</a></td><td>
-            An OpenPGP key certification.
-            </td></tr><tr><td><img src="../icons/pubEnumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_MimeKit_Cryptography_PublicKeyAlgorithm.htm">PublicKeyAlgorithm</a></td><td>
-            An enumeration of public key algorithms.
-            </td></tr><tr><td><img src="../icons/pubEnumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_MimeKit_Cryptography_RsaEncryptionPaddingScheme.htm">RsaEncryptionPaddingScheme</a></td><td>
-            The RSA encryption padding schemes used by S/MIME.
-            </td></tr><tr><td><img src="../icons/pubEnumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_MimeKit_Cryptography_RsaSignaturePaddingScheme.htm">RsaSignaturePaddingScheme</a></td><td>
-            The RSA signature padding schemes used by S/MIME.
-            </td></tr><tr><td><img src="../icons/pubEnumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_MimeKit_Cryptography_SecureMimeType.htm">SecureMimeType</a></td><td>
-            The type of S/MIME data that an application/pkcs7-mime part contains.
-            </td></tr><tr><td><img src="../icons/pubEnumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_MimeKit_Cryptography_SubjectIdentifierType.htm">SubjectIdentifierType</a></td><td>
-            The method to use for identifying a certificate.
-            </td></tr><tr><td><img src="../icons/pubEnumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_MimeKit_Cryptography_X509CertificateRecordFields.htm">X509CertificateRecordFields</a></td><td>
-            X.509 certificate record fields.
-            </td></tr><tr><td><img src="../icons/pubEnumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_MimeKit_Cryptography_X509CrlRecordFields.htm">X509CrlRecordFields</a></td><td>
-            X.509 certificate revocation list record fields.
-            </td></tr><tr><td><img src="../icons/pubEnumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_MimeKit_Cryptography_X509KeyUsageBits.htm">X509KeyUsageBits</a></td><td>
-            X.509 key usage bits.
-            </td></tr><tr><td><img src="../icons/pubEnumeration.gif" alt="Public enumeration" title="Public enumeration" /></td><td><a href="T_MimeKit_Cryptography_X509KeyUsageFlags.htm">X509KeyUsageFlags</a></td><td>
-            X.509 key usage flags.
-            </td></tr></table></div></div></div><div id="PageFooter" class="pageFooter"><!-- Global site tag (gtag.js) - Google Analytics -->
-<script src="https://www.googletagmanager.com/gtag/js?id=UA-63841238-1"></script>
+﻿<!DOCTYPE html []>
+<html lang="en-US" data-theme="light">
+  <head><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B7CEM3SL1V"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-63841238-1');
-</script><p><a href="https://github.com/jstedfast" target="_blank" rel="noopener noreferrer">Copyright © 2013-2026 Jeffrey Stedfast</a></p><div class="feedbackLink">Send comments on this topic to
+  gtag('config', 'G-B7CEM3SL1V');
+</script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/fontawesome.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/solid.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/regular.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/brands.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/presentationStyle.css?v=50DD4085" />
+    <script src="../scripts/jquery-3.7.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js?v=50DD4085"></script>
+    <script src="../scripts/highlight.min.js?v=50DD4085"></script>
+    <script src="../scripts/themeSwitcher.js?v=50DD4085"></script>
+    <script src="../scripts/presentationStyle.js?v=50DD4085"></script>
+    <title>MimeKit.Cryptography Namespace</title>
+    <meta name="Title" content="MimeKit.Cryptography" />
+    <meta name="Help.Id" content="N:MimeKit.Cryptography" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MimeKit.Cryptography" />
+    <meta name="guid" content="N_MimeKit_Cryptography" />
+    <meta name="Description" content="The MimeKit.Cryptography namespace provides classes that are necessary for dealing with PGP, S/MIME, and other cryptographic services." />
+    <meta name="tocParentId" content="3" />
+  </head>
+  <body>
+    <header class="pageHeader" id="Header">
+      <div class="level mb-0 py-2 px-4">
+        <div id="TitleContainer" class="level-left">
+          <div id="DocumentationTitle" class="level-item">MailKit Documentation</div>
+        </div>
+        <div id="LangFilterSearchContainer" class="level-right">
+          <div id="ProjectLink" class="level-item" title="Project website" aria-label="Project website">
+            <a href="https://github.com/jstedfast/MailKit" rel="noopener noreferrer" target="_blank">
+              <span class="icon">
+                <i class="fa-brands fa-github"></i>
+              </span>
+            </a>
+          </div>
+          <div id="ThemeSwitcher" class="level-item" title="Toggle theme" aria-label="Toggle theme">
+            <span class="icon">
+              <i class="fa fa-regular fa-moon theme-icon-dark"></i>
+              <i class="fa fa-sun theme-icon-light"></i>
+            </span>
+          </div>
+          <div class="level-item">
+            <div class="dropdown is-hoverable">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span id="CurrentLanguage"></span>
+                  <span class="icon is-small">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" role="menu">
+                <div id="LanguageSelections" class="dropdown-content">
+                  <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="level-item">
+            <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+              <div class="field">
+                <div class="control has-icons-left">
+                  <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-search"></i>
+                  </span>
+                  <button id="SearchButton" type="submit" class="is-hidden"></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article>
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile toc-resizable">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu">
+                <li>Loading...</li>
+              </ul>
+            </nav>
+          </div>
+          <div id="Resizer" class="toc-resizer"></div>
+          <div id="TopicContent" class="column content is-7 toc-resizable-content">
+            <h1>Mime<wbr />Kit.<wbr />Cryptography Namespace</h1>
+            <div class="summary">The <b>MimeKit.Cryptography</b> namespace provides classes that are necessary for dealing with PGP, S/MIME, and other cryptographic services.</div>
+            <h2 class="quickLinkHeader">Classes</h2>
+            <div id="IDACASection">
+              <table id="classList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_ApplicationPgpEncrypted.htm">ApplicationPgpEncrypted</a>
+                  </td>
+                  <td>
+            A MIME part with a Content-Type of application/pgp-encrypted.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_ApplicationPgpSignature.htm">ApplicationPgpSignature</a>
+                  </td>
+                  <td>
+            A MIME part with a Content-Type of application/pgp-signature.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_ApplicationPkcs7Mime.htm">ApplicationPkcs7Mime</a>
+                  </td>
+                  <td>
+            An S/MIME part with a Content-Type of application/pkcs7-mime.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_ApplicationPkcs7Signature.htm">ApplicationPkcs7Signature</a>
+                  </td>
+                  <td>
+            An S/MIME part with a Content-Type of application/pkcs7-signature.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_ArcHeaderValidationResult.htm">ArcHeaderValidationResult</a>
+                  </td>
+                  <td>
+            An ARC header validation result.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_ArcSigner.htm">ArcSigner</a>
+                  </td>
+                  <td>
+            An ARC signer.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_ArcValidationResult.htm">ArcValidationResult</a>
+                  </td>
+                  <td>
+            An ARC validation result.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_ArcVerifier.htm">ArcVerifier</a>
+                  </td>
+                  <td>
+            An ARC verifier.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_AsymmetricAlgorithmExtensions.htm">AsymmetricAlgorithmExtensions</a>
+                  </td>
+                  <td>
+            Extension methods for System.Security.Cryptography.AsymmetricAlgorithm.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_AuthenticationMethodProperty.htm">AuthenticationMethodProperty</a>
+                  </td>
+                  <td>
+            An authentication method property.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_AuthenticationMethodResult.htm">AuthenticationMethodResult</a>
+                  </td>
+                  <td>
+            Represents an authentication method and its result.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_AuthenticationResults.htm">AuthenticationResults</a>
+                  </td>
+                  <td>
+            A parsed representation of the Authentication-Results header.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_BouncyCastleCertificateExtensions.htm">BouncyCastleCertificateExtensions</a>
+                  </td>
+                  <td>
+            Extension methods for use with BouncyCastle X509Certificates.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_BouncyCastleSecureMimeContext.htm">BouncyCastleSecureMimeContext</a>
+                  </td>
+                  <td>
+            A Secure MIME (S/MIME) cryptography context.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_CertificateNotFoundException.htm">CertificateNotFoundException</a>
+                  </td>
+                  <td>
+            An exception that is thrown when a certificate could not be found for a specified mailbox.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_CmsEnvelopeException.htm">CmsEnvelopeException</a>
+                  </td>
+                  <td>
+            The exception that is thrown if an error occurs while generating a CMS envelope.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_CmsRecipient.htm">CmsRecipient</a>
+                  </td>
+                  <td>
+            An S/MIME recipient.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_CmsRecipientCollection.htm">CmsRecipientCollection</a>
+                  </td>
+                  <td>
+            A collection of <a href="T_MimeKit_Cryptography_CmsRecipient.htm">CmsRecipient</a> objects.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_CmsRecipientException.htm">CmsRecipientException</a>
+                  </td>
+                  <td>
+            The exception that is thrown when an error occurs while processing a CMS recipient.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_CmsSigner.htm">CmsSigner</a>
+                  </td>
+                  <td>
+            An S/MIME signer.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_CryptographicMimeVisitor.htm">CryptographicMimeVisitor</a>
+                  </td>
+                  <td>
+            Represents a visitor for cryptographic MIME trees.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_CryptographyContext.htm">CryptographyContext</a>
+                  </td>
+                  <td>
+            An abstract cryptography context.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_CryptographyModule.htm">CryptographyModule</a>
+                  </td>
+                  <td>
+            The cryptography module.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_DefaultSecureMimeContext.htm">DefaultSecureMimeContext</a>
+                  </td>
+                  <td>
+            A cross-platform <a href="T_MimeKit_Cryptography_SecureMimeContext.htm">SecureMimeContext</a> implementation that uses
+            an SQLite database as a certificate and private key store.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_DigitalSignatureCollection.htm">DigitalSignatureCollection</a>
+                  </td>
+                  <td>
+            A collection of digital signatures.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_DigitalSignatureVerifyException.htm">DigitalSignatureVerifyException</a>
+                  </td>
+                  <td>
+            An exception that is thrown when an error occurrs in <a href="M_MimeKit_Cryptography_IDigitalSignature_Verify.htm">Verify<span id="LST32F4BF0E_0" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_DkimSignatureValidationResult.htm">DkimSignatureValidationResult</a>
+                  </td>
+                  <td>
+            The result of verifying a DKIM-Signature header.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_DkimSigner.htm">DkimSigner</a>
+                  </td>
+                  <td>
+            A DKIM signer.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_DkimSignerBase.htm">DkimSignerBase</a>
+                  </td>
+                  <td>
+            A base class for DKIM and ARC signers.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_DkimVerifier.htm">DkimVerifier</a>
+                  </td>
+                  <td>
+            A DKIM-Signature verifier.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_DkimVerifierBase.htm">DkimVerifierBase</a>
+                  </td>
+                  <td>
+            A base class for DKIM and ARC verifiers.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_DmarcRecord.htm">DmarcRecord</a>
+                  </td>
+                  <td>
+            A DMARC Policy Record.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_DmarcValidationResult.htm">DmarcValidationResult</a>
+                  </td>
+                  <td>
+            The result of DMARC validation.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_DmarcVerifier.htm">DmarcVerifier</a>
+                  </td>
+                  <td>
+            A DMARC verifier.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_DnsTxtResponse.htm">DnsTxtResponse</a>
+                  </td>
+                  <td>
+            The response to a DNS TXT query.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_GnuPGContext.htm">GnuPGContext</a>
+                  </td>
+                  <td>
+            An <a href="T_MimeKit_Cryptography_OpenPgpContext.htm">OpenPgpContext</a> that uses the GnuPG keyrings.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_MimeMessageExtensions.htm">MimeMessageExtensions</a>
+                  </td>
+                  <td>
+            Extension methods for <a href="T_MimeKit_MimeMessage.htm">MimeMessage</a> that add convenient S/MIME and PGP/MIME support.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_MultipartEncrypted.htm">MultipartEncrypted</a>
+                  </td>
+                  <td>
+            A multipart MIME part with a ContentType of multipart/encrypted containing an encrypted MIME part.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_MultipartSigned.htm">MultipartSigned</a>
+                  </td>
+                  <td>
+            A signed multipart, as used by both S/MIME and PGP/MIME protocols.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_OpenPgpContext.htm">OpenPgpContext</a>
+                  </td>
+                  <td>
+            An abstract OpenPGP cryptography context which can be used for PGP/MIME.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_OpenPgpDetectionFilter.htm">OpenPgpDetectionFilter</a>
+                  </td>
+                  <td>
+            A filter meant to aid in the detection of OpenPGP blocks.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_OpenPgpDigitalCertificate.htm">OpenPgpDigitalCertificate</a>
+                  </td>
+                  <td>
+            An OpenPGP digital certificate.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_OpenPgpDigitalSignature.htm">OpenPgpDigitalSignature</a>
+                  </td>
+                  <td>
+            An OpenPGP digital signature.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_PrivateKeyNotFoundException.htm">PrivateKeyNotFoundException</a>
+                  </td>
+                  <td>
+            An exception that is thrown when a private key could not be found for a specified mailbox or key id.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_PublicKeyNotFoundException.htm">PublicKeyNotFoundException</a>
+                  </td>
+                  <td>
+            An exception that is thrown when a public key could not be found for a specified mailbox.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_RsaEncryptionPadding.htm">RsaEncryptionPadding</a>
+                  </td>
+                  <td>
+            The RSA encryption padding schemes and parameters used by S/MIME.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_RsaSignaturePadding.htm">RsaSignaturePadding</a>
+                  </td>
+                  <td>
+            The RSA signature padding schemes and parameters used by S/MIME.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_SecureMailboxAddress.htm">SecureMailboxAddress</a>
+                  </td>
+                  <td>
+            A secure mailbox address which includes a fingerprint for a certificate.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_SecureMimeContext.htm">SecureMimeContext</a>
+                  </td>
+                  <td>
+            A Secure MIME (S/MIME) cryptography context.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_SecureMimeDigitalCertificate.htm">SecureMimeDigitalCertificate</a>
+                  </td>
+                  <td>
+            An S/MIME digital certificate.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_SecureMimeDigitalSignature.htm">SecureMimeDigitalSignature</a>
+                  </td>
+                  <td>
+            An S/MIME digital signature.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_SpfCheckResult.htm">SpfCheckResult</a>
+                  </td>
+                  <td>
+            The result of an SPF check of the MAIL FROM identity.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_SqlCertificateDatabase.htm">SqlCertificateDatabase</a>
+                  </td>
+                  <td>
+            An abstract X.509 certificate database built on generic SQL storage.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_SqliteCertificateDatabase.htm">SqliteCertificateDatabase</a>
+                  </td>
+                  <td>
+            An X.509 certificate database built on SQLite.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_SQLServerCertificateDatabase.htm">SQLServerCertificateDatabase</a>
+                  </td>
+                  <td>
+            An X.509 certificate database built on SQL Server.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_TemporarySecureMimeContext.htm">TemporarySecureMimeContext</a>
+                  </td>
+                  <td>
+            An S/MIME context that does not persist certificates, private keys or CRLs.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_WindowsSecureMimeContext.htm">WindowsSecureMimeContext</a>
+                  </td>
+                  <td>
+            A Secure MIME (S/MIME) cryptography context.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_WindowsSecureMimeDigitalCertificate.htm">WindowsSecureMimeDigitalCertificate</a>
+                  </td>
+                  <td>
+            An S/MIME digital certificate.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_WindowsSecureMimeDigitalSignature.htm">WindowsSecureMimeDigitalSignature</a>
+                  </td>
+                  <td>
+            An S/MIME digital signature.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_X509Certificate2Extensions.htm">X509Certificate2Extensions</a>
+                  </td>
+                  <td>
+            Extension methods for X509Certificate2.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_X509CertificateChain.htm">X509CertificateChain</a>
+                  </td>
+                  <td>
+            An X.509 certificate chain.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_X509CertificateDatabase.htm">X509CertificateDatabase</a>
+                  </td>
+                  <td>
+            An X.509 certificate database.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_X509CertificateDatabase_CertificateColumnNames.htm">X509CertificateDatabase<span id="LST32F4BF0E_1" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>CertificateColumnNames</a>
+                  </td>
+                  <td>
+            The column names for the certificates table.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_X509CertificateDatabase_CrlColumnNames.htm">X509CertificateDatabase<span id="LST32F4BF0E_2" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>CrlColumnNames</a>
+                  </td>
+                  <td>
+            The column names for the CRLs table.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_X509CertificateRecord.htm">X509CertificateRecord</a>
+                  </td>
+                  <td>
+            An X.509 certificate record.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_X509CertificateStore.htm">X509CertificateStore</a>
+                  </td>
+                  <td>
+            A store for X.509 certificates and keys.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_X509CrlRecord.htm">X509CrlRecord</a>
+                  </td>
+                  <td>
+            An X.509 certificate revocation list (CRL) record.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">Interfaces</h2>
+            <div id="ID0UB0CASection">
+              <table id="interfaceList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_IApplicationPgpEncrypted.htm">IApplicationPgpEncrypted</a>
+                  </td>
+                  <td>
+            An interface for a MIME part with a Content-Type of application/pgp-encrypted.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_IApplicationPgpSignature.htm">IApplicationPgpSignature</a>
+                  </td>
+                  <td>
+            An interface for a MIME part with a Content-Type of application/pgp-signature.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_IApplicationPkcs7Mime.htm">IApplicationPkcs7Mime</a>
+                  </td>
+                  <td>
+            An interface for an S/MIME part with a Content-Type of application/pkcs7-mime.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_IApplicationPkcs7Signature.htm">IApplicationPkcs7Signature</a>
+                  </td>
+                  <td>
+            An interface for an S/MIME part with a Content-Type of application/pkcs7-signature.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_ICryptographyContext.htm">ICryptographyContext</a>
+                  </td>
+                  <td>
+            An abstract cryptography context interface.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_IDigitalCertificate.htm">IDigitalCertificate</a>
+                  </td>
+                  <td>
+            An interface for a digital certificate.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_IDigitalSignature.htm">IDigitalSignature</a>
+                  </td>
+                  <td>
+            An interface for a digital signature.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_IDnsResolver.htm">IDnsResolver</a>
+                  </td>
+                  <td>
+            An interface for a DNS resolver.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_IMultipartEncrypted.htm">IMultipartEncrypted</a>
+                  </td>
+                  <td>
+            An interface for a multipart MIME part with a ContentType of multipart/encrypted containing an encrypted MIME part.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_IMultipartSigned.htm">IMultipartSigned</a>
+                  </td>
+                  <td>
+            An interface for a signed multipart, as used by both S/MIME and PGP/MIME protocols.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_ISecureMimeContext.htm">ISecureMimeContext</a>
+                  </td>
+                  <td>
+            An interface for a Secure MIME (S/MIME) cryptography context.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_IX509CertificateDatabase.htm">IX509CertificateDatabase</a>
+                  </td>
+                  <td>
+            An interface for an X.509 Certificate database.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">Enumerations</h2>
+            <div id="IDICASection">
+              <table id="enumerationList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_ArcSignatureValidationResult.htm">ArcSignatureValidationResult</a>
+                  </td>
+                  <td>
+            An ARC signature validation result.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_ArcValidationErrors.htm">ArcValidationErrors</a>
+                  </td>
+                  <td>
+            An enumeration of possible ARC validation errors.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_DigestAlgorithm.htm">DigestAlgorithm</a>
+                  </td>
+                  <td>
+            A digest algorithm.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_DkimCanonicalizationAlgorithm.htm">DkimCanonicalizationAlgorithm</a>
+                  </td>
+                  <td>
+            A DKIM canonicalization algorithm.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_DkimSignatureAlgorithm.htm">DkimSignatureAlgorithm</a>
+                  </td>
+                  <td>
+            A DKIM signature algorithm.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_DkimSignatureStatus.htm">DkimSignatureStatus</a>
+                  </td>
+                  <td>
+            The result of verifying a DKIM-Signature header.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_DmarcAlignmentMode.htm">DmarcAlignmentMode</a>
+                  </td>
+                  <td>
+            A DMARC identifier alignment mode.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_DmarcErrors.htm">DmarcErrors</a>
+                  </td>
+                  <td>
+            The problems encountered during DMARC validation.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_DmarcFailureReportingOptions.htm">DmarcFailureReportingOptions</a>
+                  </td>
+                  <td>
+            The DMARC failure reporting options.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_DmarcPolicy.htm">DmarcPolicy</a>
+                  </td>
+                  <td>
+            A DMARC Domain Owner Assessment Policy.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_DmarcPolicyDomainSource.htm">DmarcPolicyDomainSource</a>
+                  </td>
+                  <td>
+            The location at which the applicable DMARC Policy Record was discovered.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_DmarcPublicSuffixDomain.htm">DmarcPublicSuffixDomain</a>
+                  </td>
+                  <td>
+            The value of the <span class="code">psd</span> tag of a DMARC Policy Record.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_DmarcRecordErrors.htm">DmarcRecordErrors</a>
+                  </td>
+                  <td>
+            The syntax errors found while parsing a DMARC Policy Record.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_DmarcStatus.htm">DmarcStatus</a>
+                  </td>
+                  <td>
+            The result of DMARC validation.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_DnsQueryStatus.htm">DnsQueryStatus</a>
+                  </td>
+                  <td>
+            The outcome of a DNS query.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_EncryptionAlgorithm.htm">EncryptionAlgorithm</a>
+                  </td>
+                  <td>
+            Encryption algorithms supported by S/MIME and OpenPGP.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_OpenPgpDataType.htm">OpenPgpDataType</a>
+                  </td>
+                  <td>
+            An enum expressing a type of OpenPGP data.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_OpenPgpKeyCertification.htm">OpenPgpKeyCertification</a>
+                  </td>
+                  <td>
+            An OpenPGP key certification.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_PublicKeyAlgorithm.htm">PublicKeyAlgorithm</a>
+                  </td>
+                  <td>
+            An enumeration of public key algorithms.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_RsaEncryptionPaddingScheme.htm">RsaEncryptionPaddingScheme</a>
+                  </td>
+                  <td>
+            The RSA encryption padding schemes used by S/MIME.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_RsaSignaturePaddingScheme.htm">RsaSignaturePaddingScheme</a>
+                  </td>
+                  <td>
+            The RSA signature padding schemes used by S/MIME.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_SecureMimeType.htm">SecureMimeType</a>
+                  </td>
+                  <td>
+            The type of S/MIME data that an application/pkcs7-mime part contains.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_SpfStatus.htm">SpfStatus</a>
+                  </td>
+                  <td>
+            The result of an SPF check.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_SubjectIdentifierType.htm">SubjectIdentifierType</a>
+                  </td>
+                  <td>
+            The method to use for identifying a certificate.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_X509CertificateRecordFields.htm">X509CertificateRecordFields</a>
+                  </td>
+                  <td>
+            X.509 certificate record fields.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_X509CrlRecordFields.htm">X509CrlRecordFields</a>
+                  </td>
+                  <td>
+            X.509 certificate revocation list record fields.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_X509KeyUsageBits.htm">X509KeyUsageBits</a>
+                  </td>
+                  <td>
+            X.509 key usage bits.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MimeKit_Cryptography_X509KeyUsageFlags.htm">X509KeyUsageFlags</a>
+                  </td>
+                  <td>
+            X.509 key usage flags.
+            </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Classes</a>
+                </li>
+                <li>
+                  <a class="quickLink">Interfaces</a>
+                </li>
+                <li>
+                  <a class="quickLink">Enumerations</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer id="PageFooter" class="footer border-top py-3">
+      <div class="columns">
+        <div id="FooterContent" class="column">
+          <p class="site-footer-links">
+            <a href="https://mimekit.net/">Home</a> <a href="https://github.com/jstedfast/MimeKit">MimeKit on GitHub</a> <a href="https://github.com/jstedfast/MailKit">MailKit on GitHub</a> <a href="https://github.com/sponsors/jstedfast">    Sponsor</a></p>
+          <p>
+            <a href="https://github.com/jstedfast" target="_blank" rel="noopener noreferrer">Copyright © 2013-2026 Jeffrey Stedfast</a>
+          </p>
+          <div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:jestedfa%40microsoft.com?Subject=MailKit%20Documentation">Jeffrey Stedfast</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
         HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
-        </script></div></body></html>
+        </script></div>
+      </div>
+    </footer>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadToc();
+InitializeQuickLinks();
+});</script>
+  </body>
+</html>

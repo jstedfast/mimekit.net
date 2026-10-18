@@ -1,0 +1,568 @@
+﻿<!DOCTYPE html []>
+<html lang="en-US" data-theme="light">
+  <head><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B7CEM3SL1V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B7CEM3SL1V');
+</script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/fontawesome.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/solid.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/regular.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/brands.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/presentationStyle.css?v=50DD4085" />
+    <script src="../scripts/jquery-3.7.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js?v=50DD4085"></script>
+    <script src="../scripts/highlight.min.js?v=50DD4085"></script>
+    <script src="../scripts/themeSwitcher.js?v=50DD4085"></script>
+    <script src="../scripts/presentationStyle.js?v=50DD4085"></script>
+    <title>Retrieving messages with POP3</title>
+    <meta name="Title" content="Retrieving messages with POP3" />
+    <meta name="Help.Id" content="Retrieving-Messages-With-POP3" />
+    <meta name="Help.ContentType" content="Concepts" />
+    <meta name="guid" content="Retrieving-Messages-With-POP3" />
+    <meta name="Description" content="T:MailKit.Net.Pop3.Pop3Client is used to download messages from a POP3 server. POP3 is a simple protocol: the server exposes a single mailbox (a &quot;spool&quot;) as a list of messages that can be downloaded and deleted." />
+    <meta name="tocParentId" content="1" />
+  </head>
+  <body>
+    <header class="pageHeader" id="Header">
+      <div class="level mb-0 py-2 px-4">
+        <div id="TitleContainer" class="level-left">
+          <div id="DocumentationTitle" class="level-item">MailKit Documentation</div>
+        </div>
+        <div id="LangFilterSearchContainer" class="level-right">
+          <div id="ProjectLink" class="level-item" title="Project website" aria-label="Project website">
+            <a href="https://github.com/jstedfast/MailKit" rel="noopener noreferrer" target="_blank">
+              <span class="icon">
+                <i class="fa-brands fa-github"></i>
+              </span>
+            </a>
+          </div>
+          <div id="ThemeSwitcher" class="level-item" title="Toggle theme" aria-label="Toggle theme">
+            <span class="icon">
+              <i class="fa fa-regular fa-moon theme-icon-dark"></i>
+              <i class="fa fa-sun theme-icon-light"></i>
+            </span>
+          </div>
+          <div class="level-item">
+            <div class="dropdown is-hoverable">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span id="CurrentLanguage"></span>
+                  <span class="icon is-small">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" role="menu">
+                <div id="LanguageSelections" class="dropdown-content">
+                  <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="level-item">
+            <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+              <div class="field">
+                <div class="control has-icons-left">
+                  <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-search"></i>
+                  </span>
+                  <button id="SearchButton" type="submit" class="is-hidden"></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article>
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile toc-resizable">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu">
+                <li>Loading...</li>
+              </ul>
+            </nav>
+          </div>
+          <div id="Resizer" class="toc-resizer"></div>
+          <div id="TopicContent" class="column content is-7 toc-resizable-content">
+            <h1>Retrieving messages with POP3</h1>
+            <div>
+              <p>
+                <a href="T_MailKit_Net_Pop3_Pop3Client.htm">Pop3Client</a> is used to download messages
+        from a POP3 server. POP3 is a simple protocol: the server exposes a single mailbox (a "spool") as a
+        list of messages that can be downloaded and deleted. There are no folders, flags or server-side
+        searching. If you need any of those features, use IMAP instead (see <a href="Working-With-IMAP.htm">Working with IMAP</a>).
+      </p>
+              <p>
+        For information about connecting securely, logging and error handling, see
+        <a href="Connecting-To-A-Server.htm">Connecting to a server</a>. For information about authenticating, see
+        <a href="Authentication.htm">Authentication</a>.
+      </p>
+              <p class="is-hidden-tablet">This topic contains the following sections:</p>
+              <ul class="is-hidden-tablet">
+                <li>
+                  <a href="#DownloadingMessages">Downloading messages</a>
+                </li>
+                <li>
+                  <a href="#NewMessages">Downloading only new messages</a>
+                </li>
+                <li>
+                  <a href="#DeletingMessages">Deleting messages</a>
+                </li>
+                <li>
+                  <a href="#Capabilities">Server capabilities</a>
+                </li>
+                <li>
+                  <a href="#ExceptionHandling">Handling errors</a>
+                </li>
+                <li>
+                  <a href="#seeAlsoSection">See Also</a>
+                </li>
+              </ul>
+            </div>
+            <h2 id="DownloadingMessages" class="quickLinkHeader">Downloading messages</h2>
+            <div id="IDBABSection">
+              <p>
+          Once authenticated, <a href="P_MailKit_Net_Pop3_Pop3Client_Count.htm">Count</a>
+          contains the number of messages in the spool. Messages are accessed by index, from <span class="literal">0</span>
+          to <span class="literal">Count - 1</span>:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void DownloadMessages ()
+{
+    using (var client = new Pop3Client ()) {
+        client.Connect ("pop.gmail.com", 995, SecureSocketOptions.SslOnConnect);
+
+        client.Authenticate ("username", "password");
+
+        for (int i = 0; i &lt; client.Count; i++) {
+            var message = client.GetMessage (i);
+
+            // write the message to a file
+            message.WriteTo (string.Format ("{0}.eml", i));
+
+            // mark the message for deletion
+            client.DeleteMessage (i);
+        }
+
+        client.Disconnect (true);
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+              <p>
+          If the server supports the <span class="literal">PIPELINING</span> extension, downloading a batch of messages
+          at once using <a href="Overload_MailKit_Net_Pop3_Pop3Client_GetMessages.htm">GetMessages</a>
+          is significantly faster than downloading them one at a time because MailKit can send all of the
+          commands without waiting for each response:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void DownloadMessages ()
+{
+    using (var client = new Pop3Client ()) {
+        client.Connect ("pop.gmail.com", 995, SecureSocketOptions.SslOnConnect);
+
+        client.Authenticate ("username", "password");
+
+        int count = client.Count;
+
+        var messages = client.GetMessages (0, count);
+
+        for (int i = 0; i &lt; messages.Count; i++) {
+            // write the message to a file
+            messages[i].WriteTo (string.Format ("{0}.eml", i));
+        }
+
+        client.DeleteMessages (0, count);
+
+        client.Disconnect (true);
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+              <p>
+          To download only the headers of messages, use
+          <a href="Overload_MailKit_Net_Pop3_Pop3Client_GetMessageHeaders.htm">GetMessageHeaders</a>
+          (requires the <span class="literal">TOP</span> extension).
+          <a href="M_MailKit_Net_Pop3_Pop3Client_GetMessageSizesAsync.htm">GetMessageSizesAsync</a>
+          returns the size of every message, which can be used to skip unusually large messages.
+        </p>
+              <p>
+          To process very large messages without loading them entirely into memory, use
+          <a href="M_MailKit_Net_Pop3_Pop3Client_GetStreamAsync.htm">GetStreamAsync</a>
+          to get the raw message stream and copy it directly to disk.
+        </p>
+            </div>
+            <h2 id="NewMessages" class="quickLinkHeader">Downloading only new messages</h2>
+            <div id="IDCABSection">
+              <p>
+          POP3 does not keep track of which messages a client has already seen. Message indexes are only
+          valid for the duration of a session, so to avoid downloading the same messages again, keep track
+          of each message's unique identifier (UID). If the server supports the <span class="literal">UIDL</span>
+          extension, <a href="M_MailKit_Net_Pop3_Pop3Client_GetMessageUids.htm">GetMessageUids</a>
+          returns the UID of each message, which remains the same across sessions:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void DownloadNewMessages (HashSet&lt;string&gt; previouslyDownloadedUids)
+{
+    using (var client = new Pop3Client ()) {
+        client.Connect ("pop.gmail.com", 995, SecureSocketOptions.SslOnConnect);
+
+        client.Authenticate ("username", "password");
+
+        if (!client.Capabilities.Contains (Pop3Capability.UIDL))
+            throw new Exception ("The POP3 server does not support UIDs!");
+
+        var uids = client.GetMessageUids ();
+
+        for (int i = 0; i &lt; client.Count; i++) {
+            // check that we haven't already downloaded this message
+            // in a previous session
+            if (previouslyDownloadedUids.Contains (uids[i]))
+                continue;
+
+            var message = client.GetMessage (i);
+
+            // write the message to a file
+            message.WriteTo (string.Format ("{0}.eml", uids[i]));
+
+            // add the message uid to our list of downloaded uids
+            previouslyDownloadedUids.Add (uids[i]);
+        }
+
+        client.Disconnect (true);
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            <h2 id="DeletingMessages" class="quickLinkHeader">Deleting messages</h2>
+            <div id="IDDABSection">
+              <p>
+                <a href="Overload_MailKit_Net_Pop3_Pop3Client_DeleteMessages.htm">DeleteMessages</a>,
+          <a href="Overload_MailKit_Net_Pop3_Pop3Client_DeleteMessages.htm">DeleteMessages</a> and
+          <a href="M_MailKit_Net_Pop3_Pop3Client_DeleteAllMessages.htm">DeleteAllMessages</a>
+          only <em>mark</em> messages for deletion. The messages are not actually removed
+          until the session ends cleanly by calling
+          <a href="M_MailKit_Net_Pop3_Pop3Client_Disconnect.htm">Disconnect</a>
+          with <span class="code">quit</span> set to <span class="code">true</span>, which sends the
+          <span class="literal">QUIT</span> command.
+        </p>
+              <p>
+          If the connection is dropped, or if you disconnect without sending <span class="literal">QUIT</span>, the
+          messages remain in the spool. You can also undo all pending deletions by calling
+          <a href="M_MailKit_Net_Pop3_Pop3Client_Reset.htm">Reset</a>.
+        </p>
+              <article class="message is-info">
+                <div class="message-header">
+                  <p>
+                    <span class="icon">
+                      <i class="fa fa-info-circle"></i>
+                    </span>  Note</p>
+                </div>
+                <div class="message-body">
+                  <p>
+            Some servers (such as Gmail) ignore deletion requests or apply their own policy, depending on
+            the account settings.
+          </p>
+                </div>
+              </article>
+            </div>
+            <h2 id="Capabilities" class="quickLinkHeader">Server capabilities</h2>
+            <div id="IDEABSection">
+              <p>
+          After connecting, the <a href="P_MailKit_Net_Pop3_Pop3Client_Capabilities.htm">Capabilities</a>
+          property lists the extensions supported by the server, such as <span class="literal">UIDL</span>,
+          <span class="literal">TOP</span>, <span class="literal">PIPELINING</span> and <span class="literal">UTF8</span>. Some servers also
+          report an <a href="P_MailKit_Net_Pop3_Pop3Client_ExpirePolicy.htm">ExpirePolicy</a>
+          (how long messages are kept after being downloaded) and a
+          <a href="P_MailKit_Net_Pop3_Pop3Client_LoginDelay.htm">LoginDelay</a>
+          (the minimum number of seconds between logins).
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void PrintCapabilities ()
+{
+    using (var client = new Pop3Client ()) {
+        client.Connect ("pop.gmail.com", 995, SecureSocketOptions.SslOnConnect);
+
+        if (client.Capabilities.Contains (Pop3Capability.Sasl)) {
+            var mechanisms = string.Join (", ", client.AuthenticationMechanisms);
+            Console.WriteLine ("The POP3 server supports the following SASL mechanisms: {0}", mechanisms);
+        }
+
+        client.Authenticate ("username", "password");
+
+        if (client.Capabilities.Contains (Pop3Capability.Apop))
+            Console.WriteLine ("The server supports APOP authentication.");
+
+        if (client.Capabilities.Contains (Pop3Capability.Expire)) {
+            if (client.ExpirePolicy &gt; 0)
+                Console.WriteLine ("The POP3 server automatically expires messages after {0} days", client.ExpirePolicy);
+            else
+                Console.WriteLine ("The POP3 server will never expire messages.");
+        }
+
+        if (client.Capabilities.Contains (Pop3Capability.LoginDelay))
+            Console.WriteLine ("The minimum number of seconds between login attempts is {0}.", client.LoginDelay);
+
+        if (client.Capabilities.Contains (Pop3Capability.Pipelining))
+            Console.WriteLine ("The POP3 server can pipeline commands, so using client.GetMessages() will be faster.");
+
+        if (client.Capabilities.Contains (Pop3Capability.Top))
+            Console.WriteLine ("The POP3 server supports the TOP command, so it's possible to download message headers.");
+
+        if (client.Capabilities.Contains (Pop3Capability.UIDL))
+            Console.WriteLine ("The POP3 server supports the UIDL command which means we can track messages by UID.");
+
+        client.Disconnect (true);
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            <h2 id="ExceptionHandling" class="quickLinkHeader">Handling errors</h2>
+            <div id="IDFABSection">
+              <p>
+          When the server rejects a command (for example, a message that no longer exists), a
+          <a href="T_MailKit_Net_Pop3_Pop3CommandException.htm">Pop3CommandException</a> is thrown and the
+          connection remains usable. When the server sends an unexpected response, a
+          <a href="T_MailKit_Net_Pop3_Pop3ProtocolException.htm">Pop3ProtocolException</a> is thrown and the
+          client is disconnected.
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void DownloadNewMessages (HashSet&lt;string&gt; previouslyDownloadedUids)
+{
+    using (var client = new Pop3Client ()) {
+        IList&lt;string&gt; uids = null;
+
+        try {
+            client.Connect ("pop.gmail.com", 995, SecureSocketOptions.SslOnConnect);
+        } catch (Pop3CommandException ex) {
+            Console.WriteLine ("Error trying to connect: {0}", ex.Message);
+            Console.WriteLine ("\tStatusText: {0}", ex.StatusText);
+            return;
+        } catch (Pop3ProtocolException ex) {
+            Console.WriteLine ("Protocol error while trying to connect: {0}", ex.Message);
+            return;
+        }
+
+        try {
+            client.Authenticate ("username", "password");
+        } catch (AuthenticationException ex) {
+            Console.WriteLine ("Invalid user name or password.");
+            return;
+        } catch (Pop3CommandException ex) {
+            Console.WriteLine ("Error trying to authenticate: {0}", ex.Message);
+            Console.WriteLine ("\tStatusText: {0}", ex.StatusText);
+            return;
+        } catch (Pop3ProtocolException ex) {
+            Console.WriteLine ("Protocol error while trying to authenticate: {0}", ex.Message);
+            return;
+        }
+
+        // for the sake of this example, let's assume GMail supports the UIDL extension
+        if (client.Capabilities.Contains (Pop3Capability.UIDL)) {
+            try {
+                uids = client.GetMessageUids ();
+            } catch (Pop3CommandException ex) {
+                Console.WriteLine ("Error trying to get the list of uids: {0}", ex.Message);
+                Console.WriteLine ("\tStatusText: {0}", ex.StatusText);
+
+                // we'll continue on leaving uids set to null...
+            } catch (Pop3ProtocolException ex) {
+                Console.WriteLine ("Protocol error while trying to authenticate: {0}", ex.Message);
+
+                // Pop3ProtocolExceptions often cause the connection to drop
+                if (!client.IsConnected)
+                    return;
+            }
+        }
+
+        for (int i = 0; i &lt; client.Count; i++) {
+            if (uids != null &amp;&amp; previouslyDownloadedUids.Contains (uids[i])) {
+                // we must have downloaded this message in a previous session
+                continue;
+            }
+
+            try {
+                // download the message at the specified index
+                var message = client.GetMessage (i);
+
+                // write the message to a file
+                if (uids != null) {
+                    message.WriteTo (string.Format ("{0}.eml", uids[i]));
+
+                    // keep track of our downloaded message uids so we can skip downloading them next time
+                    previouslyDownloadedUids.Add (uids[i]);
+                } else {
+                    message.WriteTo (string.Format ("{0}.eml", i));
+                }
+            } catch (Pop3CommandException ex) {
+                Console.WriteLine ("Error downloading message {0}: {1}", i, ex.Message);
+                Console.WriteLine ("\tStatusText: {0}", ex.StatusText);
+                continue;
+            } catch (Pop3ProtocolException ex) {
+                Console.WriteLine ("Protocol error while sending message {0}: {1}", i, ex.Message);
+                // most likely the connection has been dropped
+                if (!client.IsConnected)
+                    break;
+            }
+        }
+
+        if (client.IsConnected) {
+            // if we do not disconnect cleanly, then the messages won't actually get deleted
+            client.Disconnect (true);
+        }
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            <h2 class="quickLinkHeader">See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Other Resources</h4>
+              <div>
+                <a href="Connecting-To-A-Server.htm">Connecting to a server</a>
+              </div>
+              <div>
+                <a href="Authentication.htm">Authentication</a>
+              </div>
+              <div>
+                <a href="Working-With-IMAP.htm">Working with IMAP</a>
+              </div>
+              <div>
+                <a href="Parsing-Messages.htm">Parsing messages</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Downloading messages</a>
+                </li>
+                <li>
+                  <a class="quickLink">Downloading only new messages</a>
+                </li>
+                <li>
+                  <a class="quickLink">Deleting messages</a>
+                </li>
+                <li>
+                  <a class="quickLink">Server capabilities</a>
+                </li>
+                <li>
+                  <a class="quickLink">Handling errors</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer id="PageFooter" class="footer border-top py-3">
+      <div class="columns">
+        <div id="FooterContent" class="column">
+          <p class="site-footer-links">
+            <a href="https://mimekit.net/">Home</a> <a href="https://github.com/jstedfast/MimeKit">MimeKit on GitHub</a> <a href="https://github.com/jstedfast/MailKit">MailKit on GitHub</a> <a href="https://github.com/sponsors/jstedfast">    Sponsor</a></p>
+          <p>
+            <a href="https://github.com/jstedfast" target="_blank" rel="noopener noreferrer">Copyright © 2013-2026 Jeffrey Stedfast</a>
+          </p>
+          <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:jestedfa%40microsoft.com?Subject=MailKit%20Documentation">Jeffrey Stedfast</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script></div>
+      </div>
+    </footer>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadToc();
+InitializeQuickLinks();
+hljs.highlightAll();
+});</script>
+  </body>
+</html>

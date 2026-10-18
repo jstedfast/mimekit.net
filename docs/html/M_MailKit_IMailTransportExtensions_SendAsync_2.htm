@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html []>
+<html lang="en-US" data-theme="light">
+  <head><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B7CEM3SL1V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B7CEM3SL1V');
+</script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/fontawesome.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/solid.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/regular.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/brands.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/presentationStyle.css?v=50DD4085" />
+    <script src="../scripts/jquery-3.7.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js?v=50DD4085"></script>
+    <script src="../scripts/highlight.min.js?v=50DD4085"></script>
+    <script src="../scripts/themeSwitcher.js?v=50DD4085"></script>
+    <script src="../scripts/presentationStyle.js?v=50DD4085"></script>
+    <title>IMailTransportExtensions.SendAsync(IMailTransport, MimeMessage, MailboxAddress, IEnumerable&lt;MailboxAddress&gt;, CancellationToken, ITransferProgress) Method</title>
+    <meta name="Title" content="SendAsync(IMailTransport, MimeMessage, MailboxAddress, IEnumerable&lt;MailboxAddress&gt;, CancellationToken, ITransferProgress)" />
+    <meta name="Help.Id" content="M:MailKit.IMailTransportExtensions.SendAsync(MailKit.IMailTransport,MimeKit.MimeMessage,MimeKit.MailboxAddress,System.Collections.Generic.IEnumerable{MimeKit.MailboxAddress},System.Threading.CancellationToken,MailKit.ITransferProgress)" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MailKit" />
+    <meta name="guid" content="M_MailKit_IMailTransportExtensions_SendAsync_2" />
+    <meta name="Description" content="Asynchronously send the specified message using the supplied sender and recipients." />
+    <meta name="tocParentId" content="241" />
+  </head>
+  <body>
+    <header class="pageHeader" id="Header">
+      <div class="level mb-0 py-2 px-4">
+        <div id="TitleContainer" class="level-left">
+          <div id="DocumentationTitle" class="level-item">MailKit Documentation</div>
+        </div>
+        <div id="LangFilterSearchContainer" class="level-right">
+          <div id="ProjectLink" class="level-item" title="Project website" aria-label="Project website">
+            <a href="https://github.com/jstedfast/MailKit" rel="noopener noreferrer" target="_blank">
+              <span class="icon">
+                <i class="fa-brands fa-github"></i>
+              </span>
+            </a>
+          </div>
+          <div id="ThemeSwitcher" class="level-item" title="Toggle theme" aria-label="Toggle theme">
+            <span class="icon">
+              <i class="fa fa-regular fa-moon theme-icon-dark"></i>
+              <i class="fa fa-sun theme-icon-light"></i>
+            </span>
+          </div>
+          <div class="level-item">
+            <div class="dropdown is-hoverable">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span id="CurrentLanguage"></span>
+                  <span class="icon is-small">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" role="menu">
+                <div id="LanguageSelections" class="dropdown-content">
+                  <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="level-item">
+            <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+              <div class="field">
+                <div class="control has-icons-left">
+                  <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-search"></i>
+                  </span>
+                  <button id="SearchButton" type="submit" class="is-hidden"></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article>
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile toc-resizable">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu">
+                <li>Loading...</li>
+              </ul>
+            </nav>
+          </div>
+          <div id="Resizer" class="toc-resizer"></div>
+          <div id="TopicContent" class="column content is-7 toc-resizable-content">
+            <h1>IMail<wbr />Transport<wbr />Extensions<span id="LSTC00E2959_0" data-languageSpecificText="cpp=::|nu=."></span>Send<wbr />Async(IMail<wbr />Transport, Mime<wbr />Message, Mailbox<wbr />Address, IEnumerable<span id="LSTC00E2959_1" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span>Mailbox<wbr />Address<span id="LSTC00E2959_2" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>, Cancellation<wbr />Token, ITransfer<wbr />Progress) Method</h1>
+            <div class="summary">
+            Asynchronously send the specified message using the supplied sender and recipients.
+            </div>
+            <h2 class="quickLinkHeader">Definition</h2>
+            <div id="IDBSection">
+              <strong>Namespace:</strong> <a href="N_MailKit.htm">MailKit</a><br /><strong>Assembly:</strong> MailKit (in MailKit.dll) Version: 5.0.0<div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">static</span> <span class="identifier">Task</span>&lt;<span class="identifier">SendResult</span>&gt; <span class="identifier">SendAsync</span>(
+	<span class="keyword">this</span> <span class="identifier">IMailTransport</span> <span class="parameter">transport</span>,
+	<span class="identifier">MimeMessage</span> <span class="parameter">message</span>,
+	<span class="identifier">MailboxAddress</span> <span class="parameter">sender</span>,
+	<span class="identifier">IEnumerable</span>&lt;<span class="identifier">MailboxAddress</span>&gt; <span class="parameter">recipients</span>,
+	<span class="identifier">CancellationToken</span> <span class="parameter">cancellationToken</span> = <span class="keyword">default</span>,
+	<span class="identifier">ITransferProgress</span>? <span class="parameter">progress</span> = <span class="keyword">null</span>
+)</code></pre></div></div><h4 class="quickLinkHeader">Parameters</h4><dl><dt class="has-text-weight-normal"><span class="parameter">transport</span>  <a href="T_MailKit_IMailTransport.htm">IMailTransport</a></dt><dd>The transport.</dd><dt class="has-text-weight-normal"><span class="parameter">message</span>  <a href="T_MimeKit_MimeMessage.htm">MimeMessage</a></dt><dd>The message.</dd><dt class="has-text-weight-normal"><span class="parameter">sender</span>  <a href="T_MimeKit_MailboxAddress.htm">MailboxAddress</a></dt><dd>The mailbox address to use for sending the message.</dd><dt class="has-text-weight-normal"><span class="parameter">recipients</span>  <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1" target="_blank" rel="noopener noreferrer">IEnumerable</a><span id="LSTC00E2959_3" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MimeKit_MailboxAddress.htm">MailboxAddress</a><span id="LSTC00E2959_4" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span></dt><dd>The mailbox addresses that should receive the message.</dd><dt class="has-text-weight-normal"><span class="parameter">cancellationToken</span>  <a href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken" target="_blank" rel="noopener noreferrer">CancellationToken</a>  (Optional)</dt><dd>The cancellation token.</dd><dt class="has-text-weight-normal"><span class="parameter">progress</span>  <a href="T_MailKit_ITransferProgress.htm">ITransferProgress</a>  (Optional)</dt><dd>The progress reporting mechanism.</dd></dl><h4 class="quickLinkHeader">Return Value</h4><a href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1" target="_blank" rel="noopener noreferrer">Task</a><span id="LSTC00E2959_5" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_SendResult.htm">SendResult</a><span id="LSTC00E2959_6" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span><br />The result of sending the message.<h4 class="quickLinkHeader">Usage Note</h4>In Visual Basic and C#, you can call this method as an instance method on any object of type <a href="T_MailKit_IMailTransport.htm">IMailTransport</a>. When you use instance method syntax to call this method, omit the first parameter. For more information, see <a href="https://docs.microsoft.com/dotnet/visual-basic/programming-guide/language-features/procedures/extension-methods" target="_blank" rel="noopener noreferrer">Extension Methods (Visual Basic)</a> or <a href="https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/extension-methods" target="_blank" rel="noopener noreferrer">Extension Methods (C# Programming Guide)</a>.</div>
+            <h2 class="quickLinkHeader">Remarks</h2>
+            <div id="IDBCSection">
+            Asynchronously sends the specified message using the supplied sender and recipients.
+            </div>
+            <h2 class="quickLinkHeader">Exceptions</h2>
+            <div id="IDJCSection">
+              <table class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception" target="_blank" rel="noopener noreferrer">ArgumentNullException</a>
+                  </td>
+                  <td>
+                    <p>
+                      <span class="parameter">message</span> is <span class="keyword"><span id="LSTC00E2959_7" data-languageSpecificText="cpp=nullptr|vb=Nothing|nu=null"></span></span>.</p>
+                    <p>-or-</p>
+                    <p>
+                      <span class="parameter">sender</span> is <span class="keyword"><span id="LSTC00E2959_8" data-languageSpecificText="cpp=nullptr|vb=Nothing|nu=null"></span></span>.</p>
+                    <p>-or-</p>
+                    <p>
+                      <span class="parameter">recipients</span> is <span class="keyword"><span id="LSTC00E2959_9" data-languageSpecificText="cpp=nullptr|vb=Nothing|nu=null"></span></span>.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception" target="_blank" rel="noopener noreferrer">ObjectDisposedException</a>
+                  </td>
+                  <td>
+            The <a href="T_MailKit_IMailTransport.htm">IMailTransport</a> has been disposed.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MailKit_ServiceNotConnectedException.htm">ServiceNotConnectedException</a>
+                  </td>
+                  <td>
+            The <a href="T_MailKit_IMailTransport.htm">IMailTransport</a> is not connected.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MailKit_ServiceNotAuthenticatedException.htm">ServiceNotAuthenticatedException</a>
+                  </td>
+                  <td>
+            Authentication is required before sending a message.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception" target="_blank" rel="noopener noreferrer">InvalidOperationException</a>
+                  </td>
+                  <td>
+                    <p>A sender has not been specified.</p>
+                    <p>-or-</p>
+                    <p>No recipients have been specified.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception" target="_blank" rel="noopener noreferrer">OperationCanceledException</a>
+                  </td>
+                  <td>
+            The operation has been canceled.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.io.ioexception" target="_blank" rel="noopener noreferrer">IOException</a>
+                  </td>
+                  <td>
+            An I/O error occurred.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MailKit_CommandException.htm">CommandException</a>
+                  </td>
+                  <td>
+            The send command failed.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="T_MailKit_ProtocolException.htm">ProtocolException</a>
+                  </td>
+                  <td>
+            A protocol exception occurred.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Reference</h4>
+              <div>
+                <a href="T_MailKit_IMailTransportExtensions.htm">IMailTransportExtensions Class</a>
+              </div>
+              <div>
+                <a href="Overload_MailKit_IMailTransportExtensions_SendAsync.htm">SendAsync Overload</a>
+              </div>
+              <div>
+                <a href="N_MailKit.htm">MailKit Namespace</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Definition</a>
+                  <ul class="menu">
+                    <li>
+                      <a class="quickLink">Parameters</a>
+                    </li>
+                    <li>
+                      <a class="quickLink">Return Value</a>
+                    </li>
+                    <li>
+                      <a class="quickLink">Usage Note</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="quickLink">Remarks</a>
+                </li>
+                <li>
+                  <a class="quickLink">Exceptions</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer id="PageFooter" class="footer border-top py-3">
+      <div class="columns">
+        <div id="FooterContent" class="column">
+          <p class="site-footer-links">
+            <a href="https://mimekit.net/">Home</a> <a href="https://github.com/jstedfast/MimeKit">MimeKit on GitHub</a> <a href="https://github.com/jstedfast/MailKit">MailKit on GitHub</a> <a href="https://github.com/sponsors/jstedfast">    Sponsor</a></p>
+          <p>
+            <a href="https://github.com/jstedfast" target="_blank" rel="noopener noreferrer">Copyright © 2013-2026 Jeffrey Stedfast</a>
+          </p>
+          <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:jestedfa%40microsoft.com?Subject=MailKit%20Documentation">Jeffrey Stedfast</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script></div>
+      </div>
+    </footer>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadToc();
+InitializeQuickLinks();
+hljs.highlightAll();
+});</script>
+  </body>
+</html>

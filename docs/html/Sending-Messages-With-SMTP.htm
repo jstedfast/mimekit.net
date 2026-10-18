@@ -1,0 +1,881 @@
+﻿<!DOCTYPE html []>
+<html lang="en-US" data-theme="light">
+  <head><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B7CEM3SL1V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B7CEM3SL1V');
+</script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/fontawesome.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/solid.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/regular.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/brands.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/presentationStyle.css?v=50DD4085" />
+    <script src="../scripts/jquery-3.7.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js?v=50DD4085"></script>
+    <script src="../scripts/highlight.min.js?v=50DD4085"></script>
+    <script src="../scripts/themeSwitcher.js?v=50DD4085"></script>
+    <script src="../scripts/presentationStyle.js?v=50DD4085"></script>
+    <title>Sending messages with SMTP</title>
+    <meta name="Title" content="Sending messages with SMTP" />
+    <meta name="Help.Id" content="Sending-Messages-With-SMTP" />
+    <meta name="Help.ContentType" content="Concepts" />
+    <meta name="guid" content="Sending-Messages-With-SMTP" />
+    <meta name="Description" content="T:MailKit.Net.Smtp.SmtpClient is used to send messages created with MimeKit. This topic covers sending messages, controlling the envelope, handling rejected recipients, requesting delivery status notifications and other SMTP features." />
+    <meta name="tocParentId" content="1" />
+  </head>
+  <body>
+    <header class="pageHeader" id="Header">
+      <div class="level mb-0 py-2 px-4">
+        <div id="TitleContainer" class="level-left">
+          <div id="DocumentationTitle" class="level-item">MailKit Documentation</div>
+        </div>
+        <div id="LangFilterSearchContainer" class="level-right">
+          <div id="ProjectLink" class="level-item" title="Project website" aria-label="Project website">
+            <a href="https://github.com/jstedfast/MailKit" rel="noopener noreferrer" target="_blank">
+              <span class="icon">
+                <i class="fa-brands fa-github"></i>
+              </span>
+            </a>
+          </div>
+          <div id="ThemeSwitcher" class="level-item" title="Toggle theme" aria-label="Toggle theme">
+            <span class="icon">
+              <i class="fa fa-regular fa-moon theme-icon-dark"></i>
+              <i class="fa fa-sun theme-icon-light"></i>
+            </span>
+          </div>
+          <div class="level-item">
+            <div class="dropdown is-hoverable">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span id="CurrentLanguage"></span>
+                  <span class="icon is-small">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" role="menu">
+                <div id="LanguageSelections" class="dropdown-content">
+                  <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="level-item">
+            <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+              <div class="field">
+                <div class="control has-icons-left">
+                  <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-search"></i>
+                  </span>
+                  <button id="SearchButton" type="submit" class="is-hidden"></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article>
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile toc-resizable">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu">
+                <li>Loading...</li>
+              </ul>
+            </nav>
+          </div>
+          <div id="Resizer" class="toc-resizer"></div>
+          <div id="TopicContent" class="column content is-7 toc-resizable-content">
+            <h1>Sending messages with SMTP</h1>
+            <div>
+              <p>
+                <a href="T_MailKit_Net_Smtp_SmtpClient.htm">SmtpClient</a> is used to send messages
+        created with MimeKit. This topic covers sending messages, controlling the envelope, handling
+        rejected recipients, requesting delivery status notifications and other SMTP features.
+      </p>
+              <p>
+        For information about connecting securely, logging and error handling, see
+        <a href="Connecting-To-A-Server.htm">Connecting to a server</a>. For information about authenticating, see
+        <a href="Authentication.htm">Authentication</a>.
+      </p>
+              <p class="is-hidden-tablet">This topic contains the following sections:</p>
+              <ul class="is-hidden-tablet">
+                <li>
+                  <a href="#SendingMessages">Sending a message</a>
+                </li>
+                <li>
+                  <a href="#Envelope">Senders and recipients</a>
+                </li>
+                <li>
+                  <a href="#SendResults">Examining the result</a>
+                </li>
+                <li>
+                  <a href="#RejectedRecipients">Handling rejected recipients</a>
+                </li>
+                <li>
+                  <a href="#DeliveryStatusNotifications">Delivery status notifications</a>
+                </li>
+                <li>
+                  <a href="#Capabilities">Server capabilities</a>
+                </li>
+                <li>
+                  <a href="#PickupDirectory">Saving messages to a pickup directory</a>
+                </li>
+                <li>
+                  <a href="#seeAlsoSection">See Also</a>
+                </li>
+              </ul>
+            </div>
+            <h2 id="SendingMessages" class="quickLinkHeader">Sending a message</h2>
+            <div id="IDBABSection">
+              <p>
+          The typical workflow is to connect, authenticate, send one or more messages and then disconnect:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void SendMessage (MimeMessage message)
+{
+    using (var client = new SmtpClient ()) {
+        client.Connect ("smtp.gmail.com", 465, SecureSocketOptions.SslOnConnect);
+
+        client.Authenticate ("username", "password");
+
+        client.Send (message);
+
+        client.Disconnect (true);
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+              <p>
+          Connecting and authenticating is relatively expensive, so if you have multiple messages to send,
+          reuse the same connection for all of them rather than connecting once per message:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void SendMessages (IList&lt;MimeMessage&gt; messages)
+{
+    using (var client = new SmtpClient ()) {
+        client.Connect ("smtp.gmail.com", 465, SecureSocketOptions.SslOnConnect);
+
+        client.Authenticate ("username", "password");
+
+        foreach (var message in messages) {
+            client.Send (message);
+        }
+
+        client.Disconnect (true);
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+              <article class="message is-info">
+                <div class="message-header">
+                  <p>
+                    <span class="icon">
+                      <i class="fa fa-info-circle"></i>
+                    </span>  Note</p>
+                </div>
+                <div class="message-body">
+                  <p>
+                    <a href="T_MailKit_Net_Smtp_SmtpClient.htm">SmtpClient</a> is not thread-safe. To send
+            messages concurrently, use one <a href="T_MailKit_Net_Smtp_SmtpClient.htm">SmtpClient</a>
+            per thread (or a pool of clients).
+          </p>
+                </div>
+              </article>
+            </div>
+            <h2 id="Envelope" class="quickLinkHeader">Senders and recipients</h2>
+            <div id="IDCABSection">
+              <p>
+          Unless you specify otherwise, the SMTP envelope is derived from the message headers:
+        </p>
+              <ul>
+                <li>
+                  <p>
+              The envelope sender (<span class="literal">MAIL FROM</span>) is the <span class="literal">Resent-Sender</span> or
+              first <span class="literal">Resent-From</span> mailbox if the message has been resent, otherwise the
+              <span class="literal">Sender</span> or first <span class="literal">From</span> mailbox.
+            </p>
+                </li>
+                <li>
+                  <p>
+              The envelope recipients (<span class="literal">RCPT TO</span>) are the mailboxes in the
+              <span class="literal">Resent-To</span>, <span class="literal">Resent-Cc</span> and <span class="literal">Resent-Bcc</span> headers
+              if the message has been resent, otherwise the mailboxes in the <span class="literal">To</span>,
+              <span class="literal">Cc</span> and <span class="literal">Bcc</span> headers.
+            </p>
+                </li>
+              </ul>
+              <p>
+          The <span class="literal">Bcc</span> and <span class="literal">Resent-Bcc</span> headers are never transmitted, so
+          the other recipients cannot see them.
+        </p>
+              <p>
+          To use a different envelope (for example, to send a message to a different list of recipients
+          than the ones listed in the headers), pass the sender and recipients explicitly using a
+          <a href="T_MailKit_SendRequest.htm">SendRequest</a> or
+          <a href="T_MailKit_Net_Smtp_SmtpSendRequest.htm">SmtpSendRequest</a>:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">var request = new SmtpSendRequest (message, sender, recipients);
+
+client.Send (request);</code>
+                  </pre>
+                </div>
+              </div>
+              <p>
+          If the server supports the <span class="literal">SMTPUTF8</span> extension, you can send messages that
+          contain international (non-ASCII) email addresses and headers by enabling
+          <a href="P_MimeKit_FormatOptions_International.htm">International</a>:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void SendMessageWithOptions (MimeMessage message)
+{
+    using (var client = new SmtpClient ()) {
+        client.Connect ("smtp.gmail.com", 465, SecureSocketOptions.SslOnConnect);
+
+        client.Authenticate ("username", "password");
+
+        var options = FormatOptions.Default.Clone ();
+
+        if (client.Capabilities.Contains (SmtpCapability.UTF8))
+            options.International = true;
+
+        client.Send (options, message);
+
+        client.Disconnect (true);
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            <h2 id="SendResults" class="quickLinkHeader">Examining the result</h2>
+            <div id="IDDABSection">
+              <p>
+                <a href="Overload_MailKit_Net_Smtp_SmtpClient_Send.htm">Send</a>
+          returns a <a href="T_MailKit_SendResult.htm">SendResult</a> (an
+          <a href="T_MailKit_Net_Smtp_SmtpSendResult.htm">SmtpSendResult</a> when using
+          <a href="T_MailKit_Net_Smtp_SmtpClient.htm">SmtpClient</a>) containing the server's
+          final response along with the lists of accepted and rejected recipients. Many servers include
+          a queue identifier in the response text, which can be useful for tracking the message in the
+          server's logs.
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void SendMessage (MimeMessage message)
+{
+    using (var client = new SmtpClient ()) {
+        client.Connect ("smtp.example.com", 587, SecureSocketOptions.StartTls);
+        client.Authenticate ("username", "password");
+
+        var result = (SmtpSendResult) client.Send (new SmtpSendRequest (message));
+
+        // The ResponseText is the server's final response to the DATA (or BDAT) command.
+        // Many servers include a queue identifier that can be useful for tracking the message.
+        Console.WriteLine ("{0}: {1}", result.StatusCode, result.ResponseText);
+
+        foreach (var recipient in result.AcceptedRecipients)
+            Console.WriteLine ("Accepted: {0}", recipient);
+
+        client.Disconnect (true);
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            <h2 id="RejectedRecipients" class="quickLinkHeader">Handling rejected recipients</h2>
+            <div id="IDEABSection">
+              <p>
+          By default, if the server rejects any of the recipients, an
+          <a href="T_MailKit_Net_Smtp_SmtpCommandException.htm">SmtpCommandException</a> is thrown with an
+          <a href="P_MailKit_Net_Smtp_SmtpCommandException_ErrorCode.htm">ErrorCode</a> of
+          <span class="code">RecipientNotAccepted</span> and the message is not sent to anyone. The
+          <a href="P_MailKit_Net_Smtp_SmtpCommandException_Mailbox.htm">Mailbox</a> property
+          identifies the rejected recipient.
+        </p>
+              <p>
+          To deliver the message to the remaining recipients instead, subclass
+          <a href="T_MailKit_Net_Smtp_SmtpSendRequest.htm">SmtpSendRequest</a> and override
+          <a href="M_MailKit_Net_Smtp_SmtpSendRequest_OnRecipientNotAccepted.htm">OnRecipientNotAccepted(MailboxAddress, SmtpResponse)</a>
+          so that it does not throw. Rejected recipients are then listed in
+          <a href="P_MailKit_SendResult_RejectedRecipients.htm">RejectedRecipients</a>.
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public class LenientSendRequest : SmtpSendRequest
+{
+    public LenientSendRequest (MimeMessage message) : base (message)
+    {
+    }
+
+    public override void OnRecipientNotAccepted (MailboxAddress recipient, SmtpResponse response)
+    {
+        // Don't throw; the recipient will be listed in SendResult.RejectedRecipients instead.
+        Console.WriteLine ("{0} was rejected: {1} {2}", recipient, response.StatusCode, response.ResponseText);
+    }
+}
+
+public static void SendToAvailableRecipients (MimeMessage message)
+{
+    using (var client = new SmtpClient ()) {
+        client.Connect ("smtp.example.com", 587, SecureSocketOptions.StartTls);
+        client.Authenticate ("username", "password");
+
+        try {
+            var result = client.Send (new LenientSendRequest (message));
+
+            foreach (var recipient in result.RejectedRecipients)
+                Console.WriteLine ("Not delivered to: {0}", recipient);
+        } catch (SmtpCommandException ex) when (ex.ErrorCode == SmtpErrorCode.MessageNotAccepted) {
+            // If *none* of the recipients were accepted, an SmtpCommandException is still thrown.
+            Console.WriteLine ("None of the recipients were accepted.");
+        }
+
+        client.Disconnect (true);
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+              <p>
+                <a href="T_MailKit_Net_Smtp_SmtpSendRequest.htm">SmtpSendRequest</a> also has
+          <a href="M_MailKit_Net_Smtp_SmtpSendRequest_OnSenderAccepted.htm">OnSenderAccepted(MailboxAddress, SmtpResponse)</a>,
+          <a href="M_MailKit_Net_Smtp_SmtpSendRequest_OnSenderNotAccepted.htm">OnSenderNotAccepted(MailboxAddress, SmtpResponse)</a>,
+          <a href="M_MailKit_Net_Smtp_SmtpSendRequest_OnRecipientAccepted.htm">OnRecipientAccepted(MailboxAddress, SmtpResponse)</a> and
+          <a href="M_MailKit_Net_Smtp_SmtpSendRequest_OnNoRecipientsAccepted.htm">OnNoRecipientsAccepted<span id="LSTBB80B40_0" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>
+          methods that can be overridden to observe each step of the transaction.
+        </p>
+            </div>
+            <h2 id="DeliveryStatusNotifications" class="quickLinkHeader">Delivery status notifications</h2>
+            <div id="IDFABSection">
+              <p>
+          If the server supports the <span class="literal">DSN</span> extension, you can ask it to notify the sender
+          when a message is delivered, delayed or fails to be delivered to each recipient. Set the
+          <a href="P_MailKit_Net_Smtp_SmtpSendRequest_DeliveryStatusNotifications.htm">DeliveryStatusNotifications</a>
+          property (or override
+          <a href="M_MailKit_Net_Smtp_SmtpSendRequest_GetDeliveryStatusNotifications.htm">GetDeliveryStatusNotifications(MailboxAddress)</a>
+          to choose per recipient) and optionally an
+          <a href="P_MailKit_Net_Smtp_SmtpSendRequest_EnvelopeId.htm">EnvelopeId</a> that will be
+          included in the notifications so that you can correlate them with the original message:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void SendWithDeliveryStatusNotifications (MimeMessage message)
+{
+    var request = new SmtpSendRequest (message) {
+        // Since you will want to be able to map the envelope identifier back to the
+        // message, the obvious identifier to use is probably the Message-Id value.
+        EnvelopeId = message.MessageId,
+
+        // Request that the server include only the headers of the original message
+        // in any delivery status notifications that it sends back.
+        DeliveryStatusNotificationType = DeliveryStatusNotificationType.HeadersOnly,
+
+        // In this example, we only want to be notified of failures to deliver to a mailbox.
+        // If you also want to be notified of delays or successful deliveries, simply bitwise-or
+        // whatever combination of flags you want to be notified about.
+        DeliveryStatusNotifications = DeliveryStatusNotification.Failure
+    };
+
+    using (var client = new SmtpClient ()) {
+        client.Connect ("smtp.gmail.com", 465, SecureSocketOptions.SslOnConnect);
+        client.Authenticate ("username", "password");
+
+        var result = (SmtpSendResult) client.Send (request);
+
+        Console.WriteLine ($"The server responded with: {result.StatusCode} {result.ResponseText}");
+
+        client.Disconnect (true);
+    }
+}
+
+public class PerRecipientSmtpSendRequest : SmtpSendRequest
+{
+    public PerRecipientSmtpSendRequest (MimeMessage message) : base (message)
+    {
+        EnvelopeId = message.MessageId;
+    }
+
+    /// &lt;summary&gt;
+    /// Get the types of delivery status notification desired for the specified recipient mailbox.
+    /// &lt;/summary&gt;
+    /// &lt;remarks&gt;
+    /// Gets the types of delivery status notification desired for the specified recipient mailbox.
+    /// &lt;/remarks&gt;
+    /// &lt;returns&gt;The desired delivery status notification type.&lt;/returns&gt;
+    /// &lt;param name="recipient"&gt;The recipient mailbox.&lt;/param&gt;
+    public override DeliveryStatusNotification? GetDeliveryStatusNotifications (MailboxAddress recipient)
+    {
+        // Only request delivery status notifications for recipients outside of our domain.
+        if (recipient.Domain.Equals ("example.com", StringComparison.OrdinalIgnoreCase))
+            return DeliveryStatusNotification.Never;
+
+        return DeliveryStatusNotification.Failure | DeliveryStatusNotification.Delay;
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+              <p>
+          Delivery status notifications arrive as ordinary messages in the sender's mailbox. See
+          <a href="T_MimeKit_MessageDeliveryStatus.htm">MessageDeliveryStatus</a> for parsing them:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public void ProcessDeliveryStatusNotification (MimeMessage message)
+{
+    var report = message.Body as MultipartReport;
+
+    if (report == null || report.ReportType == null || !report.ReportType.Equals ("delivery-status", StringComparison.OrdinalIgnoreCase)) {
+        // this is not a delivery status notification message...
+        return;
+    }
+
+    // process the report
+    foreach (var mds in report.OfType&lt;MessageDeliveryStatus&gt; ()) {
+        // process the status groups - each status group represents a different recipient
+
+        // The first status group contains information about the message
+        var envelopeId = mds.StatusGroups[0]["Original-Envelope-Id"];
+
+        // all of the other status groups contain per-recipient information
+        for (int i = 1; i &lt; mds.StatusGroups.Length; i++) {
+            var recipient = mds.StatusGroups[i]["Original-Recipient"];
+            var action = mds.StatusGroups[i]["Action"];
+
+            if (recipient == null)
+                recipient = mds.StatusGroups[i]["Final-Recipient"];
+
+            // the recipient string should be in the form: "rfc822;user@domain.com"
+            var index = recipient.IndexOf (';');
+            var address = recipient.Substring (index + 1);
+
+            switch (action) {
+            case "failed":
+                Console.WriteLine ("Delivery of message {0} failed for {1}", envelopeId, address);
+                break;
+            case "delayed":
+                Console.WriteLine ("Delivery of message {0} has been delayed for {1}", envelopeId, address);
+                break;
+            case "delivered":
+                Console.WriteLine ("Delivery of message {0} has been delivered to {1}", envelopeId, address);
+                break;
+            case "relayed":
+                Console.WriteLine ("Delivery of message {0} has been relayed for {1}", envelopeId, address);
+                break;
+            case "expanded":
+                Console.WriteLine ("Delivery of message {0} has been delivered to {1} and relayed to the the expanded recipients", envelopeId, address);
+                break;
+            }
+        }
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            <h2 id="Capabilities" class="quickLinkHeader">Server capabilities</h2>
+            <div id="IDGABSection">
+              <p>
+          After connecting, the <a href="P_MailKit_Net_Smtp_SmtpClient_Capabilities.htm">Capabilities</a>
+          property lists the SMTP extensions supported by the server. MailKit automatically takes advantage
+          of extensions such as <span class="literal">PIPELINING</span>, <span class="literal">8BITMIME</span>,
+          <span class="literal">BINARYMIME</span> and <span class="literal">CHUNKING</span> when they are available.
+          <a href="P_MailKit_Net_Smtp_SmtpClient_MaxSize.htm">MaxSize</a> reports the
+          maximum message size accepted by the server, if advertised.
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void PrintCapabilities ()
+{
+    using (var client = new SmtpClient ()) {
+        client.Connect ("smtp.gmail.com", 465, SecureSocketOptions.SslOnConnect);
+
+        if (client.Capabilities.Contains (SmtpCapability.Authentication)) {
+            var mechanisms = string.Join (", ", client.AuthenticationMechanisms);
+            Console.WriteLine ("The SMTP server supports the following SASL mechanisms: {0}", mechanisms);
+            client.Authenticate ("username", "password");
+        }
+
+        if (client.Capabilities.Contains (SmtpCapability.Size))
+            Console.WriteLine ("The SMTP server has a size restriction on messages: {0}.", client.MaxSize);
+
+        if (client.Capabilities.Contains (SmtpCapability.Dsn))
+            Console.WriteLine ("The SMTP server supports delivery-status notifications.");
+
+        if (client.Capabilities.Contains (SmtpCapability.EightBitMime))
+            Console.WriteLine ("The SMTP server supports Content-Transfer-Encoding: 8bit");
+
+        if (client.Capabilities.Contains (SmtpCapability.BinaryMime))
+            Console.WriteLine ("The SMTP server supports Content-Transfer-Encoding: binary");
+
+        if (client.Capabilities.Contains (SmtpCapability.UTF8))
+            Console.WriteLine ("The SMTP server supports UTF-8 in message headers.");
+
+        client.Disconnect (true);
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+              <p>
+          Some servers also support the <span class="literal">VRFY</span> and <span class="literal">EXPN</span> commands, which can
+          be used to verify an address or expand a mailing list. Most public servers disable these commands
+          to prevent address harvesting.
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void VerifyAddress ()
+{
+    using (var client = new SmtpClient ()) {
+        client.Connect ("smtp.mail-server.com", 465, SecureSocketOptions.SslOnConnect);
+        client.Authenticate ("username", "password");
+
+        try {
+            var verified = client.Verify ("smith");
+            Console.WriteLine ($"'smith' was resolved the the following mailbox: {verified}");
+        } catch (SmtpCommandException ex) {
+            Console.WriteLine ($"'smith' is not a valid address: {ex.Message}");
+        }
+
+        client.Disconnect (true);
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void ExpandAlias (string alias)
+{
+    using (var client = new SmtpClient ()) {
+        client.Connect ("smtp.mail-server.com", 465, SecureSocketOptions.SslOnConnect);
+        client.Authenticate ("username", "password");
+
+        var expanded = client.Expand (alias);
+
+        Console.WriteLine ($"Expanding the alias '{alias}' results in the following list of addresses:");
+        foreach (var mailbox in expanded.Mailboxes)
+            Console.WriteLine ($"* {mailbox}");
+
+        client.Disconnect (true);
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            <h2 id="PickupDirectory" class="quickLinkHeader">Saving messages to a pickup directory</h2>
+            <div id="IDHABSection">
+              <p>
+          Some servers (such as IIS) pick up messages from a directory on disk rather than accepting them
+          over the network. Messages written to a pickup directory must be "byte-stuffed" in the same way
+          that they would be when sent using the <span class="literal">DATA</span> command. The
+          <a href="T_MailKit_Net_Smtp_SmtpDataFilter.htm">SmtpDataFilter</a> can be used to do this:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void SaveToPickupDirectory (MimeMessage message, string pickupDirectory)
+{
+    do {
+        // Generate a random file name to save the message to.
+        var path = Path.Combine (pickupDirectory, Guid.NewGuid ().ToString () + ".eml");
+        Stream stream;
+
+        try {
+            // Attempt to create the new file.
+            stream = File.Open (path, FileMode.CreateNew);
+        } catch (IOException) {
+            // If the file already exists, try again with a new Guid.
+            if (File.Exists (path))
+                continue;
+
+            // Otherwise, fail immediately since it probably means that there is
+            // no graceful way to recover from this error.
+            throw;
+        }
+
+        try {
+            using (stream) {
+                // IIS pickup directories expect the message to be "byte-stuffed"
+                // which means that lines beginning with "." need to be escaped
+                // by adding an extra "." to the beginning of the line.
+                //
+                // Use an SmtpDataFilter to "byte-stuff" the message as it is written
+                // to the file stream. This is the same process that an SmtpClient
+                // would use when sending the message in a `DATA` command.
+                using (var filtered = new FilteredStream (stream)) {
+                    filtered.Add (new SmtpDataFilter ());
+
+                    // Make sure to write the message in DOS (&lt;CR&gt;&lt;LF&gt;) format.
+                    var options = FormatOptions.Default.Clone ();
+                    options.NewLineFormat = NewLineFormat.Dos;
+
+                    message.WriteTo (options, filtered);
+                    filtered.Flush ();
+                    return;
+                }
+            }
+        } catch {
+            // An exception here probably means that the disk is full.
+            //
+            // Delete the file that was created above so that incomplete files are not
+            // left behind for IIS to send accidentally.
+            File.Delete (path);
+            throw;
+        }
+    } while (true);
+}</code>
+                  </pre>
+                </div>
+              </div>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static MimeMessage LoadFromPickupDirectory (string fileName)
+{
+    using (var stream = File.OpenRead (fileName)) {
+        // IIS pickup directories store messages that have been "byte-stuffed"
+        // which means that lines beginning with "." have been escaped by
+        // adding an extra "." to the beginning of the line.
+        //
+        // Use an SmtpDataFilter to decode the message as it is loaded from
+        // the file stream. This is the reverse process that an SmtpClient
+        // would use when sending the message in a `DATA` command.
+        using (var filtered = new FilteredStream (stream)) {
+            filtered.Add (new SmtpDataFilter (decode: true));
+
+            return MimeMessage.Load (filtered);
+        }
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            <h2 class="quickLinkHeader">See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Other Resources</h4>
+              <div>
+                <a href="Connecting-To-A-Server.htm">Connecting to a server</a>
+              </div>
+              <div>
+                <a href="Authentication.htm">Authentication</a>
+              </div>
+              <div>
+                <a href="Creating-Messages.htm">Creating messages</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Sending a message</a>
+                </li>
+                <li>
+                  <a class="quickLink">Senders and recipients</a>
+                </li>
+                <li>
+                  <a class="quickLink">Examining the result</a>
+                </li>
+                <li>
+                  <a class="quickLink">Handling rejected recipients</a>
+                </li>
+                <li>
+                  <a class="quickLink">Delivery status notifications</a>
+                </li>
+                <li>
+                  <a class="quickLink">Server capabilities</a>
+                </li>
+                <li>
+                  <a class="quickLink">Saving messages to a pickup directory</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer id="PageFooter" class="footer border-top py-3">
+      <div class="columns">
+        <div id="FooterContent" class="column">
+          <p class="site-footer-links">
+            <a href="https://mimekit.net/">Home</a> <a href="https://github.com/jstedfast/MimeKit">MimeKit on GitHub</a> <a href="https://github.com/jstedfast/MailKit">MailKit on GitHub</a> <a href="https://github.com/sponsors/jstedfast">    Sponsor</a></p>
+          <p>
+            <a href="https://github.com/jstedfast" target="_blank" rel="noopener noreferrer">Copyright © 2013-2026 Jeffrey Stedfast</a>
+          </p>
+          <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:jestedfa%40microsoft.com?Subject=MailKit%20Documentation">Jeffrey Stedfast</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script></div>
+      </div>
+    </footer>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadToc();
+InitializeQuickLinks();
+hljs.highlightAll();
+});</script>
+  </body>
+</html>

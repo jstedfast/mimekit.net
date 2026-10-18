@@ -1,0 +1,631 @@
+﻿<!DOCTYPE html []>
+<html lang="en-US" data-theme="light">
+  <head><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B7CEM3SL1V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B7CEM3SL1V');
+</script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/fontawesome.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/solid.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/regular.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/brands.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/presentationStyle.css?v=50DD4085" />
+    <script src="../scripts/jquery-3.7.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js?v=50DD4085"></script>
+    <script src="../scripts/highlight.min.js?v=50DD4085"></script>
+    <script src="../scripts/themeSwitcher.js?v=50DD4085"></script>
+    <script src="../scripts/presentationStyle.js?v=50DD4085"></script>
+    <title>ImapResponseCodeType Enumeration</title>
+    <meta name="Title" content="ImapResponseCodeType" />
+    <meta name="Help.Id" content="T:MailKit.Net.Imap.ImapResponseCodeType" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MailKit.Net.Imap" />
+    <meta name="guid" content="T_MailKit_Net_Imap_ImapResponseCodeType" />
+    <meta name="Description" content="An enumeration of the known IMAP response codes." />
+    <meta name="tocParentId" content="487" />
+  </head>
+  <body>
+    <header class="pageHeader" id="Header">
+      <div class="level mb-0 py-2 px-4">
+        <div id="TitleContainer" class="level-left">
+          <div id="DocumentationTitle" class="level-item">MailKit Documentation</div>
+        </div>
+        <div id="LangFilterSearchContainer" class="level-right">
+          <div id="ProjectLink" class="level-item" title="Project website" aria-label="Project website">
+            <a href="https://github.com/jstedfast/MailKit" rel="noopener noreferrer" target="_blank">
+              <span class="icon">
+                <i class="fa-brands fa-github"></i>
+              </span>
+            </a>
+          </div>
+          <div id="ThemeSwitcher" class="level-item" title="Toggle theme" aria-label="Toggle theme">
+            <span class="icon">
+              <i class="fa fa-regular fa-moon theme-icon-dark"></i>
+              <i class="fa fa-sun theme-icon-light"></i>
+            </span>
+          </div>
+          <div class="level-item">
+            <div class="dropdown is-hoverable">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span id="CurrentLanguage"></span>
+                  <span class="icon is-small">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" role="menu">
+                <div id="LanguageSelections" class="dropdown-content">
+                  <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="level-item">
+            <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+              <div class="field">
+                <div class="control has-icons-left">
+                  <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-search"></i>
+                  </span>
+                  <button id="SearchButton" type="submit" class="is-hidden"></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article>
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile toc-resizable">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu">
+                <li>Loading...</li>
+              </ul>
+            </nav>
+          </div>
+          <div id="Resizer" class="toc-resizer"></div>
+          <div id="TopicContent" class="column content is-7 toc-resizable-content">
+            <h1>Imap<wbr />Response<wbr />Code<wbr />Type Enumeration</h1>
+            <div class="summary">
+            An enumeration of the known IMAP response codes.
+            </div>
+            <h2 class="quickLinkHeader">Definition</h2>
+            <div id="IDBSection">
+              <strong>Namespace:</strong> <a href="N_MailKit_Net_Imap.htm">MailKit.Net.Imap</a><br /><strong>Assembly:</strong> MailKit (in MailKit.dll) Version: 5.0.0<div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">enum</span> <span class="identifier">ImapResponseCodeType</span></code></pre></div></div></div>
+            <h2 class="quickLinkHeader">Remarks</h2>
+            <div id="IDBCSection">
+              <p>IMAP response codes are the bracketed atoms (such as <span class="code">[TRYCREATE]</span>) that a server
+            may include in a status response (<span class="code">OK</span>, <span class="code">NO</span>, <span class="code">BAD</span>, <span class="code">PREAUTH</span> or <span class="code">BYE</span>)
+            in order to provide additional, machine-readable information about the response.</p>
+              <p>Response codes that are not recognized by MailKit are represented by
+            <span class="selflink">Unknown</span>; the original atom is still available via the
+            <a href="P_MailKit_Net_Imap_ImapResponseCode_Atom.htm">Atom</a> property.</p>
+            </div>
+            <h2 class="quickLinkHeader">Members</h2>
+            <div id="IDAEASection">
+              <table id="enumMemberList" class="table is-hoverable">
+                <tr>
+                  <td>Alert</td>
+                  <td>0</td>
+                  <td>
+            The <span class="code">ALERT</span> response code indicates that the human-readable text of the response
+            is a special alert that must be presented to the user.
+            </td>
+                </tr>
+                <tr>
+                  <td>BadCharset</td>
+                  <td>1</td>
+                  <td>
+            The <span class="code">BADCHARSET</span> response code indicates that a <span class="code">SEARCH</span> failed because the
+            specified charset is not supported by the server.
+            </td>
+                </tr>
+                <tr>
+                  <td>Capability</td>
+                  <td>2</td>
+                  <td>
+            The <span class="code">CAPABILITY</span> response code contains a list of the server's capabilities.
+            </td>
+                </tr>
+                <tr>
+                  <td>NewName</td>
+                  <td>3</td>
+                  <td>
+            The <span class="code">NEWNAME</span> response code indicates that the requested mailbox has been renamed.
+            </td>
+                </tr>
+                <tr>
+                  <td>Parse</td>
+                  <td>4</td>
+                  <td>
+            The <span class="code">PARSE</span> response code indicates that the server failed to parse the headers
+            of a message.
+            </td>
+                </tr>
+                <tr>
+                  <td>PermanentFlags</td>
+                  <td>5</td>
+                  <td>
+            The <span class="code">PERMANENTFLAGS</span> response code contains the list of flags that the client can
+            change permanently in the selected mailbox.
+            </td>
+                </tr>
+                <tr>
+                  <td>ReadOnly</td>
+                  <td>6</td>
+                  <td>
+            The <span class="code">READ-ONLY</span> response code indicates that the mailbox is selected read-only.
+            </td>
+                </tr>
+                <tr>
+                  <td>ReadWrite</td>
+                  <td>7</td>
+                  <td>
+            The <span class="code">READ-WRITE</span> response code indicates that the mailbox is selected read-write.
+            </td>
+                </tr>
+                <tr>
+                  <td>TryCreate</td>
+                  <td>8</td>
+                  <td>
+            The <span class="code">TRYCREATE</span> response code indicates that an <span class="code">APPEND</span> or <span class="code">COPY</span> failed
+            because the target mailbox does not exist.
+            </td>
+                </tr>
+                <tr>
+                  <td>UidNext</td>
+                  <td>9</td>
+                  <td>
+            The <span class="code">UIDNEXT</span> response code contains the next unique identifier value of the mailbox.
+            </td>
+                </tr>
+                <tr>
+                  <td>UidValidity</td>
+                  <td>10</td>
+                  <td>
+            The <span class="code">UIDVALIDITY</span> response code contains the unique identifier validity value of the mailbox.
+            </td>
+                </tr>
+                <tr>
+                  <td>Unseen</td>
+                  <td>11</td>
+                  <td>
+            The <span class="code">UNSEEN</span> response code contains the sequence number of the first unseen message
+            in the mailbox.
+            </td>
+                </tr>
+                <tr>
+                  <td>Referral</td>
+                  <td>12</td>
+                  <td>
+            The <span class="code">REFERRAL</span> response code contains one or more IMAP URLs that the client should
+            use instead.
+            </td>
+                </tr>
+                <tr>
+                  <td>UnknownCte</td>
+                  <td>13</td>
+                  <td>
+            The <span class="code">UNKNOWN-CTE</span> response code indicates that the server does not know how to
+            decode the Content-Transfer-Encoding of the requested body part.
+            </td>
+                </tr>
+                <tr>
+                  <td>AppendUid</td>
+                  <td>14</td>
+                  <td>
+            The <span class="code">APPENDUID</span> response code contains the unique identifiers assigned to the
+            appended message(s).
+            </td>
+                </tr>
+                <tr>
+                  <td>CopyUid</td>
+                  <td>15</td>
+                  <td>
+            The <span class="code">COPYUID</span> response code contains the unique identifiers of the source messages
+            and the unique identifiers assigned to the copied messages.
+            </td>
+                </tr>
+                <tr>
+                  <td>UidNotSticky</td>
+                  <td>16</td>
+                  <td>
+            The <span class="code">UIDNOTSTICKY</span> response code indicates that the selected mailbox does not
+            support persistent unique identifiers.
+            </td>
+                </tr>
+                <tr>
+                  <td>UrlMech</td>
+                  <td>17</td>
+                  <td>
+            The <span class="code">URLMECH</span> response code contains the list of URLAUTH mechanisms supported by
+            the server.
+            </td>
+                </tr>
+                <tr>
+                  <td>BadUrl</td>
+                  <td>18</td>
+                  <td>
+            The <span class="code">BADURL</span> response code indicates that a <span class="code">CATENATE</span> URL could not be resolved.
+            </td>
+                </tr>
+                <tr>
+                  <td>TooBig</td>
+                  <td>19</td>
+                  <td>
+            The <span class="code">TOOBIG</span> response code indicates that the resulting message would be too large.
+            </td>
+                </tr>
+                <tr>
+                  <td>HighestModSeq</td>
+                  <td>20</td>
+                  <td>
+            The <span class="code">HIGHESTMODSEQ</span> response code contains the highest mod-sequence value of all
+            messages in the mailbox.
+            </td>
+                </tr>
+                <tr>
+                  <td>Modified</td>
+                  <td>21</td>
+                  <td>
+            The <span class="code">MODIFIED</span> response code contains the messages that failed the
+            <span class="code">UNCHANGEDSINCE</span> test of a conditional <span class="code">STORE</span>.
+            </td>
+                </tr>
+                <tr>
+                  <td>NoModSeq</td>
+                  <td>22</td>
+                  <td>
+            The <span class="code">NOMODSEQ</span> response code indicates that the selected mailbox does not support
+            persistent mod-sequences.
+            </td>
+                </tr>
+                <tr>
+                  <td>CompressionActive</td>
+                  <td>23</td>
+                  <td>
+            The <span class="code">COMPRESSIONACTIVE</span> response code indicates that compression is already active.
+            </td>
+                </tr>
+                <tr>
+                  <td>Closed</td>
+                  <td>24</td>
+                  <td>
+            The <span class="code">CLOSED</span> response code indicates that the previously selected mailbox has been closed.
+            </td>
+                </tr>
+                <tr>
+                  <td>NotSaved</td>
+                  <td>25</td>
+                  <td>
+            The <span class="code">NOTSAVED</span> response code indicates that the server is unable to save the
+            search result.
+            </td>
+                </tr>
+                <tr>
+                  <td>BadComparator</td>
+                  <td>26</td>
+                  <td>
+            The <span class="code">BADCOMPARATOR</span> response code indicates that the requested comparator is not supported.
+            </td>
+                </tr>
+                <tr>
+                  <td>Annotate</td>
+                  <td>27</td>
+                  <td>
+            The <span class="code">ANNOTATE</span> response code indicates that an annotation could not be stored.
+            </td>
+                </tr>
+                <tr>
+                  <td>Annotations</td>
+                  <td>28</td>
+                  <td>
+            The <span class="code">ANNOTATIONS</span> response code contains the annotation capabilities of the
+            selected mailbox.
+            </td>
+                </tr>
+                <tr>
+                  <td>MaxConvertMessages</td>
+                  <td>29</td>
+                  <td>
+            The <span class="code">MAXCONVERTMESSAGES</span> response code indicates the maximum number of messages that
+            can be converted by a single <span class="code">CONVERT</span> command.
+            </td>
+                </tr>
+                <tr>
+                  <td>MaxConvertParts</td>
+                  <td>30</td>
+                  <td>
+            The <span class="code">MAXCONVERTPARTS</span> response code indicates the maximum number of body parts that
+            can be converted by a single <span class="code">CONVERT</span> command.
+            </td>
+                </tr>
+                <tr>
+                  <td>TempFail</td>
+                  <td>31</td>
+                  <td>
+            The <span class="code">TEMPFAIL</span> response code indicates that a conversion failed due to a temporary
+            condition.
+            </td>
+                </tr>
+                <tr>
+                  <td>NoUpdate</td>
+                  <td>32</td>
+                  <td>
+            The <span class="code">NOUPDATE</span> response code indicates that the server will not send updates for
+            the specified <span class="code">CONTEXT</span> search.
+            </td>
+                </tr>
+                <tr>
+                  <td>Metadata</td>
+                  <td>33</td>
+                  <td>
+            The <span class="code">METADATA</span> response code provides information about a <span class="code">GETMETADATA</span> or
+            <span class="code">SETMETADATA</span> result.
+            </td>
+                </tr>
+                <tr>
+                  <td>NotificationOverflow</td>
+                  <td>34</td>
+                  <td>
+            The <span class="code">NOTIFICATIONOVERFLOW</span> response code indicates that the server has disabled
+            notifications because it could not keep up.
+            </td>
+                </tr>
+                <tr>
+                  <td>BadEvent</td>
+                  <td>35</td>
+                  <td>
+            The <span class="code">BADEVENT</span> response code indicates that the server does not support one or more
+            of the requested <span class="code">NOTIFY</span> events.
+            </td>
+                </tr>
+                <tr>
+                  <td>UndefinedFilter</td>
+                  <td>36</td>
+                  <td>
+            The <span class="code">UNDEFINED-FILTER</span> response code indicates that the requested search filter
+            does not exist.
+            </td>
+                </tr>
+                <tr>
+                  <td>Unavailable</td>
+                  <td>37</td>
+                  <td>
+            The <span class="code">UNAVAILABLE</span> response code indicates that a temporary failure occurred because
+            a subsystem is down.
+            </td>
+                </tr>
+                <tr>
+                  <td>AuthenticationFailed</td>
+                  <td>38</td>
+                  <td>
+            The <span class="code">AUTHENTICATIONFAILED</span> response code indicates that authentication failed.
+            </td>
+                </tr>
+                <tr>
+                  <td>AuthorizationFailed</td>
+                  <td>39</td>
+                  <td>
+            The <span class="code">AUTHORIZATIONFAILED</span> response code indicates that authentication succeeded but
+            the authenticated user is not permitted to use the requested authorization identity.
+            </td>
+                </tr>
+                <tr>
+                  <td>Expired</td>
+                  <td>40</td>
+                  <td>
+            The <span class="code">EXPIRED</span> response code indicates that the credentials or data have expired.
+            </td>
+                </tr>
+                <tr>
+                  <td>PrivacyRequired</td>
+                  <td>41</td>
+                  <td>
+            The <span class="code">PRIVACYREQUIRED</span> response code indicates that the operation is not permitted
+            without an encrypted connection.
+            </td>
+                </tr>
+                <tr>
+                  <td>ContactAdmin</td>
+                  <td>42</td>
+                  <td>
+            The <span class="code">CONTACTADMIN</span> response code indicates that the user should contact the
+            system administrator.
+            </td>
+                </tr>
+                <tr>
+                  <td>NoPerm</td>
+                  <td>43</td>
+                  <td>
+            The <span class="code">NOPERM</span> response code indicates that the user does not have permission to
+            perform the operation.
+            </td>
+                </tr>
+                <tr>
+                  <td>InUse</td>
+                  <td>44</td>
+                  <td>
+            The <span class="code">INUSE</span> response code indicates that the operation failed because a resource is
+            in use by another process.
+            </td>
+                </tr>
+                <tr>
+                  <td>ExpungeIssued</td>
+                  <td>45</td>
+                  <td>
+            The <span class="code">EXPUNGEISSUED</span> response code indicates that another client expunged messages
+            from the mailbox.
+            </td>
+                </tr>
+                <tr>
+                  <td>Corruption</td>
+                  <td>46</td>
+                  <td>
+            The <span class="code">CORRUPTION</span> response code indicates that the server discovered corrupt data.
+            </td>
+                </tr>
+                <tr>
+                  <td>ServerBug</td>
+                  <td>47</td>
+                  <td>
+            The <span class="code">SERVERBUG</span> response code indicates that the server encountered a bug in itself.
+            </td>
+                </tr>
+                <tr>
+                  <td>ClientBug</td>
+                  <td>48</td>
+                  <td>
+            The <span class="code">CLIENTBUG</span> response code indicates that the server believes the client has a bug.
+            </td>
+                </tr>
+                <tr>
+                  <td>CanNot</td>
+                  <td>49</td>
+                  <td>
+            The <span class="code">CANNOT</span> response code indicates that the operation violates an invariant of
+            the server and can never succeed.
+            </td>
+                </tr>
+                <tr>
+                  <td>Limit</td>
+                  <td>50</td>
+                  <td>
+            The <span class="code">LIMIT</span> response code indicates that the operation exceeds a server limit.
+            </td>
+                </tr>
+                <tr>
+                  <td>OverQuota</td>
+                  <td>51</td>
+                  <td>
+            The <span class="code">OVERQUOTA</span> response code indicates that the user would exceed a quota.
+            </td>
+                </tr>
+                <tr>
+                  <td>AlreadyExists</td>
+                  <td>52</td>
+                  <td>
+            The <span class="code">ALREADYEXISTS</span> response code indicates that the target of the operation already exists.
+            </td>
+                </tr>
+                <tr>
+                  <td>NonExistent</td>
+                  <td>53</td>
+                  <td>
+            The <span class="code">NONEXISTENT</span> response code indicates that the target of the operation does not exist.
+            </td>
+                </tr>
+                <tr>
+                  <td>UseAttr</td>
+                  <td>54</td>
+                  <td>
+            The <span class="code">USEATTR</span> response code indicates that the requested special-use attribute is
+            not supported.
+            </td>
+                </tr>
+                <tr>
+                  <td>MailboxId</td>
+                  <td>55</td>
+                  <td>
+            The <span class="code">MAILBOXID</span> response code contains the object identifier of a newly created mailbox.
+            </td>
+                </tr>
+                <tr>
+                  <td>WebAlert</td>
+                  <td>56</td>
+                  <td>
+            The GMail-specific <span class="code">WEBALERT</span> response code contains a URL that the user should visit,
+            typically in order to re-enable access to their account.
+            </td>
+                </tr>
+                <tr>
+                  <td>InProgress</td>
+                  <td>57</td>
+                  <td>
+            The <span class="code">INPROGRESS</span> response code indicates that the server is still processing a command
+            and may include an indication of how far it has progressed.
+            </td>
+                </tr>
+                <tr>
+                  <td>Unknown</td>
+                  <td>255</td>
+                  <td>
+            An unrecognized response code.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Reference</h4>
+              <div>
+                <a href="N_MailKit_Net_Imap.htm">MailKit.Net.Imap Namespace</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Definition</a>
+                </li>
+                <li>
+                  <a class="quickLink">Remarks</a>
+                </li>
+                <li>
+                  <a class="quickLink">Members</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer id="PageFooter" class="footer border-top py-3">
+      <div class="columns">
+        <div id="FooterContent" class="column">
+          <p class="site-footer-links">
+            <a href="https://mimekit.net/">Home</a> <a href="https://github.com/jstedfast/MimeKit">MimeKit on GitHub</a> <a href="https://github.com/jstedfast/MailKit">MailKit on GitHub</a> <a href="https://github.com/sponsors/jstedfast">    Sponsor</a></p>
+          <p>
+            <a href="https://github.com/jstedfast" target="_blank" rel="noopener noreferrer">Copyright © 2013-2026 Jeffrey Stedfast</a>
+          </p>
+          <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:jestedfa%40microsoft.com?Subject=MailKit%20Documentation">Jeffrey Stedfast</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script></div>
+      </div>
+    </footer>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadToc();
+InitializeQuickLinks();
+hljs.highlightAll();
+});</script>
+  </body>
+</html>

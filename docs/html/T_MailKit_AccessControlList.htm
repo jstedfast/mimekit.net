@@ -1,80 +1,431 @@
-﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="Microsoft.Help.SelfBranded" content="true" /><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Locale" content="en-us" /><meta name="Microsoft.Help.TopicLocale" content="en-us" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"></script><title>AccessControlList Class</title><meta name="Title" content="AccessControlList Class" /><meta name="Microsoft.Help.Id" content="T:MailKit.AccessControlList" /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="System.Keywords" content="MailKit.AccessControlList class" /><meta name="System.Keywords" content="AccessControlList class" /><meta name="Microsoft.Help.F1" content="MailKit.AccessControlList" /><meta name="Microsoft.Help.F1" content="AccessControlList" /><meta name="container" content="MailKit" /><meta name="file" content="T_MailKit_AccessControlList" /><meta name="guid" content="T_MailKit_AccessControlList" /><meta name="Microsoft.Help.Category" content="CSharp" /><meta name="Description" content="An Access Control List (ACL)" /><link type="text/css" rel="stylesheet" href="../styles/highlight.css" /><script type="text/javascript" src="../scripts/highlight.js"> </script><link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" /><script type="text/javascript" src="../scripts/jquery-3.7.1.min.js"></script><script type="text/javascript" src="../scripts/branding-Website.js"></script><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="SetDefaultLanguage('cs');"><input type="hidden" id="userDataCache" class="userDataStyle" /><div id="PageHeader" class="pageHeader">MailKit Documentation<form id="SearchForm" method="get" action="#" onsubmit="TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/Introduction.htm" title="MailKit Documentation" tocid="roottoc">MailKit Documentation</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/R_Project_Documentation.htm" title="API Reference" tocid="R_Project_Documentation">API Reference</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/N_MailKit.htm" title="MailKit" tocid="N_MailKit">MailKit</a></div><div class="toclevel1 current" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MailKit_AccessControlList.htm" title="AccessControlList Class" tocid="T_MailKit_AccessControlList">AccessControlList Class</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/Overload_MailKit_AccessControlList__ctor.htm" title="AccessControlList Constructor" tocid="Overload_MailKit_AccessControlList__ctor">AccessControlList Constructor</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/Properties_T_MailKit_AccessControlList.htm" title="AccessControlList Properties" tocid="Properties_T_MailKit_AccessControlList">AccessControlList Properties</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/Methods_T_MailKit_AccessControlList.htm" title="AccessControlList Methods" tocid="Methods_T_MailKit_AccessControlList">AccessControlList Methods</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div id="TopicContent" class="topicContent"><table class="titleTable"><tr><td class="logoColumn"><img alt="MimeKit" src="../icons/Help.png" /></td><td class="titleColumn"><h1>Access<wbr />Control<wbr />List Class</h1></td></tr></table><div class="summary">
-            An Access Control List (ACL)
-            </div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('IDDA')" onkeypress="SectionExpandCollapse_CheckKey('IDDA', event)" tabindex="0"><img id="IDDAToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Inheritance Hierarchy</span></div><div id="IDDASection" class="collapsibleSection"><a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">System<span id="LST33BF5DCF_0" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>Object</a><br />  <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">System.Collections.Generic<span id="LST33BF5DCF_1" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>List</a><span id="LST33BF5DCF_2" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_3" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span><br />    <span class="selflink">MailKit<span id="LST33BF5DCF_4" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>AccessControlList</span><br /></div><br /><strong>Namespace:</strong> <a href="N_MailKit.htm">MailKit</a><br /><strong>Assembly:</strong> MailKit (in MailKit.dll) Version: 4.17.0<div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('IDB')" onkeypress="SectionExpandCollapse_CheckKey('IDB', event)" tabindex="0"><img id="IDBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Syntax</span></div><div id="IDBSection" class="collapsibleSection"><div id="IDAB" class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="IDAB_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="IDAB_copyCode" href="#" class="copyCodeSnippet" onclick="CopyToClipboard('IDAB');return false;" title="Copy">Copy</a></div></div><div id="IDAB_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">AccessControlList</span> : <span class="identifier">List</span>&lt;<span class="identifier">AccessControl</span>&gt;</pre></div></div></div></div><p>The <span class="selflink">AccessControlList</span> type exposes the following members.</p><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('IDAAEA')" onkeypress="SectionExpandCollapse_CheckKey('IDAAEA', event)" tabindex="0"><img id="IDAAEAToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Constructors</span></div><div id="IDAAEASection" class="collapsibleSection"><table id="ConstructorList" class="members"><tr><th class="iconColumn"> </th><th>Name</th><th>Description</th></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_MailKit_AccessControlList__ctor.htm">AccessControlList<span id="LST33BF5DCF_5" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a></td><td>
-            Initializes a new instance of the <span class="selflink">AccessControlList</span> class.
-            </td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_MailKit_AccessControlList__ctor_1.htm">AccessControlList(IEnumerable<span id="LST33BF5DCF_6" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>AccessControl<span id="LST33BF5DCF_7" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td>
-            Initializes a new instance of the <span class="selflink">AccessControlList</span> class.
-            </td></tr></table><a href="#PageHeader">Top</a></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID0FB0EA')" onkeypress="SectionExpandCollapse_CheckKey('ID0FB0EA', event)" tabindex="0"><img id="ID0FB0EAToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Properties</span></div><div id="ID0FB0EASection" class="collapsibleSection"><table id="PropertyList" class="members"><tr><th class="iconColumn"> </th><th>Name</th><th>Description</th></tr><tr><td><img src="../icons/pubProperty.gif" alt="Public property" title="Public property" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.capacity" target="_blank" rel="noopener noreferrer">Capacity</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_8" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_9" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubProperty.gif" alt="Public property" title="Public property" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.count" target="_blank" rel="noopener noreferrer">Count</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_10" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_11" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubProperty.gif" alt="Public property" title="Public property" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.item" target="_blank" rel="noopener noreferrer">Item</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_12" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_13" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr></table><a href="#PageHeader">Top</a></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('IDBEA')" onkeypress="SectionExpandCollapse_CheckKey('IDBEA', event)" tabindex="0"><img id="IDBEAToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Methods</span></div><div id="IDBEASection" class="collapsibleSection"><table id="MethodList" class="members"><tr><th class="iconColumn"> </th><th>Name</th><th>Description</th></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.add" target="_blank" rel="noopener noreferrer">Add</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_14" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_15" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.addrange" target="_blank" rel="noopener noreferrer">AddRange</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_16" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_17" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.asreadonly" target="_blank" rel="noopener noreferrer">AsReadOnly</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_18" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_19" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#system-collections-generic-list-1-binarysearch(-0)" target="_blank" rel="noopener noreferrer">BinarySearch(T)</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_20" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_21" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#system-collections-generic-list-1-binarysearch(-0-system-collections-generic-icomparer((-0)))" target="_blank" rel="noopener noreferrer">BinarySearch(T, IComparer<span id="LST33BF5DCF_22" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST33BF5DCF_23" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_24" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_25" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#system-collections-generic-list-1-binarysearch(system-int32-system-int32-0-system-collections-generic-icomparer((-0)))" target="_blank" rel="noopener noreferrer">BinarySearch(Int32, Int32, T, IComparer<span id="LST33BF5DCF_26" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST33BF5DCF_27" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_28" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_29" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.clear" target="_blank" rel="noopener noreferrer">Clear</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_30" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_31" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.contains" target="_blank" rel="noopener noreferrer">Contains</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_32" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_33" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.convertall" target="_blank" rel="noopener noreferrer">ConvertAll<span id="LST33BF5DCF_34" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>TOutput<span id="LST33BF5DCF_35" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span></a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_36" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_37" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.copyto#system-collections-generic-list-1-copyto(-0())" target="_blank" rel="noopener noreferrer">CopyTo(<span id="LST33BF5DCF_38" data-languageSpecificText="cpp=array&lt;"></span>T<span id="LST33BF5DCF_39" data-languageSpecificText="cpp=&gt;|cs=[]|vb=()|nu=[]|fs=[]"></span>)</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_40" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_41" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.copyto#system-collections-generic-list-1-copyto(-0()-system-int32)" target="_blank" rel="noopener noreferrer">CopyTo(<span id="LST33BF5DCF_42" data-languageSpecificText="cpp=array&lt;"></span>T<span id="LST33BF5DCF_43" data-languageSpecificText="cpp=&gt;|cs=[]|vb=()|nu=[]|fs=[]"></span>, Int32)</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_44" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_45" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.copyto#system-collections-generic-list-1-copyto(system-int32-0()-system-int32-system-int32)" target="_blank" rel="noopener noreferrer">CopyTo(Int32, <span id="LST33BF5DCF_46" data-languageSpecificText="cpp=array&lt;"></span>T<span id="LST33BF5DCF_47" data-languageSpecificText="cpp=&gt;|cs=[]|vb=()|nu=[]|fs=[]"></span>, Int32, Int32)</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_48" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_49" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)" target="_blank" rel="noopener noreferrer">Equals</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.exists" target="_blank" rel="noopener noreferrer">Exists</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_50" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_51" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/protMethod.gif" alt="Protected method" title="Protected method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.object.finalize" target="_blank" rel="noopener noreferrer">Finalize</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.find" target="_blank" rel="noopener noreferrer">Find</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_52" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_53" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findall" target="_blank" rel="noopener noreferrer">FindAll</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_54" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_55" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findindex#system-collections-generic-list-1-findindex(system-predicate((-0)))" target="_blank" rel="noopener noreferrer">FindIndex(Predicate<span id="LST33BF5DCF_56" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST33BF5DCF_57" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_58" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_59" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findindex#system-collections-generic-list-1-findindex(system-int32-system-predicate((-0)))" target="_blank" rel="noopener noreferrer">FindIndex(Int32, Predicate<span id="LST33BF5DCF_60" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST33BF5DCF_61" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_62" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_63" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findindex#system-collections-generic-list-1-findindex(system-int32-system-int32-system-predicate((-0)))" target="_blank" rel="noopener noreferrer">FindIndex(Int32, Int32, Predicate<span id="LST33BF5DCF_64" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST33BF5DCF_65" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_66" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_67" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findlast" target="_blank" rel="noopener noreferrer">FindLast</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_68" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_69" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findlastindex#system-collections-generic-list-1-findlastindex(system-predicate((-0)))" target="_blank" rel="noopener noreferrer">FindLastIndex(Predicate<span id="LST33BF5DCF_70" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST33BF5DCF_71" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_72" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_73" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findlastindex#system-collections-generic-list-1-findlastindex(system-int32-system-predicate((-0)))" target="_blank" rel="noopener noreferrer">FindLastIndex(Int32, Predicate<span id="LST33BF5DCF_74" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST33BF5DCF_75" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_76" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_77" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.findlastindex#system-collections-generic-list-1-findlastindex(system-int32-system-int32-system-predicate((-0)))" target="_blank" rel="noopener noreferrer">FindLastIndex(Int32, Int32, Predicate<span id="LST33BF5DCF_78" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST33BF5DCF_79" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_80" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_81" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.foreach" target="_blank" rel="noopener noreferrer">ForEach</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_82" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_83" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.getenumerator" target="_blank" rel="noopener noreferrer">GetEnumerator</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_84" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_85" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode" target="_blank" rel="noopener noreferrer">GetHashCode</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.getrange" target="_blank" rel="noopener noreferrer">GetRange</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_86" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_87" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.object.gettype" target="_blank" rel="noopener noreferrer">GetType</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.indexof#system-collections-generic-list-1-indexof(-0)" target="_blank" rel="noopener noreferrer">IndexOf(T)</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_88" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_89" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.indexof#system-collections-generic-list-1-indexof(-0-system-int32)" target="_blank" rel="noopener noreferrer">IndexOf(T, Int32)</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_90" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_91" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.indexof#system-collections-generic-list-1-indexof(-0-system-int32-system-int32)" target="_blank" rel="noopener noreferrer">IndexOf(T, Int32, Int32)</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_92" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_93" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.insert" target="_blank" rel="noopener noreferrer">Insert</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_94" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_95" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.insertrange" target="_blank" rel="noopener noreferrer">InsertRange</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_96" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_97" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.lastindexof#system-collections-generic-list-1-lastindexof(-0)" target="_blank" rel="noopener noreferrer">LastIndexOf(T)</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_98" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_99" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.lastindexof#system-collections-generic-list-1-lastindexof(-0-system-int32)" target="_blank" rel="noopener noreferrer">LastIndexOf(T, Int32)</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_100" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_101" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.lastindexof#system-collections-generic-list-1-lastindexof(-0-system-int32-system-int32)" target="_blank" rel="noopener noreferrer">LastIndexOf(T, Int32, Int32)</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_102" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_103" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/protMethod.gif" alt="Protected method" title="Protected method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone" target="_blank" rel="noopener noreferrer">MemberwiseClone</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.remove" target="_blank" rel="noopener noreferrer">Remove</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_104" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_105" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.removeall" target="_blank" rel="noopener noreferrer">RemoveAll</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_106" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_107" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.removeat" target="_blank" rel="noopener noreferrer">RemoveAt</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_108" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_109" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.removerange" target="_blank" rel="noopener noreferrer">RemoveRange</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_110" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_111" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.reverse#system-collections-generic-list-1-reverse" target="_blank" rel="noopener noreferrer">Reverse<span id="LST33BF5DCF_112" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_113" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_114" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.reverse#system-collections-generic-list-1-reverse(system-int32-system-int32)" target="_blank" rel="noopener noreferrer">Reverse(Int32, Int32)</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_115" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_116" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#system-collections-generic-list-1-sort" target="_blank" rel="noopener noreferrer">Sort<span id="LST33BF5DCF_117" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_118" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_119" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#system-collections-generic-list-1-sort(system-comparison((-0)))" target="_blank" rel="noopener noreferrer">Sort(Comparison<span id="LST33BF5DCF_120" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST33BF5DCF_121" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_122" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_123" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#system-collections-generic-list-1-sort(system-collections-generic-icomparer((-0)))" target="_blank" rel="noopener noreferrer">Sort(IComparer<span id="LST33BF5DCF_124" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST33BF5DCF_125" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_126" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_127" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.sort#system-collections-generic-list-1-sort(system-int32-system-int32-system-collections-generic-icomparer((-0)))" target="_blank" rel="noopener noreferrer">Sort(Int32, Int32, IComparer<span id="LST33BF5DCF_128" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LST33BF5DCF_129" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_130" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_131" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.toarray" target="_blank" rel="noopener noreferrer">ToArray</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_132" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_133" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.object.tostring" target="_blank" rel="noopener noreferrer">ToString</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.trimexcess" target="_blank" rel="noopener noreferrer">TrimExcess</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_134" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_135" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr><tr><td><img src="../icons/pubMethod.gif" alt="Public method" title="Public method" /></td><td><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1.trueforall" target="_blank" rel="noopener noreferrer">TrueForAll</a></td><td><br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1" target="_blank" rel="noopener noreferrer">List</a><span id="LST33BF5DCF_136" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_137" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>)</td></tr></table><a href="#PageHeader">Top</a></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('IDBC')" onkeypress="SectionExpandCollapse_CheckKey('IDBC', event)" tabindex="0"><img id="IDBCToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Remarks</span></div><div id="IDBCSection" class="collapsibleSection">
-            An Access Control List (ACL) is a list of access controls defining the permissions
-            various identities have available.
-            </div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('IDCC')" onkeypress="SectionExpandCollapse_CheckKey('IDCC', event)" tabindex="0"><img id="IDCCToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Example</span></div><div id="IDCCSection" class="collapsibleSection"><div id="IDACC" class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="IDACC_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="IDACC_copyCode" href="#" class="copyCodeSnippet" onclick="CopyToClipboard('IDACC');return false;" title="Copy">Copy</a></div></div><div id="IDACC_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">void</span> Capabilities ()
-{
-    <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> client = <span class="highlight-keyword">new</span> ImapClient ()) {
-        client.Connect (<span class="highlight-literal">"imap.gmail.com"</span>, <span class="highlight-number">993</span>, SecureSocketOptions.SslOnConnect);
-
-        <span class="highlight-keyword">var</span> mechanisms = <span class="highlight-keyword">string</span>.Join (<span class="highlight-literal">", "</span>, client.AuthenticationMechanisms);
-        Console.WriteLine (<span class="highlight-literal">"The IMAP server supports the following SASL authentication mechanisms: {0}"</span>, mechanisms);
-
-        client.Authenticate (<span class="highlight-literal">"username"</span>, <span class="highlight-literal">"password"</span>);
-
-        <span class="highlight-keyword">if</span> (client.Capabilities.HasFlag (ImapCapabilities.Id)) {
-            <span class="highlight-keyword">var</span> clientImplementation = <span class="highlight-keyword">new</span> ImapImplementation { Name = <span class="highlight-literal">"MailKit"</span>, Version = <span class="highlight-literal">"1.0"</span> };
-            <span class="highlight-keyword">var</span> serverImplementation = client.Identify (clientImplementation);
-
-            Console.WriteLine (<span class="highlight-literal">"Server implementation details:"</span>);
-            <span class="highlight-keyword">foreach</span> (<span class="highlight-keyword">var</span> property <span class="highlight-keyword">in</span> serverImplementation.Properties)
-                Console.WriteLine (<span class="highlight-literal">"  {0} = {1}"</span>, property.Key, property.Value);
-        }
-
-        <span class="highlight-keyword">if</span> (client.Capabilities.HasFlag (ImapCapabilities.Acl)) {
-            Console.WriteLine (<span class="highlight-literal">"The IMAP server supports Access Control Lists."</span>);
-
-            Console.WriteLine (<span class="highlight-literal">"The IMAP server supports the following access rights: {0}"</span>, client.Rights);
-
-            Console.WriteLine (<span class="highlight-literal">"The Inbox has the following access controls:"</span>);
-            <span class="highlight-keyword">var</span> acl = client.Inbox.GetAccessControlList ();
-            <span class="highlight-keyword">foreach</span> (<span class="highlight-keyword">var</span> ac <span class="highlight-keyword">in</span> acl)
-                Console.WriteLine (<span class="highlight-literal">"  {0} = {1}"</span>, ac.Name, ac.Rights);
-
-            <span class="highlight-keyword">var</span> myRights = client.Inbox.GetMyAccessRights ();
-            Console.WriteLine (<span class="highlight-literal">"Your current rights for the Inbox folder are: {0}"</span>, myRights);
-        }
-
-        <span class="highlight-keyword">if</span> (client.Capabilities.HasFlag (ImapCapabilities.Quota)) {
-            Console.WriteLine (<span class="highlight-literal">"The IMAP server supports quotas."</span>);
-
-            Console.WriteLine (<span class="highlight-literal">"The current quota for the Inbox is:"</span>);
-            <span class="highlight-keyword">var</span> quota = client.Inbox.GetQuota ();
-
-            <span class="highlight-keyword">if</span> (quota.StorageLimit.HasValue)
-                Console.WriteLine (<span class="highlight-literal">"  Limited by storage space. Using {0} out of {1} bytes."</span>, quota.CurrentStorageSize.Value, quota.StorageLimit.Value);
-
-            <span class="highlight-keyword">if</span> (quota.MessageLimit.HasValue)
-                Console.WriteLine (<span class="highlight-literal">"  Limited by the number of messages. Using {0} out of {1} bytes."</span>, quota.CurrentMessageCount.Value, quota.MessageLimit.Value);
-
-            Console.WriteLine (<span class="highlight-literal">"The quota root is: {0}"</span>, quota.QuotaRoot);
-        }
-
-        <span class="highlight-keyword">if</span> (client.Capabilities.HasFlag (ImapCapabilities.Thread)) {
-            <span class="highlight-keyword">if</span> (client.ThreadingAlgorithms.Contains (ThreadingAlgorithm.OrderedSubject))
-                Console.WriteLine (<span class="highlight-literal">"The IMAP server supports threading by subject."</span>);
-            <span class="highlight-keyword">if</span> (client.ThreadingAlgorithms.Contains (ThreadingAlgorithm.References))
-                Console.WriteLine (<span class="highlight-literal">"The IMAP server supports threading by references."</span>);
-        }
-
-        client.Disconnect (<span class="highlight-keyword">true</span>);
-    }
-}</pre></div></div></div></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('seeAlso')" onkeypress="SectionExpandCollapse_CheckKey('seeAlso', event)" tabindex="0"><img id="seeAlsoToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="seeAlsoSection" class="collapsibleSection"><h4>Reference</h4><div><a href="N_MailKit.htm">MailKit Namespace</a></div></div></div></div><div id="PageFooter" class="pageFooter"><!-- Global site tag (gtag.js) - Google Analytics -->
-<script src="https://www.googletagmanager.com/gtag/js?id=UA-63841238-1"></script>
+﻿<!DOCTYPE html []>
+<html lang="en-US" data-theme="light">
+  <head><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B7CEM3SL1V"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-63841238-1');
-</script><p><a href="https://github.com/jstedfast" target="_blank" rel="noopener noreferrer">Copyright © 2013-2026 Jeffrey Stedfast</a></p><div class="feedbackLink">Send comments on this topic to
+  gtag('config', 'G-B7CEM3SL1V');
+</script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/fontawesome.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/solid.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/regular.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/brands.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/presentationStyle.css?v=50DD4085" />
+    <script src="../scripts/jquery-3.7.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js?v=50DD4085"></script>
+    <script src="../scripts/highlight.min.js?v=50DD4085"></script>
+    <script src="../scripts/themeSwitcher.js?v=50DD4085"></script>
+    <script src="../scripts/presentationStyle.js?v=50DD4085"></script>
+    <title>AccessControlList Class</title>
+    <meta name="Title" content="AccessControlList" />
+    <meta name="Help.Id" content="T:MailKit.AccessControlList" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MailKit" />
+    <meta name="guid" content="T_MailKit_AccessControlList" />
+    <meta name="Description" content="An Access Control List (ACL)" />
+    <meta name="tocParentId" content="4" />
+  </head>
+  <body>
+    <header class="pageHeader" id="Header">
+      <div class="level mb-0 py-2 px-4">
+        <div id="TitleContainer" class="level-left">
+          <div id="DocumentationTitle" class="level-item">MailKit Documentation</div>
+        </div>
+        <div id="LangFilterSearchContainer" class="level-right">
+          <div id="ProjectLink" class="level-item" title="Project website" aria-label="Project website">
+            <a href="https://github.com/jstedfast/MailKit" rel="noopener noreferrer" target="_blank">
+              <span class="icon">
+                <i class="fa-brands fa-github"></i>
+              </span>
+            </a>
+          </div>
+          <div id="ThemeSwitcher" class="level-item" title="Toggle theme" aria-label="Toggle theme">
+            <span class="icon">
+              <i class="fa fa-regular fa-moon theme-icon-dark"></i>
+              <i class="fa fa-sun theme-icon-light"></i>
+            </span>
+          </div>
+          <div class="level-item">
+            <div class="dropdown is-hoverable">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span id="CurrentLanguage"></span>
+                  <span class="icon is-small">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" role="menu">
+                <div id="LanguageSelections" class="dropdown-content">
+                  <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="level-item">
+            <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+              <div class="field">
+                <div class="control has-icons-left">
+                  <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-search"></i>
+                  </span>
+                  <button id="SearchButton" type="submit" class="is-hidden"></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article>
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile toc-resizable">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu">
+                <li>Loading...</li>
+              </ul>
+            </nav>
+          </div>
+          <div id="Resizer" class="toc-resizer"></div>
+          <div id="TopicContent" class="column content is-7 toc-resizable-content">
+            <h1>Access<wbr />Control<wbr />List Class</h1>
+            <div class="summary">
+            An Access Control List (ACL)
+            </div>
+            <h2 class="quickLinkHeader">Definition</h2>
+            <div id="IDBSection">
+              <strong>Namespace:</strong> <a href="N_MailKit.htm">MailKit</a><br /><strong>Assembly:</strong> MailKit (in MailKit.dll) Version: 5.0.0<div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">AccessControlList</span> : <span class="identifier">IList</span>&lt;<span class="identifier">AccessControl</span>&gt;, 
+	<span class="identifier">ICollection</span>&lt;<span class="identifier">AccessControl</span>&gt;, <span class="identifier">IEnumerable</span>&lt;<span class="identifier">AccessControl</span>&gt;, <span class="identifier">IEnumerable</span>, 
+	<span class="identifier">IReadOnlyList</span>&lt;<span class="identifier">AccessControl</span>&gt;, <span class="identifier">IReadOnlyCollection</span>&lt;<span class="identifier">AccessControl</span>&gt;</code></pre></div></div><dl class="inheritanceHierarchy"><dt>Inheritance</dt><dd><a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <span class="selflink">AccessControlList</span></dd></dl><dl class="implementsList"><dt>Implements</dt><dd><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1" target="_blank" rel="noopener noreferrer">ICollection</a><span id="LST33BF5DCF_0" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_1" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>, <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1" target="_blank" rel="noopener noreferrer">IEnumerable</a><span id="LST33BF5DCF_2" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_3" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>, <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1" target="_blank" rel="noopener noreferrer">IList</a><span id="LST33BF5DCF_4" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_5" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>, <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1" target="_blank" rel="noopener noreferrer">IReadOnlyCollection</a><span id="LST33BF5DCF_6" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_7" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>, <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1" target="_blank" rel="noopener noreferrer">IReadOnlyList</a><span id="LST33BF5DCF_8" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="T_MailKit_AccessControl.htm">AccessControl</a><span id="LST33BF5DCF_9" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>, <a href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable" target="_blank" rel="noopener noreferrer">IEnumerable</a></dd></dl></div>
+            <h2 class="quickLinkHeader">Remarks</h2>
+            <div id="IDBCSection">
+            An Access Control List (ACL) is a list of access controls defining the permissions
+            various identities have available.
+            </div>
+            <h2 class="quickLinkHeader">Example</h2>
+            <div id="IDCCSection">
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void Capabilities ()
+{
+    using (var client = new ImapClient ()) {
+        client.Connect ("imap.gmail.com", 993, SecureSocketOptions.SslOnConnect);
+
+        var mechanisms = string.Join (", ", client.AuthenticationMechanisms);
+        Console.WriteLine ("The IMAP server supports the following SASL authentication mechanisms: {0}", mechanisms);
+
+        client.Authenticate ("username", "password");
+
+        if (client.Capabilities.Contains (ImapCapability.Id)) {
+            var clientImplementation = new ImapImplementation { Name = "MailKit", Version = "1.0" };
+            var serverImplementation = client.Identify (clientImplementation);
+
+            Console.WriteLine ("Server implementation details:");
+            foreach (var property in serverImplementation.Properties)
+                Console.WriteLine ("  {0} = {1}", property.Key, property.Value);
+        }
+
+        if (client.Capabilities.Contains (ImapCapability.Acl)) {
+            Console.WriteLine ("The IMAP server supports Access Control Lists.");
+
+            Console.WriteLine ("The IMAP server supports the following access rights: {0}", client.Rights);
+
+            Console.WriteLine ("The Inbox has the following access controls:");
+            var acl = client.Inbox.GetAccessControlList ();
+            foreach (var ac in acl)
+                Console.WriteLine ("  {0} = {1}", ac.Name, ac.Rights);
+
+            var myRights = client.Inbox.GetMyAccessRights ();
+            Console.WriteLine ("Your current rights for the Inbox folder are: {0}", myRights);
+        }
+
+        if (client.Capabilities.Contains (ImapCapability.Quota)) {
+            Console.WriteLine ("The IMAP server supports quotas.");
+
+            Console.WriteLine ("The current quota for the Inbox is:");
+            var quota = client.Inbox.GetQuota ();
+
+            if (quota.StorageLimit.HasValue)
+                Console.WriteLine ("  Limited by storage space. Using {0} out of {1} kilobytes.", quota.CurrentStorageSize.Value, quota.StorageLimit.Value);
+
+            if (quota.MessageLimit.HasValue)
+                Console.WriteLine ("  Limited by the number of messages. Using {0} out of {1} messages.", quota.CurrentMessageCount.Value, quota.MessageLimit.Value);
+
+            Console.WriteLine ("The quota root is: {0}", quota.QuotaRoot);
+        }
+
+        if (client.Capabilities.Contains (ImapCapability.Thread)) {
+            if (client.ThreadingAlgorithms.Contains (ThreadingAlgorithm.OrderedSubject))
+                Console.WriteLine ("The IMAP server supports threading by subject.");
+            if (client.ThreadingAlgorithms.Contains (ThreadingAlgorithm.References))
+                Console.WriteLine ("The IMAP server supports threading by references.");
+        }
+
+        client.Disconnect (true);
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            <h2 class="quickLinkHeader">Constructors</h2>
+            <div id="IDAAFASection">
+              <table id="ConstructorList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="M_MailKit_AccessControlList__ctor.htm">AccessControlList<span id="LST33BF5DCF_10" data-languageSpecificText="cs=()|vb=|cpp=()|nu=()|fs=()"></span></a>
+                  </td>
+                  <td>
+            Initializes a new instance of the <span class="selflink">AccessControlList</span> class.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="M_MailKit_AccessControlList__ctor_1.htm">AccessControlList(IEnumerable<span id="LST33BF5DCF_11" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>AccessControl<span id="LST33BF5DCF_12" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>)</a>
+                  </td>
+                  <td>
+            Initializes a new instance of the <span class="selflink">AccessControlList</span> class.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">Properties</h2>
+            <div id="IDRFASection">
+              <table id="PropertyList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="P_MailKit_AccessControlList_Count.htm">Count</a>
+                  </td>
+                  <td>
+            Get the number of access controls in the list.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="P_MailKit_AccessControlList_IsReadOnly.htm">IsReadOnly</a>
+                  </td>
+                  <td>
+            Get whether or not the list is read only.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="P_MailKit_AccessControlList_Item.htm">Item</a>
+                  </td>
+                  <td>
+            Get or set the access control at the specified index.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">Methods</h2>
+            <div id="IDBFASection">
+              <table id="MethodList" class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="M_MailKit_AccessControlList_Add.htm">Add</a>
+                  </td>
+                  <td>
+            Add the specified access control.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="M_MailKit_AccessControlList_AddRange.htm">AddRange</a>
+                  </td>
+                  <td>
+            Add the specified access controls.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="M_MailKit_AccessControlList_Clear.htm">Clear</a>
+                  </td>
+                  <td>
+            Clear the list of access controls.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="M_MailKit_AccessControlList_Contains.htm">Contains</a>
+                  </td>
+                  <td>
+            Check if the list contains the specified access control.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="M_MailKit_AccessControlList_CopyTo.htm">CopyTo</a>
+                  </td>
+                  <td>
+            Copy all of the access controls to the specified array.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)" target="_blank" rel="noopener noreferrer">Equals</a>
+                  </td>
+                  <td>Determines whether the specified object is equal to the current object.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.object.finalize" target="_blank" rel="noopener noreferrer">Finalize</a>
+                  </td>
+                  <td>Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="M_MailKit_AccessControlList_GetEnumerator.htm">GetEnumerator</a>
+                  </td>
+                  <td>
+            Get an enumerator for the list of access controls.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode" target="_blank" rel="noopener noreferrer">GetHashCode</a>
+                  </td>
+                  <td>Serves as the default hash function.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.object.gettype" target="_blank" rel="noopener noreferrer">GetType</a>
+                  </td>
+                  <td>Gets the <a href="https://learn.microsoft.com/dotnet/api/system.type" target="_blank" rel="noopener noreferrer">Type</a> of the current instance.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="M_MailKit_AccessControlList_IndexOf.htm">IndexOf</a>
+                  </td>
+                  <td>
+            Get the index of the specified access control.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="M_MailKit_AccessControlList_Insert.htm">Insert</a>
+                  </td>
+                  <td>
+            Insert the specified access control at the specified index.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone" target="_blank" rel="noopener noreferrer">MemberwiseClone</a>
+                  </td>
+                  <td>Creates a shallow copy of the current <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="M_MailKit_AccessControlList_Remove.htm">Remove</a>
+                  </td>
+                  <td>
+            Remove the specified access control.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="M_MailKit_AccessControlList_RemoveAt.htm">RemoveAt</a>
+                  </td>
+                  <td>
+            Remove the access control at the specified index.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.object.tostring" target="_blank" rel="noopener noreferrer">ToString</a>
+                  </td>
+                  <td>Returns a string that represents the current object.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Reference</h4>
+              <div>
+                <a href="N_MailKit.htm">MailKit Namespace</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Definition</a>
+                </li>
+                <li>
+                  <a class="quickLink">Remarks</a>
+                </li>
+                <li>
+                  <a class="quickLink">Example</a>
+                </li>
+                <li>
+                  <a class="quickLink">Constructors</a>
+                </li>
+                <li>
+                  <a class="quickLink">Properties</a>
+                </li>
+                <li>
+                  <a class="quickLink">Methods</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer id="PageFooter" class="footer border-top py-3">
+      <div class="columns">
+        <div id="FooterContent" class="column">
+          <p class="site-footer-links">
+            <a href="https://mimekit.net/">Home</a> <a href="https://github.com/jstedfast/MimeKit">MimeKit on GitHub</a> <a href="https://github.com/jstedfast/MailKit">MailKit on GitHub</a> <a href="https://github.com/sponsors/jstedfast">    Sponsor</a></p>
+          <p>
+            <a href="https://github.com/jstedfast" target="_blank" rel="noopener noreferrer">Copyright © 2013-2026 Jeffrey Stedfast</a>
+          </p>
+          <div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:jestedfa%40microsoft.com?Subject=MailKit%20Documentation">Jeffrey Stedfast</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
         HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
-        </script></div></body></html>
+        </script></div>
+      </div>
+    </footer>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadToc();
+InitializeQuickLinks();
+hljs.highlightAll();
+});</script>
+  </body>
+</html>

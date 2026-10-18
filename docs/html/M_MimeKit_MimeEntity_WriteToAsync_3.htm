@@ -1,35 +1,267 @@
-﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="Microsoft.Help.SelfBranded" content="true" /><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Locale" content="en-us" /><meta name="Microsoft.Help.TopicLocale" content="en-us" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"></script><title>MimeEntity.WriteToAsync(FormatOptions, String, CancellationToken) Method</title><meta name="Title" content="WriteToAsync(FormatOptions, String, CancellationToken) Method" /><meta name="Microsoft.Help.Id" content="M:MimeKit.MimeEntity.WriteToAsync(MimeKit.FormatOptions,System.String,System.Threading.CancellationToken)" /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="container" content="MimeKit" /><meta name="file" content="M_MimeKit_MimeEntity_WriteToAsync_3" /><meta name="guid" content="M_MimeKit_MimeEntity_WriteToAsync_3" /><meta name="Description" content="Asynchronously write the to the specified file." /><link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" /><script type="text/javascript" src="../scripts/jquery-3.7.1.min.js"></script><script type="text/javascript" src="../scripts/branding-Website.js"></script><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="SetDefaultLanguage('cs');"><input type="hidden" id="userDataCache" class="userDataStyle" /><div id="PageHeader" class="pageHeader">MailKit Documentation<form id="SearchForm" method="get" action="#" onsubmit="TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/Introduction.htm" title="MailKit Documentation" tocid="roottoc">MailKit Documentation</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/R_Project_Documentation.htm" title="API Reference" tocid="R_Project_Documentation">API Reference</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/N_MimeKit.htm" title="MimeKit" tocid="N_MimeKit">MimeKit</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/T_MimeKit_MimeEntity.htm" title="MimeEntity Class" tocid="T_MimeKit_MimeEntity">MimeEntity Class</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/Methods_T_MimeKit_MimeEntity.htm" title="MimeEntity Methods" tocid="Methods_T_MimeKit_MimeEntity">MimeEntity Methods</a></div><div class="toclevel1" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/Overload_MimeKit_MimeEntity_WriteToAsync.htm" title="WriteToAsync Method" tocid="Overload_MimeKit_MimeEntity_WriteToAsync">WriteToAsync Method</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/M_MimeKit_MimeEntity_WriteToAsync_5.htm" title="WriteToAsync(Stream, CancellationToken) Method" tocid="M_MimeKit_MimeEntity_WriteToAsync_5">WriteToAsync(Stream, CancellationToken) Method</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/M_MimeKit_MimeEntity_WriteToAsync_7.htm" title="WriteToAsync(String, CancellationToken) Method" tocid="M_MimeKit_MimeEntity_WriteToAsync_7">WriteToAsync(String, CancellationToken) Method</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/M_MimeKit_MimeEntity_WriteToAsync_1.htm" title="WriteToAsync(FormatOptions, Stream, CancellationToken) Method" tocid="M_MimeKit_MimeEntity_WriteToAsync_1">WriteToAsync(FormatOptions, Stream, CancellationToken) Method</a></div><div class="toclevel2 current" data-toclevel="2"><a data-tochassubtree="false" href="../html/M_MimeKit_MimeEntity_WriteToAsync_3.htm" title="WriteToAsync(FormatOptions, String, CancellationToken) Method" tocid="M_MimeKit_MimeEntity_WriteToAsync_3">WriteToAsync(FormatOptions, String, CancellationToken) Method</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/M_MimeKit_MimeEntity_WriteToAsync_4.htm" title="WriteToAsync(Stream, Boolean, CancellationToken) Method" tocid="M_MimeKit_MimeEntity_WriteToAsync_4">WriteToAsync(Stream, Boolean, CancellationToken) Method</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/M_MimeKit_MimeEntity_WriteToAsync_6.htm" title="WriteToAsync(String, Boolean, CancellationToken) Method" tocid="M_MimeKit_MimeEntity_WriteToAsync_6">WriteToAsync(String, Boolean, CancellationToken) Method</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/M_MimeKit_MimeEntity_WriteToAsync.htm" title="WriteToAsync(FormatOptions, Stream, Boolean, CancellationToken) Method" tocid="M_MimeKit_MimeEntity_WriteToAsync">WriteToAsync(FormatOptions, Stream, Boolean, CancellationToken) Method</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/M_MimeKit_MimeEntity_WriteToAsync_2.htm" title="WriteToAsync(FormatOptions, String, Boolean, CancellationToken) Method" tocid="M_MimeKit_MimeEntity_WriteToAsync_2">WriteToAsync(FormatOptions, String, Boolean, CancellationToken) Method</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div id="TopicContent" class="topicContent"><table class="titleTable"><tr><td class="logoColumn"><img alt="MimeKit" src="../icons/Help.png" /></td><td class="titleColumn"><h1>Mime<wbr />Entity<span id="LST186D1D86_0" data-languageSpecificText="cpp=::|nu=."></span>Write<wbr />To<wbr />Async(Format<wbr />Options, String, Cancellation<wbr />Token) Method</h1></td></tr></table><div class="summary">
-            Asynchronously write the <a href="T_MimeKit_MimeEntity.htm">MimeEntity</a> to the specified file.
-            </div><br /><strong>Namespace:</strong> <a href="N_MimeKit.htm">MimeKit</a><br /><strong>Assembly:</strong> MimeKit (in MimeKit.dll) Version: 4.17.0<div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('IDB')" onkeypress="SectionExpandCollapse_CheckKey('IDB', event)" tabindex="0"><img id="IDBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Syntax</span></div><div id="IDBSection" class="collapsibleSection"><div id="IDAB" class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="IDAB_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="IDAB_copyCode" href="#" class="copyCodeSnippet" onclick="CopyToClipboard('IDAB');return false;" title="Copy">Copy</a></div></div><div id="IDAB_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="keyword">public</span> <span class="identifier">Task</span> <span class="identifier">WriteToAsync</span>(
-	<span class="identifier">FormatOptions</span> <span class="parameter">options</span>,
-	<span class="identifier">string</span> <span class="parameter">fileName</span>,
-	<span class="identifier">CancellationToken</span> <span class="parameter">cancellationToken</span> = <span class="keyword">default</span>
-)</pre></div></div></div><h4>Parameters</h4><dl><dt class="has-text-weight-normal"><span class="parameter">options</span>  <a href="T_MimeKit_FormatOptions.htm">FormatOptions</a></dt><dd>The formatting options.</dd><dt class="has-text-weight-normal"><span class="parameter">fileName</span>  <a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener noreferrer">String</a></dt><dd>The file.</dd><dt class="has-text-weight-normal"><span class="parameter">cancellationToken</span>  <a href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken" target="_blank" rel="noopener noreferrer">CancellationToken</a>  (Optional)</dt><dd>The cancellation token.</dd></dl><h4>Return Value</h4><a href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task" target="_blank" rel="noopener noreferrer">Task</a><br />An awaitable task.<h4>Implements</h4><a href="M_MimeKit_IMimeEntity_WriteToAsync_3.htm">IMimeEntity<span id="LST186D1D86_1" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>WriteToAsync(FormatOptions, String, CancellationToken)</a><br /></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('IDGC')" onkeypress="SectionExpandCollapse_CheckKey('IDGC', event)" tabindex="0"><img id="IDGCToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Exceptions</span></div><div id="IDGCSection" class="collapsibleSection"><table><tr><th>Exception</th><th>Condition</th></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception" target="_blank" rel="noopener noreferrer">ArgumentNullException</a></td><td><p><span class="parameter">options</span> is <span class="keyword"><span id="LST186D1D86_2" data-languageSpecificText="cpp=nullptr|vb=Nothing|nu=null"></span></span>.</p><p>-or-</p><p><span class="parameter">fileName</span> is <span class="keyword"><span id="LST186D1D86_3" data-languageSpecificText="cpp=nullptr|vb=Nothing|nu=null"></span></span>.</p></td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.argumentexception" target="_blank" rel="noopener noreferrer">ArgumentException</a></td><td><span class="parameter">fileName</span> is a zero-length string, contains only white space, or
-            contains one or more invalid characters.
-            </td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception" target="_blank" rel="noopener noreferrer">ObjectDisposedException</a></td><td>
-            The <a href="T_MimeKit_MimeEntity.htm">MimeEntity</a> has been disposed.
-            </td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception" target="_blank" rel="noopener noreferrer">OperationCanceledException</a></td><td>
-            The operation was canceled via the cancellation token.
-            </td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.io.directorynotfoundexception" target="_blank" rel="noopener noreferrer">DirectoryNotFoundException</a></td><td><span class="parameter">fileName</span> is an invalid file path.
-            </td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception" target="_blank" rel="noopener noreferrer">FileNotFoundException</a></td><td>
-            The specified file path could not be found.
-            </td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.unauthorizedaccessexception" target="_blank" rel="noopener noreferrer">UnauthorizedAccessException</a></td><td>
-            The user does not have access to write to the specified file.
-            </td></tr><tr><td><a href="https://learn.microsoft.com/dotnet/api/system.io.ioexception" target="_blank" rel="noopener noreferrer">IOException</a></td><td>
-            An I/O error occurred.
-            </td></tr></table></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('IDBC')" onkeypress="SectionExpandCollapse_CheckKey('IDBC', event)" tabindex="0"><img id="IDBCToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Remarks</span></div><div id="IDBCSection" class="collapsibleSection">
-            Asynchronously writes the entity to the specified file using the provided formatting options.
-            </div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('seeAlso')" onkeypress="SectionExpandCollapse_CheckKey('seeAlso', event)" tabindex="0"><img id="seeAlsoToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="seeAlsoSection" class="collapsibleSection"><h4>Reference</h4><div><a href="T_MimeKit_MimeEntity.htm">MimeEntity Class</a></div><div><a href="Overload_MimeKit_MimeEntity_WriteToAsync.htm">WriteToAsync Overload</a></div><div><a href="N_MimeKit.htm">MimeKit Namespace</a></div></div></div></div><div id="PageFooter" class="pageFooter"><!-- Global site tag (gtag.js) - Google Analytics -->
-<script src="https://www.googletagmanager.com/gtag/js?id=UA-63841238-1"></script>
+﻿<!DOCTYPE html []>
+<html lang="en-US" data-theme="light">
+  <head><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B7CEM3SL1V"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-63841238-1');
-</script><p><a href="https://github.com/jstedfast" target="_blank" rel="noopener noreferrer">Copyright © 2013-2026 Jeffrey Stedfast</a></p><div class="feedbackLink">Send comments on this topic to
+  gtag('config', 'G-B7CEM3SL1V');
+</script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/fontawesome.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/solid.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/regular.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/brands.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/presentationStyle.css?v=50DD4085" />
+    <script src="../scripts/jquery-3.7.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js?v=50DD4085"></script>
+    <script src="../scripts/highlight.min.js?v=50DD4085"></script>
+    <script src="../scripts/themeSwitcher.js?v=50DD4085"></script>
+    <script src="../scripts/presentationStyle.js?v=50DD4085"></script>
+    <title>MimeEntity.WriteToAsync(FormatOptions, String, CancellationToken) Method</title>
+    <meta name="Title" content="WriteToAsync(FormatOptions, String, CancellationToken)" />
+    <meta name="Help.Id" content="M:MimeKit.MimeEntity.WriteToAsync(MimeKit.FormatOptions,System.String,System.Threading.CancellationToken)" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MimeKit" />
+    <meta name="guid" content="M_MimeKit_MimeEntity_WriteToAsync_3" />
+    <meta name="Description" content="Asynchronously write the to the specified file." />
+    <meta name="tocParentId" content="1117" />
+  </head>
+  <body>
+    <header class="pageHeader" id="Header">
+      <div class="level mb-0 py-2 px-4">
+        <div id="TitleContainer" class="level-left">
+          <div id="DocumentationTitle" class="level-item">MailKit Documentation</div>
+        </div>
+        <div id="LangFilterSearchContainer" class="level-right">
+          <div id="ProjectLink" class="level-item" title="Project website" aria-label="Project website">
+            <a href="https://github.com/jstedfast/MailKit" rel="noopener noreferrer" target="_blank">
+              <span class="icon">
+                <i class="fa-brands fa-github"></i>
+              </span>
+            </a>
+          </div>
+          <div id="ThemeSwitcher" class="level-item" title="Toggle theme" aria-label="Toggle theme">
+            <span class="icon">
+              <i class="fa fa-regular fa-moon theme-icon-dark"></i>
+              <i class="fa fa-sun theme-icon-light"></i>
+            </span>
+          </div>
+          <div class="level-item">
+            <div class="dropdown is-hoverable">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span id="CurrentLanguage"></span>
+                  <span class="icon is-small">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" role="menu">
+                <div id="LanguageSelections" class="dropdown-content">
+                  <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="level-item">
+            <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+              <div class="field">
+                <div class="control has-icons-left">
+                  <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-search"></i>
+                  </span>
+                  <button id="SearchButton" type="submit" class="is-hidden"></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article>
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile toc-resizable">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu">
+                <li>Loading...</li>
+              </ul>
+            </nav>
+          </div>
+          <div id="Resizer" class="toc-resizer"></div>
+          <div id="TopicContent" class="column content is-7 toc-resizable-content">
+            <h1>Mime<wbr />Entity<span id="LST186D1D86_0" data-languageSpecificText="cpp=::|nu=."></span>Write<wbr />To<wbr />Async(Format<wbr />Options, String, Cancellation<wbr />Token) Method</h1>
+            <div class="summary">
+            Asynchronously write the <a href="T_MimeKit_MimeEntity.htm">MimeEntity</a> to the specified file.
+            </div>
+            <h2 class="quickLinkHeader">Definition</h2>
+            <div id="IDBSection">
+              <strong>Namespace:</strong> <a href="N_MimeKit.htm">MimeKit</a><br /><strong>Assembly:</strong> MimeKit.Core (in MimeKit.Core.dll) Version: 5.0.0<div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="identifier">Task</span> <span class="identifier">WriteToAsync</span>(
+	<span class="identifier">FormatOptions</span> <span class="parameter">options</span>,
+	<span class="identifier">string</span> <span class="parameter">fileName</span>,
+	<span class="identifier">CancellationToken</span> <span class="parameter">cancellationToken</span> = <span class="keyword">default</span>
+)</code></pre></div></div><h4 class="quickLinkHeader">Parameters</h4><dl><dt class="has-text-weight-normal"><span class="parameter">options</span>  <a href="T_MimeKit_FormatOptions.htm">FormatOptions</a></dt><dd>The formatting options.</dd><dt class="has-text-weight-normal"><span class="parameter">fileName</span>  <a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener noreferrer">String</a></dt><dd>The file.</dd><dt class="has-text-weight-normal"><span class="parameter">cancellationToken</span>  <a href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken" target="_blank" rel="noopener noreferrer">CancellationToken</a>  (Optional)</dt><dd>The cancellation token.</dd></dl><h4 class="quickLinkHeader">Return Value</h4><a href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task" target="_blank" rel="noopener noreferrer">Task</a><br />An awaitable task.<h4 class="quickLinkHeader">Implements</h4><a href="M_MimeKit_IMimeEntity_WriteToAsync_3.htm">IMimeEntity<span id="LST186D1D86_1" data-languageSpecificText="cs=.|vb=.|cpp=::|nu=.|fs=."></span>WriteToAsync(FormatOptions, String, CancellationToken)</a><br /></div>
+            <h2 class="quickLinkHeader">Remarks</h2>
+            <div id="IDBCSection">
+            Asynchronously writes the entity to the specified file using the provided formatting options.
+            </div>
+            <h2 class="quickLinkHeader">Exceptions</h2>
+            <div id="IDGCSection">
+              <table class="table is-hoverable">
+                <tr>
+                  <td>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception" target="_blank" rel="noopener noreferrer">ArgumentNullException</a>
+                  </td>
+                  <td>
+                    <p>
+                      <span class="parameter">options</span> is <span class="keyword"><span id="LST186D1D86_2" data-languageSpecificText="cpp=nullptr|vb=Nothing|nu=null"></span></span>.</p>
+                    <p>-or-</p>
+                    <p>
+                      <span class="parameter">fileName</span> is <span class="keyword"><span id="LST186D1D86_3" data-languageSpecificText="cpp=nullptr|vb=Nothing|nu=null"></span></span>.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.argumentexception" target="_blank" rel="noopener noreferrer">ArgumentException</a>
+                  </td>
+                  <td>
+                    <span class="parameter">fileName</span> is a zero-length string, contains only white space, or
+            contains one or more invalid characters.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception" target="_blank" rel="noopener noreferrer">ObjectDisposedException</a>
+                  </td>
+                  <td>
+            The <a href="T_MimeKit_MimeEntity.htm">MimeEntity</a> has been disposed.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception" target="_blank" rel="noopener noreferrer">OperationCanceledException</a>
+                  </td>
+                  <td>
+            The operation was canceled via the cancellation token.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.io.directorynotfoundexception" target="_blank" rel="noopener noreferrer">DirectoryNotFoundException</a>
+                  </td>
+                  <td>
+                    <span class="parameter">fileName</span> is an invalid file path.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception" target="_blank" rel="noopener noreferrer">FileNotFoundException</a>
+                  </td>
+                  <td>
+            The specified file path could not be found.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.unauthorizedaccessexception" target="_blank" rel="noopener noreferrer">UnauthorizedAccessException</a>
+                  </td>
+                  <td>
+            The user does not have access to write to the specified file.
+            </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.io.ioexception" target="_blank" rel="noopener noreferrer">IOException</a>
+                  </td>
+                  <td>
+            An I/O error occurred.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Reference</h4>
+              <div>
+                <a href="T_MimeKit_MimeEntity.htm">MimeEntity Class</a>
+              </div>
+              <div>
+                <a href="Overload_MimeKit_MimeEntity_WriteToAsync.htm">WriteToAsync Overload</a>
+              </div>
+              <div>
+                <a href="N_MimeKit.htm">MimeKit Namespace</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Definition</a>
+                  <ul class="menu">
+                    <li>
+                      <a class="quickLink">Parameters</a>
+                    </li>
+                    <li>
+                      <a class="quickLink">Return Value</a>
+                    </li>
+                    <li>
+                      <a class="quickLink">Implements</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="quickLink">Remarks</a>
+                </li>
+                <li>
+                  <a class="quickLink">Exceptions</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer id="PageFooter" class="footer border-top py-3">
+      <div class="columns">
+        <div id="FooterContent" class="column">
+          <p class="site-footer-links">
+            <a href="https://mimekit.net/">Home</a> <a href="https://github.com/jstedfast/MimeKit">MimeKit on GitHub</a> <a href="https://github.com/jstedfast/MailKit">MailKit on GitHub</a> <a href="https://github.com/sponsors/jstedfast">    Sponsor</a></p>
+          <p>
+            <a href="https://github.com/jstedfast" target="_blank" rel="noopener noreferrer">Copyright © 2013-2026 Jeffrey Stedfast</a>
+          </p>
+          <div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:jestedfa%40microsoft.com?Subject=MailKit%20Documentation">Jeffrey Stedfast</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
         HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
-        </script></div></body></html>
+        </script></div>
+      </div>
+    </footer>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadToc();
+InitializeQuickLinks();
+hljs.highlightAll();
+});</script>
+  </body>
+</html>

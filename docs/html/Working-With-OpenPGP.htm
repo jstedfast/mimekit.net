@@ -1,114 +1,375 @@
-﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="Microsoft.Help.SelfBranded" content="true" /><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Locale" content="en-us" /><meta name="Microsoft.Help.TopicLocale" content="en-us" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"></script><title>Working with OpenPGP</title><meta name="Microsoft.Help.Id" content="Working-With-OpenPGP" /><meta name="Microsoft.Help.ContentType" content="Concepts" /><meta name="Microsoft.Help.Category" content="CSharp" /><meta name="Description" content="Before you can start working with OpenPGP in MimeKit, you will first need to create and register your own T:MimeKit.Cryptography.OpenPgpContext. For the sake of simplicity, MimeKit includes a T:MimeKit.Cryptography." /><link type="text/css" rel="stylesheet" href="../styles/highlight.css" /><script type="text/javascript" src="../scripts/highlight.js"> </script><link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" /><script type="text/javascript" src="../scripts/jquery-3.7.1.min.js"></script><script type="text/javascript" src="../scripts/branding-Website.js"></script><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="SetDefaultLanguage('cs');"><input type="hidden" id="userDataCache" class="userDataStyle" /><div id="PageHeader" class="pageHeader">MailKit Documentation<form id="SearchForm" method="get" action="#" onsubmit="TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/Introduction.htm" title="MailKit Documentation" tocid="roottoc">MailKit Documentation</a></div><div class="toclevel1" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/Getting-Started.htm" title="Getting Started" tocid="Getting-Started">Getting Started</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/Creating-Messages.htm" title="Creating messages" tocid="Creating-Messages">Creating messages</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/Parsing-Messages.htm" title="Parsing messages" tocid="Parsing-Messages">Parsing messages</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/Working-With-Messages.htm" title="Working with messages" tocid="Working-With-Messages">Working with messages</a></div><div class="toclevel2 current" data-toclevel="2"><a data-tochassubtree="false" href="../html/Working-With-OpenPGP.htm" title="Working with OpenPGP" tocid="Working-With-OpenPGP">Working with OpenPGP</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/Working-With-SMime.htm" title="Working with S/MIME" tocid="Working-With-SMime">Working with S/MIME</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div id="TopicContent" class="topicContent"><table class="titleTable"><tr><td class="logoColumn"><img alt="MimeKit" src="../icons/Help.png" /></td><td class="titleColumn"><h1>Working with OpenPGP</h1></td></tr></table><div><p>This topic contains the following sections:</p><ul><li><a href="#CreatingYourOwnPGPContext">Creating your own OpenPGP Context</a></li><li><a href="#Encrypt">Encrypting Messages with PGP/MIME</a></li><li><a href="#Decrypt">Decrypting PGP/MIME Messages</a></li><li><a href="#Sign">Digitally Signing Messages using PGP/MIME</a></li><li><a href="#Verify">Verifying PGP/MIME Digital Signatures</a></li><li><a href="#seeAlsoSection">See Also</a></li></ul></div><div class="collapsibleAreaRegion" id="CreatingYourOwnPGPContext"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('IDCAB')" onkeypress="SectionExpandCollapse_CheckKey('IDCAB', event)" tabindex="0"><img id="IDCABToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Creating your own OpenPGP Context</span></div><div id="IDCABSection" class="collapsibleSection"><p>
+﻿<!DOCTYPE html []>
+<html lang="en-US" data-theme="light">
+  <head><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B7CEM3SL1V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B7CEM3SL1V');
+</script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/fontawesome.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/solid.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/regular.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/brands.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/presentationStyle.css?v=50DD4085" />
+    <script src="../scripts/jquery-3.7.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js?v=50DD4085"></script>
+    <script src="../scripts/highlight.min.js?v=50DD4085"></script>
+    <script src="../scripts/themeSwitcher.js?v=50DD4085"></script>
+    <script src="../scripts/presentationStyle.js?v=50DD4085"></script>
+    <title>Working with OpenPGP</title>
+    <meta name="Title" content="Working with OpenPGP" />
+    <meta name="Help.Id" content="Working-With-OpenPGP" />
+    <meta name="Help.ContentType" content="Concepts" />
+    <meta name="guid" content="Working-With-OpenPGP" />
+    <meta name="Description" content="Before you can start working with OpenPGP in MimeKit, you will first need to add a reference to the MimeKit.Cryptography package and then create and register your own T:MimeKit.Cryptography.OpenPgpContext." />
+    <meta name="tocParentId" content="1" />
+  </head>
+  <body>
+    <header class="pageHeader" id="Header">
+      <div class="level mb-0 py-2 px-4">
+        <div id="TitleContainer" class="level-left">
+          <div id="DocumentationTitle" class="level-item">MailKit Documentation</div>
+        </div>
+        <div id="LangFilterSearchContainer" class="level-right">
+          <div id="ProjectLink" class="level-item" title="Project website" aria-label="Project website">
+            <a href="https://github.com/jstedfast/MailKit" rel="noopener noreferrer" target="_blank">
+              <span class="icon">
+                <i class="fa-brands fa-github"></i>
+              </span>
+            </a>
+          </div>
+          <div id="ThemeSwitcher" class="level-item" title="Toggle theme" aria-label="Toggle theme">
+            <span class="icon">
+              <i class="fa fa-regular fa-moon theme-icon-dark"></i>
+              <i class="fa fa-sun theme-icon-light"></i>
+            </span>
+          </div>
+          <div class="level-item">
+            <div class="dropdown is-hoverable">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span id="CurrentLanguage"></span>
+                  <span class="icon is-small">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" role="menu">
+                <div id="LanguageSelections" class="dropdown-content">
+                  <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="level-item">
+            <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+              <div class="field">
+                <div class="control has-icons-left">
+                  <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-search"></i>
+                  </span>
+                  <button id="SearchButton" type="submit" class="is-hidden"></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article>
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile toc-resizable">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu">
+                <li>Loading...</li>
+              </ul>
+            </nav>
+          </div>
+          <div id="Resizer" class="toc-resizer"></div>
+          <div id="TopicContent" class="column content is-7 toc-resizable-content">
+            <h1>Working with OpenPGP</h1>
+            <div>
+              <p class="is-hidden-tablet">This topic contains the following sections:</p>
+              <ul class="is-hidden-tablet">
+                <li>
+                  <a href="#CreatingYourOwnPGPContext">Creating your own OpenPGP Context</a>
+                </li>
+                <li>
+                  <a href="#Encrypt">Encrypting Messages with PGP/MIME</a>
+                </li>
+                <li>
+                  <a href="#Decrypt">Decrypting PGP/MIME Messages</a>
+                </li>
+                <li>
+                  <a href="#Sign">Digitally Signing Messages using PGP/MIME</a>
+                </li>
+                <li>
+                  <a href="#Verify">Verifying PGP/MIME Digital Signatures</a>
+                </li>
+                <li>
+                  <a href="#seeAlsoSection">See Also</a>
+                </li>
+              </ul>
+            </div>
+            <h2 id="CreatingYourOwnPGPContext" class="quickLinkHeader">Creating your own OpenPGP Context</h2>
+            <div id="IDCABSection">
+              <p>
           Before you can start working with <strong>OpenPGP</strong> in MimeKit,
-          you will first need to create and register your own
+          you will first need to add a reference to the
+          <strong>MimeKit.Cryptography</strong> package and then create and register your own
           <a href="T_MimeKit_Cryptography_OpenPgpContext.htm">OpenPgpContext</a>.
           For the sake of simplicity, MimeKit includes a
           <a href="T_MimeKit_Cryptography_GnuPGContext.htm">GnuPGContext</a>
           that does most of the work of interoperating with the popular
           <a href="https://www.gnupg.org" target="_blank" rel="noopener noreferrer">GnuPG</a>
           program for you.
-        </p><div id="IDBBCAB" class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="IDBBCAB_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="IDBBCAB_copyCode" href="#" class="copyCodeSnippet" onclick="CopyToClipboard('IDBBCAB');return false;" title="Copy">Copy</a></div></div><div id="IDBBCAB_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> MyGnuPGContext : GnuPGContext
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public class MyGnuPGContext : GnuPGContext
 {
-    <span class="highlight-keyword">public</span> MyGnuPGContext ()
+    public MyGnuPGContext ()
     {
     }
 
-    <span class="highlight-keyword">protected</span> <span class="highlight-keyword">override</span> <span class="highlight-keyword">string</span> GetPasswordForKey (PgpSecretKey key)
+    protected override string GetPasswordForKey (PgpSecretKey key)
     {
-        <span class="highlight-comment">// prompt the user (or a secure password cache) for the password for the specified secret key.</span>
-        <span class="highlight-keyword">return</span> <span class="highlight-literal">"password"</span>;
+        // prompt the user (or a secure password cache) for the password for the specified secret key.
+        return "password";
     }
-}</pre></div></div></div><p>
+}</code>
+                  </pre>
+                </div>
+              </div>
+              <p>
           To register your class, you can use the following code snippet:
-        </p><div id="IDDBCAB" class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="IDDBCAB_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="IDDBCAB_copyCode" href="#" class="copyCodeSnippet" onclick="CopyToClipboard('IDDBCAB');return false;" title="Copy">Copy</a></div></div><div id="IDDBCAB_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">// Note: by registering our custom context it becomes the default OpenPGP context</span>
-<span class="highlight-comment">// instantiated by MimeKit when methods such as Encrypt(), Decrypt(), Sign(), and</span>
-<span class="highlight-comment">// Verify() are used without an explicit context.</span>
-CryptographyContext.Register (<span class="highlight-keyword">typeof</span> (MyGnuPGContext));</pre></div></div></div><p>
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">// Note: by registering our custom context it becomes the default OpenPGP context
+// instantiated by MimeKit when methods such as Encrypt(), Decrypt(), Sign(), and
+// Verify() are used without an explicit context.
+CryptographyContext.Register (typeof (MyGnuPGContext));</code>
+                  </pre>
+                </div>
+              </div>
+              <p>
           Now you are ready to encrypt, decrypt, sign and verify messages using PGP!
-        </p></div><div class="collapsibleAreaRegion" id="Encrypt"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('IDDAB')" onkeypress="SectionExpandCollapse_CheckKey('IDDAB', event)" tabindex="0"><img id="IDDABToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Encrypting Messages with PGP/MIME</span></div><div id="IDDABSection" class="collapsibleSection"><p>
+        </p>
+            </div>
+            <h2 id="Encrypt" class="quickLinkHeader">Encrypting Messages with PGP/MIME</h2>
+            <div id="IDDABSection">
+              <p>
           PGP/MIME uses a MIME part with a <span class="literal">multipart/encrypted</span> mime-type
           to encapsulate encrypted data. To encrypt any
           <a href="T_MimeKit_MimeEntity.htm">MimeEntity</a>,
           use the
           <a href="Overload_MimeKit_Cryptography_MultipartEncrypted_Encrypt.htm">MultipartEncrypted.Encrypt</a>
           method:
-        </p><div id="IDBBDAB" class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="IDBBDAB_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="IDBBDAB_copyCode" href="#" class="copyCodeSnippet" onclick="CopyToClipboard('IDBBDAB');return false;" title="Copy">Copy</a></div></div><div id="IDBBDAB_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> <span class="highlight-keyword">void</span> Encrypt (MimeMessage message)
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public void Encrypt (MimeMessage message)
 {
-    <span class="highlight-comment">// encrypt our message body using our custom GnuPG cryptography context</span>
-    <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> ctx = <span class="highlight-keyword">new</span> MyGnuPGContext ()) {
-        <span class="highlight-comment">// Note: this assumes that each of the recipients has a PGP key associated</span>
-        <span class="highlight-comment">// with their email address in the user's public keyring.</span>
-        <span class="highlight-comment">// </span>
-        <span class="highlight-comment">// If this is not the case, you can use SecureMailboxAddresses instead of</span>
-        <span class="highlight-comment">// normal MailboxAddresses which would allow you to specify the fingerprint</span>
-        <span class="highlight-comment">// of their PGP keys. You could also choose to use one of the Encrypt()</span>
-        <span class="highlight-comment">// overloads that take a list of PgpPublicKeys.</span>
+    // encrypt our message body using our custom GnuPG cryptography context
+    using (var ctx = new MyGnuPGContext ()) {
+        // Note: this assumes that each of the recipients has a PGP key associated
+        // with their email address in the user's public keyring.
+        //
+        // If this is not the case, you can use SecureMailboxAddresses instead of
+        // normal MailboxAddresses which would allow you to specify the fingerprint
+        // of their PGP keys. You could also choose to use one of the Encrypt()
+        // overloads that take a list of PgpPublicKeys.
         message.Body = MultipartEncrypted.Encrypt (ctx, message.To.Mailboxes, message.Body);
     }
-}</pre></div></div></div><div class="alert"><table><tr><th><img src="../icons/AlertNote.png" alt="Tip" />  Tip</th></tr><tr><td><p>
+}</code>
+                  </pre>
+                </div>
+              </div>
+              <article class="message is-info">
+                <div class="message-header">
+                  <p>
+                    <span class="icon">
+                      <i class="fa fa-info-circle"></i>
+                    </span>  Tip</p>
+                </div>
+                <div class="message-body">
+                  <p>
             When you know that you will be encrypting a message, it may be a good idea to use
             a <a href="T_MimeKit_Cryptography_SecureMailboxAddress.htm">SecureMailboxAddress</a>
             instead of a <a href="T_MimeKit_MailboxAddress.htm">MailboxAddress</a>
             for each of the recipients, allowing you to specify the unique fingerprint of each
             recipient's PGP key.
-          </p></td></tr></table></div></div><div class="collapsibleAreaRegion" id="Decrypt"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('IDEAB')" onkeypress="SectionExpandCollapse_CheckKey('IDEAB', event)" tabindex="0"><img id="IDEABToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Decrypting PGP/MIME Messages</span></div><div id="IDEABSection" class="collapsibleSection"><p>
+          </p>
+                </div>
+              </article>
+            </div>
+            <h2 id="Decrypt" class="quickLinkHeader">Decrypting PGP/MIME Messages</h2>
+            <div id="IDEABSection">
+              <p>
           As mentioned earlier, PGP/MIME uses a <span class="literal">multipart/encrypted</span>
           part to encapsulate the encrypted content.
-        </p><p>
+        </p>
+              <p>
           A <span class="literal">multipart/encrypted</span> contains exactly 2 parts: the first
           <a href="T_MimeKit_MimeEntity.htm">MimeEntity</a> is the version
           information while the second
           <a href="T_MimeKit_MimeEntity.htm">MimeEntity</a> is the actual
           encrypted content and will typically be an <span class="literal">application/octet-stream</span>.
-        </p><p>
+        </p>
+              <p>
           The first thing you must do is find the
           <a href="T_MimeKit_Cryptography_MultipartEncrypted.htm">MultipartEncrypted</a>
           part (see the section on <a href="Working-With-Messages.htm#TraversingMessages">Working with messages</a>).
-        </p><div id="IDDBEAB" class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="IDDBEAB_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="IDDBEAB_copyCode" href="#" class="copyCodeSnippet" onclick="CopyToClipboard('IDDBEAB');return false;" title="Copy">Copy</a></div></div><div id="IDDBEAB_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> MimeEntity Decrypt (MimeMessage message)
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public MimeEntity Decrypt (MimeMessage message)
 {
-    <span class="highlight-keyword">if</span> (message.Body <span class="highlight-keyword">is</span> MultipartEncrypted) {
-        <span class="highlight-comment">// the top-level MIME part of the message is encrypted using PGP/MIME</span>
-        <span class="highlight-keyword">var</span> encrypted = (MultipartEncrypted) entity;
+    if (message.Body is MultipartEncrypted) {
+        // the top-level MIME part of the message is encrypted using PGP/MIME
+        var encrypted = (MultipartEncrypted) entity;
 
-        <span class="highlight-keyword">return</span> encrypted.Decrypt ();
-    } <span class="highlight-keyword">else</span> {
-        <span class="highlight-comment">// the top-level MIME part is not encrypted</span>
-        <span class="highlight-keyword">return</span> message.Body;
+        return encrypted.Decrypt ();
+    } else {
+        // the top-level MIME part is not encrypted
+        return message.Body;
     }
-}</pre></div></div></div></div><div class="collapsibleAreaRegion" id="Sign"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('IDFAB')" onkeypress="SectionExpandCollapse_CheckKey('IDFAB', event)" tabindex="0"><img id="IDFABToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Digitally Signing Messages using PGP/MIME</span></div><div id="IDFABSection" class="collapsibleSection"><p>
+}</code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            <h2 id="Sign" class="quickLinkHeader">Digitally Signing Messages using PGP/MIME</h2>
+            <div id="IDFABSection">
+              <p>
           PGP/MIME uses a MIME part with a <span class="literal">multipart/signed</span> mime-type to
           contain the signed content and the detached signature data.
-        </p><p>
+        </p>
+              <p>
           Here's how you might digitally sign a message using PGP/MIME:
-        </p><div id="IDCBFAB" class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="IDCBFAB_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="IDCBFAB_copyCode" href="#" class="copyCodeSnippet" onclick="CopyToClipboard('IDCBFAB');return false;" title="Copy">Copy</a></div></div><div id="IDCBFAB_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> <span class="highlight-keyword">void</span> Sign (MimeMessage message)
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public void Sign (MimeMessage message)
 {
-    <span class="highlight-comment">// digitally sign our message body using our custom GnuPG cryptography context</span>
-    <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> ctx = <span class="highlight-keyword">new</span> MyGnuPGContext ()) {
-        <span class="highlight-comment">// Note: this assumes that the Sender address has an S/MIME signing certificate</span>
-        <span class="highlight-comment">// and private key with an X.509 Subject Email identifier that matches the</span>
-        <span class="highlight-comment">// sender's email address.</span>
-        <span class="highlight-comment">// </span>
-        <span class="highlight-comment">// If this is not the case, you can use a SecureMailboxAddress instead of a</span>
-        <span class="highlight-comment">// normal MailboxAddress which would allow you to specify the fingerprint</span>
-        <span class="highlight-comment">// of the sender's private PGP key. You could also choose to use one of the</span>
-        <span class="highlight-comment">// Create() overloads that take a PgpSecretKey, instead.</span>
-        <span class="highlight-keyword">var</span> sender = message.From.Mailboxes.FirstOrDefault ();
+    // digitally sign our message body using our custom GnuPG cryptography context
+    using (var ctx = new MyGnuPGContext ()) {
+        // Note: this assumes that the Sender address has an S/MIME signing certificate
+        // and private key with an X.509 Subject Email identifier that matches the
+        // sender's email address.
+        //
+        // If this is not the case, you can use a SecureMailboxAddress instead of a
+        // normal MailboxAddress which would allow you to specify the fingerprint
+        // of the sender's private PGP key. You could also choose to use one of the
+        // Create() overloads that take a PgpSecretKey, instead.
+        var sender = message.From.Mailboxes.FirstOrDefault ();
 
         message.Body = MultipartSigned.Create (ctx, sender, DigestAlgorithm.Sha1, message.Body);
     }
-}</pre></div></div></div><p>
+}</code>
+                  </pre>
+                </div>
+              </div>
+              <p>
           You can also do your own PGP key lookups instead of relying on email addresses
           to match up with the user's secret key.
-        </p><div id="IDEBFAB" class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="IDEBFAB_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="IDEBFAB_copyCode" href="#" class="copyCodeSnippet" onclick="CopyToClipboard('IDEBFAB');return false;" title="Copy">Copy</a></div></div><div id="IDEBFAB_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> <span class="highlight-keyword">void</span> Sign (MimeMessage message, PgpSecretKey key)
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public void Sign (MimeMessage message, PgpSecretKey key)
 {
-    <span class="highlight-comment">// digitally sign our message body using our custom GnuPG cryptography context</span>
-    <span class="highlight-keyword">using</span> (<span class="highlight-keyword">var</span> ctx = <span class="highlight-keyword">new</span> MyGnuPGContext ()) {
+    // digitally sign our message body using our custom GnuPG cryptography context
+    using (var ctx = new MyGnuPGContext ()) {
         message.Body = MultipartSigned.Create (ctx, key, DigestAlgorithm.Sha1, message.Body);
     }
-}</pre></div></div></div></div><div class="collapsibleAreaRegion" id="Verify"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('IDGAB')" onkeypress="SectionExpandCollapse_CheckKey('IDGAB', event)" tabindex="0"><img id="IDGABToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Verifying PGP/MIME Digital Signatures</span></div><div id="IDGABSection" class="collapsibleSection"><p>
+}</code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            <h2 id="Verify" class="quickLinkHeader">Verifying PGP/MIME Digital Signatures</h2>
+            <div id="IDGABSection">
+              <p>
           As mentioned earlier, PGP/MIME uses a <span class="literal">multipart/signed</span> part
           to contain the signed content and the detached signature data.
-        </p><p>
+        </p>
+              <p>
           A <span class="literal">multipart/signed</span> contains exactly 2 parts: the first
           <a href="T_MimeKit_MimeEntity.htm">MimeEntity</a> is the signed
           content while the second
@@ -116,43 +377,113 @@ CryptographyContext.Register (<span class="highlight-keyword">typeof</span> (MyG
           signature and, by default, will be an
           <a href="T_MimeKit_Cryptography_ApplicationPgpSignature.htm">ApplicationPgpSignature</a>
           part.
-        </p><p>
+        </p>
+              <p>
           Because the <span class="literal">multipart/signed</span> part may have been signed by
           multiple signers, it is important to verify each of the digital signatures
           (one for each signer) that are returned by the
           <a href="Overload_MimeKit_Cryptography_MultipartSigned_Verify.htm">Verify</a>
           method:
-        </p><div id="IDDBGAB" class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="IDDBGAB_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="IDDBGAB_copyCode" href="#" class="copyCodeSnippet" onclick="CopyToClipboard('IDDBGAB');return false;" title="Copy">Copy</a></div></div><div id="IDDBGAB_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> <span class="highlight-keyword">void</span> Verify (MimeMessage message)
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public void Verify (MimeMessage message)
 {
-    <span class="highlight-keyword">if</span> (message.Body <span class="highlight-keyword">is</span> MultipartSigned) {
-        <span class="highlight-keyword">var</span> signed = (MultipartSigned) message.Body;
+    if (message.Body is MultipartSigned) {
+        var signed = (MultipartSigned) message.Body;
 
-        <span class="highlight-keyword">foreach</span> (<span class="highlight-keyword">var</span> signature <span class="highlight-keyword">in</span> signed.Verify ()) {
-            <span class="highlight-keyword">try</span> {
-                <span class="highlight-keyword">bool</span> valid = signature.Verify ();
+        foreach (var signature in signed.Verify ()) {
+            try {
+                bool valid = signature.Verify ();
 
-                <span class="highlight-comment">// If valid is true, then it signifies that the signed content</span>
-                <span class="highlight-comment">// has not been modified since this particular signer signed the</span>
-                <span class="highlight-comment">// content.</span>
-                <span class="highlight-comment">// </span>
-                <span class="highlight-comment">// However, if it is false, then it indicates that the signed</span>
-                <span class="highlight-comment">// content has been modified.</span>
-            } <span class="highlight-keyword">catch</span> (DigitalSignatureVerifyException) {
-                <span class="highlight-comment">// There was an error verifying the signature.</span>
+                // If valid is true, then it signifies that the signed content
+                // has not been modified since this particular signer signed the
+                // content.
+                //
+                // However, if it is false, then it indicates that the signed
+                // content has been modified.
+            } catch (DigitalSignatureVerifyException) {
+                // There was an error verifying the signature.
             }
         }
     }
-}</pre></div></div></div></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('seeAlso')" onkeypress="SectionExpandCollapse_CheckKey('seeAlso', event)" tabindex="0"><img id="seeAlsoToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="seeAlsoSection" class="collapsibleSection"><h4>Other Resources</h4><div><a href="Working-With-Messages.htm">Working with messages</a></div><div><a href="Working-With-SMime.htm">Working with S/MIME</a></div></div></div></div><div id="PageFooter" class="pageFooter"><!-- Global site tag (gtag.js) - Google Analytics -->
-<script src="https://www.googletagmanager.com/gtag/js?id=UA-63841238-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-63841238-1');
-</script><p><a href="https://github.com/jstedfast" target="_blank" rel="noopener noreferrer">Copyright © 2013-2026 Jeffrey Stedfast</a></p><div class="feedbackLink">Send comments on this topic to
+}</code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            <h2 class="quickLinkHeader">See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Other Resources</h4>
+              <div>
+                <a href="Working-With-Messages.htm">Working with messages</a>
+              </div>
+              <div>
+                <a href="Working-With-SMime.htm">Working with S/MIME</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Creating your own OpenPGP Context</a>
+                </li>
+                <li>
+                  <a class="quickLink">Encrypting Messages with PGP/MIME</a>
+                </li>
+                <li>
+                  <a class="quickLink">Decrypting PGP/MIME Messages</a>
+                </li>
+                <li>
+                  <a class="quickLink">Digitally Signing Messages using PGP/MIME</a>
+                </li>
+                <li>
+                  <a class="quickLink">Verifying PGP/MIME Digital Signatures</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer id="PageFooter" class="footer border-top py-3">
+      <div class="columns">
+        <div id="FooterContent" class="column">
+          <p class="site-footer-links">
+            <a href="https://mimekit.net/">Home</a> <a href="https://github.com/jstedfast/MimeKit">MimeKit on GitHub</a> <a href="https://github.com/jstedfast/MailKit">MailKit on GitHub</a> <a href="https://github.com/sponsors/jstedfast">    Sponsor</a></p>
+          <p>
+            <a href="https://github.com/jstedfast" target="_blank" rel="noopener noreferrer">Copyright © 2013-2026 Jeffrey Stedfast</a>
+          </p>
+          <div class="feedbackLink">Send comments on this topic to
         <a id="HT_MailLink" href="mailto:jestedfa%40microsoft.com?Subject=MailKit%20Documentation">Jeffrey Stedfast</a></div>
         <script type="text/javascript">
         var HT_mailLink = document.getElementById("HT_MailLink");
         HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
-        </script></div></body></html>
+        </script></div>
+      </div>
+    </footer>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadToc();
+InitializeQuickLinks();
+hljs.highlightAll();
+});</script>
+  </body>
+</html>

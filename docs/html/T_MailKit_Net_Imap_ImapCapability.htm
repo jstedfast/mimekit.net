@@ -1,0 +1,805 @@
+﻿<!DOCTYPE html []>
+<html lang="en-US" data-theme="light">
+  <head><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B7CEM3SL1V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B7CEM3SL1V');
+</script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/fontawesome.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/solid.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/regular.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/brands.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/presentationStyle.css?v=50DD4085" />
+    <script src="../scripts/jquery-3.7.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js?v=50DD4085"></script>
+    <script src="../scripts/highlight.min.js?v=50DD4085"></script>
+    <script src="../scripts/themeSwitcher.js?v=50DD4085"></script>
+    <script src="../scripts/presentationStyle.js?v=50DD4085"></script>
+    <title>ImapCapability Enumeration</title>
+    <meta name="Title" content="ImapCapability" />
+    <meta name="Help.Id" content="T:MailKit.Net.Imap.ImapCapability" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MailKit.Net.Imap" />
+    <meta name="guid" content="T_MailKit_Net_Imap_ImapCapability" />
+    <meta name="Description" content="A capability supported by an IMAP server." />
+    <meta name="tocParentId" content="487" />
+  </head>
+  <body>
+    <header class="pageHeader" id="Header">
+      <div class="level mb-0 py-2 px-4">
+        <div id="TitleContainer" class="level-left">
+          <div id="DocumentationTitle" class="level-item">MailKit Documentation</div>
+        </div>
+        <div id="LangFilterSearchContainer" class="level-right">
+          <div id="ProjectLink" class="level-item" title="Project website" aria-label="Project website">
+            <a href="https://github.com/jstedfast/MailKit" rel="noopener noreferrer" target="_blank">
+              <span class="icon">
+                <i class="fa-brands fa-github"></i>
+              </span>
+            </a>
+          </div>
+          <div id="ThemeSwitcher" class="level-item" title="Toggle theme" aria-label="Toggle theme">
+            <span class="icon">
+              <i class="fa fa-regular fa-moon theme-icon-dark"></i>
+              <i class="fa fa-sun theme-icon-light"></i>
+            </span>
+          </div>
+          <div class="level-item">
+            <div class="dropdown is-hoverable">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span id="CurrentLanguage"></span>
+                  <span class="icon is-small">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" role="menu">
+                <div id="LanguageSelections" class="dropdown-content">
+                  <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="level-item">
+            <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+              <div class="field">
+                <div class="control has-icons-left">
+                  <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-search"></i>
+                  </span>
+                  <button id="SearchButton" type="submit" class="is-hidden"></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article>
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile toc-resizable">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu">
+                <li>Loading...</li>
+              </ul>
+            </nav>
+          </div>
+          <div id="Resizer" class="toc-resizer"></div>
+          <div id="TopicContent" class="column content is-7 toc-resizable-content">
+            <h1>Imap<wbr />Capability Enumeration</h1>
+            <div class="summary">
+            A capability supported by an IMAP server.
+            </div>
+            <h2 class="quickLinkHeader">Definition</h2>
+            <div id="IDBSection">
+              <strong>Namespace:</strong> <a href="N_MailKit_Net_Imap.htm">MailKit.Net.Imap</a><br /><strong>Assembly:</strong> MailKit (in MailKit.dll) Version: 5.0.0<div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">enum</span> <span class="identifier">ImapCapability</span></code></pre></div></div></div>
+            <h2 class="quickLinkHeader">Remarks</h2>
+            <div id="IDBCSection">
+            Capabilities are read as part of the response to the <span class="code">CAPABILITY</span> command that
+            is issued during the connection and authentication phases of the
+            <a href="T_MailKit_Net_Imap_ImapClient.htm">ImapClient</a>.
+            </div>
+            <h2 class="quickLinkHeader">Example</h2>
+            <div id="IDCCSection">
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void Capabilities ()
+{
+    using (var client = new ImapClient ()) {
+        client.Connect ("imap.gmail.com", 993, SecureSocketOptions.SslOnConnect);
+
+        var mechanisms = string.Join (", ", client.AuthenticationMechanisms);
+        Console.WriteLine ("The IMAP server supports the following SASL authentication mechanisms: {0}", mechanisms);
+
+        client.Authenticate ("username", "password");
+
+        if (client.Capabilities.Contains (ImapCapability.Id)) {
+            var clientImplementation = new ImapImplementation { Name = "MailKit", Version = "1.0" };
+            var serverImplementation = client.Identify (clientImplementation);
+
+            Console.WriteLine ("Server implementation details:");
+            foreach (var property in serverImplementation.Properties)
+                Console.WriteLine ("  {0} = {1}", property.Key, property.Value);
+        }
+
+        if (client.Capabilities.Contains (ImapCapability.Acl)) {
+            Console.WriteLine ("The IMAP server supports Access Control Lists.");
+
+            Console.WriteLine ("The IMAP server supports the following access rights: {0}", client.Rights);
+
+            Console.WriteLine ("The Inbox has the following access controls:");
+            var acl = client.Inbox.GetAccessControlList ();
+            foreach (var ac in acl)
+                Console.WriteLine ("  {0} = {1}", ac.Name, ac.Rights);
+
+            var myRights = client.Inbox.GetMyAccessRights ();
+            Console.WriteLine ("Your current rights for the Inbox folder are: {0}", myRights);
+        }
+
+        if (client.Capabilities.Contains (ImapCapability.Quota)) {
+            Console.WriteLine ("The IMAP server supports quotas.");
+
+            Console.WriteLine ("The current quota for the Inbox is:");
+            var quota = client.Inbox.GetQuota ();
+
+            if (quota.StorageLimit.HasValue)
+                Console.WriteLine ("  Limited by storage space. Using {0} out of {1} kilobytes.", quota.CurrentStorageSize.Value, quota.StorageLimit.Value);
+
+            if (quota.MessageLimit.HasValue)
+                Console.WriteLine ("  Limited by the number of messages. Using {0} out of {1} messages.", quota.CurrentMessageCount.Value, quota.MessageLimit.Value);
+
+            Console.WriteLine ("The quota root is: {0}", quota.QuotaRoot);
+        }
+
+        if (client.Capabilities.Contains (ImapCapability.Thread)) {
+            if (client.ThreadingAlgorithms.Contains (ThreadingAlgorithm.OrderedSubject))
+                Console.WriteLine ("The IMAP server supports threading by subject.");
+            if (client.ThreadingAlgorithms.Contains (ThreadingAlgorithm.References))
+                Console.WriteLine ("The IMAP server supports threading by references.");
+        }
+
+        client.Disconnect (true);
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            <h2 class="quickLinkHeader">Members</h2>
+            <div id="IDADASection">
+              <table id="enumMemberList" class="table is-hoverable">
+                <tr>
+                  <td>IMAP4</td>
+                  <td>0</td>
+                  <td>
+            The server implements the core IMAP4 commands.
+            </td>
+                </tr>
+                <tr>
+                  <td>IMAP4rev1</td>
+                  <td>1</td>
+                  <td>
+            The server implements the core IMAP4rev1 commands.
+            </td>
+                </tr>
+                <tr>
+                  <td>Status</td>
+                  <td>2</td>
+                  <td>
+            The server supports the <span class="code">STATUS</span> command.
+            </td>
+                </tr>
+                <tr>
+                  <td>Acl</td>
+                  <td>3</td>
+                  <td>
+            The server supports the ACL extension defined in <a href="https://tools.ietf.org/html/rfc2086">rfc2086</a>
+            and <a href="https://tools.ietf.org/html/rfc4314">rfc4314</a>.
+            </td>
+                </tr>
+                <tr>
+                  <td>Quota</td>
+                  <td>4</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc2087">QUOTA</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>LiteralPlus</td>
+                  <td>5</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc2088">LITERAL+</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>Idle</td>
+                  <td>6</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc2177">IDLE</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>MailboxReferrals</td>
+                  <td>7</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc2193">MAILBOX-REFERRALS</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>LoginReferrals</td>
+                  <td>8</td>
+                  <td>
+            the server supports the <a href="https://tools.ietf.org/html/rfc2221">LOGIN-REFERRALS</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>Namespace</td>
+                  <td>9</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc2342">NAMESPACE</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>UidPlus</td>
+                  <td>10</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc4315">UIDPLUS</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>StartTLS</td>
+                  <td>11</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc3501">STARTTLS</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>LoginDisabled</td>
+                  <td>12</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc3501">LOGINDISABLED</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>Id</td>
+                  <td>13</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc2971">ID</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>Children</td>
+                  <td>14</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc3348">CHILDREN</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>MultiAppend</td>
+                  <td>15</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc3502">MULTIAPPEND</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>Binary</td>
+                  <td>16</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc3516">BINARY</a> content extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>Unselect</td>
+                  <td>17</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc3691">UNSELECT</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>UrlAuth</td>
+                  <td>18</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc4467">URLAUTH</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>Catenate</td>
+                  <td>19</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc4469">CATENATE</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>CondStore</td>
+                  <td>20</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc4551">CONDSTORE</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>ESearch</td>
+                  <td>21</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc4731">ESEARCH</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>SaslIR</td>
+                  <td>22</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc4959">SASL-IR</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>Compress</td>
+                  <td>23</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc4978">COMPRESS</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>Within</td>
+                  <td>24</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc5032">WITHIN</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>Enable</td>
+                  <td>25</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc5161">ENABLE</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>QuickResync</td>
+                  <td>26</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc5162">QRESYNC</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>SearchResults</td>
+                  <td>27</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc5182">SEARCHRES</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>Language</td>
+                  <td>28</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc5255">LANGUAGE</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>I18NLevel</td>
+                  <td>29</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc5255">I18NLEVEL</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>Sort</td>
+                  <td>30</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc5256">SORT</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>Thread</td>
+                  <td>31</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc5256">THREAD</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>Annotate</td>
+                  <td>32</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc5257">ANNOTATE</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>ListExtended</td>
+                  <td>33</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc5258">LIST-EXTENDED</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>Convert</td>
+                  <td>34</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc5259">CONVERT</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>ESort</td>
+                  <td>35</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc5267">ESORT</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>Context</td>
+                  <td>36</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc5267">CONTEXT</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>Metadata</td>
+                  <td>37</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc5464">METADATA</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>MetadataServer</td>
+                  <td>38</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc5464">METADATA-SERVER</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>Notify</td>
+                  <td>39</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc5465">NOTIFY</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>Filters</td>
+                  <td>40</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc5466">FILTERS</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>UrlAuthBinary</td>
+                  <td>41</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc5524">URLAUTH=BINARY</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>UrlPartial</td>
+                  <td>42</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc5550">URL-PARTIAL</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>ListStatus</td>
+                  <td>43</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc5819">LIST-STATUS</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>SortDisplay</td>
+                  <td>44</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc5957">SORT=DISPLAY</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>SpecialUse</td>
+                  <td>45</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc6154">SPECIAL-USE</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>CreateSpecialUse</td>
+                  <td>46</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc6154">CREATE-SPECIAL-USE</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>FuzzySearch</td>
+                  <td>47</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc6203">SEARCH=FUZZY</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>MultiSearch</td>
+                  <td>48</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc6237">MULTISEARCH</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>ImapSieve</td>
+                  <td>49</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc6785">IMAPSIEVE</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>Move</td>
+                  <td>50</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc6851">MOVE</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>UTF8Accept</td>
+                  <td>51</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc6855">UTF8=ACCEPT</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>UTF8Only</td>
+                  <td>52</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc6855">UTF8=ONLY</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>LiteralMinus</td>
+                  <td>53</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc7888">LITERAL-</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>AppendLimit</td>
+                  <td>54</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc7889">APPENDLIMIT</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>Unauthenticate</td>
+                  <td>55</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc8437">UNAUTHENTICATE</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>StatusSize</td>
+                  <td>56</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc8438">STATUS=SIZE</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>ListMyRights</td>
+                  <td>57</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc8440">LIST-MYRIGHTS</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>ObjectID</td>
+                  <td>58</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc8474">OBJECTID</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>Replace</td>
+                  <td>59</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc8508">REPLACE</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>SaveDate</td>
+                  <td>60</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc8514">SAVEDATE</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>Preview</td>
+                  <td>61</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc8970">PREVIEW</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>IMAP4rev2</td>
+                  <td>62</td>
+                  <td>
+            The server implements the core IMAP4rev2 commands described in <a href="https://tools.ietf.org/html/rfc9051">rfc9051</a>.
+            </td>
+                </tr>
+                <tr>
+                  <td>QuotaSet</td>
+                  <td>63</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc9208">QUOTASET</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>QuotaResourceStorage</td>
+                  <td>64</td>
+                  <td>
+            The server supports the <span class="code">STORAGE</span> resource type defined by the <a href="https://tools.ietf.org/html/rfc9208">QUOTA</a> extension (<span class="code">QUOTA=RES-STORAGE</span>).
+            </td>
+                </tr>
+                <tr>
+                  <td>QuotaResourceMessage</td>
+                  <td>65</td>
+                  <td>
+            The server supports the <span class="code">MESSAGE</span> resource type defined by the <a href="https://tools.ietf.org/html/rfc9208">QUOTA</a> extension (<span class="code">QUOTA=RES-MESSAGE</span>).
+            </td>
+                </tr>
+                <tr>
+                  <td>QuotaResourceMailbox</td>
+                  <td>66</td>
+                  <td>
+            The server supports the <span class="code">MAILBOX</span> resource type defined by the <a href="https://tools.ietf.org/html/rfc9208">QUOTA</a> extension (<span class="code">QUOTA=RES-MAILBOX</span>).
+            </td>
+                </tr>
+                <tr>
+                  <td>QuotaResourceAnnotationStorage</td>
+                  <td>67</td>
+                  <td>
+            The server supports the <span class="code">ANNOTATION-STORAGE</span> resource type defined by the <a href="https://tools.ietf.org/html/rfc9208">QUOTA</a> extension (<span class="code">QUOTA=RES-ANNOTATION-STORAGE</span>).
+            </td>
+                </tr>
+                <tr>
+                  <td>Partial</td>
+                  <td>68</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc9394">PARTIAL</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>InProgress</td>
+                  <td>69</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc9585">INPROGRESS</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>UidOnly</td>
+                  <td>70</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc9586">UIDONLY</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>ListMetadata</td>
+                  <td>71</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc9590">LIST-METADATA</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>JmapAccess</td>
+                  <td>72</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc9698">JMAPACCESS</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>MessageLimit</td>
+                  <td>73</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc9738">MESSAGELIMIT</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>SaveLimit</td>
+                  <td>74</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc9738">SAVELIMIT</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>UidBatches</td>
+                  <td>75</td>
+                  <td>
+            The server supports the <a href="https://tools.ietf.org/html/rfc10022">UIDBATCHES</a> extension.
+            </td>
+                </tr>
+                <tr>
+                  <td>XList</td>
+                  <td>76</td>
+                  <td>
+            The server supports the <a href="https://developers.google.com/gmail/imap_extensions">XLIST</a> extension (GMail).
+            </td>
+                </tr>
+                <tr>
+                  <td>GMailExt1</td>
+                  <td>77</td>
+                  <td>
+            The server supports the <a href="https://developers.google.com/gmail/imap_extensions">X-GM-EXT1</a> extension (GMail).
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Reference</h4>
+              <div>
+                <a href="N_MailKit_Net_Imap.htm">MailKit.Net.Imap Namespace</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Definition</a>
+                </li>
+                <li>
+                  <a class="quickLink">Remarks</a>
+                </li>
+                <li>
+                  <a class="quickLink">Example</a>
+                </li>
+                <li>
+                  <a class="quickLink">Members</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer id="PageFooter" class="footer border-top py-3">
+      <div class="columns">
+        <div id="FooterContent" class="column">
+          <p class="site-footer-links">
+            <a href="https://mimekit.net/">Home</a> <a href="https://github.com/jstedfast/MimeKit">MimeKit on GitHub</a> <a href="https://github.com/jstedfast/MailKit">MailKit on GitHub</a> <a href="https://github.com/sponsors/jstedfast">    Sponsor</a></p>
+          <p>
+            <a href="https://github.com/jstedfast" target="_blank" rel="noopener noreferrer">Copyright © 2013-2026 Jeffrey Stedfast</a>
+          </p>
+          <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:jestedfa%40microsoft.com?Subject=MailKit%20Documentation">Jeffrey Stedfast</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script></div>
+      </div>
+    </footer>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadToc();
+InitializeQuickLinks();
+hljs.highlightAll();
+});</script>
+  </body>
+</html>

@@ -1,0 +1,377 @@
+﻿<!DOCTYPE html []>
+<html lang="en-US" data-theme="light">
+  <head><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B7CEM3SL1V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B7CEM3SL1V');
+</script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/fontawesome.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/solid.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/regular.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/brands.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/presentationStyle.css?v=50DD4085" />
+    <script src="../scripts/jquery-3.7.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js?v=50DD4085"></script>
+    <script src="../scripts/highlight.min.js?v=50DD4085"></script>
+    <script src="../scripts/themeSwitcher.js?v=50DD4085"></script>
+    <script src="../scripts/presentationStyle.js?v=50DD4085"></script>
+    <title>SmtpCommand Enumeration</title>
+    <meta name="Title" content="SmtpCommand" />
+    <meta name="Help.Id" content="T:MailKit.Net.Smtp.SmtpCommand" />
+    <meta name="Help.ContentType" content="Reference" />
+    <meta name="container" content="MailKit.Net.Smtp" />
+    <meta name="guid" content="T_MailKit_Net_Smtp_SmtpCommand" />
+    <meta name="Description" content="An enumeration of the SMTP commands that the may send." />
+    <meta name="tocParentId" content="720" />
+  </head>
+  <body>
+    <header class="pageHeader" id="Header">
+      <div class="level mb-0 py-2 px-4">
+        <div id="TitleContainer" class="level-left">
+          <div id="DocumentationTitle" class="level-item">MailKit Documentation</div>
+        </div>
+        <div id="LangFilterSearchContainer" class="level-right">
+          <div id="ProjectLink" class="level-item" title="Project website" aria-label="Project website">
+            <a href="https://github.com/jstedfast/MailKit" rel="noopener noreferrer" target="_blank">
+              <span class="icon">
+                <i class="fa-brands fa-github"></i>
+              </span>
+            </a>
+          </div>
+          <div id="ThemeSwitcher" class="level-item" title="Toggle theme" aria-label="Toggle theme">
+            <span class="icon">
+              <i class="fa fa-regular fa-moon theme-icon-dark"></i>
+              <i class="fa fa-sun theme-icon-light"></i>
+            </span>
+          </div>
+          <div class="level-item">
+            <div class="dropdown is-hoverable">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span id="CurrentLanguage"></span>
+                  <span class="icon is-small">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" role="menu">
+                <div id="LanguageSelections" class="dropdown-content">
+                  <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="level-item">
+            <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+              <div class="field">
+                <div class="control has-icons-left">
+                  <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-search"></i>
+                  </span>
+                  <button id="SearchButton" type="submit" class="is-hidden"></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article>
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile toc-resizable">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu">
+                <li>Loading...</li>
+              </ul>
+            </nav>
+          </div>
+          <div id="Resizer" class="toc-resizer"></div>
+          <div id="TopicContent" class="column content is-7 toc-resizable-content">
+            <h1>Smtp<wbr />Command Enumeration</h1>
+            <div class="summary">
+            An enumeration of the SMTP commands that the <a href="T_MailKit_Net_Smtp_SmtpClient.htm">SmtpClient</a> may send.
+            </div>
+            <h2 class="quickLinkHeader">Definition</h2>
+            <div id="IDBSection">
+              <strong>Namespace:</strong> <a href="N_MailKit_Net_Smtp.htm">MailKit.Net.Smtp</a><br /><strong>Assembly:</strong> MailKit (in MailKit.dll) Version: 5.0.0<div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">enum</span> <span class="identifier">SmtpCommand</span></code></pre></div></div></div>
+            <h2 class="quickLinkHeader">Remarks</h2>
+            <div id="IDBCSection">
+              <p>An enumeration of the SMTP commands that the <a href="T_MailKit_Net_Smtp_SmtpClient.htm">SmtpClient</a> may send.</p>
+              <p>This value is used by <a href="T_MailKit_Net_Smtp_SmtpCommandException.htm">SmtpCommandException</a>, <a href="T_MailKit_Net_Smtp_SmtpProtocolException.htm">SmtpProtocolException</a>, and
+            <a href="T_MailKit_Net_Smtp_SmtpServiceNotAuthenticatedException.htm">SmtpServiceNotAuthenticatedException</a> to identify which command (or which response) the
+            <a href="T_MailKit_Net_Smtp_SmtpClient.htm">SmtpClient</a> was processing when the error occurred.</p>
+            </div>
+            <h2 class="quickLinkHeader">Example</h2>
+            <div id="IDCCSection">
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void SendMessage (MimeMessage message)
+{
+    using (var client = new SmtpClient ()) {
+        try {
+            client.Connect ("smtp.gmail.com", 465, SecureSocketOptions.SslOnConnect);
+        } catch (SmtpCommandException ex) {
+            Console.WriteLine ("Error trying to connect: {0}", ex.Message);
+            Console.WriteLine ("\tStatusCode: {0}", ex.StatusCode);
+            return;
+        } catch (SmtpProtocolException ex) {
+            Console.WriteLine ("Protocol error while trying to connect: {0}", ex.Message);
+            return;
+        }
+
+        // Note: Not all SMTP servers support authentication, but GMail does.
+        if (client.Capabilities.Contains (SmtpCapability.Authentication)) {
+            try {
+                client.Authenticate ("username", "password");
+            } catch (AuthenticationException ex) {
+                Console.WriteLine ("Invalid user name or password.");
+                return;
+            } catch (SmtpCommandException ex) {
+                Console.WriteLine ("Error trying to authenticate: {0}", ex.Message);
+                Console.WriteLine ("\tStatusCode: {0}", ex.StatusCode);
+                return;
+            } catch (SmtpProtocolException ex) {
+                Console.WriteLine ("Protocol error while trying to authenticate: {0}", ex.Message);
+                return;
+            }
+        }
+
+        try {
+            client.Send (message);
+        } catch (SmtpCommandException ex) {
+            Console.WriteLine ("Error sending message: {0}", ex.Message);
+            Console.WriteLine ("\tStatusCode: {0}", ex.StatusCode);
+
+            switch (ex.ErrorCode) {
+            case SmtpErrorCode.RecipientNotAccepted:
+                Console.WriteLine ("\tRecipient not accepted: {0}", ex.Mailbox);
+                break;
+            case SmtpErrorCode.SenderNotAccepted:
+                Console.WriteLine ("\tSender not accepted: {0}", ex.Mailbox);
+                break;
+            case SmtpErrorCode.MessageNotAccepted:
+                Console.WriteLine ("\tMessage not accepted.");
+                break;
+            }
+        } catch (SmtpProtocolException ex) {
+            Console.WriteLine ("Protocol error while sending message: {0}", ex.Message);
+        }
+
+        client.Disconnect (true);
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            <h2 class="quickLinkHeader">Members</h2>
+            <div id="IDADASection">
+              <table id="enumMemberList" class="table is-hoverable">
+                <tr>
+                  <td>Unknown</td>
+                  <td>0</td>
+                  <td>
+            The command is unknown.
+            </td>
+                </tr>
+                <tr>
+                  <td>Connect</td>
+                  <td>1</td>
+                  <td>
+            Not an actual command, this value represents the greeting sent by the SMTP server upon connecting.
+            </td>
+                </tr>
+                <tr>
+                  <td>Ehlo</td>
+                  <td>2</td>
+                  <td>
+            The <span class="code">EHLO</span> command.
+            </td>
+                </tr>
+                <tr>
+                  <td>Helo</td>
+                  <td>3</td>
+                  <td>
+            The <span class="code">HELO</span> command.
+            </td>
+                </tr>
+                <tr>
+                  <td>StartTls</td>
+                  <td>4</td>
+                  <td>
+            The <span class="code">STARTTLS</span> command.
+            </td>
+                </tr>
+                <tr>
+                  <td>Auth</td>
+                  <td>5</td>
+                  <td>
+            The <span class="code">AUTH</span> command (including any SASL challenge responses).
+            </td>
+                </tr>
+                <tr>
+                  <td>MailFrom</td>
+                  <td>6</td>
+                  <td>
+            The <span class="code">MAIL FROM</span> command.
+            </td>
+                </tr>
+                <tr>
+                  <td>RcptTo</td>
+                  <td>7</td>
+                  <td>
+            The <span class="code">RCPT TO</span> command.
+            </td>
+                </tr>
+                <tr>
+                  <td>Data</td>
+                  <td>8</td>
+                  <td>
+            The <span class="code">DATA</span> command.
+            </td>
+                </tr>
+                <tr>
+                  <td>MessageData</td>
+                  <td>9</td>
+                  <td>
+            Not an actual command, this value represents the message content that is sent after the
+            server accepts the <span class="code">DATA</span> command, terminated by a line consisting of a single period.
+            </td>
+                </tr>
+                <tr>
+                  <td>Bdat</td>
+                  <td>10</td>
+                  <td>
+            The <span class="code">BDAT</span> command.
+            </td>
+                </tr>
+                <tr>
+                  <td>Rset</td>
+                  <td>11</td>
+                  <td>
+            The <span class="code">RSET</span> command.
+            </td>
+                </tr>
+                <tr>
+                  <td>Noop</td>
+                  <td>12</td>
+                  <td>
+            The <span class="code">NOOP</span> command.
+            </td>
+                </tr>
+                <tr>
+                  <td>Quit</td>
+                  <td>13</td>
+                  <td>
+            The <span class="code">QUIT</span> command.
+            </td>
+                </tr>
+                <tr>
+                  <td>Vrfy</td>
+                  <td>14</td>
+                  <td>
+            The <span class="code">VRFY</span> command.
+            </td>
+                </tr>
+                <tr>
+                  <td>Expn</td>
+                  <td>15</td>
+                  <td>
+            The <span class="code">EXPN</span> command.
+            </td>
+                </tr>
+                <tr>
+                  <td>Custom</td>
+                  <td>16</td>
+                  <td>
+            A custom command sent via <a href="M_MailKit_Net_Smtp_SmtpClient_SendCommand.htm">SendCommand(String, CancellationToken)</a> or
+            <a href="M_MailKit_Net_Smtp_SmtpClient_SendCommandAsync.htm">SendCommandAsync(String, CancellationToken)</a>.
+            </td>
+                </tr>
+              </table>
+            </div>
+            <h2 class="quickLinkHeader">See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Reference</h4>
+              <div>
+                <a href="N_MailKit_Net_Smtp.htm">MailKit.Net.Smtp Namespace</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Definition</a>
+                </li>
+                <li>
+                  <a class="quickLink">Remarks</a>
+                </li>
+                <li>
+                  <a class="quickLink">Example</a>
+                </li>
+                <li>
+                  <a class="quickLink">Members</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer id="PageFooter" class="footer border-top py-3">
+      <div class="columns">
+        <div id="FooterContent" class="column">
+          <p class="site-footer-links">
+            <a href="https://mimekit.net/">Home</a> <a href="https://github.com/jstedfast/MimeKit">MimeKit on GitHub</a> <a href="https://github.com/jstedfast/MailKit">MailKit on GitHub</a> <a href="https://github.com/sponsors/jstedfast">    Sponsor</a></p>
+          <p>
+            <a href="https://github.com/jstedfast" target="_blank" rel="noopener noreferrer">Copyright © 2013-2026 Jeffrey Stedfast</a>
+          </p>
+          <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:jestedfa%40microsoft.com?Subject=MailKit%20Documentation">Jeffrey Stedfast</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script></div>
+      </div>
+    </footer>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadToc();
+InitializeQuickLinks();
+hljs.highlightAll();
+});</script>
+  </body>
+</html>

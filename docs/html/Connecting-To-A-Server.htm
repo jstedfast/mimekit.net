@@ -1,0 +1,906 @@
+﻿<!DOCTYPE html []>
+<html lang="en-US" data-theme="light">
+  <head><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B7CEM3SL1V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B7CEM3SL1V');
+</script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/bulma.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/fontawesome.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/solid.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/regular.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/brands.min.css?v=50DD4085" />
+    <link rel="stylesheet" href="../css/presentationStyle.css?v=50DD4085" />
+    <script src="../scripts/jquery-3.7.1.min.js"></script>
+    <script src="../scripts/clipboard.min.js?v=50DD4085"></script>
+    <script src="../scripts/highlight.min.js?v=50DD4085"></script>
+    <script src="../scripts/themeSwitcher.js?v=50DD4085"></script>
+    <script src="../scripts/presentationStyle.js?v=50DD4085"></script>
+    <title>Connecting to a server</title>
+    <meta name="Title" content="Connecting to a server" />
+    <meta name="Help.Id" content="Connecting-To-A-Server" />
+    <meta name="Help.ContentType" content="Concepts" />
+    <meta name="guid" content="Connecting-To-A-Server" />
+    <meta name="Description" content="T:MailKit.Net.Smtp.SmtpClient, T:MailKit.Net.Pop3.Pop3Client and T:MailKit.Net.Imap.ImapClient all derive from T:MailKit." />
+    <meta name="tocParentId" content="1" />
+  </head>
+  <body>
+    <header class="pageHeader" id="Header">
+      <div class="level mb-0 py-2 px-4">
+        <div id="TitleContainer" class="level-left">
+          <div id="DocumentationTitle" class="level-item">MailKit Documentation</div>
+        </div>
+        <div id="LangFilterSearchContainer" class="level-right">
+          <div id="ProjectLink" class="level-item" title="Project website" aria-label="Project website">
+            <a href="https://github.com/jstedfast/MailKit" rel="noopener noreferrer" target="_blank">
+              <span class="icon">
+                <i class="fa-brands fa-github"></i>
+              </span>
+            </a>
+          </div>
+          <div id="ThemeSwitcher" class="level-item" title="Toggle theme" aria-label="Toggle theme">
+            <span class="icon">
+              <i class="fa fa-regular fa-moon theme-icon-dark"></i>
+              <i class="fa fa-sun theme-icon-light"></i>
+            </span>
+          </div>
+          <div class="level-item">
+            <div class="dropdown is-hoverable">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span id="CurrentLanguage"></span>
+                  <span class="icon is-small">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" role="menu">
+                <div id="LanguageSelections" class="dropdown-content">
+                  <a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="level-item">
+            <form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;">
+              <div class="field">
+                <div class="control has-icons-left">
+                  <input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" />
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-search"></i>
+                  </span>
+                  <button id="SearchButton" type="submit" class="is-hidden"></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article>
+        <nav class="breadcrumb my-1 px-2 border-bottom" role="navigation">
+          <ul id="TopicBreadcrumbs" />
+        </nav>
+        <div id="ContentContainer" class="columns pl-5 pr-5">
+          <div id="ShowHideTOCColumn" class="column is-hidden-tablet">
+            <a id="ShowHideTOC">Show/Hide TOC</a>
+          </div>
+          <div id="TOCColumn" class="column is-hidden-mobile toc-resizable">
+            <nav class="toc">
+              <ul id="TableOfContents" class="toc-menu">
+                <li>Loading...</li>
+              </ul>
+            </nav>
+          </div>
+          <div id="Resizer" class="toc-resizer"></div>
+          <div id="TopicContent" class="column content is-7 toc-resizable-content">
+            <h1>Connecting to a server</h1>
+            <div>
+              <p>
+                <a href="T_MailKit_Net_Smtp_SmtpClient.htm">SmtpClient</a>,
+        <a href="T_MailKit_Net_Pop3_Pop3Client.htm">Pop3Client</a> and
+        <a href="T_MailKit_Net_Imap_ImapClient.htm">ImapClient</a> all derive from
+        <a href="T_MailKit_MailService.htm">MailService</a>, so connecting, securing the
+        connection, authenticating, logging and error handling work the same way regardless of which
+        protocol you are using. This topic covers those common features.
+      </p>
+              <article class="message is-info">
+                <div class="message-header">
+                  <p>
+                    <span class="icon">
+                      <i class="fa fa-info-circle"></i>
+                    </span>  Tip</p>
+                </div>
+                <div class="message-body">
+                  <p>
+          Every method that performs network I/O has an <span class="literal">Async</span> counterpart (for example,
+          <a href="Overload_MailKit_MailService_ConnectAsync.htm">ConnectAsync</a>).
+          The examples in this documentation mostly use the synchronous methods for brevity, but the
+          asynchronous methods are recommended for UI and server applications.
+        </p>
+                </div>
+              </article>
+              <p class="is-hidden-tablet">This topic contains the following sections:</p>
+              <ul class="is-hidden-tablet">
+                <li>
+                  <a href="#SecureSocketOptions">Choosing how to secure the connection</a>
+                </li>
+                <li>
+                  <a href="#TlsSettings">Configuring SSL/TLS</a>
+                </li>
+                <li>
+                  <a href="#CertificateValidation">Validating server certificates</a>
+                </li>
+                <li>
+                  <a href="#Proxies">Connecting through a proxy</a>
+                </li>
+                <li>
+                  <a href="#Timeouts">Timeouts and cancellation</a>
+                </li>
+                <li>
+                  <a href="#ProtocolLogging">Logging the protocol</a>
+                </li>
+                <li>
+                  <a href="#Telemetry">Metrics and tracing</a>
+                </li>
+                <li>
+                  <a href="#Exceptions">Handling errors</a>
+                </li>
+                <li>
+                  <a href="#seeAlsoSection">See Also</a>
+                </li>
+              </ul>
+            </div>
+            <h2 id="SecureSocketOptions" class="quickLinkHeader">Choosing how to secure the connection</h2>
+            <div id="IDBABSection">
+              <p>
+          The <a href="T_MailKit_Security_SecureSocketOptions.htm">SecureSocketOptions</a> argument passed to
+          <a href="Overload_MailKit_MailService_Connect.htm">Connect</a>
+          determines whether and how the connection is encrypted using SSL/TLS:
+        </p>
+              <table class="table is-hoverable">
+                <thead>
+                  <tr>
+                    <th>
+                      <p>Value</p>
+                    </th>
+                    <th>
+                      <p>Behavior</p>
+                    </th>
+                  </tr>
+                </thead>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="code">None</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>No SSL/TLS is used. Credentials are sent in the clear unless the SASL mechanism protects them.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="code">SslOnConnect</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>The connection is encrypted immediately (implicit TLS). Used with the SMTPS (465), IMAPS (993) and POP3S (995) ports.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="code">StartTls</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>
+              Connects in plain text and then upgrades the connection using the STARTTLS (or STLS) command.
+              An exception is thrown if the server does not support it. Typically used with ports 587, 143 and 110.
+            </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="code">StartTlsWhenAvailable</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>
+              Like <span class="code">StartTls</span>, but silently continues unencrypted if the server
+              does not support STARTTLS. This is vulnerable to downgrade attacks.
+            </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="code">Auto</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>
+              Uses <span class="code">SslOnConnect</span> for the well-known SSL ports (465, 993 and 995)
+              and <span class="code">StartTlsWhenAvailable</span> for any other port.
+            </p>
+                  </td>
+                </tr>
+              </table>
+              <article class="message is-warning">
+                <div class="message-header">
+                  <p>
+                    <span class="icon">
+                      <i class="fa fa-warning"></i>
+                    </span>  Caution</p>
+                </div>
+                <div class="message-body">
+                  <p>
+            When you know which ports and security options your server supports, prefer
+            <span class="code">SslOnConnect</span> or <span class="code">StartTls</span> over
+            <span class="code">Auto</span> or <span class="code">StartTlsWhenAvailable</span> so that a
+            man-in-the-middle cannot silently downgrade the connection to plain text.
+          </p>
+                </div>
+              </article>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void ConnectWithStartTls ()
+{
+    using (var client = new SmtpClient ()) {
+        // Port 587 is the standard "submission" port. The connection starts out as plain-text
+        // and is upgraded to TLS using the STARTTLS command. Using SecureSocketOptions.StartTls
+        // (rather than StartTlsWhenAvailable) means that Connect() will throw if the server does
+        // not support STARTTLS instead of silently continuing over an unencrypted connection.
+        client.Connect ("smtp.example.com", 587, SecureSocketOptions.StartTls);
+
+        Console.WriteLine ("Secure: {0}", client.IsSecure);
+        Console.WriteLine ("Protocol: {0}", client.SslProtocol);
+        Console.WriteLine ("Cipher suite: {0}", client.SslCipherSuite);
+
+        client.Disconnect (true);
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+              <p>
+          After connecting, the <a href="P_MailKit_MailService_IsSecure.htm">IsSecure</a>,
+          <a href="P_MailKit_MailService_SslProtocol.htm">SslProtocol</a> and
+          <a href="P_MailKit_MailService_SslCipherSuite.htm">SslCipherSuite</a> properties
+          describe the negotiated TLS session:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void PrintSslConnectionInfo (string host, int port)
+{
+    using (var client = new SmtpClient ()) {
+        client.Connect (host, port, SecureSocketOptions.Auto);
+
+        Console.WriteLine ($"Negotiated the following SSL options with {host}:");
+        Console.WriteLine ($"        Protocol Version: {client.SslProtocol}");
+        Console.WriteLine ($"            Cipher Suite: {client.SslCipherSuite}");
+
+        // Example Log:
+        //
+        // Negotiated the following SSL options with smtp.gmail.com:
+        //         Protocol Version: Tls12
+        //             Cipher Suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+
+        client.Disconnect (true);
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            <h2 id="TlsSettings" class="quickLinkHeader">Configuring SSL/TLS</h2>
+            <div id="IDCABSection">
+              <p>
+          The following properties can be set before connecting to customize the TLS handshake:
+        </p>
+              <ul>
+                <li>
+                  <p>
+                    <a href="P_MailKit_MailService_SslProtocols.htm">SslProtocols</a>: the SSL/TLS
+              protocol versions that are allowed. On .NET (Core), the default (<span class="code">SslProtocols.None</span>)
+              lets the operating system choose the best available version, which is usually what you want.
+              On .NET Framework, the default is the value of <span class="code">ServicePointManager.SecurityProtocol</span>.
+            </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="P_MailKit_MailService_CheckCertificateRevocation.htm">CheckCertificateRevocation</a>:
+              whether the server certificate's revocation status should be checked (the default is
+              <span class="code">true</span>).
+            </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="P_MailKit_MailService_ClientCertificates.htm">ClientCertificates</a>: client
+              certificates to present to servers that require mutual TLS.
+            </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="P_MailKit_MailService_SslCipherSuitesPolicy.htm">SslCipherSuitesPolicy</a>: restricts the
+              cipher suites that may be negotiated (only supported on some platforms).
+            </p>
+                </li>
+              </ul>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void ConfigureTls ()
+{
+    using (var client = new ImapClient ()) {
+        // Restrict the TLS protocol versions that may be negotiated.
+        client.SslProtocols = SslProtocols.Tls12 | SslProtocols.Tls13;
+
+        // Check the server certificate against the issuer's revocation list (this is the default).
+        client.CheckCertificateRevocation = true;
+
+        // Provide a client certificate if the server requires one.
+        client.ClientCertificates = new X509CertificateCollection {
+            new X509Certificate2 ("client.pfx", "password")
+        };
+
+        client.Connect ("imap.example.com", 993, SecureSocketOptions.SslOnConnect);
+
+        client.Disconnect (true);
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            <h2 id="CertificateValidation" class="quickLinkHeader">Validating server certificates</h2>
+            <div id="IDDABSection">
+              <p>
+          By default, MailKit validates the server's certificate using the operating system's certificate
+          store, just like a web browser. If validation fails, an
+          <a href="T_MailKit_Security_SslHandshakeException.htm">SslHandshakeException</a> is thrown whose
+          message explains why the certificate was rejected.
+        </p>
+              <p>
+          To customize validation (for example, to accept a self-signed certificate for a specific
+          internal server), set the
+          <a href="P_MailKit_MailService_ServerCertificateValidationCallback.htm">ServerCertificateValidationCallback</a>
+          property before connecting. Be careful to only accept the specific certificate that you expect:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">using System;
+using System.Net.Security;
+using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
+
+using MimeKit;
+using MailKit;
+using MailKit.Security;
+using MailKit.Net.Smtp;
+
+namespace MailKit.Examples
+{
+    public static class SslCertificateValidationExample
+    {
+        public static void SendMessage (MimeMessage message)
+        {
+            using (var client = new SmtpClient ()) {
+                // Set our custom SSL certificate validation callback.
+                client.ServerCertificateValidationCallback = MySslCertificateValidationCallback;
+
+                // Connect to smtp.gmail.com on the SSL-wrapped port.
+                client.Connect ("smtp.gmail.com", 465, SecureSocketOptions.SslOnConnect);
+
+                // Authenticate with our username and password.
+                client.Authenticate ("username@gmail.com", "password");
+
+                // Send our message.
+                client.Send (message);
+
+                // Disconnect cleanly from the server.
+                client.Disconnect (true);
+            }
+        }
+
+        static bool MySslCertificateValidationCallback (object sender, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors)
+        {
+            // If there are no errors, then everything went smoothly.
+            if (sslPolicyErrors == SslPolicyErrors.None)
+                return true;
+
+            // Note: MailKit will always pass the host name string as the `sender` argument.
+            var host = (string) sender;
+
+            if ((sslPolicyErrors &amp; SslPolicyErrors.RemoteCertificateNotAvailable) != 0) {
+                // This means that the remote certificate is unavailable. Notify the user and return false.
+                Console.WriteLine ("The SSL certificate was not available for {0}", host);
+                return false;
+            }
+
+            if ((sslPolicyErrors &amp; SslPolicyErrors.RemoteCertificateNameMismatch) != 0) {
+                // This means that the server's SSL certificate did not match the host name that we are trying to connect to.
+                var certificate2 = certificate as X509Certificate2;
+                var cn = certificate2 != null ? certificate2.GetNameInfo (X509NameType.SimpleName, false) : certificate.Subject;
+
+                Console.WriteLine ("The Common Name for the SSL certificate did not match {0}. Instead, it was {1}.", host, cn);
+                return false;
+            }
+
+            // The only other errors left are chain errors.
+            Console.WriteLine ("The SSL certificate for the server could not be validated for the following reasons:");
+
+            // The first element's certificate will be the server's SSL certificate (and will match the `certificate` argument)
+            // while the last element in the chain will typically either be the Root Certificate Authority's certificate -or- it
+            // will be a non-authoritative self-signed certificate that the server admin created. 
+            foreach (var element in chain.ChainElements) {
+                // Each element in the chain will have its own status list. If the status list is empty, it means that the
+                // certificate itself did not contain any errors.
+                if (element.ChainElementStatus.Length == 0)
+                    continue;
+
+                Console.WriteLine ("\u2022 {0}", element.Certificate.Subject);
+                foreach (var error in element.ChainElementStatus) {
+                    // `error.StatusInformation` contains a human-readable error string while `error.Status` is the corresponding enum value.
+                    Console.WriteLine ("\t\u2022 {0}", error.StatusInformation);
+                }
+            }
+
+            return false;
+        }
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+              <article class="message is-warning">
+                <div class="message-header">
+                  <p>
+                    <span class="icon">
+                      <i class="fa fa-warning"></i>
+                    </span>  Caution</p>
+                </div>
+                <div class="message-body">
+                  <p>
+            Never use a callback that simply returns <span class="code">true</span> in production code. Doing
+            so disables all protection against man-in-the-middle attacks.
+          </p>
+                </div>
+              </article>
+            </div>
+            <h2 id="Proxies" class="quickLinkHeader">Connecting through a proxy</h2>
+            <div id="IDEABSection">
+              <p>
+          To connect through a proxy server, set the
+          <a href="P_MailKit_MailService_ProxyClient.htm">ProxyClient</a> property to one of
+          the proxy clients in the <a href="N_MailKit_Net_Proxy.htm">MailKit.Net.Proxy</a> namespace:
+          <a href="T_MailKit_Net_Proxy_HttpProxyClient.htm">HttpProxyClient</a>,
+          <a href="T_MailKit_Net_Proxy_HttpsProxyClient.htm">HttpsProxyClient</a>,
+          <a href="T_MailKit_Net_Proxy_Socks4Client.htm">Socks4Client</a>,
+          <a href="T_MailKit_Net_Proxy_Socks4aClient.htm">Socks4aClient</a> or
+          <a href="T_MailKit_Net_Proxy_Socks5Client.htm">Socks5Client</a>.
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void SendMessageViaProxy (MimeMessage message)
+{
+    using (var client = new SmtpClient ()) {
+        client.ProxyClient = new Socks5Client ("socks5.proxy.com", 1080, new NetworkCredential ("proxyUserName", "proxyPassword"));
+        client.Connect ("smtp.gmail.com", 465, SecureSocketOptions.SslOnConnect);
+        client.Authenticate ("username", "password");
+
+        client.Send (message);
+
+        client.Disconnect (true);
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+              <p>
+          The <a href="P_MailKit_MailService_LocalEndPoint.htm">LocalEndPoint</a> property can be used
+          to bind the connection to a specific local IP address and/or port.
+        </p>
+            </div>
+            <h2 id="Timeouts" class="quickLinkHeader">Timeouts and cancellation</h2>
+            <div id="IDFABSection">
+              <p>
+          The <a href="P_MailKit_MailService_Timeout.htm">Timeout</a> property (2 minutes by
+          default) limits how long any single network read or write may take. It does not limit the total
+          duration of an operation; to do that, pass a <a href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken" target="_blank" rel="noopener noreferrer">CancellationToken</a>.
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static async Task ConnectWithTimeoutAsync ()
+{
+    using (var client = new ImapClient ()) {
+        // The Timeout property (in milliseconds) applies to each individual network read and write.
+        client.Timeout = 30 * 1000;
+
+        // A CancellationToken can be used to put an upper bound on an entire operation.
+        using (var cts = new CancellationTokenSource (TimeSpan.FromMinutes (2))) {
+            await client.ConnectAsync ("imap.example.com", 993, SecureSocketOptions.SslOnConnect, cts.Token);
+            await client.AuthenticateAsync ("username", "password", cts.Token);
+
+            await client.Inbox.OpenAsync (FolderAccess.ReadOnly, cts.Token);
+            Console.WriteLine ("The Inbox has {0} messages.", client.Inbox.Count);
+
+            await client.DisconnectAsync (true, cts.Token);
+        }
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+              <article class="message is-info">
+                <div class="message-header">
+                  <p>
+                    <span class="icon">
+                      <i class="fa fa-info-circle"></i>
+                    </span>  Note</p>
+                </div>
+                <div class="message-body">
+                  <p>
+            Canceling a command that is in progress usually leaves the connection in an unknown state, so
+            MailKit will disconnect. You will need to reconnect and re-authenticate before you can continue.
+          </p>
+                </div>
+              </article>
+            </div>
+            <h2 id="ProtocolLogging" class="quickLinkHeader">Logging the protocol</h2>
+            <div id="IDGABSection">
+              <p>
+          When something goes wrong, a protocol log is the most useful diagnostic tool available. Pass a
+          <a href="T_MailKit_ProtocolLogger.htm">ProtocolLogger</a> to the client's constructor to
+          log all of the commands and responses exchanged with the server:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void DownloadMessages ()
+{
+    using (var client = new ImapClient (new ProtocolLogger ("imap.log"))) {
+        client.Connect ("imap.gmail.com", 993, SecureSocketOptions.SslOnConnect);
+
+        client.Authenticate ("username", "password");
+
+        client.Inbox.Open (FolderAccess.ReadOnly);
+
+        var uids = client.Inbox.Search (SearchQuery.All);
+
+        foreach (var uid in uids) {
+            var message = client.Inbox.GetMessage (uid);
+
+            // write the message to a file
+            message.WriteTo (string.Format ("{0}.eml", uid));
+        }
+
+        client.Disconnect (true);
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+              <p>
+          By default, <a href="P_MailKit_ProtocolLogger_RedactSecrets.htm">RedactSecrets</a> is
+          <span class="code">true</span>, so passwords and authentication tokens are replaced with
+          <span class="literal">********</span> in the log. Message contents are <em>not</em>
+          redacted, so be careful when sharing logs. You can also implement
+          <a href="T_MailKit_IProtocolLogger.htm">IProtocolLogger</a> yourself to route the output
+          to your own logging framework.
+        </p>
+            </div>
+            <h2 id="Telemetry" class="quickLinkHeader">Metrics and tracing</h2>
+            <div id="IDHABSection">
+              <p>
+          On .NET 8 and later, MailKit can emit metrics and traces using
+          <a href="https://learn.microsoft.com/dotnet/api/system.diagnostics.metrics.meter" target="_blank" rel="noopener noreferrer">Meter</a> and
+          <a href="https://learn.microsoft.com/dotnet/api/system.diagnostics.activitysource" target="_blank" rel="noopener noreferrer">ActivitySource</a>, which can be collected
+          with OpenTelemetry. Enable them once at startup using the
+          <a href="T_MailKit_Telemetry.htm">Telemetry</a> class:
+        </p>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">Telemetry.SmtpClient.Configure ();
+Telemetry.Pop3Client.Configure ();
+Telemetry.ImapClient.Configure ();</code>
+                  </pre>
+                </div>
+              </div>
+              <p>
+          See
+          <a href="https://github.com/jstedfast/MailKit/blob/master/Telemetry.md" target="_blank" rel="noopener noreferrer">Telemetry.md</a>
+          for the list of available metrics and traces.
+        </p>
+            </div>
+            <h2 id="Exceptions" class="quickLinkHeader">Handling errors</h2>
+            <div id="IDIABSection">
+              <p>
+          The most common exceptions thrown by MailKit are:
+        </p>
+              <ul>
+                <li>
+                  <p>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.net.sockets.socketexception" target="_blank" rel="noopener noreferrer">SocketException</a>: the host name
+              could not be resolved or the connection was refused.
+            </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="T_MailKit_Security_SslHandshakeException.htm">SslHandshakeException</a>: the TLS
+              handshake failed, usually because the server certificate could not be validated or because
+              the client and server have no SSL/TLS protocol version in common.
+            </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="T_MailKit_Security_AuthenticationException.htm">AuthenticationException</a>: the
+              credentials were rejected.
+            </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="T_MailKit_CommandException.htm">CommandException</a> (and the protocol-specific
+              subclasses <a href="T_MailKit_Net_Smtp_SmtpCommandException.htm">SmtpCommandException</a>,
+              <a href="T_MailKit_Net_Pop3_Pop3CommandException.htm">Pop3CommandException</a> and
+              <a href="T_MailKit_Net_Imap_ImapCommandException.htm">ImapCommandException</a>): the server
+              rejected a command. The connection is still usable.
+            </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="T_MailKit_ProtocolException.htm">ProtocolException</a> (and subclasses): the
+              server sent an unexpected response or the connection was dropped. The client will have been
+              disconnected and must reconnect.
+            </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="https://learn.microsoft.com/dotnet/api/system.io.ioexception" target="_blank" rel="noopener noreferrer">IOException</a>: a network error occurred,
+              including when the <a href="P_MailKit_MailService_Timeout.htm">Timeout</a>
+              elapses during a synchronous operation (asynchronous operations throw a
+              <a href="https://learn.microsoft.com/dotnet/api/system.timeoutexception" target="_blank" rel="noopener noreferrer">TimeoutException</a> instead). The client will
+              have been disconnected.
+            </p>
+                </li>
+              </ul>
+              <div class="codeSnippet">
+                <div class="codeHeader">
+                  <span class="codeHeaderTitle">C#</span>
+                  <button class="button is-small is-light copyCode" title="Copy">
+                    <span class="icon is-small">
+                      <i class="fa fa-copy"></i>
+                    </span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <div class="codePanel hljs">
+                  <pre xml:space="preserve">
+                    <code class="language-c#">public static void SendMessage (MimeMessage message)
+{
+    using (var client = new SmtpClient ()) {
+        try {
+            client.Connect ("smtp.gmail.com", 465, SecureSocketOptions.SslOnConnect);
+        } catch (SmtpCommandException ex) {
+            Console.WriteLine ("Error trying to connect: {0}", ex.Message);
+            Console.WriteLine ("\tStatusCode: {0}", ex.StatusCode);
+            return;
+        } catch (SmtpProtocolException ex) {
+            Console.WriteLine ("Protocol error while trying to connect: {0}", ex.Message);
+            return;
+        }
+
+        // Note: Not all SMTP servers support authentication, but GMail does.
+        if (client.Capabilities.Contains (SmtpCapability.Authentication)) {
+            try {
+                client.Authenticate ("username", "password");
+            } catch (AuthenticationException ex) {
+                Console.WriteLine ("Invalid user name or password.");
+                return;
+            } catch (SmtpCommandException ex) {
+                Console.WriteLine ("Error trying to authenticate: {0}", ex.Message);
+                Console.WriteLine ("\tStatusCode: {0}", ex.StatusCode);
+                return;
+            } catch (SmtpProtocolException ex) {
+                Console.WriteLine ("Protocol error while trying to authenticate: {0}", ex.Message);
+                return;
+            }
+        }
+
+        try {
+            client.Send (message);
+        } catch (SmtpCommandException ex) {
+            Console.WriteLine ("Error sending message: {0}", ex.Message);
+            Console.WriteLine ("\tStatusCode: {0}", ex.StatusCode);
+
+            switch (ex.ErrorCode) {
+            case SmtpErrorCode.RecipientNotAccepted:
+                Console.WriteLine ("\tRecipient not accepted: {0}", ex.Mailbox);
+                break;
+            case SmtpErrorCode.SenderNotAccepted:
+                Console.WriteLine ("\tSender not accepted: {0}", ex.Mailbox);
+                break;
+            case SmtpErrorCode.MessageNotAccepted:
+                Console.WriteLine ("\tMessage not accepted.");
+                break;
+            }
+        } catch (SmtpProtocolException ex) {
+            Console.WriteLine ("Protocol error while sending message: {0}", ex.Message);
+        }
+
+        client.Disconnect (true);
+    }
+}</code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+            <h2 class="quickLinkHeader">See Also</h2>
+            <div id="seeAlsoSection">
+              <h4>Other Resources</h4>
+              <div>
+                <a href="Authentication.htm">Authentication</a>
+              </div>
+              <div>
+                <a href="Sending-Messages-With-SMTP.htm">Sending messages with SMTP</a>
+              </div>
+              <div>
+                <a href="Retrieving-Messages-With-POP3.htm">Retrieving messages with POP3</a>
+              </div>
+              <div>
+                <a href="Working-With-IMAP.htm">Working with IMAP</a>
+              </div>
+            </div>
+          </div>
+          <div id="InThisArticleColumn" class="column is-hidden-mobile">
+            <nav class="menu sticky is-hidden">
+              <p class="menu-label">
+                <strong>In This Article</strong>
+              </p>
+              <ul id="InThisArticleMenu" class="menu-list">
+                <li>
+                  <a class="quickLink">Choosing how to secure the connection</a>
+                </li>
+                <li>
+                  <a class="quickLink">Configuring SSL/TLS</a>
+                </li>
+                <li>
+                  <a class="quickLink">Validating server certificates</a>
+                </li>
+                <li>
+                  <a class="quickLink">Connecting through a proxy</a>
+                </li>
+                <li>
+                  <a class="quickLink">Timeouts and cancellation</a>
+                </li>
+                <li>
+                  <a class="quickLink">Logging the protocol</a>
+                </li>
+                <li>
+                  <a class="quickLink">Metrics and tracing</a>
+                </li>
+                <li>
+                  <a class="quickLink">Handling errors</a>
+                </li>
+                <li>
+                  <a class="quickLink">See Also</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer id="PageFooter" class="footer border-top py-3">
+      <div class="columns">
+        <div id="FooterContent" class="column">
+          <p class="site-footer-links">
+            <a href="https://mimekit.net/">Home</a> <a href="https://github.com/jstedfast/MimeKit">MimeKit on GitHub</a> <a href="https://github.com/jstedfast/MailKit">MailKit on GitHub</a> <a href="https://github.com/sponsors/jstedfast">    Sponsor</a></p>
+          <p>
+            <a href="https://github.com/jstedfast" target="_blank" rel="noopener noreferrer">Copyright © 2013-2026 Jeffrey Stedfast</a>
+          </p>
+          <div class="feedbackLink">Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:jestedfa%40microsoft.com?Subject=MailKit%20Documentation">Jeffrey Stedfast</a></div>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        HT_mailLink.href += ": " + document.title + "\u0026body=" + encodeURIComponent("Your feedback is used to improve the documentation and the product. Your e-mail address will not be used for any other purpose and is disposed of after the issue you report is resolved. While working to resolve the issue that you report, you may be contacted via e-mail to get further details or clarification on the feedback you sent. After the issue you report has been addressed, you may receive an e-mail to let you know that your feedback has been addressed.");
+        </script></div>
+      </div>
+    </footer>
+    <script>$(function(){
+SetDefaultLanguage("cs");
+LoadToc();
+InitializeQuickLinks();
+hljs.highlightAll();
+});</script>
+  </body>
+</html>
