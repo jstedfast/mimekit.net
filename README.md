@@ -8,7 +8,5 @@ The MimeKit website
 | Bootstrap | 3.4.1 | `js` and matching styles/source maps in `css` |
 | jQuery | 3.7.1 | `js` and `docs/scripts` |
 | clipboard.js | 2.0.11 | `docs/scripts` |
-| Holder | 2.4.1 | `js/vendor` |
 
-Keep Bootstrap's JavaScript and CSS assets on matching versions. Holder remains
-on its existing version to preserve placeholder URL compatibility.
+Keep Bootstrap's JavaScript and CSS assets on matching versions.
