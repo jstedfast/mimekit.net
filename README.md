@@ -1,12 +1,14 @@
 # mimekit.net
 The MimeKit website
 
-## Bundled JavaScript libraries
+The homepage (`index.html`) is plain HTML and CSS with no framework.
+Styles live in `css/site.css`, and `js/site.js` only adds the install
+"Copy" buttons. Colors follow the visitor's light/dark OS setting.
 
-| Library | Version | Location |
-| --- | --- | --- |
-| Bootstrap | 3.4.1 | `js` and matching styles/source maps in `css` |
-| jQuery | 3.7.1 | `js` and `docs/scripts` |
-| clipboard.js | 2.0.11 | `docs/scripts` |
+## Bundled libraries
 
-Keep Bootstrap's JavaScript and CSS assets on matching versions.
+| Library | Version | Location | Used by |
+| --- | --- | --- | --- |
+| Font Awesome | 4.3.0 | `font-awesome` | Homepage icons |
+| jQuery | 3.7.1 | `docs/scripts` | Documentation |
+| clipboard.js | 2.0.11 | `docs/scripts` | Documentation |
